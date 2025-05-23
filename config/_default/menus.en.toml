@@ -1,0 +1,85 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[main]]
+weight = 3
+name = "Product"
+url = "product/"
+
+
+[[main]]
+weight = 4
+name = "Services and Solutions"
+hasChildren = true
+
+  [[main]]
+  parent = "Services and Solutions"
+  name = "Smart Irrigation Systems"
+  url = "smart-irrigation/"
+  weight = 1
+
+  [[main]]
+  parent = "Services and Solutions"
+  name = "Fertigation Solutions"
+  url = "fertigation/"
+  weight = 2
+
+  [[main]]
+  parent = "Services and Solutions"
+  name = "Remote Control & IoT Solutions"
+  url = "remote-iot/"
+  weight = 3
+
+  [[main]]
+  parent = "Services and Solutions"
+  name = "Custom Design & OEM Service"
+  url = "oem/"
+  weight = 4
+
+  [[main]]
+  parent = "Services and Solutions"
+  name = "Technical Support & Training"
+  url = "support/"
+  weight = 5
+  
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 6
+
+
+# footer menu
+[[footer]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Product"
+url = "product/"
+weight = 3
+
+[[footer]]
+name = "Service"
+url = "service/"
+weight = 4
+
+[[footer]]
+name = "FAQ"
+url = "faq/"
+weight = 5
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 6

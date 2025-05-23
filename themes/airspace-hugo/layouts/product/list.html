@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+      {{ range .Params.categories }}
+      <div class="col-md-4 mb-4">
+        <div class="category-card border rounded p-3 h-100">
+          <h3 class="category-title">{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          <a href="{{ .url }}" class="btn btn-link">View Details →</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
