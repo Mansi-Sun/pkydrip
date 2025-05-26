@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PKYDRIP</title>
-    <link>http://localhost:1313/airspace/examplesite/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on PKYDRIP</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/airspace/examplesite/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/how-to/</link>
+      <link>http://localhost:1313/tags/how-to/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/how-to/</guid>
+      <guid>http://localhost:1313/tags/how-to/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/technology/</link>
+      <link>http://localhost:1313/tags/technology/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/technology/</guid>
+      <guid>http://localhost:1313/tags/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Advice</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/advice/</link>
+      <link>http://localhost:1313/tags/advice/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/advice/</guid>
+      <guid>http://localhost:1313/tags/advice/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/ai/</link>
+      <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/ai/</guid>
+      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/android/</link>
+      <link>http://localhost:1313/tags/android/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/android/</guid>
+      <guid>http://localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Company</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/company/</link>
+      <link>http://localhost:1313/tags/company/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/company/</guid>
+      <guid>http://localhost:1313/tags/company/</guid>
       <description></description>
     </item>
     <item>
       <title>Mechine</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/mechine/</link>
+      <link>http://localhost:1313/tags/mechine/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/mechine/</guid>
+      <guid>http://localhost:1313/tags/mechine/</guid>
       <description></description>
     </item>
     <item>
       <title>News</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/news/</link>
+      <link>http://localhost:1313/tags/news/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/news/</guid>
+      <guid>http://localhost:1313/tags/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Retro</title>
-      <link>http://localhost:1313/airspace/examplesite/tags/retro/</link>
+      <link>http://localhost:1313/tags/retro/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/airspace/examplesite/tags/retro/</guid>
+      <guid>http://localhost:1313/tags/retro/</guid>
       <description></description>
     </item>
   </channel>
