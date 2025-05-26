@@ -31,7 +31,7 @@ custom_script= ""
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "G-Y5HHC5PQ2D"
 # recaptch v3 site key
-recaptcha_site_key = "6Ld9eEkrAAAAAG7HTRm7--CQpa7fQvrrjoN_PzvD"
+recaptcha_site_key = "6Ld9eEkrAAAAAF98PR4z-Xvn-oFnZcMdZafLI8fI"
 
 [contact.form]
 enable = true
