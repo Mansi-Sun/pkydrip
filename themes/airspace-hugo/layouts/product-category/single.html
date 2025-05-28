@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ with .Params.products }}
+
+<section class="section-sm">
+  <div class="container">
+    <h2 class="mb-4">Products in this Category</h2>
+    <div class="row">
+      {{ range . }}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border p-3">
+          <img src="{{ .image | relURL }}" class="card-img-top mb-3" alt="{{ .name }}">
+          <h5 class="card-title">{{ .name }}</h5>
+          <p class="card-text">{{ .summary }}</p>
+          <a href="{{ .url }}" class="btn btn-primary">View Product</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ end }}
