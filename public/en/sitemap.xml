@@ -665,7 +665,7 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/product/irrigation-controller/irrigation_controller/</loc>
+    <loc>http://localhost:1313/product/irrigation-controller/pky-lr60/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/irrigation-controller/</loc>
   </url><url>
@@ -912,5 +912,7 @@
                 hreflang="en-US"
                 href="http://localhost:1313/service/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/product/irrigation-controller/</loc>
   </url>
 </urlset>

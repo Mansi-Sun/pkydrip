@@ -181,16 +181,6 @@
 
 
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Ld9eEkrAAAAAG7HTRm7--CQpa7fQvrrjoN_PzvD"></script>
-<script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('6Ld9eEkrAAAAAG7HTRm7--CQpa7fQvrrjoN_PzvD', {action: 'homepage'})
-      .then(function(token) {
-        document.getElementById('captchaResponse').value = token;
-      });
-    });
-</script>
-
 
 
 	
@@ -536,9 +526,7 @@
             <div class="form-group-h">
               <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
             </div>
-            <div class="form-group-h">
-              <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-            </div>
+            
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -569,13 +557,7 @@ Shijiazhuang, Hebei, China</div></li>
           </ul>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <div class="google-map">
-            <div class="map" id="map" data-latitude="51.5223477" data-longitude="-0.1622023" data-marker="/images/marker.png" data-marker-name="PKYDRIP"></div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -612,10 +594,6 @@ Shijiazhuang, Hebei, China</div></li>
   </div>
 </footer>
 	
-
-
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-
 
 
 
