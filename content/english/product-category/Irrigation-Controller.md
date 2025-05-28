@@ -2,6 +2,7 @@
 title: "Smart Irrigation Controllers"
 description: "Advanced multi-zone irrigation controllers that support LoRa, WiFi, RS485, and optional 4G modules. Ideal for both small farms and large-scale agricultural operations."
 type: "product-category"
+layout: "product-category/single"
 products:
   - name: "PKY-LR60"
     summary: "60-channel LoRa controller with cloud integration and automatic scheduling."
