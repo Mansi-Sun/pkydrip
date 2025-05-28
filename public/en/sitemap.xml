@@ -757,7 +757,9 @@
                 href="http://localhost:1313/project/"
                 />
   </url><url>
-    <loc>http://localhost:1313/product/irrigation-controller/pky-lr60/</loc>
+    <loc>http://localhost:1313/product/pky-lr60/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product-category/</loc>
   </url><url>
     <loc>http://localhost:1313/project/rio-furniture-1/</loc>
     <xhtml:link
@@ -913,6 +915,6 @@
                 href="http://localhost:1313/service/"
                 />
   </url><url>
-    <loc>http://localhost:1313/product/irrigation-controller/</loc>
+    <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
   </url>
 </urlset>
