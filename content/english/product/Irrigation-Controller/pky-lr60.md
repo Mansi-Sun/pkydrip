@@ -1,5 +1,5 @@
 ---
-title: "Fertigation Controller"
+title: "Fertigation Controllerpky-lr60"
 image: "images/product/fertigation.jpg"
 categories: ["Irrigation-Controller"]
 description: "Automated, zoned control with soil moisture sensors"
