@@ -6,7 +6,7 @@ bg_image: "images/slider-bg.webp"
 categories:
   - title: "Smart Irrigation Controllers"
     description: "Multi-zone controllers with LoRa, WiFi, RS485, and optional 4G connectivity. Up to 60 output channels."
-    url: "/product/Irrigation-Controller/"
+    url: "/product/irrigation-controller/"
   - title: "EC/pH Controllers"
     description: "Dual-channel real-time monitoring, Modbus RTU compatible, supports automatic fertigation logic."
     url: "/product/ec-ph-controllers/"

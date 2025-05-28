@@ -7,11 +7,11 @@ products:
   - name: "PKY-LR60"
     summary: "60-channel LoRa controller with cloud integration and automatic scheduling."
     image: "images/products/irrigation/pky-lr60.webp"
-    url: "/product/Irrigation-Controller/pky-lr60/"
+    url: "/product/irrigation-controller/pky-lr60/"
   - name: "PKY-WiFi24"
     summary: "24-channel WiFi controller, app-controlled with manual override and timer settings."
     image: "images/products/irrigation/pky-wifi24.webp"
-    url: "/product/Irrigation-Controller/pky-wifi24/"
+    url: "/product/irrigation-controller/pky-wifi24/"
 ---
 
 Our smart irrigation controllers offer a wide range of features to help farmers automate irrigation by zones, schedules, or sensor input. All models are customizable and compatible with most solenoid valves and sensors.
