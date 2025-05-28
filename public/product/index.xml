@@ -8,11 +8,11 @@
     <language>en-US</language>
     <atom:link href="http://localhost:1313/product/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PKY-LR60 Smart Controller</title>
-      <link>http://localhost:1313/product/pky-lr60/</link>
+      <title>PKYDrip Wired Master Controller – Model PKY-60W</title>
+      <link>http://localhost:1313/product/pky-60w/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/product/pky-lr60/</guid>
-      <description>An advanced controller for fertigation systems.</description>
+      <guid>http://localhost:1313/product/pky-60w/</guid>
+      <description>&lt;p&gt;The PKY-60W is designed for :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Field crop irrigation (vegetables, fruits, grains)&lt;/li&gt;&#xA;&lt;li&gt;Greenhouse intelligent irrigation&lt;/li&gt;&#xA;&lt;li&gt;Orchard &amp;amp; vineyard drip irrigation&lt;/li&gt;&#xA;&lt;li&gt;Urban landscape &amp;amp; park irrigation&lt;/li&gt;&#xA;&lt;li&gt;Golf course / sports field systems&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

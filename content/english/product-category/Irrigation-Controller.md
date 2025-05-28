@@ -4,10 +4,10 @@ description: "Advanced multi-zone irrigation controllers that support LoRa, WiFi
 type: "product-category"
 layout: "product-category/single"
 products:
-  - name: "PKY-LR60"
-    summary: "60-channel LoRa controller with cloud integration and automatic scheduling."
+  - name: "PKY-60W"
+    summary: "PKYDrip Wired Master Controller – Model PKY-60W"
     image: "images/products/irrigation/pky-lr60.webp"
-    url: "/product/pky-lr60/"
+    url: "/product/pky-60w/"
   - name: "PKY-WiFi24"
     summary: "24-channel WiFi controller, app-controlled with manual override and timer settings."
     image: "images/products/irrigation/pky-wifi24.webp"
