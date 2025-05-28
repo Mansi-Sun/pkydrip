@@ -3,7 +3,7 @@ title: "PKY-LR60 Smart Controller"
 description: "60-zone LoRa smart irrigation controller with RS485 and cloud integration."
 type: "product"
 image: "images/products/pky-lr60.webp"
-categories: ["Irrigation-Controller"]
+categories: ["irrigation-controller"]
 features:
   - "60 output zones"
   - "LoRa communication up to 3 km"
