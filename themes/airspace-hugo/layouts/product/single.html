@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="product-single-page section-sm">
+  <div class="container">
+
+    <div class="row">
+      <!-- 图片 -->
+      <div class="col-md-6 mb-4">
+        {{ with .Params.image }}
+        <img class="img-responsive w-100 rounded shadow" src="{{ . | relURL }}" alt="{{ $.Title }}">
+        {{ end }}
+      </div>
+
+      <!-- 简要信息 -->
+      <div class="col-md-6">
+        <h2>{{ .Title }}</h2>
+
+        {{ with .Params.description }}
+        <p class="lead mt-3">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.features }}
+        <h5 class="mt-4">Key Features</h5>
+        <ul>
+          {{ range . }}
+          <li>✔ {{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+
+        <!-- 联系按钮 -->
+        <a href="https://wa.me/+8617395297329" target="_blank" class="btn btn-primary mt-4">Contact Sales</a>
+      </div>
+    </div>
+
+    <!-- 技术参数 -->
+    {{ with .Params.specs }}
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4>Technical Specifications</h4>
+        <table class="table table-bordered">
+          <tbody>
+            {{ range . }}
+            <tr>
+              <th>{{ .label }}</th>
+              <td>{{ .value }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- 内容正文 -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="product-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

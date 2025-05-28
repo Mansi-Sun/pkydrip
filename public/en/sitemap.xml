@@ -665,8 +665,6 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/product/irrigation-controller/pky-lr60/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/irrigation-controller/</loc>
   </url><url>
     <loc>http://localhost:1313/author/john-doe/</loc>
@@ -758,6 +756,8 @@
                 hreflang="en-US"
                 href="http://localhost:1313/project/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/product/irrigation-controller/pky-lr60/</loc>
   </url><url>
     <loc>http://localhost:1313/project/rio-furniture-1/</loc>
     <xhtml:link
