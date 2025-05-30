@@ -112,26 +112,17 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+link = "https://www.facebook.com/chinesedripirrigation"
 
 [[social]]
-title = "twitter"
-icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "Youtube"
+icon = "fab fa-youtube"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.youtube.com/@irrigation-system"
 
 [[social]]
-title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "WhatsApp"
+icon = "fab fa-whatsapp"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://wa.me/+8617395297329"
 
-[[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
 
 

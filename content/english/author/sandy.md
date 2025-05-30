@@ -14,4 +14,4 @@ social:
 
 We specialize in the development and production of watersaving irrigation products, such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves.
 
-Feel free to contact us!
+Follow us on social media to learn more about water-saving and automated irrigation solutions！
