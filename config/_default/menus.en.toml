@@ -70,8 +70,8 @@ url = "product/"
 weight = 3
 
 [[footer]]
-name = "Service"
-url = "service/"
+name = "Solution"
+url = "solution/"
 weight = 4
 
 [[footer]]
