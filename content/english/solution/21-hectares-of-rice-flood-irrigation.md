@@ -1,7 +1,7 @@
 ---
 title: "21 Hectares of Rice Flood Irrigation Solution"
 author: Sandy
-image : "images/blog/aerial-view-rice-terrace-ban-pa-bong-piang-chiang-mai-thailand_335224-1059.webp"
+image : "images/solution/aerial-view-rice-terrace-ban-pa-bong-piang-chiang-mai-thailand_335224-1059.webp"
 bg_image: "images/feature-bg.webp"
 categories: ["solutions"]
 tags: ["open-field-solutions"]
@@ -30,4 +30,4 @@ Compared with drip irrigation and sprinkler irrigation systems, water hose flood
 
 ### Irrigation supplies for 21 hectares of rice
 
-![Supplies for 21 hectares of rice field](/images/blog/Irrigation-supplies-for-21-hectares-of-rice-scaled.jpg)
+![Supplies for 21 hectares of rice field](/images/solution/Irrigation-supplies-for-21-hectares-of-rice-scaled.jpg)
