@@ -4,7 +4,7 @@ author: Sandy
 image : "images/solution/10_Hectares_of_Coconut_Trees_feature.webp"
 bg_image: "images/feature-bg.webp"
 categories: ["solutions"]
-tags: ["open-field-solutions"]
+tags: ["open-field-solutions","sprinkler"]
 description: "Sprinkler Irrigation Plan for 3 Hectares of Banana"
 draft: false
 type: "post"

@@ -4,7 +4,7 @@ author: Sandy
 image : "images/solution/4_hectares_corn_rain_pipe_solution_feature.webp"
 bg_image: "images/feature-bg.webp"
 categories: ["solutions"]
-tags: ["open-field-solutions"]
+tags: ["open-field-solutions","rain-pipe"]
 description: "Rain Pipe Irrigation Solution"
 draft: false
 type: "post"

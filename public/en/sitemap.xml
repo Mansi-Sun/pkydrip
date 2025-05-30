@@ -209,374 +209,6 @@
                 href="http://localhost:1313/faq/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/advice/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/advice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/advice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/advice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/advice/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/ai/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/android/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/android/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/android/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/android/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/android/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/categories/artificial-intelligence/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/categories/artificial-intelligence/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/categories/artificial-intelligence/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/artificial-intelligence/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/company/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/company/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/company/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/company/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/company/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/company-news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/categories/company-news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/categories/company-news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/categories/company-news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/company-news/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-1/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-2/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-3/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-4/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-4/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-5/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-5/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/blog-post-6/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/blog-post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/blog/blog-post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/blog/blog-post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/blog-post-6/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/legacy-support/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/categories/legacy-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/categories/legacy-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/categories/legacy-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/legacy-support/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/mechine/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/mechine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/mechine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/mechine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/mechine/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/news/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/retro/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/retro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/retro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/tags/retro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/retro/"
-                />
-  </url><url>
     <loc>http://localhost:1313/message_sent/</loc>
     <xhtml:link
                 rel="alternate"
@@ -649,6 +281,10 @@
   </url><url>
     <loc>http://localhost:1313/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/drip-irrigation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/drip-tape/</loc>
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -671,31 +307,11 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/flood-irrigation/</loc>
+  </url><url>
     <loc>http://localhost:1313/solution/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/irrigation-controller/</loc>
-  </url><url>
-    <loc>http://localhost:1313/author/john-doe/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="http://localhost:1313/fr/author/john-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/author/john-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="http://localhost:1313/de/author/john-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/author/john-doe/"
-                />
   </url><url>
     <loc>http://localhost:1313/author/mark-dinn/</loc>
     <xhtml:link
@@ -772,6 +388,8 @@
     <loc>http://localhost:1313/product-category/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/rain-pipe/</loc>
   </url><url>
     <loc>http://localhost:1313/project/rio-furniture-1/</loc>
     <xhtml:link
@@ -905,6 +523,8 @@
                 href="http://localhost:1313/project/rio-furniture-6/"
                 />
   </url><url>
+    <loc>http://localhost:1313/author/sandy/</loc>
+  </url><url>
     <loc>http://localhost:1313/service/</loc>
     <xhtml:link
                 rel="alternate"
@@ -930,6 +550,8 @@
     <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/solutions/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sprinkler/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/</loc>
   </url>

@@ -4,7 +4,7 @@ author: Sandy
 image : "images/solution/1_hectare_tomato_feature.webp"
 bg_image: "images/feature-bg.webp"
 categories: ["solutions"]
-tags: ["open-field-solutions"]
+tags: ["open-field-solutions","drip-tape"]
 description: "Drip Tape Irrigation Solution for 1 Hectare of Tomato Field"
 draft: false
 type: "post"

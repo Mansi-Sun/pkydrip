@@ -4,7 +4,7 @@ author: Sandy
 image : "images/solution/aerial-view-rice-terrace-ban-pa-bong-piang-chiang-mai-thailand_335224-1059.webp"
 bg_image: "images/feature-bg.webp"
 categories: ["solutions"]
-tags: ["open-field-solutions"]
+tags: ["open-field-solutions","flood-irrigation"]
 description: "Customized rice flooding plan using water hoses"
 draft: false
 type: "post"

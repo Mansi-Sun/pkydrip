@@ -23,52 +23,24 @@
       <description></description>
     </item>
     <item>
-      <title>Advice</title>
-      <link>http://localhost:1313/tags/advice/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/advice/</guid>
+      <title>Drip-Irrigation</title>
+      <link>http://localhost:1313/tags/drip-irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/drip-irrigation/</guid>
       <description></description>
     </item>
     <item>
-      <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <title>Drip-Tape</title>
+      <link>http://localhost:1313/tags/drip-tape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/drip-tape/</guid>
       <description></description>
     </item>
     <item>
-      <title>Android</title>
-      <link>http://localhost:1313/tags/android/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/android/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Company</title>
-      <link>http://localhost:1313/tags/company/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/company/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mechine</title>
-      <link>http://localhost:1313/tags/mechine/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/mechine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>News</title>
-      <link>http://localhost:1313/tags/news/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/news/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Retro</title>
-      <link>http://localhost:1313/tags/retro/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>http://localhost:1313/tags/retro/</guid>
+      <title>Flood-Irrigation</title>
+      <link>http://localhost:1313/tags/flood-irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flood-irrigation/</guid>
       <description></description>
     </item>
     <item>
@@ -76,6 +48,20 @@
       <link>http://localhost:1313/tags/open-field-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/open-field-solutions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rain-Pipe</title>
+      <link>http://localhost:1313/tags/rain-pipe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rain-pipe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sprinkler</title>
+      <link>http://localhost:1313/tags/sprinkler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sprinkler/</guid>
       <description></description>
     </item>
   </channel>
