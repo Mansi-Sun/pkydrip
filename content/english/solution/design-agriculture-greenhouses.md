@@ -27,9 +27,9 @@ type: "post"
 
 **1. Excellent material** The selected material is from a regular supplier after hot-dip galvanizing, it is rust-proof and durable, and the quality is guaranteed.</p>
 
-**2.Easy transportation and installation** Transportation is safe and convenient. The height, camber, and angle of the shed can be bent at will through the bending machine.</p>
+**2. Easy transportation and installation** Transportation is safe and convenient. The height, camber, and angle of the shed can be bent at will through the bending machine.</p>
 
-**3.Mechanized operation** Can be the mechanized operation, no stand in the shed, greatly increase the price of farming, save labor, can be mechanically operated, increase the work area.
+**3. Mechanized operation** Can be the mechanized operation, no stand in the shed, greatly increase the price of farming, save labor, can be mechanically operated, increase the work area.
 
 ### Greenhouse Display
 ![greenhouse display](/images/solution/greenhouse_design_display.webp)

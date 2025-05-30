@@ -52,11 +52,6 @@
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/how-to/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr-FR"
                 href="http://localhost:1313/fr/tags/how-to/"
                 />
@@ -96,11 +91,6 @@
   </url><url>
     <loc>http://localhost:1313/de/blog/date-i18n/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/date-i18n/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
@@ -144,11 +134,6 @@
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/technical-assistance/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr-FR"
                 href="http://localhost:1313/fr/categories/technical-assistance/"
                 />
@@ -165,11 +150,6 @@
   </url><url>
     <loc>http://localhost:1313/de/tags/technology/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/technology/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
