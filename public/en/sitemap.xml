@@ -599,6 +599,8 @@
                 href="http://localhost:1313/message_sent/"
                 />
   </url><url>
+    <loc>http://localhost:1313/blog/21-hectares-of-rice-flood-irrigation/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -710,6 +712,8 @@
                 hreflang="en-US"
                 href="http://localhost:1313/author/mark-dinn/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/open-field-solutions/</loc>
   </url><url>
     <loc>http://localhost:1313/pricing/</loc>
     <xhtml:link
@@ -916,5 +920,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/solutions/</loc>
   </url>
 </urlset>
