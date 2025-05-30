@@ -9,17 +9,38 @@
     <atom:link href="http://localhost:1313/tags/open-field-solutions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>21 Hectares of Rice Flood Irrigation Solution</title>
-      <link>http://localhost:1313/blog/21-hectares-of-rice-flood-irrigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/21-hectares-of-rice-flood-irrigation/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Previous irrigation plans were all customized water-saving plans for customers. Today we will introduce a customized rice flooding plan using water hoses.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>21 Hectares of Rice Flood Irrigation Solution</title>
       <link>http://localhost:1313/solution/21-hectares-of-rice-flood-irrigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/solution/21-hectares-of-rice-flood-irrigation/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Previous irrigation plans were all customized water-saving plans for customers. Today we will introduce a customized rice flooding plan using water hoses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drip Irrigation Solution for 10 Hectares of Coconut Trees</title>
+      <link>http://localhost:1313/solution/10-hectares-of-coconut-tree-drip-irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solution/10-hectares-of-coconut-tree-drip-irrigation/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;In the vast land of Brazil, 10 hectares of flat fertile land breeds 2050 young coconut trees full of hope. In order to make these lives thrive, a highly innovative and scientific irrigation plan has made a stunning debut.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drip Tape Irrigation Solution for 1 Hectare of Tomato Field</title>
+      <link>http://localhost:1313/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/</guid>
+      <description>&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This scheme is designed for a 1 hectare tomato planting area, aiming to use drip irrigation technology to achieve efficient irrigation, provide stable and accurate water supply for tomato growth, improve water resource utilization efficiency, and increase yield and quality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rain Pipe Irrigation Solution for 4 Hectares of Corn Field</title>
+      <link>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Rain pipe plays an important role in the corn field irrigation. Its low price and uniform spraying make it the first choice of many growers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sprinkler Irrigation Plan for 3 Hectares of Banana</title>
+      <link>http://localhost:1313/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/</guid>
+      <description>&lt;h3 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h3&gt;&#xA;&lt;p&gt;This irrigation scheme aims to provide efficient and precise irrigation services for 3 hectares of banana plantation in Zambia. Banana trees require a large amount of water to grow, and have high requirements for the stability and uniformity of water supply. By adopting a sprinkler irrigation system, using well water as a water source, and matching professional filtering and fertilization equipment, it is ensured that banana trees can obtain appropriate water and nutrients at different growth stages to achieve increased production and quality.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
