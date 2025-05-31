@@ -63,33 +63,33 @@ features:
   feature_item:
   # feature item loop
   - icon : "fab fa-app-store-ios" #https://fontawesome.com/v5.15/icons
-    name : "IOS App Development"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    name : "Remote Control"
+    content : "Our iOS and Android apps give you full control of your irrigation system — anytime, anywhere."
 
   # feature item loop
-  - icon : "fas fa-unlock" #https://fontawesome.com/v5.15/icons
-    name : "App Secutity"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  - icon : "fas fa-magic" #https://fontawesome.com/v5.15/icons
+    name : "Flexible Automation"
+    content : "From automatic watering to remote monitoring, we help you get more done with less effort."
 
   # feature item loop
-  - icon : "fas fa-gamepad" #https://fontawesome.com/v5.15/icons
-    name : "Games Development"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  - icon : "fas fa-user" #https://fontawesome.com/v5.15/icons
+    name : "Versatile Solutions"
+    content : "Tailored irrigation solutions — whether it’s for urban greenery, landscaping, greenhouses, or open fields"
 
   # feature item loop
-  - icon : "fas fa-microphone" #https://fontawesome.com/v5.15/icons
-    name : "Animation and Editing"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  - icon : "fas fa-hands-helping" #https://fontawesome.com/v5.15/icons
+    name : "One-Stop Supplier"
+    content : "From expert design and quality products to safe delivery, we’re here to make everything easy and hassle-free for you."
 
   # feature item loop
-  - icon : "fas fa-lightbulb" #https://fontawesome.com/v5.15/icons
-    name : "UI/UX Design"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  - icon : "fas fa-hand-holding-water" #https://fontawesome.com/v5.15/icons
+    name : "Efficient Fertigation"
+    content : "With our system, you can water and fertilize accurately — saving both water and money."
 
   # feature item loop
   - icon : "fas fa-star-of-life" #https://fontawesome.com/v5.15/icons
     name : "Branding"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    content : "OEM service available — customize features, design, and branding to suit your needs."
 
 #################################### testimonial & mission vision #######################################
 testimonial:
@@ -110,13 +110,12 @@ mission_vision:
     "
 
   # tab item loop
-  - name : "Applications"
+  - name : "Solutions"
     content : "
-    [**Fertigation Machines**](/products/fertigation-machines/)<br><br> [**Smart Irrigation Controllers**](/products/irrigation-controllers/)<br><br>
-    [**EC/pH Controllers**](/products/ecph-controllers/)<br><br>
-    [**Valves (Solenoid & Motorized)**](/products/valves/)<br><br>
-    [**Sensors & Weather Stations**](/products/sensors/)<br><br>
-    [**RTU Modules**](/products/RTU/)
+    [**Sprinkler Irrigation**](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana)<br><br> [**Drip Irrigation**](/solution/10-hectares-of-coconut-tree-drip-irrigation)<br><br>
+    [**Flood Irrigation**](/solution/21-hectares-of-rice-flood-irrigation)<br><br>
+    [**Drip Tape Irrigation**](/solution/drip-tape-irrigation-for-1-hectare-of-tomatos)<br><br>
+    [**Rain Pipe Irrigation**](/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field)
     "
 
 
