@@ -21,7 +21,7 @@ As a key player in China's micro-irrigation industry, we are a member of the Chi
   button:
     enable : true
     label : "Download Product Catalogue"
-    link : "/airspace/examplesite/files/Pkydrip_Smart_Agriculture_Catalogue_2025.pdf"
+    link : "/files/Pkydrip_Smart_Agriculture_Catalogue_2025.pdf"
     target: "_blank"
     download : true
 
