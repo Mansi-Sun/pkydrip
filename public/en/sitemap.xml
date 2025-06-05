@@ -172,6 +172,8 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/product-category/fertigation-machines/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/fertigation-machines/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/flood-irrigation/</loc>
