@@ -3,6 +3,7 @@ title: "Fertigation Machines"
 description: "Our Fertigation System is an advanced solution that combines irrigation and fertilization, delivering precise nutrient management for agricultural and horticultural applications. Featuring cutting-edge sensors, the system continuously monitors and adjusts pH, EC(electrical conductivity), and nutrient levels, ensuring optimal plant health and growth."
 type: "product-category"
 layout: "product-category/single"
+bg_image: "images/slider-bg.webp"
 products:
   - name: "PKY-FG401-ECPH"
     summary: "PKY-FG401 4-Channel Fertigation Machine with EC/pH Monitoring"
