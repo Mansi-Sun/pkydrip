@@ -8,12 +8,11 @@
 
 <section class="section-sm">
   <div class="container">
-    <h2 class="mb-4">Products in this Category</h2>
     <div class="row">
       {{ range . }}
       <div class="col-md-4 mb-4">
         <div class="card h-100 border p-3">
-          <img src="{{ .image | relURL }}" class="card-img-top mb-3" alt="{{ .name }}">
+          <img src="{{ .image | relURL }}" class="card-img-top mb-3" alt="{{ .name }}" style="width:320px; height:430px; object-fit:cover;">
           <h5 class="card-title">{{ .name }}</h5>
           <p class="card-text">{{ .summary }}</p>
           <a href="{{ .url }}" class="btn btn-primary">View Product</a>
@@ -25,5 +24,57 @@
 </section>
 
 {{ end }}
+
+<!-- Category Description -->
+{{ with .Params.description }}
+<section class="section-sm">
+  <div class="container">
+    <h3 class="mb-3">Description</h3>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
+<!-- Models Comparison -->
+{{ with .Params.models }}
+<section class="section-sm">
+  <div class="container">
+    <h3 class="mb-3">Models</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th>Model</th>
+            <th>Channels</th>
+            <th>Monitoring</th>
+            <th>Pump Power</th>
+            <th>Application</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td>{{ .name }}</td>
+            <td>{{ .channels }}</td>
+            <td>{{ .monitoring }}</td>
+            <td>{{ .pumppower }}</td>
+            <td>{{ .application }}</td>
+            <td><a href="{{ .url }}" class="btn btn-sm btn-outline-primary">View Details</a></td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Contact Us -->
+<section class="section-sm">
+  <div class="container text-center">
+    <a href="https://wa.me/+8617395297329" class="btn btn-primary btn-lg">Contact Us</a>
+  </div>
+</section>
 
 {{ end }}

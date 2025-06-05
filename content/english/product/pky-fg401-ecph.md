@@ -2,6 +2,7 @@
 title: "PKY-FG401 4-Channel Fertigation Machine with EC/pH Monitoring"
 description: "The PKY-FG401 is a high-performance fertigation system designed with 4 independent fertilizer injection channels and integrated EC/pH sensor control. It combines a single high-pressure water pump with automatic nutrient mixing, real-time monitoring, and remote management. Suitable for large-scale greenhouses and precision agriculture zones."
 type: "product"
+bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/pky-fg401.jpg"
 categories: ["fertigation-machines"]
 features:
