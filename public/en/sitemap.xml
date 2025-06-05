@@ -172,6 +172,8 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/categories/fertigation-machines/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/flood-irrigation/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/greenhouse-solutions/</loc>
@@ -271,6 +273,8 @@
                 hreflang="en-US"
                 href="http://localhost:1313/project/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/product/pky-fg401-ecph/</loc>
   </url><url>
     <loc>http://localhost:1313/product/pky-60w/</loc>
   </url><url>
