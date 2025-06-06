@@ -19,14 +19,19 @@ url = "product/"
 
 [[main]]
 weight = 4
-name = "Services and Solutions"
+name = "Services"
+url = "sv/"
+
+[[main]]
+weight = 5
+name = "Solutions"
 url = "solution/"
 
  
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 6
 
 
 # footer menu
