@@ -72,45 +72,91 @@ We offer complete technical services for irrigation and fertigation projects acr
 
 
 
-> ### What We Provide
-
-- ✔ Device selection: irrigation controllers, sensors, valves, pumps
-- ✔ Irrigation layout & fertigation strategy (3/4/7 channel systems)
-- ✔ IoT solutions: LoRa, Wi-Fi, 4G, with solar & battery-powered options
-- ✔ Customized wiring diagrams and pressure zoning
-- ✔ Bill of materials (BOM) with sourcing recommendation
-- ✔ Video tutorials and remote support (WhatsApp, video calls)
+> ## What We Provide
 
 
-> ### What Projects Are Supported?
+  - ✔ Device selection: irrigation controllers, sensors, valves, pumps
 
-- Greenhouse fertigation systems (hydroponics or soil-based)
-- Orchard and open-field drip irrigation plans
-- Municipal park and landscaping irrigation design
-- Smart farming deployments with cloud platform integration
 
-> ### Value to Distributors & EPC Contractors
+  - ✔ Irrigation layout & fertigation strategy (3/4/7 channel systems)
+
+
+  - ✔ IoT solutions: LoRa, Wi-Fi, 4G, with solar & battery-powered options
+
+
+  - ✔ Customized wiring diagrams and pressure zoning
+
+
+  - ✔ Bill of materials (BOM) with sourcing recommendation
+
+
+  - ✔ Video tutorials and remote support (WhatsApp, video calls)
+
+
+> ## What Projects Are Supported?
+
+
+  - Greenhouse fertigation systems (hydroponics or soil-based)
+
+
+  - Orchard and open-field drip irrigation plans
+
+
+  - Municipal park and landscaping irrigation design
+
+
+  - Smart farming deployments with cloud platform integration
+
+
+> ## Value to Distributors & EPC Contractors
+
 
 → Our services reduce your engineering time, improve quotation accuracy, and help win international bids with ready-to-use technical documents.
 
-  #### ❌ Hidden Costs of Traditional Systems
 
-  - Incompatible equipment between pump, controller, valves
-  - Repeated purchases due to misconfiguration
-  - Long installation time, lack of guidance 
-  - No remote support, missing diagrams
+  - ### ❌ Hidden Costs of Traditional Systems
 
-  #### ✅ PKYDrip’s One-Stop Delivery Benefits
 
-  - Pre-tested kits with matched components
-  - Wiring-ready assemblies to reduce on-site errors
-  - Complete BOM + video guide + technician assistance
+    - Incompatible equipment between pump, controller, valves
 
-> ### Available Documents
 
-- 🔧 Technical wiring diagrams
-- 📐 CAD irrigation layout plans
-- 🧪 Fertilizer dosing strategy guides
-- 💰 Quotation & BOM sheet
-- 🖥 Cloud platform demo access
+    - Repeated purchases due to misconfiguration
+
+
+    - Long installation time, lack of guidance 
+
+
+    - No remote support, missing diagrams
+
+
+  - ### ✅ PKYDrip’s One-Stop Delivery Benefits
+
+
+    - Pre-tested kits with matched components
+
+
+    - Wiring-ready assemblies to reduce on-site errors
+
+
+    - Complete BOM + video guide + technician assistance
+
+    
+> ## Available Documents
+
+
+  - 🔧 Technical wiring diagrams
+
+
+  - 📐 CAD irrigation layout plans
+
+
+  - 🧪 Fertilizer dosing strategy guides
+
+
+  - 💰 Quotation & BOM sheet
+
+
+  - 🖥 Cloud platform demo access
+
+  
 
