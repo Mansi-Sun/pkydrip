@@ -4,15 +4,25 @@
 
 {{ $data := index site.Data site.Language.Lang }}
 
-{{ with .Params.products }}
+<!-- Category Description -->
+{{ with .Params.description }}
+<section class="section-sm">
+  <div class="container">
+    <h1 class="mb-3">Description</h1>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ end }}
 
+<!-- Product Cards -->
+{{ with .Params.products }}
 <section class="section-sm">
   <div class="container">
     <div class="row">
       {{ range . }}
       <div class="col-md-4 mb-4">
         <div class="card h-100 border p-3">
-          <img src="{{ .image | relURL }}" class="card-img-top mb-3" alt="{{ .name }}" style="width:320px; height:430px; object-fit:cover;">
+          <img src="{{ .image | relURL }}" class="card-img-top mb-3 rounded product-img" alt="{{ .name }}">
           <h5 class="card-title">{{ .name }}</h5>
           <p class="card-text">{{ .summary }}</p>
           <a href="{{ .url }}" class="btn btn-primary">View Product</a>
@@ -22,24 +32,13 @@
     </div>
   </div>
 </section>
-
-{{ end }}
-
-<!-- Category Description -->
-{{ with .Params.description }}
-<section class="section-sm">
-  <div class="container">
-    <h3 class="mb-3">Description</h3>
-    <p>{{ . }}</p>
-  </div>
-</section>
 {{ end }}
 
 <!-- Models Comparison -->
 {{ with .Params.models }}
 <section class="section-sm">
   <div class="container">
-    <h3 class="mb-3">Models</h3>
+    <h1 class="mb-3">Models</h1>
     <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead class="table-light">
@@ -49,7 +48,7 @@
             <th>Monitoring</th>
             <th>Pump Power</th>
             <th>Application</th>
-            <th></th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>
@@ -70,11 +69,40 @@
 </section>
 {{ end }}
 
+<!-- How To Choose -->
+{{ with .Params.choose }}
+<section class="section-sm">
+  <div class="container">
+    <h1 class="mb-3">How To Choose The Right Product?</h1>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
+<!-- FAQ -->
+{{ with .Params.faq }}
+<section class="section-sm">
+  <div class="container">
+    <h1 class="mb-3">Frequently Asked Questions</h1>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
 <!-- Contact Us -->
 <section class="section-sm">
   <div class="container text-center">
     <a href="https://wa.me/+8617395297329" class="btn btn-primary btn-lg">Contact Us</a>
   </div>
 </section>
+
+<style>
+.product-img {
+  width: 260px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+</style>
 
 {{ end }}

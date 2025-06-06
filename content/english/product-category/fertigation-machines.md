@@ -1,6 +1,7 @@
 ---
 title: "Fertigation Machines"
-description: "Our Fertigation System is an advanced solution that combines irrigation and fertilization, delivering precise nutrient management for agricultural and horticultural applications. Featuring cutting-edge sensors, the system continuously monitors and adjusts pH, EC(electrical conductivity), and nutrient levels, ensuring optimal plant health and growth."
+description: >
+  Our Fertigation System is an advanced solution that combines irrigation and fertilization, delivering precise nutrient management for agricultural and horticultural applications. Featuring cutting-edge sensors, the system continuously monitors and adjusts pH, EC(electrical conductivity), and nutrient levels, ensuring optimal plant health and growth.
 type: "product-category"
 layout: "product-category/single"
 bg_image: "images/slider-bg.webp"
@@ -37,6 +38,15 @@ contact:
   text: "Need help choosing the right model? Contact our team for expert advice."
   button_label: "Get in Touch"
   button_url: "https://wa.me/8617395297329"
+
+choose: "Choosing the right fertigation unit depends on your crop type, irrigation area, fertilizer strategy, and control needs. Below is a simple guide to help you decide:
+
+  ✔ Home Garden or Small Greenhouse: Use 1-channel manual unit or timer controller
+  ✔ Greenhouse with up to 3 different fertilizer types: PKY-FG301 – 3-Channel Machine
+  ✔ Greenhouse or Orchard with EC/pH monitoring needs: PKY-FG401 – 4-Channel with EC/pH
+  ✔ Multiple large zones with custom fertilizer plans: Ask us about the PKY-FG701 (7-channel) version
+  If you’re not sure, send us your irrigation area, crop type, and preferred control style. We’ll recommend the best solution."
+
 ---
 >
 **What is a Fertigation System?**
