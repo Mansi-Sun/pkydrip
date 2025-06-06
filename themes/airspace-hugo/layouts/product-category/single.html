@@ -18,9 +18,7 @@
 {{ with .Params.products }}
 <section class="section-sm">
   <div class="container">
-    <div class="row">
-      <h1 class="mb-3">Product List</h1>
-    </div>
+    <h1 class="mb-3">Product List</h1>
     <div class="row">
       {{ range . }}
       <div class="col-md-4 mb-4">
@@ -85,10 +83,10 @@
 <!-- FAQ -->
 <section class="section-sm">
   <div class="container">
-    <h2 class="mb-4">Frequently Asked Questions</h2>
+    <h1 class="mb-4">Frequently Asked Questions</h1>
     {{ range .Params.faq }}
     <div class="mb-4">
-      <h5 class="text-success">Q: {{ .question }}</h5>
+      <h4 class="text-success">Q: {{ .question }}</h4>
       <p class="ms-3">A: {{ .answer }}</p>
     </div>
     {{ end }}
