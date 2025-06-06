@@ -4,6 +4,7 @@ description: ""
 draft: false
 image : "images/portfolio/international.webp"
 bg_image: "images/call-to-action-bg.jpg"
+type: "sv"
 layout: "sv/single"
 category: [ "Service" ]
 package:
