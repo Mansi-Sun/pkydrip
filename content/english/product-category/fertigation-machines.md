@@ -39,17 +39,16 @@ contact:
   button_label: "Get in Touch"
   button_url: "https://wa.me/8617395297329"
 
-choose: "Choosing the right fertigation unit depends on your crop type, irrigation area, fertilizer strategy, and control needs. Below is a simple guide to help you decide:
-
-  ✔ Home Garden or Small Greenhouse: Use 1-channel manual unit or timer controller
-  ✔ Greenhouse with up to 3 different fertilizer types: PKY-FG301 – 3-Channel Machine
-  ✔ Greenhouse or Orchard with EC/pH monitoring needs: PKY-FG401 – 4-Channel with EC/pH
-  ✔ Multiple large zones with custom fertilizer plans: Ask us about the PKY-FG701 (7-channel) version
+choose: |
+  - Choosing the right fertigation unit depends on your crop type, irrigation area, fertilizer strategy, and control needs. Below is a simple guide to help you decide:
+  - ✔ Home Garden or Small Greenhouse: Use 1-channel manual unit or timer controller
+  - ✔ Greenhouse with up to 3 different fertilizer types: PKY-FG301 – 3-Channel Machine
+  - ✔ Greenhouse or Orchard with EC/pH monitoring needs: PKY-FG401 – 4-Channel with EC/pH
+  - ✔ Multiple large zones with custom fertilizer plans: Ask us about the PKY-FG701 (7-channel) version
   If you’re not sure, send us your irrigation area, crop type, and preferred control style. We’ll recommend the best solution."
 
 ---
->
-**What is a Fertigation System?**
+> **What is a Fertigation System?**
 A fertigation system integrates irrigation and fertilizer delivery into one automated platform. PKYDrip’s fertigation units allow precise nutrient mixing, automatic scheduling, and multi-zone irrigation control with support for EC/pH monitoring and cloud connectivity.
 
 Whether you manage a greenhouse, orchard, or open-field irrigation project, our modular designs adapt to your operation scale and control needs.

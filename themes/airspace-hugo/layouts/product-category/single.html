@@ -21,6 +21,7 @@
     <div class="row">
       {{ range . }}
       <div class="col-md-4 mb-4">
+        <h1 class="mb-3">Product List</h1>
         <div class="card h-100 border p-3">
           <img src="{{ .image | relURL }}" class="card-img-top mb-3 rounded product-img" alt="{{ .name }}">
           <h5 class="card-title">{{ .name }}</h5>
@@ -74,7 +75,7 @@
 <section class="section-sm">
   <div class="container">
     <h1 class="mb-3">How To Choose The Right Product?</h1>
-    <p>{{ . }}</p>
+    <p>{{ . | markdownify}}</p>
   </div>
 </section>
 {{ end }}
@@ -83,18 +84,38 @@
 {{ with .Params.faq }}
 <section class="section-sm">
   <div class="container">
-    <h1 class="mb-3">Frequently Asked Questions</h1>
-    <p>{{ . }}</p>
+    <h2 class="mb-3">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      {{ range $index, $item := . }}
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="heading{{ $index }}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $index }}" aria-expanded="false" aria-controls="collapse{{ $index }}">
+            {{ $item.question }}
+          </button>
+        </h2>
+        <div id="collapse{{ $index }}" class="accordion-collapse collapse" aria-labelledby="heading{{ $index }}" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            {{ $item.answer }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
   </div>
 </section>
 {{ end }}
 
 <!-- Contact Us -->
-<section class="section-sm">
+{{ with .Params.contact }}
+<section class="section-sm bg-light">
   <div class="container text-center">
-    <a href="https://wa.me/+8617395297329" class="btn btn-primary btn-lg">Contact Us</a>
+    <h2 class="mb-3">Contact Us</h2>
+    <p class="lead mb-4">{{ .text }}</p>
+    <a href="{{ .button_url }}" target="_blank" class="btn btn-success btn-lg">{{ .button_label }}</a>
   </div>
 </section>
+{{ end }}
+
 
 <style>
 .product-img {
