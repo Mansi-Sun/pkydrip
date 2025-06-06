@@ -4,6 +4,7 @@ description: ""
 draft: false
 image : "images/portfolio/international.webp"
 bg_image: "images/call-to-action-bg.jpg"
+layout: "sv/single"
 category: [ "Service" ]
 package:
   - name: "Basic Irrigation Plan"
