@@ -10,21 +10,24 @@ category: [ "Service" ]
 package:
   - name: "Basic Irrigation Plan"
     scope: "Small greenhouses, <2,000 m²"
-    content: "- Device selection <br>
-              - Irrigation zone suggestion <br>
-              - Video or PDF manual "
+    content: |
+      - Device selection
+      - Irrigation zone suggestion
+      - Video or PDF manual
     price: "$80 – $150"
   - name: "Fertigation + Sensor Design"
     scope: "EC/pH fertigation projects"
-    content: "- Dosing plan + fertilizer map <br>
-              - EC/pH integration guide <br>
-              - BOM with pump & valve sizes"
+    content: |
+      - Dosing plan + fertilizer map
+      - EC/pH integration guide
+      - BOM with pump & valve sizes
     price: "$200 – $500"
   - name: "Custom IoT System Integration"
     scope: "Multi-zone remote control systems"
-    content: "- LoRa/WiFi controller mapping <br>
-              - Cloud platform access <br>
-              - Full diagram + remote training"
+    content: |
+      - LoRa/WiFi controller mapping <br>
+      - Cloud platform access <br>
+      - Full diagram + remote training
     price: "$500 – $1000+"
 packagenote: "This table outlines reference pricing for our international technical services. Final costs depend on the project complexity, location, and service scope. All prices are in USD. For large-scale commercial greenhouses or orchard networks, please request a custom quotation. Long-term partners may receive service credits or discounts."
 service:
@@ -64,14 +67,12 @@ servicenote: "Choose the service level that fits your project. We support flexib
 Basic support is free for most small projects. Pro and OEM packages are priced depending on complexity. OEM partners may receive long-term service credits."
 ---
 <div style="background-color:#b1ecb1; padding: 15px; border-radius: 6px;">
-
-> We offer complete technical services for irrigation and fertigation projects across the Middle East, Australia, Southeast Asia, and Africa. Whether you are a grower, integrator, or distributor, we support you from planning to commissioning.
-
+We offer complete technical services for irrigation and fertigation projects across the Middle East, Australia, Southeast Asia, and Africa. Whether you are a grower, integrator, or distributor, we support you from planning to commissioning.
 </div>
 
 
 
-## What We Provide
+> ### What We Provide
 
 - ✔ Device selection: irrigation controllers, sensors, valves, pumps
 - ✔ Irrigation layout & fertigation strategy (3/4/7 channel systems)
@@ -81,35 +82,35 @@ Basic support is free for most small projects. Pro and OEM packages are priced d
 - ✔ Video tutorials and remote support (WhatsApp, video calls)
 
 
-## What Projects Are Supported?
+> ### What Projects Are Supported?
 
 - Greenhouse fertigation systems (hydroponics or soil-based)
 - Orchard and open-field drip irrigation plans
 - Municipal park and landscaping irrigation design
 - Smart farming deployments with cloud platform integration
 
-## Value to Distributors & EPC Contractors
+> ### Value to Distributors & EPC Contractors
 
 → Our services reduce your engineering time, improve quotation accuracy, and help win international bids with ready-to-use technical documents.
 
-### ❌ Hidden Costs of Traditional Systems
+  #### ❌ Hidden Costs of Traditional Systems
 
-- Incompatible equipment between pump, controller, valves
-- Repeated purchases due to misconfiguration
-- Long installation time, lack of guidance 
-- No remote support, missing diagrams
+  - Incompatible equipment between pump, controller, valves
+  - Repeated purchases due to misconfiguration
+  - Long installation time, lack of guidance 
+  - No remote support, missing diagrams
 
-### ✅ PKYDrip’s One-Stop Delivery Benefits
+  #### ✅ PKYDrip’s One-Stop Delivery Benefits
 
-- Pre-tested kits with matched components
-- Wiring-ready assemblies to reduce on-site errors
-- Complete BOM + video guide + technician assistance
+  - Pre-tested kits with matched components
+  - Wiring-ready assemblies to reduce on-site errors
+  - Complete BOM + video guide + technician assistance
 
-## Available Documents
+> ### Available Documents
 
-🔧 Technical wiring diagrams
-📐 CAD irrigation layout plans
-🧪 Fertilizer dosing strategy guides
-💰 Quotation & BOM sheet
-🖥 Cloud platform demo access
+- 🔧 Technical wiring diagrams
+- 📐 CAD irrigation layout plans
+- 🧪 Fertilizer dosing strategy guides
+- 💰 Quotation & BOM sheet
+- 🖥 Cloud platform demo access
 

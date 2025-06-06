@@ -238,6 +238,7 @@
       "portfolio-hover",
       "portfolio-item",
       "portfolio-menu",
+      "portfolio-single-page",
       "portfolio-work",
       "post",
       "post-content",
@@ -255,6 +256,7 @@
       "product-content",
       "product-img",
       "product-single-page",
+      "project-content",
       "pull-left",
       "rounded",
       "row",
@@ -302,6 +304,8 @@
       "widget-title"
     ],
     "ids": [
+      "-hidden-costs-of-traditional-systems",
+      "-pkydrips-one-stop-delivery-benefits",
       "1-plan-adaptability",
       "1overview",
       "2-data-we-collect",
@@ -314,6 +318,7 @@
       "TableOfContents",
       "advantages-of-this-irrigation-solution",
       "approach",
+      "available-documents",
       "background",
       "basic-situation-of-farmland",
       "commodity-details-in-this-irrigation-solution",
@@ -357,11 +362,14 @@
       "subject",
       "supplies-needed-for-this-irrigation",
       "system-composition",
+      "value-to-distributors--epc-contractors",
       "vision",
       "water-purification",
       "water-quality-and-soil-testing",
       "water-supply",
-      "welcome-to-airspace"
+      "welcome-to-airspace",
+      "what-projects-are-supported",
+      "what-we-provide"
     ]
   }
 }

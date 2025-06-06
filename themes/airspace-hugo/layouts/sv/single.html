@@ -12,16 +12,6 @@
         <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
         {{ end }}
       </div>
-      <div class="col-md-4">
-        <div class="project-details">
-          <h4>Project Details</h4>
-          <ul>
-            {{ range .Params.information }}
-            <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -30,79 +20,89 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-{{ end }}
-
-{{ with .Params.package }}
-<section class="section-sm">
-  <div class="container">
-    <h1 class="mb-3">Standard Project Service Packages</h1>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead class="table-light">
-          <tr>
-            <th>Service Package</th>
-            <th>Application Scope</th>
-            <th>What's Included</th>
-            <th>Estimated Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range . }}
-          <tr>
-            <td>{{ .name }}</td>
-            <td>{{ .scope }}</td>
-            <td>{{ .content }}</td>
-            <td>{{ .price }}</td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
+    <div class="row">
+       <div class="col-md-8">
+        {{ with .Params.package }}
+        <section class="section-sm">
+          <div class="container">
+            <h1 class="mb-3">Standard Project Service Packages</h1>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Service Package</th>
+                      <th>Application Scope</th>
+                      <th>What's Included</th>
+                      <th>Estimated Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   {{ range . }}
+                   <tr>
+                      <td>{{ .name }}</td>
+                      <td>{{ .scope }}</td>
+                      <td>{{ .content | markdownify}}</td>
+                      <td>{{ .price }}</td>
+                    </tr>
+                   {{ end }}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>        
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ with .Params.packagenote }}
+      <div class="alert alert-success mt-3" role="alert">
+       <strong>Note:</strong> {{ . }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+       <div class="col-md-8">
+        {{ with .Params.service }}
+        <section class="section-sm">
+          <div class="container">
+            <h1 class="mb-3">PKYDrip International Service Tiers</h1>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Service Item</th>
+                      <th>Basic</th>
+                      <th>Pro</th>
+                      <th>OEM/Partner</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   {{ range . }}
+                   <tr>
+                      <td>{{ .item }}</td>
+                      <td>{{ .basic }}</td>
+                      <td>{{ .pro }}</td>
+                      <td>{{ .oem }}</td>
+                    </tr>
+                   {{ end }}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>        
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+      {{ with .Params.servicenote }}
+      <div class="alert alert-success mt-3" role="alert">
+       <strong>Note:</strong> {{ . }}
+      </div>
+      {{ end }}
+      </div>
     </div>
   </div>
 </section>
-{{ end }}
 
-{{ with .Params.packagenote }}
-<div class="alert alert-success mt-3" role="alert">
-  <strong>Note:</strong> {{ . }}
-</div>
-{{ end }}
-
-{{ with .Params.service }}
-<section class="section-sm">
-  <div class="container">
-    <h1 class="mb-3">PKYDrip International Service Tiers</h1>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead class="table-light">
-          <tr>
-            <th>Service Item</th>
-            <th>Basic</th>
-            <th>Pro</th>
-            <th>OEM/Partner</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range . }}
-          <tr>
-            <td>{{ .item }}</td>
-            <td>{{ .basic }}</td>
-            <td>{{ .pro }}</td>
-            <td>{{ .oem }}</td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-{{ end }}
-
-{{ with .Params.servicenote }}
-<div class="alert alert-success mt-3" role="alert">
-  <strong>Note:</strong> {{ . }}
-</div>
 {{ end }}
