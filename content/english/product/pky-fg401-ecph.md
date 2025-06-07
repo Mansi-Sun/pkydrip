@@ -6,12 +6,12 @@ bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/pky-fg401.jpg"
 categories: ["fertigation-machines"]
 features:
-  - "Real-time EC/pH monitoring: Ensures precise nutrient balance and prevents over/under-fertilization"
-  - "Auto adjustment loop: System intelligently controls fertilizer channels to maintain target EC/pH" 
-  - "Fully integrated unit:  Pump, dosing, sensors, controller all in one compact frame"
-  - "Multi-zone fertigation:  Manage multiple crops with individual schedules" 
-  - "Cloud connectivity (optional):  Remote access to sensor readings, alarm notifications, and control interface" 
-  - "Expandable architecture:  Supports integration with flow meters, soil sensors, or weather stations" 
+  - "**Real-time EC/pH monitoring:** Ensures precise nutrient balance and prevents over/under-fertilization"
+  - "**Auto adjustment loop:** System intelligently controls fertilizer channels to maintain target EC/pH" 
+  - "**Fully integrated unit:**  Pump, dosing, sensors, controller all in one compact frame"
+  - "**Multi-zone fertigation:**  Manage multiple crops with individual schedules" 
+  - "**Cloud connectivity (optional):** Remote access to sensor readings, alarm notifications, and control interface" 
+  - "**Expandable architecture:**  Supports integration with flow meters, soil sensors, or weather stations" 
 
 specs:
   - label: "Fertilizer Channels"
