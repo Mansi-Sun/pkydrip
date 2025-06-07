@@ -32,10 +32,13 @@ specs:
     value: "7\" color touchscreen with multilingual display (EN/CN/AR)"
   - label: "Structure"
     value: "Aluminum frame + UPVC plumbing + stainless fittings"
+cta: 
+  text: "Contact us at **info@pky-dripirrigation.com** for technical drawings, quotes, or integration advice."
+  button_label: "Chat Now"
+  button_url: "https://wa.me/8617395297329" 
+application: 
+  - "High-value greenhouse crops: tomatoes, peppers, strawberries"
+  - "Precision fertigation for hydroponics and substrate cultivation"
+  - "Centralized fertilization in orchard or field irrigation stations"
 
 ---
-
-The PKY-FG401 is designed for :
-- High-value greenhouse crops: tomatoes, peppers, strawberries
-- Precision fertigation for hydroponics and substrate cultivation
-- Centralized fertilization in orchard or field irrigation stations
