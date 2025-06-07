@@ -55,10 +55,10 @@ choose: |
   - ✔ Home Garden or Small Greenhouse: Use 1-channel manual unit or timer controller
 
 
-  - ✔ Greenhouse with up to 3 different fertilizer types: [PKY-FG301 – 3-Channel Machine](product/pky-fg301/)
+  - ✔ Greenhouse with up to 3 different fertilizer types: [PKY-FG301 – 3-Channel Machine](/product/pky-fg301/)
 
 
-  - ✔ Greenhouse or Orchard with EC/pH monitoring needs: [PKY-FG401 – 4-Channel with EC/pH](product/pky-fg401-ecph/)
+  - ✔ Greenhouse or Orchard with EC/pH monitoring needs: [PKY-FG401 – 4-Channel with EC/pH](/product/pky-fg401-ecph/)
 
 
   - ✔ Multiple large zones with custom fertilizer plans: Ask us about the PKY-FG701 (7-channel) version
