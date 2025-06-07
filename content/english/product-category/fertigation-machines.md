@@ -28,11 +28,20 @@ models:
     pumppower: "Same pump config (customizable)"
     application: "Greenhouses, orchards, EC/pH-sensitive crops"
     url: "/product/pky-fg401-ecph/"
+modelnote: "For larger projects with 5–7 fertilizer sources, we also offer custom **PKY-FG701** units. Please contact us for engineering assistance."
 faq:
   - question: "How far can the system communicate wirelessly?"
     answer: "Our LoRa-based controllers and sensors can transmit up to 3.5 km in open space. For longer distances, you can add signal repeaters or mesh nodes."
   - question: "How long does the battery last in solar-powered terminals?"
     answer: "Typically 1–3 years depending on control frequency and transmission intervals. We offer 3-year and 5-year battery options."
+  - question: "Can the system work without internet?"
+    answer: "Yes. All machines have an offline version. You can operate via touchscreen or local interface even in remote areas without network."
+  - question: "Does it support EC/pH sensor feedback control?"
+    answer: "The PKY-FG401 supports real-time EC/pH detection and automatic fertilizer adjustment based on your target values."
+  - question: "What kind of valves or pipes are required?"
+    answer: "The machine supports electric solenoid valves (DC 12/24V) and standard UPVC/PE/HDPE irrigation pipelines with DE32~DE50 connections."
+  - question: "Can I customize the control logic?"
+    answer: "Yes. Our team can pre-program schedules and conditions according to your crop, zone, and irrigation strategy."
 
 contact:
   text: "Need help choosing the right model? Contact our team for expert advice."
@@ -41,11 +50,23 @@ contact:
 
 choose: |
   - Choosing the right fertigation unit depends on your crop type, irrigation area, fertilizer strategy, and control needs. Below is a simple guide to help you decide:
+
+
   - ✔ Home Garden or Small Greenhouse: Use 1-channel manual unit or timer controller
-  - ✔ Greenhouse with up to 3 different fertilizer types: PKY-FG301 – 3-Channel Machine
-  - ✔ Greenhouse or Orchard with EC/pH monitoring needs: PKY-FG401 – 4-Channel with EC/pH
+
+
+  - ✔ Greenhouse with up to 3 different fertilizer types: [PKY-FG301 – 3-Channel Machine](product/pky-fg301/)
+
+
+  - ✔ Greenhouse or Orchard with EC/pH monitoring needs: [PKY-FG401 – 4-Channel with EC/pH](product/pky-fg401-ecph/)
+
+
   - ✔ Multiple large zones with custom fertilizer plans: Ask us about the PKY-FG701 (7-channel) version
+
+
   If you’re not sure, send us your irrigation area, crop type, and preferred control style. We’ll recommend the best solution."
+
+  
 
 ---
 > **What is a Fertigation System?**
