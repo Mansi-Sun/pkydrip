@@ -309,7 +309,10 @@
       "widget-title"
     ],
     "ids": [
+      "-hardware-customization-options",
       "-hidden-costs-of-traditional-systems",
+      "-localized-platform-upgrades",
+      "-oem-process-flow",
       "-pkydrips-one-stop-delivery-benefits",
       "1-plan-adaptability",
       "1overview",
@@ -374,7 +377,8 @@
       "water-supply",
       "welcome-to-airspace",
       "what-projects-are-supported",
-      "what-we-provide"
+      "what-we-provide",
+      "why-oem-with-pkydrip"
     ]
   }
 }

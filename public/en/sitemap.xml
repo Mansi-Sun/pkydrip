@@ -230,6 +230,8 @@
                 href="http://localhost:1313/author/mark-dinn/"
                 />
   </url><url>
+    <loc>http://localhost:1313/sv/oem/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/open-field-solutions/</loc>
   </url><url>
     <loc>http://localhost:1313/pricing/</loc>
