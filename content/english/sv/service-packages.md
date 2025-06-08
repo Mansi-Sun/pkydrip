@@ -6,7 +6,7 @@ image : "images/portfolio/international.webp"
 bg_image: "images/call-to-action-bg.jpg"
 type: "sv"
 layout: "sv/single"
-category: [ "Service" ]
+category: [ "Technical Service" ]
 package:
   - name: "Basic Irrigation Plan"
     scope: "Small greenhouses, <2,000 m²"
