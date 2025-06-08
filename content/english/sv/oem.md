@@ -2,7 +2,7 @@
 title: "OEM Service"
 description: ""
 draft: false
-image : "images/portfolio/oem.png"
+image : "images/portfolio/oem.webp"
 bg_image: "images/call-to-action-bg.jpg"
 type: "sv"
 layout: "sv/single"
