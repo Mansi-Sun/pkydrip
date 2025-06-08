@@ -34,13 +34,12 @@
   </div>
 </section>
 {{ end }}
-
+{{ with .Params.models }}
 <!-- Models Comparison -->
 <section class="section-sm">
   <div class="container">
     <h1 class="mb-3">Models</h1>
     <div class="table-responsive">
-    {{ with .Params.models }}
       <table class="table table-bordered table-striped">
         <thead class="table-light">
           <tr>
@@ -65,20 +64,21 @@
           {{ end }}
         </tbody>
       </table>
-      {{ end }}
     </div>
+
+    {{ with $.Params.modelnote }}
     <div class="row">
-      <!-- Note for Model Comparison -->
-      {{ with .Params.modelnote }}
       <section class="section-sm">
-       <div class="alert alert-success mt-3" role="alert">
-          <strong>Note:</strong> {{ . |markdownify }}
+        <div class="alert alert-success mt-3" role="alert">
+          <strong>Note:</strong> {{ . | markdownify }}
         </div>
       </section>
-      {{ end }}
     </div>
+    {{ end }}
+
   </div>
 </section>
+{{ end }}
 
 
 <!-- How To Choose -->
@@ -91,11 +91,12 @@
 </section>
 {{ end }}
 
+{{ with .Params.faq }}
 <!-- FAQ -->
 <section class="section-sm">
   <div class="container">
     <h1 class="mb-4">Frequently Asked Questions</h1>
-    {{ range .Params.faq }}
+    {{ range . }}
     <div class="mb-4">
       <h4 class="text-success">Q: {{ .question }}</h4>
       <p class="ms-3">A: {{ .answer }}</p>
@@ -103,7 +104,7 @@
     {{ end }}
   </div>
 </section>
-
+{{ end }}
 
 <!-- Contact Us -->
 {{ with .Params.contact }}
