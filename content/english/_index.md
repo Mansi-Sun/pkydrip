@@ -35,8 +35,8 @@ portfolio:
   "
   button:
     enable: true
-    label: "Customize Now"
-    link: "project/"
+    label: "Learn More"
+    link: "/product-category/fertigation-machines"
 
 
 ############################# Service ############################
@@ -54,7 +54,7 @@ cta:
   button:
     enable: true
     label: "Learn More"
-    link: "contact/"
+    link: "/sv/service-packages"
 
 ############################# Funfacts ###############################
 funfacts:
