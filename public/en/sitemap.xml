@@ -274,6 +274,10 @@
   </url><url>
     <loc>http://localhost:1313/author/sandy/</loc>
   </url><url>
+    <loc>http://localhost:1313/categories/sensor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product-category/sensors-weather-stations/</loc>
+  </url><url>
     <loc>http://localhost:1313/service/</loc>
     <xhtml:link
                 rel="alternate"
@@ -327,5 +331,9 @@
                 hreflang="en-US"
                 href="http://localhost:1313/tags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/product/wind-speed-copy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product/wind-speed/</loc>
   </url>
 </urlset>

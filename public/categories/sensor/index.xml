@@ -1,33 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Our Products on PKYDRIP</title>
-    <link>http://localhost:1313/product/</link>
-    <description>Recent content in Our Products on PKYDRIP</description>
+    <title>Sensor on PKYDRIP</title>
+    <link>http://localhost:1313/categories/sensor/</link>
+    <description>Recent content in Sensor on PKYDRIP</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/product/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PKY-FG301 – 3-Channel Intelligent Fertigation Machine</title>
-      <link>http://localhost:1313/product/pky-fg301/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/product/pky-fg301/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PKY-FG401 4-Channel Fertigation Machine with EC/pH Monitoring</title>
-      <link>http://localhost:1313/product/pky-fg401-ecph/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/product/pky-fg401-ecph/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PKYDrip Wired Master Controller – Model PKY-60W</title>
-      <link>http://localhost:1313/product/pky-60w/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/product/pky-60w/</guid>
-      <description>&lt;p&gt;The PKY-60W is designed for :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Field crop irrigation (vegetables, fruits, grains)&lt;/li&gt;&#xA;&lt;li&gt;Greenhouse intelligent irrigation&lt;/li&gt;&#xA;&lt;li&gt;Orchard &amp;amp; vineyard drip irrigation&lt;/li&gt;&#xA;&lt;li&gt;Urban landscape &amp;amp; park irrigation&lt;/li&gt;&#xA;&lt;li&gt;Golf course / sports field systems&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/categories/sensor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Temperature/Humidity/LUX Sensor</title>
       <link>http://localhost:1313/product/wind-speed-copy/</link>
