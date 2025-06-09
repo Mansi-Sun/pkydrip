@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 880px; margin: auto; line-height: 1.6; }
+    h1, h2, h3 { color: #2E8B57; }
+    img { max-width: 100%; margin: 20px auto; display: block; border: 1px solid #ccc; }
+    .specs, .features, .faq ,.cta { background: #f9f9f9; padding: 15px; border-left: 4px solid #2E8B57; margin: 30px 0; }
+    ul { margin-left: 20px; }
+  </style>
+</head>
+<body>
+<h1>{{ .Title }}</h1>
+
+{{ with .Params.image }}
+  <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+{{ end }}
+
+<h2>Product Overview</h2>
+{{ with .Params.description }}
+  <p>{{ . }}</p>
+{{ end }}
+
+{{ with .Params.specs }}
+<div class="specs">
+  <h3>Technical Specifications</h3>
+  <ul>
+    {{ range .}}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with .Params.features }}
+<div class="features">
+  <h3>Features and Benefits</h3>
+  <ul>
+    {{ range .}}
+    <li>{{ . | markdownify }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with .Params.application }}
+<h2>Application Scenarios</h2>
+  <ul>
+    {{ range .}}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+<div class="cta">
+  <h3>Need Help?</h3>
+  <p><strong>Contact us via</strong>
+  <a href="mailto:info@pky-dripirrigation.com">Email</a> or 
+  <a href="https://wa.me/8617395297329" target="_blank">WhatsApp</a> for drawings, custom EC/pH calibration support, or quotations.</p>
+</div>
+  
+{{ end }}
