@@ -6,18 +6,18 @@
     <lastmod>2025-05-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
+                hreflang="fr-FR"
                 href="http://localhost:1313/fr/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it"
+                hreflang="it-IT"
                 href="http://localhost:1313/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -25,40 +25,112 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/english/</loc>
-    <lastmod>2025-05-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/english/faq/</loc>
-    <lastmod>2025-05-30T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/faq/</loc>
     <lastmod>2025-05-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/faq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/faq/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/message_sent/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/message_sent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/message_sent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/message_sent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/message_sent/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/solution/21-hectares-of-rice-flood-irrigation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/about/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/author/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/author/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
                 href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it"
+                hreflang="it-IT"
                 href="http://localhost:1313/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -66,190 +138,13 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/how-to/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/date-i18n/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/date-i18n/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/date-i18n/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/technical-assistance/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/technology/</loc>
-    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/faq/</loc>
-    <lastmod>2021-04-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/faq/</loc>
-    <lastmod>2021-04-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/faq/</loc>
-    <lastmod>2021-04-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/advice/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/android/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/company/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/company-news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-2/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-3/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-4/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-5/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/french/blog/blog-post-6/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-2/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-3/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-4/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-5/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/german/blog/blog-post-6/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-2/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-3/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-4/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-5/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/italian/blog/blog-post-6/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/legacy-support/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mechine/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/retro/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/message_sent/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/message_sent/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/message_sent/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/message_sent/</loc>
-  </url><url>
-    <loc>http://localhost:1313/message_sent/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/solution/21-hectares-of-rice-flood-irrigation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/solution/21-hectares-of-rice-flood-irrigation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/author/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/co2-sensor/</loc>
-  </url><url>
     <loc>http://localhost:1313/product/co2-sensor/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/design/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/solution/design-agriculture-greenhouses/</loc>
-  </url><url>
     <loc>http://localhost:1313/solution/design-agriculture-greenhouses/</loc>
   </url><url>
-    <loc>http://localhost:1313/german/service/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/solution/10-hectares-of-coconut-tree-drip-irrigation/</loc>
-  </url><url>
     <loc>http://localhost:1313/solution/10-hectares-of-coconut-tree-drip-irrigation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/</loc>
   </url><url>
@@ -258,14 +153,26 @@
     <loc>http://localhost:1313/tags/drip-tape/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product-category/fertigation-machines/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/contact/"
+                />
   </url><url>
     <loc>http://localhost:1313/product-category/fertigation-machines/</loc>
   </url><url>
@@ -275,157 +182,135 @@
   </url><url>
     <loc>http://localhost:1313/tags/greenhouse-solutions/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/sv/service-packages/</loc>
-  </url><url>
     <loc>http://localhost:1313/sv/service-packages/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/solution/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/irrigation-controller/</loc>
   </url><url>
-    <loc>http://localhost:1313/french/author/john-doe/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/author/john-doe/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/author/john-doe/</loc>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/blog/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/blog/"
+                />
   </url><url>
     <loc>http://localhost:1313/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/sv/oem/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/author/mark-dinn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/author/mark-dinn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/author/mark-dinn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/author/mark-dinn/"
+                />
   </url><url>
     <loc>http://localhost:1313/sv/oem/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/open-field-solutions/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/pricing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/pricing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/pricing/</loc>
-  </url><url>
     <loc>http://localhost:1313/pricing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/pricing/"
+                />
   </url><url>
     <loc>http://localhost:1313/product/</loc>
   </url><url>
-    <loc>http://localhost:1313/french/project/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/sv/</loc>
-  </url><url>
     <loc>http://localhost:1313/sv/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/oxygen-sensor/</loc>
   </url><url>
     <loc>http://localhost:1313/product/oxygen-sensor/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product/pky-fg301/</loc>
-  </url><url>
     <loc>http://localhost:1313/product/pky-fg301/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product/pky-fg401-ecph/</loc>
-  </url><url>
     <loc>http://localhost:1313/product/pky-fg401-ecph/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/pky-60w/</loc>
   </url><url>
     <loc>http://localhost:1313/product/pky-60w/</loc>
   </url><url>
     <loc>http://localhost:1313/product-category/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</loc>
-  </url><url>
     <loc>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/rain-sensor/</loc>
   </url><url>
     <loc>http://localhost:1313/product/rain-sensor/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/rain-pipe/</loc>
   </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-3/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-4/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-5/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/project/rio-furniture-6/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-3/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-4/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-5/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/rio-furniture-6/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-3/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-4/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-5/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/project/rio-furniture-6/</loc>
-  </url><url>
     <loc>http://localhost:1313/author/sandy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/author/sandy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/sensor/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product-category/sensors-weather-stations/</loc>
-  </url><url>
     <loc>http://localhost:1313/product-category/sensors-weather-stations/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/service/</loc>
-  </url><url>
-    <loc>http://localhost:1313/french/service/</loc>
-  </url><url>
-    <loc>http://localhost:1313/italian/service/</loc>
-  </url><url>
     <loc>http://localhost:1313/service/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/service/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product-category/irrigation-controller/</loc>
-  </url><url>
     <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product/soil-env/</loc>
-  </url><url>
     <loc>http://localhost:1313/product/soil-env/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/soil-npk/</loc>
   </url><url>
     <loc>http://localhost:1313/product/soil-npk/</loc>
   </url><url>
@@ -433,25 +318,33 @@
   </url><url>
     <loc>http://localhost:1313/tags/sprinkler/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/</loc>
-  </url><url>
     <loc>http://localhost:1313/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/product/tem-hum-lux/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="http://localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="http://localhost:1313/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
   </url><url>
     <loc>http://localhost:1313/product/tem-hum-lux/</loc>
   </url><url>
-    <loc>http://localhost:1313/german/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/project/</loc>
-  </url><url>
-    <loc>http://localhost:1313/german/pricing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/wind-direction/</loc>
-  </url><url>
     <loc>http://localhost:1313/product/wind-direction/</loc>
-  </url><url>
-    <loc>http://localhost:1313/english/product/wind-speed/</loc>
   </url><url>
     <loc>http://localhost:1313/product/wind-speed/</loc>
   </url>
