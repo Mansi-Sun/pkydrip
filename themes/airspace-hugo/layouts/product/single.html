@@ -65,6 +65,14 @@
       </div>
     </div>
     {{ end }}
+    <!-- 内容正文 -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="product-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
     <!-- Contact Us -->
     {{ with .Params.cta }}
     <section class="section-sm bg-light">
@@ -74,14 +82,7 @@
       </div>
     </section>
     {{ end }}
-    <!-- 内容正文 -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <div class="product-content">
-          {{ .Content }}
-        </div>
-      </div>
-    </div>
+
 
   </div>
 </section>

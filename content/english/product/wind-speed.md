@@ -3,7 +3,7 @@ title: "Wind Speed Sensor"
 description: 
 type: "product"
 bg_image: "images/call-to-action-bg.jpg"
-image: "images/product/wind-speed.jpg"
+image: "images/product/wind-speed.webp"
 categories: ["sensor"]
 features:
   - "**Measurement Range:** 0~70 m/s"

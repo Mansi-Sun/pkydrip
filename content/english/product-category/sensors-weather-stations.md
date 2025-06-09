@@ -14,7 +14,7 @@ products:
     url: "/product/tem-hum-lux/"
   - name: "WindSpeed" 
     summary: 
-    image: "images/product/wind-speed.jpg"
+    image: "images/product/wind-speed.webp"
     url: "/product/wind-speed/"
 
 contact:
