@@ -8,11 +8,53 @@
     <language>en-US</language>
     <atom:link href="http://localhost:1313/categories/sensor/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CO2 Sensor</title>
+      <link>http://localhost:1313/product/co2-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/co2-sensor/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/co2-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oxygen Sensor</title>
+      <link>http://localhost:1313/product/oxygen-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/oxygen-sensor/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/oxygen1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rain Sensor</title>
+      <link>http://localhost:1313/product/rain-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/rain-sensor/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/rain-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Moisture Temperature Conductivity Sensor</title>
+      <link>http://localhost:1313/product/soil-env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/soil-env/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-env-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Nitrogen Phosphorus and Potassium Sensor</title>
+      <link>http://localhost:1313/product/soil-npk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/soil-npk/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-npk-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Temperature/Humidity/LUX Sensor</title>
       <link>http://localhost:1313/product/tem-hum-lux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/tem-hum-lux/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux1.webp&#34; alt=&#34;Product Details 1&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux2.webp&#34; alt=&#34;Product Details 2&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux3.webp&#34; alt=&#34;Product Details 3&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux4.webp&#34; alt=&#34;Product Details 4&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux5.webp&#34; alt=&#34;Product Details 5&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux6.webp&#34; alt=&#34;Product Details 6&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux7.webp&#34; alt=&#34;Product Details 7&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux8.webp&#34; alt=&#34;Product Details 8&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux9.webp&#34; alt=&#34;Product Details 9&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux10.webp&#34; alt=&#34;Product Details 10&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wind Direction Sensor</title>
+      <link>http://localhost:1313/product/wind-direction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/wind-direction/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-direction1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wind Speed Sensor</title>

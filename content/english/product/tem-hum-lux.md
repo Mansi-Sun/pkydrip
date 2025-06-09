@@ -23,13 +23,4 @@ cta:
 > Product Details
 
 
-![Product Details 1](/images/product/tem-hum-lux1.webp)
-![Product Details 2](/images/product/tem-hum-lux2.webp)
-![Product Details 3](/images/product/tem-hum-lux3.webp)
-![Product Details 4](/images/product/tem-hum-lux4.webp)
-![Product Details 5](/images/product/tem-hum-lux5.webp)
-![Product Details 6](/images/product/tem-hum-lux6.webp)
-![Product Details 7](/images/product/tem-hum-lux7.webp)
-![Product Details 8](/images/product/tem-hum-lux8.webp)
-![Product Details 9](/images/product/tem-hum-lux9.webp)
-![Product Details 10](/images/product/tem-hum-lux10.webp)
+![Product Details](/images/product/tem-hum-lux1.webp)

@@ -16,6 +16,30 @@ products:
     summary: 
     image: "images/product/wind-speed.webp"
     url: "/product/wind-speed/"
+  - name: "WindDirection" 
+    summary: 
+    image: "images/product/wind-direction.webp"
+    url: "/product/wind-direction/"
+  - name: "SoilEnvironment" 
+    summary: 
+    image: "images/product/soil-env-sensor.webp"
+    url: "/product/soil-env/"
+  - name: "SoilNPK" 
+    summary: 
+    image: "images/product/soil-npk-sensor.webp"
+    url: "/product/soil-npk/"
+  - name: "OxygenSensor" 
+    summary: 
+    image: "images/product/oxygen.webp"
+    url: "/product/oxygen-sensor/"
+  - name: "CO2Sensor" 
+    summary: 
+    image: "images/product/co2-sensor.webp"
+    url: "/product/co2-sensor/"
+  - name: "RainSensor" 
+    summary: 
+    image: "images/product/rain-sensor.webp"
+    url: "/product/rain-sensor/"
 
 contact:
   text: "Need help choosing the right sensor? Contact our team for expert advice."

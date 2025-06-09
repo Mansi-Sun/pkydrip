@@ -138,6 +138,8 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/product/co2-sensor/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/design/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/design-agriculture-greenhouses/</loc>
@@ -260,6 +262,8 @@
   </url><url>
     <loc>http://localhost:1313/sv/</loc>
   </url><url>
+    <loc>http://localhost:1313/product/oxygen-sensor/</loc>
+  </url><url>
     <loc>http://localhost:1313/product/pky-fg301/</loc>
   </url><url>
     <loc>http://localhost:1313/product/pky-fg401-ecph/</loc>
@@ -269,6 +273,8 @@
     <loc>http://localhost:1313/product-category/</loc>
   </url><url>
     <loc>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product/rain-sensor/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/rain-pipe/</loc>
   </url><url>
@@ -304,6 +310,10 @@
   </url><url>
     <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
   </url><url>
+    <loc>http://localhost:1313/product/soil-env/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product/soil-npk/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/solutions/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/sprinkler/</loc>
@@ -333,6 +343,8 @@
                 />
   </url><url>
     <loc>http://localhost:1313/product/tem-hum-lux/</loc>
+  </url><url>
+    <loc>http://localhost:1313/product/wind-direction/</loc>
   </url><url>
     <loc>http://localhost:1313/product/wind-speed/</loc>
   </url>
