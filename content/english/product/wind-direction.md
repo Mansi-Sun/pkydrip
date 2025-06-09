@@ -14,7 +14,4 @@ cta:
   button_label: "Chat Now"
   button_url: "https://wa.me/8617395297329" 
 ---
-> Product Details
-
-
 ![Product Details](/images/product/wind-direction1.webp)

@@ -3,7 +3,7 @@ title: "PKYDrip Wired Master Controller – Model PKY-60W"
 description: "PKYDrip Wired Master Controller (Model PKY-60W) is a professional irrigation control solution designed for agricultural fields, greenhouse cultivation, and municipal landscape irrigation projects. With flexible modular expansion, industrial-grade reliability, and smart management capabilities, PKYDrip provides efficient, stable, and scalable irrigation control for medium to large-scale installations."
 type: "product"
 bg_image: "images/call-to-action-bg.jpg"
-image: "images/products/lora-gateway-1.jpg"
+image: "images/product/lora-gateway-1.jpg"
 categories: ["irrigation-controller"]
 features:
   - "**Product Code:** PKY-60W"

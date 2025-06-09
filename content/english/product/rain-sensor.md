@@ -2,7 +2,6 @@
 title: "Rain Sensor"
 description: 
 type: "product"
-layout: "singlenew"
 bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/rain-sensor.webp"
 categories: ["sensor"]
@@ -19,7 +18,4 @@ cta:
   button_label: "Chat Now"
   button_url: "https://wa.me/8617395297329" 
 ---
-> Product Details
-
-
 ![Product Details](/images/product/rain-sensor1.webp)

@@ -12,14 +12,14 @@
       <link>http://localhost:1313/product/co2-sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/co2-sensor/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/co2-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/co2-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oxygen Sensor</title>
       <link>http://localhost:1313/product/oxygen-sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/oxygen-sensor/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/oxygen1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/oxygen1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>PKY-FG301 – 3-Channel Intelligent Fertigation Machine</title>
@@ -47,42 +47,42 @@
       <link>http://localhost:1313/product/rain-sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/rain-sensor/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/rain-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/rain-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Moisture Temperature Conductivity Sensor</title>
       <link>http://localhost:1313/product/soil-env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/soil-env/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-env-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-env-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Nitrogen Phosphorus and Potassium Sensor</title>
       <link>http://localhost:1313/product/soil-npk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/soil-npk/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-npk-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-npk-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Temperature/Humidity/LUX Sensor</title>
       <link>http://localhost:1313/product/tem-hum-lux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/tem-hum-lux/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wind Direction Sensor</title>
       <link>http://localhost:1313/product/wind-direction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/wind-direction/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-direction1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-direction1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wind Speed Sensor</title>
       <link>http://localhost:1313/product/wind-speed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/product/wind-speed/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Product Details&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-speed1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-speed1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
