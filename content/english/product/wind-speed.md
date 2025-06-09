@@ -19,4 +19,6 @@ cta:
   button_url: "https://wa.me/8617395297329" 
 ---
 > Product Details
-![Product Details](images/product/wind-speed1.webp)
+
+
+![Product Details](/images/product/wind-speed1.webp)
