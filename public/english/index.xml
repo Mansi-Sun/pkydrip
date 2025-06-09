@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PKYDRIP</title>
+    <link>http://localhost:1313/english/</link>
+    <description>Recent content on PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>http://localhost:1313/english/faq/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/english/faq/</guid>
+      <description>&lt;h3 id=&#34;irrigation-planning-basics&#34;&gt;Irrigation Planning Basics&lt;/h3&gt;&#xA;&lt;p&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Q:How do I start planning an irrigation system?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/message_sent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/message_sent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About PKYDRIP</title>
+      <link>http://localhost:1313/english/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drop Us A Note</title>
+      <link>http://localhost:1313/english/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fertigation Machines</title>
+      <link>http://localhost:1313/english/product-category/fertigation-machines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/product-category/fertigation-machines/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is a Fertigation System?&lt;/strong&gt;&#xA;A fertigation system integrates irrigation and fertilizer delivery into one automated platform. PKYDrip’s fertigation units allow precise nutrient mixing, automatic scheduling, and multi-zone irrigation control with support for EC/pH monitoring and cloud connectivity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mark Dinn</title>
+      <link>http://localhost:1313/english/author/mark-dinn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/author/mark-dinn/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.&#xA;Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac ullamcorper.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our Pricing</title>
+      <link>http://localhost:1313/english/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/pricing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sandy</title>
+      <link>http://localhost:1313/english/author/sandy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/author/sandy/</guid>
+      <description>&lt;p&gt;We specialize in the development and production of watersaving irrigation products, such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sensors &amp; Weather Station</title>
+      <link>http://localhost:1313/english/product-category/sensors-weather-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/product-category/sensors-weather-stations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Service</title>
+      <link>http://localhost:1313/english/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/service/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Irrigation Controllers</title>
+      <link>http://localhost:1313/english/product-category/irrigation-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/english/product-category/irrigation-controller/</guid>
+      <description>&lt;p&gt;Our smart irrigation controllers offer a wide range of features to help farmers automate irrigation by zones, schedules, or sensor input. All models are customizable and compatible with most solenoid valves and sensors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
