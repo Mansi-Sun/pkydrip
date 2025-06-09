@@ -2,6 +2,7 @@
 title: "Rain Sensor"
 description: 
 type: "product"
+layout: "singlenew"
 bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/rain-sensor.webp"
 categories: ["sensor"]
