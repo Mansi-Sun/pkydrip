@@ -7,12 +7,13 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    .specs, .features, .faq ,.cta { background: #f9f9f9; padding: 15px; border-left: 4px solid #2E8B57; margin: 30px 0; max-width: 880px; line-height: 1.6; }
+    .content {padding: 20px; max-width: 880px; margin: auto; line-height: 1.6;}
+    .specs, .features, .faq ,.cta { background: #f9f9f9; padding: 15px; border-left: 4px solid #2E8B57; margin: 30px 0; }
     ul { margin-left: 20px; }
   </style>
 </head>
 <body>
-
+<main class="content">
 {{ with .Params.image }}
   <img src="{{ . | relURL }}" alt="{{ $.Title }}">
 {{ end }}
@@ -53,11 +54,11 @@
   </ul>
 {{ end }}
 
-<div class="cta container text-center">
+<div class="cta">
   <h3>Need Help?</h3>
   <p>Contact us via
   <a href="mailto:info@pky-dripirrigation.com">Email</a> or 
   <a href="https://wa.me/8617395297329" target="_blank">WhatsApp</a> for drawings, custom EC/pH calibration support, or quotations.</p>
 </div>
-  
+</main>  
 {{ end }}

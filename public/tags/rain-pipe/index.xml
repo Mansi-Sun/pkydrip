@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rain-Pipe on PKYDRIP</title>
+    <link>http://localhost:1313/tags/rain-pipe/</link>
+    <description>Recent content in Rain-Pipe on PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/tags/rain-pipe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rain Pipe Irrigation Solution for 4 Hectares of Corn Field</title>
+      <link>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Rain pipe plays an important role in the corn field irrigation. Its low price and uniform spraying make it the first choice of many growers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
