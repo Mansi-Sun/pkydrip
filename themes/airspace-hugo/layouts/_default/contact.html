@@ -6,7 +6,7 @@
   <div class="container">
     {{ with site.Params.contact.form }}{{ if .enable -}}
     <div class="row">
-      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="/" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
+      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="/message_sent" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
         <input type="hidden" name="form-name" value="contact_{{ $.Language.Lang }}">
         <div class="col-md-6 col-sm-12">
           <div class="block">
