@@ -4,7 +4,7 @@ description: "The PKY-FG401 is a high-performance fertigation system designed wi
 type: "product"
 bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/pky-fg401.jpg"
-categories: ["fertigation-machines"]
+categories: ["fertigation-system"]
 features:
   - "**Real-time EC/pH monitoring:** Ensures precise nutrient balance and prevents over/under-fertilization"
   - "**Auto adjustment loop:** System intelligently controls fertilizer channels to maintain target EC/pH" 

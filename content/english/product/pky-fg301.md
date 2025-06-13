@@ -4,7 +4,7 @@ description: "The PKY-FG301 is a professional-grade fertigation machine with 3 f
 type: "product"
 bg_image: "images/call-to-action-bg.jpg"
 image: "images/product/pky-fg301.jpg"
-categories: ["fertigation-machines"]
+categories: ["fertigation-system"]
 features:
   - "**3-channel mixing:** Individually calibrated fertilizer dosing → precision crop nutrition"
   - "**Single-pump design**: Compact system handles suction, mixing, delivery → easier setup" 

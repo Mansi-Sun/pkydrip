@@ -174,9 +174,9 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/product-category/fertigation-machines/</loc>
+    <loc>http://localhost:1313/fertigation-system/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/fertigation-machines/</loc>
+    <loc>http://localhost:1313/categories/fertigation-system/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/flood-irrigation/</loc>
   </url><url>
@@ -282,7 +282,7 @@
   </url><url>
     <loc>http://localhost:1313/categories/sensor/</loc>
   </url><url>
-    <loc>http://localhost:1313/product-category/sensors-weather-stations/</loc>
+    <loc>http://localhost:1313/sensors-weather-stations/</loc>
   </url><url>
     <loc>http://localhost:1313/service/</loc>
     <xhtml:link
@@ -308,7 +308,7 @@
   </url><url>
     <loc>http://localhost:1313/categories/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/product-category/irrigation-controller/</loc>
+    <loc>http://localhost:1313/irrigation-controller/</loc>
   </url><url>
     <loc>http://localhost:1313/product/soil-env/</loc>
   </url><url>

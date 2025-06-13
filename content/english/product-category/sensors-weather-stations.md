@@ -4,6 +4,7 @@ description: >
   Our intelligent sensors are designed to provide accurate, real time data to enhance decision-making in agricultural and irrigation management.
   Equipped with advanced technology, these sensors monitor key environmental and soil parameters, enabling precision and efficiency in resource utilization.
 type: "product-category"
+url: "/sensors-weather-stations/"
 layout: "product-category/single"
 bg_image: "images/slider-bg.webp"
 tagline: 
