@@ -36,7 +36,7 @@ portfolio:
   button:
     enable: true
     label: "Learn More"
-    link: "/product-category/fertigation-machines"
+    link: "/fertigation-system"
 
 
 ############################# Service ############################

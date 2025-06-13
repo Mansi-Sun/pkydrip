@@ -10,7 +10,7 @@ categories:
   - title: "Sensors & Weather Stations"
     description: "Soil moisture, temperature, NPK, EC/pH sensors and compact weather stations for automation."
     url: "/sensors-weather-stations/"
-  - title: "Fertigation Machines"
+  - title: "Fertigation System"
     description: "3–6 channel injector systems with tank valves, EC/pH feedback, dosing algorithm, and RS485 control."
     url: "/fertigation-system/"
 ---
