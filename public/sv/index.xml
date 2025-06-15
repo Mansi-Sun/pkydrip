@@ -8,6 +8,13 @@
     <language>en-US</language>
     <atom:link href="http://localhost:1313/sv/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>🌾 Smart Fertigation &amp; Irrigation Solutions for Growers</title>
+      <link>http://localhost:1313/fertigation-irrigation-solution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fertigation-irrigation-solution/</guid>
+      <description>&lt;h2 id=&#34;-plug-and-play-controllers--no-complex-setup&#34;&gt;🔧 Plug-and-Play Controllers – No Complex Setup&lt;/h2&gt;&#xA;&lt;p&gt;Our fertigation machines and irrigation controllers are built for real farms, not factories. Whether you&amp;rsquo;re managing a fruit orchard, greenhouse, or open-field vegetable farm, you get:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>International Project Technical Service Package</title>
       <link>http://localhost:1313/sv/service-packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -20,13 +27,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/sv/oem/</guid>
       <description>&lt;div style=&#34;background-color:#b1ecb1; padding: 15px; border-radius: 6px;&#34;&gt;&#xA;Empowering irrigation brands and system integrators with flexible, localized and professional smart agriculture solutions.&#xA;&lt;/div&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;h2 id=&#34;why-oem-with-pkydrip&#34;&gt;Why OEM with PKYDrip?&lt;/h2&gt;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;✔️ Extensive experience in smart irrigation and fertigation automation&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smart Fertigation &amp; Irrigation Solutions for Growers</title>
-      <link>http://localhost:1313/fertigation-irrigation-solution/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fertigation-irrigation-solution/</guid>
-      <description>&lt;h2 id=&#34;-plug-and-play-controllers--no-complex-setup&#34;&gt;🔧 Plug-and-Play Controllers – No Complex Setup&lt;/h2&gt;&#xA;&lt;p&gt;Our fertigation machines and irrigation controllers are built for real farms, not factories. Whether you&amp;rsquo;re managing a fruit orchard, greenhouse, or open-field vegetable farm, you get:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -70,6 +70,8 @@
                 href="http://localhost:1313/message_sent/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fertigation-irrigation-solution/</loc>
+  </url><url>
     <loc>http://localhost:1313/solution/21-hectares-of-rice-flood-irrigation/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
@@ -307,8 +309,6 @@
                 />
   </url><url>
     <loc>http://localhost:1313/categories/services/</loc>
-  </url><url>
-    <loc>http://localhost:1313/fertigation-irrigation-solution/</loc>
   </url><url>
     <loc>http://localhost:1313/irrigation-controller/</loc>
   </url><url>

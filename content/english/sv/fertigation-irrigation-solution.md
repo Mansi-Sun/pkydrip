@@ -1,5 +1,5 @@
 ---
-title: "Smart Fertigation & Irrigation Solutions for Growers"
+title: "🌾 Smart Fertigation & Irrigation Solutions for Growers"
 tagline: "Stop wasting water and fertilizer. Discover how over 100 farms worldwide save costs with PKYDrip."
 description: ""
 draft: false
@@ -16,6 +16,9 @@ url: "/fertigation-irrigation-solution/"
 Our fertigation machines and irrigation controllers are built for real farms, not factories. Whether you're managing a fruit orchard, greenhouse, or open-field vegetable farm, you get:
 
 
+<div style="margin-left: 40px;">
+
+
   - ✅ Pre-tested controller with 3 or 4-channel fertigation ports
 
 
@@ -28,10 +31,16 @@ Our fertigation machines and irrigation controllers are built for real farms, no
   - ✅ Works even in areas without internet or grid electricity (solar-powered version available)
 
 
+</div>
+
+
 ## 🌍 Trusted by Growers Worldwide
 
 
 From Saudi date plantations to Vietnamese dragon fruit farms, PKYDrip systems have been used in more than 100 projects. We offer:
+
+
+<div style="margin-left: 40px;">
 
 
   - 📦 Complete system design + bill of materials
@@ -45,11 +54,15 @@ From Saudi date plantations to Vietnamese dragon fruit farms, PKYDrip systems ha
   
   - Our focus is on supporting real-world implementation — not just hardware sales.
 
+
+</div>
+  
   
 ## 💡 Why Choose PKYDrip?
 
 
 <div style="margin-left: 40px;">
+
   - ✅ More affordable than European systems like Priva or Netafim
 
 
@@ -57,22 +70,28 @@ From Saudi date plantations to Vietnamese dragon fruit farms, PKYDrip systems ha
 
 
   - ✅ Service-focused — we provide remote setup help, video guidance, and crop-specific irrigation logic
+
 </div>
 
 
 ## 📘 Sample Case Studies
 
 
+<div style="margin-left: 40px;">
+
   - **Kenya Mango Farm:** 4-zone drip system + 3-channel fertigation unit with solar power
 
 
   - **Oman Greenhouse:** EC/pH-controlled fertigation with LoRa-based remote valves
 
+</div>
+
 
 Want a solution tailored to your land and crops? Contact our team for a free plan.  
 
+
 <div align="center">
-  <a href="https://example.com" target="_blank" style="
+  <a href="https://wa.me/+8617395297329" target="_blank" style="
     display: inline-block;
     background-color: #28a745;
     color: white;
