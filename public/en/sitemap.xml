@@ -308,6 +308,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/services/</loc>
   </url><url>
+    <loc>http://localhost:1313/fertigation-irrigation-solution/</loc>
+  </url><url>
     <loc>http://localhost:1313/irrigation-controller/</loc>
   </url><url>
     <loc>http://localhost:1313/product/soil-env/</loc>
