@@ -66,6 +66,9 @@ service:
 servicenote: "Choose the service level that fits your project. We support flexible scaling from single-unit assistance to full OEM engineering packages.<br>
 Basic support is free for most small projects. Pro and OEM packages are priced depending on complexity. OEM partners may receive long-term service credits."
 ---
+{{<centerimg src="/images/portfolio/international.webp" alt="service packages">}}
+
+
 <div style="background-color:#b1ecb1; padding: 15px; border-radius: 6px;">
 We offer complete technical services for irrigation and fertigation projects across the Middle East, Australia, Southeast Asia, and Africa. Whether you are a grower, integrator, or distributor, we support you from planning to commissioning.
 </div>

@@ -8,6 +8,9 @@ type: "sv"
 layout: "sv/single"
 category: [ "OEM" ]
 ---
+{{<centerimg src="/images/portfolio/oem.webp" alt="oem">}}
+
+
 <div style="background-color:#b1ecb1; padding: 15px; border-radius: 6px;">
 Empowering irrigation brands and system integrators with flexible, localized and professional smart agriculture solutions.
 </div>
