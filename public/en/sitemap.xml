@@ -312,6 +312,8 @@
   </url><url>
     <loc>http://localhost:1313/irrigation-controller/</loc>
   </url><url>
+    <loc>http://localhost:1313/lora-irrigation-system/</loc>
+  </url><url>
     <loc>http://localhost:1313/product/soil-env/</loc>
   </url><url>
     <loc>http://localhost:1313/product/soil-npk/</loc>

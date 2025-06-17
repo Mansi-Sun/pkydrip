@@ -28,5 +28,12 @@
       <guid>http://localhost:1313/sv/oem/</guid>
       <description>&lt;div style=&#34;background-color:#b1ecb1; padding: 15px; border-radius: 6px;&#34;&gt;&#xA;Empowering irrigation brands and system integrators with flexible, localized and professional smart agriculture solutions.&#xA;&lt;/div&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;h2 id=&#34;why-oem-with-pkydrip&#34;&gt;Why OEM with PKYDrip?&lt;/h2&gt;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;✔️ Extensive experience in smart irrigation and fertigation automation&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Smart Lora Irrigation System</title>
+      <link>http://localhost:1313/lora-irrigation-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lora-irrigation-system/</guid>
+      <description>&lt;p&gt;PKYDrip’s Smart LoRa Irrigation System is designed to provide wireless, low-power, and efficient irrigation control for both agricultural and landscape applications. It enables long-distance control of valves, sensors, and pumps without the need for complex wiring or internet connectivity.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
