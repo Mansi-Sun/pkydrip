@@ -1,3 +1,15 @@
 <div style="background: #e6f4ea; padding: 15px; border-left: 4px solid #2E8B57; margin: 30px 0;">
-  {{ .Inner | markdownify }}
+  <style>
+    .inner-fmt ul{
+      margin-left: 20px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .inner-fmt li{
+      margin-bottom: 5px;
+    }
+  </style>
+  <div class="inner-fmt">
+    {{ .Inner | markdownify }}
+  </div>
 </div>

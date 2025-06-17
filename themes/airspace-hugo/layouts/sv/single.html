@@ -7,13 +7,6 @@
 <section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        {{ with .Params.image }}
-        <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
-        {{ end }}
-      </div>
-    </div>
-    <div class="row">
       <div class="col-md-12">
         <div class="project-content mt-50">
           {{ .Content }}

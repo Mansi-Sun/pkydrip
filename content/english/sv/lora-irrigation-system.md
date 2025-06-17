@@ -10,10 +10,15 @@ layout: "single"
 category: [ "Customization" ]
 url: "/lora-irrigation-system/"
 ---
+
+
+## Smart Lora Irrigation System
+
+
 PKYDrip’s Smart LoRa Irrigation System is designed to provide wireless, low-power, and efficient irrigation control for both agricultural and landscape applications. It enables long-distance control of valves, sensors, and pumps without the need for complex wiring or internet connectivity.
 
 {{<green_box>}}
-## **Key Features: **
+## Key Features: 
 
 
   - LoRa communication – up to 3–5 km range in open field
@@ -40,7 +45,7 @@ PKYDrip’s Smart LoRa Irrigation System is designed to provide wireless, low-po
 The system includes a central LoRa gateway controller, solar-powered LoRa terminal controllers, field solenoid valves, and optional environmental sensors (soil moisture, EC/pH, temperature). The controller can be managed locally or connected to a cloud platform via Wi-Fi or 4G.
 
 
-{{<image src="/images/solution/lora-system.webp" alt="LoRa System Overview">}}
+{{<centerimg src="/images/solution/lora-system.webp" alt="LoRa System Overview">}}
 
 
 This layout ensures scalable irrigation management across farms, orchards, greenhouses, and municipal landscapes, especially in remote or off-grid areas.
@@ -52,22 +57,30 @@ This layout ensures scalable irrigation management across farms, orchards, green
 <div style="margin-left: 40px;">
 
 
-  - Precision agriculture and open-field irrigation
+  - ✔ Precision agriculture and open-field irrigation
 
 
-  - Greenhouses and protected horticulture
+  - ✔ Greenhouses and protected horticulture
 
 
-  - Public park and golf course irrigation
+  - ✔ Public park and golf course irrigation
 
   
-  - Off-grid farming regions
+  - ✔ Off-grid farming regions
 
 
 </div>
 
 
-Contact us via WhatsApp or email to request a customized solution for your project. 
+
+{{<green_box>}}
+<div>
+  <h3>Need Help?</h3>
+  <p>Contact us via
+  <a href="mailto:info@pky-dripirrigation.com">Email</a> or 
+  <a href="https://wa.me/8617395297329" target="_blank">WhatsApp</a> to request a customized solution for your project.</p>
+</div>
+{{</green_box>}}
 
 
 <div align="center">
