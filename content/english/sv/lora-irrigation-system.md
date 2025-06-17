@@ -45,7 +45,7 @@ PKYDrip’s Smart LoRa Irrigation System is designed to provide wireless, low-po
 The system includes a central LoRa gateway controller, solar-powered LoRa terminal controllers, field solenoid valves, and optional environmental sensors (soil moisture, EC/pH, temperature). The controller can be managed locally or connected to a cloud platform via Wi-Fi or 4G.
 
 
-{{<centerimg src="images/solution/lora-system.webp" alt="LoRa System Overview">}}
+{{<centerimg src="/images/solution/lora-system.webp" alt="LoRa System Overview">}}
 
 
 This layout ensures scalable irrigation management across farms, orchards, greenhouses, and municipal landscapes, especially in remote or off-grid areas.
