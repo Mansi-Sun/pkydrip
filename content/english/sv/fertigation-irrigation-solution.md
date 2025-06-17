@@ -10,6 +10,9 @@ layout: "sv/single"
 category: [ "Customization" ]
 url: "/fertigation-irrigation-solution/"
 ---
+{{<centerimg src="images/portfolio/fertigation-customize.webp" alt="fertigation-customize">}}
+
+
 ## 🔧 Plug-and-Play Controllers – No Complex Setup
 
 
