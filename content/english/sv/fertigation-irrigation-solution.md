@@ -37,6 +37,56 @@ Our fertigation machines and irrigation controllers are built for real farms, no
 </div>
 
 
+## 💼 Key Features of Fertigation Machine
+
+
+<div style="margin-left: 40px;">
+
+
+  - 1. Multi-Channel Fertilizer Injection: Support for 1–8 channels to apply different nutrients (e.g., N, P, K, acid) precisely.
+
+
+  - 2. Sensor Integration: Compatible with EC, pH, soil moisture, temperature, and flow sensors.
+
+
+  - 3. Control multiple agriculture devices: such as CO₂ generators, plant grow lights.
+
+
+  - 4. Cloud platforms: allow flexible alarm threshold settings and command issuance, as well as customizable themes and various icons.
+
+
+  - 5. Warranty: electronic components have a three-year warranty, and mechanical parts come with a one-year warranty.
+
+
+  - 6. Data query: supports data query and generates historical trend charts, compatible with other control systems.
+
+
+  - 7. OEM and customization are available.
+
+
+  - 8. APP: supports both Android and iOS systems.
+
+
+  - 9. Delivery: standard products are deliverable within 15 working days.
+
+
+  - 10. Multiple Communication Options: WiFi, 4G, LoRa, RS485/Modbus supported.
+
+
+</div>
+
+{{< centeryoutube EDR68LK41rI >}}
+
+
+## 🖥️ Product Details
+
+
+{{<centerimg src="/images/solution/product-details.webp" alt="product details">}}
+
+
+{{<centerimg src="/images/portfolio/product-integration.webp" alt="product integration">}}
+
+
 ## 🌍 Trusted by Growers Worldwide
 
 
@@ -62,6 +112,9 @@ From Saudi date plantations to Vietnamese dragon fruit farms, PKYDrip systems ha
   
   
 ## 💡 Why Choose PKYDrip?
+
+
+{{<centerimg src="/images/portfolio/system-overview.webp" alt="system overview">}}
 
 
 <div style="margin-left: 40px;">
