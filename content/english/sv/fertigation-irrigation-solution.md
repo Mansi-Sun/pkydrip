@@ -84,7 +84,7 @@ Our fertigation machines and irrigation controllers are built for real farms, no
 {{<centerimg src="/images/solution/product-details.webp" alt="product details">}}
 
 
-{{<centerimg src="/images/portfolio/product-integration.webp" alt="product integration">}}
+{{<centerimg src="/images/solution/product-integration.webp" alt="product integration">}}
 
 
 ## 🌍 Trusted by Growers Worldwide
@@ -114,7 +114,7 @@ From Saudi date plantations to Vietnamese dragon fruit farms, PKYDrip systems ha
 ## 💡 Why Choose PKYDrip?
 
 
-{{<centerimg src="/images/portfolio/system-overview.webp" alt="system overview">}}
+{{<centerimg src="/images/solution/system-overview.webp" alt="system overview">}}
 
 
 <div style="margin-left: 40px;">
