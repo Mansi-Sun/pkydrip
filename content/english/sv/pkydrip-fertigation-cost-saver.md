@@ -3,19 +3,42 @@ title: "Cut Costs, Not Corners: PKYDrip Smart Fertigation Guarantees ROI"
 tagline: ""
 description: ""
 draft: false
-image : "images/portfolio/fertigation-customize.webp"
+image : "images/portfolio/pre-shipping-test.webp"
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"
 category: [ "Customization" ]
 url: "/pkydrip-fertigation-cost-saver/"
+
+about:
+  enable : true
+  title : ""
+  content : "> Unlock Unprecedented Efficiency and Profitability for Your Farm with Our Advanced, Cost-Effective, and Customized Fertigation Solutions.
+   > From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project. "
+  image : "images/company/company-group-pic.jpg"
+
+
+featured_service:
+  enable : true
+  service_item:
+    # featured service item loop
+    - name : "Customized Solutions, Not One-Size-Fits-All"
+      icon : "fas fa-gear"
+      color : "primary"
+      content : "We specialize in designing bespoke fertigation systems that perfectly match your crop type, soil conditions, and budget. No more overpaying for features you don't need or settling for inadequate solutions"
+
+    # featured service item loop
+    - name : "Australian Design, China Manufacturing: Quality & Value"
+      icon : "fas fa-leaf"
+      color : "primary-dark"
+      content : "Benefit from Australian engineering excellence combined with efficient Chinese manufacturing. This unique blend allows us to deliver high-quality, reliable systems at a cost-effective price point, making advanced fertigation accessible to more farms."
+
+    # featured service item loop
+    - name : "Project Experience = Lower Costs for You"
+      icon : "fas fa-lightbulb"
+      color : "primary-darker"
+      content : "Our extensive project experience means we understand the entire irrigation lifecycle. We leverage this expertise to guide you through equipment selection, assembly, and installation, significantly reducing your overall project costs and ensuring high efficiency from day one."
 ---
 
-# Cut Costs, Not Corners: PKYDrip Smart Fertigation Guarantees ROI
-
-
-> Unlock Unprecedented Efficiency and Profitability for Your Farm with Our Advanced, Cost-Effective, and Customized Fertigation Solutions.
-
-From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project.
 
 
 {{< centeryoutube EDR68LK41rI >}}
