@@ -87,6 +87,7 @@
       "btn-view-works",
       "call-to-action",
       "card",
+      "card-body",
       "card-img-top",
       "card-text",
       "card-title",
@@ -139,7 +140,6 @@
       "fa-fire-alt",
       "fa-flask",
       "fa-gamepad",
-      "fa-gear",
       "fa-glass-cheers",
       "fa-glasses",
       "fa-globe",
@@ -332,6 +332,7 @@
       "available-documents",
       "background",
       "basic-situation-of-farmland",
+      "build-your-future-with-a-trusted-partner",
       "commodity-details-in-this-irrigation-solution",
       "conclusion",
       "email",
@@ -360,11 +361,14 @@
       "name",
       "navigation",
       "pipeline-network-system",
+      "pkydrip-smart-fertigation-quantifiable-benefits-for-your-farm",
       "pressure-monitoring-and-safety-assurance",
       "product-categories",
       "product-details",
       "project-overview",
       "pump-and-filtration-selection",
+      "ready-for-a-smarter-more-profitable-farm",
+      "real-world-impact-our-success-stories",
       "smart-lora-irrigation-system",
       "solutions",
       "subject",
@@ -379,7 +383,9 @@
       "welcome-to-airspace",
       "what-projects-are-supported",
       "what-we-provide",
-      "why-oem-with-pkydrip"
+      "why-oem-with-pkydrip",
+      "your-complete-project-partner-from-design-to-operation",
+      "your-unique-advantage-why-choose-pkydrip"
     ]
   }
 }

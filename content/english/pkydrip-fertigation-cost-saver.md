@@ -13,8 +13,8 @@ about:
   enable : true
   title : ""
   content : "> Unlock Unprecedented Efficiency and Profitability for Your Farm with Our Advanced, Cost-Effective, and Customized Fertigation Solutions.
-   > From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project. "
-  image : "images/company/company-group-pic.jpg"
+   From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project. "
+  image : "images/portfolio/company-group-pic.webp"
 
 
 featured_service:
@@ -22,7 +22,7 @@ featured_service:
   service_item:
     # featured service item loop
     - name : "Customized Solutions, Not One-Size-Fits-All"
-      icon : "fas fa-gear"
+      icon : "fas fa-flask"
       color : "primary"
       content : "We specialize in designing bespoke fertigation systems that perfectly match your crop type, soil conditions, and budget. No more overpaying for features you don't need or settling for inadequate solutions"
 
@@ -64,6 +64,15 @@ featured_service:
 
 
 In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
+
+
+{{< card title="Customized Irrigation Scheme Design" >}}
+Our experts work closely with you to understand your specific requirements, designing a precise fertigation plan tailored to your farm's layout, crop needs, and water sources. This ensures optimal resource utilization and maximum yield potential.
+{{< /card >}}
+
+{{< card title="Optimized Equipment Selection & Procurement" >}}
+Leveraging our global network and cost-control expertise, we assist you in selecting the most suitable and cost-effective equipment components. We ensure you get the best value without compromising on quality or performance.
+{{< /card >}}
 
 
 

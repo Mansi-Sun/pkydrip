@@ -48,6 +48,12 @@
 {{ end }}
 <!-- /service -->
 
+<!-- Content -->
+<div class="product-content">
+   {{ .Content }}
+</div>
+<!-- /Content -->
+
 <!-- Call to action -->
 {{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
