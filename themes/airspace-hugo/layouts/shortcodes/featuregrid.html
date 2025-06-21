@@ -1,0 +1,48 @@
+<style>
+  .featuregrid-wrapper {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+
+  .featuregrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .feature-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .feature-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #2E8B57;
+  }
+
+  .feature-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+  }
+</style>
+
+<div class="featuregrid-wrapper">
+  <div class="featuregrid">
+    {{ range .Params }}
+    <div class="feature-item">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>

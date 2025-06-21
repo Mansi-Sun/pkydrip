@@ -78,15 +78,6 @@ Our fertigation machines and irrigation controllers are built for real farms, no
 {{< centeryoutube EDR68LK41rI >}}
 
 
-## 🖥️ Product Details
-
-
-{{<centerimg src="/images/solution/product-details.webp" alt="product details">}}
-
-
-{{<centerimg src="/images/solution/product-integration.webp" alt="product integration">}}
-
-
 ## 🌍 Trusted by Growers Worldwide
 
 

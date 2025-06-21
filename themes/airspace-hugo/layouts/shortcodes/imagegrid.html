@@ -1,0 +1,59 @@
+<style>
+  .image-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+
+  .image-grid-2x2 figure {
+    margin: 0;
+    text-align: center;
+  }
+
+  .image-grid-2x2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .image-grid-2x2 img:hover {
+    transform: scale(1.03);
+  }
+
+  .image-grid-2x2 figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .image-grid-2x2 {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="image-grid-2x2">
+  {{ range .Params }}
+  <figure>
+    <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+    {{ with .caption }}
+      <figcaption>{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+  {{ end }}
+</div>
+
+<div class="image-grid-2x2">
+  {{ range .Params }}
+    <div class="col-md-3 mb-4 text-center">
+      <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+      <p>{{ .caption }}</p>
+    </div>
+  {{ end }}
+</div>
