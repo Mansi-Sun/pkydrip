@@ -121,12 +121,6 @@ Experience a new era of agricultural efficiency and profitability with our intel
   </div>
 
   <div class="col-12 col-lg-6 mb-4">
-    {{< card title="Optimized Resource Utilization" >}}
-    Achieve unparalleled efficiency in water and fertilizer usage. Our precise control can lead to 30% less water consumption and 20% higher fertilizer effectiveness, significantly reducing waste.
-    {{< /card >}}
-  </div>
-
-  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Faster Crop Cycles & Healthier Growth" >}}
     Consistent, optimized nutrient delivery ensures faster, healthier crop development, potentially shortening growth cycles and bringing your produce to market quicker.
     {{< /card >}}
@@ -135,6 +129,12 @@ Experience a new era of agricultural efficiency and profitability with our intel
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Simplified Farm Management" >}}
     Our turnkey solutions and intuitive interfaces make managing complex fertigation systems straightforward, giving you more time for strategic farm planning and less time on routine tasks.
+    {{< /card >}}
+  </div>
+
+  <div class="col-12 col-lg-6 mb-4">
+    {{< card title="Optimized Resource Utilization" >}}
+    Achieve unparalleled efficiency in water and fertilizer usage. Our precise control can lead to 30% less water consumption and 20% higher fertilizer effectiveness, significantly reducing waste.
     {{< /card >}}
   </div>
 </div>
@@ -188,16 +188,17 @@ See how PKYDrip has helped farms like yours achieve remarkable results with cust
   </div>
 
   <div class="col-12 col-lg-6 mb-4">
+    {{< card title="Dedicated Long-Term Support" >}}
+    Your success is our priority. We offer comprehensive post-installation support, remote troubleshooting, and maintenance guidance to ensure your fertigation system delivers consistent performance for years to come.
+    {{< /card >}}
+  </div>
+
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Proven Project Experience" >}}
     Our team comprises seasoned professionals with extensive hands-on experience in diverse agricultural projects. We don't just sell products; we deliver practical, field-tested solutions.
     {{< /card >}}
   </div>
 
-  <div class="col-12 col-lg-6 mb-4">
-    {{< card title="Dedicated Long-Term Support" >}}
-    Your success is our priority. We offer comprehensive post-installation support, remote troubleshooting, and maintenance guidance to ensure your fertigation system delivers consistent performance for years to come.
-    {{< /card >}}
-  </div>
 </div>
 
 
