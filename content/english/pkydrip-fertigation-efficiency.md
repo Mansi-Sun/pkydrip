@@ -28,6 +28,7 @@ Forget the compromises of off-the-shelf solutions. We specialize in enhancing yo
 
 
 <div class="row">
+
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Tailored Automation for Maximum Throughput" >}}
     Unlike generic systems, our bespoke designs optimize every aspect of your fertigation. This precision automation drastically reduces manual intervention and boosts your operational throughput, specific to your crop and land.
@@ -45,6 +46,7 @@ Forget the compromises of off-the-shelf solutions. We specialize in enhancing yo
     Our extensive project experience means your transition to smart fertigation is seamless. We guide you through setup and integration, preventing costly delays and ensuring your system is running at peak efficiency from day one.
     {{< /card >}}
   </div>
+
 </div>
 
 
@@ -75,6 +77,7 @@ From initial concept to ongoing support, we provide a streamlined "Turnkey Solut
 
 
 <div class="row">
+
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Precision Design for Optimized Workflow" >}}
     Our expert designers create a fertigation scheme that integrates perfectly with your farm's existing infrastructure and operational flow, eliminating bottlenecks and maximizing efficiency.
@@ -98,6 +101,7 @@ From initial concept to ongoing support, we provide a streamlined "Turnkey Solut
     Our commitment to your efficiency continues post-installation. We offer ongoing support to maintain peak system performance, minimizing downtime and maximizing your farm's productive output.
     {{< /card >}}
   </div>
+
 </div>
 
 
