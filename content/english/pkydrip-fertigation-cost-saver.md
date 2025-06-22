@@ -19,30 +19,11 @@ about:
 ---
 
 
-
-{{< centeryoutube EDR68LK41rI >}}
-
-
-<div align="center">
-  <a href="https://wa.me/+8617395297329" target="_blank" style="
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: sans-serif;
-  ">
-    Chat With PKYDrip Sales on WhatsApp
-  </a>
-</div>
-
-
 ## Your Unique Advantage: Why Choose PKYDrip?
 
-
-> In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
+{{< green_box >}}
+In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
+{{< /green_box >}}
 
 
 <div class="row">
@@ -66,10 +47,30 @@ about:
 </div>
 
 
+{{< centeryoutube EDR68LK41rI >}}
+
+
+<div align="center">
+  <a href="https://wa.me/+8617395297329" target="_blank" style="
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: sans-serif;
+  ">
+    Chat With PKYDrip Sales on WhatsApp
+  </a>
+</div>
+
 ## Your Complete Project Partner: From Design to Operation
 
 
-> We offer an end-to-end "Turnkey Solution" approach, ensuring your project is seamless, efficient, and successful.
+{{< green_box >}}
+We offer an end-to-end "Turnkey Solution" approach, ensuring your project is seamless, efficient, and successful.
+{{< /green_box >}}
 
 
 <div class="row">
@@ -102,7 +103,9 @@ about:
 ## PKYDrip Smart Fertigation: Quantifiable Benefits for Your Farm
 
 
-> Experience a new era of agricultural efficiency and profitability with our intelligent fertigation solutions.
+{{< green_box >}}
+Experience a new era of agricultural efficiency and profitability with our intelligent fertigation solutions.
+{{< /green_box >}}
 
 
 <div class="row">

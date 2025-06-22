@@ -2199,10 +2199,11 @@ header .navbar-default .navbar-nav li a:hover {
 
 .category-card {
   background-color: #f8f9fa;
-  border: 1px solid #000;
   padding: 1.5rem;
   margin: 10px;
-  height: 200px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
