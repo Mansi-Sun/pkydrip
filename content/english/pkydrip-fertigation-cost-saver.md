@@ -22,11 +22,10 @@ about:
 ## Your Unique Advantage: Why Choose PKYDrip?
 
 
-<section class= "section">
-  {{< green_box >}}
-  In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
-  {{< /green_box >}}
-</section>
+{{< green_box >}}
+In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
+{{< /green_box >}}
+
 
 <div class="row">
   <div class="col-12 col-lg-6 mb-4">
