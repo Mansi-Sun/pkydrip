@@ -85,11 +85,11 @@ From initial concept to ongoing support, we provide a streamlined "Turnkey Solut
   </div>
 
   <div class="col-12 col-lg-6 mb-4">
-    {{< card title="Smart Selection & Fast Procurement" >}}
-    We help you identify and acquire the most efficient and cost-effective equipment, streamlining the procurement process and ensuring rapid deployment without sacrificing quality.
+    {{< card title="Proactive Operation & Maintenance Support" >}}
+    Our commitment to your efficiency continues post-installation. We offer ongoing support to maintain peak system performance, minimizing downtime and maximizing your farm's productive output.
     {{< /card >}}
   </div>
-
+  
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Efficient Assembly & Installation Guidance" >}}
     Benefit from our field-tested insights. We provide clear, practical guidance that accelerates assembly and installation, getting your system online faster and performing optimally.
@@ -97,8 +97,8 @@ From initial concept to ongoing support, we provide a streamlined "Turnkey Solut
   </div>
 
   <div class="col-12 col-lg-6 mb-4">
-    {{< card title="Proactive Operation & Maintenance Support" >}}
-    Our commitment to your efficiency continues post-installation. We offer ongoing support to maintain peak system performance, minimizing downtime and maximizing your farm's productive output.
+    {{< card title="Smart Selection & Fast Procurement" >}}
+    We help you identify and acquire the most efficient and cost-effective equipment, streamlining the procurement process and ensuring rapid deployment without sacrificing quality.
     {{< /card >}}
   </div>
 
