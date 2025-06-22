@@ -27,19 +27,19 @@ In a market flooded with standard solutions, PKYDrip stands out by offering a ta
 
 
 <div class="row">
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Customized Solutions, Not One-Size-Fits-All" >}}
     We specialize in designing bespoke fertigation systems that perfectly match your crop type, soil conditions, and budget. No more overpaying for features you don't need or settling for inadequate solutions
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Australian Design, China Manufacturing: Quality & Value" >}}
     Benefit from Australian engineering excellence combined with efficient Chinese manufacturing. This unique blend allows us to deliver high-quality, reliable systems at a cost-effective price point, making advanced fertigation accessible to more farms.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Project Experience = Lower Costs for You" >}}
     Our extensive project experience means we understand the entire irrigation lifecycle. We leverage this expertise to guide you through equipment selection, assembly, and installation, significantly reducing your overall project costs and ensuring high efficiency from day one.
     {{< /card >}}
@@ -74,25 +74,25 @@ We offer an end-to-end "Turnkey Solution" approach, ensuring your project is sea
 
 
 <div class="row">
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Customized Irrigation Scheme Design" >}}
     Our experts work closely with you to understand your specific requirements, designing a precise fertigation plan tailored to your farm's layout, crop needs, and water sources. This ensures optimal resource utilization and maximum yield potential.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Optimized Equipment Selection & Procurement" >}}
     Leveraging our global network and cost-control expertise, we assist you in selecting the most suitable and cost-effective equipment components. We ensure you get the best value without compromising on quality or performance.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Assembly & Installation Guidance" >}}
     Benefit from our practical project experience. We provide comprehensive guidance for system assembly and installation, helping you avoid common pitfalls, reduce labor time, and ensure correct setup for peak operational efficiency.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Ongoing Operation & Maintenance Support" >}}
     Our commitment extends beyond installation. We offer continuous technical support and maintenance guidance, ensuring your system runs smoothly year after year, minimizing downtime and maximizing long-term profitability.
     {{< /card >}}
@@ -109,25 +109,25 @@ Experience a new era of agricultural efficiency and profitability with our intel
 
 
 <div class="row">
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Maximum Cost Efficiency" >}}
     Significantly reduce your overall investment and operational expenses. Our optimized solutions and project guidance lead to lower equipment costs, reduced water and fertilizer consumption, and substantial labor savings.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Unprecedented Operational Efficiency" >}}
     Automate your water and nutrient delivery with precision. This leads to substantial time savings in farm management and ensures resources are utilized at their peak efficiency, boosting your farm's productivity.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Superior Crop Health & Yields" >}}
     Precise nutrient delivery at the root zone fosters optimal plant health, leading to stronger growth, improved crop quality, and a measurable increase in your overall yield.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Hassle-Free Turnkey Solution" >}}
     From initial design to final setup and ongoing support, we handle the complexities. Enjoy peace of mind knowing your entire fertigation project is managed by experienced professionals, allowing you to focus on farming.
     {{< /card >}}
@@ -176,19 +176,19 @@ See how PKYDrip has helped farms like yours achieve remarkable results with cust
 
 
 <div class="row">
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Australian Innovation, Global Reach" >}}
     As an Australian-based company with efficient manufacturing in China, PKYDrip combines innovative design with global supply chain advantages, ensuring quality and competitive pricing for clients worldwide.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Proven Project Experience" >}}
     Our team comprises seasoned professionals with extensive hands-on experience in diverse agricultural projects. We don't just sell products; we deliver practical, field-tested solutions.
     {{< /card >}}
   </div>
 
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-lg-6 mb-4">
     {{< card title="Dedicated Long-Term Support" >}}
     Your success is our priority. We offer comprehensive post-installation support, remote troubleshooting, and maintenance guidance to ensure your fertigation system delivers consistent performance for years to come.
     {{< /card >}}
@@ -216,6 +216,8 @@ Stop wasting resources on outdated methods. Let PKYDrip design a customized, cos
     Chat With PKYDrip Sales on WhatsApp
   </a>
 </div>
+
+
 
 
 We provide comprehensive solutions including irrigation scheme design, equipment selection, assembly guidance, and ongoing maintenance support.
