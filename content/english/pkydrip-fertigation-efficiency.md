@@ -116,13 +116,13 @@ Experience a new era of agricultural efficiency and profitability with our intel
 <div class="row">
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Drastically Reduced Labor Hours" >}}
-    Automate your daily irrigation and fertilization tasks. Our system can cut down manual labor requirements by **up to 80%**, allowing your team to focus on higher-value activities.
+    Automate your daily irrigation and fertilization tasks. Our system can cut down manual labor requirements by up to 80%, allowing your team to focus on higher-value activities.
     {{< /card >}}
   </div>
 
   <div class="col-12 col-lg-6 mb-4">
     {{< card title="Optimized Resource Utilization" >}}
-    Achieve unparalleled efficiency in water and fertilizer usage. Our precise control can lead to **30% less water consumption** and **20% higher fertilizer effectiveness**, significantly reducing waste.
+    Achieve unparalleled efficiency in water and fertilizer usage. Our precise control can lead to 30% less water consumption and 20% higher fertilizer effectiveness, significantly reducing waste.
     {{< /card >}}
   </div>
 
