@@ -118,6 +118,8 @@
                 href="http://localhost:1313/author/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pkydrip-fertigation-efficiency/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
