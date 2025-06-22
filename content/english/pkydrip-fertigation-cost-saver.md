@@ -66,13 +66,20 @@ featured_service:
 In a market flooded with standard solutions, PKYDrip stands out by offering a tailored approach that truly serves your farm's specific needs and budget.
 
 
-{{< card title="Customized Irrigation Scheme Design" >}}
-Our experts work closely with you to understand your specific requirements, designing a precise fertigation plan tailored to your farm's layout, crop needs, and water sources. This ensures optimal resource utilization and maximum yield potential.
-{{< /card >}}
+<div class="row">
+  <div class="col-md-6">
+    {{< card title="Customized Irrigation Scheme Design" >}}
+    Our experts work closely with you to understand your specific requirements, designing a precise fertigation plan tailored to your farm's layout, crop needs, and water sources. This ensures optimal resource utilization and maximum yield potential.
+    {{< /card >}}
+  </div>
 
-{{< card title="Optimized Equipment Selection & Procurement" >}}
-Leveraging our global network and cost-control expertise, we assist you in selecting the most suitable and cost-effective equipment components. We ensure you get the best value without compromising on quality or performance.
-{{< /card >}}
+  <div class="col-md-6">
+    {{< card title="Optimized Equipment Selection & Procurement" >}}
+    Leveraging our global network and cost-control expertise, we assist you in selecting the most suitable and cost-effective equipment components. We ensure you get the best value without compromising on quality or performance.
+    {{< /card >}}
+  </div>
+</div>
+
 
 
 
