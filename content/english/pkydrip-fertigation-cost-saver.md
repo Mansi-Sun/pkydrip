@@ -13,7 +13,7 @@ about:
   enable : true
   title : ""
   content : "> Unlock Unprecedented Efficiency and Profitability for Your Farm with Our Advanced, Cost-Effective, and Customized Fertigation Solutions.
-   From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project. "
+    From tailored design to installation guidance and ongoing support, we're your partner for a complete, high-efficiency irrigation project. "
   image : "images/portfolio/company-group-pic.webp"
 
 ---

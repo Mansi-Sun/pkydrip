@@ -2230,3 +2230,6 @@ header .navbar-default .navbar-nav li a:hover {
   max-width: 880px;
   margin: auto;
   line-height: 1.6; }
+
+.page-blue-strong strong {
+  color: #4d7eaf; }
