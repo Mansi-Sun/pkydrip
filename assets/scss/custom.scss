@@ -48,6 +48,16 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
 }
 
+.custom-section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.custom-section li {
+    margin-bottom: 5px;
+}
+
 .custom-section h3 {
     color: #2980b9;
     font-size: 1.8em;
