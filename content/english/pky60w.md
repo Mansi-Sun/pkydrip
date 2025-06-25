@@ -45,9 +45,9 @@ The PKYDrip PKY-60W Intelligent Irrigation Controller is designed to solve these
   <h3>Powerful Expansion, Easy to Build</h3>
   <p>Whether it's a small vegetable garden or a large agricultural base/landscaping project, the PKY-60W can handle it with ease.</p>
   <ul>
-    <li><strong>Flexible Station Expansion:</strong><p>The main board supports controlling 16 irrigation stations and can be easily upgraded to a maximum of 64 stations via expansion, meeting your growing demands.</p></li>
-    <li><strong>Broad Compatibility: </strong><p>Supports starting one water pump and is compatible with various solenoid valves.</p></li>
-    <li><strong>Open Integration: Supports RS485 and Modbus protocols: </strong><p>allowing you to seamlessly integrate the PKY-60W into existing automation systems or third-party platforms, quickly building your tailored smart irrigation solution.</p></li>
+    <li><p><strong>Flexible Station Expansion:</strong>The main board supports controlling 16 irrigation stations and can be easily upgraded to a maximum of 64 stations via expansion, meeting your growing demands.</p></li>
+    <li><p><strong>Broad Compatibility: </strong>Supports starting one water pump and is compatible with various solenoid valves.</p></li>
+    <li><p><strong>Open Integration: Supports RS485 and Modbus protocols: </strong>allowing you to seamlessly integrate the PKY-60W into existing automation systems or third-party platforms, quickly building your tailored smart irrigation solution.</p></li>
   </ul>
 </div>
 
@@ -56,8 +56,8 @@ The PKYDrip PKY-60W Intelligent Irrigation Controller is designed to solve these
   <h3>Smart Monitoring, Insights into Agriculture</h3>
   <p>Irrigation should be smart, not blind. The PKY-60W possesses powerful data acquisition potential:</p>
   <ul>
-    <li><strong>Micro Weather Station Expansion: </strong><p>Can be directly expanded into a micro weather station, acquiring real-time key environmental data such as air temperature, humidity, light intensity, and wind speed, providing scientific basis for irrigation decisions.</p></li>
-    <li><strong>Soil Information Monitoring: </strong><p>Supports connection to soil sensors for real-time monitoring of critical soil information like temperature, moisture, EC (electrical conductivity), and pH value, allowing you to precisely understand the root zone environment and achieve on-demand irrigation, avoiding over or under-watering.</p></li>
+    <li><p><strong>Micro Weather Station Expansion: </strong>Can be directly expanded into a micro weather station, acquiring real-time key environmental data such as air temperature, humidity, light intensity, and wind speed, providing scientific basis for irrigation decisions.</p></li>
+    <li><p><strong>Soil Information Monitoring: </strong>Supports connection to soil sensors for real-time monitoring of critical soil information like temperature, moisture, EC (electrical conductivity), and pH value, allowing you to precisely understand the root zone environment and achieve on-demand irrigation, avoiding over or under-watering.</p></li>
   </ul>
 </div>
 
