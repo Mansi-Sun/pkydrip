@@ -10,7 +10,7 @@ features:
   - "**Wire Length:** 0.7 meter" 
 
 cta: 
-  text: "Contact us at **info@pky-dripirrigation.com** for technical drawings, quotes, or integration advice."
+  text: "Contact us for technical drawings, quotes, or integration advice."
   button_label: "Chat Now"
   button_url: "https://wa.me/8617395297329" 
 ---

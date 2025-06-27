@@ -27,9 +27,9 @@ location = """
 # copyright
 copyright = "© 2025 PKYDrip | Smart Irrigation Technology"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
-custom_script= ""
+custom_script= "<!-- Event snippet for [2c24] Google Listings and Ads purchase action conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-16640554458/74ndCKzN7sEZENrr6v49', 'value': 0.0, 'currency': 'USD', 'event_callback': callback }); return false; } </script>"
 # google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "G-Y5HHC5PQ2D"
+google_tag_manager = "AW-16640554458"
 # recaptch v3 site key
 recaptcha_site_key = "6Ld9eEkrAAAAAF98PR4z-Xvn-oFnZcMdZafLI8fI"
 

@@ -24,7 +24,7 @@ specs:
   - "Interface: 7\" color touchscreen with multilingual display (EN/CN/AR)"
   - "Structure: Aluminum frame + UPVC plumbing + stainless fittings"
 cta: 
-  text: "Contact us at **info@pky-dripirrigation.com** for technical drawings, quotes, or integration advice."
+  text: "Contact us for technical drawings, quotes, or integration advice."
   button_label: "Chat Now"
   button_url: "https://wa.me/8617395297329" 
 application: 

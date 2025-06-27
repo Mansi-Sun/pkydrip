@@ -60,11 +60,15 @@
 </div>
 
 
-<div class="cta">
-  <h3>Need Help?</h3>
-  <p>Contact us via
-  <a href="mailto:info@pky-dripirrigation.com">Email</a> or 
-  <a href="https://wa.me/8617395297329" target="_blank">WhatsApp</a> for drawings, custom EC/pH calibration support, or quotations.</p>
-</div>
+<!-- Contact Us -->
+{{ with .Params.cta }}
+<section class="section-sm bg-light">
+  <div class="container text-center">
+    <p class="lead mb-4">{{ .text }}</p>
+    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="{{ .button_url }}" target="_blank" class="btn btn-success btn-lg">{{ .button_label }}</a>
+  </div>
+</section>
+{{ end }}
+
 </main>  
 {{ end }}
