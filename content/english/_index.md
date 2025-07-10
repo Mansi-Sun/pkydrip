@@ -17,7 +17,7 @@ about:
   title: "About Us"
   description: "We specialize in the development and production of water-saving irrigation products, such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves."
   content: "Our product range offers innovative, customizable, reliable, and scalable designs and systems for agriculture, landscaping, and urban greenery projects, enabling users to complete their projects more easily and efficiently."
-  image: "images/wrapper-img.png"
+  image: "images/wrapper-img.webp"
 
 
 ######################### Portfolio ###############################
@@ -85,13 +85,13 @@ funfacts:
   testimonial_slider:
   # testimonial item loop
   - name: "Junfeng Qiu"
-    image: "images/clients/avater-1.jpg"
+    image: "images/clients/avater-1.webp"
     designation: "Founder-PKYDRIP"
     content: "Our vision is to lead the transformation of global agriculture with precision irrigation systems, ensuring food security and environmental sustainability."
 
   # testimonial item loop
   - name: "Junfeng Qiu"
-    image: "images/clients/avater-1.jpg"
+    image: "images/clients/avater-1.webp"
     designation: "Founder-PKYDRIP"
     content: "Our mission is to deliver sustainable, technology-driven solutions that optimize water and nutrient use while enhancing productivity for farmers and growers worldwide."
 
