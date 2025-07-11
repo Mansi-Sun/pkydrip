@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on PKYDRIP</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://smart.pky-dripirrigation.com/categories/</link>
     <description>Recent content in Categories on PKYDRIP</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://smart.pky-dripirrigation.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fertigation-System</title>
-      <link>http://localhost:1313/categories/fertigation-system/</link>
+      <link>https://smart.pky-dripirrigation.com/categories/fertigation-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/fertigation-system/</guid>
+      <guid>https://smart.pky-dripirrigation.com/categories/fertigation-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Irrigation-Controller</title>
-      <link>http://localhost:1313/categories/irrigation-controller/</link>
+      <link>https://smart.pky-dripirrigation.com/categories/irrigation-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/irrigation-controller/</guid>
+      <guid>https://smart.pky-dripirrigation.com/categories/irrigation-controller/</guid>
       <description></description>
     </item>
     <item>
       <title>Sensor</title>
-      <link>http://localhost:1313/categories/sensor/</link>
+      <link>https://smart.pky-dripirrigation.com/categories/sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/sensor/</guid>
+      <guid>https://smart.pky-dripirrigation.com/categories/sensor/</guid>
       <description></description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/categories/services/</link>
+      <link>https://smart.pky-dripirrigation.com/categories/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/services/</guid>
+      <guid>https://smart.pky-dripirrigation.com/categories/services/</guid>
       <description></description>
     </item>
     <item>
       <title>Solutions</title>
-      <link>http://localhost:1313/categories/solutions/</link>
+      <link>https://smart.pky-dripirrigation.com/categories/solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/solutions/</guid>
+      <guid>https://smart.pky-dripirrigation.com/categories/solutions/</guid>
       <description></description>
     </item>
   </channel>

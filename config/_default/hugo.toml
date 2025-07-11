@@ -74,6 +74,10 @@ ordered = false
 style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
 
 
+[minify]
+  disableXML = true
+  minifyOutput = true
+
 ############################ Media types ############################
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
