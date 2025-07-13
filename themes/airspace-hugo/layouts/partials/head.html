@@ -112,7 +112,39 @@
 <!-- google tag manager -->
 {{ with site.Params.google_tag_manager }}
 <!-- Google tag (gtag.js) --> 
+<script>
+  setTimeout(function () {
+   
+    var gads = document.createElement('script');
+    gads.src = "https://www.googletagmanager.com/gtag/js?id=AW-16640554458";
+    gads.async = true;
+    document.head.appendChild(gads);
 
+   
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    
+    gtag('js', new Date());
+    gtag('config', 'AW-16640554458');
+
+   
+    window.gtag_report_conversion = function(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16640554458/74ndCKzN7sEZENrr6v49',
+        'value': 0.0,
+        'currency': 'USD',
+        'event_callback': callback
+      });
+      return false;
+    };
+  }, 3000); 
+</script>
 
 {{ end }}
 
