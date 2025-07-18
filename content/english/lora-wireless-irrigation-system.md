@@ -9,40 +9,26 @@ layout: "service"
 category: [ "Customization" ]
 url: "/lora-wireless-irrigation-system/"
 ---
+{{<centerimg src="/images/portfolio/lora-wireless-system.webp" alt="LoRa Wireless Irrigation System" caption="LoRa Wireless Irrigation System">}}
 
 {{< blue_box >}}
 The PKYDrip LoRa-based wireless irrigation system is designed for smart agricultural and landscaping projects that require flexible, long-distance, and low-power irrigation control. The system includes:
 
-- **PKY-EG08 Wireless Irrigation Gateway**
-- **PKY-IC03 Wireless Irrigation Controller**
+- [**PKY-EG08 Wireless Irrigation Gateway**](#pky-eg08)
+- [**PKY-IC03 Wireless Irrigation Controller**](#pky-ic03)
 
 Together, they provide a robust wireless communication network between irrigation scheduling software (cloud or local SCADA) and field-level valves or pump control units.
 {{< /blue_box >}}
 
 <div>
   <section class="custom-section">
-  <h3>🔗 System Architecture</h3>
-  {{<centerimg src="/images/portfolio/lora-wireless-system.webp" alt="LoRa Wireless Irrigation System" caption="LoRa Wireless Irrigation System">}}
-  {{<mermaid>}}
-    graph TD
-    Cloud[Cloud Platform / Local SCADA]
-    Gateway[PKY-EG08 LoRa Gateway]
-    Controller1[PKY-IC03 Controller #1]
-    Controller2[PKY-IC03 Controller #2]
-    Valve1[Solenoid Valve 1]
-    Valve2[Solenoid Valve 2]
-
-    Cloud -->|MQTT / HTTP| Gateway
-    Gateway -->|LoRa 433MHz| Controller1
-    Gateway -->|LoRa 433MHz| Controller2
-    Controller1 --> Valve1
-    Controller2 --> Valve2
-  {{</mermaid>}}
+  <h3>System Architecture</h3>
+  {{<centerimg src="/images/portfolio/lora-wireless-architecture.webp" alt="LoRa Wireless Irrigation System architecture" caption="LoRa Wireless Irrigation System architecture">}}
 </div>
 
-<div>
+<div id="pky-eg08">
   <section class="custom-section">
-  <h3>📡 PKY-EG08 — Wireless Irrigation Gateway</h3>
+  <h3>PKY-EG08 — Wireless Irrigation Gateway</h3>
   <ul>
     <li><p><strong>Model: </strong>PKY-EG08</p></li>
     <li><p><strong>Function: </strong>Acts as a LoRa-to-cloud communication bridge, connecting multiple controllers in the field with the cloud server or local software.</p></li>
@@ -58,9 +44,9 @@ Together, they provide a robust wireless communication network between irrigatio
   </ul>
 </div>
 
-<div>
+<div id="pky-ic03">
   <section class="custom-section">
-  <h3>🚜 PKY-IC03 — Wireless Irrigation Controller Terminal</h3>
+  <h3>PKY-IC03 — Wireless Irrigation Controller Terminal</h3>
   <ul>
     <li><p><strong>Model: </strong>PKY-IC03</p></li>
     <li><p><strong>Function: </strong>Executes irrigation commands locally by controlling solenoid valves or pumps.</p></li>
@@ -78,7 +64,7 @@ Together, they provide a robust wireless communication network between irrigatio
 
 <div>
   <section class="custom-section">
-  <h3>🧠 Key Advantages</h3>
+  <h3>Key Advantages</h3>
   <ul>
     <li><p><strong>💡 Wireless Control: </strong>No need for complex wiring in the field.</p></li>
     <li><p><strong>🔋 Low Power: </strong>Solar-powered controller for sustainable operation.</p></li>
@@ -89,7 +75,7 @@ Together, they provide a robust wireless communication network between irrigatio
 
 <div>
   <section class="custom-section">
-  <h3>🛠️ Application Scenarios</h3>
+  <h3>Application Scenarios</h3>
   <ul>
     <li><p>Precision agriculture</p></li>
     <li><p>Drip and sprinkler systems</p></li>
@@ -100,12 +86,22 @@ Together, they provide a robust wireless communication network between irrigatio
 </div>
 
 <div>
+  <section class="custom-section">
+  <h3>Technical Support</h3>
+  <ul>
+    <li><p>User manuals and wiring diagrams</p></li>
+    <li><p>Installation videos</p></li>
+    <li><p>WhatsApp/email remote support</p></li>
+    <li><p>Custom protocol integration upon request</p></li>
+  </ul>
+</div>
+
+<div>
   <section class="custom-cta">
   <h3>Need a custom solution or technical guide?</h3>
   <div>
     <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329" target="_blank">📞 Contact Our Experts</a>
     <a href="mailto:info@pky-dripirrigation.com">✉️ Send an Inquiry Email</a>
-    <a href="https://smart.pky-dripirrigation.com/product/" target="_blank">🔗 Product Details Page</a>
   </div>
   <p>Act now to make your irrigation system smarter, more water-efficient, and more productive!</p>
 </div>
