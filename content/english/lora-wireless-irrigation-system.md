@@ -23,8 +23,7 @@ Together, they provide a robust wireless communication network between irrigatio
   <section class="custom-section">
   <h3>🔗 System Architecture</h3>
   {{<centerimg src="/images/portfolio/lora-wireless-system.webp" alt="LoRa Wireless Irrigation System" caption="LoRa Wireless Irrigation System">}}
-  <p>
-    ```mermaid
+  {{<mermaid>}}
     graph TD
     Cloud[Cloud Platform / Local SCADA]
     Gateway[PKY-EG08 LoRa Gateway]
@@ -38,50 +37,53 @@ Together, they provide a robust wireless communication network between irrigatio
     Gateway -->|LoRa 433MHz| Controller2
     Controller1 --> Valve1
     Controller2 --> Valve2
-    ```
-  </p>
+  {{</mermaid>}}
 </div>
 
 <div>
   <section class="custom-section">
   <h3>📡 PKY-EG08 — Wireless Irrigation Gateway</h3>
-  <p>
-    - **Model**: `PKY-EG08`
-    - **Function**: Acts as a LoRa-to-cloud communication bridge, connecting multiple controllers in the field with the cloud server or local software.
-    - **Features**:
-      - Supports **LoRa 433MHz** communication with >2 km range (open field)
-      - Supports **MQTT**, **HTTP**, and **Modbus-TCP** protocols
-      - Supports **Wi-Fi / 4G / Ethernet** uplink
-      - Can manage up to **100 controllers** simultaneously
-      - Easy setup via web interface or mobile app
-    - **Use Case**: Installed in farm offices, greenhouses, or central pump stations to manage field devices.
-  </p>
+  <ul>
+    <li><p><strong>Model: </strong>PKY-EG08</p></li>
+    <li><p><strong>Function: </strong>Acts as a LoRa-to-cloud communication bridge, connecting multiple controllers in the field with the cloud server or local software.</p></li>
+    <li><p><strong>Features: </strong></p></li>
+      <ul>
+          <li>Supports <strong>LoRa 433MHz</strong> communication with >2 km range (open field)</li>
+          <li>Supports <strong>MQTT</strong>, <strong>HTTP</strong>, and <strong>Modbus-TCP</strong> protocols</li>
+          <li>Supports <strong>Wi-Fi / 4G / Ethernet</strong> uplink</li>
+          <li>Can manage up to <strong>100 controllers</strong> simultaneously</li>
+          <li>Easy setup via web interface or mobile app</li>
+      </ul>
+    <li><p><strong>Use Case: </strong>Installed in farm offices, greenhouses, or central pump stations to manage field devices.</p></li>
+  </ul>
 </div>
 
 <div>
   <section class="custom-section">
   <h3>🚜 PKY-IC03 — Wireless Irrigation Controller Terminal</h3>
-  <p>
-    - **Model**: `PKY-IC03`
-    - **Function**: Executes irrigation commands locally by controlling solenoid valves or pumps.
-    - **Features**:
-      - **LoRa 433MHz** communication with automatic binding to gateway
-      - Controls up to **2 solenoid valves**
-      - **Solar-powered** (with lithium battery), low maintenance
-      - Supports **timed irrigation**, **manual trigger**, or **sensor-based logic**
-      - Weatherproof enclosure for field deployment
-    - **Installation**: Near irrigation valves or sprinkler manifolds, mounted on poles or walls.
-  </p>
+  <ul>
+    <li><p><strong>Model: </strong>PKY-IC03</p></li>
+    <li><p><strong>Function: </strong>Executes irrigation commands locally by controlling solenoid valves or pumps.</p></li>
+    <li><p><strong>Features: </strong></p></li>
+      <ul>
+          <li><strong>LoRa 433MHz</strong> communication with automatic binding to gateway</li>
+          <li>Controls up to <strong>2 solenoid valves</strong></li>
+          <li><strong>Solar-powered</strong> (with lithium battery), low maintenance</li>
+          <li>Supports <strong>timed irrigation</strong>, <strong>manual trigger</strong>or <strong>sensor-based logic</strong></li>
+          <li>Weatherproof enclosure for field deployment</li>
+      </ul>
+    <li><p><strong>Installation: </strong>Near irrigation valves or sprinkler manifolds, mounted on poles or walls.</p></li>
+  </ul>
 </div>
 
 <div>
   <section class="custom-section">
   <h3>🧠 Key Advantages</h3>
   <ul>
-    <li><p><strong>💡 Wireless Control</strong>No need for complex wiring in the field.</p></li>
-    <li><p><strong>🔋 Low Power</strong>Solar-powered controller for sustainable operation.</p></li>
-    <li><p><strong>🌍 Cloud Integration</strong>Real-time monitoring, remote scheduling, and history logs.</p></li>
-    <li><p><strong>📈 Scalable</strong>One gateway manages up to 100 controllers.</p></li>
+    <li><p><strong>💡 Wireless Control: </strong>No need for complex wiring in the field.</p></li>
+    <li><p><strong>🔋 Low Power: </strong>Solar-powered controller for sustainable operation.</p></li>
+    <li><p><strong>🌍 Cloud Integration: </strong>Real-time monitoring, remote scheduling, and history logs.</p></li>
+    <li><p><strong>📈 Scalable: </strong>One gateway manages up to 100 controllers.</p></li>
   </ul>
 </div>
 
