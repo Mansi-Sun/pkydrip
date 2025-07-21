@@ -14,8 +14,8 @@ url: "/lora-wireless-irrigation-system/"
 {{< blue_box >}}
 The PKYDrip LoRa-based wireless irrigation system is designed for smart agricultural and landscaping projects that require flexible, long-distance, and low-power irrigation control. The system includes:
 
-- [**PKY-EG08 Wireless Irrigation Gateway**](#pky-eg08)
-- [**PKY-IC03 Wireless Irrigation Controller**](#pky-ic03)
+- [**PKY-EG08 Wireless Irrigation Gateway**](/product/pky-eg08)
+- [**PKY-IC03 Wireless Irrigation Controller**](/product/pky-ic03)
 
 Together, they provide a robust wireless communication network between irrigation scheduling software (cloud or local SCADA) and field-level valves or pump control units.
 {{< /blue_box >}}
@@ -26,7 +26,7 @@ Together, they provide a robust wireless communication network between irrigatio
   {{<centerimg src="/images/portfolio/lora-wireless-architecture.webp" alt="LoRa Wireless Irrigation System architecture" caption="LoRa Wireless Irrigation System architecture">}}
 </div>
 
-<div id="pky-eg08">
+<div>
   <section class="custom-section">
   <h3>PKY-EG08 — Wireless Irrigation Gateway</h3>
   <ul>
@@ -44,7 +44,7 @@ Together, they provide a robust wireless communication network between irrigatio
   </ul>
 </div>
 
-<div id="pky-ic03">
+<div>
   <section class="custom-section">
   <h3>PKY-IC03 — Wireless Irrigation Controller Terminal</h3>
   <ul>
@@ -102,6 +102,7 @@ Together, they provide a robust wireless communication network between irrigatio
   <div>
     <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329" target="_blank">📞 Contact Our Experts</a>
     <a href="mailto:info@pky-dripirrigation.com">✉️ Send an Inquiry Email</a>
+    <a href="https://smart.pky-dripirrigation.com/irrigation-controller/" target="_blank">🔗 Product Details Page</a>
   </div>
   <p>Act now to make your irrigation system smarter, more water-efficient, and more productive!</p>
 </div>

@@ -25,10 +25,10 @@ specs:
   - "Communication: LoRa (up to 2.5km)"
   - "Dimensions: 290 x 225 x 84 mm"
 
-application :
-  - ✔ Orchards: Ideal for large-scale fruit tree irrigation where traditional wiring is impractical.
-  - ✔ Mountain Farms: Perfect for terraced or sloped agricultural fields without access to electricity.
-  - ✔ Urban Landscaping: Suitable for parks, roadside greenery, and riverbanks where trenching or cabling is difficult.
+application:
+  - "✔ Orchards: Ideal for large-scale fruit tree irrigation where traditional wiring is impractical."
+  - "✔ Mountain Farms: Perfect for terraced or sloped agricultural fields without access to electricity."
+  - "✔ Urban Landscaping: Suitable for parks, roadside greenery, and riverbanks where trenching or cabling is difficult."
 
 cta: 
   text: "Contact us for technical drawings, quotes, or integration advice."
