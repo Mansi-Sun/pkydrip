@@ -3,6 +3,7 @@ title: "PKYDrip LoRa-Based Wireless Irrigation System"
 tagline: ""
 description: "Overview of PKY-EG08 Wireless Irrigation Gateway and PKY-IC03 Wireless Irrigation Controller for smart irrigation applications."
 draft: false
+google_tracking: true
 image : ""
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"
@@ -100,7 +101,7 @@ Together, they provide a robust wireless communication network between irrigatio
   <section class="custom-cta">
   <h3>Need a custom solution or technical guide?</h3>
   <div>
-    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329" target="_blank">📞 Contact Our Experts</a>
+    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads lora-wireless-irrigation-system" target="_blank">📞 Contact Our Experts</a>
     <a href="mailto:info@pky-dripirrigation.com">✉️ Send an Inquiry Email</a>
     <a href="https://smart.pky-dripirrigation.com/irrigation-controller/" target="_blank">🔗 Product Details Page</a>
   </div>

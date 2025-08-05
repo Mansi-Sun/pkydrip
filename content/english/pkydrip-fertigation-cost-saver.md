@@ -3,6 +3,7 @@ title: "Cut Costs, Not Corners: PKYDrip Smart Fertigation Guarantees ROI"
 tagline: ""
 description: ""
 draft: false
+google_tracking: true
 image : "images/portfolio/pre-shipping-test.webp"
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"
@@ -205,7 +206,7 @@ Stop wasting resources on outdated methods. Let PKYDrip design a customized, cos
 
 
 <div align="center">
-  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329" target="_blank" style="
+  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads fertigation-cost-saver" target="_blank" style="
     display: inline-block;
     background-color: #28a745;
     color: white;

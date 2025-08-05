@@ -110,7 +110,7 @@
 {{ template "_internal/google_analytics.html" . }}
 
 <!-- google tag manager -->
-{{ with site.Params.google_tag_manager }}
+{{ if .Params.google_tracking }}
 <!-- Google tag (gtag.js) --> 
 <script>
   setTimeout(function () {
