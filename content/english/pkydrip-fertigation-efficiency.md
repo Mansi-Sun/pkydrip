@@ -55,7 +55,7 @@ Forget the compromises of off-the-shelf solutions. We specialize in enhancing yo
 
 
 <div align="center">
-  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329" target="_blank" style="
+  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads fertigation-efficiency" target="_blank" style="
     display: inline-block;
     background-color: #28a745;
     color: white;
