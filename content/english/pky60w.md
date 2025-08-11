@@ -3,7 +3,6 @@ title: "PKYDrip PKY-60W: Smart Irrigation, Precise Water Saving, The Core of Fut
 tagline: "Effortlessly Control 16-64 Zones, Automated Programs for More Efficient Cultivation & Landscaping"
 description: ""
 draft: false
-google_tracking: true
 image : ""
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"

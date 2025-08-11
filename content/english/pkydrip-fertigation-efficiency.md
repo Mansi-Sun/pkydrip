@@ -3,7 +3,6 @@ title: "Automate for More: PKYDrip Smart Fertigation Boosts Farm Efficiency"
 tagline: ""
 description: ""
 draft: false
-google_tracking: true
 image : "images/portfolio/pre-shipping-test.webp"
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"

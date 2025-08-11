@@ -110,43 +110,81 @@
 {{ template "_internal/google_analytics.html" . }}
 
 <!-- google tag manager -->
-{{ if .Params.google_tracking }}
-<!-- Google tag (gtag.js) --> 
+<!-- Google Analytics 4 + Google Ads + UTM Tracking (Delayed Load) -->
 <script>
-  setTimeout(function () {
-   
-    var gads = document.createElement('script');
-    gads.src = "https://www.googletagmanager.com/gtag/js?id=AW-16640554458";
-    gads.async = true;
-    document.head.appendChild(gads);
+(function () {
 
-   
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+  const urlParams = new URLSearchParams(window.location.search);
+  const source = urlParams.get('utm_source');
+  const medium = urlParams.get('utm_medium');
+  const campaign = urlParams.get('utm_campaign');
+
+  if (source || medium || campaign) {
+    localStorage.setItem('utm_source', source || '');
+    localStorage.setItem('utm_medium', medium || '');
+    localStorage.setItem('utm_campaign', campaign || '');
+  } else if (document.referrer) {
+    if (document.referrer.includes('google.')) {
+      localStorage.setItem('utm_source', 'google-organic');
+    } else if (document.referrer.includes('facebook.')) {
+      localStorage.setItem('utm_source', 'facebook-organic');
+    } else {
+      localStorage.setItem('utm_source', 'direct');
+    }
+  }
+
+  
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      
+      var gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-0NVPT3884E";
+      document.head.appendChild(gtagScript);
+
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+
+      gtag('js', new Date());
 
     
-    gtag('js', new Date());
-    gtag('config', 'AW-16640554458');
+      gtag('config', 'G-0NVPT3884E');
 
-   
-    window.gtag_report_conversion = function(url) {
-      var callback = function () {
-        if (typeof(url) !== 'undefined') {
-          window.location = url;
-        }
+      
+      gtag('config', 'AW-16640554458');
+
+ 
+      window.gtag_report_conversion = function(url) {
+        var callback = function () {
+          if (typeof(url) !== 'undefined') {
+            window.location = url;
+          }
+        };
+
+        
+        var utmSource = localStorage.getItem('utm_source') || '';
+        var utmMedium = localStorage.getItem('utm_medium') || '';
+        var utmCampaign = localStorage.getItem('utm_campaign') || '';
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16640554458/74ndCKzN7sEZENrr6v49',
+          'value': 0.0,
+          'currency': 'USD',
+          'event_callback': callback,
+          'utm_source': utmSource,
+          'utm_medium': utmMedium,
+          'utm_campaign': utmCampaign
+        });
+
+        return false;
       };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-16640554458/74ndCKzN7sEZENrr6v49',
-        'value': 0.0,
-        'currency': 'USD',
-        'event_callback': callback
-      });
-      return false;
-    };
-  }, 3000); 
+
+    }, 3000); 
+  });
+})();
 </script>
 
-{{ end }}
 
 <!-- matomo analytics -->
 {{ with site.Params.matomo }}

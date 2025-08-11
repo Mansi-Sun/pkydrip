@@ -3,7 +3,6 @@ title: "PKYDrip LoRa-Based Wireless Irrigation System"
 tagline: ""
 description: "Overview of PKY-EG08 Wireless Irrigation Gateway and PKY-IC03 Wireless Irrigation Controller for smart irrigation applications."
 draft: false
-google_tracking: true
 image : ""
 bg_image: "images/call-to-action-bg.jpg"
 layout: "service"
