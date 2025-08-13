@@ -77,7 +77,9 @@
     </div>
   </div>
 </section>
+{{ end }}
 
+{{ define "head_extra" }}
 <!-- Event snippet for form_submit conversion page -->
 <script>
   window.addEventListener("load", function () {
@@ -85,11 +87,11 @@
       e.preventDefault();
       var form = e.target;
       var email = form.querySelector('[type="email"]').value;
-      gtag('set', 'user_data', { 'email': email })
-      gtag('event', 'form_submit ');
+      gtag('set', 'user_data', { 'email': email });
+      gtag('event', 'form_submit');
       gtag('event', 'conversion', { 'send_to': 'AW-16640554458/EylDCILU9IEbENrr6v49' });
+      form.submit(); 
     });
   });
 </script>
-
 {{ end }}
