@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+<!-- Section 1: Hero -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+      <p class="text-lg text-gray-700">{{ .Params.description }}</p>
+    </div>
+    <div>
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Overview -->
+<section class="py-16 bg-green-50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Overview</h2>
+    <div class="prose max-w-none">
+      {{ .Params.overview | markdownify }}
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Key Features -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Key Features</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ range .Params.features }}
+      <div class="p-6 bg-gray-50 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">{{ .title }}</h3>
+        <p class="text-gray-600">{{ .desc }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Installation Notes -->
+<section class="py-16 bg-green-50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Installation Notes</h2>
+    <ul class="list-disc pl-6 text-gray-700">
+      {{ range .Params.installation }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+<!-- Section 5: Technical Specs -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Technical Specifications</h2>
+    <div class="overflow-x-auto">
+      {{ .Params.specs | markdownify }}
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: Application Scenarios -->
+<section class="py-16 bg-green-50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Application Scenarios</h2>
+    <ul class="list-disc pl-6 text-gray-700">
+      {{ range .Params.applications }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+<!-- Section 7: Video -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Product Video</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-full rounded-lg shadow-lg"
+              src="{{ .Params.video }}"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+{{ end }}

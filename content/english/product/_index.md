@@ -13,4 +13,7 @@ categories:
   - title: "Sensors & Weather Stations"
     description: "Soil moisture, temperature, NPK, EC/pH sensors and compact weather stations for automation."
     url: "/sensors-weather-stations/"
+  - title: "Hydroponic System"
+    description: "EC/pH controller and smart dosage system."
+    url: "/product/hydroponic/"
 ---
