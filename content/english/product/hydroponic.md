@@ -4,7 +4,7 @@ description: "Automatic EC and pH control with smart nutrient dosing for hydropo
 type: "product"
 layout: "single1"
 image: "/images/product/ph_ec_controller.webp"
-video: "https://youtu.be/sLNRKGKgKSU"
+video: "https://www.youtube.com/embed/sLNRKGKgKSU"
 
 overview: |
   The PKYDrip EC/PH Controller is an intelligent fertigation and nutrient dosing system designed for hydroponic farms, greenhouses, and soilless cultivation. 
@@ -23,16 +23,14 @@ features:
     desc: "If EC or pH values deviate from the defined range, the controller will trigger warnings to prevent over-fertilization or nutrient deficiency."
 
 
-specs: |
-  | Parameter         | Value                      |
-  |-------------------|----------------------------|
-  | EC Range          | 0.0 – 10.0 mS/cm           |
-  | pH Range          | 0.0 – 14.0                 |
-  | Control Channels  | 3 Fertilizer Dosing + 1 Pump |
-  | Sensor Inputs     | EC Sensor, pH Sensor       |
-  | Communication     | RS485 / Modbus / Optional LoRa |
-  | Power Supply      | 220V AC / Optional 24V DC  |
-  | Display Interface | Touchscreen or External Display |
+specs: 
+  - "EC Range: 0.0 – 10.0 mS/cm"
+  - "pH Range: 0.0 – 14.0"
+  - "Control Channels: 3 Fertilizer Dosing + 1 Pump"
+  - "Sensor Inputs: EC Sensor, pH Sensor"
+  - "Communication: RS485 / Modbus / Optional LoRa"
+  - "Power Supply: 220V AC / Optional 24V DC"
+  - "Display Interface: Touchscreen or External Display"
 
 
 applications:
