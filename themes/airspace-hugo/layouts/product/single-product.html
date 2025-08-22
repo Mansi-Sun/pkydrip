@@ -1,0 +1,111 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<main class="product-page">
+
+  {{ range .Params.sections }}
+
+  {{ $bg := .bg | default "#f9f9f9" }}
+  {{ $layout := .layout | default "left-right" }} <!-- left-right 或 center -->
+  {{ $reverse := .reverse | default false }}
+
+
+  <section style="background-color: {{ $bg }}; width: 100%; padding: 60px 0;">
+    <div class="container">
+      {{ if eq $layout "left-right" }}
+      <div class="row align-items-center">
+        {{ if $reverse }}
+        <div class="col-md-6 order-md-1 order-2 text-center">
+          {{ with .media }}
+          {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
+            style="max-height:400px; object-fit:contain;">{{ end }}
+          {{ if .video }}
+            <div class="d-flex justify-content-center my-3">
+               <div class="ratio ratio-16x9" style="max-width: 560px; width: 100%;">
+                  <iframe 
+                  src="{{ .video }}" 
+                  title="YouTube video player" 
+                  allowfullscreen>
+                  </iframe>
+              </div>
+            </div>{{ end }}
+          {{ end }}
+        </div>
+        <div class="col-md-6 order-md-2 order-1 d-flex flex-column justify-content-center">
+          {{ if .title }}<h2 class="alt-section-title">{{ .title }}</h2>{{ end }}
+          {{ with .content }}<div>{{ . | markdownify }}</div>{{ end }}
+          {{ if and .button_text .button_url }}
+          <a href="{{ .button_url }}" class="btn btn-success mt-3">{{ .button_text }}</a>
+          {{ end }}
+        </div>
+        {{ else }}
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          {{ if .title }}<h2 class="alt-section-title">{{ .title }}</h2>{{ end }}
+          {{ with .content }}<div>{{ . | markdownify }}</div>{{ end }}
+          {{ if and .button_text .button_url }}
+          <a href="{{ .button_url }}" class="btn btn-success mt-3">{{ .button_text }}</a>
+          {{ end }}
+        </div>
+        <div class="col-md-6 text-center">
+          {{ with .media }}
+          {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
+            style="max-height:400px; object-fit:contain;">{{ end }}
+          {{ if .video }}
+            <div class="d-flex justify-content-center my-3">
+              <div class="ratio ratio-16x9" style="max-width: 460px; width: 100%;">
+                <iframe 
+                src="{{ .video }}" 
+                title="YouTube video player" 
+                allowfullscreen>
+                </iframe>
+              </div>
+            </div>{{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ else if eq $layout "center" }}
+      <div class="d-flex flex-column align-items-center py-4">
+        {{ if .title }}
+        <h2 class="alt-section-title mb-3 text-center">{{ .title }}</h2>
+        {{ end }}
+
+        {{ with .content }}
+        <div class="mb-3 text-left text-secondary px-8 max">{{ . | markdownify }}</div>
+        {{ end }}
+
+        {{ if and .button_text .button_url }}
+        <a href="{{ .button_url }}" class="btn btn-success mb-3 px-4 py-2">{{ .button_text }}</a>
+        {{ end }}
+
+        {{ with .media }}
+        {{ if .image }}
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
+            style="max-height:400px; object-fit:contain;">
+          {{ end }}
+          {{ if .video }}
+            <div class="d-flex justify-content-center my-3 w-100">
+              <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
+                <iframe src="{{ .video }}" title="YouTube video player" allowfullscreen></iframe>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      {{ end }}
+    </div>
+  </section>
+
+  {{ end }}
+
+  <div class="container my-5">
+    {{ .Content }}
+  </div>
+
+</main>
+
+{{ end }}

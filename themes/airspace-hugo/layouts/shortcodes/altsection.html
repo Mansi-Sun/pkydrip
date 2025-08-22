@@ -1,0 +1,53 @@
+{{/* 
+  Shortcode: altsection
+  Params:
+    - bg: 背景色 (默认 #f9f9f9)
+    - title: section 标题
+    - title_size: h2 / h3 / h4 (默认 h2)
+    - reverse: 是否左右反转，true/false
+    - image: 图片 URL
+    - video: 视频 URL
+    - button_text: 按钮文本
+    - button_url: 按钮链接
+*/}}
+
+{{ $bg := .Get "bg" | default "#f9f9f9" }}
+{{ $title := .Get "title" | default "" }}
+{{ $title_size := .Get "title_size" | default "h2" }}
+{{ $reverse := .Get "reverse" | default "false" }}
+{{ $image := .Get "image" }}
+{{ $video := .Get "video" }}
+{{ $button_text := .Get "button_text" }}
+{{ $button_url := .Get "button_url" }}
+
+<section style="background-color: {{ $bg }}; width: 100%; min-height: 100vh; padding: 80px 0;">
+  <div class="container">
+    <div class="row align-items-center">
+      {{ if eq $reverse "true" }}
+        <div class="col-md-6">
+          {{ if $image }}<img src="{{ $image | relURL }}" alt="{{ $title }}" class="img-fluid w-100 mb-4">{{ end }}
+          {{ if $video }}<video src="{{ $video | relURL }}" controls class="img-fluid w-100 mb-4"></video>{{ end }}
+        </div>
+        <div class="col-md-6">
+          {{ if $title }}<{{ $title_size }} class="alt-section-title">{{ $title }}</{{ $title_size }}>{{ end }}
+          <div class="alt-section-content">{{ .Inner | markdownify }}</div>
+          {{ if and $button_text $button_url }}
+            <a href="{{ $button_url }}" class="btn btn-success mt-3">{{ $button_text }}</a>
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="col-md-6">
+          {{ if $title }}<{{ $title_size }} class="alt-section-title">{{ $title }}</{{ $title_size }}>{{ end }}
+          <div class="alt-section-content">{{ .Inner | markdownify }}</div>
+          {{ if and $button_text $button_url }}
+            <a href="{{ $button_url }}" class="btn btn-success mt-3">{{ $button_text }}</a>
+          {{ end }}
+        </div>
+        <div class="col-md-6">
+          {{ if $image }}<img src="{{ $image | relURL }}" alt="{{ $title }}" class="img-fluid w-100 mb-4">{{ end }}
+          {{ if $video }}<video src="{{ $video | relURL }}" controls class="img-fluid w-100 mb-4"></video>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

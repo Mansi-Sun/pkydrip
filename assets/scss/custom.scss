@@ -70,6 +70,36 @@
 .custom-section p strong {
     color: #e67e22;
 }
+.product-page {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.alt-section-title {
+  font-family: "Urbanist", sans-serif;
+  font-size: 3rem;     
+  font-weight: 700;      
+  margin-bottom: 2rem;   
+  padding-bottom: 1rem;
+  line-height: 1.2;      
+  text-align: left;      
+}
+
+.text-secondary {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;     
+  font-weight: 600;  
+}
+
+.navigation {
+  padding: 0;
+}
+
+header {
+  padding: 0;
+}
 
 .custom-cta {
     text-align: center;

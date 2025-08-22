@@ -1,8 +1,11 @@
-<section class="page-title bg-2" style="background-image: url('{{ .Params.bg_image | relURL }}');">
-  <div class="container">
+<section class="page-title bg-2" style="background-image: url('{{ .Params.bg_image | relURL }}'); position: relative;">
+  <!-- Overlay layer (optional, adjust color/opacity) -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events: none;"></div>
+
+  <div class="container position-relative" style="z-index: 1;">
     <div class="row">
       <div class="col-md-12">
-        <div class="block">
+        <div class="block text-center text-white">
           <h1>{{ .Title }}</h1>
           <p>{{ .Params.tagline }}</p>
         </div>

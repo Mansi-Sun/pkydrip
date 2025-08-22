@@ -1,7 +1,11 @@
 {{ with site.GetPage "/" }}
 {{ with .Params.cta }}
-<section class="call-to-action bg-1 section-sm overly" style="background-image: url('{{ .bg_image | relURL }}');">
-  <div class="container">
+<section class="call-to-action bg-1 section-sm overly"
+  style="background-image: url('{{ .bg_image | relURL }}'); position: relative;">
+  <!-- Overlay layer -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events: none;"></div>
+
+  <div class="container position-relative" style="z-index: 1;">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
@@ -17,5 +21,6 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 {{ end }}

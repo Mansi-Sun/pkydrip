@@ -70,6 +70,7 @@
 <section class="testimonial section-sm">
   <div class="container">
     <div class="row">
+
       {{ if .Params.testimonial.enable }}
       {{ with .GetPage "/" }}
       <div class="col-md-6">
@@ -95,15 +96,33 @@
       {{ if .enable }}
       <div class="col-md-6">
         <div class="tabCommon">
-          <ul class="nav nav-tabs">
+          <!-- Bootstrap 5 tabs -->
+          <ul class="nav nav-tabs" role="tablist">
             {{ range $index, $elements := .tabs }}
-            <li {{ if eq $index 0 }} class="active" {{ end }}><a href="#{{ .name | urlize }}"
-                data-toggle="tab">{{ .name }}</a></li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link {{ if eq $index 0 }}active{{ end }}"
+                id="{{ .name | urlize }}-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#{{ .name | urlize }}"
+                type="button"
+                role="tab"
+                aria-controls="{{ .name | urlize }}"
+                aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}">
+                {{ .name }}
+              </button>
+            </li>
             {{ end }}
           </ul>
+
           <div class="tab-content">
             {{ range $index, $elements := .tabs }}
-            <div id="{{ .name | urlize }}" class="tab-pane fade {{ if eq $index 0 }} active in {{ end }}">
+            <div
+              id="{{ .name | urlize }}"
+              class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}"
+              role="tabpanel"
+              aria-labelledby="{{ .name | urlize }}-tab"
+              tabindex="0">
               {{ .content | $.Page.RenderString (dict "display" "block") }}
             </div>
             {{ end }}
@@ -112,9 +131,11 @@
       </div>
       {{ end }}
       {{ end }}
+
     </div>
   </div>
 </section>
+
 
 <!-- Call to action -->
 {{ if .Params.cta.enable }}

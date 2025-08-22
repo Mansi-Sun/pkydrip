@@ -3,23 +3,24 @@
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
-  <div class="container">
+<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image:url('{{ .bg_image | relURL }}'); position:relative;">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events:none;"></div>
+
+  <div class="container position-relative" style="z-index:1;">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
           {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
           {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          {{ with .button }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
+          {{ with .button }}{{ if .enable }}
+            <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}{{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
+
 {{ end }}
 {{ end }}
 <!-- /banner -->
@@ -57,6 +58,7 @@
 <section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
   <div class="container">
     <div class="row">
+      <div class="col-6 col-md-6"></div>
       <div class="col-md-6 col-md-offset-6">
         {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
         {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
