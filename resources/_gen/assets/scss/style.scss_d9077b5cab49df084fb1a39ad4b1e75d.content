@@ -2266,7 +2266,6 @@ header .navbar-default .navbar-nav li a:hover {
   color: #333; }
 
 .alt-section-title {
-  font-family: "Urbanist", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -2275,7 +2274,6 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: left; }
 
 .text-secondary {
-  font-family: "Urbanist", sans-serif;
   font-size: 1rem;
   font-weight: 600; }
 
