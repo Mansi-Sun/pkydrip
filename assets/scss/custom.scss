@@ -139,14 +139,24 @@ header {
 
 .section-block { background-color: var(--bg, #fff); }
 
-
 .btn.btn-success { border-radius: .5rem; }
 
 /* Lightweight YouTube */
 .yt-lite{ position:relative; display:block; background:#000; overflow:hidden; border-radius:.5rem; z-index:0; }
 .yt-lite iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
-.yt-lite .yt-thumb{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.yt-lite .yt-play{ position:absolute; inset:0; display:grid; place-items:center; background:none; border:0; cursor:pointer; }
+
+
+.yt-lite picture{ position:absolute; inset:0; z-index:1; pointer-events:none; }
+.yt-lite .yt-thumb{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; pointer-events:none; }
+
+
+.yt-lite .yt-play{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  background:none; border:0; cursor:pointer;
+  z-index:2; 
+}
+
 .yt-lite .yt-play .yt-icon{
   display:block; width:64px; height:64px;
   background:
@@ -156,5 +166,6 @@ header {
   transition: transform .15s ease;
 }
 .yt-lite .yt-play:active .yt-icon{ transform: scale(.96); }
+
 
 .ratio > .yt-lite{ position:absolute; inset:0; width:100%; height:100%; }
