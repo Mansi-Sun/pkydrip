@@ -1,7 +1,6 @@
 {{- $url := .url -}}
 {{- $title := or .title "YouTube video player" -}}
 
-{{/* 提取视频ID（兼容 youtu.be / watch?v= / embed / shorts） */}}
 {{- $id := "" -}}
 {{- if findRE `youtu\.be/([^?&/]+)` $url -}}
   {{- $id = replaceRE `.*youtu\.be/([^?&/]+).*` `$1` $url -}}
@@ -14,7 +13,6 @@
 {{- end -}}
 
 {{- if not $id -}}
-  <!-- 兜底：无法解析ID就输出 lazy iframe（注意：外层已有 .ratio） -->
   <div class="yt-lite">
     <iframe
       src="{{ $url }}"
@@ -34,8 +32,7 @@
     <noscript>
       <iframe
         src="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0&modestbranding=1&playsinline=1"
-        title="{{ $title }}"
-        loading="lazy"
+        title="{{ $title }}" loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </noscript>

@@ -21,9 +21,9 @@
           {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
             style="max-height:400px; object-fit:contain;">{{ end }}
           {{ if .video }}
-            <div class="d-flex justify-content-center my-3">
-              <div class="ratio ratio-16x9" style="max-width: 560px; width: 100%;">
-                {{ partial "youtube-lite.html" (dict "url" .video "max" "560px" "title" $.Title) }}
+            <div class="my-3">
+              <div class="ratio ratio-16x9 mx-auto" style="max-width:560px;">
+                {{ partial "youtube-lite.html" (dict "url" .video "title" $.Title) }}
               </div>
             </div>
           {{ end }}
@@ -49,9 +49,9 @@
           {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
             style="max-height:400px; object-fit:contain;">{{ end }}
           {{ if .video }}
-            <div class="d-flex justify-content-center my-3">
-              <div class="ratio ratio-16x9" style="max-width: 460px; width: 100%;">
-                {{ partial "youtube-lite.html" (dict "url" .video "max" "460px" "title" $.Title) }}
+            <div class="my-3">
+              <div class="ratio ratio-16x9 mx-auto" style="max-width:560px;">
+              {{ partial "youtube-lite.html" (dict "url" .video "title" $.Title) }}
               </div>
             </div>
           {{ end }}
@@ -80,11 +80,11 @@
             style="max-height:400px; object-fit:contain;">
           {{ end }}
         {{ if .video }}
-        <div class="my-3">
-          <div class="ratio ratio-16x9 mx-auto" style="max-width:560px;">
-            {{ partial "youtube-lite.html" (dict "url" .video "title" $.Title) }}
+          <div class="my-3">
+            <div class="ratio ratio-16x9 mx-auto" style="max-width:800px;">
+              {{ partial "youtube-lite.html" (dict "url" .video "title" $.Title) }}
+            </div>
           </div>
-        </div>
         {{ end }}
         </div>
         {{ end }}
