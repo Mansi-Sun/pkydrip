@@ -2316,6 +2316,9 @@ header {
 .section-block {
   background-color: var(--bg, #fff); }
 
+.btn.btn-success {
+  border-radius: .5rem; }
+
 /* Lightweight YouTube */
 .yt-lite {
   position: relative;
@@ -2348,12 +2351,16 @@ header {
   border: 0;
   cursor: pointer; }
 
-.yt-lite .yt-play::before {
-  content: "";
-  width: 68px;
-  height: 48px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path fill="#f00" d="M66.52 7.73a8 8 0 0 0-5.63-5.66C55.76.8 34 .8 34 .8s-21.76 0-26.89 1.27A8 8 0 0 0 1.48 7.73 83 83 0 0 0 .2 24a83 83 0 0 0 1.28 16.27 8 8 0 0 0 5.63 5.66C12.24 47.2 34 47.2 34 47.2s21.76 0 26.89-1.27a8 8 0 0 0 5.63-5.66A83 83 0 0 0 67.8 24a83 83 0 0 0-1.28-16.27Z"/><path fill="#fff" d="M45 24 27 14v20"/></svg>') no-repeat center/contain;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4)); }
+.yt-lite .yt-play .yt-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0) 60%) center/180% 180%, url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>') center/48px 48px no-repeat;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+  transition: transform .15s ease; }
+
+.yt-lite .yt-play:active .yt-icon {
+  transform: scale(0.96); }
 
 .ratio > .yt-lite {
   position: absolute;

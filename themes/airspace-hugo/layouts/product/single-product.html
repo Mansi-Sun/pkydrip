@@ -5,70 +5,75 @@
 <main class="product-page">
 
   {{ range .Params.sections }}
-    {{ $layout := .layout | default "left-right" }}  {{/* left-right | center */}}
+    {{ $layout := .layout | default "left-right" }}
     {{ $reverse := .reverse | default false }}
-    {{ $bg := .bg | default "#ffffff" }}
+    {{ $bg := .bg | default "#fff" }}
 
     <section class="section-block py-5" style="--bg: {{ $bg }};">
       <div class="container">
 
+        {{/* 左右结构 */}}
         {{ if eq $layout "left-right" }}
-          <div class="row align-items-center">
-            {{ if $reverse }}
-              <div class="col-md-6 order-md-2 mb-4 mb-md-0">
-                {{ with .title }}<h2 class="h3 mb-3">{{ . }}</h2>{{ end }}
-                {{ with .content }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
-                {{ with .list }}
-                  <ul class="mt-3">
-                    {{ range . }}<li>{{ . }}</li>{{ end }}
-                  </ul>
-                {{ end }}
-              </div>
-              <div class="col-md-6 order-md-1 text-center">
-                {{ with .media }}
-                  {{ with .image }}<img class="img-fluid" src="{{ . | relURL }}" alt="">{{ end }}
-                {{ end }}
-              </div>
-            {{ else }}
-              <div class="col-md-6 mb-4 mb-md-0">
-                {{ with .title }}<h2 class="h3 mb-3">{{ . }}</h2>{{ end }}
-                {{ with .content }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
-                {{ with .list }}
-                  <ul class="mt-3">
-                    {{ range . }}<li>{{ . }}</li>{{ end }}
-                  </ul>
-                {{ end }}
-              </div>
-              <div class="col-md-6 text-center">
-                {{ with .media }}
-                  {{ with .image }}<img class="img-fluid" src="{{ . | relURL }}" alt="">{{ end }}
-                {{ end }}
-              </div>
-            {{ end }}
-          </div>
+        <div class="row align-items-center">
+          {{ if $reverse }}
+            <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+              {{ with .title }}<h2 class="h3 mb-3">{{ . }}</h2>{{ end }}
+              {{ with .content }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
+              {{ with .list }}
+                <ul class="mt-3">
+                  {{ range . }}<li>{{ . }}</li>{{ end }}
+                </ul>
+              {{ end }}
+              {{ if and .button_text .button_url }}
+                <a href="{{ .button_url }}" class="btn btn-success mt-3 px-4">{{ .button_text }}</a>
+              {{ end }}
+            </div>
+            <div class="col-md-6 order-md-1 text-center">
+              {{ with .media.image }}<img class="img-fluid" src="{{ . | relURL }}" alt="">{{ end }}
+            </div>
+          {{ else }}
+            <div class="col-md-6 mb-4 mb-md-0">
+              {{ with .title }}<h2 class="h3 mb-3">{{ . }}</h2>{{ end }}
+              {{ with .content }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
+              {{ with .list }}
+                <ul class="mt-3">
+                  {{ range . }}<li>{{ . }}</li>{{ end }}
+                </ul>
+              {{ end }}
+              {{ if and .button_text .button_url }}
+                <a href="{{ .button_url }}" class="btn btn-success mt-3 px-4">{{ .button_text }}</a>
+              {{ end }}
+            </div>
+            <div class="col-md-6 text-center">
+              {{ with .media.image }}<img class="img-fluid" src="{{ . | relURL }}" alt="">{{ end }}
+            </div>
+          {{ end }}
+        </div>
 
+        {{/* 居中结构（可含视频） */}}
         {{ else if eq $layout "center" }}
-          <div class="d-flex flex-column align-items-center">
-            {{ with .title }}<h2 class="h3 mb-3 text-center">{{ . }}</h2>{{ end }}
-            {{ with .content }}<div class="text-muted mb-3 text-center" style="max-width: 800px;">{{ . | markdownify }}</div>{{ end }}
-
-            {{ with .list }}
-              <ul class="mb-3" style="max-width: 800px;">
-                {{ range . }}<li>{{ . }}</li>{{ end }}
-              </ul>
+        <div class="d-flex flex-column align-items-center text-center">
+          {{ with .title }}<h2 class="h3 mb-3">{{ . }}</h2>{{ end }}
+          {{ with .content }}<div class="text-muted mb-3" style="max-width: 800px;">{{ . | markdownify }}</div>{{ end }}
+          {{ with .list }}
+            <ul class="mb-3" style="max-width: 800px;">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+          {{ if and .button_text .button_url }}
+            <a href="{{ .button_url }}" class="btn btn-success mb-3 px-4">{{ .button_text }}</a>
+          {{ end }}
+          {{ with .media }}
+            {{ with .image }}
+              <img class="img-fluid mb-3" src="{{ . | relURL }}" alt="" style="max-height: 400px; object-fit: contain;">
             {{ end }}
-
-            {{ with .media }}
-              {{ with .image }}
-                <img class="img-fluid mb-3" src="{{ . | relURL }}" alt="" style="max-height: 400px; object-fit: contain;">
-              {{ end }}
-              {{ with .video }}
-                <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
-                  {{ partial "youtube-lite.html" (dict "url" . "title" ($.Title | default "Video")) }}
-                </div>
-              {{ end }}
+            {{ with .video }}
+              <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+                {{ partial "youtube-lite.html" (dict "url" . "title" ($.Title | default "Video")) }}
+              </div>
             {{ end }}
-          </div>
+          {{ end }}
+        </div>
         {{ end }}
 
       </div>
