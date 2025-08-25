@@ -79,13 +79,13 @@
           <img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid"
             style="max-height:400px; object-fit:contain;">
           {{ end }}
-          {{ if .video }}
-            <div class="d-flex justify-content-center my-3 w-100">
-              <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
-                {{ partial "youtube-lite.html" (dict "url" .video "max" "800px" "title" $.Title) }}
-              </div>
-            </div>
-          {{ end }}
+        {{ if .video }}
+        <div class="d-flex justify-content-center my-3 w-100">
+          <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
+            {{ partial "youtube-lite.html" (dict "url" .video "max" "800px" "title" $.Title) }}
+          </div>
+        </div>
+        {{ end }}
         </div>
         {{ end }}
       </div>
