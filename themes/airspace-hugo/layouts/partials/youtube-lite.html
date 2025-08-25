@@ -14,12 +14,9 @@
 
 {{- if not $id -}}
   <div class="yt-lite">
-    <iframe
-      src="{{ $url }}"
-      title="{{ $title }}"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <iframe src="{{ $url }}" title="{{ $title }}" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
   </div>
 {{- else -}}
   <div class="yt-lite" data-ytid="{{ $id }}" data-title="{{ $title }}">
@@ -30,11 +27,10 @@
            src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg">
     </picture>
     <noscript>
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0&modestbranding=1&playsinline=1"
-        title="{{ $title }}" loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0&modestbranding=1&playsinline=1"
+              title="{{ $title }}" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
     </noscript>
   </div>
 {{- end -}}
