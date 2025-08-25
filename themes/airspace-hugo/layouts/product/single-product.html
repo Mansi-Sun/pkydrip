@@ -22,14 +22,11 @@
             style="max-height:400px; object-fit:contain;">{{ end }}
           {{ if .video }}
             <div class="d-flex justify-content-center my-3">
-               <div class="ratio ratio-16x9" style="max-width: 560px; width: 100%;">
-                  <iframe 
-                  src="{{ .video }}" 
-                  title="YouTube video player" 
-                  allowfullscreen>
-                  </iframe>
+              <div class="ratio ratio-16x9" style="max-width: 560px; width: 100%;">
+                {{ partial "youtube-lite.html" (dict "url" .video "max" "560px" "title" $.Title) }}
               </div>
-            </div>{{ end }}
+            </div>
+          {{ end }}
           {{ end }}
         </div>
         <div class="col-md-6 order-md-2 order-1 d-flex flex-column justify-content-center">
@@ -54,13 +51,10 @@
           {{ if .video }}
             <div class="d-flex justify-content-center my-3">
               <div class="ratio ratio-16x9" style="max-width: 460px; width: 100%;">
-                <iframe 
-                src="{{ .video }}" 
-                title="YouTube video player" 
-                allowfullscreen>
-                </iframe>
+                {{ partial "youtube-lite.html" (dict "url" .video "max" "460px" "title" $.Title) }}
               </div>
-            </div>{{ end }}
+            </div>
+          {{ end }}
           {{ end }}
         </div>
         {{ end }}
@@ -88,7 +82,7 @@
           {{ if .video }}
             <div class="d-flex justify-content-center my-3 w-100">
               <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
-                <iframe src="{{ .video }}" title="YouTube video player" allowfullscreen></iframe>
+                {{ partial "youtube-lite.html" (dict "url" .video "max" "800px" "title" $.Title) }}
               </div>
             </div>
           {{ end }}

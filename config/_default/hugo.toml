@@ -27,7 +27,7 @@ ID = 'AW-16640554458' # see https://gohugo.io/templates/internal/#configure-goog
 noJSConfigInAssets = false
 useResourceCacheWhen = 'fallback'
 [build.buildStats]
-enable = true
+enable = false
 [[build.cachebusters]]
 source = 'assets/.*\.(js|ts|jsx|tsx)'
 target = '(js|scripts|javascript)'

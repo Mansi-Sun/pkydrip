@@ -1,0 +1,46 @@
+{{- /* Input: dict "url" (必填, YouTube URL) "max" (可选, max-width, 默认560px) "title" (可选) */ -}}
+{{- $url := .url -}}
+{{- $max := or .max "560px" -}}
+{{- $title := or .title "YouTube video player" -}}
+
+{{/* 提取视频ID，兼容 youtu.be / watch?v= / embed / shorts */}}
+{{- $id := "" -}}
+{{- if findRE `youtu\.be/([^?&/]+)` $url -}}
+  {{- $id = index (findRE `youtu\.be/([^?&/]+)` $url) 0 | replaceRE `.*youtu\.be/([^?&/]+).*` `$1` -}}
+{{- else if findRE `v=([^?&/]+)` $url -}}
+  {{- $id = index (findRE `v=([^?&/]+)` $url) 0 | replaceRE `.*v=([^?&/]+).*` `$1` -}}
+{{- else if findRE `/embed/([^?&/]+)` $url -}}
+  {{- $id = index (findRE `/embed/([^?&/]+)` $url) 0 | replaceRE `.*/embed/([^?&/]+).*` `$1` -}}
+{{- else if findRE `/shorts/([^?&/]+)` $url -}}
+  {{- $id = index (findRE `/shorts/([^?&/]+)` $url) 0 | replaceRE `.*/shorts/([^?&/]+).*` `$1` -}}
+{{- end -}}
+
+{{- if not $id -}}
+  {{- /* 兜底：若无法解析ID，回退为标准 iframe（lazy）*/ -}}
+  <div class="ratio ratio-16x9" style="max-width: {{ $max }}; width: 100%;">
+    <iframe
+      src="{{ $url }}"
+      title="{{ $title }}"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+{{- else -}}
+  <div class="yt-lite ratio ratio-16x9" style="max-width: {{ $max }}; width: 100%;" data-ytid="{{ $id }}" data-title="{{ $title }}">
+    <button class="yt-play" aria-label="Play video"></button>
+    <picture>
+      <!-- 先尝试 WebP 缩略图，失败则用 jpg -->
+      <source srcset="https://i.ytimg.com/vi_webp/{{ $id }}/hqdefault.webp" type="image/webp">
+      <img class="yt-thumb" alt="" loading="lazy" decoding="async"
+           src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg">
+    </picture>
+    <noscript>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0&modestbranding=1&playsinline=1"
+        title="{{ $title }}"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </noscript>
+  </div>
+{{- end -}}
