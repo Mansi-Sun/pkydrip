@@ -102,17 +102,18 @@ mission_vision:
   # tab item loop
   - name : "Product Categories"
     content : "
-    [**Fertigation Machines**](/project/rio-furniture-1.md)<br><br> [**Smart Irrigation Controllers**](/blog/)<br><br>
+    [**Fertigation Machines**](/fertigation-system/)<br><br> 
+    [**Smart Irrigation Controllers**](/irrigation-controller/)<br><br>
     [**Hydroponic Systems**](/product/hydroponic/)<br><br>
-    [**Valves (Solenoid & Motorized)**](/products/valves/)<br><br>
-    [**Sensors & Weather Stations**](/products/sensors/)<br><br>
-    [**RTU Modules**](/products/RTU/)
+    [**Sensors & Weather Stations**](/sensors-weather-stations/)<br><br>
+    [**LoRa-Based Wireless Irrigation System**](/lora-wireless-irrigation-system/)
     "
 
   # tab item loop
   - name : "Solutions"
     content : "
-    [**Sprinkler Irrigation**](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana)<br><br> [**Drip Irrigation**](/solution/10-hectares-of-coconut-tree-drip-irrigation)<br><br>
+    [**Sprinkler Irrigation**](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana)<br><br> 
+    [**Drip Irrigation**](/solution/10-hectares-of-coconut-tree-drip-irrigation)<br><br>
     [**Flood Irrigation**](/solution/21-hectares-of-rice-flood-irrigation)<br><br>
     [**Drip Tape Irrigation**](/solution/drip-tape-irrigation-for-1-hectare-of-tomatos)<br><br>
     [**Rain Pipe Irrigation**](/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field)
