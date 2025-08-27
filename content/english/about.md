@@ -103,7 +103,7 @@ mission_vision:
   - name : "Product Categories"
     content : "
     [**Fertigation Machines**](/project/rio-furniture-1.md)<br><br> [**Smart Irrigation Controllers**](/blog/)<br><br>
-    [**EC/pH Controllers**](/products/)<br><br>
+    [**Hydroponic Systems**](/product/hydroponic/)<br><br>
     [**Valves (Solenoid & Motorized)**](/products/valves/)<br><br>
     [**Sensors & Weather Stations**](/products/sensors/)<br><br>
     [**RTU Modules**](/products/RTU/)
