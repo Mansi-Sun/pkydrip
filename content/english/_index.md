@@ -35,7 +35,7 @@ portfolio:
   "
   button:
     enable: true
-    label: "Learn More"
+    label: "Explore our Fertigation System"
     link: "/fertigation-system"
 
 
@@ -53,7 +53,7 @@ cta:
   content: "We offer professional irrigation planning services tailored to your crop type, land size, and environmental conditions. <br>  Our experts design efficient, cost-effective systems to optimize water usage, improve yields, and support sustainable farming practices."
   button:
     enable: true
-    label: "Learn More"
+    label: "View our Service Packages"
     link: "/sv/service-packages"
 
 ############################# Funfacts ###############################
