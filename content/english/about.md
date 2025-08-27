@@ -1,6 +1,6 @@
 ---
-title: "About PKYDRIP"
-description: "Efficient, Sustainable, Connected"
+title: "Smart Irrigation & Fertigation Systems | PKYDRIP"
+description: "PKYDRIP provides smart irrigation and fertigation solutions designed for greenhouses, orchards, and open-field farms. Our systems support remote control, zoning irrigation, real-time sensor data, and automated fertigation — helping farmers save water, reduce costs, and increase crop yields."
 bg_image: "images/slider-bg.webp"
 layout: "about"
 draft: false

@@ -74,28 +74,6 @@
   </url><url>
     <loc>https://smart.pky-dripirrigation.com/solution/21-hectares-of-rice-flood-irrigation/</loc>
   </url><url>
-    <loc>https://smart.pky-dripirrigation.com/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="https://smart.pky-dripirrigation.com/fr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="https://smart.pky-dripirrigation.com/it/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-at"
-                href="https://smart.pky-dripirrigation.com/de/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://smart.pky-dripirrigation.com/about/"
-                />
-  </url><url>
     <loc>https://smart.pky-dripirrigation.com/author/</loc>
     <xhtml:link
                 rel="alternate"
@@ -323,6 +301,28 @@
                 />
   </url><url>
     <loc>https://smart.pky-dripirrigation.com/categories/services/</loc>
+  </url><url>
+    <loc>https://smart.pky-dripirrigation.com/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://smart.pky-dripirrigation.com/fr/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="https://smart.pky-dripirrigation.com/it/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-at"
+                href="https://smart.pky-dripirrigation.com/de/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://smart.pky-dripirrigation.com/about/"
+                />
   </url><url>
     <loc>https://smart.pky-dripirrigation.com/irrigation-controller/</loc>
   </url><url>
