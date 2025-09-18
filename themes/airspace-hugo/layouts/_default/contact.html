@@ -133,21 +133,21 @@
     }, true); 
   });
 </script>
+{{ end }}
 
 <script>
-(function () {
-  'use strict';
-  var form = document.querySelector('form.needs-validation[name="{{ if site.Params.contact.form.use_netlify }}contact_{{ $.Language.Lang }}{{ else }}contact{{ end }}"]');
-  if (!form) return;
+document.addEventListener('DOMContentLoaded', function () {
+  var forms = document.querySelectorAll('form.needs-validation');
+  console.log('[contact] forms found:', forms.length); 
 
-  form.addEventListener('submit', function (e) {
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    form.classList.add('was-validated');
-  }, false);
-})();
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {      
+        e.preventDefault();             
+        e.stopPropagation();
+      }
+      form.classList.add('was-validated'); 
+    }, false);
+  });
+});
 </script>
-
-{{ end }}
