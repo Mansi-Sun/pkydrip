@@ -106,6 +106,21 @@
 {{ end }}
 
 {{ define "head_extra" }}
+<script>
+(function(){
+  document.addEventListener('submit',function(e){
+    var form=e.target;
+    if(!(form instanceof HTMLFormElement)) return;
+    if(!form.closest('.contact-form')) return;
+    if(!form.checkValidity()){
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      form.classList.add('was-validated');
+    }
+  },true);
+})();
+</script>
+
 <!-- Event snippet for form_submit conversion page -->
 <script>
   window.addEventListener("load", function () {
@@ -133,21 +148,6 @@
     }, true); 
   });
 </script>
+
 {{ end }}
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var forms = document.querySelectorAll('form.needs-validation');
-  console.log('[contact] forms found:', forms.length); 
-
-  forms.forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      if (!form.checkValidity()) {      
-        e.preventDefault();             
-        e.stopPropagation();
-      }
-      form.classList.add('was-validated'); 
-    }, false);
-  });
-});
-</script>
