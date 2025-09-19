@@ -30,12 +30,12 @@
 
             <div class="form-group">
               <label for="email" class="visually-hidden">{{ i18n "contact_form_email" }}</label>
-              <input id="email" name="email" type="email" class="form-control"
-                      autocomplete="email" inputmode="email" 
-                      placeholder="{{ i18n "contact_form_email" }}" required
-                      pattern="^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\.)+[A-Za-z]{2,}$"
-                      title="Please enter a valid email (e.g. name@example.com)">
-              <div class="invalid-feedback">{{ i18n "please_enter_valid_email" | default "Please enter a valid email address." }}</div>
+              <input id="contact-email" name="email" type="email" class="form-control"
+                      autocomplete="email" inputmode="email" required
+                      placeholder='{{ i18n "contact_form_email" }}' aria-describedby="emailHelp"
+                      pattern="^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,}$">
+              <div id="emailHelp" class="invalid-feedback">
+                {{ i18n "please_enter_valid_email" | default "Please enter a valid email address." }}</div>
             </div>
 
             <div class="form-group">
@@ -114,7 +114,30 @@
     var form=e.target;
     if(!(form instanceof HTMLFormElement)) return;
     if(!form.closest('.contact-form')) return;
-    if(!form.checkValidity()){
+
+    var invalid=!form.checkValidity();
+
+   
+    var email=form.elements['email']||form.querySelector('#contact-email')||form.querySelector('#email');
+    var re=/^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,}$/;
+    if(email){
+      var v=(email.value||'').trim();
+      if(!re.test(v)){
+        invalid=true;
+        email.setCustomValidity('Please enter a valid email (e.g. name@example.com)');
+      }else{
+        email.setCustomValidity('');
+      }
+    }
+
+    var rc=form.querySelector('textarea[name="g-recaptcha-response"],input[name="g-recaptcha-response"]');
+    if(rc && !rc.value.trim()){
+      invalid=true;
+      var msg=form.querySelector('#recaptchaError');
+      if(msg) msg.classList.remove('d-none');
+    }
+
+    if(invalid){
       e.preventDefault();
       e.stopImmediatePropagation();
       form.classList.add('was-validated');
@@ -122,6 +145,7 @@
   },true);
 })();
 </script>
+
 
 <!-- Event snippet for form_submit conversion page -->
 <script>
