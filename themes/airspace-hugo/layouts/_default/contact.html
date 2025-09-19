@@ -31,7 +31,8 @@
             <div class="form-group">
               <label for="email" class="visually-hidden">{{ i18n "contact_form_email" }}</label>
               <input id="email" name="email" type="email" class="form-control"
-                      autocomplete="email" inputmode="email" required
+                      autocomplete="email" inputmode="email" 
+                      placeholder="{{ i18n "contact_form_email" }}" required
                       pattern="^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\.)+[A-Za-z]{2,}$"
                       title="Please enter a valid email (e.g. name@example.com)">
               <div class="invalid-feedback">{{ i18n "please_enter_valid_email" | default "Please enter a valid email address." }}</div>
