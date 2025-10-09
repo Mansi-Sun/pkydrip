@@ -106,7 +106,44 @@
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
 
-<!-- google tag manager -->
+<!-- google ads -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.href.includes('contact/')) {
+        document.addEventListener('click', function (e) {
+            var dom = e.target.closest('[type="submit"]');
+            if (dom === null) return;
+            var form = dom.closest('form');
+
+            var email = form.querySelector('input[name="email"]').value;
+    
+            if (email != "") {
+                gtag('set', 'user_data', { "email": email });
+                gtag('event', 'conversion', { 'send_to': 'AW-16640554458' });
+            };
+        });
+    }
+});
+</script>
+<script>
+    window.addEventListener('load', function (event) {
+        if (window.location.href.includes("/message_sent")) {
+            gtag('event', 'conversion', { 'send_to': 'AW-16640554458/EylDCILU9IEbENrr6v49' });
+        }
+    });
+</script>
+
+
+<script>
+    window.addEventListener("load", function (event) {
+        document.querySelectorAll("a[href*='wa.me']").forEach(function (e) {
+            e.addEventListener('click', function () {
+                gtag('event', 'Whatsapp_Click20250917');
+            });
+        });
+    });
+</script>
+
 <!-- Google Analytics 4 + Google Ads + UTM Tracking (Delayed Load) -->
 <script>
 (function () {

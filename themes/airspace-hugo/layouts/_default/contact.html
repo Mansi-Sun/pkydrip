@@ -146,34 +146,5 @@
 })();
 </script>
 
-
-<!-- Event snippet for form_submit conversion page -->
-<script>
-  window.addEventListener("load", function () {
-    document.addEventListener("submit", function (e) {
-      var form = e.target;
-
-    
-      if (!form.closest(".contact-form")) return;
-
-     
-      var emailField = form.querySelector('[type="email"]');
-      var email = emailField ? emailField.value : "";
-
-  
-      if (typeof gtag === "function") {
-        if (email) {
-          gtag("set", "user_data", { email: email });
-        }
-
-        gtag("event", "form_submit");
-        gtag("event", "conversion", {
-          send_to: "AW-16640554458/EylDCILU9IEbENrr6v49"
-        });
-      }
-    }, true); 
-  });
-</script>
-
 {{ end }}
 
