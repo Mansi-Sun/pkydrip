@@ -21,8 +21,12 @@ url: "/distributor-welcome/"
     <li><p><strong>One-stop supply chain</strong> with filters, valves, sprinklers, drip lines, fittings and more</p></li>
   </ul>
   <div class="text-center mt-5">
-    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Contact Our Experts</a>
-  </div>
+    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
+       href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
+       target="_blank" rel="noopener">
+      💬 Contact Our Experts
+    </a>
+    </div>
 </div>
 
 <div>
@@ -70,8 +74,7 @@ url: "/distributor-welcome/"
     </div>
 
   <div class="text-center mt-5">
-    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Apply via WhatsApp</a>
-    <a class="btn btn-success btn-lg"
+    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
       💬 Apply via WhatsApp
@@ -100,10 +103,12 @@ url: "/distributor-welcome/"
   <div class="container">
     <h2 class="fw-bold mb-3">Ready to Represent PKYDRIP in Your Region?</h2>
     <p class="mb-4">Join us as a provincial or city-level distributor in Saudi Arabia or the UAE and lead smart irrigation locally.</p>
-    <a class="btn btn-success btn-lg"
+  </div>
+  <div class="text-center mt-5">
+    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
       💬 Contact Us on WhatsApp
     </a>
-  </div>
+    </div>
 </section>
