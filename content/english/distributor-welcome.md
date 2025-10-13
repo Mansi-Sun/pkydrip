@@ -9,55 +9,33 @@ layout: "service"
 category: [ "Customization" ]
 url: "/distributor-welcome/"
 ---
+<div>
+  <section class="custom-section">
+  <h3>Become Our Local Partner in Saudi Arabia & Dubai</h3>
+  <p class="lead mb-4">
+    PKYDRIP is looking for <strong>irrigation, landscaping, and horticulture companies</strong> with local installation teams to bring <strong>smart irrigation technology</strong> to their region.
+  </p>
+  <ul>
+    <li><p><strong>10+</strong> years of experience in agriculture & irrigation projects</p></li>
+    <li><p>Self-developed LoRa / WiFi / 4G <strong>controllers / fertigation system / hydroponics system</strong> — local / remote & sensor-based automation</p></li>
+    <li><p><strong>One-stop supply chain</strong> with filters, valves, sprinklers, drip lines, fittings and more</p></li>
+  </ul>
+  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Contact Our Experts</a>
+</div>
 
-<!-- Hero -->
-<section class="section" style="padding:80px 0;background:linear-gradient(135deg,#e9fdf3,#f7fff9);">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-6">
-        <h1 class="fw-bold mb-3">Become Our Local Partner in Saudi Arabia & Dubai</h1>
-        <p class="lead mb-4">
-          PKYDRIP is looking for <strong>irrigation, landscaping, and horticulture companies</strong> with local installation teams to bring <strong>smart irrigation technology</strong> to their region.
-        </p>
-        <ul class="mb-4">
-          <li>10+ years of experience in agriculture & irrigation projects</li>
-          <li>Self-developed <strong>LoRa / WiFi / 4G controllers</strong> — remote & sensor-based automation</li>
-          <li><strong>One-stop supply chain</strong> with fertigation systems, sprinklers, drip lines & fittings</li>
-        </ul>
-        <a class="btn btn-success btn-lg"
-           href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20interested%20in%20becoming%20a%20distributor%20in%20Saudi%20or%20Dubai."
-           target="_blank" rel="noopener">
-          💬 Contact Us via WhatsApp
-        </a>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img src="/images/portfolio/warehouse.webp" alt="PKYDRIP Smart Irrigation System" class="img-fluid rounded-3 shadow-sm">
-      </div>
-    </div>
-  </div>
-</section>
+<div>
+  <section class="custom-section">
+  <h3>Why Partner with PKYDRIP</h3>
+  <p class="mb-4">Build your business with proven technology, full training, and long-term supply support.</p>
+  <ul>
+    <li>🌿 <strong>10+ Years Expertise</strong> — deep roots in smart agriculture and irrigation projects</li>
+    <li>📡 <strong>IoT Controllers</strong> — LoRa/WiFi/4G, sensor-ready, automatic irrigation</li>
+    <li>🔧 <strong>One-Stop Supply</strong> — fertigation units, sprinklers, fittings, sensors</li>
+    <li>🎓 <strong>Training & Support</strong> — installation, setup, and sales guidance</li>
+    <li>💰 <strong>Competitive Pricing</strong> — regional exclusivity and partner protection</li>
+  </ul>
+</div>
 
-<!-- Advantages -->
-<section class="section" style="padding:64px 0;">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">Why Partner with PKYDRIP</h2>
-        <p class="mb-4">Build your business with proven technology, full training, and long-term supply support.</p>
-        <ul class="list-unstyled">
-          <li>🌿 <strong>10+ Years Expertise</strong> — deep roots in smart agriculture and irrigation projects</li>
-          <li>📡 <strong>IoT Controllers</strong> — LoRa/WiFi/4G, sensor-ready, automatic irrigation</li>
-          <li>🔧 <strong>One-Stop Supply</strong> — fertigation units, sprinklers, fittings, sensors</li>
-          <li>🎓 <strong>Training & Support</strong> — installation, setup, and sales guidance</li>
-          <li>💰 <strong>Competitive Pricing</strong> — regional exclusivity and partner protection</li>
-        </ul>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img src="/images/portfolio/warehouse.webp" alt="PKYDRIP Shipment & Warehouse" class="img-fluid rounded-3 shadow-sm">
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Regions -->
 <section class="section" style="padding:64px 0;background:#f8fbf9;">
@@ -65,7 +43,7 @@ url: "/distributor-welcome/"
     <h2 class="fw-bold mb-3">Territory Plan – Saudi Arabia & UAE</h2>
     <p class="mb-4">We welcome <strong>Provincial Distributors</strong> and <strong>City-Level Agents</strong> across Saudi Arabia, and partners in Dubai & the UAE.</p>
 
-    <div class="table-responsive">
+  <div class="table-responsive">
       <table class="table table-bordered align-middle">
         <thead class="table-success">
           <tr>
@@ -87,11 +65,11 @@ url: "/distributor-welcome/"
       </table>
     </div>
 
-    <div class="alert alert-success mt-4">
+  <div class="alert alert-success mt-4">
       <strong>Requirements:</strong> Registered local company with experience in irrigation, landscaping, or horticultural projects, and a capable installation team.
     </div>
 
-    <div class="text-center mt-5">
+  <div class="text-center mt-5">
       <a class="btn btn-success btn-lg"
          href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20we%27re%20interested%20in%20distribution%20opportunities%20in%20[City]."
          target="_blank" rel="noopener">
