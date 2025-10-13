@@ -1,6 +1,6 @@
 ---
-title: "Become a PKYDRIP Distributor in Saudi Arabia & Dubai"
-description: "Join PKYDRIP as an authorized distributor for smart irrigation and fertigation systems in Saudi Arabia and Dubai. Provincial and city-level partners wanted."
+title: "Become a PKYDRIP Distributor in Saudi Arabia & the UAE"
+description: "Join PKYDRIP as an authorized distributor for smart irrigation and fertigation systems in Saudi Arabia and the UAE. Provincial and city-level partners wanted."
 keywords: ["PKYDRIP distributor", "Saudi irrigation partner", "Dubai landscaping", "smart irrigation", "LoRa WiFi 4G controller"]
 draft: false
 image : ""
@@ -11,7 +11,7 @@ url: "/distributor-welcome/"
 ---
 <div>
   <section class="custom-section">
-  <h3>Become Our Local Partner in Saudi Arabia & Dubai</h3>
+  <h3>Become Our Local Partner in Saudi Arabia & the UAE</h3>
   <p class="lead mb-4">
     PKYDRIP is looking for <strong>irrigation, landscaping, and horticulture companies</strong> with local installation teams to bring <strong>smart irrigation technology</strong> to their region.
   </p>
@@ -20,7 +20,9 @@ url: "/distributor-welcome/"
     <li><p>Self-developed LoRa / WiFi / 4G <strong>controllers / fertigation system / hydroponics system</strong> — local / remote & sensor-based automation</p></li>
     <li><p><strong>One-stop supply chain</strong> with filters, valves, sprinklers, drip lines, fittings and more</p></li>
   </ul>
-  <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Contact Our Experts</a>
+  <div class="text-center mt-5">
+    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Contact Our Experts</a>
+  </div>
 </div>
 
 <div>
@@ -34,14 +36,15 @@ url: "/distributor-welcome/"
     <li>🎓 <strong>Training & Support</strong> — installation, setup, and sales guidance</li>
     <li>💰 <strong>Competitive Pricing</strong> — regional exclusivity and partner protection</li>
   </ul>
+  {{<centerimg src="/images/portfolio/versatile-applications.webp" alt="versatile applications" caption="Versatile Applications">}}
 </div>
 
 
 <!-- Regions -->
-<section class="section" style="padding:64px 0;background:#f8fbf9;">
+<section class="custom-section">
+  <h3>Territory Plan – Saudi Arabia & the UAE</h3>
   <div class="container">
-    <h2 class="fw-bold mb-3">Territory Plan – Saudi Arabia & UAE</h2>
-    <p class="mb-4">We welcome <strong>Provincial Distributors</strong> and <strong>City-Level Agents</strong> across Saudi Arabia, and partners in Dubai & the UAE.</p>
+    <p class="mb-4">We welcome <strong>Provincial Distributors</strong> and <strong>City-Level Agents</strong> across Saudi Arabia, and the UAE.</p>
 
   <div class="table-responsive">
       <table class="table table-bordered align-middle">
@@ -54,13 +57,10 @@ url: "/distributor-welcome/"
           </tr>
         </thead>
         <tbody>
+          <tr class="table-light"><td>the UAE</td><td>Dubai, Abu Dhabi, Sharjah</td><td>City / Emirate Agents</td><td>Open</td></tr>
           <tr><td>Riyadh Province</td><td>Riyadh, Al Kharj, Dawadmi</td><td>Provincial Distributor</td><td>Open</td></tr>
           <tr><td>Makkah Province</td><td>Jeddah, Mecca, Taif</td><td>City-Level Agents</td><td>Open</td></tr>
           <tr><td>Eastern Province (Ash Sharqiyah)</td><td>Dammam, Al Khobar, Al Ahsa</td><td>Provincial Distributor</td><td>Open</td></tr>
-          <tr><td>Al Madinah Province</td><td>Madinah, Yanbu</td><td>City-Level Agents</td><td>Open</td></tr>
-          <tr><td>Qassim Province</td><td>Buraydah, Unaizah</td><td>City-Level Agents</td><td>Open</td></tr>
-          <tr><td>Asir & Jizan</td><td>Abha, Jizan</td><td>City-Level Agents</td><td>Open</td></tr>
-          <tr class="table-light"><td>Dubai (UAE)</td><td>Dubai, Abu Dhabi, Sharjah</td><td>City / Emirate Agents</td><td>Open</td></tr>
         </tbody>
       </table>
     </div>
@@ -70,11 +70,7 @@ url: "/distributor-welcome/"
     </div>
 
   <div class="text-center mt-5">
-      <a class="btn btn-success btn-lg"
-         href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20we%27re%20interested%20in%20distribution%20opportunities%20in%20[City]."
-         target="_blank" rel="noopener">
-        💬 Apply via WhatsApp
-      </a>
+    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Apply via WhatsApp</a>
     </div>
   </div>
 </section>
@@ -98,7 +94,7 @@ url: "/distributor-welcome/"
 <section class="section text-center" style="padding:80px 0;background:linear-gradient(135deg,#ecfff4,#f7fffb);">
   <div class="container">
     <h2 class="fw-bold mb-3">Ready to Represent PKYDRIP in Your Region?</h2>
-    <p class="mb-4">Join us as a provincial or city-level distributor in Saudi Arabia or Dubai and lead smart irrigation locally.</p>
+    <p class="mb-4">Join us as a provincial or city-level distributor in Saudi Arabia or the UAE and lead smart irrigation locally.</p>
     <a class="btn btn-success btn-lg"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
