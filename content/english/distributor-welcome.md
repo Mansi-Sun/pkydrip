@@ -15,11 +15,15 @@ url: "/distributor-welcome/"
   <p class="lead mb-4">
     PKYDRIP is looking for <strong>irrigation, landscaping, and horticulture companies</strong> with local installation teams to bring <strong>smart irrigation technology</strong> to their region.
   </p>
-  <ul>
-    <li><p><strong>10+</strong> years of experience in agriculture & irrigation projects</p></li>
-    <li><p>Self-developed LoRa / WiFi / 4G <strong>controllers / fertigation system / hydroponics system</strong> — local / remote & sensor-based automation</p></li>
-    <li><p><strong>One-stop supply chain</strong> with filters, valves, sprinklers, drip lines, fittings and more</p></li>
-  </ul>
+  <div class="container">
+    <h2 class="fw-bold mb-3">Benefits of Becoming a PKYDrip Distributor</h2>
+    <ul>
+    <li><p><strong>1. Work with a Trusted Smart Irrigation Partner: </strong> Join PKYDrip — a professional system provider with over 10 years of experience in agriculture. We offer proven, customizable solutions for irrigation and fertigation that make it easy to enter the market and start real projects, from tenders to hydroponics and horticulture.</p></li>
+    <li><p><strong>2. Exclusive Partnership with High Profit Potential: </strong> Our in-house developed products give you a strong competitive edge and support both software and hardware upgrades. We provide regional exclusivity, fair pricing, and marketing support — helping you build a profitable and sustainable business.</p></li>
+    <li><p><strong>3. Reliable After-Sales Support: </strong> We’ve got your back with full technical and after-sales support. Our English and Arabic service team is always ready to help you solve customer issues quickly and keep your business running smoothly.</p></li>
+    </ul>
+  </div>
+  
   <div class="text-center mt-5">
     <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
@@ -85,17 +89,10 @@ url: "/distributor-welcome/"
 
 <!-- Technology Highlight -->
 <section class="custom-section">
-  <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6 text-center">
-        <img src="/images/portfolio/office.webp" alt="LoRa WiFi 4G irrigation controller" class="img-fluid rounded-3 shadow-sm">
-      </div>
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3">Advanced LoRa / WiFi / 4G Controllers</h2>
-        <p>Combine local and remote control with real-time sensor data for fully automated irrigation — ideal for greenhouses, farms, and landscaping projects.</p>
-      </div>
-    </div>
-  </div>
+  <h3>Meet the PKYDrip Team</h3>
+  <p class="mb-4">At PKYDrip, we’re more than a supplier — we’re your complete solution partner.From <strong>product selection and sourcing to on-time delivery</strong>, our team ensures you get high-quality irrigation components with less hassle.
+  With strong <strong>in-house software and hardware expertise</strong>, we continuously upgrade our technology to keep your systems smarter, more efficient, and future-ready.</p>
+  {{<centerimg src="/images/portfolio/team.webp" alt="Meet the PKYDrip Team" caption="Meet the PKYDrip Team">}}
 </section>
 
 <!-- Final CTA -->
