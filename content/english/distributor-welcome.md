@@ -71,12 +71,17 @@ url: "/distributor-welcome/"
 
   <div class="text-center mt-5">
     <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads distributor welcome" target="_blank">💬 Apply via WhatsApp</a>
+    <a class="btn btn-success btn-lg"
+       href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
+       target="_blank" rel="noopener">
+      💬 Apply via WhatsApp
+    </a>
     </div>
   </div>
 </section>
 
 <!-- Technology Highlight -->
-<section class="section" style="padding:64px 0;background:#f5f9ff;">
+<section class="custom-section">
   <div class="container">
     <div class="row g-4 align-items-center">
       <div class="col-md-6 text-center">
@@ -91,7 +96,7 @@ url: "/distributor-welcome/"
 </section>
 
 <!-- Final CTA -->
-<section class="section text-center" style="padding:80px 0;background:linear-gradient(135deg,#ecfff4,#f7fffb);">
+<section class="custom-section" style="padding:80px 0;background:linear-gradient(135deg,#ecfff4,#f7fffb);">
   <div class="container">
     <h2 class="fw-bold mb-3">Ready to Represent PKYDRIP in Your Region?</h2>
     <p class="mb-4">Join us as a provincial or city-level distributor in Saudi Arabia or the UAE and lead smart irrigation locally.</p>
