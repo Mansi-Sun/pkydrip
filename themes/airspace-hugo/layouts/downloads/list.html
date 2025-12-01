@@ -4,38 +4,75 @@
   <div class="container">
 
     <h1>{{ .Title }}</h1>
-    <p>{{ .Description }}</p>
+
+    {{ with .Content }}
+    <div class="downloads-intro">{{ . }}</div>
+    {{ end }}
+
+    <!-- 🔍 搜索框 -->
+    <input type="text" id="searchBox" placeholder="Search documents..." class="search-input" />
+
+    <!-- 📁 按分类分组 -->
+    {{ $groups := dict }}
+
+    {{ range .Pages }}
+      {{ $cat := .Params.category | default "Other" }}
+      {{ $list := index $groups $cat | default (slice) }}
+      {{ $list = $list | append . }}
+      {{ $groups = merge $groups (dict $cat $list) }}
+    {{ end }}
+
+    <!-- 渲染每个组 -->
+    {{ range $category, $docs := $groups }}
+    <h2 class="group-title">{{ $category }}</h2>
 
     <div class="downloads-grid">
+      {{ range $docs }}
+      <article class="download-card" data-title="{{ .Title | lower }}" data-product="{{ .Params.product | lower }}">
+        
+        <h3 class="download-title">{{ .Title }}</h3>
 
-      {{ range .Site.RegularPages }}
-        {{ if .Params.downloads }}
-          <div class="download-card">
-
-            <h2>{{ .Title }}</h2>
-
-            <ul>
-              {{ range .Params.downloads }}
-              <li class="download-item">
-                <span class="download-name">{{ .name }}</span>
-                <span class="download-type">{{ .type }}</span>
-                <a class="download-btn" href="{{ .file }}" target="_blank" download>
-                  Download
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-
-          </div>
+        {{ with .Params.product }}
+        <p class="download-product">{{ . }}</p>
         {{ end }}
-      {{ end }}
 
+        {{ with .Params.type }}
+        <p class="download-type"><strong>Type:</strong> {{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.description }}
+        <p class="download-desc">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.file }}
+        <a class="download-btn" href="{{ . }}" download target="_blank">Download</a>
+        {{ end }}
+
+      </article>
+      {{ end }}
     </div>
+    {{ end }}
 
   </div>
 </section>
 
 <style>
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 20px 0 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.group-title {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 .downloads-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -47,34 +84,51 @@
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
 
-.download-card h2 {
-  margin-bottom: 16px;
+.download-card:hover {
+  transform: translateY(-3px);
 }
 
-.download-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.download-type {
-  font-size: 0.9em;
-  color: #00a29a;
-  padding-right: 10px;
+.download-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
   background: #00a29a;
   color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 999px;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 0.9em;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
 }
 </style>
+
+<!-- 🔍 前端搜索（即时过滤） -->
+<script>
+document.getElementById('searchBox').addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.download-card');
+
+  cards.forEach(card => {
+    const title = card.dataset.title;
+    const product = card.dataset.product;
+
+    if (title.includes(query) || product.includes(query)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
 
 {{ end }}
