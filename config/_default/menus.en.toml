@@ -27,11 +27,16 @@ weight = 5
 name = "Solutions"
 url = "solution/"
 
- 
+
+[[main]]
+name = "Download"
+url = "downloads/"
+weight = 6
+
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
 
 
 # footer menu
