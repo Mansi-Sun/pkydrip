@@ -7,7 +7,7 @@ image: "images/product/lora-gateway-1.jpg"
 categories: ["irrigation-controller"]
 features:
   - "**Product Code:** PKY-60W"
-  - "**Power Supply:** AC 220V input; internal DC 24V output for valve control"
+  - "**Power Supply:** AC 220V,240V input; internal DC 24V output for valve control"
   - "**Base Control Outputs:** 14 outputs, expandable up to 60"
   - "**Communication:** 2 RS485 inputs (supporting 25 devices per port)"
   - "**Analog Inputs:** 2 (4–20mA / 0–5V)"
@@ -20,8 +20,8 @@ features:
 
 specs:
   - "Product Code: PKY-60W"
-  - "Power Input: AC 220V"
-  - "Valve Control Output: 14 outputs (expandable to 60)"
+  - "Power Input: AC 220V-240V"
+  - "Valve Control Output: 16 outputs (expandable to 60)"
   - "Expansion Module Size: 8cm × 5cm × 4cm"
   - "Communication: 2× RS485 (25 devices per port)"
   - "Analog Inputs: 2× 4–20mA / 0–5V"
