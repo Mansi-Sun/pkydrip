@@ -14,7 +14,8 @@ about:
   content : "We specialize in the development and production of watersaving irrigation products, such as irrigation timers, irrigation
 controllers, wireless solutions, and 4G remote-controlled valves. <br>
 
-As a key player in China's micro-irrigation industry, we are a member of the China PP Tube Standards Committee. Our company has participated in drafting national standards for PP pipe products and is the first plastic export enterprise to be involved in the development of such standards. We are also one of the leading enterprises in Hebei Province dedicated to promoting advanced agricultural irrigation technologies.
+PKYDrip is a modular smart water-saving control platform designed for agriculture, greenhouse, hydroponics, landscape irrigation, and municipal water-saving projects.
+Our system supports LoRa and 4G communication, low-power valve control, and scalable gateways, enabling OEM production, system integration, and customized project delivery.
 
 "
 
