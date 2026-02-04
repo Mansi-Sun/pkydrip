@@ -41,6 +41,11 @@ application :
    - ✔ Orchard & vineyard drip irrigation
    - ✔ Urban landscape & park irrigation
    - ✔ Golf course / sports field systems
+
+cta: 
+  text: "Contact us for technical drawings, quotes, or integration advice."
+  button_label: "Chat Now"
+  button_url: "https://wa.me/8617395297329" 
      
 ---
 
@@ -173,11 +178,6 @@ A useful sentence for customers:
 
 For project evaluation, always consider the **entire irrigation system**, not just the controller.
 
-
-cta: 
-  text: "Contact us for technical drawings, quotes, or integration advice."
-  button_label: "Chat Now"
-  button_url: "https://wa.me/8617395297329" 
 ---
 
 
