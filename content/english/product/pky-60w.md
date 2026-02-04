@@ -43,6 +43,9 @@ application :
    - ✔ Golf course / sports field systems
      
 ---
+
+---
+
 # PKY-60W Irrigation Controller – Coverage Area FAQ
 
 This FAQ explains how to understand the **coverage area** of the PKY-60W irrigation controller.
