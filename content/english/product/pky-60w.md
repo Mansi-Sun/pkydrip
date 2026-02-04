@@ -41,14 +41,12 @@ application :
    - ✔ Orchard & vineyard drip irrigation
    - ✔ Urban landscape & park irrigation
    - ✔ Golf course / sports field systems
-
-
+     
+---
 # PKY-60W Irrigation Controller – Coverage Area FAQ
 
 This FAQ explains how to understand the **coverage area** of the PKY-60W irrigation controller.
 It is intended for **customers, engineers, and internal sales teams**.
-
----
 
 ## Q1: What is the coverage area of the PKY-60W controller?
 
