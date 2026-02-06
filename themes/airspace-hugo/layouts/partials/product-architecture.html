@@ -1,0 +1,49 @@
+{{/* themes/airspace-hugo/layouts/partials/product-architecture.html */}}
+
+{{ with .Params.architecture }}
+  {{ if .enable }}
+
+  <section class="section architecture">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          {{ if .title }}<h2>{{ .title }}</h2>{{ end }}
+          {{ if .subtitle }}<p>{{ .subtitle }}</p>{{ end }}
+        </div>
+      </div>
+
+      {{ if .image }}
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <img src="/{{ .image }}" class="img-responsive" style="max-width: 100%; height: auto;" alt="System Architecture">
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if .blocks }}
+      <div class="row mt-5">
+        {{ range .blocks }}
+        <div class="col-md-3 col-sm-6 text-center" style="margin-bottom: 20px;">
+          {{ if .title }}<h4>{{ .title }}</h4>{{ end }}
+          {{ if .desc }}<p>{{ .desc }}</p>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if .note }}
+      <div class="row mt-3">
+        <div class="col-md-10 col-md-offset-1">
+          <div style="padding: 14px 16px; border: 1px solid rgba(0,0,0,.08); border-radius: 10px;">
+            <strong>Tip:</strong> {{ .note }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+
+  {{ end }}
+{{ end }}
