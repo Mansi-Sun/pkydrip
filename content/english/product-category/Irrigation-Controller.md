@@ -1,6 +1,6 @@
 ---
 title: "Smart Irrigation Controllers"
-description: "Choose the right irrigation controller by project type: Main Controller, Pump Control, and Wireless LoRa. Start simple and upgrade anytime."
+description: "Choose the right controller by project type: Main Controller, Pump Control, and Wireless LoRa. Start simple and upgrade anytime."
 type: "product-category"
 layout: "product-category/single"
 url: "/irrigation-controller/"
@@ -8,11 +8,11 @@ bg_image: "images/slider-bg.webp"
 
 products:
   - name: "PKY-60W – Main Controller"
-    summary: "Central irrigation controller for multi-zone irrigation systems."
+    summary: "Central irrigation controller for multi-zone scheduling and valve control (system brain)."
     image: "images/product/lora-gateway-1.jpg"
     url: "/product/pky-60w/"
   - name: "PKY-60W – Pump Control"
-    summary: "Irrigation and pump control controller for pump stations and solar pump systems."
+    summary: "Pump station control: start/stop, protection inputs, and irrigation + pump coordination."
     image: "images/product/lora-gateway-1.jpg"
     url: "/product/pky-60w/"
   - name: "LoRa Wireless Valve Control System"
@@ -30,14 +30,26 @@ products:
 PKYDrip provides **modular irrigation controllers** for farms, greenhouses, and landscaping projects.  
 You can start with a basic setup and **expand step by step** — adding more zones, remote control, sensors, or fertigation when you are ready.
 
+> **Note:** PKY-60W currently has **two versions** (Main Controller & Pump Control).  
+> We are updating separate product pages. For now, please open the PKY-60W page and tell us which version you need.
+
+---
+
 ## How to Choose
 
-- **Main Controller**: best for centralized multi-zone irrigation management  
-- **Pump Control**: best when pump start/stop and protection are required  
-- **Wireless LoRa**: best for large farms where cabling is difficult
+- **Main Controller**: best for centralized multi-zone irrigation management (valves, schedules, expansion)
+- **Pump Control**: best when pump start/stop and protection are required (solar pump / pump station)
+- **Wireless LoRa**: best for large farms where cabling is difficult (distributed zones)
 
-## Talk to Us
+---
 
-Share your farm size, crop type, water source, and power condition.
+## Talk to Us (WhatsApp)
+
+Send us 4 simple details and we’ll suggest a suitable direction:
+
+- Farm size & number of zones  
+- Crop type  
+- Water source (well / tank / river)  
+- Power (grid / solar / hybrid) + **Main or Pump Control**
 
 **WhatsApp:** +86 173 9529 7329
