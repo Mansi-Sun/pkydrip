@@ -8,7 +8,8 @@ layout: "solution"
 
 If you have a **10-acre farm** and are planning to install irrigation, this solution is designed to help you **start easily**, **control costs**, and **upgrade step by step** as your farm grows.
 
-You don’t need to install everything at once. We design the system based on **your crops, your water source, and your budget**.
+You don’t need to install everything at once.  
+We design the system based on **your crops, your water source, and your budget**.
 
 ---
 
@@ -23,6 +24,9 @@ This method:
 - Reduces pump size  
 - Saves electricity or fuel  
 - Makes the system easier to manage  
+
+👉 Want to know *why* this method saves cost?  
+👉 [Why zoned irrigation saves cost](./10-acres-zoned-irrigation-benefits)
 
 ---
 
@@ -67,6 +71,9 @@ Later, you can upgrade by adding:
 
 No need to replace the main system when upgrading.
 
+👉 See what a typical 10-acre system looks like:  
+👉 [10 acres – typical system options](./10-acres-typical-configurations)
+
 ---
 
 ## Custom-Made, Not One-Size-Fits-All
@@ -82,11 +89,11 @@ This helps avoid unnecessary cost and makes the system future-proof.
 
 ---
 
-## Next Step
+## Let’s Start with Your Farm
 
-To prepare a detailed plan and quotation, we only need a few basic details:
+If you want a clear recommendation, we only need a few basic details:
 - What do you plan to grow?  
 - Where does the water come from?  
 - Is electricity or solar power available?  
 
-Once confirmed, we can provide a **clear system proposal** and help you move forward step by step.
+📩 **Share these details with us, and we’ll suggest a suitable irrigation solution for your 10-acre farm.**
