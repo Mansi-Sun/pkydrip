@@ -43,13 +43,3 @@ You can start with a basic setup and **expand step by step** — adding more zon
 
 ---
 
-## Talk to Us (WhatsApp)
-
-Send us 4 simple details and we’ll suggest a suitable direction:
-
-- Farm size & number of zones  
-- Crop type  
-- Water source (well / tank / river)  
-- Power (grid / solar / hybrid) + **Main or Pump Control**
-
-**WhatsApp:** +86 173 9529 7329
