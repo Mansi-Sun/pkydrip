@@ -25,8 +25,8 @@ This method:
 - Saves electricity or fuel  
 - Makes the system easier to manage  
 
-👉 Want to know *why* this method saves cost?  
-👉 [Why zoned irrigation saves cost](./10-acres-zoned-irrigation-benefits)
+👉 Want to know why this method saves cost?
+👉 [Why zoned irrigation saves cost](/solution/10-acres-zoned-irrigation-benefits/)
 
 ---
 
@@ -71,8 +71,8 @@ Later, you can upgrade by adding:
 
 No need to replace the main system when upgrading.
 
-👉 See what a typical 10-acre system looks like:  
-👉 [10 acres – typical system options](./10-acres-typical-configurations)
+👉 See what a typical 10-acre system looks like:
+👉 [10 acres – typical system options](/solution/10-acres-typical-configurations/)
 
 ---
 
