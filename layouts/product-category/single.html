@@ -38,25 +38,33 @@
     <div class="content" style="max-width:980px;margin:40px auto 0;line-height:1.8;">
       {{ .Content }}
     </div>
-<section class="call-to-action-area">
+<!-- CTA: Theme-style with background image -->
+{{ $bg := .Params.bg_image | default "images/call-to-action-bg.jpg" }}
+
+<section class="call-to-action-area" style="background-image:url('{{ $bg | relURL }}'); background-size:cover; background-position:center; padding:60px 0; margin-top:40px;">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <h2>Need Help Choosing?</h2>
-        <p>
+        <h2 style="color:#fff; margin:0 0 10px 0;">Need Help Choosing?</h2>
+        <p style="color:rgba(255,255,255,0.9); margin:0; max-width:760px;">
           Tell us your farm size, crop type, water source, and power condition.
-          Start simple, upgrade anytime.
+          <b>Start simple, upgrade anytime.</b>
         </p>
       </div>
-      <div class="col-lg-4 text-lg-end">
+
+      <div class="col-lg-4 text-lg-end" style="margin-top:16px;">
         <a class="btn btn-primary" target="_blank"
            href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Controllers%20page.%0AFarm%20size%3A%20_____%0ACrop%3A%20_____%0AWater%20source%3A%20_____%0APower%3A%20_____%0AVersion%3A%20Main%20Controller%20or%20Pump%20Control">
           WhatsApp Us
         </a>
+        <div style="color:rgba(255,255,255,0.9); margin-top:10px;">
+          WhatsApp: <b>+86 173 9529 7329</b>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
   </div>
 </section>
 
