@@ -4,7 +4,6 @@ description: "Simple, expandable irrigation solutions and practical guides for g
 draft: false
 bg_image: "images/call-to-action-bg.jpg"
 hide_summary: true
-show_list: false
 ---
 
 ## Start Simple. Upgrade Anytime.
