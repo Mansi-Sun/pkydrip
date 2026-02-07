@@ -10,7 +10,7 @@
 <section class="product-list-area" style="padding:40px 0;">
   <div class="container">
 
-    {{/* 1) 产品卡片列表：优先按 products 参数渲染（保持你现在的卡片效果） */}}
+    {{/* 1) Product cards */}}
     {{ with .Params.products }}
       <div class="row">
         {{ range . }}
@@ -19,11 +19,13 @@
               {{ with .image }}
                 <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%;height:auto;display:block;">
               {{ end }}
+
               <div style="padding:16px;">
                 <h3 style="margin:0 0 8px 0;font-size:20px;font-weight:700;">{{ .name }}</h3>
                 <p style="margin:0 0 14px 0;color:#666;line-height:1.6;">{{ .summary }}</p>
+
                 {{ with .url }}
-                  <a href="{{ . | relURL }}" style="display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;">
+                  <a href="{{ . | relURL }}" class="btn btn-primary" style="text-decoration:none;">
                     View Product
                   </a>
                 {{ end }}
@@ -34,14 +36,18 @@
       </div>
     {{ end }}
 
-    {{/* 2) 强制输出正文（你现在看不到的 Talk to Us 就在这里） */}}
+    {{/* 2) Page content (force render full markdown) */}}
     <div class="content" style="max-width:980px;margin:40px auto 0;line-height:1.8;">
       {{ .Content }}
     </div>
-<!-- CTA: Theme-style with background image -->
+
+  </div>
+</section>
+
+{{/* 3) CTA Section (separate block, clean structure) */}}
 {{ $bg := .Params.bg_image | default "images/call-to-action-bg.jpg" }}
 
-<section class="call-to-action-area" style="background-image:url('{{ $bg | relURL }}'); background-size:cover; background-position:center; padding:60px 0; margin-top:40px;">
+<section class="call-to-action-area" style="background-image:url('{{ $bg | relURL }}'); background-size:cover; background-position:center; padding:60px 0; margin-top:0;">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
@@ -54,7 +60,8 @@
 
       <div class="col-lg-4 text-lg-end" style="margin-top:16px;">
         <a class="btn btn-primary" target="_blank"
-           href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Controllers%20page.%0AFarm%20size%3A%20_____%0ACrop%3A%20_____%0AWater%20source%3A%20_____%0APower%3A%20_____%0AVersion%3A%20Main%20Controller%20or%20Pump%20Control">
+           href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Controllers%20page.%0AFarm%20size%3A%20_____%0ACrop%3A%20_____%0AWater%20source%3A%20_____%0APower%3A%20_____%0AVersion%3A%20Main%20Controller%20or%20Pump%20Control"
+           style="text-decoration:none;">
           WhatsApp Us
         </a>
         <div style="color:rgba(255,255,255,0.9); margin-top:10px;">
@@ -62,9 +69,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
   </div>
 </section>
 
