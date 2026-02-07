@@ -106,7 +106,7 @@ We design the system **around your farm**, not a fixed package.
 ## Not Sure Which Option Fits You?
 
 Go back to the overview:  
-👉 [10-acre irrigation solution overview](./10-acres-irrigation-solution)
+👉 [10-acre irrigation solution overview](/solution/10-acres-irrigation-solution/)
 
 Or learn why zoned irrigation saves cost:  
-👉 [Why zoned irrigation saves cost](./10-acres-zoned-irrigation-benefits)
+👉 [Why zoned irrigation saves cost](/solution/10-acres-zoned-irrigation-benefits/)
