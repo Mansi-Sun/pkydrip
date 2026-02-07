@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<section class="page-title-area">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="product-list-area" style="padding:40px 0;">
+  <div class="container">
+
+    {{/* 1) 产品卡片列表：优先按 products 参数渲染（保持你现在的卡片效果） */}}
+    {{ with .Params.products }}
+      <div class="row">
+        {{ range . }}
+          <div class="col-lg-4 col-md-6" style="margin-bottom:24px;">
+            <div class="card" style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+              {{ with .image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%;height:auto;display:block;">
+              {{ end }}
+              <div style="padding:16px;">
+                <h3 style="margin:0 0 8px 0;font-size:20px;font-weight:700;">{{ .name }}</h3>
+                <p style="margin:0 0 14px 0;color:#666;line-height:1.6;">{{ .summary }}</p>
+                {{ with .url }}
+                  <a href="{{ . | relURL }}" style="display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;">
+                    View Product
+                  </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{/* 2) 强制输出正文（你现在看不到的 Talk to Us 就在这里） */}}
+    <div class="content" style="max-width:980px;margin:40px auto 0;line-height:1.8;">
+      {{ .Content }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
