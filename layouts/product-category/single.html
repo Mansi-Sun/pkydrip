@@ -47,15 +47,12 @@
 {{/* 3) CTA Section (separate block, clean structure) */}}
 {{ $bg := .Params.bg_image | default "images/call-to-action-bg.jpg" }}
 
-<section class="call-to-action-area pky-cta" style="padding:60px 0;">
-  <div class="pky-cta-bg" style="background-image:url('{{ $bg | relURL }}');"></div>
-  <div class="pky-cta-overlay"></div>
-
-  <div class="container pky-cta-content">
+<section class="call-to-action-area pky-cta" style="padding:60px 0; background:#f5f7fa;">
+  <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <h2>Need Help Choosing?</h2>
-        <p>
+        <h2 style="margin:0 0 10px 0;">Need Help Choosing?</h2>
+        <p style="margin:0; max-width:760px; color:#555;">
           Tell us your farm size, crop type, water source, and power condition.
           <b>Start simple, upgrade anytime.</b>
         </p>
@@ -63,10 +60,11 @@
 
       <div class="col-lg-4 text-lg-end" style="margin-top:16px;">
         <a class="btn btn-primary" target="_blank"
-           href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Controllers%20page.%0AFarm%20size%3A%20_____%0ACrop%3A%20_____%0AWater%20source%3A%20_____%0APower%3A%20_____%0AVersion%3A%20Main%20Controller%20or%20Pump%20Control">
+           href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Controllers%20page.%0AFarm%20size%3A%20_____%0ACrop%3A%20_____%0AWater%20source%3A%20_____%0APower%3A%20_____%0AVersion%3A%20Main%20Controller%20or%20Pump%20Control"
+           style="text-decoration:none;">
           WhatsApp Us
         </a>
-        <div style="margin-top:10px;">
+        <div style="margin-top:10px; color:#666;">
           WhatsApp: <b>+86 173 9529 7329</b>
         </div>
       </div>
@@ -75,22 +73,13 @@
 </section>
 
 <style>
-/* Scope to this template only */
-.pky-cta { position: relative; overflow: hidden; }
-.pky-cta-bg {
-  position: absolute; inset: 0;
-  background-size: cover; background-position: center;
-  z-index: 0;
+/* Kill theme background/overlay for CTA */
+.call-to-action-area::before,
+.call-to-action-area::after {
+  display: none !important;
 }
-.pky-cta-overlay {
-  position: absolute; inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 1;
-}
-.pky-cta-content { position: relative; z-index: 2; }
-.pky-cta h2, .pky-cta p, .pky-cta div { color: #fff; }
-.pky-cta p { color: rgba(255,255,255,0.9); margin: 0; max-width: 760px; }
 </style>
+
 
 
 {{ end }}
