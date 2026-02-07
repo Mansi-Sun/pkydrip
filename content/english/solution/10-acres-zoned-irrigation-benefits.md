@@ -100,7 +100,8 @@ That’s why we recommend it for most **10-acre farms**.
 
 ## Want to See a Typical 10-Acre System?
 
-👉 [See typical 10-acre irrigation configurations](./10-acres-typical-configurations)
 
-Or go back to the main overview:  
-👉 [10-acre irrigation solution overview](./10-acres-irrigation-solution)
+👉 [See typical 10-acre irrigation configurations](/solution/10-acres-typical-configurations/)
+
+Or go back to the main overview: 
+👉 [10-acre irrigation solution overview](/solution/10-acres-irrigation-solution/)
