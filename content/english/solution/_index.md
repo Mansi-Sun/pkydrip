@@ -3,6 +3,7 @@ title: "Irrigation Solutions & Insights"
 description: "Simple, expandable irrigation solutions and practical guides for growers and project owners."
 draft: false
 bg_image: "images/call-to-action-bg.jpg"
+hide_summary: true
 ---
 
 ## Start Simple. Upgrade Anytime.
