@@ -53,5 +53,3 @@ Send us 4 simple details and we’ll suggest a suitable direction:
 - Power (grid / solar / hybrid) + **Main or Pump Control**
 
 **WhatsApp:** +86 173 9529 7329
-## TEST END — If you can see this, content is rendering to the bottom.
-
