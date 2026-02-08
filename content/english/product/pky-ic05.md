@@ -173,4 +173,4 @@ this guide explains when to use each device:
 
 ### Related Solution
 
-- 👉 [LoRa Off-Grid Irrigation System](/solutions/lora-off-grid-irrigation-system/)
+- 👉 [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)
