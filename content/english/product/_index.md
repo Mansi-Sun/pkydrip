@@ -1,36 +1,39 @@
 ---
-title: "Our Products"
-description: "Make Every Drop Count"
-type: "product"
-bg_image: "images/slider-bg.webp"
+title: "Hydroponic Systems"
+description: "Controllers and fertigation solutions for hydroponic and soilless cultivation, including EC/pH dosing control and sensor-ready integration."
+type: "product-category"
+layout: "product-category/single"
+url: "/product/hydroponic/"
+page_code: "PC-0801-2-02-PRODUCT-HYDROPONIC-01"
 
-architecture:
-  enable: true
-  title: "Platform Architecture"
-  subtitle: "Each block is an independent control module within an expandable irrigation control system."
-  image: "images/architecture.webp"
-  note: "Start small with basic valve control, then expand with sensors and fertigation as the project grows."
+cta:
+  text: "Tell us your hydroponic setup (area, method, tanks), and we’ll suggest a practical control solution."
+  button_label: "Chat Now"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Page%3A%20Hydroponic%20%7C%20Code%3A%20PC-0801-2-02-PRODUCT-HYDROPONIC-01%0AI%20need%20a%20hydroponic%20control%20solution.%20Please%20advise."
 
-  blocks:
-    - title: "Field Devices"
-      desc: "Valves, pumps (relay or VFD), sprinklers, drip lines, filters."
-    - title: "Sensors"
-      desc: "Soil moisture, EC/pH, NPK, flow & pressure sensors, weather stations."
-    - title: "Controllers"
-      desc: "Multi-zone controllers up to 60 outputs with LoRa, WiFi, RS485 (Modbus) and optional 4G."
-    - title: "Gateway & Cloud"
-      desc: "LoRa–MQTT gateway, cloud dashboard, automation rules, alerts and reports."
-categories:
-  - title: "Fertigation System"
-    description: "3–6 channel injector systems with tank valves, EC/pH feedback, dosing algorithm, and RS485 control."
-    url: "/fertigation-system/"
-  - title: "Smart Irrigation Controllers"
-    description: "Multi-zone controllers with LoRa, WiFi, RS485, and optional 4G connectivity. Up to 60 output channels."
-    url: "/irrigation-controller/"
-  - title: "Sensors & Weather Stations"
-    description: "Soil moisture, temperature, NPK, EC/pH sensors and compact weather stations for automation."
-    url: "/sensors-weather-stations/"
-  - title: "Hydroponic System"
-    description: "EC/pH controller and smart dosage system."
-    url: "/product/hydroponic/"
+products:
+  - name: "PKY-FG401 (EC/pH)"
+    summary: "PKYDrip EC/pH Fertigation Controller – Model PKY-FG401"
+    image: "images/product/pkyfg401.webp"
+    url: "/product/pky-fg401-ecph/"
+
+  - name: "PKY-FG301"
+    summary: "PKYDrip Fertigation Controller – Model PKY-FG301"
+    image: "images/product/pkyfg301.webp"
+    url: "/product/pky-fg301/"
+
+  - name: "PKY-60W"
+    summary: "PKYDrip Wired Master Controller – Model PKY-60W"
+    image: "images/product/lora-gateway-1.jpg"
+    url: "/product/pky-60w/"
+
+  - name: "PKY-DAT01"
+    summary: "PKYDrip Data Acquisition Terminal Module – Model PKY-DAT01"
+    image: "images/product/pkydat01.webp"
+    url: "/product/pky-dat01/"
+    
+  - name: "Hydroponic"
+    summary: "Hydroponic Systems & Fertigation Control"
+    image: "images/product/hydroponic.webp"
+    url: "/product/hydroponic/"    
 ---
