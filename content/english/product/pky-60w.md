@@ -6,7 +6,7 @@ layout: "product/single"
 
 # Optional: keep empty to avoid wrong background
 bg_image: ""
-image: "images/product/pky-60w/cover.jpg"
+image: "images/product/smart-controllers.webp"
 
 categories:
   - irrigation-controller
