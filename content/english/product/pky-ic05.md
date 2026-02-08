@@ -155,6 +155,13 @@ The valve controller remains a stable, low-maintenance execution node as the sys
 
 ---
 
+### Choosing between IC03 and IC05?
+
+If your project involves wireless valve control,  
+this guide explains when to use each device:
+
+👉 [PKY-IC03 vs PKY-IC05 – What’s the Difference?](/guides/ic03-vs-ic05/)
+
 ## Summary
 
 - PKY-IC05 is a **LoRa solar-powered valve controller**
