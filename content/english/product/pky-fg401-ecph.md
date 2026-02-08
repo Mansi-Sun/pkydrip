@@ -37,3 +37,6 @@ application:
 ### Related Solution
 
 - 👉 [Water–Fertilizer Integration System](/solution/water-fertilizer-integration-system/)
+
+- 👉 [When Do You Really Need EC/pH Control?](/guides/when-do-you-really-need-ecph-control/)
+
