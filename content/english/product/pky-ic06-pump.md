@@ -91,4 +91,4 @@ PKY-IC06-PUMP is designed for irrigation projects that require **reliable, verif
 
 ### Related Solution
 
-- 👉 [LoRa Off-Grid Irrigation System](/solutions/lora-off-grid-irrigation-system/)
+- 👉 [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)
