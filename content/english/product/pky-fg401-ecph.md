@@ -33,3 +33,7 @@ application:
   - "✔ Centralized fertilization in orchard or field irrigation stations"
 
 ---
+
+### Related Solution
+
+- 👉 [Water–Fertilizer Integration System](/solution/water-fertilizer-integration-system/)
