@@ -169,3 +169,8 @@ this guide explains when to use each device:
 - Ultra-low power, self-powered, and field-ready
 - Ideal for large-scale, off-grid irrigation zoning
 
+---
+
+### Related Solution
+
+- 👉 [LoRa Off-Grid Irrigation System](/solutions/lora-off-grid-irrigation-system/)
