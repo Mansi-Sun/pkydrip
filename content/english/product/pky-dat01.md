@@ -137,3 +137,9 @@ PKY-DAT01 can be integrated into PKYDrip systems through controllers and gateway
 - Strengthens system stability by enabling measurable, verifiable operation
 
 PKY-DAT01 is designed to help irrigation systems operate with confidence, especially in remote or unattended environments.
+
+---
+
+### Related Solution
+
+- 👉 [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)
