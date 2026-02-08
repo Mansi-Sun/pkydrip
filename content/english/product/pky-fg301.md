@@ -32,3 +32,7 @@ cta:
   button_label: "Chat Now"
   button_url: "https://wa.me/8617395297329" 
 ---
+
+### Related Solution
+
+- 👉 [Water–Fertilizer Integration System](/solution/water-fertilizer-integration-system/)
