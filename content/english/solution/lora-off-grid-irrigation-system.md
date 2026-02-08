@@ -62,9 +62,6 @@ The system follows a modular design:
 Each module can be deployed independently and expanded as the project grows.
 
 
-::contentReference[oaicite:0]{index=0}
-
-
 ---
 
 ## How the System Works
@@ -124,7 +121,7 @@ It is critical to confirm that water is actually being delivered.
 By adding a flow sensor at the pump outlet, the system can verify real pump operation
 and detect abnormal conditions early.
 
-👉 [Why Flow Verification Matters in Remote Pump Control](/guide/why-flow-verification-matters-in-remote-pump-control/)
+👉 [Why Flow Verification Matters in Remote Pump Control](/guides/why-flow-verification-matters-in-remote-pump-control/)
 
 ## Summary
 
