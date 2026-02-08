@@ -5,7 +5,7 @@ type: "product"
 layout: "product/single"
 
 bg_image: ""
-image: "/images/product/pkyic03.webp"
+image: "/images/product/pky-ic03.webp"
 
 categories:
   - irrigation-controller
