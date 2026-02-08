@@ -157,6 +157,14 @@ A project can start with a small number of wireless zones and expand gradually:
 - Sensor-trigger control depends on selected sensor type and integration plan
 
 ---
+---
+
+### Not sure which device fits your project?
+
+If you are deciding between **PKY-IC03** and a **LoRa Solar Valve Controller**,  
+read this comparison guide:
+
+👉 [PKY-IC03 vs PKY-IC05 – What’s the Difference?](/guides/ic03-vs-ic05/)
 
 ## Summary
 
