@@ -141,6 +141,9 @@ This ensures correct system configuration and stable operation.
 
 ---
 
+- Unsure if EC/pH control is required?  
+  👉 [Read this guide](/guides/when-do-you-really-need-ecph-control/)
+
 ## Summary
 
 - Supports both basic and advanced fertigation strategies
