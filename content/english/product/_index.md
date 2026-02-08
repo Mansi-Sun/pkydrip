@@ -38,7 +38,7 @@ products:
 
   - name: "PKY-IC05"
     summary: "PKYDrip LoRa Solar Valve Controller – Model PKY-IC05"
-    image: "images/product/pkyic05.webp"
+    image: "images/product/pky-ic05.webp"
     url: "/product/pky-ic05/"
 
   - name: "PKY-IC06-PUMP"
@@ -51,12 +51,12 @@ products:
   # ==============================
   - name: "PKY-FG301"
     summary: "PKYDrip Fertigation Controller – Model PKY-FG301"
-    image: "images/product/pkyfg301.webp"
+    image: "images/product/pky-fg301.jpg"
     url: "/product/pky-fg301/"
 
   - name: "PKY-FG401 (EC/pH)"
     summary: "PKYDrip EC/pH Fertigation Controller – Model PKY-FG401"
-    image: "images/product/pkyfg401.webp"
+    image: "images/product/pky-fg401.jpg"
     url: "/product/pky-fg401-ecph/"
 
   # ==============================
@@ -64,6 +64,6 @@ products:
   # ==============================
   - name: "Hydroponic System"
     summary: "Hydroponic Irrigation & Nutrient Control Systems"
-    image: "images/product/hydroponic.webp"
+    image: "images/product/ph_ec_controller.webp"
     url: "/product/hydroponic/"
 ---
