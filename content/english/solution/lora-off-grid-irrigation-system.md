@@ -16,6 +16,7 @@ related_products:
   - "PKY-IC06-PUMP"
   - "PKY-DAT01"
 ---
+
 ## What Problem Does This Solution Solve?
 
 Many irrigation projects face the same challenges:
