@@ -143,3 +143,5 @@ PKY-DAT01 is designed to help irrigation systems operate with confidence, especi
 ### Related Solution
 
 - 👉 [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)
+- 👉 [How Sensors Are Integrated in PKYDrip Irrigation Systems](/guides/sensor-integration-in-pkydrip-systems/)
+
