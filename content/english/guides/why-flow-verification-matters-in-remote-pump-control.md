@@ -1,3 +1,12 @@
+---
+title: "Why Flow Verification Matters in Remote Pump Control"
+description: "This guide explains why flow verification is critical in remote irrigation pump control, especially in off-grid and LoRa-based systems, and how it improves reliability and operational confidence."
+type: "guide"
+layout: "single"
+page_code: "PC-0801-2-02-GUIDE-FLOW-VERIFY-01"
+url: "/guides/why-flow-verification-matters-in-remote-pump-control/"
+---
+
 ## Introduction
 
 ---
@@ -143,3 +152,4 @@ In these scenarios, knowing the real operating state is critical.
 - 📡 Valve Control:  
   [LoRa Solar Valve Controller (PKY-IC05)](/product/pky-ic05/)
 
+---
