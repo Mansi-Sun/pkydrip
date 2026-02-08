@@ -86,3 +86,9 @@ This architecture provides reliable pump control and operation confirmation.
 - Improves system stability and operational confidence
 
 PKY-IC06-PUMP is designed for irrigation projects that require **reliable, verifiable pump control in remote environments**.
+
+---
+
+### Related Solution
+
+- 👉 [LoRa Off-Grid Irrigation System](/solutions/lora-off-grid-irrigation-system/)
