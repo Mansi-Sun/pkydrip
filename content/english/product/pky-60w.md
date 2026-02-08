@@ -1,155 +1,180 @@
 ---
-title: "PKYDrip Wired Master Controller – Model PKY-60W"
-description: "PKYDrip Wired Master Controller (Model PKY-60W) is a professional irrigation control solution designed for agricultural fields, greenhouse cultivation, and municipal landscape irrigation projects. With flexible modular expansion, industrial-grade reliability, and smart management capabilities, PKYDrip provides efficient, stable, and scalable irrigation control for medium to large-scale installations."
+title: "PKYDrip Wired Main Controller – PKY-60W"
+description: "PKY-60W is a wired main irrigation controller designed as the logic core of modular irrigation systems. It manages zones, schedules, sensors, and system coordination, while working with independent pump controllers, valve controllers, and gateways to build scalable irrigation solutions."
 type: "product"
-bg_image: "images/call-to-action-bg.jpg"
-image: "images/product/lora-gateway-1.jpg"
-categories: ["irrigation-controller"]
-features:
-  - "**Product Code:** PKY-60W"
-  - "**Power Supply:** AC 220V,240V input; internal DC 24V output for valve control"
-  - "**Base Control Outputs:** 14 outputs, expandable up to 60"
-  - "**Communication:** 2 RS485 inputs (supporting 25 devices per port)"
-  - "**Analog Inputs:** 2 (4–20mA / 0–5V)"
-  - "**Touchscreen:** 7-inch industrial MCGS capacitive screen"
-  - "**Device Control:** Solenoid/motorized valves, VFDs, and 10kW water pumps"
-  - "**Remote Control:** Local LAN + cloud Web/App control"
-  - "**Sensor Compatibility:** Soil, rain, pressure, flow, etc."
-  - "**Housing:** IP65 ABS enclosure (240×300×120mm)"
-  - "**Installation:** Wall-mounted or pole-mounted (hoop supported)"
+layout: "product/single"
 
-specs:
-  - "Product Code: PKY-60W"
-  - "Power Input: AC 220V-240V"
-  - "Valve Control Output: 16 outputs (expandable to 60)"
-  - "Expansion Module Size: 8cm × 5cm × 4cm"
-  - "Communication: 2× RS485 (25 devices per port)"
-  - "Analog Inputs: 2× 4–20mA / 0–5V"
-  - "Touchscreen: 7\" MCGS Industrial Capacitive Panel"
-  - "VFD & Pump Control: Yes (up to 10kW)"
-  - "Remote Control: LAN / Web / Mobile App"
-  - "Main PCB Size: 19cm × 9cm × 4cm"
-  - "Enclosure Size: 240mm × 300mm × 120mm"
-  - "Protection Level: IP65"
-  - "Installation: Wall or Pole Mount"
-  - "Cable Interface: M20 Waterproof Glands"
-  - "Operating Temp: –20°C to +70°C"
+# Optional: keep empty to avoid wrong background
+bg_image: ""
+image: "images/product/pky-60w/cover.jpg"
 
-application :
-   - ✔ Field crop irrigation (vegetables, fruits, grains)
-   - ✔ Greenhouse intelligent irrigation
-   - ✔ Orchard & vineyard drip irrigation
-   - ✔ Urban landscape & park irrigation
-   - ✔ Golf course / sports field systems
+categories:
+  - irrigation-controller
+  - main-controller
 
-cta: 
-  text: "Contact us for technical drawings, quotes, or integration advice."
-  button_label: "Chat Now"
-  button_url: "https://wa.me/8617395297329" 
-     
+# Internal identifiers (for WhatsApp + tracking)
+product_code: "PKY-60W"
+page_code: "0801-2-02-PKY-60W"
+
+product_role:
+  - "Main Controller"
+  - "System Logic Core"
+
+highlights:
+  - "Main controller for modular irrigation systems"
+  - "Expandable from small pilot projects to large-scale installations"
+  - "Controls logic, zones, schedules, and sensors — not water volume"
+  - "Works with independent pump controllers and wireless valve modules"
+
+power:
+  # Default configuration
+  default_input: "AC 220–240V (AU plug)"
+  # Optional configurations
+  optional_input:
+    - "AC 380–400V"
+  # OEM customization
+  oem_plug_customization:
+    moq: "≥ 5 units"
+    options:
+      - "AU plug"
+      - "UK plug"
+      - "US plug"
+
+valve_output:
+  voltage_options:
+    - "AC 24V"
+    - "DC 24V"
+
+communication:
+  - "RS485 ×2 (Modbus, up to 25 devices per port)"
+
+io_capability:
+  base_outputs: 14
+  expandable_outputs: 60
+  analog_inputs: "2 × (4–20mA / 0–5V)"
+
+interface:
+  default_screen: "7-inch industrial MCGS capacitive touchscreen"
+  optional_screen:
+    - "10-inch touchscreen (optional)"
+
+enclosure:
+  protection: "IP65"
+  material: "ABS"
+  size: "240 × 300 × 120 mm"
+  installation: "Wall-mounted or pole-mounted"
+  optional:
+    - "Waterproof protective cover (optional)"
+
+operating_environment:
+  temperature: "-20°C to +50°C"
+
+integration_scope:
+  - "Solenoid and motorized valves"
+  - "Pump start signals and VFD coordination (logic-level)"
+  - "Fertigation and dosing systems (via external modules)"
+  - "Soil moisture, EC/pH, pressure, flow, rain sensors"
+
+cta:
+  text: "Contact us for technical drawings, system design support, or integration advice."
+  button_label: "Chat on WhatsApp"
+  # WhatsApp prefilled message includes product_code + page_code
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%27m%20interested%20in%20PKY-60W.%20Page%3A%200801-2-02-PKY-60W.%20Please%20share%20datasheet%20and%20a%20quick%20recommendation."
+
+aliases:
+  - "/product/pky-60w/"
+---
+## Role in the Irrigation System
+
+PKY-60W is a **wired main controller**.  
+It serves as the **logic and coordination core** of a modular irrigation system.
+
+The controller manages:
+- Irrigation zones and schedules
+- Automation logic (time-based or sensor-based)
+- System coordination between valves, pumps, and fertigation equipment
+
+It **does not define irrigation area or water volume**.
+
 ---
 
----
+## Where PKY-60W Fits
 
-# PKY-60W Irrigation Controller – Coverage Area FAQ
+In a complete system:
 
-This FAQ explains how to understand the **coverage area** of the PKY-60W irrigation controller.
-It is intended for **customers, engineers, and internal sales teams**.
+- **PKY-60W (Main Controller)**  
+  Controls logic, zones, schedules, and sensor decisions
 
-## Q1: What is the coverage area of the PKY-60W controller?
+- **Pump Controller (separate module)**  
+  Safely starts and protects pumps or VFDs
 
-**There is no fixed coverage area.**
+- **Valve Controllers (wired or LoRa)**  
+  Independently control irrigation zones
 
-The PKY-60W does **not** determine irrigation area by itself.  
-Coverage depends on the **entire irrigation system**, including:
+- **Gateway (optional)**  
+  Enables wireless expansion and cloud connectivity
 
-- Water source and pump capacity
-- System pressure and flow rate
-- Irrigation method (drip, sprinkler, center pivot, etc.)
-- Number of zones and irrigation schedule
-
-**The controller manages valves and logic, not water volume.**
+Each block operates independently within an expandable irrigation control system.
 
 ---
 
-## Q2: Why do some controllers claim “covers X hectares”?
+## Typical Applications
 
-Many controllers on the market show a coverage area for **marketing reference only**.
+PKY-60W is used as the main controller in:
 
-In reality:
-- The **same controller** can work for **1 hectare or 100+ hectares**
-- The difference comes from **hydraulic design**, not the controller
-
-PKY-60W avoids misleading area claims and focuses on **system scalability**.
-
----
-
-## Q3: What does PKY-60W actually control?
-
-PKY-60W controls:
-- Solenoid valves (zones)
-- Pumps and master valves
-- Irrigation schedules (time-based or sensor-based)
-- Fertigation or dosing equipment (with external systems)
-- Sensors via RS485 (soil moisture, EC/pH, pressure, flow, etc.)
-
-It supports:
-- Up to **60 outputs** (base + expansion)
-- Multiple irrigation programs per zone
-- Manual + automatic operation
-
----
-
-## Q4: Can PKY-60W be used for large farms?
-
-**Yes.**
-
-PKY-60W is commonly used in:
-- Greenhouses
-- Orchards
-- Open-field agriculture
-- Center pivot and large sprinkler systems
+- Greenhouse irrigation systems
+- Open-field zoned irrigation projects
+- Orchard and vineyard drip irrigation
+- Landscape and municipal irrigation
 - Fertigation and water–fertilizer integration systems
 
-Large area projects are achieved by:
-- Dividing the land into zones
-- Irrigating zones sequentially or in groups
-- Matching pump capacity and pressure to each zone
+It supports both **small pilot installations** and **large multi-zone projects**.
 
 ---
 
-## Q5: Can PKY-60W work for small projects?
+## Core Capabilities
 
-**Also yes.**
-
-PKY-60W can control:
-- A few zones in a small farm
-- Demo systems and pilot projects
-- Modular systems that will expand later
-
-Many customers start small and **expand zones over time** without changing the controller.
+- Multi-zone irrigation logic (base + expansion)
+- Time-based and sensor-based automation
+- Sequential or grouped zone operation
+- RS485 sensor integration (soil, EC/pH, pressure, flow)
+- Coordination with external pump and fertigation controllers
+- Manual and automatic operation modes
 
 ---
 
-## Q6: How should coverage be discussed with customers?
+## Expandability & Upgrade Path
 
-Instead of asking:
-> “How many hectares can this controller cover?”
+**Start Simple. Upgrade Anytime.**
 
-We recommend asking:
-- What is your **water source**?
-- What is the **pump flow and pressure**?
-- How many **irrigation zones** do you plan?
-- Drip, sprinkler, or mixed system?
-- Will zones run **one by one or simultaneously**?
+Projects can begin with a small number of zones and expand over time without replacing the controller.
 
-This approach leads to **accurate system selection** and avoids wrong expectations.
+Each function — valves, pumps, wireless modules, fertigation — is added as an **independent control block**, allowing the system to grow with project needs.
 
 ---
 
-## Q7: Simple explanation for sales teams
+## Integration Notes (For Engineers)
 
-A useful sentence for customers:
+- RS485 (Modbus) for sensor and device integration
+- Logic-level outputs for pump start and VFD coordination
+- Compatible with wired and wireless valve control architectures
+- Cloud connectivity available via external gateway modules
+
+PKY-60W focuses on **control logic**, not hydraulic sizing.
+
+---
+
+## Coverage Area – Important Clarification
+
+PKY-60W does **not** have a fixed coverage area.
+
+Irrigation area depends on:
+- Pump capacity and pressure
+- Hydraulic design and pipe sizing
+- Irrigation method (drip, sprinkler, pivot)
+- Zoning strategy and irrigation schedule
+
+The controller manages **when and how zones operate**, not how much water flows.
 
 > “The PKY-60W does not limit area.  
 > It controls valves and timing.  
@@ -157,7 +182,7 @@ A useful sentence for customers:
 
 ---
 
-## Q8: Typical project examples (reference only)
+## Typical Area Ranges (Reference Only)
 
 | Application type | Typical area range |
 |------------------|--------------------|
@@ -165,19 +190,13 @@ A useful sentence for customers:
 | Orchard / open-field drip | 5 – 50 hectares |
 | Large sprinkler / pivot systems | 10 – 100+ hectares |
 
-*These ranges depend on pump capacity, zoning strategy, and operating hours.*
+These ranges vary based on hydraulic design and operating hours.
 
 ---
 
 ## Summary
 
-- PKY-60W is a **platform-level irrigation controller**
-- It does **not** define irrigation area directly
-- Area is determined by **hydraulics + zoning**
-- The controller enables **flexible, expandable irrigation systems**
-
-For project evaluation, always consider the **entire irrigation system**, not just the controller.
-
----
-
-
+- PKY-60W is a **main irrigation controller**
+- It defines **system logic**, not irrigation area
+- Suitable for both small and large projects
+- Designed for modular, expandable irrigation systems
