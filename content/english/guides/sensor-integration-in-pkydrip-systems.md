@@ -165,3 +165,18 @@ Start simple and expand only when needed:
   - through PKY-DAT01 (periodic reporting)
 
 If you want, you can share your project type and site conditions, and we can recommend a practical sensor package.
+
+---
+
+## Need Help Selecting Sensors for Your Project?
+
+Every irrigation project is different.
+
+If you are unsure:
+- which sensors are really needed
+- where to place flow or pressure sensors
+- whether automation logic or monitoring-only is enough
+
+You can share a few basic details, and we will help you choose a **practical and reliable sensor setup**.
+
+👉 **[Chat on WhatsApp – Discuss Your Sensor Setup](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Guide%3A%20Sensor%20Integration%20%7C%20Code%3A%20PC-0801-2-02-GUIDE-SENSOR-INTEGRATION-01%0AI%20would%20like%20help%20selecting%20sensors%20for%20my%20irrigation%20project.)**
