@@ -133,3 +133,7 @@ and detect abnormal conditions early.
 - Modular architecture supports future expansion
 
 The **LoRa Off-Grid Irrigation System** provides a reliable foundation for irrigation in remote and challenging environments.
+
+- Sensor integration guide:  
+  👉 [How Sensors Are Integrated in PKYDrip Irrigation Systems](/guides/sensor-integration-in-pkydrip-systems/)
+
