@@ -116,6 +116,16 @@ This ensures correct module selection and reliable operation.
 
 ---
 
+### Design Note: Pump Operation Verification
+
+In remote and off-grid irrigation systems, starting a pump remotely is not enough.
+It is critical to confirm that water is actually being delivered.
+
+By adding a flow sensor at the pump outlet, the system can verify real pump operation
+and detect abnormal conditions early.
+
+👉 [Why Flow Verification Matters in Remote Pump Control](/guide/why-flow-verification-matters-in-remote-pump-control/)
+
 ## Summary
 
 - Designed for irrigation projects without electricity or 4G coverage
