@@ -1,7 +1,7 @@
 ---
 title: "PKY-IC03 vs LoRa Solar Valve Controller (PKY-IC05): What’s the Difference?"
 description: "This guide explains the key differences between PKY-IC03 and PKY-IC05, helping users choose the right wireless valve control device for their irrigation project based on power supply, functionality, and deployment scenarios."
-type: "page"
+type: "guide"
 layout: "single"
 
 page_code: "PC-0801-2-02-GUIDE-IC03-IC05-01"
