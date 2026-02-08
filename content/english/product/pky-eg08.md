@@ -153,3 +153,8 @@ The gateway remains the central coordination point as the network grows.
 - Bridges field devices with controllers, PLCs, or cloud platforms
 - Suitable for large, distributed, and cable-free irrigation projects
 
+---
+
+### Related Solution
+
+- 👉 [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)
