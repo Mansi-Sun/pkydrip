@@ -90,6 +90,14 @@ This separation improves system reliability and reduces unnecessary complexity.
 
 ---
 
+---
+
+## Related Pages
+
+- 👉 [PKY-IC03 – Wireless Irrigation Controller](/product/pky-ic03/)
+- 👉 [PKY-IC05 – LoRa Solar Valve Controller](/product/pky-ic05/)
+- 👉 [View all Irrigation Controllers](/irrigation-controller/)
+
 ## Summary
 
 - **PKY-IC03** is a flexible wireless execution controller suitable for sensor-integrated zones
@@ -97,3 +105,4 @@ This separation improves system reliability and reduces unnecessary complexity.
 - Selection depends on **power availability**, **functional requirements**, and **maintenance expectations**
 
 If you are unsure which device fits your project, reviewing field conditions and control requirements is the best starting point.
+
