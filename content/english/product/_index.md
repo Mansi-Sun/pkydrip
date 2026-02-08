@@ -2,7 +2,7 @@
 title: "Products"
 description: "Explore PKYDrip modular irrigation controllers, LoRa wireless devices, pump control solutions, fertigation systems, and hydroponic control solutions. Start simple. Upgrade anytime."
 type: "product-category"
-layout: "product-category/single"
+layout: "product-category/list"
 url: "/product/"
 page_code: "PC-0801-2-02-PRODUCT-INDEX-01"
 
