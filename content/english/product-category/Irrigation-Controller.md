@@ -25,6 +25,19 @@ products:
     url: "/product/pky-ic03/"
 ---
 
+### One control logic. Different implementations.
+
+All irrigation controllers listed below follow the same **Pump & Valve Automation principle**:
+
+- The pump starts first
+- Valves are opened one by one (sequential irrigation)
+- Stable pressure is maintained
+- The pump stops automatically after irrigation
+
+The difference between these controllers is **how they connect, communicate, and scale** — not how irrigation works.
+
+👉 [Pump & Valve Automation – Control Logic Guide](/guide/pump-valve-automation/)
+
 ## Start Simple. Upgrade Anytime.
 
 PKYDrip provides **modular irrigation controllers** for farms, greenhouses, and landscaping projects.  
