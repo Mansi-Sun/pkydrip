@@ -36,7 +36,7 @@ All irrigation controllers listed below follow the same **Pump & Valve Automatio
 
 The difference between these controllers is **how they connect, communicate, and scale** — not how irrigation works.
 
-👉 [Pump & Valve Automation – Control Logic Guide](/guide/pump-valve-automation/)
+👉 [Pump & Valve Automation – Control Logic Guide](/guides/pump-valve-automation/)
 
 ## Start Simple. Upgrade Anytime.
 
