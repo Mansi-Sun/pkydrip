@@ -1,5 +1,5 @@
 ---
-title: "PKYDrip LoRa Solar Valve Controller – Model PKY-IC05"
+title: "PKY-IC05 LoRa Solar Valve Controller | PKYDrip"
 description: "PKY-IC05 is a LoRa-based solar valve controller designed as a dedicated field actuator for opening and closing irrigation valves in off-grid environments. Powered by an integrated solar panel and battery, it focuses on ultra-low power operation and reliable valve control."
 type: "product"
 layout: "product/single"
@@ -69,6 +69,9 @@ Its role is simple and clear:
 
 PKY-IC05 does **not** handle irrigation logic, sensor analysis, or complex field decisions.
 
+PKY-IC05 is designed as a low-power, solar-driven execution node
+for modular LoRa-based irrigation systems.
+
 ---
 
 ## Where PKY-IC05 Fits
@@ -122,17 +125,6 @@ Once installed, the controller operates with minimal maintenance.
 
 ---
 
-## Control & Operation
-
-PKY-IC05 supports:
-- Scheduled valve operation via the irrigation platform
-- Remote open/close commands through the LoRa gateway
-- Basic local execution for assigned tasks
-
-It does not manage sensor logic or multi-condition decisions.
-
----
-
 ## Expandability & System Growth
 
 **Start Simple. Upgrade Anytime.**
@@ -155,21 +147,56 @@ The valve controller remains a stable, low-maintenance execution node as the sys
 
 ---
 
-### Choosing between IC03 and IC05?
+## When PKY-IC05 Is the Right Choice
 
-If your project involves wireless valve control,  
-this guide explains when to use each device:
+Choose PKY-IC05 if your project:
 
-👉 [PKY-IC03 vs PKY-IC05 – What’s the Difference?](/guides/ic03-vs-ic05/)
+- Requires wireless valve control only  
+- Does not need sensor data collection  
+- Prioritizes simplicity and cost efficiency  
+- Has moderate power and expansion requirements  
+
+PKY-IC05 is ideal for **basic remote irrigation control**.
+
+---
+
+## Upgrade Path: From PKY-IC05 to PKY-IC05-Plus
+
+For projects that require **stronger power capacity, longer runtime, or sensor integration**, PKYDrip provides an upgraded option:
+
+### PKY-IC05-Plus – Wireless Control & Sensing Node
+
+PKY-IC05-Plus is an upgraded version of PKY-IC05, designed for more demanding irrigation projects.
+
+Compared with PKY-IC05, PKY-IC05-Plus offers:
+
+- Larger enclosure  
+- Higher battery capacity  
+- Stronger expansion capability  
+- Optional sensor integration:
+  - Pressure monitoring  
+  - Flow measurement  
+  - Environmental sensing  
+
+PKY-IC05-Plus is recommended when irrigation reliability verification, monitoring, or future expansion is required.
+
+👉 Learn more: **PKY-IC05-Plus – Wireless Control & Sensing Node**
+
+---
 
 ## Summary
 
+Start with PKY-IC05 for basic control, and upgrade to PKY-IC05-Plus as project requirements grow.
 - PKY-IC05 is a **LoRa solar-powered valve controller**
 - Designed exclusively for valve open/close operations
 - Ultra-low power, self-powered, and field-ready
 - Ideal for large-scale, off-grid irrigation zoning
+    
+Recommended for projects with many zones,
+limited power availability, and simple execution requirements.
 
 ---
+
 
 ### Related Solution
 
