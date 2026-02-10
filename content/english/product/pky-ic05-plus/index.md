@@ -1,80 +1,182 @@
 ---
-title: PKY-IC05-Plus – Wireless Control & Sensing Node
-description: Upgraded wireless irrigation controller with larger enclosure, higher battery capacity, and expanded sensor support. Designed for modular and project-based irrigation systems.
-type: product
-model: PKY-IC05-Plus
-url: /product/pky-ic05-plus/
+title: "PKY-IC05-Plus Wireless Control & Sensing Node | PKYDrip"
+description: "PKY-IC05-Plus is an upgraded LoRa wireless control node with larger enclosure, higher battery capacity, and optional sensor integration. Designed for modular, expandable irrigation systems in demanding field environments."
+type: "product"
+layout: "product/single"
+
+bg_image: ""
+image: "/images/product/pky-ic05-plus.webp"
+
+categories:
+  - irrigation-controller
+  - valve-controller
+  - lora-wireless
+  - sensor-enabled
+
+# Internal identifiers (for tracking & WhatsApp)
+product_code: "PKY-IC05-Plus"
+page_code: "PC-0801-2-03-PROD-PKY-IC05-PLUS-01"
+
+product_role:
+  - "Wireless Control & Sensing Node"
+  - "Expanded Field Execution Module"
+
+highlights:
+  - "Wireless valve control with expanded power capacity"
+  - "Larger enclosure for higher-capacity battery or solar system"
+  - "Optional sensor integration for pressure, flow, and environment"
+  - "Designed for long-term, expandable irrigation projects"
+
+communication:
+  - "LoRa (paired with PKY-EG08 Gateway)"
+
+control_scope:
+  function: "Valve execution with optional sensing and status verification"
+  supported_valves: "Pulse-type solenoid valves (typically one valve per unit)"
+
+power:
+  supply: "High-capacity internal battery or solar-powered system"
+  design_note: "Designed for extended runtime and higher duty cycles than standard valve controllers"
+
+control_methods:
+  - "Scheduled valve operation (via system platform)"
+  - "Remote open/close commands (via LoRa gateway)"
+  - "Sensor-assisted verification (optional)"
+
+enclosure:
+  protection: "IP66"
+  note: "Larger enclosure designed for expanded power and interface capacity"
+
+operating_environment:
+  temperature: "-20°C to +50°C"
+
+cta:
+  text: "Contact us for expandable LoRa control and sensing solutions, power configuration advice, or project planning support."
+  button_label: "Chat on WhatsApp"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20PKY-IC05-Plus%20%7C%20Page%3A%20PC-0801-2-03-PROD-PKY-IC05-PLUS-01%20%7C%20Action%3A%20AC-WA-PKY-IC05-PLUS-WEB-01%0AI%20need%20an%20expandable%20LoRa%20control%20node%20with%20sensor%20support."
+
+aliases:
+  - "/product/pky-ic05-plus/"
 ---
 
-# PKY-IC05-Plus
-## Wireless Control & Sensing Node
+## Role in the Irrigation System
 
-PKY-IC05-Plus is an upgraded wireless irrigation control node designed for projects that require **stronger power capacity, extended runtime, and expanded functionality**.
+PKY-IC05-Plus is a **wireless control and sensing node** designed for modular irrigation systems that require more than basic valve execution.
 
-Compared with standard wireless valve controllers, IC05-Plus features a **larger enclosure**, supports **higher-capacity batteries**, and provides **optional sensor integration**, making it suitable for long-term outdoor deployment and complex irrigation scenarios.
+Its core role includes:
+- Executing valve open / close commands
+- Supporting higher power demand and longer runtime
+- Collecting optional field data for verification and monitoring
 
----
-
-## Key Features
-
-- LoRa-based wireless valve control  
-- Larger enclosure for higher battery capacity  
-- Battery-powered or solar-powered operation  
-- Integrated expansion interfaces for sensors  
-- Optional data collection:
-  - Pipe pressure monitoring  
-  - Water flow measurement  
-  - Air temperature & humidity  
-  - Soil temperature & moisture  
+PKY-IC05-Plus bridges the gap between **simple execution** and **verified, monitored irrigation operation**.
 
 ---
 
-## Why PKY-IC05-Plus
+## Where PKY-IC05-Plus Fits
 
-PKY-IC05-Plus is designed to go beyond basic wireless switching.
+In a modular irrigation system:
 
-By combining **control and sensing** in a single node, IC05-Plus helps users verify irrigation operation, detect abnormal conditions, and reduce on-site troubleshooting.
+- **Main Controller (optional)**  
+  Defines irrigation logic, scheduling, and automation rules
 
-This makes it especially suitable for projects where:
-- Irrigation reliability is critical  
-- Pipe length and pressure variation are significant  
-- Water usage needs to be monitored or optimized  
-- Future system expansion is expected  
+- **PKY-EG08 (LoRa Gateway)**  
+  Manages long-range LoRa communication and coordinates field devices
+
+- **PKY-IC05-Plus (Control & Sensing Node)**  
+  Executes valve actions and optionally collects sensor data in each irrigation zone
+
+PKY-IC05-Plus operates as an **independent yet expandable field node**.
+
+---
+
+## Core Design Philosophy
+
+PKY-IC05-Plus is intentionally designed for **projects that grow over time**.
+
+Compared with standard wireless valve controllers, it offers:
+- More internal space
+- Higher battery capacity
+- Additional interfaces for expansion
+- Support for sensing without redesigning the system
+
+This allows system designers to deploy control first and **add sensing later when required**.
+
+---
+
+## Power & Deployment
+
+- Supports higher-capacity battery configurations
+- Compatible with solar-assisted power systems
+- Designed for extended operation cycles
+- Suitable for unattended, long-term outdoor deployment
+
+PKY-IC05-Plus is recommended for projects where:
+- Valve operation frequency is higher
+- Runtime requirements are longer
+- Maintenance access is limited
 
 ---
 
 ## Typical Applications
 
-- Large farms and orchards  
-- Greenhouses with distributed irrigation zones  
-- Remote areas without grid power  
-- Modular irrigation systems that grow over time  
+- Large farms and orchards with long pipe runs
+- Irrigation zones requiring pressure or flow verification
+- Projects with phased deployment and future expansion
+- Remote or off-grid irrigation systems with monitoring needs
 
 ---
 
-## System Integration
+## Expandability & System Growth
 
-PKY-IC05-Plus works as part of a modular irrigation control system and is commonly used together with:
+**Deploy Now. Expand Later.**
 
-- **EG08 LoRa Gateway** – for long-range wireless communication  
-- **Main irrigation controllers** – for scheduling and logic control  
-- **Pump control or VFD interfaces** – for coordinated pump operation  
+Projects can start with PKY-IC05-Plus as a control node and later expand by:
+- Enabling sensor inputs
+- Adding flow or pressure monitoring
+- Integrating environmental data
+- Connecting additional system logic via main controllers
 
-Each PKY-IC05-Plus unit operates independently while remaining fully integrated within the overall system.
-
----
-
-## Modular Design Philosophy
-
-**Each block is an independent control module  
-within an expandable irrigation control system.**
-
-PKY-IC05-Plus can be deployed as a basic wireless control node first, and later expanded with sensor functions as project requirements evolve.
+The same hardware platform supports growth without replacement.
 
 ---
 
-## Product Positioning
+## Integration Notes (For Engineers)
 
-PKY-IC05-Plus replaces the previous IC03 positioning and is recommended for all new projects requiring wireless control with expansion capability.
+- Designed to pair with **PKY-EG08** LoRa gateway
+- Supports pulse-type solenoid valves
+- Sensor interfaces are optional and project-dependent
+- Not intended as a centralized logic controller
+
+---
+
+## When PKY-IC05-Plus Is the Right Choice
+
+Choose PKY-IC05-Plus if your project:
+
+- Requires wireless valve control with higher power capacity  
+- Needs longer runtime or higher duty cycles  
+- Plans to add sensing or verification in the future  
+- Values expandability without system redesign  
+
+---
+
+## Upgrade Relationship
+
+- **PKY-IC05** – Basic wireless valve execution  
+- **PKY-IC05-Plus** – Expanded control with optional sensing  
+- **PKY-IC06-PUMP** – Wireless pump control and coordination  
+
+Each module serves a clear role within an expandable irrigation control system.
+
+---
+
+## Summary
+
+PKY-IC05-Plus is designed for irrigation projects that require **control today and flexibility tomorrow**.
+
+- Wireless LoRa-based control node  
+- Higher power and larger enclosure than PKY-IC05  
+- Optional sensing without system redesign  
+- Ideal for scalable, project-based irrigation systems  
 
 ---
