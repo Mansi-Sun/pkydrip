@@ -1,6 +1,6 @@
 ---
 title: "Products"
-description: "Explore PKYDrip modular irrigation controllers, LoRa wireless devices, pump control solutions, fertigation systems, and hydroponic control solutions. Start simple. Upgrade anytime."
+description: "Explore PKYDrip modular irrigation controllers, LoRa wireless devices, sensor-enabled field nodes, pump control solutions, fertigation systems, and hydroponic control solutions. Start simple. Upgrade anytime."
 type: "product-category"
 layout: "product-category/list"
 url: "/product/"
@@ -31,19 +31,19 @@ products:
     image: "images/product/pkyeg08.webp"
     url: "/product/pky-eg08/"
 
-  - name: "PKY-IC03"
-    summary: "PKYDrip Wireless Execution Controller – Model PKY-IC03"
-    image: "images/product/pkyic03.webp"
-    url: "/product/pky-ic03/"
-
   - name: "PKY-IC05"
     summary: "PKYDrip LoRa Solar Valve Controller – Model PKY-IC05"
     image: "images/product/pky-ic05.webp"
     url: "/product/pky-ic05/"
 
+  - name: "PKY-IC05-Plus"
+    summary: "PKYDrip Wireless Control & Sensing Node – Model PKY-IC05-Plus"
+    image: "images/product/pky-ic05-plus.webp"
+    url: "/product/pky-ic05-plus/"
+
   - name: "PKY-IC06-PUMP"
     summary: "PKYDrip LoRa Solar Pump Controller – Model PKY-IC06-PUMP"
-    image: "images/product//pky60w-pump.jpg"
+    image: "images/product/pky60w-pump.jpg"
     url: "/product/pky-ic06-pump/"
 
   # ==============================
