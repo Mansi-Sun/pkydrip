@@ -43,7 +43,7 @@ products:
 
   - name: "PKY-IC06-PUMP"
     summary: "PKYDrip LoRa Solar Pump Controller – Model PKY-IC06-PUMP"
-    image: "images/product//pky60w-pump.jpg"
+    image: "images/product/pky-ic06-pump.webp"
     url: "/product/pky-ic06-pump/"
 
   # ==============================
