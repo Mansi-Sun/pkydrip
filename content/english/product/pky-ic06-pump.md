@@ -4,7 +4,7 @@ description: "PKY-IC06-PUMP is a LoRa-based solar pump controller designed for r
 type: "product"
 page_code: "PC-0801-2-02-PROD-IC06-PUMP-01"
 categories: ["irrigation-controller"]
-image: "images/product/pky60w-pump.jpg"
+image: "images/product/pky-ic06-pump.webp"
 ---
 ## Product Overview
 
