@@ -39,7 +39,7 @@ reporting_mode:
 
 integration_scope:
   - "PKY-60W main controller (RS485 integration)"
-  - "PKY-IC03 wireless field controller (system dependent)"
+  - "PKY-IC05-Plus wireless field controller (system dependent)"
   - "Upper-level systems / cloud platforms (via controller/gateway)"
 
 enclosure:
@@ -115,7 +115,7 @@ For example:
 PKY-DAT01 can be integrated into PKYDrip systems through controllers and gateways, for example:
 
 - **PKY-60W** main controller for RS485-based sensor integration
-- **PKY-IC03** for projects requiring flexible field control and sensor-trigger logic (system dependent)
+- **PKY-IC05-Plus** for projects requiring flexible field control and sensor-trigger logic (system dependent)
 - Upper-level platforms via the controller/gateway architecture
 
 ---

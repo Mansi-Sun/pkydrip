@@ -110,7 +110,7 @@ In many projects, sensors are connected to controllers so the controller can:
 
 Typical control-layer products:
 - PKYDrip wired controllers (e.g., PKY-60W)
-- Wireless execution controllers (e.g., PKY-IC03)
+- Wireless execution controllers (e.g., PKY-IC05-Plus)
 
 This method is best when:
 - automation logic is required

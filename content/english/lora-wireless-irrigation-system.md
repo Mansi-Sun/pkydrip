@@ -1,7 +1,7 @@
 ---
 title: "PKYDrip LoRa-Based Wireless Irrigation System"
 tagline: ""
-description: "Overview of PKY-EG08 Wireless Irrigation Gateway and PKY-IC03 Wireless Irrigation Controller for smart irrigation applications."
+description: "Overview of PKY-EG08 Wireless Irrigation Gateway and PKY-IC05-Plus Wireless Irrigation Controller for smart irrigation applications."
 draft: false
 image : ""
 bg_image: "images/call-to-action-bg.jpg"
@@ -15,7 +15,7 @@ url: "/lora-wireless-irrigation-system/"
 The PKYDrip LoRa-based wireless irrigation system is designed for smart agricultural and landscaping projects that require flexible, long-distance, and low-power irrigation control. The system includes:
 
 - [**PKY-EG08 Wireless Irrigation Gateway**](/product/pky-eg08)
-- [**PKY-IC03 Wireless Irrigation Controller**](/product/pky-ic03)
+- [**PKY-IC05-Plus Wireless Irrigation Controller**](/product/pky-ic05-plus)
 
 Together, they provide a robust wireless communication network between irrigation scheduling software (cloud or local SCADA) and field-level valves or pump control units.
 {{< /blue_box >}}
@@ -46,9 +46,9 @@ Together, they provide a robust wireless communication network between irrigatio
 
 <div>
   <section class="custom-section">
-  <h3>PKY-IC03 — Wireless Irrigation Controller Terminal</h3>
+  <h3>PKY-IC05-Plus — Wireless Irrigation Controller Terminal</h3>
   <ul>
-    <li><p><strong>Model: </strong>PKY-IC03</p></li>
+    <li><p><strong>Model: </strong>PKY-IC05-Plus</p></li>
     <li><p><strong>Function: </strong>Executes irrigation commands locally by controlling solenoid valves or pumps.</p></li>
     <li><p><strong>Features: </strong></p></li>
       <ul>

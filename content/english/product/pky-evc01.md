@@ -15,7 +15,7 @@ page_code: "PC-0801-2-02-PROD-PKY-EVC01-08"
 
 communication_modes:
   - "4G (direct cloud connection)"
-  - "RS485 (integration with PKY-60W or PKY-IC03)"
+  - "RS485 (integration with PKY-60W or PKY-IC05-Plus)"
 
 cta:
   text: "Contact us for valve compatibility, wiring guidance, or integration advice for PKY-EVC01."
@@ -49,7 +49,7 @@ In 4G mode, PKY-EVC01 connects directly to the cloud platform:
 
 In RS485 mode, PKY-EVC01 connects to:
 - **PKY-60W** main controller
-- **PKY-IC03** wireless execution controller (system dependent)
+- **PKY-IC05-Plus** wireless execution controller (system dependent)
 
 This mode is ideal for:
 - Centralized control cabinets
