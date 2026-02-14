@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<section class="page-title-area">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="page-content-area" style="padding:40px 0;">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}
