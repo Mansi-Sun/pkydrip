@@ -110,5 +110,20 @@ To receive a matching proposal and BOM suggestion, please prepare:
 - Irrigation type (drip / sprinkler)
 - Number of irrigation zones (estimate is OK)
 
-📲 WhatsApp PKYDrip:  
-https://wa.me/008617395297329
+---
+
+## WhatsApp Consultation (Fast Reply)
+
+To get a quick system suggestion, please send this format on WhatsApp:
+
+- Project location (country/city)
+- Farm size (acres or hectares)
+- Crop type
+- Water source (well / pond / river) + estimated depth (if well)
+- Irrigation type (drip / sprinkler)
+- Estimated zone count (or how many fields/blocks)
+- Power source (solar only / solar + grid)
+- Any existing pump info (photo of nameplate if available)
+
+**WhatsApp (PKYDrip):**  
+<a class="btn btn-primary" href="https://wa.me/008617395297329" target="_blank" rel="noopener">Chat on WhatsApp</a>
