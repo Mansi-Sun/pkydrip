@@ -113,5 +113,11 @@ For collaboration or BOM request, prepare:
 - Required communication interface
 - OEM requirements
 
-📲 WhatsApp PKYDrip Technical:  
-https://wa.me/008617395297329
+---
+
+## WhatsApp (Technical Discussion)
+
+<a href="https://wa.me/008617395297329?text=Hi%20PKYDrip%2C%20I%20am%20an%20integrator%20and%20I%20want%20to%20discuss%20SOL-IRR-03-ENG.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-engineer%2F%0ARequest%3A%20Please%20share%20the%20control%20logic%20and%20recommended%20I%2FO%20structure%20for%20a%20solar%20pump%20+%20zone%20irrigation%20project."
+target="_blank" rel="noopener">
+WhatsApp PKYDrip Technical
+</a>
