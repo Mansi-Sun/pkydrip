@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PKYDrip – Pump Sizing Wizard (Simple / Engineer Mode)</title>
+  <style>
+    :root { --bg:#0b1220; --card:#111a2e; --text:#e8eefc; --muted:#a9b7d6; --line:#24324f; --accent:#4cc3ff; }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#070c16,#0b1220);color:var(--text);}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px;}
+    h1{font-size:22px;margin:0 0 8px;}
+    p{margin:6px 0;color:var(--muted);line-height:1.5}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px}
+    .card{background:rgba(17,26,46,.92);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px}
+    input,select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#0b1326;color:var(--text);outline:none}
+    input:focus,select:focus{border-color:rgba(76,195,255,.7);box-shadow:0 0 0 3px rgba(76,195,255,.15)}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    button{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0b1326;color:var(--text);cursor:pointer}
+    button.primary{border-color:rgba(76,195,255,.7);background:rgba(76,195,255,.12)}
+    .kpi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+    .k{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(11,19,38,.6)}
+    .k .t{font-size:12px;color:var(--muted)}
+    .k .v{font-size:18px;margin-top:6px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .hr{height:1px;background:var(--line);margin:12px 0}
+    .note{font-size:12px;color:var(--muted)}
+    .tag{display:inline-block;font-size:12px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:6px}
+    .warn{color:#ffd27a}
+    .ok{color:#8bffb0}
+    .small{font-size:12px}
+    .hide{display:none !important;}
+    .modebar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+    .modebtn{padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:#0b1326;color:var(--text)}
+    .modebtn.active{border-color:rgba(76,195,255,.8);background:rgba(76,195,255,.12)}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(11,19,38,.45)}
+    .miniBtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    .miniBtns button{padding:8px 10px;border-radius:999px;font-size:12px}
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+  <h1>PKYDrip – Pump Sizing Wizard</h1>
+  <p>
+    A customer-friendly calculator to estimate <b>required pump flow</b>, the benefit of <b>rotation (zoning)</b>, and solar-friendly design.
+  </p>
+
+  <!-- MODE SWITCH -->
+  <div class="modebar">
+    <div class="pill">
+      <span class="tag">Mode</span>
+      <button id="btnSimple" class="modebtn active" type="button">Simple Mode (Farm Owner)</button>
+      <button id="btnEngineer" class="modebtn" type="button">Engineer Mode (Installer / Solar)</button>
+    </div>
+    <div class="pill">
+      <span class="tag">Goal</span>
+      <span class="note">Simple mode hides VFD/engineering parameters. Engineer mode reveals them.</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- INPUTS -->
+    <div class="card">
+      <h2 style="margin:0 0 10px;font-size:16px;">Inputs</h2>
+
+      <div class="row">
+        <div>
+          <label>Region Preset (sets default peak net water need)</label>
+          <select id="region">
+            <option value="custom">Custom</option>
+            <option value="us">USA (default: 6 mm/day)</option>
+            <option value="au">Australia (default: 7 mm/day)</option>
+            <option value="me">Middle East (default: 8 mm/day)</option>
+          </select>
+        </div>
+        <div>
+          <label>Area Unit</label>
+          <select id="areaUnit">
+            <option value="ha">Hectares (ha)</option>
+            <option value="ac">Acres (ac)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10px;">
+        <div>
+          <label>Area Size</label>
+          <input id="area" type="number" step="0.1" value="10" />
+        </div>
+        <div>
+          <label>Peak Net Irrigation Need (mm/day)</label>
+          <input id="netMm" type="number" step="0.1" value="6" />
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10px;">
+        <div>
+          <label>Irrigation Method (sets typical efficiency)</label>
+          <select id="method">
+            <option value="flood">Flood / Big water (Ea ~ 0.35)</option>
+            <option value="sprinkler">Sprinkler (Ea ~ 0.75)</option>
+            <option value="pivot">Center Pivot / Linear (Ea ~ 0.82)</option>
+            <option value="drip">Drip / Micro (Ea ~ 0.90)</option>
+          </select>
+        </div>
+        <div>
+          <label>Application Efficiency Ea (editable)</label>
+          <input id="eff" type="number" step="0.01" value="0.75" />
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10px;">
+        <div>
+          <label>Irrigation Hours Available per Day (h/day)</label>
+          <input id="hours" type="number" step="0.5" value="10" />
+        </div>
+        <div>
+          <label>Rotation / Zones (N) <span class="note">(peak flow ÷ N)</span></label>
+          <input id="zones" type="number" step="1" value="4" />
+        </div>
+      </div>
+
+      <!-- SIMPLE: head quick buttons -->
+      <div id="simpleHeadBlock" style="margin-top:12px;">
+        <label>Head (m) Quick Choice <span class="note">Pick one if you don’t know details</span></label>
+        <div class="miniBtns">
+          <button type="button" data-head="25">25 m (flat / short)</button>
+          <button type="button" data-head="35">35 m (typical)</button>
+          <button type="button" data-head="45">45 m (long / higher pressure)</button>
+        </div>
+        <div style="margin-top:8px;">
+          <input id="head" type="number" step="1" value="35" />
+          <div class="note">Head = water lift + pipe loss + working pressure. Lower head saves a lot of solar power.</div>
+        </div>
+      </div>
+
+      <!-- ENGINEER ONLY -->
+      <div id="engineerBlock" class="hide">
+        <div class="hr"></div>
+        <h3 style="margin:0 0 10px;font-size:14px;">Engineer Parameters</h3>
+
+        <div class="row">
+          <div>
+            <label>Pump+Motor Efficiency η (0–1)</label>
+            <input id="pumpEff" type="number" step="0.01" value="0.55" />
+          </div>
+          <div>
+            <label>Control Cabinet Type</label>
+            <select id="cabinet">
+              <option value="basic">Basic Pump Control (relay + protection)</option>
+              <option value="vfd">Integrated VFD Pump Cabinet (recommended for solar/pressure stability)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px;">
+          <div>
+            <label>Pressure Sensor (recommended)</label>
+            <select id="ps">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div>
+            <label>Flow Sensor (dry-run / performance confirmation)</label>
+            <select id="fs">
+              <option value="optional">Optional</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px;">
+          <div>
+            <label>Water Tank Level (float switch) for solar pumping</label>
+            <select id="ls">
+              <option value="yes">Yes</option>
+              <option value="optional">Optional</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div>
+            <label>Head Breakdown (optional note)</label>
+            <input id="headNote" type="text" placeholder="e.g., lift 10m + loss 8m + pressure 17m" />
+          </div>
+        </div>
+      </div>
+
+      <div class="btns">
+        <button class="primary" id="calcBtn" type="button">Calculate</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+
+      <p class="note" style="margin-top:10px;">
+        <b>Solar rule:</b> Rotation reduces <b>peak flow</b>. Efficiency upgrades reduce <b>total water</b>. Lower head reduces <b>power</b>.
+      </p>
+    </div>
+
+    <!-- OUTPUTS -->
+    <div class="card">
+      <h2 style="margin:0 0 10px;font-size:16px;">Results</h2>
+
+      <div class="kpi">
+        <div class="k">
+          <div class="t">Net Water Volume / Day</div>
+          <div class="v"><span id="netVol" class="mono">—</span> <span class="small">m³/day</span></div>
+        </div>
+        <div class="k">
+          <div class="t">Gross Water Volume / Day (÷ Ea)</div>
+          <div class="v"><span id="grossVol" class="mono">—</span> <span class="small">m³/day</span></div>
+        </div>
+        <div class="k">
+          <div class="t">Required Average Pump Flow</div>
+          <div class="v"><span id="avgFlow" class="mono">—</span> <span class="small">m³/h</span></div>
+        </div>
+        <div class="k">
+          <div class="t">Peak Flow with Rotation (÷ N zones)</div>
+          <div class="v"><span id="rotFlow" class="mono">—</span> <span class="small">m³/h</span></div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="kpi">
+        <div class="k">
+          <div class="t">Estimated Shaft Power (kW)</div>
+          <div class="v"><span id="kw" class="mono">—</span> <span class="small">kW</span></div>
+        </div>
+        <div class="k">
+          <div class="t">Estimated Daily Energy</div>
+          <div class="v"><span id="kwh" class="mono">—</span> <span class="small">kWh/day</span></div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div id="insights" class="note"></div>
+
+      <div class="hr"></div>
+
+      <h3 style="margin:0 0 8px;font-size:14px;">Copy for WhatsApp / Email (auto-generated)</h3>
+      <div class="k" style="margin-top:10px;">
+        <div class="t">Message</div>
+        <div class="v" style="font-size:13px;line-height:1.45;">
+          <span id="msgText" class="mono">—</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+
+  function toHa(area, unit){
+    return unit === "ha" ? area : area / 2.47105; // 1 ha = 2.47105 ac
+  }
+  function clamp(x, a, b){ return Math.max(a, Math.min(b, x)); }
+  function fmt(x, digits=1){
+    if (!isFinite(x)) return "—";
+    return Number(x).toFixed(digits);
+  }
+
+  function presetMethod(){
+    const m = $("method").value;
+    const map = { flood:0.35, sprinkler:0.75, pivot:0.82, drip:0.90 };
+    $("eff").value = map[m] ?? 0.75;
+  }
+  function presetRegion(){
+    const r = $("region").value;
+    const map = { us:6.0, au:7.0, me:8.0, custom:Number($("netMm").value)||6.0 };
+    $("netMm").value = map[r] ?? 6.0;
+  }
+
+  let mode = "simple"; // "simple" | "engineer"
+  function setMode(next){
+    mode = next;
+    $("btnSimple").classList.toggle("active", mode==="simple");
+    $("btnEngineer").classList.toggle("active", mode==="engineer");
+    $("engineerBlock").classList.toggle("hide", mode!=="engineer");
+    // pumpEff exists only meaningful in engineer mode; still used in calc if present
+    calc();
+  }
+
+  function calc(){
+    const areaUnit = $("areaUnit").value;
+    const area = Number($("area").value);
+    const ha = toHa(area, areaUnit);
+
+    const netMm = Number($("netMm").value);
+    let Ea = Number($("eff").value);
+    Ea = clamp(Ea, 0.10, 0.98);
+
+    let hours = Number($("hours").value);
+    hours = clamp(hours, 0.5, 24);
+
+    let zones = Math.max(1, Math.floor(Number($("zones").value || 1)));
+
+    const head = Math.max(0, Number($("head").value));
+    let eta = 0.55;
+    if ($("pumpEff")) eta = clamp(Number($("pumpEff").value || 0.55), 0.15, 0.85);
+
+    // volumes
+    const netVol = ha * netMm * 10;      // m3/day
+    const grossVol = netVol / Ea;        // m3/day
+    const avgFlow = grossVol / hours;    // m3/h average
+    const rotFlow = avgFlow / zones;     // m3/h peak if sequential zones
+
+    // power estimate with rotFlow during hours (worst-case if always one zone at a time)
+    const rho = 1000, g = 9.81;
+    const Qms = rotFlow / 3600;
+    const kW = (rho * g * Qms * head) / eta / 1000;
+    const kWh = kW * hours;
+
+    $("netVol").textContent = fmt(netVol, 0);
+    $("grossVol").textContent = fmt(grossVol, 0);
+    $("avgFlow").textContent = fmt(avgFlow, 1);
+    $("rotFlow").textContent = fmt(rotFlow, 1);
+    $("kw").textContent = fmt(kW, 2);
+    $("kwh").textContent = fmt(kWh, 1);
+
+    // insights
+    const floodAvg = (netVol / 0.35) / hours;
+    const savingsVsFlood = 1 - (avgFlow / floodAvg);
+
+    const insight = [];
+    insight.push(`<div><b>Area:</b> ${fmt(ha,2)} ha • <b>Peak net:</b> ${fmt(netMm,1)} mm/day</div>`);
+    insight.push(`<div><b>Efficiency Ea:</b> ${fmt(Ea,2)} ⇒ Gross water ${fmt(grossVol,0)} m³/day</div>`);
+    insight.push(`<div><b>Flow:</b> Avg ${fmt(avgFlow,1)} m³/h • With ${zones} zones ⇒ Peak target <span class="ok"><b>${fmt(rotFlow,1)} m³/h</b></span></div>`);
+    insight.push(`<div><b>Solar-friendly:</b> power ~ Flow × Head. Lowering <b>head</b> often saves more solar capacity than anything else.</div>`);
+    insight.push(`<div><b>Flow saving vs flood baseline:</b> ≈ ${fmt(savingsVsFlood*100,0)}%</div>`);
+
+    if (mode === "engineer"){
+      const cab = $("cabinet").value;
+      const ps = $("ps").value;
+      const fs = $("fs").value;
+      const ls = $("ls").value;
+      insight.push(`<div class="hr"></div>`);
+      insight.push(`<div><b>Engineer notes:</b></div>`);
+      insight.push(`<div>• Cabinet: <b>${cab==="vfd" ? "Integrated VFD Pump Cabinet" : "Basic Pump Control"}</b></div>`);
+      insight.push(`<div>• Sensors: Pressure=${ps}, Flow=${fs}, Level=${ls}</div>`);
+      if ($("headNote").value.trim()) {
+        insight.push(`<div>• Head breakdown: ${$("headNote").value.trim()}</div>`);
+      }
+      insight.push(`<div class="small warn">Delivery tip:</div><div class="small">For farm owners, hide VFD parameters. We pre-set cabinet + show only target pressure & protection status.</div>`);
+    }
+
+    $("insights").innerHTML = insight.join("");
+
+    // Auto message for WhatsApp/email
+    const region = $("region").value.toUpperCase();
+    const method = $("method").value;
+    const methodName = ({
+      flood:"Flood / Big water",
+      sprinkler:"Sprinkler",
+      pivot:"Center pivot / linear",
+      drip:"Drip / micro"
+    })[method] || method;
+
+    let msg = `Project quick sizing: Area ${fmt(ha,2)} ha, peak net ${fmt(netMm,1)} mm/day, method ${methodName} (Ea ${fmt(Ea,2)}), available ${fmt(hours,1)} h/day. ` +
+              `Required avg flow ≈ ${fmt(avgFlow,1)} m³/h. With ${zones} zones rotation, peak flow target ≈ ${fmt(rotFlow,1)} m³/h. ` +
+              `Assumed head ${fmt(head,0)} m → estimated power ≈ ${fmt(kW,2)} kW (rotation running), energy ≈ ${fmt(kWh,1)} kWh/day.`;
+
+    if (mode==="engineer"){
+      const cab = $("cabinet").value==="vfd" ? "Integrated VFD cabinet (recommended for solar/pressure stability)." : "Basic pump control cabinet.";
+      msg += ` Engineer options: ${cab}`;
+    } else {
+      msg += ` Simple mode: We can supply a ready-to-use pump control package + automatic zoning (no complex settings).`;
+    }
+    $("msgText").textContent = msg;
+  }
+
+  // events
+  $("method").addEventListener("change", () => { presetMethod(); calc(); });
+  $("region").addEventListener("change", () => { presetRegion(); calc(); });
+  $("calcBtn").addEventListener("click", calc);
+
+  $("resetBtn").addEventListener("click", () => {
+    $("region").value="custom";
+    $("areaUnit").value="ha";
+    $("area").value=10;
+    $("netMm").value=6;
+    $("method").value="sprinkler";
+    $("eff").value=0.75;
+    $("hours").value=10;
+    $("zones").value=4;
+    $("head").value=35;
+    if ($("pumpEff")) $("pumpEff").value=0.55;
+    if ($("cabinet")) $("cabinet").value="basic";
+    if ($("ps")) $("ps").value="yes";
+    if ($("fs")) $("fs").value="optional";
+    if ($("ls")) $("ls").value="yes";
+    if ($("headNote")) $("headNote").value="";
+    setMode("simple");
+  });
+
+  // mode switch buttons
+  $("btnSimple").addEventListener("click", () => setMode("simple"));
+  $("btnEngineer").addEventListener("click", () => setMode("engineer"));
+
+  // head quick buttons
+  document.querySelectorAll("[data-head]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      $("head").value = btn.getAttribute("data-head");
+      calc();
+    });
+  });
+
+  // first run
+  calc();
+</script>
+</body>
+</html>
