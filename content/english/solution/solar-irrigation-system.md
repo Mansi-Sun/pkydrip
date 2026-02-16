@@ -35,7 +35,8 @@ Your sizing depends on 5 numbers:
 
 ## 🔵 Step 1 — Calculate Your Required Pump Flow (Interactive)
 
-<a href="/tools/pump-sizing/" style="
+<a href="/tools/pump-sizing/pump-sizing-calculator-v2.html"
+style="
 display:inline-block;
 padding:12px 18px;
 border-radius:10px;
@@ -46,6 +47,7 @@ text-decoration:none;
 margin:10px 10px 0 0;">
 Calculate My Solar Pump Flow →
 </a>
+
 
 <a href="#request" style="
 display:inline-block;
