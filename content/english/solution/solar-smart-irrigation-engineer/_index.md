@@ -117,7 +117,11 @@ For collaboration or BOM request, prepare:
 
 ## WhatsApp (Technical Discussion)
 
-<a href="https://wa.me/008617395297329?text=Hi%20PKYDrip%2C%20I%20am%20an%20integrator%20and%20I%20want%20to%20discuss%20SOL-IRR-03-ENG.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-engineer%2F%0ARequest%3A%20Please%20share%20the%20control%20logic%20and%20recommended%20I%2FO%20structure%20for%20a%20solar%20pump%20+%20zone%20irrigation%20project."
-target="_blank" rel="noopener">
-WhatsApp PKYDrip Technical
-</a>
+<div style="margin:18px 0;">
+  <a href="https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20am%20interested%20in%20SOL-IRR-03-FARM.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-farm%2F"
+     target="_blank" rel="noopener"
+     style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;padding:12px 16px;border-radius:10px;font-weight:700;line-height:1;">
+     WhatsApp PKYDrip
+  </a>
+</div>
+
