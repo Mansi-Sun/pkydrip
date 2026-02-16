@@ -112,18 +112,9 @@ To receive a matching proposal and BOM suggestion, please prepare:
 
 ---
 
-## WhatsApp Consultation (Fast Reply)
+## WhatsApp (Fast Response)
 
-To get a quick system suggestion, please send this format on WhatsApp:
-
-- Project location (country/city)
-- Farm size (acres or hectares)
-- Crop type
-- Water source (well / pond / river) + estimated depth (if well)
-- Irrigation type (drip / sprinkler)
-- Estimated zone count (or how many fields/blocks)
-- Power source (solar only / solar + grid)
-- Any existing pump info (photo of nameplate if available)
-
-**WhatsApp (PKYDrip):**  
-<a class="btn btn-primary" href="https://wa.me/008617395297329" target="_blank" rel="noopener">Chat on WhatsApp</a>
+<a href="https://wa.me/008617395297329?text=Hi%20PKYDrip%2C%20I%20am%20interested%20in%20SOL-IRR-03-FARM.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-farm%2F%0ARequest%3A%20Please%20suggest%20a%20recommended%20system%20structure%20and%20the%20key%20modules%20for%20a%2010%E2%80%93100%20acre%20farm."
+target="_blank" rel="noopener">
+WhatsApp PKYDrip
+</a>
