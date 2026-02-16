@@ -19,7 +19,7 @@ PKYDrip designs solar irrigation from **system logic first**, so you can use a *
 
 ## Quick Answer: What Determines Solar Pump Size?
 
-Your solar pump sizing depends on 5 numbers:
+Your sizing depends on 5 numbers:
 
 1) **Area** (ha / acres)  
 2) **Peak net water need** (mm/day)  
@@ -27,7 +27,7 @@ Your solar pump sizing depends on 5 numbers:
 4) **Available irrigation hours/day** (solar window)  
 5) **Zoning / rotation** (how many zones run sequentially)
 
-**Rotation (zoning) reduces peak flow & peak power.**  
+**Rotation reduces peak flow & peak power.**  
 **Efficiency reduces total daily water volume.**  
 **Lower head reduces power directly.**
 
@@ -59,25 +59,9 @@ margin:10px 0 0 0;">
 Send Parameters on WhatsApp →
 </a>
 
-<p style="margin-top:10px;opacity:.9;">
-<b>Tip:</b> If you don’t know head (m), start with 25 m / 35 m / 45 m. A better head estimate usually saves more solar cost than anything else.
-</p>
-
----
-
-## ✅ What You Gain with PKYDrip Solar Logic
-
-- **Smaller PV & inverter** by reducing peak flow through zoning
-- **Stable pressure** for sprinklers / drip lines
-- **Pump protection** (dry-run protection, tank level, pressure feedback)
-- **Modular upgrade path**: start simple, add sensors / remote / fertigation later
-- **Ready for engineers**: standard interface, easier commissioning & maintenance
-
 ---
 
 ## 3 Real Examples (10 ha / 50 ha / 100 ha)
-
-These examples use a practical peak net irrigation need and show why “design logic” matters.
 
 > Reference: 1 mm on 1 ha = 10 m³ water.
 
@@ -94,11 +78,6 @@ Results (approx):
 - Gross water/day: 600 / 0.75 = **800 m³/day**
 - Avg flow needed: 800 / 10 = **80 m³/h**
 - With 4-zone rotation: **20 m³/h peak**
-- Estimated shaft power @ 35 m head (typical efficiency): **~3–5 kW** (order-of-magnitude)
-
-Why this matters:
-- Without zoning, you design for ~80 m³/h peak.
-- With zoning, you can target ~20 m³/h peak → **solar system cost drops sharply**.
 
 ---
 
@@ -108,17 +87,13 @@ Assumptions:
 - Method: **Center pivot / linear (Ea 0.82)**
 - Irrigation: **10 h/day**
 - Zones: **6**
-- Head: **45 m** (longer lines / higher pressure)
+- Head: **45 m**
 
 Results (approx):
 - Net: 50 × 7 × 10 = **3500 m³/day**
 - Gross: 3500 / 0.82 ≈ **4268 m³/day**
 - Avg flow: 4268 / 10 ≈ **427 m³/h**
 - With 6-zone rotation: **~71 m³/h peak**
-
-Interpretation:
-- 427 m³/h “full open” is usually too costly for solar.
-- With zoning + pressure planning + head control, peak becomes manageable.
 
 ---
 
@@ -136,44 +111,14 @@ Results (approx):
 - Avg flow: 10667 / 12 ≈ **889 m³/h**
 - With 8-zone rotation: **~111 m³/h peak**
 
-Interpretation:
-- Large scale solar irrigation is possible, but only if:
-  - zoning is real (not “all zones open”),
-  - head is controlled,
-  - pipeline design and storage are considered.
-
 ---
 
-## The PKYDrip Solar Architecture (Modular)
-
-**Start Simple → Upgrade Anytime**
-
-- **Pump station layer**
-  - Pump control cabinet (basic or solar-optimized)
-  - Optional pressure stability / soft start logic
-- **Zoning layer**
-  - AC 24V valves, DC latching valves, or wireless LoRa valves
-  - Sequential rotation (one-by-one) to reduce peak flow
-- **Protection & feedback**
-  - Pressure sensor (recommended)
-  - Flow sensor (optional but great for dry-run & confirmation)
-  - Tank level switch (recommended for solar pumping + storage)
-- **Communication**
-  - Local control (touchscreen / app)
-  - Optional LoRa / WiFi / 4G
-- **Remote monitoring**
-  - Cloud platform (optional for larger projects)
-
----
-
-## Packages (Make It Easy for Different Customers)
+## Packages
 
 ### 1) Basic Solar Irrigation (Farm Owner Friendly)
 - Pump ON/OFF control + protection
 - Zoning / rotation scheduling
 - Simple operation (no complex tuning)
-
-Best for: small to medium farms who want a ready-to-use solution.
 
 ### 2) Solar Optimized System (Recommended)
 - Solar-friendly pump cabinet logic
@@ -181,47 +126,21 @@ Best for: small to medium farms who want a ready-to-use solution.
 - Tank level / dry-run protection
 - Rotation planning as standard
 
-Best for: most solar irrigation projects (lowest PV cost for the same field).
-
 ### 3) Pro / Engineering System
 - Pressure + flow feedback
 - Remote monitoring + logs
 - Multi-mode irrigation scheduling
 - Upgrade-ready for fertigation and sensors
 
-Best for: engineering contractors, government/NGO projects, large farms.
-
----
-
-## FAQ (Short)
-
-**Q: Do I need a VFD?**  
-For many farm owners: you don’t need to “touch” VFD parameters.  
-We deliver a **ready-to-use pump control cabinet** (basic or solar-optimized).  
-For solar systems and pressure stability, VFD-based solutions are often the best engineering choice — but it should be handled as a system, not a standalone product.
-
-**Q: Why rotation (zoning) matters so much for solar?**  
-Because solar system size is driven by **peak power**.  
-Rotation reduces peak flow → reduces peak power → reduces PV/inverter size.
-
-**Q: Can I start small and upgrade later?**  
-Yes. PKYDrip is modular: start with zoning + pump control, then add sensors, remote, fertigation modules.
-
 ---
 
 <a id="request"></a>
 ## Request a Solar Irrigation Proposal (Fast)
 
-Send these 6 items and we can return a structured proposal:
+Click WhatsApp and fill the blanks:
 
-1) Area (ha/acres)  
-2) Crop type (or “mixed”)  
-3) Water source (well/river/tank)  
-4) Estimated head (m) or distance + elevation  
-5) Irrigation method (flood/sprinkler/drip)  
-6) Power: solar only / solar + grid / diesel hybrid
-
-<a href="https://wa.me/8613803373007" style="
+<a href="https://wa.me/8613803373007?text=Hi%20PKYDrip%2C%20I%20need%20a%20solar%20irrigation%20proposal.%0A%0A1)%20Area%20(ha%2Facres)%3A%20____%0A2)%20Country%2FCity%3A%20____%0A3)%20Crop%3A%20____%0A4)%20Water%20source%20(well%2Friver%2Ftank)%3A%20____%0A5)%20Irrigation%20method%20(flood%2Fsprinkler%2Fdrip)%3A%20____%0A6)%20Peak%20net%20water%20need%20(mm%2Fday)%3A%20____%0A7)%20Irrigation%20hours%20available%20per%20day%3A%20____%0A8)%20Rotation%20zones%20(N)%3A%20____%0A9)%20Estimated%20head%20(m)%20or%20distance%20%2B%20elevation%3A%20____%0A10)%20Power%3A%20solar%20only%20%2F%20solar%20%2B%20grid%20%2F%20diesel%20hybrid%0A%0AIf%20possible%2C%20please%20share%20a%20simple%20layout%20photo%20or%20hand%20sketch."
+style="
 display:inline-block;
 padding:12px 18px;
 border-radius:10px;
@@ -233,48 +152,24 @@ margin-top:10px;">
 WhatsApp Us Now →
 </a>
 
-<p class="note" style="margin-top:10px;opacity:.9;">
-We can also cooperate with local engineers: we provide stable controllers + platform + cabinet logic, engineers handle pipeline/civil/electrical compliance and on-site commissioning.
-</p>
-
 ---
-
-<!-- =======================
-     OPTIONAL DEEP TECH (collapsed)
-     ======================= -->
 
 <details style="margin-top:18px;">
   <summary><b>Engineer Section (Deep Tech)</b> — head, power, protection, and solar optimization</summary>
 
   <br/>
 
-  ### 1) How to Estimate Head (H)
-  Total head typically includes:
+  ### Head (H) Quick Guide
+  Head includes:
   - Static lift (water level to highest point)
   - Pipe friction loss (mainline + branches)
-  - Working pressure requirement at emitters (sprinkler/drip)
+  - Working pressure at sprinklers / drippers
 
-  For solar-first projects, **reducing head is as important as reducing flow**.
+  For solar-first projects, lowering head is as important as lowering flow.
 
-  ### 2) Why “Big Water / Flood” Is Not Solar-Friendly
-  Flood irrigation often has low application efficiency.
-  That means higher gross water volume → higher required pump flow → bigger solar.
-
-  ### 3) Protection Logic (Recommended)
-  - Tank level (float switch): prevents dry-run
+  ### Protection Logic (Recommended)
+  - Tank level switch (float): prevents dry-run
   - Pressure sensor: confirms stable pressure
-  - Flow sensor: confirms actual movement of water, detects broken pipes / blocked filter
+  - Flow sensor: detects leaks / blockage / dry-run
 
-  ### 4) Best Practice for Solar Projects
-  - Use zoning rotation (4–8 zones)
-  - Use storage tank to decouple pumping from irrigation
-  - Maintain stable pressure for each zone
-  - Log runtime, pressure, flow for maintenance & evidence
-
-  ### 5) How PKYDrip Fits
-  PKYDrip controllers can integrate:
-  - valves (AC24V / latching DC / wireless)
-  - pump control cabinet logic
-  - sensor inputs (pressure / flow / level)
-  - optional remote communication (LoRa / WiFi / 4G)
 </details>
