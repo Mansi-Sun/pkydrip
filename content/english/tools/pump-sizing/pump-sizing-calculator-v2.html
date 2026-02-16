@@ -37,6 +37,9 @@
     .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(11,19,38,.45)}
     .miniBtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
     .miniBtns button{padding:8px 10px;border-radius:999px;font-size:12px}
+    a.cta{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:800;text-decoration:none;margin-top:10px}
+    a.ctaBlue{background:#4cc3ff;color:#000}
+    a.ctaGreen{background:#25D366;color:#000}
     @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
   </style>
 </head>
@@ -45,7 +48,7 @@
 <div class="wrap">
   <h1>PKYDrip – Pump Sizing Wizard</h1>
   <p>
-    A customer-friendly calculator to estimate <b>required pump flow</b>, the benefit of <b>rotation (zoning)</b>, and solar-friendly design.
+    Estimate <b>required pump flow</b>, the impact of <b>rotation zoning</b>, and solar-friendly design.
   </p>
 
   <!-- MODE SWITCH -->
@@ -57,7 +60,7 @@
     </div>
     <div class="pill">
       <span class="tag">Goal</span>
-      <span class="note">Simple mode hides VFD/engineering parameters. Engineer mode reveals them.</span>
+      <span class="note">Simple mode hides engineering complexity. Engineer mode reveals detailed options.</span>
     </div>
   </div>
 
@@ -196,7 +199,7 @@
       </div>
 
       <p class="note" style="margin-top:10px;">
-        <b>Solar rule:</b> Rotation reduces <b>peak flow</b>. Efficiency upgrades reduce <b>total water</b>. Lower head reduces <b>power</b>.
+        <b>Solar rule:</b> Rotation reduces <b>peak flow</b>. Efficiency reduces <b>total water</b>. Lower head reduces <b>power</b>.
       </p>
     </div>
 
@@ -250,6 +253,14 @@
         </div>
       </div>
 
+      <a id="waSendBtn" class="cta ctaGreen" href="https://wa.me/8613803373007">
+        Send This Result to WhatsApp →
+      </a>
+
+      <div class="note" style="margin-top:10px;">
+        This will send the generated message directly to PKYDrip WhatsApp (+86 13803373007).
+      </div>
+
     </div>
   </div>
 </div>
@@ -273,8 +284,8 @@
   }
   function presetRegion(){
     const r = $("region").value;
-    const map = { us:6.0, au:7.0, me:8.0, custom:Number($("netMm").value)||6.0 };
-    $("netMm").value = map[r] ?? 6.0;
+    const map = { us:6.0, au:7.0, me:8.0 };
+    if (r !== "custom") $("netMm").value = map[r] ?? 6.0;
   }
 
   let mode = "simple"; // "simple" | "engineer"
@@ -283,7 +294,6 @@
     $("btnSimple").classList.toggle("active", mode==="simple");
     $("btnEngineer").classList.toggle("active", mode==="engineer");
     $("engineerBlock").classList.toggle("hide", mode!=="engineer");
-    // pumpEff exists only meaningful in engineer mode; still used in calc if present
     calc();
   }
 
@@ -311,7 +321,7 @@
     const avgFlow = grossVol / hours;    // m3/h average
     const rotFlow = avgFlow / zones;     // m3/h peak if sequential zones
 
-    // power estimate with rotFlow during hours (worst-case if always one zone at a time)
+    // power estimate with rotFlow during hours (idealized if always one zone at a time)
     const rho = 1000, g = 9.81;
     const Qms = rotFlow / 3600;
     const kW = (rho * g * Qms * head) / eta / 1000;
@@ -332,7 +342,7 @@
     insight.push(`<div><b>Area:</b> ${fmt(ha,2)} ha • <b>Peak net:</b> ${fmt(netMm,1)} mm/day</div>`);
     insight.push(`<div><b>Efficiency Ea:</b> ${fmt(Ea,2)} ⇒ Gross water ${fmt(grossVol,0)} m³/day</div>`);
     insight.push(`<div><b>Flow:</b> Avg ${fmt(avgFlow,1)} m³/h • With ${zones} zones ⇒ Peak target <span class="ok"><b>${fmt(rotFlow,1)} m³/h</b></span></div>`);
-    insight.push(`<div><b>Solar-friendly:</b> power ~ Flow × Head. Lowering <b>head</b> often saves more solar capacity than anything else.</div>`);
+    insight.push(`<div><b>Solar-friendly:</b> power ~ Flow × Head. Lower <b>head</b> often saves more PV cost than anything else.</div>`);
     insight.push(`<div><b>Flow saving vs flood baseline:</b> ≈ ${fmt(savingsVsFlood*100,0)}%</div>`);
 
     if (mode === "engineer"){
@@ -352,8 +362,7 @@
 
     $("insights").innerHTML = insight.join("");
 
-    // Auto message for WhatsApp/email
-    const region = $("region").value.toUpperCase();
+    // auto message
     const method = $("method").value;
     const methodName = ({
       flood:"Flood / Big water",
@@ -362,17 +371,25 @@
       drip:"Drip / micro"
     })[method] || method;
 
-    let msg = `Project quick sizing: Area ${fmt(ha,2)} ha, peak net ${fmt(netMm,1)} mm/day, method ${methodName} (Ea ${fmt(Ea,2)}), available ${fmt(hours,1)} h/day. ` +
-              `Required avg flow ≈ ${fmt(avgFlow,1)} m³/h. With ${zones} zones rotation, peak flow target ≈ ${fmt(rotFlow,1)} m³/h. ` +
-              `Assumed head ${fmt(head,0)} m → estimated power ≈ ${fmt(kW,2)} kW (rotation running), energy ≈ ${fmt(kWh,1)} kWh/day.`;
+    let msg = `Hi PKYDrip, I used your Pump Sizing Tool. ` +
+              `Area ${fmt(ha,2)} ha (${areaUnit==="ha"?fmt(area,1)+" ha":fmt(area,1)+" acres"}), ` +
+              `peak net ${fmt(netMm,1)} mm/day, method ${methodName} (Ea ${fmt(Ea,2)}), ` +
+              `available ${fmt(hours,1)} h/day, zones ${zones}, head ${fmt(head,0)} m. ` +
+              `Avg flow ≈ ${fmt(avgFlow,1)} m³/h, rotation peak ≈ ${fmt(rotFlow,1)} m³/h. ` +
+              `Estimated power ≈ ${fmt(kW,2)} kW, energy ≈ ${fmt(kWh,1)} kWh/day. `;
 
     if (mode==="engineer"){
-      const cab = $("cabinet").value==="vfd" ? "Integrated VFD cabinet (recommended for solar/pressure stability)." : "Basic pump control cabinet.";
-      msg += ` Engineer options: ${cab}`;
+      const cab = $("cabinet").value==="vfd" ? "Integrated VFD cabinet recommended." : "Basic pump control cabinet.";
+      msg += `Engineer options: ${cab}`;
     } else {
-      msg += ` Simple mode: We can supply a ready-to-use pump control package + automatic zoning (no complex settings).`;
+      msg += `Please advise a solar-friendly pump + zoning control solution.`;
     }
+
     $("msgText").textContent = msg;
+
+    // WhatsApp prefill link
+    const waUrl = "https://wa.me/8613803373007?text=" + encodeURIComponent(msg);
+    $("waSendBtn").setAttribute("href", waUrl);
   }
 
   // events
