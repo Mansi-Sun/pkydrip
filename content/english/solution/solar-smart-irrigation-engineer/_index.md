@@ -118,10 +118,11 @@ For collaboration or BOM request, prepare:
 ## WhatsApp (Technical Discussion)
 
 <div style="margin:18px 0;">
-  <a href="https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20am%20interested%20in%20SOL-IRR-03-FARM.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-farm%2F"
+  <a href="https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20SOL-IRR-03-ENG.%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fsolution%2Fsolar-smart-irrigation-engineer%2F"
      target="_blank" rel="noopener"
      style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;padding:12px 16px;border-radius:10px;font-weight:700;line-height:1;">
-     WhatsApp PKYDrip
+     WhatsApp PKYDrip Technical
   </a>
 </div>
+
 
