@@ -5,19 +5,38 @@ bg_image: "images/slider-bg.webp"
 layout: "about"
 draft: false
 
-
 ################################## About #####################################
 about:
   enable : true
   image : "images/company/about.webp"
-  title : "We strive to be the best and <br> make awesome work."
-  content : "We specialize in the development and production of watersaving irrigation products, such as irrigation timers, irrigation
-controllers, wireless solutions, and 4G remote-controlled valves. <br>
+  title : "Modular Irrigation Automation <br> Built for Real Projects"
+  content : "PKYDrip is a modular smart irrigation & fertigation automation company serving agricultural and landscaping markets worldwide.<br><br>
 
-PKYDrip is a modular smart water-saving control platform designed for agriculture, greenhouse, hydroponics, landscape irrigation, and municipal water-saving projects.
-Our system supports LoRa and 4G communication, low-power valve control, and scalable gateways, enabling OEM production, system integration, and customized project delivery.
+We specialize in building structured control architectures that integrate:<br>
+• Water pump management<br>
+• Multi-zone irrigation sequencing (stable pressure, safer piping)<br>
+• Fertigation systems (single or multi-channel dosing)<br>
+• Remote monitoring & control via LoRa, WiFi, or 4G<br>
+• Solar and hybrid power solutions<br><br>
 
-"
+Our philosophy is simple:<br>
+Irrigation systems should be structured, reliable, and scalable.<br><br>
+
+Instead of selling isolated devices, we focus on system logic — how pumps, valves, sensors, and communication modules work together as one integrated solution.<br><br>
+
+PKYDrip develops and supplies water-saving irrigation products such as irrigation controllers, wireless valve control modules, LoRa gateways, remote pump control, sensor integration, and fertigation control units.<br><br>
+
+We collaborate with engineers, system integrators, agricultural service companies, and farm owners who require structured irrigation control solutions rather than standalone devices.<br><br>
+
+PKYDrip supports modular configurations and OEM/ODM customization to adapt to different power standards (110V / 240V / 415V) and regional requirements. Our platform can be integrated through common field protocols (e.g., RS485/Modbus) and scaled from small sites to large multi-zone projects.<br><br>
+
+Typical applications include:<br>
+• Orchard irrigation (drip systems)<br>
+• Greenhouse automation & fertigation<br>
+• Solar-powered remote farms<br>
+• Landscape and municipal water-saving projects<br><br>
+
+We believe irrigation automation is not just about turning valves on and off — it is about designing stable water management systems for long-term operation."
 
   button:
     enable : true
@@ -27,70 +46,50 @@ Our system supports LoRa and 4G communication, low-power valve control, and scal
     download : true
 
   funfacts:
-  # funfacts loop
-  - icon : "fas fa-chart-line" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-chart-line"
     name : "Years of Experience"
     count : "11"
 
-  # funfacts loop
-  - icon : "fas fa-thumbs-up" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-thumbs-up"
     name : "Satisfied Customer"
     count : "105"
 
-  # funfacts loop
-  - icon : "fas fa-globe" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-globe"
     name : "Countries Covered"
     count : "65"
 
-  # funfacts loop
-  - icon : "fas fa-certificate" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-certificate"
     name : "CE Certification"
     count : "2"
-
-  # funfacts loop
-  #- icon : "fas fa-glass-cheers" #https://fontawesome.com/v5.15/icons
-  #  name : "Satisfied Customer"
-  #  count : "75"
-
-  # funfacts loop
-  #- icon : "fas fa-certificate" #https://fontawesome.com/v5.15/icons
-  #  name : "Awards Winner"
-  #  count : "20"
 
 ################################ feature #####################################
 features:
   enable : true
-  title : "We deliver innovative agricultural automation"
+  title : "Engineering-Oriented Automation, Ready for Deployment"
   feature_item:
-  # feature item loop
-  - icon : "fab fa-app-store-ios" #https://fontawesome.com/v5.15/icons
+  - icon : "fab fa-app-store-ios"
     name : "Remote Control"
-    content : "Our iOS and Android apps give you full control of your irrigation system — anytime, anywhere."
+    content : "iOS/Android apps and cloud access for remote pump & valve control, irrigation plans, and on-site status monitoring."
 
-  # feature item loop
-  - icon : "fas fa-magic" #https://fontawesome.com/v5.15/icons
-    name : "Flexible Automation"
-    content : "From automatic watering to remote monitoring, we help you get more done with less effort."
+  - icon : "fas fa-project-diagram"
+    name : "Pump + Valve Logic Control"
+    content : "Built for safe sequencing: pump ON → pressurize mainline → run zones one-by-one → pump OFF automatically, reducing pressure spikes and equipment cost."
 
-  # feature item loop
-  - icon : "fas fa-user" #https://fontawesome.com/v5.15/icons
-    name : "Versatile Solutions"
-    content : "Tailored irrigation solutions — whether it’s for urban greenery, landscaping, greenhouses, or open fields"
+  - icon : "fas fa-satellite-dish"
+    name : "LoRa / WiFi / 4G Connectivity"
+    content : "Flexible networking options for different project environments — greenhouse, orchards, open-field farms, and remote sites."
 
-  # feature item loop
-  - icon : "fas fa-hands-helping" #https://fontawesome.com/v5.15/icons
-    name : "One-Stop Supplier"
-    content : "From expert design and quality products to safe delivery, we’re here to make everything easy and hassle-free for you."
+  - icon : "fas fa-tint"
+    name : "Multi-Zone Irrigation"
+    content : "Scalable multi-zone control for drip, sprinklers, and landscape systems — compatible with common AC 24V solenoid valves and field wiring practices."
 
-  # feature item loop
-  - icon : "fas fa-hand-holding-water" #https://fontawesome.com/v5.15/icons
-    name : "Efficient Fertigation"
-    content : "With our system, you can water and fertilize accurately — saving both water and money."
+  - icon : "fas fa-flask"
+    name : "Fertigation Automation"
+    content : "Supports fertigation workflows with configurable channels and scheduling — designed to integrate with EC/pH monitoring and dosing strategies."
 
-  # feature item loop
-  - icon : "fas fa-star-of-life" #https://fontawesome.com/v5.15/icons
-    name : "Branding"
-    content : "OEM service available — customize features, design, and branding to suit your needs."
+  - icon : "fas fa-cogs"
+    name : "OEM/ODM & Integration"
+    content : "Modular hardware, configurable IO, and standard interfaces (e.g., RS485/Modbus) to support customization, integration, and regional power standards."
 
 #################################### testimonial & mission vision #######################################
 testimonial:
@@ -100,7 +99,6 @@ testimonial:
 mission_vision:
   enable : true
   tabs:
-  # tab item loop
   - name : "Product Categories"
     content : "
     [**Fertigation Machines**](/fertigation-system/)<br><br> 
@@ -110,7 +108,6 @@ mission_vision:
     [**LoRa-Based Wireless Irrigation System**](/lora-wireless-irrigation-system/)
     "
 
-  # tab item loop
   - name : "Solutions"
     content : "
     [**Sprinkler Irrigation**](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana)<br><br> 
@@ -119,9 +116,6 @@ mission_vision:
     [**Drip Tape Irrigation**](/solution/drip-tape-irrigation-for-1-hectare-of-tomatos)<br><br>
     [**Rain Pipe Irrigation**](/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field)
     "
-
-
-
 
 ############################# call to action #################################
 cta:
