@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pump Sizing Request Form | PKYDrip Tools</title>
+  <meta name="description" content="Submit pump sizing info for irrigation projects. We will recommend pump size and automation package based on head, flow, irrigation type, and zones." />
+  <style>
+    :root{
+      --border:#e5e7eb; --text:#111827; --muted:#6b7280;
+      --bg:#ffffff; --bg2:#f9fafb;
+      --btn:#16a34a; --btn2:#0f172a; --btnText:#ffffff;
+      --input:#d1d5db;
+    }
+    body{font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--text); background:var(--bg2); margin:0; padding:24px;}
+    .wrap{max-width:920px; margin:0 auto;}
+    .card{background:var(--bg); border:1px solid var(--border); border-radius:14px; padding:18px;}
+    h1{font-size:22px; margin:0 0 8px;}
+    p{margin:0 0 14px; line-height:1.6; color:var(--muted);}
+    fieldset{border:0; padding:0; margin:0 0 14px;}
+    legend{font-weight:700; margin:8px 0;}
+    label{display:block; margin:10px 0 6px; font-weight:600;}
+    input, select, textarea{
+      width:100%; padding:10px; border:1px solid var(--input); border-radius:10px; background:#fff;
+      font-size:14px; box-sizing:border-box;
+    }
+    .row{display:flex; gap:10px; flex-wrap:wrap;}
+    .row > *{flex:1; min-width:180px;}
+    .hint{margin-top:6px; color:var(--muted); font-size:13px;}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:10px;}
+    .btn{
+      display:inline-block; padding:12px 16px; border-radius:12px; text-decoration:none; border:0;
+      cursor:pointer; font-weight:700;
+    }
+    .btn-primary{background:var(--btn); color:var(--btnText);}
+    .btn-dark{background:var(--btn2); color:var(--btnText);}
+    .note{font-size:13px; color:var(--muted); line-height:1.5;}
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px;}
+    .tag{font-size:12px; padding:6px 10px; border:1px solid var(--border); border-radius:999px; color:var(--muted); background:#fff;}
+    hr{border:0; border-top:1px solid var(--border); margin:16px 0;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <div class="tag">PKYDrip Tools • Pump Sizing</div>
+      </div>
+      <a class="btn btn-dark" href="https://wa.me/8613803373007?text=Hi%20PKYDrip%2C%20I%20need%20help%20with%20pump%20sizing.%20Source%3A%20tools%2Fpump-sizing-request-form" target="_blank" rel="noopener">
+        WhatsApp Quick Chat
+      </a>
+    </div>
+
+    <div class="card">
+      <h1>Pump Sizing Request Form</h1>
+      <p>
+        Fill this form to help us recommend the correct pump size and automation package.
+        Key factors: <b>head (elevation)</b>, <b>irrigation type</b>, and <b>zones running at the same time</b>.
+      </p>
+
+      <!-- ✅ Netlify Forms (recommended for static site) -->
+      <!-- If you DON'T use Netlify: remove data-netlify attributes and set action="YOUR_FORM_ENDPOINT" -->
+      <form name="pump-sizing" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/tools/pump-sizing/thanks/">
+        <input type="hidden" name="form-name" value="pump-sizing" />
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <input type="hidden" name="source_page" value="tools/pump-sizing-request-form" />
+        <input type="hidden" name="brand" value="PKYDrip" />
+
+        <fieldset>
+          <legend>A) Basic Site Info</legend>
+
+          <label>1) Country / Region</label>
+          <input name="country_region" required placeholder="e.g., USA / Australia / Saudi Arabia" />
+
+          <label>2) Farm / Site size</label>
+          <div class="row">
+            <input name="site_size_value" required placeholder="e.g., 0.5" />
+            <select name="site_size_unit" required>
+              <option value="" disabled selected>Select unit</option>
+              <option>acres</option>
+              <option>hectares</option>
+              <option>m²</option>
+              <option>ft²</option>
+            </select>
+          </div>
+
+          <label>3) Crop type</label>
+          <input name="crop_type" placeholder="e.g., orchard (citrus / grapes) / vegetables / lawn" />
+
+          <label>4) Irrigation type</label>
+          <select name="irrigation_type" required>
+            <option value="" disabled selected>Select irrigation type</option>
+            <option>Drip irrigation</option>
+            <option>Micro-sprinkler</option>
+            <option>Sprinkler</option>
+            <option>Spray gun / big sprinkler gun</option>
+            <option>Not sure</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>B) Water Source & Elevation</legend>
+
+          <label>5) Water source</label>
+          <select name="water_source" required>
+            <option value="" disabled selected>Select water source</option>
+            <option>River / Stream</option>
+            <option>Well / Bore</option>
+            <option>Tank / Reservoir</option>
+            <option>Pond / Lake</option>
+            <option>City / tap water</option>
+            <option>Other</option>
+          </select>
+
+          <label>6) Vertical height difference (water source → highest irrigation point)</label>
+          <div class="row">
+            <input name="vertical_head_value" required placeholder="e.g., 12" />
+            <select name="vertical_head_unit" required>
+              <option value="" disabled selected>Select unit</option>
+              <option>meters</option>
+              <option>feet</option>
+            </select>
+          </div>
+          <div class="hint">Tip: If you’re not sure, a quick phone measurement (GPS elevation) is fine.</div>
+
+          <label>7) Pipe length (pump → farthest zone)</label>
+          <div class="row">
+            <input name="pipe_length_value" placeholder="e.g., 180" />
+            <select name="pipe_length_unit">
+              <option value="" disabled selected>Select unit</option>
+              <option>meters</option>
+              <option>feet</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>C) Zones & Flow Demand</legend>
+
+          <label>8) Total irrigation zones</label>
+          <input name="total_zones" required placeholder="e.g., 4" />
+
+          <label>9) Zones running at the same time</label>
+          <select name="zones_simultaneous" required>
+            <option value="" disabled selected>Select</option>
+            <option>1 zone at a time</option>
+            <option>2 zones at a time</option>
+            <option>3+ zones at a time</option>
+            <option>Not sure</option>
+          </select>
+
+          <label>10) Do you already have the pump?</label>
+          <select name="pump_existing" required>
+            <option value="" disabled selected>Select</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Not sure</option>
+          </select>
+
+          <label>11) If pump exists: Pump power (HP or kW)</label>
+          <input name="pump_power" placeholder="e.g., 2 HP / 1.5 kW" />
+
+          <label>12) Pump voltage (if known)</label>
+          <input name="pump_voltage" placeholder="e.g., 240V single-phase / 415V 3-phase" />
+        </fieldset>
+
+        <fieldset>
+          <legend>D) Power & Automation</legend>
+
+          <label>13) Power source on site</label>
+          <select name="power_source" required>
+            <option value="" disabled selected>Select</option>
+            <option>Grid power</option>
+            <option>Solar off-grid</option>
+            <option>Solar + grid hybrid</option>
+            <option>Diesel generator</option>
+            <option>Not sure</option>
+          </select>
+
+          <label>14) Do you need pump control?</label>
+          <select name="need_pump_control" required>
+            <option value="" disabled selected>Select</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Not sure</option>
+          </select>
+
+          <label>15) Remote monitoring needed?</label>
+          <select name="remote_monitoring" required>
+            <option value="" disabled selected>Select</option>
+            <option>Yes (4G / WiFi)</option>
+            <option>No</option>
+            <option>Not sure</option>
+          </select>
+
+          <label>16) Notes (optional)</label>
+          <textarea name="notes" rows="4" placeholder="Short note. For photos (pump nameplate / site), please send via WhatsApp after submitting."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>E) Contact</legend>
+
+          <label>Your name</label>
+          <input name="contact_name" required placeholder="Full name" />
+
+          <label>Email</label>
+          <input name="contact_email" type="email" required placeholder="name@email.com" />
+
+          <label>WhatsApp / Phone (optional)</label>
+          <input name="contact_phone" placeholder="+61 ... / +1 ..." />
+        </fieldset>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Submit Request</button>
+
+          <a class="btn btn-dark" id="waSend" target="_blank" rel="noopener">Send Photos via WhatsApp</a>
+
+          <div class="note">
+            After submitting, send pump nameplate photo + site photo via WhatsApp for faster sizing.
+          </div>
+        </div>
+      </form>
+
+      <hr />
+      <p class="note">
+        <b>Note:</b> Pump sizing mainly depends on total head (elevation + pressure + pipe loss) and required flow.
+        If exact numbers are unknown, estimates are acceptable — we will help refine it.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Build WhatsApp prefill from form values (no query params needed on your site)
+    (function () {
+      const WA = "8613803373007";
+      const form = document.forms["pump-sizing"];
+      const waBtn = document.getElementById("waSend");
+
+      function val(name){
+        const el = form.elements[name];
+        return el ? (el.value || "").trim() : "";
+      }
+
+      function buildMsg(){
+        return [
+          "Hi PKYDrip, I submitted Pump Sizing Request Form.",
+          "Source: tools/pump-sizing-request-form",
+          "",
+          "Country/Region: " + val("country_region"),
+          "Site Size: " + val("site_size_value") + " " + val("site_size_unit"),
+          "Crop: " + val("crop_type"),
+          "Irrigation: " + val("irrigation_type"),
+          "Water Source: " + val("water_source"),
+          "Vertical Head: " + val("vertical_head_value") + " " + val("vertical_head_unit"),
+          "Pipe Length: " + val("pipe_length_value") + " " + val("pipe_length_unit"),
+          "Total Zones: " + val("total_zones"),
+          "Zones Simultaneous: " + val("zones_simultaneous"),
+          "Pump Exists: " + val("pump_existing"),
+          "Pump Power: " + val("pump_power"),
+          "Pump Voltage: " + val("pump_voltage"),
+          "Power Source: " + val("power_source"),
+          "Need Pump Control: " + val("need_pump_control"),
+          "Remote Monitoring: " + val("remote_monitoring"),
+          "",
+          "Next: I will send pump nameplate photo + site photo here."
+        ].join("\n");
+      }
+
+      function refresh(){
+        const msg = encodeURIComponent(buildMsg());
+        waBtn.href = "https://wa.me/" + WA + "?text=" + msg;
+      }
+
+      refresh();
+      form.addEventListener("input", refresh);
+      form.addEventListener("change", refresh);
+    })();
+  </script>
+</body>
+</html>
