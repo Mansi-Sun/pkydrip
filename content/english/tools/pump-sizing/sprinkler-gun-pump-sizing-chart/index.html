@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sprinkler Gun Pump Sizing Quick Chart | Flow vs Head vs HP</title>
+  <meta name="description" content="Quick reference chart: sprinkler gun flow vs head vs recommended pump motor power (kW/HP). Single-gun estimates + real-world head loss notes. Ideal for fast budgeting and WhatsApp replies." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --b:#e6e6e6; --t:#111827; --m:#6b7280; --bg:#ffffff; --bg2:#f9fafb;
+      --green:#16a34a; --dark:#0f172a;
+    }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--t);background:var(--bg2);}
+    .wrap{max-width:1100px;margin:24px auto;padding:0 16px 40px;}
+    .topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:10px;}
+    .tag{font-size:12px;padding:6px 10px;border:1px solid var(--b);border-radius:999px;background:#fff;color:#374151;}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--b);background:#fff;text-decoration:none;color:var(--t);font-weight:700;cursor:pointer}
+    .btn:hover{background:#f3f4f6}
+    .btn-green{background:var(--green);border-color:var(--green);color:#fff}
+    .btn-green:hover{filter:brightness(0.95)}
+    h1{font-size:22px;margin:10px 0 6px;}
+    h2{font-size:16px;margin:14px 0 8px;}
+    p{color:var(--m);line-height:1.55;margin:6px 0 12px;}
+    .note{background:#fff;border:1px solid var(--b);border-radius:12px;padding:12px 14px;}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px;}
+    @media (min-width:960px){.grid{grid-template-columns:1.2fr .8fr}}
+    table{width:100%;border-collapse:collapse;border:1px solid var(--b);border-radius:12px;overflow:hidden;background:#fff;}
+    thead th{background:#f3f4f6;text-align:left;font-weight:800;padding:10px;border-bottom:1px solid var(--b);font-size:13px;}
+    tbody td{padding:10px;border-bottom:1px solid var(--b);font-size:13px;vertical-align:top;}
+    tbody tr:last-child td{border-bottom:0;}
+    .kpi{display:flex;gap:10px;flex-wrap:wrap;}
+    .pill{border:1px solid var(--b);border-radius:999px;padding:6px 10px;font-size:12px;color:#374151;background:#fff;}
+    .small{font-size:12px;color:var(--m);}
+    .muted{color:var(--m);}
+    .strong{font-weight:800;color:#111827;}
+    .warn{color:#8a2b2b;}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
+    .footer{margin-top:14px;font-size:12px;color:var(--m);}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:8px;}
+    textarea{width:100%;min-height:120px;box-sizing:border-box;padding:10px;border:1px solid var(--b);border-radius:12px;font-size:13px;line-height:1.45;}
+    .hr{border:0;border-top:1px solid var(--b);margin:14px 0;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="tag">PKYDrip Tools • Pump Sizing • Sprinkler Gun Chart</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="/tools/" title="Back to Tools">← Tools</a>
+        <a class="btn" href="/tools/pump-sizing/pump-sizing-calculator-v2.html" title="Pump sizing calculator">Pump Sizing Calculator</a>
+        <a class="btn btn-green" id="waTop" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <h1>Sprinkler Gun Pump Sizing Quick Chart</h1>
+    <p>
+      Quick reference for <span class="strong">single sprinkler gun</span> operation:
+      <span class="strong">Flow (m³/h)</span> × <span class="strong">Total Head (m)</span> → recommended motor size.
+      Use this for early budgeting and fast WhatsApp replies.
+    </p>
+
+    <div class="note">
+      <div class="kpi">
+        <div class="pill"><span class="strong">Assumed overall efficiency:</span> 65%</div>
+        <div class="pill"><span class="strong">HP conversion:</span> 1 HP ≈ 0.746 kW</div>
+        <div class="pill"><span class="strong">Rule:</span> choose nearest higher motor size</div>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        <span class="strong">Important:</span> “Total head” should include elevation + suction lift + pipe/friction loss + filter loss + required pressure at the gun.
+        If your head is only “static elevation”, add losses (often <span class="strong">+10–30 m</span> or more).
+      </p>
+    </div>
+
+    <div class="grid">
+      <div>
+        <h2>Quick Chart (Single Gun)</h2>
+        <table aria-label="Flow vs Head vs Motor Power">
+          <thead>
+            <tr>
+              <th style="width:18%;">Flow (m³/h)</th>
+              <th style="width:18%;">Head (m)</th>
+              <th style="width:20%;">Hydraulic kW (ideal)</th>
+              <th style="width:22%;">Motor kW (≈ /0.65)</th>
+              <th style="width:22%;">Motor HP (approx)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 30 m head -->
+            <tr><td>20</td><td>30</td><td>1.64</td><td>2.52</td><td>3.4 HP</td></tr>
+            <tr><td>40</td><td>30</td><td>3.27</td><td>5.03</td><td>6.7 HP</td></tr>
+            <tr><td>60</td><td>30</td><td>4.91</td><td>7.56</td><td>10.1 HP</td></tr>
+            <tr><td>80</td><td>30</td><td>6.54</td><td>10.06</td><td>13.5 HP</td></tr>
+
+            <!-- 50 m head -->
+            <tr><td>20</td><td>50</td><td>2.72</td><td>4.19</td><td>5.6 HP</td></tr>
+            <tr><td>40</td><td>50</td><td>5.45</td><td>8.38</td><td>11.2 HP</td></tr>
+            <tr><td>60</td><td>50</td><td>8.17</td><td>12.57</td><td>16.9 HP</td></tr>
+            <tr><td>80</td><td>50</td><td>10.90</td><td>16.77</td><td>22.5 HP</td></tr>
+
+            <!-- 80 m head -->
+            <tr><td>20</td><td>80</td><td>4.36</td><td>6.71</td><td>9.0 HP</td></tr>
+            <tr><td>40</td><td>80</td><td>8.72</td><td>13.42</td><td>18.0 HP</td></tr>
+            <tr><td class="strong">60</td><td class="strong">80</td><td class="strong">13.08</td><td class="strong">20.12</td><td class="strong">27.0 HP</td></tr>
+            <tr><td>80</td><td>80</td><td>17.44</td><td>26.83</td><td>36.0 HP</td></tr>
+
+            <!-- 100 m head -->
+            <tr><td>20</td><td>100</td><td>5.45</td><td>8.38</td><td>11.2 HP</td></tr>
+            <tr><td>40</td><td>100</td><td>10.90</td><td>16.77</td><td>22.5 HP</td></tr>
+            <tr><td>60</td><td>100</td><td>16.35</td><td>25.15</td><td>33.7 HP</td></tr>
+            <tr><td>80</td><td>100</td><td>21.80</td><td>33.54</td><td>45.0 HP</td></tr>
+          </tbody>
+        </table>
+
+        <div class="footer">
+          Calculation basis:
+          <code>P(hydraulic, kW) = 9.81 × Q(m³/s) × H(m)</code>,
+          where <code>Q(m³/s) = Flow(m³/h) / 3600</code>.
+          Motor kW ≈ hydraulic kW / 0.65.
+        </div>
+      </div>
+
+      <div>
+        <h2>How to Use This</h2>
+        <div class="note">
+          <p class="small" style="margin:0 0 10px;">
+            <span class="strong">Step 1:</span> Decide how many guns run at once (1 / 2 / 3…).<br>
+            <span class="strong">Step 2:</span> Pick your target flow + pressure from the gun datasheet.<br>
+            <span class="strong">Step 3:</span> Add extra head for real losses.
+          </p>
+
+          <p class="small" style="margin:0 0 10px;">
+            <span class="strong">Quick loss allowance (common):</span><br>
+            • Short/medium lines: +10–20 m<br>
+            • Long mains + filters: +20–40 m<br>
+            • If unsure: choose the next larger pump/motor size
+          </p>
+
+          <p class="small warn" style="margin:0;">
+            <span class="strong">Warning:</span> Running multiple guns simultaneously multiplies flow demand fast.
+            Example: 2 guns at 60 m³/h each → 120 m³/h total → pump size may double (or more).
+          </p>
+
+          <div class="btnrow">
+            <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
+            <button class="btn" type="button" onclick="toggleMetric()">Toggle AU unit note</button>
+          </div>
+
+          <p id="unitNote" class="small muted" style="display:none;margin-top:10px;">
+            AU tip: Most farm pumps are 3-phase 415V. Pressure: 1 bar ≈ 10 m head (approx).
+          </p>
+        </div>
+
+        <h2 style="margin-top:14px;">Copy-Paste WhatsApp Reply</h2>
+        <div class="note">
+          <p class="small muted" style="margin:0 0 8px;">
+            Use this message to reply quickly. You can also click “Send to WhatsApp” below.
+          </p>
+          <textarea id="waText">Hi, thanks — the sprinkler gun has a wide range:
+• Spray distance: 28–60 m
+• Working pressure: 4–8 bar
+• Flow: 21–108 m³/h
+
+To size the pump correctly (and keep cost low), we must confirm:
+1) How many guns run at the same time? (1 / 2 / 3…)
+2) Your target spray distance (around 30 m / 45 m / 60 m)
+3) Rough elevation difference + pipe length
+
+Then I can recommend pump flow + total head + motor kW/HP.</textarea>
+
+          <div class="btnrow">
+            <button class="btn btn-green" type="button" onclick="sendWA()">Send to WhatsApp</button>
+            <button class="btn" type="button" onclick="copyText()">Copy Text</button>
+          </div>
+          <p class="small" id="copyHint" style="display:none;margin-top:8px;">Copied ✅</p>
+        </div>
+
+        <hr class="hr" />
+
+        <div class="note">
+          <p class="small" style="margin:0;">
+            <span class="strong">PKYDrip note:</span> For big sprinkler guns, sequential irrigation (one at a time) is usually the most cost-effective design.
+            It reduces pump size, pipe cost, and generator/solar capacity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const WA_NUMBER = "8613803373007";
+    const SOURCE = "https://smart.pky-dripirrigation.com/tools/pump-sizing/sprinkler-gun-quick-chart/";
+
+    function toggleMetric() {
+      const el = document.getElementById('unitNote');
+      el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    }
+
+    function copyText(){
+      const t = document.getElementById("waText");
+      t.select();
+      t.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      const hint = document.getElementById("copyHint");
+      hint.style.display = "block";
+      setTimeout(()=>hint.style.display="none", 1200);
+    }
+
+    function sendWA(){
+      const msg = document.getElementById("waText").value + "\n\nSource: " + SOURCE;
+      const url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    }
+
+    // Top WA button default message
+    (function initTopWA(){
+      const top = document.getElementById("waTop");
+      const msg = "Hi PKYDrip, I am checking the Sprinkler Gun Pump Sizing Quick Chart.\nSource: " + SOURCE + "\n\nI need help selecting pump flow + head + motor size.";
+      top.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+    })();
+  </script>
+</body>
+</html>
