@@ -2,7 +2,7 @@
 title: "Saudi Demonstration & Distribution Program"
 description: "Partner program for Saudi farms, contractors, and dealers: Solar pump + irrigation controller, auto tank refill, and optional solar/grid hybrid operation."
 slug: "saudi-demonstration-distribution"
-url: "/en/partners/saudi-demonstration-distribution/"
+url: "/partner/saudi-demonstration-distribution/"
 draft: false
 
 # Optional (if your site uses featured images)
