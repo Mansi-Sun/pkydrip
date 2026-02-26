@@ -5,120 +5,99 @@ type: "landing"
 layout: "page"
 draft: false
 url: "/partner/australia/"
-page_code: "PC-PARTNER-AU-INDEX-03"
+page_code: "PC-PARTNER-AU-INDEX-04"
+cta_whatsapp: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Demonstration%20Node%20(Partner%20Programs).%0AName%3A%20%5B%5D%0ARole%3A%20%5BFarm%2FContractor%2FDealer%5D%0ALocation%3A%20%5BCity%2FState%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F%0A"
 ---
 
-# 🇦🇺 Australia Demonstration Node  
-## Farm-First Structure
+## 🇦🇺 Australia Demonstration Node (Farm-First)
 
-PKYDrip is building a **local Australia Demonstration Node** — starting with real farms first.
+PKYDrip is building a **local Australia Demonstration Node** — starting with **real farms** first.
 
 This is not a reseller page.  
-This is a **regional asset-building model**.
+This is a **regional asset-building model**: build a real Australian farm case → contractors follow → projects become repeatable templates.
 
 ---
 
-# Why Farm-First?
+## Why Farm-First?
 
-A real operating farm case becomes:
+A real operating farm case becomes a long-term asset:
 
-- ✔ Trust foundation  
-- ✔ Technical reference  
-- ✔ Repeatable project template  
-- ✔ Local marketing asset  
-- ✔ Contractor confidence base  
+- Trust foundation for local partners  
+- Technical reference for similar farms  
+- Repeatable project templates  
+- Local marketing asset (photos, diagrams, case notes)  
+- Contractor confidence base  
 
 Without a real farm case → contractors hesitate.  
 Without contractors → no scalable delivery.
 
-So we build in this order:
-
 ---
 
-# Australia Node Structure
+## Australia Node Structure (Stable Display)
 
-<div style="border:1px solid #ccc;padding:20px;margin:20px 0;background:#fafafa">
-
-<b>GLOBAL REPLICATION MODEL</b><br>
+```text
+GLOBAL REPLICATION MODEL
 China → Australia → Middle East → USA → Europe
 
-<hr>
-
-<b>AUSTRALIA DEMONSTRATION NODE</b>
-
-<br><br>
-
-<b>1️⃣ Demonstration Farm (Asset Layer)</b><br>
-Real 10–80 acre operating farm<br>
-Pump + Main Line + Sequential Valve Logic<br>
-Documented Australian Case
-
-<br><br>
-
-<b>2️⃣ Demonstration Contractor (Execution Layer)</b><br>
-Local irrigation contractor<br>
-Delivers repeatable automation projects<br>
-Uses standardized control logic
-
-<br><br>
-
-<b>3️⃣ Local Support Layer</b><br>
-Warehouse (future stage)<br>
-Demo equipment<br>
-Photos / videos / materials
-
-<br><br>
-
-<b>OUTPUT:</b><br>
-Repeatable Project Templates<br>
-Replicable in next region
-
-</div>
+┌───────────────────────────────────────────────────────────┐
+│ AUSTRALIA DEMONSTRATION NODE (Farm-First)                 │
+├───────────────────────────────────────────────────────────┤
+│ 1) Demonstration Farm (Asset Layer)  [PRIORITY]           │
+│    - Real operating farm: 10–80 acres                     │
+│    - Pump + main line + sequential valve logic            │
+│    - Documented as a real Australian reference case       │
+│                                                           │
+│ 2) Demonstration Contractor (Execution Layer)             │
+│    - Local irrigation contractor / dealer / integrator    │
+│    - Delivers repeatable automation projects              │
+│    - Uses standardized control logic & templates          │
+│                                                           │
+│ 3) Local Support Layer (Infrastructure Layer)             │
+│    - Demo equipment + materials (photos/videos/cases)     │
+│    - Local support capabilities (staged rollout)          │
+├───────────────────────────────────────────────────────────┤
+│ OUTPUT: Repeatable Project Templates → Replicate Next     │
+└───────────────────────────────────────────────────────────┘
+```
 
 ---
 
-# Program A — Demonstration Farm (Priority)
+## Program A — Demonstration Farm Program (Priority)
 
 We are selecting **1–2 real operating farms** this season.
 
-Typical size:
-- 10–80 acres
+**Typical size:** 10–80 acres
 
-Selected farms receive:
-
+**Selected farms receive:**
 - Special equipment pricing  
 - Engineering support  
-- Exposure on PKYDrip website  
+- Exposure on PKYDrip website & materials  
 - Structured system planning  
 
-In exchange:
-
+**In exchange:**  
 We document the system as a **real Australian reference case**.
 
-👉 Farm details page:
-
-[Go to Farm Demonstration Program](/partner/australia-farm-demo/)
+- Details: **/partner/australia-farm-demo/**
+- Apply: [Go to Farm Demonstration Program](/partner/australia-farm-demo/)
 
 ---
 
-# Program B — Demonstration Contractor
+## Program B — Demonstration Contractor Program
 
-We are selecting **1–2 irrigation contractors or dealers**.
+We are selecting **1–2 irrigation contractors or equipment dealers** to build real demonstration projects and deliver repeatable automation structures to farms.
 
-We offer:
-
-- Partner pricing  
-- Technical structure guidance  
+**We offer:**
+- Special partner pricing  
+- Engineering support  
 - Co-branded case promotion  
 - Standardized control templates  
 
-👉 Contractor details page:
-
-[Go to Contractor Demonstration Program](/partner/australia-contractor-demo/)
+- Details: **/partner/australia-contractor-demo/**
+- Apply: [Go to Contractor Demonstration Program](/partner/australia-contractor-demo/)
 
 ---
 
-# Brisbane Engineering Partner
+## Regional Engineering Partner — Brisbane
 
 If you are focused on pump + valve project delivery in Queensland:
 
@@ -126,28 +105,18 @@ If you are focused on pump + valve project delivery in Queensland:
 
 ---
 
-# What We Typically Build
+## What partners typically build (safe standard logic)
 
-Standard safe automation structure:
-
-1) Pump starts first  
-2) Main line pressurized  
-3) Valves run sequentially  
-4) Pump stops after final zone  
-5) Optional: pressure / flow safety modules  
-
-This structure:
-- Keeps pressure stable  
-- Reduces risk  
-- Fits retrofit farms  
-- Easy to scale  
+Starter structure used in many farms:
+1) Pump starts first → pressurize main line  
+2) Valves run one-by-one (sequential scheduling)  
+3) After last zone → pump stops automatically  
+4) Optional upgrades: flow/pressure safety, sensors, fertigation, cloud reporting  
 
 ---
 
-# Contact
+## Contact (Fast Routing)
 
-Not sure which program fits you?
+Not sure which program fits? Message us and we will route you:
 
-Message us:
-
-https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Demonstration%20Node.%0A%0AName%3A%20%5B%5D%0ARole%3A%20%5BFarm%2FContractor%2FDealer%5D%0ALocation%3A%20%5BCity%2FState%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F
+[WhatsApp: Discuss Australia Demonstration Node](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Demonstration%20Node.%0A%0AName%3A%20%5B%5D%0ARole%3A%20%5BFarm%2FContractor%2FDealer%5D%0ALocation%3A%20%5BCity%2FState%5D%0AWhat%20I%20want%3A%20%5BFarm%20Demo%2FContractor%20Demo%2FBrisbane%20Engineering%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F%0A)
