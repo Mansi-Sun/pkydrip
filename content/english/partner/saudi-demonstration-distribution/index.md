@@ -4,6 +4,8 @@ description: "Partner program for Saudi farms, contractors, and dealers: Solar p
 slug: "saudi-demonstration-distribution"
 url: "/partner/saudi-demonstration-distribution/"
 draft: false
+type: "landing"
+layout: "page"
 
 # Optional (if your site uses featured images)
 # image: "images/partners/saudi-program-hero.webp"
