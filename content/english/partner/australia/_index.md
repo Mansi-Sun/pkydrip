@@ -1,85 +1,153 @@
 ---
-title: "Australia Partner Programs | Demonstration Farms & Contractors | PKYDrip"
-description: "PKYDrip is selecting 1–2 demonstration farms and 1–2 demonstration contractors in Australia this season. Build real reference projects with special partner pricing, engineering support, and co-branded case promotion."
+title: "Australia Demonstration Node | Farm-First Partner Programs | PKYDrip"
+description: "PKYDrip is building an Australia Demonstration Node with a farm-first model: 1–2 real demonstration farms, 1–2 technical contractors, plus local support. We document real Australian cases and replicate templates globally."
 type: "landing"
 layout: "page"
 draft: false
 url: "/partner/australia/"
-page_code: "PC-PARTNER-AU-INDEX-01"
-cta_whatsapp: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Partner%20Programs.%20Company%3A%20%5BName%5D%20%7C%20Location%3A%20%5BCity%2FState%5D%20%7C%20Role%3A%20%5BFarm%2FContractor%2FDealer%5D%20%7C%20Source%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F"
+page_code: "PC-PARTNER-AU-INDEX-03"
 ---
 
-# Australia Partner Programs (2026 Season)
+# 🇦🇺 Australia Demonstration Node  
+## Farm-First Structure
 
-PKYDrip is building **real reference projects** in Australia — not “demo-only” showpieces.  
-This season, we are selecting **1–2 local farms** and **1–2 contractors / equipment dealers** to build demonstration projects that can be documented as real Australian cases.
+PKYDrip is building a **local Australia Demonstration Node** — starting with real farms first.
 
-**Goal:** Create repeatable project templates for **pump + valves + logic control + remote operation**, suitable for farms, greenhouses, and retrofit upgrades.
+This is not a reseller page.  
+This is a **regional asset-building model**.
 
 ---
 
-## Program A — Australia Demonstration Farm Program (10–80 acres)
+# Why Farm-First?
 
-We are looking for **real operating farms** (10–80 acres) who want to upgrade irrigation automation.
+A real operating farm case becomes:
 
-Selected partners receive:
-- **Special equipment pricing**
-- **Technical support**
-- **Local exposure** on our website & materials
+- ✔ Trust foundation  
+- ✔ Technical reference  
+- ✔ Repeatable project template  
+- ✔ Local marketing asset  
+- ✔ Contractor confidence base  
+
+Without a real farm case → contractors hesitate.  
+Without contractors → no scalable delivery.
+
+So we build in this order:
+
+---
+
+# Australia Node Structure
+
+<div style="border:1px solid #ccc;padding:20px;margin:20px 0;background:#fafafa">
+
+<b>GLOBAL REPLICATION MODEL</b><br>
+China → Australia → Middle East → USA → Europe
+
+<hr>
+
+<b>AUSTRALIA DEMONSTRATION NODE</b>
+
+<br><br>
+
+<b>1️⃣ Demonstration Farm (Asset Layer)</b><br>
+Real 10–80 acre operating farm<br>
+Pump + Main Line + Sequential Valve Logic<br>
+Documented Australian Case
+
+<br><br>
+
+<b>2️⃣ Demonstration Contractor (Execution Layer)</b><br>
+Local irrigation contractor<br>
+Delivers repeatable automation projects<br>
+Uses standardized control logic
+
+<br><br>
+
+<b>3️⃣ Local Support Layer</b><br>
+Warehouse (future stage)<br>
+Demo equipment<br>
+Photos / videos / materials
+
+<br><br>
+
+<b>OUTPUT:</b><br>
+Repeatable Project Templates<br>
+Replicable in next region
+
+</div>
+
+---
+
+# Program A — Demonstration Farm (Priority)
+
+We are selecting **1–2 real operating farms** this season.
+
+Typical size:
+- 10–80 acres
+
+Selected farms receive:
+
+- Special equipment pricing  
+- Engineering support  
+- Exposure on PKYDrip website  
+- Structured system planning  
 
 In exchange:
-- We document the system as a **real Australian case** (photos, wiring logic, module list, and performance notes).
 
-**If you are a long-term farm operator and believe in automation, message us.**
+We document the system as a **real Australian reference case**.
 
-**CTA (WhatsApp):**  
-[Apply as a Demonstration Farm Partner](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20apply%20for%20Australia%20Demonstration%20Farm%20Program.%0A%0AFarm%20Name%3A%20%5B%5D%0ALocation%20(City%2FState)%3A%20%5B%5D%0AFarm%20Size%20(acres)%3A%20%5B10-80%5D%0ACrops%3A%20%5B%5D%0AExisting%20System%3A%20%5BDrip%2FSprinkler%2FPivot%5D%0AWater%20Source%3A%20%5B%5D%0APump%20Power%2FVoltage%3A%20%5B%5D%0AGoal%3A%20%5BRemote%20control%2FSave%20water%2FReduce%20labor%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F%0A)
+👉 Farm details page:
+
+[Go to Farm Demonstration Program](/partner/australia-farm-demo/)
 
 ---
 
-## Program B — Demonstration Contractors (Irrigation & Technical Collaboration)
+# Program B — Demonstration Contractor
 
-We are selecting **1–2 contractors or equipment dealers** to build a local demonstration project.
+We are selecting **1–2 irrigation contractors or dealers**.
 
 We offer:
-- **Special partner pricing**
-- **Engineering support**
-- **Co-branded case promotion**
 
-You must be:
-- Actively operating in irrigation
-- Serving real farms
-- Interested in long-term cooperation
+- Partner pricing  
+- Technical structure guidance  
+- Co-branded case promotion  
+- Standardized control templates  
 
-**CTA (WhatsApp):**  
-[Become a Local Demonstration Contractor](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Demonstration%20Contractor%20Program.%0A%0ACompany%3A%20%5B%5D%0ALocation%20(City%2FState)%3A%20%5B%5D%0ARole%3A%20%5BContractor%2FDealer%2FIntegrator%5D%0AProjects%20per%20month%3A%20%5B%5D%0ATypical%20farm%20size%3A%20%5B%5D%0ATypical%20products%3A%20%5BValves%2FPumps%2FControllers%5D%0AWhat%20you%20want%20to%20build%3A%20%5BDemo%20farm%2FDemo%20greenhouse%2FRetrofit%20case%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F%0A)
+👉 Contractor details page:
+
+[Go to Contractor Demonstration Program](/partner/australia-contractor-demo/)
 
 ---
 
-## Regional Engineering Partner — Brisbane (Project Delivery)
+# Brisbane Engineering Partner
 
-If you are based in **Brisbane / Queensland** and deliver pump + valve automation projects, our **Brisbane Engineering Partner Program** may fit you better.
+If you are focused on pump + valve project delivery in Queensland:
 
-- Modular pump + valve automation
-- Ready-to-install control cabinets
-- Built for contractors and retrofit projects
-
-[Go to Brisbane Partner Program](/partner/brisbane/)
+[Brisbane Engineering Partner Program](/partner/brisbane/)
 
 ---
 
-## What partners typically build with PKYDrip
+# What We Typically Build
 
-Common “starter” structure:
-1) Pump starts first → pressurize main line  
-2) Valves run one-by-one (sequential scheduling)  
-3) After last zone → pump stops automatically  
-4) Optional upgrades: flow/pressure safety, sensors, fertigation, cloud reporting
+Standard safe automation structure:
+
+1) Pump starts first  
+2) Main line pressurized  
+3) Valves run sequentially  
+4) Pump stops after final zone  
+5) Optional: pressure / flow safety modules  
+
+This structure:
+- Keeps pressure stable  
+- Reduces risk  
+- Fits retrofit farms  
+- Easy to scale  
 
 ---
 
-## Contact
+# Contact
 
-If you’re unsure which program fits, message us and we will route you to the right path.
+Not sure which program fits you?
 
-[WhatsApp: Discuss Australia Partner Programs](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Partner%20Programs.%0A%0AName%3A%20%5B%5D%0ARole%3A%20%5BFarm%2FContractor%2FDealer%5D%0ALocation%3A%20%5BCity%2FState%5D%0AWhat%20I%20want%3A%20%5BFarm%20Demo%2FContractor%20Demo%2FBrisbane%20Engineering%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F%0A)
+Message us:
+
+https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20Australia%20Demonstration%20Node.%0A%0AName%3A%20%5B%5D%0ARole%3A%20%5BFarm%2FContractor%2FDealer%5D%0ALocation%3A%20%5BCity%2FState%5D%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Faustralia%2F
