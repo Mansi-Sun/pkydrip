@@ -2,43 +2,53 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/slider-bg.webp"
+  bg_image: "images/lab/lab-hero-placeholder.webp" # TODO: Replace with engineering-style image (cabinet wiring / blueprint tone)
   bg_overlay: true
-  title: "PKYDrip Engineering Lab <br/> Tools • Architecture • Experiments"
-  content: "Experimental workspace for irrigation automation documentation and calculators."
+  title: "PKYDrip Engineering Lab <br/> Architecture · Tools · Experiments"
+  content: "Technical workspace for irrigation automation logic, reusable engineering assets, and system validation tools."
   button:
     enable: true
-    label: "Open Tools"
+    label: "Open Engineering Tools"
     link: "/tools/"
 
 ############################# About #################################
 about:
   enable: true
-  title: "What is Lab?"
-  description: "Lab is the public engineering workspace of PKYDrip — focused on tools, system logic, integration notes, and test logs."
+  title: "Engineering Workspace"
+  description: "Lab is the structured technical layer of PKYDrip."
   content: |
-    This site is used to publish engineering assets that help partners and engineers build irrigation projects faster:
+    The Engineering Lab is where we document reusable system logic, 
+    control flow design, and field validation notes for irrigation automation.
 
-    - Tools & calculators (pump sizing, solar irrigation sizing, pressure/flow quick charts)
-    - System architecture (controller → gateway → valves, sensor integration)
-    - Control logic (pump + valve sequencing, safety logic, alarms)
-    - Experiments & changelog (range tests, demo rigs, iteration notes)
+    Instead of marketing descriptions, this section focuses on:
 
-    For production-ready solution pages, use the main site (smart).
-  image: "images/wrapper-img.webp"
+    - Pump + valve sequencing logic
+    - Zoning strategies for large farms
+    - RS485 / Modbus integration notes
+    - LoRa topology and range considerations
+    - Solar irrigation sizing principles
+    - Demo rack design documentation
+
+    Lab content may evolve frequently and includes working drafts used internally.
+  image: "images/lab/lab-diagram-placeholder.webp" # TODO: Replace with architecture diagram or cabinet internal image
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg.webp"
-  title: "ENGINEERING ASSETS YOU CAN REUSE"
+  bg_image: "images/lab/lab-feature-placeholder.webp" # TODO: Replace with dark blueprint-style background
+  title: "Reusable Engineering Assets"
   content: |
-    Lab focuses on reusable engineering materials — not marketing pages.
+    Lab publishes structured technical materials that can be reused in real projects.
 
-    - Repeatable demo rigs (pump + valves + indicators + flow meter)
-    - Wiring / cabinet logic blocks
-    - Protocol mapping (RS485/Modbus, LoRa gateway, MQTT drafts)
-    - Installation checklists and troubleshooting notes
+    These materials include:
+
+    - Control cabinet block logic
+    - Pump protection and safety sequencing
+    - Sensor integration framework (soil moisture, EC/pH, flow, pressure)
+    - Communication protocol mapping (RS485 / LoRa / MQTT)
+    - Installation and troubleshooting notes
+
+    The goal is to reduce trial-and-error during field deployment.
   button:
     enable: true
     label: "View Architecture Notes"
@@ -47,20 +57,26 @@ portfolio:
 ############################# Service ############################
 service:
   enable: true
-  # service content comes from "service.md" file
+  # Service content still loads from "service.md"
+  # Can be adapted later for engineering documentation links
 
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
-  title: "Start with one tool"
+  bg_image: "images/lab/lab-cta-placeholder.webp" # TODO: Replace with lab-themed image (tools / testing board)
+  title: "Start With One Tool"
   content: |
-    If you are sizing a system or validating feasibility, start here.
+    If you are designing or upgrading an irrigation system,
+    begin with structured tools and reference tables.
 
-    We publish internal-grade calculators and reference tables so you can:
-    - estimate pump power and pressure
-    - plan zoning and sequencing
-    - reduce trial-and-error on site
+    Our engineering tools help you:
+
+    - Estimate pump power and pressure
+    - Plan irrigation zoning strategy
+    - Validate flow and head assumptions
+    - Reduce hardware oversizing
+
+    Engineering first. Deployment second.
   button:
     enable: true
     label: "Go to Tools"
@@ -70,17 +86,20 @@ cta:
 funfacts:
   enable: true
   title: "Lab Status"
-  description: "Lab is experimental. Sections may change frequently."
+  description: "This section is continuously updated as new technical modules are developed."
   funfact_item:
-  - icon: "fas fa-flask"
-    name: "Active Tools"
-    count: "4"
+  - icon: "fas fa-tools"
+    name: "Engineering Tools"
+    count: "5"
+
   - icon: "fas fa-project-diagram"
     name: "Architecture Notes"
-    count: "8"
-  - icon: "fas fa-vial"
-    name: "Experiments Logged"
     count: "12"
+
+  - icon: "fas fa-vial"
+    name: "Field Experiments"
+    count: "8"
+
   - icon: "fas fa-code-branch"
     name: "Weekly Iterations"
     count: "1"
@@ -89,5 +108,10 @@ funfacts:
   - name: "Junfeng Qiu"
     image: "images/clients/avater-1.webp"
     designation: "Founder - PKYDrip"
-    content: "Lab exists to make irrigation automation easier to deploy: clear logic, reusable modules, and field-tested notes."
+    content: "Lab exists to make irrigation automation modular, repeatable, and easier to deploy globally."
+
+  - name: "Engineering Note"
+    image: "images/clients/avater-1.webp"
+    designation: "Internal Principle"
+    content: "Every irrigation project should be built from structured logic blocks, not guesswork."
 ---
