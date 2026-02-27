@@ -2,53 +2,50 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/lab/lab-hero-placeholder.webp" # TODO: Replace with engineering-style image (cabinet wiring / blueprint tone)
+  bg_image: "images/lab/lab-hero-placeholder.webp" # TODO: Replace with engineering-style image
   bg_overlay: true
-  title: "PKYDrip Engineering Lab <br/> Architecture · Tools · Experiments"
-  content: "Technical workspace for irrigation automation logic, reusable engineering assets, and system validation tools."
+  title: "PKYDrip Engineering Lab <br/> System Logic · Architecture · Experiments"
+  content: "A structured workspace for irrigation automation engineering documentation."
   button:
     enable: true
-    label: "Open Engineering Tools"
+    label: "Explore Tools"
     link: "/tools/"
 
 ############################# About #################################
 about:
   enable: true
-  title: "Engineering Workspace"
-  description: "Lab is the structured technical layer of PKYDrip."
+  title: "Purpose of the Lab"
+  description: "This section documents irrigation automation logic and reusable system structures."
   content: |
-    The Engineering Lab is where we document reusable system logic, 
-    control flow design, and field validation notes for irrigation automation.
+    The Engineering Lab is dedicated to technical documentation and system logic validation.
 
-    Instead of marketing descriptions, this section focuses on:
+    It focuses on:
 
-    - Pump + valve sequencing logic
-    - Zoning strategies for large farms
-    - RS485 / Modbus integration notes
-    - LoRa topology and range considerations
-    - Solar irrigation sizing principles
-    - Demo rack design documentation
+    - Pump and valve sequencing strategies
+    - Zoning logic for large-scale irrigation
+    - Communication topology (RS485 / LoRa / MQTT)
+    - Sensor integration frameworks
+    - Field experiment documentation
+    - System safety and redundancy concepts
 
-    Lab content may evolve frequently and includes working drafts used internally.
-  image: "images/lab/lab-diagram-placeholder.webp" # TODO: Replace with architecture diagram or cabinet internal image
+    This is not a marketing section. It is an engineering reference layer.
+  image: "images/lab/lab-diagram-placeholder.webp" # TODO: Replace with architecture diagram
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
-  bg_image: "images/lab/lab-feature-placeholder.webp" # TODO: Replace with dark blueprint-style background
-  title: "Reusable Engineering Assets"
+  bg_image: "images/lab/lab-feature-placeholder.webp" # TODO: Replace with neutral blueprint background
+  title: "Structured Engineering Assets"
   content: |
-    Lab publishes structured technical materials that can be reused in real projects.
-
-    These materials include:
+    Lab organizes technical materials into reusable modules:
 
     - Control cabinet block logic
-    - Pump protection and safety sequencing
-    - Sensor integration framework (soil moisture, EC/pH, flow, pressure)
-    - Communication protocol mapping (RS485 / LoRa / MQTT)
-    - Installation and troubleshooting notes
+    - Field wiring structure
+    - Safety mechanisms (pressure / flow monitoring)
+    - Communication mapping
+    - Deployment validation checklist
 
-    The goal is to reduce trial-and-error during field deployment.
+    These materials support consistent system design and implementation.
   button:
     enable: true
     label: "View Architecture Notes"
@@ -56,62 +53,54 @@ portfolio:
 
 ############################# Service ############################
 service:
-  enable: true
-  # Service content still loads from "service.md"
-  # Can be adapted later for engineering documentation links
+  enable: false  # Disable marketing-style service section
 
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/lab/lab-cta-placeholder.webp" # TODO: Replace with lab-themed image (tools / testing board)
-  title: "Start With One Tool"
+  bg_image: "images/lab/lab-cta-placeholder.webp" # TODO: Replace with lab-themed image
+  title: "Engineering Before Deployment"
   content: |
-    If you are designing or upgrading an irrigation system,
-    begin with structured tools and reference tables.
+    Structured planning reduces system failure risk.
 
-    Our engineering tools help you:
+    Use the lab tools and documentation to validate:
 
-    - Estimate pump power and pressure
-    - Plan irrigation zoning strategy
-    - Validate flow and head assumptions
-    - Reduce hardware oversizing
+    - Pump power assumptions
+    - Irrigation zone design
+    - Communication distance planning
+    - System sequencing logic
 
-    Engineering first. Deployment second.
+    Proper architecture ensures stable field performance.
   button:
     enable: true
-    label: "Go to Tools"
+    label: "Open Engineering Tools"
     link: "/tools/"
 
 ############################# Funfacts ###############################
 funfacts:
   enable: true
-  title: "Lab Status"
-  description: "This section is continuously updated as new technical modules are developed."
+  title: "Lab Overview"
+  description: "Continuously evolving engineering documentation."
   funfact_item:
-  - icon: "fas fa-tools"
-    name: "Engineering Tools"
-    count: "5"
-
   - icon: "fas fa-project-diagram"
-    name: "Architecture Notes"
-    count: "12"
+    name: "Architecture Modules"
+    count: "10"
 
   - icon: "fas fa-vial"
     name: "Field Experiments"
-    count: "8"
+    count: "6"
 
-  - icon: "fas fa-code-branch"
-    name: "Weekly Iterations"
+  - icon: "fas fa-tools"
+    name: "Engineering Tools"
+    count: "4"
+
+  - icon: "fas fa-sync-alt"
+    name: "Ongoing Iterations"
     count: "1"
 
   testimonial_slider:
-  - name: "Junfeng Qiu"
+  - name: "Engineering Principle"
     image: "images/clients/avater-1.webp"
-    designation: "Founder - PKYDrip"
-    content: "Lab exists to make irrigation automation modular, repeatable, and easier to deploy globally."
-
-  - name: "Engineering Note"
-    image: "images/clients/avater-1.webp"
-    designation: "Internal Principle"
-    content: "Every irrigation project should be built from structured logic blocks, not guesswork."
+    designation: "Internal Documentation"
+    content: "A reliable irrigation system is built from structured logic blocks, not improvisation."
 ---
