@@ -1,4 +1,4 @@
-############# English navigation ##############
+############# English navigation (LAB) ##############
 
 # main menu
 [[main]]
@@ -7,30 +7,28 @@ url = ""
 weight = 1
 
 [[main]]
-name = "About"
-url = "about/"
+name = "Tools"
+url = "tools/"
 weight = 2
 
 [[main]]
+name = "Architecture"
+url = "architecture/"
 weight = 3
-name = "Product"
-url = "product/"
-
 
 [[main]]
+name = "Protocols"
+url = "protocols/"
 weight = 4
-name = "Services"
-url = "sv/"
 
 [[main]]
+name = "Experiments"
+url = "experiments/"
 weight = 5
-name = "Solutions"
-url = "solution/"
-
 
 [[main]]
-name = "Download"
-url = "downloads/"
+name = "About"
+url = "about/"
 weight = 6
 
 [[main]]
@@ -41,18 +39,23 @@ weight = 7
 
 # footer menu
 [[footer]]
-name = "About"
-url = "about/"
+name = "Tools"
+url = "tools/"
+weight = 1
+
+[[footer]]
+name = "Architecture"
+url = "architecture/"
 weight = 2
 
 [[footer]]
-name = "Product"
-url = "product/"
+name = "Protocols"
+url = "protocols/"
 weight = 3
 
 [[footer]]
-name = "Solution"
-url = "solution/"
+name = "Experiments"
+url = "experiments/"
 weight = 4
 
 [[footer]]
@@ -64,3 +67,8 @@ weight = 5
 name = "Contact"
 url = "contact/"
 weight = 6
+
+[[footer]]
+name = "Feedback"
+url = "mailto:junfeng@pky-dripirrigation.com?subject=PKYDrip%20Lab%20Feedback%20(LAB-INDEX-EN-01)"
+weight = 7
