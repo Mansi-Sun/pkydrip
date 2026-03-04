@@ -1,238 +1,288 @@
 ---
 title: "Smart Water-Saving Irrigation System for Open Field Agriculture"
-description: "Modular irrigation architecture for open-field farms (5–50 hectares). On/off-grid compatible, scalable upgrades, and engineering-first control logic."
+description: "Modular open-field irrigation system combining LoRa wireless control, pump automation, fertigation integration, and scalable irrigation architecture for modern farms."
+layout: "solution"
+url: "/solution/open-field-irrigation/"
 draft: false
 ---
 
 # Smart Water-Saving Irrigation System for Open Field Agriculture
-<a id="overview"></a>
 
-The PKYDrip smart water-saving irrigation platform offers a **modular approach** to open-field irrigation in both **on-grid and off-grid** environments.
+The PKYDrip smart water supply platform offers a modular approach to irrigation in both on-grid and off-grid environments. With a flexible choice of modules, features can be added through simple upgrades over time, while cloud-based monitoring and components designed for robust performance and minimal maintenance make it ideal for remote agricultural operations.
 
-Instead of treating irrigation as a single fixed product, PKYDrip is designed as a **platform architecture**: you can start with a stable core system and upgrade by adding modules when needed (filters, fertigation, sensors, remote monitoring, solar pump control, etc.).
+The platform is suitable for a wide range of open field irrigation applications and can be adapted to a variety of water sources, including **boreholes, tanks, rivers, wells and reservoirs**.
 
-This approach is ideal for remote and project-based operations where reliability, maintainability, and future expansion are important.
+Rather than being limited to a specific farm size, the system architecture is designed to scale through additional valve zones, pump capacity and wireless modules. This allows installations to grow gradually as irrigation requirements expand.
 
-**Typical coverage range:** 5–50 hectares (project dependent)  
-**Supported water sources:** boreholes, tanks, rivers, wells, reservoirs  
-**Power options:** grid power, solar-powered modules, hybrid solar + grid configurations
+The flexible platform can be powered from the grid or via integrated solar panels on many modules, with hybrid capability built into the system for ease of operation.
+
+A choice of modules enables either **drip irrigation or sprinkler irrigation solutions**, depending on project requirements, while the system can be expanded easily after installation when required.
 
 ---
 
 # Standard System Architecture
-<a id="standard-architecture"></a>
 
-Most open-field irrigation projects follow a stable hydraulic logic:
+The modular design ensures that each installation is tailored to specific farm requirements. However, a standard irrigation system typically includes the following core components.
 
-**Water Source → Pump Station → Filtration → (Optional Fertigation) → Mainline → Zone Valves → Field Irrigation**
+<div style="text-align:center;margin:40px 0;">
+<img src="/images/diagrams/open-field-irrigation-architecture.svg" style="max-width:900px;width:100%;">
+</div>
 
-![Open-Field Irrigation — Hydraulic Architecture](/images/diagrams/pkydrip_open_field_hydraulic_architecture.svg)
+---
 
-## Hydraulic Modules (What each block means)
-<a id="hydraulic-modules"></a>
+## Water Source
 
-### Water Source
-Local or remote water supply depending on the farm conditions. Common sources include:
-- Boreholes / wells
-- Rivers / canals
-- Reservoirs
-- Storage tanks
+The system can operate with both **local and remote water sources**, depending on the irrigation project design.
 
-### Pump Station
-The pump station provides the required **flow + pressure** for the irrigation method (drip or sprinkler).  
-Pump start/stop and protection logic can be integrated into the system to reduce labor and improve reliability.
+Typical water sources include:
 
-### Sand Filter (Media Filtration)
-Clean water is essential for stable irrigation performance and low clogging risk.  
-Media filters are widely used as primary filtration in agricultural projects.
+- Boreholes  
+- Surface water  
+- Storage tanks  
+- Irrigation reservoirs  
 
-### Disc Filter (Secondary Filtration)
-Disc filters remove fine suspended solids. Auto-cleaning / auto-backwash options can reduce maintenance workload.
+Water source flexibility allows the system to adapt easily to different farm environments and water supply conditions.
 
-### Fertigation Unit (Optional)
-<a id="fertigation"></a>
+---
 
-Fertigation is an upgrade module for farms that require nutrient injection.  
-PKYDrip fertigation controllers (e.g. **PKY-FG301** or **PKY-FG401**) can integrate into the irrigation system to enable:
-- Accurate dosing control
-- Coordinated irrigation + fertigation scheduling
-- Remote access and monitoring when required
+## Pump Station
 
-> Many farms start with irrigation-only, then add fertigation later when operations mature.
+The **PKYDrip LoRa Solar Pump Controller** integrates solar support with remote pump start and stop for convenient operation.
 
-### Mainline (Distribution Network)
-The mainline carries water between modules and into zone pipelines.
-Typical materials:
-- HDPE / PE
-- PVC
-- Project-specific fittings/reducers
+Key capabilities include:
 
-Both overground and trenched installations are common depending on climate, protection requirements, and farm operations.
+- Remote pump start and stop  
+- Pump status verification using flow feedback  
+- Integrated pump protection logic  
 
-### Zone Valves
-Zone valves control water delivery per zone, enabling:
-- Flexible scheduling per zone
-- Stable pressure management
-- Sequential operation (reduced pump load)
+This allows pump systems to operate reliably even in locations where **4G or WiFi connectivity may not be available**.
 
-### Field Irrigation (Drip / Sprinkler)
-The final distribution depends on crop and field conditions:
-- Drip lines / drip tape
-- Sprinklers / guns (project dependent)
+---
+
+## Sand Filter
+
+Clean water is essential for reliable irrigation and nutrient delivery.
+
+Pump systems are therefore typically fitted with **sand media filters**, which remove larger particles and organic matter before water enters the irrigation network.
+
+This helps maintain system performance and extends the lifespan of downstream components.
+
+---
+
+## Disc Filter
+
+A **disc filtration system** provides highly efficient removal of suspended solids and smaller particles.
+
+Disc filters are commonly used to remove:
+
+- fine sediment  
+- organic debris  
+- microplastics  
+- other contaminants  
+
+Many installations use **automatic back-flush filtration systems** to ensure reliable long-term operation with minimal maintenance.
+
+---
+
+## Fertigation Unit (Optional)
+
+PKYDrip fertigation controllers provide accurate nutrient dosing and remote management of fertilization processes.
+
+Typical models include:
+
+- **PKY-FG301**
+- **PKY-FG401-ECPH**
+
+These fertigation units integrate seamlessly into the irrigation system and allow full remote control of the fertigation process.
+
+👉 See more:  
+[PKYDrip Fertigation Systems](/product/fertigation-system/)
+
+---
+
+## Mainline
+
+The mainline distribution pipes transport water from the pump station to the irrigation zones.
+
+The PKYDrip system supports pipeline configurations suitable for both **surface installation and underground trenching**, depending on project requirements.
+
+Pipe diameter and layout are selected based on:
+
+- total system flow rate  
+- irrigation zone design  
+- pump capacity and pressure requirements  
+
+---
+
+## Zone Valves
+
+Zone valves regulate water flow into each irrigation zone, allowing accurate control of water delivery across the field.
+
+By dividing the farm into multiple irrigation zones, the system can deliver water more efficiently while maintaining stable pressure and pump performance.
+
+---
+
+## Field Irrigation
+
+The final irrigation pipework delivers water directly to crops.
+
+Depending on crop type and planting structure, irrigation methods may include:
+
+- drip irrigation systems  
+- sprinkler irrigation systems  
+
+This modular approach allows the irrigation method to be selected based on **crop requirements and farm layout**.
 
 ---
 
 # Control Architecture
-<a id="control-architecture"></a>
 
-To ensure efficient and reliable operation, PKYDrip uses modular control modules to manage:
-- Pump operation
-- Zone valve automation
-- Sensors (optional)
-- Remote monitoring (optional)
+To ensure efficient and reliable operation, the PKYDrip platform is built around a **LoRa wireless control architecture**.
 
-A typical project structure includes:
-- **Master Controller**
-- **Gateway (when using LoRa network)**
-- **Valve Controllers** (distributed by zones)
+These modules integrate pump controllers, valve controllers and sensors into a unified automation network that enables reliable remote irrigation control.
 
-![Open-Field Irrigation — Control Architecture](/images/diagrams/pkydrip_open_field_control_architecture.svg)
+Three main control modules are used within the system.
 
-## Control Modules
-<a id="control-modules"></a>
+---
 
-### Master Controller (PKY-60W)
-PKY-60W works as the core logic controller of the irrigation system.
+## Master Controller — PKY-60W
 
-Typical responsibilities:
-- Irrigation scheduling
-- Sequential valve logic
-- Pump coordination (with pump controller)
-- Sensor inputs (when used)
-- Integration with fertigation controllers (optional)
+The **PKY-60W master controller** acts as the central logic unit for the irrigation system.
 
-### Gateway (PKY-EG08)
-PKY-EG08 acts as the coordination node in a LoRa network (when LoRa is selected).  
-It coordinates communications between master controllers, valve controllers, sensors, and other LoRa devices.
+It connects with pump controllers, valve controllers and gateways to define irrigation parameters, either through scheduled programs or sensor inputs.
 
-> Engineering note: LoRa is one communication option. PKYDrip is a platform and can also integrate RS485 and cloud connectivity when required by the project.
+Key capabilities include:
 
-### Valve Controllers (PKY-IC05 Series)
-PKY-IC05 valve controllers automate irrigation zones and support long-term outdoor deployment.
+- multi-zone irrigation scheduling  
+- automatic irrigation programs  
+- sensor-triggered irrigation  
+- integration with fertigation controllers  
 
-Typical features:
-- Works with external power or solar-assisted options
-- Designed for low maintenance
-- Optional variants can include sensor packages for soil and weather assessment
+👉 Product details:  
+https://smart.pky-dripirrigation.com/product/pky-60w/
+
+---
+
+## Gateway Controller — PKY-EG08
+
+The **PKY-EG08 gateway controller** acts as the communication hub for the LoRa irrigation network.
+
+It coordinates communication between all modules within the system, including:
+
+- master controllers  
+- valve controllers  
+- sensors  
+- other LoRa devices  
+
+The gateway ensures reliable long-distance communication across the irrigation network.
+
+---
+
+## Valve Controllers — IC05 Series
+
+PKY-IC05 valve controllers automate irrigation zone control.
+
+Designed for outdoor operation and minimal maintenance, they can be powered using:
+
+- external power supply  
+- integrated solar power  
+- hybrid power configurations  
+
+**PK-IC05 Plus models** are available with additional sensor integration for real-time monitoring of soil and environmental conditions.
 
 ---
 
 # Automation Logic
-<a id="automation-logic"></a>
 
-Reliable operation is key for open-field irrigation, especially in remote areas. PKYDrip supports multiple automation strategies:
+Reliable irrigation automation is critical for consistent crop performance.
 
-## 1) Sequential Irrigation (common for multi-zone farms)
-Run zones one-by-one to:
-- Reduce pump load
-- Stabilize pressure
-- Simplify hydraulic balancing
+The PKYDrip platform supports multiple irrigation control strategies.
 
-## 2) Schedule-Based Irrigation
-Time-based irrigation plans for consistent farm routines.
+### Sequential Irrigation
 
-## 3) Sensor-Based Irrigation (optional)
-Soil moisture or pressure feedback can trigger irrigation automatically when the project requires field-condition-based decisions.
+Water is delivered sequentially across irrigation zones to maintain stable pressure and reduce pump load.
 
-## Protection & Monitoring
-The system can integrate:
-- Pump protection logic (e.g., dry-run risk handling via sensors/logic depending on configuration)
-- Pressure monitoring and alarms
-- Remote monitoring (when required) to reduce site visits
+### Scheduled Irrigation
 
----
+Pre-programmed irrigation schedules allow automated irrigation according to crop requirements.
 
-# Engineering Selection Guide (Quick Reference)
-<a id="selection-guide"></a>
+### Sensor-Based Irrigation
 
-The following table is a quick early-stage reference. Final sizing depends on irrigation method, crop demand, pipe design, elevation, and friction loss.
+When soil moisture sensors are installed, irrigation can be triggered automatically based on soil conditions.
 
-| Farm Size | Typical Flow Range | Typical Pump Power | Typical Zones | Recommended Core Controller |
-|---:|---:|---:|---:|---|
-| 5 ha | 20–30 m³/h | 5–7.5 kW | 4–6 | PKY-60W |
-| 10 ha | 40–60 m³/h | 7.5–11 kW | 6–10 | PKY-60W |
-| 20 ha | 60–100 m³/h | 11–18 kW | 10–16 | PKY-60W |
-| 50 ha | 150+ m³/h | 22 kW+ | 20+ | PKY-60W |
+The system also integrates:
+
+- pump protection  
+- pressure monitoring  
+- cloud monitoring  
+
+Remote monitoring via the cloud allows operators to adjust parameters quickly and diagnose issues without frequent site visits.
 
 ---
 
-# Example Configuration (Planning Checklist)
-<a id="example-configuration"></a>
+# Example Configuration
 
-A typical **5-hectare** project planning checklist:
+The modular architecture allows irrigation systems to be adapted to a wide range of farm sizes and layouts.
 
-- Flow requirement: ___ m³/h  
-- Pump size: ___ kW / HP  
-- Zone count: ___  
-- Solar sizing (if off-grid): ___ (PV / controller / storage strategy)
+Typical system parameters may include:
 
-For a detailed structure reference (5–10 hectares), see:
-- **5–10 Hectare Irrigation Solution Article:** /solution/5-10ha-irrigation-system/
+| Parameter | Example |
+|----------|---------|
+| Flow requirement | 20–60 m³/h |
+| Pump size | 5–15 kW |
+| Irrigation zones | 6–24 zones |
+| Solar integration | optional |
+
+Larger farms can expand the system by increasing:
+
+- pump capacity  
+- number of irrigation zones  
+- number of wireless valve controllers
 
 ---
 
 # Why LoRa for Agriculture
-<a id="why-lora"></a>
 
-Designed for outdoor applications where 4G and WiFi may be unreliable, LoRa offers:
-- Long-range field communication (range depends on terrain and antenna height)
-- Low power consumption (supports solar-powered field controllers)
-- Reduced need for trenching communication cables (project dependent)
+LoRa communication technology is particularly suitable for agricultural irrigation systems.
 
-> Important: PKYDrip is a platform. LoRa is one option, not the only option.
+It enables long-range wireless communication with very low power consumption, making it ideal for large outdoor farms.
 
----
+Typical advantages include:
 
-# Engineering Tools
-<a id="tools"></a>
+- communication range of **3–5 km in open fields**  
+- low power consumption for solar devices  
+- reliable operation without complex infrastructure  
 
-Use these tools for early-stage estimation (engineering reference):
-- Pump sizing tool: /tools/pump-sizing/
-- Pipe sizing tool: /tools/pipe-sizing/
-
----
-
-# Print / Save as PDF
-<a id="print"></a>
-
-This page is designed to be printable.  
-Use your browser: **Print → Save as PDF**.
-
----
-
-# Request Engineering PDF + Example BOM
-<a id="cta"></a>
-
-If you need an **Engineering PDF** or an **Example BOM**, please contact our team and share:
-
-- Farm size (hectares or acres)
-- Water source (borehole / river / tank)
-- Pump info (kW / HP or flow & head if known)
-- Irrigation type (drip / sprinkler)
-- Number of zones (if known)
-
-## WhatsApp (recommended)
-https://wa.me/8613803373007?text=Hello%20PKYDrip%2C%20I%20would%20like%20to%20request%20an%20engineering%20PDF%20and%20a%20sample%20BOM%20for%20an%20open-field%20irrigation%20system.%0A%0AFarm%20size%3A%20__%0AWater%20source%3A%20__%0APump%3A%20__%20kW%20(or%20flow%2Fhead)%0AIrrigation%20type%3A%20drip%20/%20sprinkler%0AZones%3A%20__
-
-> If you prefer email, please send the same details to our support team (email can be added here later).
+Because LoRa modules can operate with integrated solar power systems, **no trenching is required for communication cables**, reducing installation time and cost.
 
 ---
 
 # Application Regions
-<a id="regions"></a>
 
-The PKYDrip platform is commonly deployed in:
-- Middle East
-- Australia
-- Africa
-- Southeast Asia
+The PKYDrip irrigation platform is designed to operate in diverse agricultural environments and climate conditions.
+
+Typical regions include:
+
+- Middle East  
+- Australia  
+- Africa  
+- Southeast Asia  
+
+These regions often require irrigation systems capable of operating reliably in remote areas and challenging environmental conditions.
+
+---
+
+# Request a System Suggestion
+
+If you are planning an irrigation project or upgrading an existing system, our engineering team can help estimate a suitable system configuration.
+
+Please provide the following information:
+
+- Farm size  
+- Water source  
+- Pump power (if known)  
+- Irrigation type (drip or sprinkler)
+
+👉 **WhatsApp Consultation**
+
+https://wa.me/8617395297329
