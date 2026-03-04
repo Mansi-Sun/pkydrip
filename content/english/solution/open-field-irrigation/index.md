@@ -25,7 +25,7 @@ A choice of modules enables either **drip irrigation or sprinkler irrigation sol
 The modular design ensures that each installation is tailored to specific farm requirements. However, a standard irrigation system typically includes the following core components.
 
 <div style="text-align:center;margin:40px 0;">
-  <img src="/images/diagrams/open-field-irrigation-architecture.svg" style="max-width:900px;width:100%;">
+  <img src="/images/diagrams/pkydrip_open_field_control_architecture.svg" style="max-width:900px;width:100%;">
 </div>
 
 ---
