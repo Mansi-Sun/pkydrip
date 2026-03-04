@@ -1,6 +1,6 @@
 ---
 title: "Smart Water-Saving Irrigation System for Open Field Agriculture"
-description: "Modular open-field irrigation system combining LoRa wireless control, pump automation, fertigation integration, and scalable irrigation architecture for modern farms."
+description: "Modular open-field irrigation system combining wireless and wired control, pump automation, fertigation integration, and scalable irrigation architecture for modern farms."
 layout: "solution"
 url: "/solution/open-field-irrigation/"
 draft: false
@@ -154,9 +154,9 @@ This modular approach allows the irrigation method to be selected based on **cro
 
 ## Control Architecture
 
-To ensure efficient and reliable operation, the PKYDrip platform is built around a **LoRa wireless control architecture**.
+To ensure efficient and reliable operation, the PKYDrip platform uses a **modular control architecture**.
 
-These modules integrate pump controllers, valve controllers and sensors into a unified automation network that enables reliable remote irrigation control.
+Depending on the project environment, communication can be implemented using **LoRa**, **RS485 (Modbus)**, **4G/WiFi**, or a hybrid combination. This allows pump controllers, valve controllers, sensors and gateways to work together as one unified automation network for reliable remote irrigation control.
 
 Three main control modules are used within the system.
 
@@ -186,16 +186,18 @@ Key capabilities include:
 
 ### Gateway Controller — PKY-EG08
 
-The **PKY-EG08 gateway controller** acts as the communication hub for the LoRa irrigation network.
+The **PKY-EG08 gateway controller** acts as the communication hub within the irrigation control network.
 
-It coordinates communication between all modules within the system, including:
+Depending on the project configuration, communication between controllers, sensors and field devices may use **LoRa**, **RS485 (Modbus)**, **4G**, **WiFi**, or a hybrid combination.
+
+The gateway coordinates communication between system components, including:
 
 - master controllers  
 - valve controllers  
 - sensors  
-- other LoRa devices  
+- other field devices  
 
-The gateway ensures reliable long-distance communication across the irrigation network.
+This architecture allows the irrigation system to adapt to different farm environments and communication requirements.
 
 ---
 
@@ -285,17 +287,15 @@ Larger farms can expand the system by increasing:
 
 ## Why LoRa for Agriculture
 
-LoRa communication technology is particularly suitable for agricultural irrigation systems.
-
-It enables long-range wireless communication with very low power consumption, making it ideal for large outdoor farms.
+LoRa communication technology is often used in agricultural irrigation systems where long-distance, low-power communication is required.
 
 Typical advantages include:
 
-- communication range of **3–5 km in open fields**  
-- low power consumption for solar devices  
-- reliable operation without complex infrastructure  
+- low power consumption for solar-powered field devices  
+- reliable communication in large outdoor environments  
+- flexible deployment without the need for long communication cables  
 
-Because LoRa modules can operate with integrated solar power systems, **no trenching is required for communication cables**, reducing installation time and cost.
+Actual communication distance is not fixed and depends on terrain, antenna height, obstacles and interference conditions. For larger farms or more complex environments, the network can be extended using **repeaters**, optimized antenna placement, or alternative communication methods such as **RS485 (Modbus)**, **4G**, or **WiFi**, depending on project requirements.
 
 ---
 
