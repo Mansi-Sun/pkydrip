@@ -2,7 +2,6 @@
 title: "PKYDRIP Demonstration System | Contractor Training Platform"
 description: "Engineering-grade irrigation automation demonstration system used for contractor training, partner cooperation and project demonstration."
 type: "landing"
-layout: "page"
 url: "/partner/pkydrip-demonstration-system/"
 draft: false
 ---
