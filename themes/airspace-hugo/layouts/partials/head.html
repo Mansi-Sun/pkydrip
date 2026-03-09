@@ -140,6 +140,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll("a[href*='wa.me']").forEach(function (e) {
             e.addEventListener('click', function () {
                 gtag('event', 'Whatsapp_Click20250917');
+            // Meta Pixel Lead event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
             });
         });
     });
