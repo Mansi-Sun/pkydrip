@@ -1,68 +1,53 @@
 ---
-title: "Engineering Tools for Irrigation Projects"
-description: "PKYDrip engineering tools help growers and contractors estimate pump requirements, compare irrigation options, and prepare project information."
+title: "Engineering Tools"
+description: "Practical engineering tools for irrigation project planning."
 draft: false
 bg_image: "images/call-to-action-bg.jpg"
 ---
 
 ## Engineering Tools for Irrigation Projects
 
-These tools help growers, contractors, and project owners quickly estimate pump requirements, compare irrigation options, and prepare project information before discussing a system with PKYDrip.
+These tools help growers, contractors, and project owners quickly evaluate irrigation projects and prepare the basic information needed for system planning.
 
-Use them for:
+Typical use cases include:
 
-- quick engineering checks
-- early project planning
-- irrigation discussions with clients
+- estimating pump size
+- reviewing irrigation pressure requirements
+- preparing project information before discussing with PKYDrip
 
 ---
 
 ## Pump Sizing Tools
 
-Estimate pump requirements and irrigation parameters.
+A practical set of tools designed to help estimate pump requirements and prepare irrigation system discussions.
 
-Includes:
+### Pump Sizing Guided Wizard
 
-- pump sizing calculator
-- project request form
-- sprinkler gun sizing chart
-- guided wizard
+Start here if you are **not sure how to size the pump yet**.  
+This guided tool asks a few simple questions and suggests the next step for your irrigation project.
 
-**[Open Pump Sizing Tools →](/tools/pump-sizing/)**
+👉 [Start Pump Sizing Wizard](/tools/pump-sizing/guided-wizard.html)
 
 ---
 
-## Irrigation Design Tools
+### Pump Sizing Calculator
 
-Tools for irrigation planning and system design.
+If you already know some parameters such as **flow, head, or irrigation type**, you can directly estimate pump requirements.
 
-Future tools may include:
-
-- irrigation zone calculator
-- water demand estimator
-- pipe sizing reference
-
-**[Explore Irrigation Solutions →](/solution/)**
+👉 [Open Pump Sizing Calculator](/tools/pump-sizing/pump-sizing-calculator-v2.html)
 
 ---
 
-## How to Use These Tools
+### Pump Sizing Request Form
 
-1. Start with the **Pump Sizing Tools** if you want to estimate pump flow and head.
-2. Use the **Calculator** if you already know some parameters.
-3. Use the **Request Form** if your project details are incomplete.
-4. Use the **Guided Wizard** if you are not sure where to start.
+Use this form when your project parameters are **not fully clear** or when you want PKYDrip to review the system direction.
+
+👉 [Open Pump Sizing Request Form](/tools/pump-sizing/pump-sizing-request-form.html)
 
 ---
 
-## Need Help?
+### Sprinkler Gun Pump Sizing Chart
 
-If you prefer discussing your project directly, you can send us the basic project information:
+Quick reference chart for sprinkler gun irrigation systems.
 
-- farm size
-- crop type
-- water source
-- irrigation type
-- power condition
-
-**[💬 Contact us on WhatsApp](https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Engineering%20Tools%20page.)**
+👉 [View Sprinkler Gun Pump Chart](/tools/pump-sizing/sprinkler-gun-pump-sizing-chart/)
