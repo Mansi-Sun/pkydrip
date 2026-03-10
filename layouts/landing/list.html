@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+
+    <h1>Project Landing Pages</h1>
+
+    <div style="margin-top:30px">
+
+      {{ range .Pages }}
+
+      <div style="margin-bottom:20px">
+
+        <h3>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+
+        {{ with .Params.description }}
+        <p>{{ . }}</p>
+        {{ end }}
+
+      </div>
+
+      {{ end }}
+
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
