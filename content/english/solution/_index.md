@@ -12,109 +12,115 @@ You can start with a basic system and expand step by step — adding more zones,
 
 This page helps growers, contractors, and project owners quickly find the most relevant solution direction.
 
----
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px;align-items:stretch;">
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px;">
+  <div style="background:linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);border:1px solid #d8efe1;border-top:4px solid #1f7a4d;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">💧</div>
+    <h3 style="margin:0 0 12px 0;">Fertigation System</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Integrated water and fertilizer control solutions for greenhouse, open-field, and scalable agricultural projects.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Centralized fertilizer dosing</li>
+      <li>Expandable fertigation architecture</li>
+      <li>Controlled irrigation management</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/fertigation-system/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
+  <div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">📡</div>
+    <h3 style="margin:0 0 12px 0;">LoRa Remote Irrigation</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Remote irrigation control solutions designed for off-grid or long-distance irrigation systems.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Distributed valve zones</li>
+      <li>Wireless irrigation control</li>
+      <li>Low-power remote operation</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/lora-off-grid-irrigation-system/" style="display:inline-block;background:#2f6fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
-### Fertigation System
+  <div style="background:linear-gradient(180deg,#fffdf7 0%,#ffffff 100%);border:1px solid #f2e7c7;border-top:4px solid #c58a15;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">☀️</div>
+    <h3 style="margin:0 0 12px 0;">Solar Irrigation System</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Solar-powered irrigation solutions for farms requiring flexible pumping or off-grid operation.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Solar pump irrigation</li>
+      <li>Hybrid solar + grid irrigation</li>
+      <li>Tank + gravity irrigation systems</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/solar-irrigation-system/" style="display:inline-block;background:#c58a15;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
-Integrated water and fertilizer control solutions for greenhouse, open-field, and scalable agricultural projects.
+  <div style="background:linear-gradient(180deg,#fffaf7 0%,#ffffff 100%);border:1px solid #f0dfd3;border-top:4px solid #c96a2b;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🚜</div>
+    <h3 style="margin:0 0 12px 0;">Open-Field Irrigation</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Practical solution pages and project examples for open-field crops and large irrigation zones.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Field crop irrigation</li>
+      <li>Large-area irrigation planning</li>
+      <li>Pump + zone irrigation structure</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/open-field-irrigation/" style="display:inline-block;background:#c96a2b;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
-- Centralized fertilizer dosing
-- Expandable fertigation architecture
-- Controlled irrigation management
+  <div style="background:linear-gradient(180deg,#f9f8ff 0%,#ffffff 100%);border:1px solid #e5def6;border-top:4px solid #6c4fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🏡</div>
+    <h3 style="margin:0 0 12px 0;">Greenhouse Irrigation</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Irrigation and fertigation solutions designed for greenhouse and controlled growing environments.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Drip irrigation systems</li>
+      <li>Greenhouse fertigation</li>
+      <li>Climate + irrigation integration</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/design-agriculture-greenhouses/" style="display:inline-block;background:#6c4fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
-**[Start here →](/solution/fertigation-system/)**
-
-</div>
-
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
-
-### LoRa Remote Irrigation
-
-Remote irrigation control solutions designed for off-grid or long-distance irrigation systems.
-
-- Distributed valve zones
-- Wireless irrigation control
-- Low-power remote operation
-
-**[Start here →](/solution/lora-off-grid-irrigation-system/)**
-
-</div>
-
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
-
-### Solar Irrigation System
-
-Solar-powered irrigation solutions for farms requiring flexible pumping or off-grid operation.
-
-- Solar pump irrigation
-- Hybrid solar + grid irrigation
-- Tank + gravity irrigation systems
-
-**Start pages**
-
-- [Solar irrigation system overview](/solution/solar-irrigation-system/)
-- [Solar smart irrigation for farms](/solution/solar-smart-irrigation-farm/)
-- [DC solar pump + tank irrigation system](/solution/dc-solar-irrigation-tank-system/)
-
-</div>
-
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
-
-### Open-Field Irrigation
-
-Practical solution pages and project examples for open-field crops and large irrigation zones.
-
-- Field crop irrigation
-- Large-area irrigation planning
-- Pump + zone irrigation structure
-
-**Example pages**
-
-- [Open-field irrigation overview](/solution/open-field-irrigation/)
-- [Banana irrigation example – 3 hectares](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana/)
-- [Corn rain pipe irrigation – 4 hectares](/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field/)
-
-</div>
-
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
-
-### Greenhouse Irrigation
-
-Irrigation and fertigation solutions designed for greenhouse and controlled growing environments.
-
-- Drip irrigation systems
-- Greenhouse fertigation
-- Climate + irrigation integration
-
-**Example pages**
-
-- [Greenhouse irrigation design](/solution/design-agriculture-greenhouses/)
-- [Greenhouse fertigation and climate control](/solution/greenhouse-fertigation-climate-control/)
-- [Tomato drip tape irrigation – 1 hectare](/solution/drip-tape-irrigation-for-1-hectare-of-tomatos/)
-
-</div>
-
-<div style="background:#fff;border:1px solid #e8eef3;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
-
-### Controller Selection Guides
-
-Guides for growers and project owners choosing irrigation controllers.
-
-- Small farm controller selection
-- Zone irrigation planning
-- Irrigation automation basics
-
-**Start pages**
-
-- [10 acres irrigation starter guide](/solution/10-acres-irrigation-solution/)
-- [Why zoned irrigation saves cost](/solution/10-acres-zoned-irrigation-benefits/)
-- [5–10 hectare controller selection guide](/solution/how-to-choose-irrigation-controller-for-5-10-hectare-farm/)
-
-</div>
+  <div style="background:linear-gradient(180deg,#fff8fb 0%,#ffffff 100%);border:1px solid #f1dce7;border-top:4px solid #b34f7b;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🧭</div>
+    <h3 style="margin:0 0 12px 0;">Controller Selection Guides</h3>
+    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+      Guides for growers and project owners choosing irrigation controllers and basic automation direction.
+    </p>
+    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+      <li>Small farm controller selection</li>
+      <li>Zone irrigation planning</li>
+      <li>Irrigation automation basics</li>
+    </ul>
+    <div style="margin-top:auto;">
+      <a href="/solution/how-to-choose-irrigation-controller-for-5-10-hectare-farm/" style="display:inline-block;background:#b34f7b;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+        Start Here →
+      </a>
+    </div>
+  </div>
 
 </div>
 
@@ -134,10 +140,17 @@ Please prepare:
 
 **Start simple, upgrade anytime.**
 
-### Quick Actions
-
-**[💬 Contact us on WhatsApp](https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Solutions%20page.)**
-
-**[Calculate Pump Size](/tools/pump-sizing/)**
-
-WhatsApp: **+86 173 9529 7329**
+<div style="background:#f7f9fb;border:1px solid #e8eef3;border-radius:14px;padding:24px;margin-top:20px;">
+  <h3 style="margin:0 0 14px 0;">Quick Actions</h3>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:12px;">
+    <a href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20came%20from%20your%20Irrigation%20Solutions%20page."
+       style="display:inline-block;background:#25D366;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;">
+      💬 Contact us on WhatsApp
+    </a>
+    <a href="/tools/pump-sizing/"
+       style="display:inline-block;background:#ffffff;color:#1f7a4d;padding:12px 18px;border-radius:8px;font-weight:700;text-decoration:none;border:1px solid #cfe3d8;">
+      🛠 Calculate Pump Size
+    </a>
+  </div>
+  <p style="margin:8px 0 0 0;color:#666;">WhatsApp: <strong>+86 173 9529 7329</strong></p>
+</div>
