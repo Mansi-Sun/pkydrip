@@ -2,7 +2,7 @@
 title: "Smart Irrigation Control for Australian Farms"
 description: "Automate pumps and irrigation zones for Australian farms, orchards and irrigation upgrade projects. Designed for contractors and farm irrigation applications."
 layout: "simple"
-url: "/australia-irrigation/"
+url: "/landing/australia-irrigation/"
 draft: false
 ---
 
