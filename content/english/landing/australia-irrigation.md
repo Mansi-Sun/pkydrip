@@ -6,8 +6,6 @@ url: "/landing/australia-irrigation/"
 draft: false
 ---
 
-# Smart Irrigation Control for Australian Farms
-
 Automate pumps and irrigation zones for farms, orchards and irrigation upgrade projects.  
 Designed for Australian irrigation conditions and project-based applications.
 
