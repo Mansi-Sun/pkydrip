@@ -15,7 +15,7 @@ This page helps growers, contractors, and project owners quickly find the most r
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px;align-items:stretch;">
 
   <div style="background:linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);border:1px solid #d8efe1;border-top:4px solid #1f7a4d;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">💧</div>
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">💧</div>
     <h3 style="margin:0 0 12px 0;">Fertigation System</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Integrated water and fertilizer control solutions for greenhouse, open-field, and scalable agricultural projects.
@@ -33,7 +33,7 @@ This page helps growers, contractors, and project owners quickly find the most r
   </div>
 
   <div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">📡</div>
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">📡</div>
     <h3 style="margin:0 0 12px 0;">LoRa Remote Irrigation</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Remote irrigation control solutions designed for off-grid or long-distance irrigation systems.
@@ -50,8 +50,8 @@ This page helps growers, contractors, and project owners quickly find the most r
     </div>
   </div>
 
-  <div style="background:linear-gradient(180deg,#fffdf7 0%,#ffffff 100%);border:1px solid #f2e7c7;border-top:4px solid #c58a15;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">☀️</div>
+  <div style="background:linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);border:1px solid #d8efe1;border-top:4px solid #1f7a4d;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">☀️</div>
     <h3 style="margin:0 0 12px 0;">Solar Irrigation System</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Solar-powered irrigation solutions for farms requiring flexible pumping or off-grid operation.
@@ -62,14 +62,14 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Tank + gravity irrigation systems</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/solar-irrigation-system/" style="display:inline-block;background:#c58a15;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/solar-irrigation-system/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>
   </div>
 
-  <div style="background:linear-gradient(180deg,#fffaf7 0%,#ffffff 100%);border:1px solid #f0dfd3;border-top:4px solid #c96a2b;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🚜</div>
+  <div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">🚜</div>
     <h3 style="margin:0 0 12px 0;">Open-Field Irrigation</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Practical solution pages and project examples for open-field crops and large irrigation zones.
@@ -80,14 +80,14 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Pump + zone irrigation structure</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/open-field-irrigation/" style="display:inline-block;background:#c96a2b;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/open-field-irrigation/" style="display:inline-block;background:#2f6fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>
   </div>
 
-  <div style="background:linear-gradient(180deg,#f9f8ff 0%,#ffffff 100%);border:1px solid #e5def6;border-top:4px solid #6c4fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🏡</div>
+  <div style="background:linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);border:1px solid #d8efe1;border-top:4px solid #1f7a4d;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">🏡</div>
     <h3 style="margin:0 0 12px 0;">Greenhouse Irrigation</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Irrigation and fertigation solutions designed for greenhouse and controlled growing environments.
@@ -98,14 +98,14 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Climate + irrigation integration</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/design-agriculture-greenhouses/" style="display:inline-block;background:#6c4fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/design-agriculture-greenhouses/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>
   </div>
 
-  <div style="background:linear-gradient(180deg,#fff8fb 0%,#ffffff 100%);border:1px solid #f1dce7;border-top:4px solid #b34f7b;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:28px;line-height:1;margin-bottom:12px;">🧭</div>
+  <div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+    <div style="font-size:26px;line-height:1;margin-bottom:12px;">🧭</div>
     <h3 style="margin:0 0 12px 0;">Controller Selection Guides</h3>
     <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
       Guides for growers and project owners choosing irrigation controllers and basic automation direction.
@@ -116,7 +116,7 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Irrigation automation basics</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/how-to-choose-irrigation-controller-for-5-10-hectare-farm/" style="display:inline-block;background:#b34f7b;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/how-to-choose-irrigation-controller-for-5-10-hectare-farm/" style="display:inline-block;background:#2f6fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>
