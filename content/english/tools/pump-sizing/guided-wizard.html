@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pump Sizing Guided Wizard | PKYDrip</title>
+  <meta name="description" content="A simple guided wizard to help users choose the right pump sizing path for irrigation projects." />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #222;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e6edf3;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .step-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .options label {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 12px;
+      border: 1px solid #dbe6ee;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #fafcfe;
+    }
+    .options input {
+      margin-right: 10px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    button, .btn-link {
+      display: inline-block;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button {
+      background: #1f7a4d;
+      color: white;
+    }
+    .btn-link {
+      background: white;
+      color: #1f7a4d;
+      border: 1px solid #cfe3d8;
+    }
+    .result {
+      display: none;
+      margin-top: 20px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f3f8f5;
+      border: 1px solid #d8efe1;
+    }
+    .small {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Pump Sizing Guided Wizard</h1>
+      <p>
+        This guided wizard helps you choose the most suitable next step for your irrigation project.
+        It is designed for users who are not sure whether they should use the calculator, submit a request form, or contact PKYDrip directly.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="step-title">1. What type of irrigation are you planning?</div>
+      <div class="options">
+        <label><input type="radio" name="irrigation" value="Drip irrigation">Drip irrigation</label>
+        <label><input type="radio" name="irrigation" value="Sprinkler irrigation">Sprinkler irrigation</label>
+        <label><input type="radio" name="irrigation" value="Sprinkler gun">Sprinkler gun</label>
+        <label><input type="radio" name="irrigation" value="Not sure">Not sure</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-title">2. What is your farm size?</div>
+      <div class="options">
+        <label><input type="radio" name="size" value="Less than 5 acres">Less than 5 acres</label>
+        <label><input type="radio" name="size" value="5–20 acres">5–20 acres</label>
+        <label><input type="radio" name="size" value="20–100 acres">20–100 acres</label>
+        <label><input type="radio" name="size" value="More than 100 acres">More than 100 acres</label>
+        <label><input type="radio" name="size" value="Not sure">Not sure</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-title">3. What is your water source?</div>
+      <div class="options">
+        <label><input type="radio" name="water" value="Bore / well">Bore / well</label>
+        <label><input type="radio" name="water" value="Tank">Tank</label>
+        <label><input type="radio" name="water" value="River / canal">River / canal</label>
+        <label><input type="radio" name="water" value="Reservoir">Reservoir</label>
+        <label><input type="radio" name="water" value="Not sure">Not sure</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-title">4. What power do you have?</div>
+      <div class="options">
+        <label><input type="radio" name="power" value="Grid power">Grid power</label>
+        <label><input type="radio" name="power" value="Solar">Solar</label>
+        <label><input type="radio" name="power" value="Hybrid">Hybrid</label>
+        <label><input type="radio" name="power" value="Not sure">Not sure</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-title">5. What do you need now?</div>
+      <div class="options">
+        <label><input type="radio" name="need" value="Estimate pump size">Estimate pump size</label>
+        <label><input type="radio" name="need" value="Submit project details">Submit project details</label>
+        <label><input type="radio" name="need" value="Need help choosing direction">Need help choosing direction</label>
+      </div>
+
+      <div class="actions">
+        <button onclick="showResult()">See Recommended Next Step</button>
+        <a class="btn-link" href="/tools/pump-sizing/">Back to Pump Sizing Tools</a>
+      </div>
+
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script>
+    function getValue(name) {
+      const checked = document.querySelector(`input[name="${name}"]:checked`);
+      return checked ? checked.value : "Not selected";
+    }
+
+    function showResult() {
+      const irrigation = getValue("irrigation");
+      const size = getValue("size");
+      const water = getValue("water");
+      const power = getValue("power");
+      const need = getValue("need");
+
+      const result = document.getElementById("result");
+
+      let recommendation = "";
+      let actionHtml = "";
+
+      if (need === "Estimate pump size") {
+        recommendation = "You should start with the Pump Sizing Calculator.";
+        actionHtml = `<a class="btn-link" href="/tools/pump-sizing/pump-sizing-calculator-v2.html">Open Pump Sizing Calculator</a>`;
+      } else if (need === "Submit project details") {
+        recommendation = "You should use the Pump Sizing Request Form.";
+        actionHtml = `<a class="btn-link" href="/tools/pump-sizing/pump-sizing-request-form.html">Open Request Form</a>`;
+      } else {
+        recommendation = "You may contact PKYDrip directly if you are still deciding the system direction.";
+        const text = encodeURIComponent(
+          `Hello PKYDrip, I came from the Pump Sizing Guided Wizard.\n\nIrrigation type: ${irrigation}\nFarm size: ${size}\nWater source: ${water}\nPower: ${power}\nNeed: ${need}`
+        );
+        actionHtml = `<a class="btn-link" href="https://wa.me/8617395297329?text=${text}" target="_blank">Contact us on WhatsApp</a>`;
+      }
+
+      result.style.display = "block";
+      result.innerHTML = `
+        <h2 style="margin-top:0;">Recommended Next Step</h2>
+        <p>${recommendation}</p>
+        <p class="small">
+          Irrigation type: <strong>${irrigation}</strong><br>
+          Farm size: <strong>${size}</strong><br>
+          Water source: <strong>${water}</strong><br>
+          Power: <strong>${power}</strong><br>
+          Need: <strong>${need}</strong>
+        </p>
+        <div class="actions">${actionHtml}</div>
+      `;
+    }
+  </script>
+</body>
+</html>
