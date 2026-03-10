@@ -147,7 +147,7 @@ Please prepare:
        style="display:inline-block;background:#25D366;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;">
       💬 Contact us on WhatsApp
     </a>
-    <a href="/tools/pump-sizing/"
+    <a href="/tools/pump-sizing/pump-sizing-calculator-v2.html"
        style="display:inline-block;background:#ffffff;color:#1f7a4d;padding:12px 18px;border-radius:8px;font-weight:700;text-decoration:none;border:1px solid #cfe3d8;">
       🛠 Calculate Pump Size
     </a>
