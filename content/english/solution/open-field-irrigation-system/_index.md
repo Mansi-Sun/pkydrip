@@ -225,3 +225,9 @@ When planning a project, useful information includes:
 Providing these details allows a more accurate irrigation system design.
 
 **Contact the PKYDrip engineering team to discuss your irrigation project.**
+
+## Discuss Your Irrigation Project
+
+If you are planning an irrigation system upgrade or a new farm irrigation project, feel free to contact the PKYDrip team.
+
+Providing basic information such as farm size, pump power, irrigation zones, and water source will help us suggest a suitable system structure.
