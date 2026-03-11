@@ -4,96 +4,78 @@ banner:
   enable: true
   bg_image: "images/slider-bg.webp"
   bg_overlay: true
-  title: "Cultivating Smarter Agriculture <br/> with IoT Technology"
-  content: "Boost yields, reduce waste, and simplify operations"
+  title: "Modular Irrigation Control Platform <br/> for Modern Projects"
+  content: "Controllers, valve control, fertigation systems, and engineering tools for agriculture, greenhouse, and landscape irrigation."
   button:
     enable: true
-    label: "Discover Our Products"
-    link: "product/"
+    label: "Explore Irrigation Solutions"
+    link: "solution/"
 
 ############################# About #################################
 about:
   enable: true
-  title: "About Us"
-  description: "We specialize in the development and production of water-saving irrigation products, such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves."
-  content: "Our product range offers innovative, customizable, reliable, and scalable designs and systems for agriculture, landscaping, and urban greenery projects, enabling users to complete their projects more easily and efficiently."
+  title: "About PKYDrip"
+  description: "PKYDrip develops irrigation controllers, fertigation systems, valve control solutions, and remote irrigation platforms for project-based irrigation applications."
+  content: "Our systems are designed for agriculture, greenhouse irrigation, landscape projects, and water-saving control applications. We focus on modular control architecture, practical engineering logic, and scalable system design that helps customers build irrigation projects more efficiently."
   image: "images/wrapper-img.webp"
-
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
   bg_image: "images/feature-bg.webp"
-  title: "WE DELIVER INNOVATIVE, CUSTOMIZABLE SMART IRRIGATION SYSTEMS"
-  content: " With years of experience in smart irrigation and fertigation systems, we deliver reliable, professional solutions tailored to your needs.
-
-
-  We offer highly customizable options, including hardware, software, and cloud platforms, ensuring our solutions fit seamlessly into your projects.
-
-
-  From pre-sale consultation to after-sale support, our team is here to assist you every step of the way.
-  "
+  title: "Built Around Real Irrigation Projects"
+  content: "PKYDrip is not only a product supplier. We provide modular irrigation control systems, fertigation control, valve automation, and engineering support for real projects. Our platform approach helps growers, contractors, and distributors start with a practical structure and expand over time."
   button:
     enable: true
-    label: "Explore our Fertigation System"
-    link: "/fertigation-system"
-
+    label: "View Technical Documentation"
+    link: "/docs/"
 
 ############################# Service ############################
 service:
   enable: true
   # service content comes from "service.md" file
 
-
 ############################ call to action ###########################
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design irrigation systems."
-  content: "We offer professional irrigation planning services tailored to your crop type, land size, and environmental conditions. <br>  Our experts design efficient, cost-effective systems to optimize water usage, improve yields, and support sustainable farming practices."
+  title: "Need Help Planning an Irrigation Project?"
+  content: "Explore irrigation solutions, use engineering tools, or discuss your project with PKYDrip. We support practical system planning for pump control, valve zoning, fertigation integration, and remote irrigation control."
   button:
     enable: true
-    label: "View our Service Packages"
-    link: "/sv/service-packages"
+    label: "View Engineering Tools"
+    link: "/tools/"
 
 ############################# Funfacts ###############################
 funfacts:
   enable: true
-  title: "Fun Facts About Us"
-  description: "'Yes, our founder still rolls up his sleeves — every fertigation system is tested under his watch before it’s shipped.'"
+  title: "Why Project Customers Work With PKYDrip"
+  description: "We focus on modular irrigation control systems, practical project support, and scalable engineering structure."
   funfact_item:
-  # funfacts item loop
-  - icon: "fas fa-chart-line" #https://fontawesome.com/v5.15/icons
-    name: "Years of Experience"
-    count: "11"
+  - icon: "fas fa-project-diagram"
+    name: "Project-Oriented Systems"
+    count: "Modular"
 
-  # funfacts item loop
-  - icon: "fas fa-thumbs-up" #https://fontawesome.com/v5.15/icons
-    name: "Satisfied Customer"
-    count: "105"
+  - icon: "fas fa-sliders-h"
+    name: "Control Logic"
+    count: "Multi-Zone"
 
-  # funfacts item loop
-  - icon: "fas fa-globe" #https://fontawesome.com/v5.15/icons
-    name: "Countries Covered"
-    count: "65"
+  - icon: "fas fa-tools"
+    name: "Engineering Support"
+    count: "Practical"
 
-  # funfacts item loop
-  - icon: "fas fa-certificate" #https://fontawesome.com/v5.15/icons
-    name: "CE Certification"
-    count: "2"
+  - icon: "fas fa-globe"
+    name: "Application Scope"
+    count: "Global"
 
   testimonial_slider:
-  # testimonial item loop
   - name: "Junfeng Qiu"
     image: "images/clients/avater-1.webp"
-    designation: "Founder-PKYDRIP"
-    content: "Our vision is to lead the transformation of global agriculture with precision irrigation systems, ensuring food security and environmental sustainability."
+    designation: "Founder - PKYDrip"
+    content: "PKYDrip is built around real irrigation control logic — pumps, valves, zoning, fertigation, and practical engineering support for real projects."
 
-  # testimonial item loop
   - name: "Junfeng Qiu"
     image: "images/clients/avater-1.webp"
-    designation: "Founder-PKYDRIP"
-    content: "Our mission is to deliver sustainable, technology-driven solutions that optimize water and nutrient use while enhancing productivity for farmers and growers worldwide."
-
-
+    designation: "Founder - PKYDrip"
+    content: "Our goal is to help growers, contractors, and partners build irrigation systems step by step, with modular products, technical support, and scalable control architecture."
 ---
