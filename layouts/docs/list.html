@@ -2,61 +2,72 @@
 
 <section style="max-width:1100px;margin:auto;padding:40px 20px;">
 
-<h1 style="font-size:34px;margin-bottom:10px;">
-{{ .Title }}
-</h1>
+  <h1 style="font-size:34px;margin-bottom:10px;">
+    {{ .Title }}
+  </h1>
 
-<p style="font-size:16px;color:#555;margin-bottom:40px;">
-{{ .Params.description }}
-</p>
+  {{ with .Params.description }}
+  <p style="font-size:16px;color:#555;margin-bottom:28px;line-height:1.7;">
+    {{ . }}
+  </p>
+  {{ end }}
 
+  {{ if .Content }}
+  <div style="font-size:16px;line-height:1.8;color:#333;margin-bottom:40px;">
+    {{ .Content }}
+  </div>
+  {{ end }}
 
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-">
+  {{ if .Pages }}
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+  ">
 
-{{ range .Pages }}
+    {{ range .Pages }}
 
-<div style="
-border:1px solid #e3e3e3;
-border-radius:10px;
-padding:25px;
-background:#fff;
-transition:0.2s;
-">
+    <div style="
+      border:1px solid #e3e3e3;
+      border-radius:10px;
+      padding:25px;
+      background:#fff;
+      transition:0.2s;
+    ">
 
-<h2 style="font-size:20px;margin-bottom:10px;">
-<a href="{{ .RelPermalink }}" style="text-decoration:none;color:#1f7a4d;">
-{{ .Title }}
-</a>
-</h2>
+      <h2 style="font-size:20px;margin-bottom:10px;">
+        <a href="{{ .RelPermalink }}" style="text-decoration:none;color:#1f7a4d;">
+          {{ .Title }}
+        </a>
+      </h2>
 
-<p style="color:#666;font-size:14px;line-height:1.6;">
-{{ .Params.description }}
-</p>
+      {{ with .Params.description }}
+      <p style="color:#666;font-size:14px;line-height:1.6;">
+        {{ . }}
+      </p>
+      {{ end }}
 
-<div style="margin-top:15px;">
-<a href="{{ .RelPermalink }}" style="
-display:inline-block;
-padding:8px 14px;
-border:1px solid #1f7a4d;
-border-radius:6px;
-color:#1f7a4d;
-text-decoration:none;
-font-size:14px;
-font-weight:600;
-">
-Read Documentation →
-</a>
-</div>
+      <div style="margin-top:15px;">
+        <a href="{{ .RelPermalink }}" style="
+          display:inline-block;
+          padding:8px 14px;
+          border:1px solid #1f7a4d;
+          border-radius:6px;
+          color:#1f7a4d;
+          text-decoration:none;
+          font-size:14px;
+          font-weight:600;
+        ">
+          Read Documentation →
+        </a>
+      </div>
 
-</div>
+    </div>
 
-{{ end }}
+    {{ end }}
 
-</div>
+  </div>
+  {{ end }}
 
 </section>
 
