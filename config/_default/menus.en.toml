@@ -7,40 +7,24 @@ url = ""
 weight = 1
 
 [[main]]
-name = "About"
-url = "about/"
-weight = 2
-
-[[main]]
 name = "Solutions"
 url = "solution/"
-weight = 3
+weight = 2
 
 [[main]]
 name = "Products"
 url = "product/"
-weight = 4
-
-[[main]]
-name = "Tools"
-url = "tools/"
-weight = 5
-
-[[main]]
-name = "Docs"
-url = "docs/"
-weight = 6
-
-[[main]]
-name = "Applications"
-url = "applications/"
-weight = 7
+weight = 3
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 4
 
+[[main]]
+name = "About"
+url = "about/"
+weight = 5
 
 # footer menu
 [[footer]]
