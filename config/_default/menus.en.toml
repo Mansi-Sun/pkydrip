@@ -1,5 +1,7 @@
 ############# English navigation ##############
 
+############# English navigation ##############
+
 # main menu
 [[main]]
 name = "Home"
@@ -12,47 +14,55 @@ url = "about/"
 weight = 2
 
 [[main]]
-weight = 3
-name = "Product"
-url = "product/"
-
-
-[[main]]
-weight = 4
-name = "Services"
-url = "sv/"
-
-[[main]]
-weight = 5
 name = "Solutions"
 url = "solution/"
-
+weight = 3
 
 [[main]]
-name = "Download"
-url = "downloads/"
+name = "Products"
+url = "product/"
+weight = 4
+
+[[main]]
+name = "Tools"
+url = "tools/"
+weight = 5
+
+[[main]]
+name = "Docs"
+url = "docs/"
 weight = 6
+
+[[main]]
+name = "Demo"
+url = "demo/"
+weight = 7
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 8
 
 
 # footer menu
 [[footer]]
 name = "About"
 url = "about/"
+weight = 1
+
+[[footer]]
+name = "Solutions"
+url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Product"
+name = "Products"
 url = "product/"
 weight = 3
 
 [[footer]]
-name = "Solution"
-url = "solution/"
+name = "Download"
+url = "downloads/"
 weight = 4
 
 [[footer]]
