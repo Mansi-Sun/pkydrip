@@ -2,38 +2,35 @@
 
 <section class="container" style="max-width:1100px;margin:auto;padding:40px 20px;">
 
-<h1 style="margin-bottom:10px;">Applications</h1>
+  <h1 style="margin-bottom:10px;">{{ .Title }}</h1>
 
-<p style="margin-bottom:40px;color:#666;">
-Engineering application scenarios for PKYDrip irrigation systems.
-These pages explain how irrigation control systems can be used in different agricultural environments.
-</p>
+  {{ if .Content }}
+  <div style="margin-bottom:40px;color:#666;line-height:1.8;">
+    {{ .Content }}
+  </div>
+  {{ end }}
 
-<div>
+  {{ if .RegularPages }}
+  <div>
+    {{ range .RegularPages }}
+    <div style="margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid #eee;">
 
-{{ range .Pages }}
+      <h2 style="margin-bottom:10px;">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
 
-<div style="margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid #eee;">
+      {{ if .Summary }}
+      <p style="color:#666;">
+        {{ .Summary }}
+      </p>
+      {{ end }}
 
-<h2 style="margin-bottom:10px;">
-<a href="{{ .RelPermalink }}">
-{{ .Title }}
-</a>
-</h2>
+      <a href="{{ .RelPermalink }}">Read More →</a>
 
-<p style="color:#666;">
-{{ .Summary }}
-</p>
-
-<a href="{{ .RelPermalink }}">
-Read More →
-</a>
-
-</div>
-
-{{ end }}
-
-</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
 
 </section>
 
