@@ -32,8 +32,8 @@ url = "docs/"
 weight = 6
 
 [[main]]
-name = "Demo"
-url = "demo/"
+name = "Applications"
+url = "applications/"
 weight = 7
 
 [[main]]
