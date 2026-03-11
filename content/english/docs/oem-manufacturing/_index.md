@@ -1,149 +1,188 @@
 ---
-title: "International Technical Service Packages"
-description: "Technical service packages for irrigation design, fertigation planning, control system review, BOM preparation, and project support."
+title: "OEM Manufacturing for Irrigation Systems"
+description: "OEM manufacturing and customization capabilities for irrigation controllers, fertigation systems, valve control modules, and smart irrigation platforms."
 draft: false
-bg_image: "images/call-to-action-bg.jpg"
 ---
 
-PKYDrip provides practical technical support for irrigation and fertigation projects, especially for customers who need system review, equipment selection guidance, BOM preparation, wiring logic support, or project-oriented documentation before purchasing and implementation.
+PKYDrip provides OEM manufacturing and customization services for irrigation system components, including irrigation controllers, valve control modules, fertigation equipment, and integrated smart irrigation solutions.
 
-These service packages are suitable for:
-
-- irrigation contractors
-- EPC project teams
-- distributors and regional partners
-- agricultural system integrators
-- growers preparing real irrigation projects
+Our OEM cooperation model is designed for irrigation brands, system integrators, distributors, and project companies that require stable supply, technical flexibility, and long-term manufacturing support.
 
 ---
 
-## What We Can Support
+## OEM Products We Support
 
-Our technical service packages may include the following support items, depending on project scope:
+PKYDrip OEM manufacturing can cover several key irrigation system components.
 
-- irrigation system direction review
-- pump and valve control logic suggestions
-- fertigation system structure planning
-- controller selection guidance
-- irrigation zoning recommendations
-- BOM preparation support
-- wiring and connection guidance
-- remote technical discussion support
+### Irrigation Controllers
 
----
+- multi-zone irrigation controllers  
+- greenhouse irrigation controllers  
+- landscape irrigation controllers  
+- agriculture irrigation control systems  
+- multi-station programmable controllers  
 
-## Typical Project Types
+Typical capabilities:
 
-These services are commonly used for:
-
-- greenhouse irrigation and fertigation projects
-- orchard and open-field drip irrigation systems
-- multi-zone irrigation controller projects
-- solar irrigation systems
-- remote valve control systems
-- fertigation control and dosing system planning
+- up to 60 irrigation zones
+- timed irrigation and automatic irrigation logic
+- sensor integration
+- remote communication options
 
 ---
 
-## Typical Deliverables
+### Fertigation Control Systems
 
-Depending on the complexity of the project, deliverables may include:
+OEM fertigation control solutions include:
 
-- system structure suggestions
-- equipment selection notes
-- valve zoning logic
-- pump control recommendations
-- BOM list
-- wiring diagram reference
-- layout suggestions
-- remote discussion summary
+- EC / pH control systems
+- multi-channel fertilizer dosing
+- mixing tank automation
+- irrigation-fertigation coordination
+- touchscreen control interfaces
 
----
+Typical configuration options:
 
-## Service Package Levels
-
-### Basic Package
-
-Suitable for early-stage discussions and simple system direction review.
-
-Typical scope:
-
-- basic irrigation direction review
-- simple equipment suggestions
-- entry-level controller recommendation
-- basic project feedback
-
-### Standard Package
-
-Suitable for projects that need more structured planning support.
-
-Typical scope:
-
-- irrigation zoning suggestions
-- controller and valve logic review
-- equipment combination guidance
-- BOM preparation support
-- project discussion support
-
-### Advanced / Project Package
-
-Suitable for larger or more technical projects requiring deeper review.
-
-Typical scope:
-
-- multi-zone system review
-- fertigation planning support
-- pump-control coordination suggestions
-- structured BOM and wiring guidance
-- remote project discussion and technical follow-up
+- 3–9 fertilizer channels
+- automatic mixing control
+- pump coordination
+- dosing control logic
 
 ---
 
-## Who This Is Best For
+### Valve Control Systems
 
-This page is most useful for customers who:
+Wireless and wired valve control systems can be customized for different irrigation environments.
 
-- already have a real project requirement
-- need technical clarification before ordering equipment
-- want a structured irrigation system discussion
-- need support for proposal preparation or internal project review
-- want to reduce mistakes before purchasing controllers, valves, pumps, or fertigation equipment
+Typical modules include:
+
+- LoRa valve controllers
+- solar valve controllers
+- battery powered valve controllers
+- wired AC valve modules
+- remote irrigation valve networks
+
+These solutions are commonly used for:
+
+- orchards
+- vineyards
+- landscape irrigation
+- open-field agriculture
+- remote irrigation areas
 
 ---
 
-## What This Page Is Not
+### Integrated Smart Irrigation Platforms
 
-These technical service packages are designed to support project planning and decision-making.
+PKYDrip also supports OEM customization for integrated irrigation platforms.
 
-They are **not** intended to replace full local engineering responsibility, on-site civil design, or region-specific construction compliance review. Final installation and local project execution should always be confirmed according to actual site conditions and regional requirements.
+This may include:
+
+- irrigation controller + cloud platform
+- sensor integration
+- mobile monitoring
+- remote valve control
+- irrigation data management
+
+Communication options can include:
+
+- RS485
+- LoRa
+- WiFi
+- 4G / LTE
+- MQTT cloud integration
 
 ---
 
-## Before Contacting PKYDrip
+## OEM Customization Options
 
-To make technical review more efficient, please prepare the following information if possible:
+OEM cooperation may include multiple levels of customization depending on the project.
 
-- project size
-- crop type
-- irrigation method
-- water source
-- power condition
-- existing pump information
-- number of irrigation zones
-- photos or layout sketch of the site
+Typical customization options include:
+
+- product branding
+- logo customization
+- enclosure labeling
+- packaging design
+- firmware customization
+- controller parameter configuration
+- regional voltage adaptation
+- communication module selection
+
+---
+
+## Typical OEM Customers
+
+PKYDrip OEM manufacturing services are suitable for:
+
+- irrigation brands
+- irrigation distributors
+- agriculture equipment companies
+- greenhouse integrators
+- landscape irrigation contractors
+- irrigation system startups
+- regional irrigation solution providers
+
+---
+
+## Manufacturing and Supply Chain
+
+PKYDrip products are manufactured using components sourced from China's irrigation and electronics manufacturing supply chains.
+
+Advantages include:
+
+- stable component sourcing
+- flexible customization
+- scalable production
+- rapid product iteration
+- competitive manufacturing cost
+
+Our manufacturing model supports both:
+
+- standard product supply
+- customized OEM product development
+
+---
+
+## OEM Cooperation Process
+
+A typical OEM cooperation process may follow these steps:
+
+1. product category discussion  
+2. technical requirement clarification  
+3. controller / system structure confirmation  
+4. prototype or configuration confirmation  
+5. branding and packaging customization  
+6. pilot production  
+7. mass production and supply  
+
+---
+
+## Documentation and Technical Support
+
+To support OEM partners, PKYDrip can also provide:
+
+- product documentation
+- system structure explanations
+- controller configuration guides
+- installation guidance
+- technical consultation support
+
+These materials help partners integrate irrigation products into their own system solutions.
 
 ---
 
 ## Related Documentation
 
-- [OEM Manufacturing for Irrigation Systems](/docs/oem-manufacturing/)
-- [Pump Sizing Tools](/tools/pump-sizing/)
+- [International Technical Service Packages](/docs/service-packages/)
 - [Irrigation Solutions](/solution/)
+- [Irrigation Controllers](/product/)
 
 ---
 
-## Need Technical Support for Your Project?
+## Interested in OEM Cooperation?
 
-If you want PKYDrip to review your irrigation project, prepare the basic project information and contact us for discussion.
+If your company is interested in OEM manufacturing or customized irrigation systems, you can contact PKYDrip to discuss possible cooperation.
 
-**[Contact Us on WhatsApp](https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20want%20to%20discuss%20your%20International%20Technical%20Service%20Packages.)**
+**WhatsApp:**  
+https://wa.me/8617395297329
