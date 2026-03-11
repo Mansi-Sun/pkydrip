@@ -48,7 +48,7 @@ cta:
 
 ############################# Funfacts ###############################
 funfacts:
-  enable: true
+  enable: false
   title: "Why Project Customers Work With PKYDrip"
   description: "We focus on modular irrigation control systems, practical project support, and scalable engineering structure."
   funfact_item:
