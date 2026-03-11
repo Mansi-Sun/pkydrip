@@ -1,230 +1,227 @@
 ---
 title: "Smart Open Field Irrigation Control System"
-description: "A modular irrigation automation solution for open-field farms and orchards, supporting pump control, multi-zone valve management, sensor integration, and scalable field irrigation architecture."
+description: "A modular irrigation automation solution for open-field farms and orchards, supporting pump control, multi-zone valve management, sensor integration, and scalable irrigation architecture."
 layout: "solution"
 url: "/solution/open-field-irrigation-system/"
 draft: false
+image: "images/solution/open-field-irrigation.webp"
+hero_title: "Smart Open Field Irrigation Control System"
+hero_description: "A modular irrigation automation solution for open-field farms, orchards, and project-based irrigation upgrades."
 ---
+
 
 PKYDrip provides a modular irrigation automation solution designed for **open-field farms, orchards, and project-based irrigation upgrades**.
 
-This system is built to help growers, contractors, and irrigation integrators manage irrigation more efficiently through structured **pump control**, **zone-based irrigation scheduling**, and optional **sensor**, **wireless**, and **fertigation** expansion.
+The system organizes irrigation through a structured architecture combining:
 
-Instead of depending on repeated manual switching and fragmented field operations, the irrigation system can be organized into a more reliable control structure that supports both current project needs and future upgrades.
+- pump automation  
+- multi-zone valve control  
+- irrigation scheduling  
+- optional sensors and monitoring  
+- future fertigation integration  
+
+Instead of relying on manual switching and fragmented operation, irrigation can be managed through a stable control workflow suitable for larger farms and contractor projects.
 
 ---
 
-## Common Challenges in Open Field Irrigation Projects
+# Common Challenges in Open Field Irrigation
 
-Open-field irrigation projects often become more difficult to manage as the irrigation area increases.
+Many farms still rely on manual valve operation or basic timers.
 
-Many farms still rely on a combination of manual valve switching, fixed pump operation, and field experience rather than a structured automation logic. This may be workable in small areas, but it becomes inefficient when the irrigation network expands or when one pump must serve multiple zones.
+This approach becomes difficult when irrigation areas grow larger or when multiple irrigation zones must share one pump.
 
 Typical challenges include:
 
-- one pump supplying multiple irrigation zones  
-- manual switching of valves over a wide area  
-- inconsistent irrigation duration between different zones  
-- difficulty coordinating irrigation timing across the whole farm  
+- one pump serving many irrigation zones  
+- manual switching of valves across the farm  
+- inconsistent irrigation timing  
+- difficulty coordinating irrigation schedules  
 - limited visibility when operators are off-site  
-- future need for fertigation or sensor integration  
-- expansion pressure when the original system was not designed in a modular way  
+- future expansion requirements  
 
-PKYDrip helps organize these irrigation tasks into a structured control architecture that is easier to manage and expand.
-
----
-
-## Suitable For
-
-This solution is suitable for:
-
-- open-field farms using **one pump with multiple irrigation zones**  
-- orchards that require structured zone irrigation  
-- retrofit projects where the existing hydraulic system can still be reused  
-- farms upgrading from manual irrigation routines to scheduled automation  
-- contractors building irrigation control systems for agricultural projects  
-- distributors and system integrators looking for modular irrigation architecture  
-
-This type of solution is generally more suitable for **project-based irrigation systems** than for very small single-zone watering needs.
+PKYDrip helps organize irrigation into a **clear control structure** that is easier to operate and expand.
 
 ---
 
-## Typical System Architecture
+# Suitable Applications
 
-A typical open-field irrigation system combines **water delivery infrastructure** with a **control and monitoring layer**.
+This system is suitable for:
 
-A simplified architecture usually includes:
+- open field crop irrigation  
+- orchard irrigation projects  
+- irrigation retrofit upgrades  
+- contractor irrigation installations  
+- farms moving from manual irrigation to automation  
+
+The architecture is designed for **project-based irrigation systems**, rather than small garden irrigation.
+
+---
+
+# Typical System Architecture
+
+A typical open field irrigation system contains both **hydraulic infrastructure** and a **control layer**.
+
+Core components usually include:
 
 - water source  
-- pump and pressure supply  
-- mainline and filtration section  
-- central irrigation controller  
+- pump system  
+- filtration system  
+- irrigation controller  
 - zone valves  
-- field irrigation areas  
+- irrigation zones  
 
-Optional modules may also be added depending on project requirements:
+Optional modules may include:
 
-- wireless field devices  
+- wireless field controllers  
 - soil moisture sensors  
-- flow monitoring  
 - pressure monitoring  
-- fertigation equipment  
-- cloud communication or remote access  
+- flow monitoring  
+- fertigation systems  
+- cloud communication
 
-This layered structure allows the system to remain practical at the start and become more advanced later without rebuilding the entire project.
+![Open Field Irrigation Architecture](/images/solution/open-field-irrigation-architecture-pro.svg)
 
 ---
 
-## Main System Components
+# Main System Components
 
-### Central Irrigation Controller
+## Central Irrigation Controller
 
-The main controller manages irrigation programs and core operating logic.
+The irrigation controller manages the core system logic.
 
 Typical functions include:
 
 - irrigation scheduling  
-- pump start and stop control  
-- sequential zone operation  
+- pump control  
+- zone sequence control  
 - manual override  
-- communication with sensors or field devices  
-- future expansion for fertigation or remote access  
+- integration with sensors  
+- communication modules
 
-The controller acts as the core coordination point between the irrigation plan and the physical system.
-
----
-
-### Field Control Devices
-
-For large farms or distributed irrigation layouts, remote field devices can be used closer to irrigation zones.
-
-This helps reduce wiring complexity and supports a more flexible deployment structure across long-distance field installations.
-
-Depending on the project, field control devices may work through wired communication or wireless communication modules.
+The controller acts as the central brain of the irrigation system.
 
 ---
 
-### Sensors and Monitoring
+## Field Control Devices
 
-Sensors can be integrated when irrigation decisions need to respond to actual field conditions or when operational monitoring becomes important.
+For larger farms, remote control modules can be placed closer to irrigation zones.
 
-Common options include:
+This helps reduce wiring complexity and allows more flexible installation across large irrigation areas.
+
+Depending on the project, communication may use:
+
+- RS485  
+- LoRa wireless  
+- 4G gateway connection
+
+---
+
+## Sensors and Monitoring
+
+Sensors can improve irrigation visibility and decision making.
+
+Common sensor types include:
 
 - soil moisture sensors  
 - flow sensors  
 - pressure sensors  
-- EC / pH sensors in fertigation-related systems  
+- EC / pH sensors (for fertigation systems)
 
-These devices help improve system visibility and support more data-based irrigation management.
+These devices allow irrigation systems to respond to real field conditions.
 
 ---
 
-### Valve and Pump Interface
+## Pump and Valve Control
 
-The control system must connect reliably to hydraulic equipment.
+The control system interfaces directly with irrigation hardware.
 
-Typical controlled elements include:
+Controlled equipment may include:
 
+- irrigation pumps  
 - solenoid valves  
 - electric valves  
-- irrigation pumps  
-- pump contactors  
-- relay-based control outputs  
+- relay outputs  
+- pump contactors
 
-This interface layer is what allows digital control logic to operate the real irrigation infrastructure in the field.
+This layer connects digital control logic with the physical irrigation system.
 
 ---
 
-## How the Irrigation Logic Works
+# How Sequential Irrigation Works
 
-A common open-field irrigation workflow is based on **pump coordination and zone sequencing**.
+Open field irrigation often uses **sequential valve control logic**.
 
-A typical operating sequence may look like this:
+Instead of running all zones simultaneously, irrigation runs one zone after another.
 
-1. the controller starts or enables the pump  
-2. the first irrigation zone opens  
-3. the zone irrigates for the planned duration  
-4. the first zone closes  
-5. the next zone opens automatically  
-6. the sequence continues across all programmed zones  
-7. the system stops automatically after the cycle is completed  
+Typical sequence:
 
-This kind of logic is especially useful when a single pump must serve multiple irrigation zones in an organized and repeatable way.
+1. pump starts  
+2. zone 1 valve opens  
+3. zone 1 runs for the scheduled duration  
+4. zone 1 closes  
+5. zone 2 opens  
+6. irrigation continues through all zones  
+7. system stops automatically
 
-Depending on project needs, the system can also support:
+This method helps match pump capacity with irrigation demand.
+
+Additional logic may include:
 
 - weekly irrigation programs  
-- date-based irrigation programs  
-- remote manual control  
 - sensor-triggered irrigation  
-- alarm logic for abnormal flow or pressure  
-- fertigation operation linked to selected zones  
+- flow alarms  
+- fertigation control
+
+![Sequential Valve Irrigation Logic](/images/solution/sequential-valve-logic-pro.svg)
 
 ---
 
-## Why a Modular Structure Matters
+# Example Irrigation Zoning
 
-Open-field irrigation projects are rarely completed in a single ideal stage.
+Large irrigation areas are usually divided into zones based on:
 
-In real farm conditions, irrigation systems often need to adapt to existing pipelines, pump limitations, budget constraints, and future expansion plans. A modular structure allows the project to start with the essential automation functions and later expand in a controlled way.
+- pipe layout  
+- pump capacity  
+- crop layout  
+- irrigation method  
+- future expansion plans
 
-This is especially useful when the customer wants to:
+Zoning improves irrigation efficiency and simplifies management.
 
-- begin with pump and basic valve automation  
-- reserve capacity for additional irrigation zones  
-- add wireless field control later  
-- connect monitoring sensors in the future  
-- introduce fertigation modules at a later stage  
-- upgrade to remote monitoring without redesigning the full system  
-
-A modular structure helps reduce disruption while keeping the system open for long-term development.
+![Open Field Irrigation Zoning Example](/images/solution/open-field-zoning-example-pro.svg)
 
 ---
 
-## Related Open Field Applications
+# Related Applications
 
-The same system structure can be adapted to different agricultural scenarios.
+The same architecture can be adapted for:
 
-### Orchard Irrigation Projects
+### Orchard Irrigation
 
-Suitable for tree crop irrigation systems where multiple zones must be managed in a stable sequence.
+Tree crop irrigation requiring multiple irrigation zones.
 
-### Field Crop Irrigation Upgrades
+### Field Crop Irrigation
 
-Suitable for farms that want to move from manual operation to planned irrigation scheduling.
+Large area irrigation with drip or sprinkler systems.
 
-### Pump and Valve Retrofit Systems
+### Irrigation Retrofit Projects
 
-Suitable for projects where the hydraulic infrastructure already exists but the control logic needs improvement.
-
----
-
-## Related Engineering Resources
-
-For deeper technical understanding, the following engineering topics are often relevant:
-
-- How to Choose an Irrigation Controller for Farm Projects  
-- Understanding Sequential Valve Irrigation Logic  
-- Basic Pump and Zone Planning for Large Irrigation Areas  
-
-These topics help explain the engineering logic behind irrigation automation and modular system design.
+Automation upgrades for existing irrigation infrastructure.
 
 ---
 
-## Planning an Open Field Irrigation Project?
+# Planning an Open Field Irrigation Project
 
-If you are planning a farm or orchard irrigation system, it is helpful to prepare a few basic project details before discussion.
+When planning a project, useful information includes:
 
-Useful information includes:
+- irrigation area  
+- water source  
+- pump power or flow rate  
+- number of irrigation zones  
+- irrigation type (drip / sprinkler)  
+- whether remote monitoring is needed  
+- whether fertigation expansion is planned
 
-- total irrigation area  
-- water source type  
-- pump power or pump flow rate  
-- estimated number of irrigation zones  
-- irrigation type such as drip or sprinkler  
-- whether remote control is required  
-- whether fertigation expansion is planned  
+Providing these details allows a more accurate irrigation system design.
 
-With this information, a more suitable irrigation control structure can be suggested.
-
-**Talk to the PKYDrip engineering team to discuss your open-field irrigation project.**
+**Contact the PKYDrip engineering team to discuss your irrigation project.**
