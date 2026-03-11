@@ -1,1 +1,25 @@
+{{ define "main" }}
 
+<article class="container" style="max-width:900px;margin:auto;padding:40px 20px;">
+
+<h1 style="margin-bottom:20px;">
+{{ .Title }}
+</h1>
+
+{{ if .Params.description }}
+
+<p style="color:#666;margin-bottom:30px;">
+{{ .Params.description }}
+</p>
+
+{{ end }}
+
+<div class="content">
+
+{{ .Content }}
+
+</div>
+
+</article>
+
+{{ end }}
