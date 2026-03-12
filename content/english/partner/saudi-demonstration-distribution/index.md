@@ -8,8 +8,6 @@ page_code: "PC-PARTNER-SA-DEM-01"
 cta_whatsapp: "https://wa.me/8613803373007?text=Hi%20PKYDrip%2C%20I%20am%20interested%20in%20Saudi%20Demonstration%20%26%20Distribution%20Program.%0A%0APage%20Code%3A%20PC-PARTNER-SA-DEM-01%0APage%20Title%3A%20Saudi%20Demonstration%20%26%20Distribution%20Program%0ASource%3A%20https%3A%2F%2Fsmart.pky-dripirrigation.com%2Fpartner%2Fsaudi-demonstration-distribution%2F%0A%0ARequest%3A%20Please%20suggest%20a%20recommended%20system%20structure%20for%20(Pump%20%2B%20Auto%20Tank%20Refill%20%2B%20Sequential%20Irrigation%20Zones)%20and%20a%20budget%20range.%0A%0AFarm%20size%3A%20____%20(acres)%0AWater%20source%3A%20well%20%2F%20tank%20%2F%20other%0APower%3A%20solar%20%2F%20grid%20%2F%20hybrid"
 ---
 
-# Saudi Demonstration & Distribution Program
-
 > **Hidden Partner Page** — share only with qualified leads via WhatsApp / Email.  
 > **Page Code:** `PC-PARTNER-SA-DEM-01`
 
