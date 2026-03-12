@@ -1,15 +1,63 @@
 {{ define "main" }}
 
-<section class="page-title-area">
-  <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
-  </div>
-</section>
+<section class="section">
+  <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 40px 20px;">
 
-<section class="page-content-area" style="padding:40px 0;">
-  <div class="container">
-    {{ .Content }}
+    <header style="margin-bottom: 30px;">
+      <h1 style="margin-bottom: 12px;">{{ .Title }}</h1>
+
+      {{ with .Params.description }}
+      <p style="color: #666; font-size: 1.05rem; line-height: 1.8; max-width: 820px;">
+        {{ . }}
+      </p>
+      {{ end }}
+    </header>
+
+    {{ if .Content }}
+    <div class="content" style="margin-bottom: 40px;">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
+    {{ $pages := .Pages.ByWeight }}
+    {{ if eq (len $pages) 0 }}
+      <div style="padding: 24px; background: #f8f8f8; border-radius: 8px; color: #666;">
+        No partner pages available yet.
+      </div>
+    {{ else }}
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        {{ range $pages }}
+        <article style="border: 1px solid #e5e5e5; border-radius: 12px; padding: 24px; background: #fff;">
+          {{ with .Params.image }}
+          <div style="margin-bottom: 16px;">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 100%; height: auto; border-radius: 8px;">
+          </div>
+          {{ end }}
+
+          <h2 style="font-size: 1.25rem; margin-bottom: 12px;">
+            <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+              {{ .Title }}
+            </a>
+          </h2>
+
+          {{ with .Params.summary }}
+          <p style="color: #666; line-height: 1.8; margin-bottom: 16px;">
+            {{ . }}
+          </p>
+          {{ else }}
+          <p style="color: #666; line-height: 1.8; margin-bottom: 16px;">
+            {{ .Summary | plainify | truncate 140 }}
+          </p>
+          {{ end }}
+
+          <a href="{{ .RelPermalink }}" style="display: inline-block; text-decoration: none; font-weight: 600;">
+            View Details →
+          </a>
+        </article>
+        {{ end }}
+      </div>
+    {{ end }}
+
   </div>
 </section>
 
