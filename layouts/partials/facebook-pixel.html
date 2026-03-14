@@ -15,3 +15,22 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1261846228680902&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+<script>
+document.addEventListener("click", function(e) {
+
+  var link = e.target.closest("a");
+
+  if (!link) return;
+
+  if (link.href.includes("wa.me") || link.href.includes("whatsapp.com")) {
+
+    if (typeof fbq === "function") {
+      fbq('track', 'Contact');
+      console.log("Meta Pixel Contact event triggered");
+    }
+
+  }
+
+});
+</script>
