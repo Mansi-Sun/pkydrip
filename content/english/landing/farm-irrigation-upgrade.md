@@ -2,7 +2,7 @@
 title: "Upgrade Existing Farm Irrigation Systems"
 description: "Upgrade existing farm irrigation systems with pump and valve automation for multi-zone farm irrigation projects in Australia and New Zealand."
 layout: "landing"
-url: "/landing/australia-farm-irrigation-upgrade/"
+url: "/landing/farm-irrigation-upgrade/"
 draft: false
 
 banner:
