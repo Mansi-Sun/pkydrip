@@ -1,7 +1,7 @@
 ---
 title: "Irrigation Design Wizard for New Farms and Projects"
 description: "Plan your irrigation system based on farm size, crop type, water source, irrigation method, and automation goals. A practical irrigation design wizard for new farm planning and early project estimation."
-layout: "irrigation-wizard"
+type: "irrigation-wizard"
 url: "/tools/irrigation-design-wizard/"
 draft: false
 ---
