@@ -170,6 +170,14 @@
       </p>
     </div>
 
+    <div style="background:#f7f9fb;border:1px solid #e5e7eb;border-radius:12px;padding:24px;">
+      <h2 style="margin-top:0;">Related Pages</h2>
+      <ul style="line-height:1.9;margin-bottom:0;">
+        <li><a href="/solution/open-field-irrigation/">Open-Field Irrigation Solution</a></li>
+        <li><a href="/solution/irrigation-retrofit-upgrade/">Irrigation Retrofit Upgrade</a></li>
+      </ul>
+    </div>
+
   </div>
 
 </section>
@@ -196,23 +204,58 @@ function generateWizardSummary() {
 
   const parts = [];
 
-  if (farmSize) parts.push(farmSize + " " + sizeUnit);
-  if (projectType) parts.push(projectType + " project");
-  else parts.push("irrigation project");
-  if (cropType) parts.push("for " + cropType);
-  if (irrigationMethod) parts.push("using or considering " + irrigationMethod);
-  if (waterSource) parts.push("with water from " + waterSource);
-  if (irrigationHours) parts.push("and an irrigation window of " + irrigationHours);
+  if (farmSize) {
+    parts.push(farmSize + " " + sizeUnit);
+  }
+
+  if (projectType) {
+    parts.push(projectType + " project");
+  } else {
+    parts.push("irrigation project");
+  }
+
+  if (cropType) {
+    parts.push("for " + cropType);
+  }
+
+  if (irrigationMethod) {
+    parts.push("using or considering " + irrigationMethod);
+  }
+
+  if (waterSource) {
+    parts.push("with water from " + waterSource);
+  }
+
+  if (irrigationHours) {
+    parts.push("and an irrigation window of " + irrigationHours);
+  }
 
   let summary = parts.join(", ");
-  if (summary) summary += ".";
-  else summary = "Early-stage irrigation project. More project details are needed.";
+  if (summary) {
+    summary += ".";
+  } else {
+    summary = "Early-stage irrigation project. More project details are needed.";
+  }
 
-  if (pumpInfo) summary += " Pump reference: " + pumpInfo + ".";
-  if (flowInfo) summary += " Known water capacity: " + flowInfo + ".";
-  if (automationLevel) summary += " Automation target: " + automationLevel + ".";
-  if (existingSystem) summary += " Existing system status: " + existingSystem + ".";
-  if (notes) summary += " Notes: " + notes + ".";
+  if (pumpInfo) {
+    summary += " Pump reference: " + pumpInfo + ".";
+  }
+
+  if (flowInfo) {
+    summary += " Known water capacity: " + flowInfo + ".";
+  }
+
+  if (automationLevel) {
+    summary += " Automation target: " + automationLevel + ".";
+  }
+
+  if (existingSystem) {
+    summary += " Existing system status: " + existingSystem + ".";
+  }
+
+  if (notes) {
+    summary += " Notes: " + notes + ".";
+  }
 
   let direction = "";
   const isExisting = existingSystem && existingSystem !== "New project / not built yet";
@@ -220,15 +263,37 @@ function generateWizardSummary() {
 
   if (isExisting || hasExistingWater) {
     direction += "<p>This project appears to include existing infrastructure. The planning direction should start from available water supply, current pump condition, and zoning logic.</p>";
+    direction += "<ul>";
+    direction += "<li>Review whether the existing pump and water source can support the target irrigation method.</li>";
+    direction += "<li>Consider dividing the system into multiple irrigation zones.</li>";
+    direction += "<li>Evaluate whether retrofit control, remote operation, or staged automation is more suitable than complete rebuilding.</li>";
+    direction += "</ul>";
   } else {
     direction += "<p>This project appears to be a new farm or new irrigation planning case.</p>";
+    direction += "<ul>";
+    direction += "<li>Choose the irrigation method based on crop type, field condition, and water availability.</li>";
+    direction += "<li>Estimate pump flow and irrigation time based on zoning, not full-area irrigation at once.</li>";
+    direction += "<li>Plan control structure early if multi-zone irrigation, fertigation, or remote management may be added later.</li>";
+    direction += "</ul>";
+  }
+
+  if (!irrigationMethod) {
+    direction += "<p><strong>Note:</strong> Irrigation method is not confirmed yet. This should be reviewed before final pump sizing.</p>";
+  }
+
+  if (!waterSource && !flowInfo && !pumpInfo) {
+    direction += "<p><strong>Note:</strong> Water capacity is still unclear. Pump flow, pressure, and available water condition should be confirmed before final equipment recommendation.</p>";
   }
 
   let nextStep = "";
   if (isExisting || hasExistingWater) {
+    nextStep += "<p>Recommended next step: review the retrofit logic page and send your current system details for a more accurate upgrade suggestion.</p>";
     nextStep += '<p><a href="/solution/irrigation-retrofit-upgrade/">View Irrigation Retrofit Upgrade</a></p>';
-  } else {
+  } else if (projectType === "open field" || projectType === "orchard" || projectType === "greenhouse") {
+    nextStep += "<p>Recommended next step: review a typical system structure and then send this summary for project discussion.</p>";
     nextStep += '<p><a href="/solution/open-field-irrigation/">View Open-Field Irrigation Solution</a></p>';
+  } else {
+    nextStep += "<p>Recommended next step: send this summary by WhatsApp so the project can be reviewed based on your site condition, water source, and automation target.</p>";
   }
 
   document.getElementById("summaryText").innerHTML = "<p>" + summary + "</p>";
@@ -236,8 +301,14 @@ function generateWizardSummary() {
   document.getElementById("nextStepText").innerHTML = nextStep;
   document.getElementById("wizard-result").style.display = "block";
 
-  const waText = "Hello, I completed the PKYDrip Irrigation Design Wizard. Here is my project summary:%0A%0A" + encodeURIComponent(summary);
-  document.getElementById("waButton").href = "https://wa.me/8617395297329?text=" + waText;
+  const waMessage =
+    "Hello, I completed the PKYDrip Irrigation Design Wizard.%0A%0A" +
+    "Project summary:%0A" +
+    encodeURIComponent(summary) +
+    "%0A%0APlease review this project and suggest a suitable irrigation control direction.";
+
+  document.getElementById("waButton").href =
+    "https://wa.me/8617395297329?text=" + waMessage;
 }
 
 function copyWizardSummary() {
