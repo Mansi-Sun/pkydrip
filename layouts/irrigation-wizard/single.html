@@ -1,6 +1,168 @@
 {{ define "main" }}
 
-<section class="container" style="max-width:1000px;margin:auto;padding:40px 20px;">
+<style>
+  .wizard-wrap {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  .wizard-intro {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .wizard-card {
+    background: #f7f9fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  .wizard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .wizard-field label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .wizard-field input,
+  .wizard-field select,
+  .wizard-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .wizard-field textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+
+  .wizard-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .wizard-btn,
+  .wizard-link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .wizard-btn-primary {
+    border: none;
+    background: #111827;
+    color: #fff;
+  }
+
+  .wizard-btn-secondary {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #111827;
+  }
+
+  .wizard-btn-whatsapp {
+    border: 1px solid #25D366;
+    background: #25D366;
+    color: #fff;
+  }
+
+  .wizard-result {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  .wizard-result p,
+  .wizard-result li {
+    line-height: 1.8;
+  }
+
+  .wizard-related {
+    background: #f7f9fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .wizard-wrap {
+      padding: 24px 14px;
+    }
+
+    .wizard-card,
+    .wizard-result,
+    .wizard-related {
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .wizard-intro {
+      font-size: 17px;
+    }
+
+    .wizard-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .wizard-actions {
+      flex-direction: column;
+    }
+
+    .wizard-btn,
+    .wizard-link-btn {
+      width: 100%;
+      min-height: 50px;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.35;
+    }
+  }
+</style>
+
+<section class="wizard-wrap">
 
   <h1 style="margin-bottom:20px;">{{ .Title }}</h1>
 
@@ -8,23 +170,23 @@
   <p style="color:#666;margin-bottom:30px;font-size:16px;">{{ . }}</p>
   {{ end }}
 
-  <div style="line-height:1.8;font-size:16px;margin-bottom:30px;">
+  <div class="wizard-intro">
     {{ .Content }}
   </div>
 
   <div id="wizard-tool" style="max-width:980px;margin:30px auto 0 auto;">
 
-    <div style="background:#f7f9fb;border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin-bottom:24px;">
+    <div class="wizard-card">
       <h2 style="margin-top:0;">Project Input</h2>
       <p style="color:#666;margin-bottom:20px;">
         Fill in what you know. You do not need to complete everything.
       </p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
+      <div class="wizard-grid">
 
-        <div>
-          <label for="projectType"><strong>Project Type</strong></label><br>
-          <select id="projectType" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="projectType">Project Type</label>
+          <select id="projectType">
             <option value="">Select</option>
             <option value="orchard">Orchard</option>
             <option value="open field">Open Field Crops</option>
@@ -34,30 +196,28 @@
           </select>
         </div>
 
-        <div>
-          <label for="cropType"><strong>Crop Type</strong></label><br>
-          <input id="cropType" type="text" placeholder="e.g. citrus, vegetables, berries"
-            style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="cropType">Crop Type</label>
+          <input id="cropType" type="text" placeholder="e.g. citrus, vegetables, berries">
         </div>
 
-        <div>
-          <label for="farmSize"><strong>Farm Size</strong></label><br>
-          <input id="farmSize" type="text" placeholder="e.g. 50"
-            style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="farmSize">Farm Size</label>
+          <input id="farmSize" type="text" placeholder="e.g. 50">
         </div>
 
-        <div>
-          <label for="sizeUnit"><strong>Size Unit</strong></label><br>
-          <select id="sizeUnit" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="sizeUnit">Size Unit</label>
+          <select id="sizeUnit">
             <option value="acres">Acres</option>
             <option value="hectares">Hectares</option>
             <option value="square meters">Square Meters</option>
           </select>
         </div>
 
-        <div>
-          <label for="irrigationMethod"><strong>Irrigation Method</strong></label><br>
-          <select id="irrigationMethod" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="irrigationMethod">Irrigation Method</label>
+          <select id="irrigationMethod">
             <option value="">Not sure yet</option>
             <option value="drip irrigation">Drip Irrigation</option>
             <option value="micro sprinkler">Micro Sprinkler</option>
@@ -66,9 +226,9 @@
           </select>
         </div>
 
-        <div>
-          <label for="waterSource"><strong>Water Source</strong></label><br>
-          <select id="waterSource" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="waterSource">Water Source</label>
+          <select id="waterSource">
             <option value="">Not confirmed</option>
             <option value="borehole / well">Borehole / Well</option>
             <option value="reservoir / tank">Reservoir / Tank</option>
@@ -78,21 +238,19 @@
           </select>
         </div>
 
-        <div>
-          <label for="pumpInfo"><strong>Pump Info (Optional)</strong></label><br>
-          <input id="pumpInfo" type="text" placeholder="e.g. 5.5kW, 10HP, unknown"
-            style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="pumpInfo">Pump Info (Optional)</label>
+          <input id="pumpInfo" type="text" placeholder="e.g. 5.5kW, 10HP, unknown">
         </div>
 
-        <div>
-          <label for="flowInfo"><strong>Flow / Water Capacity (Optional)</strong></label><br>
-          <input id="flowInfo" type="text" placeholder="e.g. 20 m³/h"
-            style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="flowInfo">Flow / Water Capacity (Optional)</label>
+          <input id="flowInfo" type="text" placeholder="e.g. 20 m³/h">
         </div>
 
-        <div>
-          <label for="irrigationHours"><strong>Available Irrigation Time</strong></label><br>
-          <select id="irrigationHours" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="irrigationHours">Available Irrigation Time</label>
+          <select id="irrigationHours">
             <option value="">Not sure</option>
             <option value="4 hours/day">4 hours/day</option>
             <option value="6 hours/day">6 hours/day</option>
@@ -102,9 +260,9 @@
           </select>
         </div>
 
-        <div>
-          <label for="automationLevel"><strong>Automation Goal</strong></label><br>
-          <select id="automationLevel" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="automationLevel">Automation Goal</label>
+          <select id="automationLevel">
             <option value="">Not sure yet</option>
             <option value="manual valves">Manual Valves</option>
             <option value="timer-based irrigation">Timer-Based Irrigation</option>
@@ -114,9 +272,9 @@
           </select>
         </div>
 
-        <div>
-          <label for="existingSystem"><strong>Existing System Status</strong></label><br>
-          <select id="existingSystem" style="width:100%;padding:10px;margin-top:6px;">
+        <div class="wizard-field">
+          <label for="existingSystem">Existing System Status</label>
+          <select id="existingSystem">
             <option value="">New project / not built yet</option>
             <option value="existing pump">Existing Pump</option>
             <option value="existing well and manual valves">Existing Well and Manual Valves</option>
@@ -125,33 +283,30 @@
           </select>
         </div>
 
-        <div style="grid-column:1 / -1;">
-          <label for="notes"><strong>Additional Notes (Optional)</strong></label><br>
-          <textarea id="notes" rows="4" placeholder="e.g. new orchard project, want remote control, water supply not confirmed yet"
-            style="width:100%;padding:10px;margin-top:6px;"></textarea>
+        <div class="wizard-field" style="grid-column:1 / -1;">
+          <label for="notes">Additional Notes (Optional)</label>
+          <textarea id="notes" rows="4" placeholder="e.g. new orchard project, want remote control, water supply not confirmed yet"></textarea>
         </div>
 
       </div>
 
-      <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;">
-        <button type="button" onclick="generateWizardSummary()"
-          style="padding:12px 18px;border:none;border-radius:8px;cursor:pointer;">
+      <div class="wizard-actions">
+        <button type="button" class="wizard-btn wizard-btn-primary" onclick="generateWizardSummary()">
           Generate Project Summary
         </button>
 
-        <button type="button" onclick="copyWizardSummary()"
-          style="padding:12px 18px;border:1px solid #ccc;border-radius:8px;cursor:pointer;background:#fff;">
+        <button type="button" class="wizard-btn wizard-btn-secondary" onclick="copyWizardSummary()">
           Copy Summary
         </button>
 
         <a id="waButton" href="https://wa.me/8617395297329" target="_blank" rel="noopener"
-          style="padding:12px 18px;border:1px solid #ccc;border-radius:8px;text-decoration:none;background:#fff;display:inline-block;">
+          class="wizard-link-btn wizard-btn-whatsapp">
           Send to WhatsApp
         </a>
       </div>
     </div>
 
-    <div id="wizard-result" style="display:none;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin-bottom:24px;">
+    <div id="wizard-result" class="wizard-result">
       <h2 style="margin-top:0;">Project Summary</h2>
       <div id="summaryText" style="line-height:1.8;"></div>
 
@@ -170,7 +325,7 @@
       </p>
     </div>
 
-    <div style="background:#f7f9fb;border:1px solid #e5e7eb;border-radius:12px;padding:24px;">
+    <div class="wizard-related">
       <h2 style="margin-top:0;">Related Pages</h2>
       <ul style="line-height:1.9;margin-bottom:0;">
         <li><a href="/solution/open-field-irrigation/">Open-Field Irrigation Solution</a></li>
@@ -300,6 +455,7 @@ function generateWizardSummary() {
   document.getElementById("directionText").innerHTML = direction;
   document.getElementById("nextStepText").innerHTML = nextStep;
   document.getElementById("wizard-result").style.display = "block";
+  document.getElementById("wizard-result").scrollIntoView({ behavior: "smooth", block: "start" });
 
   const waMessage =
     "Hello, I completed the PKYDrip Irrigation Design Wizard.%0A%0A" +
