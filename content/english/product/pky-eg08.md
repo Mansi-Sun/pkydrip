@@ -66,6 +66,18 @@ It acts as the **master coordination node** in a LoRa-based irrigation network.
 The gateway does not directly control irrigation logic or pumps.  
 Its role is to **manage LoRa terminal devices** and **bridge wireless field devices** with higher-level control systems.
 
+## Part of a Wireless Irrigation System
+
+This product is designed as part of the PKYDrip LoRa wireless irrigation control system.
+
+It works together with:
+
+- LoRa Irrigation Gateway
+- Wireless Valve Controllers
+- Optional solar power modules
+
+→ [See full system:] (/solution/lora-wireless-irrigation-control/)
+
 ---
 
 ## Where PKY-EG08 Fits
