@@ -121,6 +121,12 @@ If you need pump estimation:
 
 → [Open field irrigation solution](/solution/open-field-irrigation/)
 
+## Practical Example
+
+If you are planning a medium-size farm (5–10 hectares), see this real-world design approach:
+
+→ [Controller selection for 5–10 hectare farm](/solution/how-to-choose-irrigation-controller-for-5-10-hectare-farm/)
+
 ---
 
 ## Important Notes
