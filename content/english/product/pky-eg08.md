@@ -158,6 +158,8 @@ The gateway remains the central coordination point as the network grows.
 - RS485/UART integration enables flexible upstream system design
 - Gateway configuration is aligned with overall system architecture
 - Designed for modular irrigation platforms, not single-device operation
+For system setup and installation:
+→ [Deployment guide](/docs/lora-wireless-control/deployment-guide/)
 
 ---
 
