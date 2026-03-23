@@ -67,4 +67,4 @@ Use the Request Form for complex systems
 
 ## Related Tool Guide
 
-→ [Engineering Tools Overview](/docs/tools/engineering-tools/)
+→ [Engineering Tools Overview](/docs/tools/)
