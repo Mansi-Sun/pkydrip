@@ -160,6 +160,9 @@ These components work together to create a scalable and flexible irrigation cont
 - Open Field Distributed Irrigation
 - Solar Irrigation Control Systems
 
+For large farms, see a practical example:  
+→ [Wireless valve control for open field irrigation](/applications/open-field-wireless-valve-control/)
+
 ---
 
 ## Need a System Design?
