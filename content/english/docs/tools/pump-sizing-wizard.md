@@ -87,4 +87,4 @@ Use the Sprinkler Gun Pump Sizing Chart if:
 
 ## Related Tool Guide
 
-→ [How to Use PKYDrip Engineering Tools](/docs/tools/engineering-tools/)
+→ [How to Use PKYDrip Engineering Tools](/docs/tools/)
