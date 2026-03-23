@@ -154,6 +154,9 @@ The valve controller remains a stable, low-maintenance execution node as the sys
 - Not intended for multi-sensor or complex I/O expansion
 - Best used as a dedicated valve execution device
 
+For system setup and installation:
+→ [Deployment guide](/docs/lora-wireless-control/deployment-guide/)
+
 ---
 
 ## When PKY-IC05 Is the Right Choice
