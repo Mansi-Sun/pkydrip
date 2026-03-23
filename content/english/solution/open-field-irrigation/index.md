@@ -297,6 +297,10 @@ Typical advantages include:
 
 Actual communication distance is not fixed and depends on terrain, antenna height, obstacles and interference conditions. For larger farms or more complex environments, the network can be extended using **repeaters**, optimized antenna placement, or alternative communication methods such as **RS485 (Modbus)**, **4G**, or **WiFi**, depending on project requirements.
 
+For remote or large-scale projects, see our wireless irrigation system
+👉 See more: 
+[lora wireless irrigation control](/solution/lora-wireless-irrigation-control/)
+
 ---
 
 ## Application Regions
