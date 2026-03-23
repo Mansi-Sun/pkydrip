@@ -156,15 +156,16 @@ These components work together to create a scalable and flexible irrigation cont
 
 ## Related Applications
 
-- Orchard Wireless Irrigation Systems
-- Open Field Distributed Irrigation
-- Solar Irrigation Control Systems
+The wireless irrigation control system can be applied in various scenarios:
 
-For solar or no-power environments:
-→ [Off-grid irrigation system](/solution/lora-off-grid-irrigation-system/)
+- Orchard irrigation with distributed valve zones  
+- Open-field irrigation across large distances  
+- Solar-powered irrigation systems in remote areas  
 
-For large farms, see a practical example:  
-→ [Wireless valve control for open field irrigation](/applications/open-field-wireless-valve-control/)
+For specific use cases:
+
+→ [Wireless valve control for open field irrigation](/application/open-field-wireless-valve-control/)  
+→ [Off-grid irrigation system (solar / no power)](/solution/lora-off-grid-irrigation-system/)
 
 ---
 
