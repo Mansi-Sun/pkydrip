@@ -77,4 +77,4 @@ Use the Guided Wizard if:
 
 ## Related Tool Guide
 
-→ [Engineering Tools Overview](/docs/tools/engineering-tools/)
+→ [Engineering Tools Overview](/docs/tools/)
