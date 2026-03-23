@@ -73,6 +73,14 @@ With this information, the irrigation system can be designed accurately and effi
 
 ---
 
+## Learn More
+
+This article explains a typical 5–10 hectare scenario.
+
+For a complete selection methodology:
+
+→ [Irrigation Controller Selection Guide](/docs/irrigation-controller-selection-guide/)
+
 ## Conclusion
 
 For a **5–10 hectare irrigation system**, the key question is not  
