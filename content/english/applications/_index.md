@@ -106,7 +106,11 @@ Typical irrigation systems include:
 - water source  
 - pump system  
 - filtration equipment  
-- irrigation controller  
+- irrigation controller
+  Not sure which controller to choose?
+
+→ [Irrigation Controller Selection Guide](/docs/irrigation-controller-selection-guide/)
+
 - zone valves  
 - irrigation terminals (drip, sprinkler, misting)
 
