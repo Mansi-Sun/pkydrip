@@ -138,12 +138,12 @@ A complete LoRa wireless irrigation system typically includes:
 ### 1. LoRa Irrigation Gateway
 Central communication unit connecting all wireless nodes and optionally linking to cloud or local control systems.
 
-→ View Product: (/product/pky-eg08/)
+→ [View Product]: (/product/pky-eg08/)
 
 ### 2. Wireless Valve Controller
 Distributed control nodes installed near irrigation zones to operate valves.
 
-→ View Product: (/product/pky-ic05/)
+→ [View Product:] (/product/pky-ic05/)
 
 ### 3. Optional Solar Power Kit
 Used in remote areas without stable power supply.
