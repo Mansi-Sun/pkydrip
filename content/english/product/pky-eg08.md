@@ -76,7 +76,7 @@ It works together with:
 - Wireless Valve Controllers
 - Optional solar power modules
 
-→ [See full system:] (/solution/lora-wireless-irrigation-control/)
+→ [See full system] (/solution/lora-wireless-irrigation-control/)
 
 ---
 
