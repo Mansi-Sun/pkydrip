@@ -113,7 +113,8 @@ No system redesign is required.
 ## Next step – choose your solution
 
 - 👉 [View Irrigation Controllers](/irrigation-controller/)
-- 👉 [View Wireless Gateways](/gateway/)
+- 👉 [View Wireless solution](/solution/lora-wireless-irrigation-control/) 
+- 
 - 👉 Or **contact us on WhatsApp** to discuss your project
 
 **Before quotation, we recommend understanding this control logic first.**
