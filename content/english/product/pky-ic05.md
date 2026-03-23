@@ -129,6 +129,9 @@ Once installed, the controller operates with minimal maintenance.
 - Remote irrigation projects where trenching cables is impractical
 - Large farms requiring many independent valve zones
 
+Typical application:  
+→ [Open field wireless irrigation system](/application/open-field-wireless-valve-control/)
+
 ---
 
 ## Expandability & System Growth
