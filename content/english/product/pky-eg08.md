@@ -134,6 +134,9 @@ This flexibility allows EG08 to be used in both standalone and platform-based so
 - Urban landscaping, parks, roadside greenery, and riverbanks
 - Large-area irrigation projects requiring scalable wireless networking
 
+Typical application:  
+→ [Open field wireless irrigation system](/applications/open-field-wireless-valve-control/)
+
 ---
 
 ## Expandability & System Growth
