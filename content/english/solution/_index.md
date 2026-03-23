@@ -31,24 +31,27 @@ This page helps growers, contractors, and project owners quickly find the most r
       </a>
     </div>
   </div>
-
-  <div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
-    <div style="font-size:26px;line-height:1;margin-bottom:12px;">📡</div>
-    <h3 style="margin:0 0 12px 0;">LoRa Remote Irrigation</h3>
-    <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
-      Remote irrigation control solutions designed for off-grid or long-distance irrigation systems.
-    </p>
-    <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
-      <li>Distributed valve zones</li>
-      <li>Wireless irrigation control</li>
-      <li>Low-power remote operation</li>
-    </ul>
-    <div style="margin-top:auto;">
-      <a href="/solution/lora-off-grid-irrigation-system/" style="display:inline-block;background:#2f6fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
-        Start Here →
-      </a>
-    </div>
+<div style="background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);border:1px solid #dbe9f7;border-top:4px solid #2f6fb3;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
+  <div style="font-size:26px;line-height:1;margin-bottom:12px;">📡</div>
+  
+  <h3 style="margin:0 0 12px 0;">Wireless Irrigation Control (LoRa)</h3>
+  
+  <p style="margin:0 0 14px 0;color:#555;line-height:1.7;">
+    A distributed irrigation control system using LoRa wireless communication, designed for large farms, remote zones, and flexible irrigation projects.
+  </p>
+  
+  <ul style="margin:0 0 18px 18px;color:#666;line-height:1.7;">
+    <li>Gateway + wireless valve controller architecture</li>
+    <li>No wiring for long-distance irrigation zones</li>
+    <li>Scalable system for farms and retrofit projects</li>
+  </ul>
+  
+  <div style="margin-top:auto;">
+    <a href="/solution/lora-wireless-irrigation-control/" style="display:inline-block;background:#2f6fb3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      Explore System →
+    </a>
   </div>
+</div>
 
   <div style="background:linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);border:1px solid #d8efe1;border-top:4px solid #1f7a4d;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px;">
     <div style="font-size:26px;line-height:1;margin-bottom:12px;">☀️</div>
