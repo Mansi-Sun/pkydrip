@@ -166,6 +166,7 @@ For specific use cases:
 
 → [Wireless valve control for open field irrigation](/application/open-field-wireless-valve-control/)  
 → [Off-grid irrigation system (solar / no power)](/solution/lora-off-grid-irrigation-system/)
+→ [Read deployment guide](/docs/lora-wireless-control/deployment-guide/)
 
 ---
 
