@@ -51,6 +51,9 @@ If your farm already has a **well, pump, pipeline, or manual irrigation network*
 
 ## Related Technical Page
 
+Need help understanding this tool?  
+→ [Read Full Guide](/docs/tools/irrigation-design-wizard/)
+
 For a structured example of irrigation system logic in agricultural projects, see:
 
 [Smart Water-Saving Irrigation System for Open Field Agriculture](/solution/open-field-irrigation/)
