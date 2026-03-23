@@ -72,6 +72,12 @@ PKY-IC05 does **not** handle irrigation logic, sensor analysis, or complex field
 PKY-IC05 is designed as a low-power, solar-driven execution node
 for modular LoRa-based irrigation systems.
 
+## Part of a Wireless Irrigation System
+
+This product is designed as part of the PKYDrip LoRa wireless irrigation control system.
+
+→ [See full system](/solution/lora-wireless-irrigation-control/)
+
 ---
 
 ## Where PKY-IC05 Fits
