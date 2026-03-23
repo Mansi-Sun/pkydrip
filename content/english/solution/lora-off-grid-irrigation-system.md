@@ -136,4 +136,6 @@ The **LoRa Off-Grid Irrigation System** provides a reliable foundation for irrig
 
 - Sensor integration guide:  
   👉 [How Sensors Are Integrated in PKYDrip Irrigation Systems](/guides/sensor-integration-in-pkydrip-systems/)
+  For large farms, see a practical example:  
+  👉 [Wireless valve control for open field irrigation](/application/open-field-wireless-valve-control/)
 
