@@ -1,26 +1,28 @@
 <meta charset="utf-8">
-<title>{{.Title | default site.Title}}</title>
+<title>{{ .Title | default site.Title }}</title>
 
 <!-- base url -->
-{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/") }}
+{{ else }}
 <base href="{{ .Permalink }}">
 {{ end }}
 
 <!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
-{{ range .AllTranslations }}
-<link rel="alternate" hreflang="{{.Lang}}" href="{{ .RelPermalink | absLangURL }}">
-{{ end }}
-<link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
+  {{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink | absLangURL }}">
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
 {{ end }}
 
 <!-- mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <meta name="description" content="{{ .Params.Description | default site.Params.description }}">
 {{ with site.Params.author }}
-<meta name="author" content="{{ . }}">{{ end }}
+<meta name="author" content="{{ . }}">
+{{ end }}
 {{ hugo.Generator }}
-  
+
 <!-- theme meta -->
 <meta name="theme-name" content="airspace-hugo" />
 
@@ -40,113 +42,108 @@
 {{ end }}
 
 <!-- favicon -->
-{{ $favicon:= site.Params.favicon }}
+{{ $favicon := site.Params.favicon }}
 {{ if $favicon }}
-{{ if fileExists (add `assets/` $favicon) }}
-{{ $favicon:= resources.Get $favicon }}
-{{ $favicon_16:= $favicon.Resize "16x png"}}
-{{ $favicon_32:= $favicon.Resize "32x png"}}
-{{ $favicon_180:= $favicon.Resize "180x png"}}
-<link rel="shortcut icon" href="{{$favicon_32.RelPermalink}}" type="image/x-icon">
-<link rel="icon" href="{{$favicon_32.RelPermalink}}" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="16x16" href="{{$favicon_16.RelPermalink}}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{$favicon_32.RelPermalink}}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{$favicon_180.RelPermalink}}">
+  {{ if fileExists (add `assets/` $favicon) }}
+    {{ $favicon := resources.Get $favicon }}
+    {{ $favicon_16 := $favicon.Resize "16x png" }}
+    {{ $favicon_32 := $favicon.Resize "32x png" }}
+    {{ $favicon_180 := $favicon.Resize "180x png" }}
+    <link rel="shortcut icon" href="{{ $favicon_32.RelPermalink }}" type="image/x-icon">
+    <link rel="icon" href="{{ $favicon_32.RelPermalink }}" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon_16.RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon_32.RelPermalink }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ $favicon_180.RelPermalink }}">
+  {{ end }}
 {{ end }}
-{{ end }}
-<link rel="manifest" href="{{`manifest.webmanifest` | relLangURL }}">
-<meta name="msapplication-TileColor" content="{{site.Params.variables.color_primary | default `#da532c`}}">
-<meta name="theme-color" content="{{site.Params.variables.body_color | default `#ffffff` }}">
 
+<link rel="manifest" href="{{ `manifest.webmanifest` | relLangURL }}">
+<meta name="msapplication-TileColor" content="{{ site.Params.variables.color_primary | default `#da532c` }}">
+<meta name="theme-color" content="{{ site.Params.variables.body_color | default `#ffffff` }}">
 
 <!-- Open Graph image and Twitter Card meta-data -->
 {{ $image_path := .Params.image | default site.Params.image }}
-{{ $image_path_local :=  printf "assets/%s" $image_path }}
+{{ $image_path_local := printf "assets/%s" $image_path }}
 {{ $image_ext := trim (path.Ext $image_path | lower) "." }}
+
 {{ if fileExists $image_path_local }}
-<meta property="og:image" content="{{ $image_path | absURL }}" />
-<!-- If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  -->
-{{ if ne $image_ext "svg" }}
-{{ with (imageConfig $image_path_local) }}
-{{ if (and (gt .Width 144) (gt .Height 144)) }}
-<meta name="twitter:image" content="{{ $image_path | absURL }}" />
-<meta name="twitter:card"
-  content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
+  <meta property="og:image" content="{{ $image_path | absURL }}" />
+  {{ if ne $image_ext "svg" }}
+    {{ with (imageConfig $image_path_local) }}
+      {{ if and (gt .Width 144) (gt .Height 144) }}
+        <meta name="twitter:image" content="{{ $image_path | absURL }}" />
+        <meta name="twitter:card" content="summary{{ if and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height)) }}_large_image{{ end }}">
+      {{ end }}
+      <meta property="og:image:width" content="{{ .Width }}">
+      <meta property="og:image:height" content="{{ .Height }}">
+    {{ end }}
+  {{ end }}
+  <meta property="og:image:type" content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
 {{ end }}
-<meta property="og:image:width" content="{{ .Width }}">
-<meta property="og:image:height" content="{{ .Height }}">
-{{ end }}
-{{ end }}
-<meta property="og:image:type"
-  content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
-{{ end }}
-<meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}" />
-<meta name="twitter:description"
-  content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+
+<meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
 <!-- Iterate over social items -->
 {{ range .Site.Params.social }}
   {{ with .twitter }}
-    <meta name="twitter:site" content="@{{ . }}" />
+  <meta name="twitter:site" content="@{{ . }}" />
   {{ end }}
 {{ end }}
 
 <!-- Iterate over authors -->
 {{ range .Site.Params.authors }}
   {{ with .twitter }}
-    <meta name="twitter:creator" content="@{{ . }}" />
+  <meta name="twitter:creator" content="@{{ . }}" />
   {{ end }}
 {{ end }}
 
-
-
-
 {{ template "_internal/opengraph.html" . }}
 
-<!-- google analytics -->
-{{ template "_internal/google_analytics.html" . }}
+<!-- Google tag (GA4 + Google Ads) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5HHC5PQ2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // GA4
+  gtag('config', 'G-Y5HHC5PQ2D');
+
+  // Google Ads
+  gtag('config', 'AW-16640554458');
+</script>
+
 <!-- Meta Pixel -->
 {{ partial "facebook-pixel.html" . }}
-<!-- google ads -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    if (window.location.href.includes('contact/')) {
-        document.addEventListener('click', function (e) {
-            var dom = e.target.closest('[type="submit"]');
-            if (dom === null) return;
-            var form = dom.closest('form');
 
-            var email = form.querySelector('input[name="email"]').value;
-    
-            if (email != "") {
-                gtag('set', 'user_data', { "email": email });
-                gtag('event', 'conversion', { 'send_to': 'AW-16640554458' });
-            };
-        });
+<!-- Google Ads: thank-you page conversion -->
+<script>
+window.addEventListener('load', function () {
+  if (window.location.href.includes('/message_sent')) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        send_to: 'AW-16640554458/EylDCILU9IEbENrr6v49'
+      });
     }
+  }
 });
 </script>
-<script>
-    window.addEventListener('load', function (event) {
-        if (window.location.href.includes("/message_sent")) {
-            gtag('event', 'conversion', { 'send_to': 'AW-16640554458/EylDCILU9IEbENrr6v49' });
-        }
-    });
-</script>
 
-
+<!-- WhatsApp click tracking -->
 <script>
-    window.addEventListener("load", function (event) {
-        document.querySelectorAll("a[href*='wa.me']").forEach(function (e) {
-            e.addEventListener('click', function () {
-                gtag('event', 'Whatsapp_Click20250917');
-            // Meta Pixel Lead event
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead');
-            }
-            });
-        });
+window.addEventListener('load', function () {
+  document.querySelectorAll("a[href*='wa.me']").forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'Whatsapp_Click20250917');
+      }
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+      }
     });
+  });
+});
 </script>
 
 <!-- Google reCaptcha -->
@@ -154,10 +151,13 @@ document.addEventListener('DOMContentLoaded', function () {
 <script src="https://www.google.com/recaptcha/api.js?render={{ site.Params.recaptcha_site_key }}"></script>
 <script>
   grecaptcha.ready(function() {
-      grecaptcha.execute('{{ site.Params.recaptcha_site_key }}', {action: 'homepage'})
+    grecaptcha.execute('{{ site.Params.recaptcha_site_key }}', {action: 'homepage'})
       .then(function(token) {
-        document.getElementById('captchaResponse').value = token;
+        var captchaInput = document.getElementById('captchaResponse');
+        if (captchaInput) {
+          captchaInput.value = token;
+        }
       });
-    });
+  });
 </script>
 {{ end }}
