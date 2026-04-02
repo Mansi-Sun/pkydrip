@@ -27,8 +27,7 @@ location = """
 # copyright
 copyright = "© 2025 PKYDrip | Smart Irrigation Technology"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
-# google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "AW-16640554458"
+
 # recaptch v3 site key
 recaptcha_site_key = "6Ld9eEkrAAAAAF98PR4z-Xvn-oFnZcMdZafLI8fI"
 
