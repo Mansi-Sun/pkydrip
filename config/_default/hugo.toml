@@ -17,11 +17,6 @@ disableLanguages = [
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 
-
-[services]
-[services.googleAnalytics]
-ID = 'AW-16640554458' # see https://gohugo.io/templates/internal/#configure-google-analytics
-
 ############################# Build ##############################
 [build]
 noJSConfigInAssets = false
