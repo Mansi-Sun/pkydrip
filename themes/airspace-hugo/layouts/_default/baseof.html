@@ -31,11 +31,6 @@ AUTHOR WEBSITE: https://gethugothemes.com
 	{{ partial "preloader.html" . }}
 	{{ end }}
 
-	<!-- Google Tag Manager (noscript) -->
-	{{ with site.Params.google_tag_manager }}
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	{{ end }}
-
 	<main>
 		{{ block "main" . }}{{ end }}
 	</main>
