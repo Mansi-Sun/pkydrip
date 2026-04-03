@@ -160,15 +160,55 @@
       line-height: 1.35;
     }
   }
+
+.wizard-hero {
+  min-height: 320px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.wizard-hero-overlay {
+  width: 100%;
+  padding: 40px 28px;
+  background: linear-gradient(
+    to top,
+    rgba(17,24,39,0.7),
+    rgba(17,24,39,0.2)
+  );
+}
+
+.wizard-hero-overlay h1 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.wizard-hero-overlay p {
+  color: #e5e7eb;
+}  
 </style>
 
 <section class="wizard-wrap">
+{{ with .Params.bg_image }}
+<div class="wizard-hero" style="background-image:url('{{ . | relURL }}');">
+  <div class="wizard-hero-overlay">
+    <h1>{{ $.Title }}</h1>
+    {{ with $.Params.description }}
+    <p>{{ . }}</p>
+    {{ end }}
+  </div>
+</div>
+{{ else }}
+<h1 style="margin-bottom:20px;">{{ .Title }}</h1>
 
-  <h1 style="margin-bottom:20px;">{{ .Title }}</h1>
-
-  {{ with .Params.description }}
-  <p style="color:#666;margin-bottom:30px;font-size:16px;">{{ . }}</p>
-  {{ end }}
+{{ with .Params.description }}
+<p style="color:#666;margin-bottom:30px;font-size:16px;">{{ . }}</p>
+{{ end }}
+{{ end }}
 
   <div class="wizard-intro">
     {{ .Content }}
