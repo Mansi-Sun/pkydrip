@@ -1,166 +1,198 @@
 ---
 title: "Upgrade Existing Farm Irrigation Systems"
-description: "Upgrade existing farm irrigation systems with pump and valve automation for multi-zone farm irrigation projects in Australia and New Zealand."
+description: "Upgrade existing farm irrigation systems without rebuilding pipelines. Automate pumps and valve zones for farms, orchards, and irrigation retrofit projects."
 layout: "landing"
 url: "/landing/farm-irrigation-upgrade/"
 draft: false
 
 banner:
-  title: "Upgrade Farm Irrigation Systems Without Rebuilding"
-  subtitle: "Automate pumps and irrigation zones for farms, orchards, and irrigation upgrade projects. Designed for 10–200 acre farm irrigation applications."
+  title: "Upgrade Your Irrigation System Without Replacing Pipelines"
+  subtitle: "Add pump and valve automation to your existing farm irrigation system. Suitable for farms, orchards, and irrigation retrofit projects."
   image: "/images/landing/farm-irrigation-upgrade-hero.svg"
-  button_primary_label: "Discuss on WhatsApp"
-  button_primary_link: "https://wa.me/8617395297329?text=Hello%20PKYDrip,%20I%20want%20to%20discuss%20a%20farm%20irrigation%20upgrade%20project."
-  button_secondary_label: "Request a System Suggestion"
+  button_primary_label: "Get Upgrade Plan on WhatsApp"
+  button_primary_link: "https://wa.me/8617395297329?text=Hello%20PKYDrip,%20I%20want%20to%20upgrade%20an%20existing%20farm%20irrigation%20system.%20Please%20suggest%20a%20suitable%20solution."
+  button_secondary_label: "Send Project Details"
   button_secondary_link: "/contact/"
 
 seo:
   h1: "Farm Irrigation Upgrade for Existing Systems"
   keywords:
-    - farm irrigation system
-    - farm irrigation automation
     - irrigation system upgrade
+    - upgrade irrigation system
+    - farm irrigation upgrade
+    - irrigation retrofit system
     - pump and valve automation
     - multi-zone irrigation control
-    - irrigation controller for farms
+    - farm irrigation controller
 ---
 
-## Farm Irrigation Upgrade for Existing Systems
+## Upgrade Existing Irrigation Systems Without Rebuilding Everything
 
-PKYDrip helps farms upgrade existing irrigation systems with practical automation logic for **pumps, valves, and multi-zone irrigation control**.
+Many farms already have pipelines, pumps, and valve lines in place.  
+The real problem is often not the pipe network itself, but the lack of a clear control structure.
 
-This page is designed for **farm owners, irrigation contractors, orchard managers, and open-field irrigation upgrade projects** that need a clearer system structure instead of just separate products.
+PKYDrip helps upgrade existing farm irrigation systems by adding practical automation for:
 
-Rather than rebuilding the entire irrigation system, many farms can improve efficiency by adding a structured control layer for pump operation, irrigation zones, and scheduling.
-
----
-
-## Who This System Is For
-
-### Farm Owners
-Need to automate existing irrigation systems without rebuilding the whole farm infrastructure.
-
-### Irrigation Contractors
-Need a practical control structure for pump and valve automation in project delivery.
-
-### Orchard and Open-Field Projects
-Need stable multi-zone irrigation control for daily operation and water management.
-
-### Irrigation Upgrade Projects
-Need to modernize manual irrigation systems into a more reliable and manageable automation setup.
-
----
-
-## What Problems We Help Solve
-
-- Manual irrigation takes too much labor
-- Pump and valve operation is not coordinated
-- Existing irrigation systems are difficult to manage efficiently
-- Large farms need stable multi-zone irrigation control
-- Irrigation upgrades often lack a clear control structure
-- Farm owners need a simple path from manual control to automation
-
----
-
-## Typical Farm Irrigation Automation Structure
-
-A typical upgrade structure may include:
-
-**Water Source → Pump → Main Line → Valve Zones → PKYDrip Controller → Optional Sensors / Cloud Platform**
-
-This structure can support:
-
-- pump start and stop control
+- pump start and stop
 - valve zone switching
 - irrigation scheduling
 - multi-zone irrigation management
-- upgrade-friendly logic for existing systems
-- optional expansion for remote access or sensor integration
+- optional remote access and sensor integration
+
+Instead of rebuilding the whole irrigation system, you can often improve operation by adding a structured control layer.
 
 ---
 
-## Core System Capabilities
+## Is This Page for You?
+
+This page is designed for:
+
+### Farm Owners
+Who want to upgrade from manual irrigation to a more manageable automatic system.
+
+### Irrigation Contractors
+Who need a practical pump-and-valve control structure for retrofit projects.
+
+### Orchard and Open-Field Projects
+That need stable multi-zone irrigation control without rebuilding the whole site.
+
+### Existing Irrigation Upgrade Projects
+Where pipelines already exist, but the control method is outdated, manual, or inefficient.
+
+---
+
+## Common Problems in Existing Irrigation Systems
+
+Many upgrade projects start with situations like these:
+
+- irrigation still depends on manual valve operation
+- pump operation and valve opening are not coordinated
+- irrigation zones are difficult to manage clearly
+- watering schedules are inconsistent
+- expansion is difficult because there is no clear control structure
+- the system works, but management is inefficient and labor-intensive
+
+---
+
+## Before Upgrade vs After Upgrade
+
+### Before
+- manual switching of valves
+- pump started separately
+- irrigation takes too much labor
+- difficult to manage multiple zones
+- low visibility of overall system logic
+
+### After
+- automatic pump and valve coordination
+- scheduled irrigation by zone
+- clearer multi-zone control structure
+- easier daily management
+- practical path toward remote monitoring or sensor-based expansion
+
+---
+
+## Typical Upgrade Structure
+
+A practical upgrade structure may include:
+
+**Water Source → Pump → Main Line → Valve Zones → PKYDrip Controller → Optional Sensors / Cloud Platform**
+
+This structure is suitable for many retrofit projects because it helps organize the system without requiring full replacement.
+
+It can support:
+
+- pump control
+- valve zone switching
+- irrigation scheduling
+- multi-zone sequencing
+- upgrade-friendly logic for existing farms
+- optional sensor or cloud expansion
+
+---
+
+## Core Capabilities
 
 ### Pump and Valve Automation
-Coordinate pump operation with valve opening and irrigation zoning logic.
+Coordinate pump start/stop with valve opening logic to make irrigation operation more stable and organized.
 
 ### Multi-Zone Irrigation Control
-Manage several irrigation zones more clearly and efficiently.
+Manage multiple irrigation zones with a clearer structure for farms, orchards, and open-field projects.
 
 ### Irrigation Scheduling
-Set irrigation timing based on the project structure and field requirements.
+Set irrigation timing according to project needs, crop layout, and field operation logic.
 
 ### Upgrade-Friendly Architecture
-Suitable for retrofitting existing irrigation systems without full replacement.
+Designed for existing irrigation systems where rebuilding everything is not practical.
 
 ### Optional Sensor Integration
-Can be expanded to work with soil moisture, weather, or related field signals.
+Can be expanded with soil moisture, weather signals, flow monitoring, or related field inputs.
 
-### OEM and Customization Support
-Suitable for project-oriented applications that require practical customization.
+### Project Customization Support
+Suitable for project-oriented applications that need practical configuration rather than retail-style standard kits.
 
 ---
 
 ## Typical Upgrade Project Scenarios
 
 ### Orchard Irrigation Upgrade
-Automate pump control and valve zones for orchards that currently rely on manual irrigation switching.
+Upgrade manual valve switching into structured pump-and-zone automation for orchard projects.
 
 ### Open-Field Farm Irrigation
-Add a structured irrigation controller to organize multiple valve zones and simplify field operation.
+Add irrigation controller logic to organize valve zones and simplify daily operation.
 
-### Greenhouse Irrigation Automation
-Use pump and valve control logic to improve irrigation scheduling and management in greenhouse projects.
+### Greenhouse Irrigation Upgrade
+Improve irrigation timing and pump-valve coordination in greenhouse systems with clearer automation control.
 
 ---
 
 ## Why PKYDrip
 
-### Project-Oriented Irrigation Automation
-We focus on practical irrigation project structures, not just isolated components.
+### Built for Real Irrigation Projects
+We focus on practical farm irrigation control structures, not just individual hardware items.
 
-### Self-Developed Control Logic
-PKYDrip develops its own irrigation control solutions for farm and upgrade applications.
+### Suitable for Existing Systems
+Our solutions are designed for real upgrade situations where keeping the existing pipeline layout is important.
 
-### Suitable for Irrigation Retrofit Projects
-Our systems are designed to fit real irrigation upgrade situations where rebuilding everything is not practical.
+### Practical Pump + Valve Logic
+We help organize the control layer for pumps, valves, and irrigation zones so the system becomes easier to manage.
 
-### Technical Support and Scalable Design
-The control structure can be expanded according to project size, irrigation zones, and automation requirements.
-
----
-
-## Tell Us About Your Farm
-
-To suggest a suitable system structure, please send us:
-
-- Farm size
-- Pump power
-- Number of irrigation zones
-- Water source
-- Existing irrigation type
-
-This helps us recommend a more suitable irrigation automation structure for your project.
+### Scalable for Future Expansion
+The structure can be expanded later according to project size, number of zones, and automation needs.
 
 ---
 
-## Discuss Your Irrigation Upgrade Project
+## What to Send Us for a Quick Recommendation
 
-If you are planning to upgrade an existing irrigation system, we can help you organize the control logic for pumps, valves, and irrigation zones.
+To recommend a suitable upgrade structure, please send:
 
-**Send us your basic project details and we will suggest a suitable structure.**
+- farm size
+- pump power or pump voltage
+- number of irrigation zones
+- water source
+- existing irrigation type
+- photos of current pump / valves / pipeline layout
+
+With these details, we can suggest a more suitable irrigation upgrade structure for your project.
+
+---
+
+## Get Your Irrigation Upgrade Plan
+
+If you already have an irrigation system and want to upgrade it without rebuilding everything, we can help you organize a practical control structure.
+
+**Send us your project details and we will suggest a suitable pump-and-valve automation solution.**
 
 ### Quick Inquiry Options
 
-- [Discuss on WhatsApp](https://wa.me/8617395297329?text=Hello%20PKYDrip,%20I%20want%20to%20discuss%20a%20farm%20irrigation%20upgrade%20project.)
+- [Get Upgrade Plan on WhatsApp](https://wa.me/8617395297329?text=Hello%20PKYDrip,%20I%20want%20to%20upgrade%20an%20existing%20farm%20irrigation%20system.%20Please%20suggest%20a%20suitable%20solution.)
 - [Send Project Details](/contact/)
 
 ---
 
 ## Related Pages
 
-- [Farm Irrigation Solutions](/solution/)
 - [Open-Field Irrigation Solution](/solution/open-field-irrigation/)
+- [Irrigation Design Wizard](/tools/irrigation-design-wizard/)
 - [Irrigation Controllers](/product/)
 - [Technical Docs](/docs/)
-- [Irrigation Project Tools](/tools/)
