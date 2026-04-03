@@ -2,6 +2,7 @@
 title: "Irrigation Design Wizard for New Farms and Projects"
 description: "Plan your irrigation system based on farm size, water source, and irrigation method. Get a practical irrigation plan for your farm project."
 url: "/tools/irrigation-design-wizard/"
+type: irrigation-wizard
 bg_image: "/images/landing/irrigation-design-wizard-hero.webp"
 draft: false
 ---
