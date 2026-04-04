@@ -9,7 +9,33 @@ draft: false
 
 ## Irrigation Design Wizard for New Farms and Projects
 
-Use this tool to quickly organize your irrigation project and generate a practical planning reference.
+Plan your irrigation system based on farm size, water source, and irrigation method.  
+Get a practical direction for pumps, valves, and irrigation zones.
+
+**Designed for real agricultural projects, not theoretical models.**
+
+---
+
+### What This Tool Helps You Do
+
+- Suitable for new farms and early-stage irrigation planning  
+- Helps you estimate pump, valve, and zoning structure  
+- Useful for discussions with suppliers and contractors  
+
+---
+
+## Get a Basic Irrigation Plan in Minutes
+
+You do not need full engineering data to start.
+
+- Enter your farm size  
+- Select crop type  
+- Choose water source  
+- Indicate irrigation method  
+
+This tool helps you structure your project clearly and prepare for real implementation.
+
+---
 
 <div class="landing-image">
   <img src="/images/landing/wizard-hero-field.webp" alt="Farm irrigation system planning scene" />
