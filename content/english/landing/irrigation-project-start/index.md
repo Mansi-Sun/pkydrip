@@ -59,7 +59,7 @@ But as the farm grows, problems appear:
 ---
 
 <div class="landing-image" style="margin: 30px 0;">
-  <img src="/images/landing/wizard-system-structure.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" style="max-width:100%;height:auto;border-radius:8px;" />
+  <img src="/images/landing/irrigation-design-wizard-hero.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" style="max-width:100%;height:auto;border-radius:8px;" />
 </div>
 
 ---
