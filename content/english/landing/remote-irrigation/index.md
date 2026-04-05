@@ -1,12 +1,13 @@
 ---
 title: "Remote Irrigation Without Power or Cables"
-date: 2026-04-05
 type: "landing"
 description: "Wireless irrigation system using LoRa technology for remote farms."
 page_code: "lora_lp"
 url: "/landing/remote-irrigation/“
 bg_image: “/images/landing/lora-system-1.webp”
+layout: landing
 draft: false
+
 ---
 
 # Remote Irrigation Without Power or Cables
