@@ -8,91 +8,15 @@ bg_image: "/images/landing/lora-system-1.webp"
 draft: false
 ---
 
-## A Common Challenge in Farm Irrigation
+## Irrigation Becomes Difficult When the Field Is Far Away
 
-You need to irrigate your farm, but:
+Many farms need irrigation in areas where:
 
-- The field is far from your control point  
-- There is no electricity available  
-- Installing cables is expensive and time-consuming  
+- There is no electricity in the field  
+- Running cables is expensive  
+- Valve locations are far from the main control point  
 
-As a result, irrigation becomes:
-
-- Manual  
-- Inefficient  
-- Difficult to manage  
-
----
-
-## Why Traditional Irrigation Systems Don’t Work
-
-Most irrigation systems rely on:
-
-- Power supply in the field  
-- Wired connections between devices  
-
-In remote farms, this creates problems:
-
-- High installation costs  
-- Complex construction work  
-- Limited flexibility for expansion  
-
----
-
-## A Simpler Solution: Wireless Irrigation with LoRa
-
-Instead of running cables across your farm, you can use a wireless system.
-
-With LoRa technology, irrigation devices can communicate over long distances without wiring.
-
-The system typically includes:
-
-- LoRa gateway (central control unit)  
-- Wireless valve controllers in the field  
-- Solar-powered operation  
-
----
-
-## What You Can Control
-
-- Open and close irrigation valves remotely  
-- Start and stop pumps  
-- Set irrigation schedules  
-- Manage multiple irrigation zones  
-
----
-
-## Why This Works Better
-
-### Compared to Traditional Wired Systems
-
-| Traditional Irrigation | LoRa Wireless Irrigation |
-|----------------------|-------------------------|
-| Requires trenching cables | No cables needed |
-| Needs field electricity | Solar-powered operation |
-| High installation cost | Lower setup cost |
-| Hard to expand later | Easy to scale and add zones |
-
----
-
-## Typical Applications
-
-- Remote farmland without electricity  
-- Orchard irrigation systems  
-- Large farms with long distances  
-- Irrigation system upgrade projects  
-
----
-
-## Get a Simple Irrigation Plan
-
-Tell us a few details about your farm:
-
-- Farm size  
-- Water source  
-- Number of irrigation zones  
-
-We will suggest a suitable irrigation system configuration.
+This usually leads to manual work, higher installation cost, and difficult expansion later.
 
 <div style="text-align:center; margin:30px 0;">
 <a href="https://wa.me/8617395297329?text=I%20need%20a%20remote%20irrigation%20solution"
@@ -103,8 +27,96 @@ style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-de
 
 ---
 
-## Start Your Project
+## Why Traditional Wiring Is Not Ideal
 
-You don’t need full technical drawings.
+For remote irrigation projects, wired systems often create extra problems:
 
-Just send basic information, and we will help you design a practical irrigation solution for your farm.
+- Trenching and cable work increase labor cost  
+- Field power is not always available  
+- Later expansion becomes more difficult  
+- Long-distance control is harder to manage  
+
+Instead of simplifying the project, the system becomes more complex and expensive.
+
+---
+
+## A Simpler Wireless Irrigation Approach
+
+A LoRa irrigation system is designed for farms that need remote valve control without complex wiring.
+
+Typical system structure:
+
+- LoRa gateway at the control side  
+- Wireless valve controllers in the field  
+- Solar-powered operation where field power is limited  
+- Central scheduling for multiple irrigation zones  
+
+This makes it easier to build, operate, and expand the irrigation system.
+
+---
+
+## What You Can Control
+
+With the right configuration, the system can help you:
+
+- Open and close valves remotely  
+- Start and stop pumps  
+- Manage irrigation by zone  
+- Create irrigation schedules  
+- Reduce manual field operation  
+
+---
+
+## Traditional Method vs Wireless Method
+
+### Traditional Wired Setup
+
+- Needs cable trenching  
+- Depends on field electricity  
+- Higher installation complexity  
+- Harder to extend later  
+
+### LoRa Wireless Setup
+
+- No long cable runs  
+- Suitable for remote field areas  
+- Easier to add more zones  
+- Simpler for upgrade projects  
+
+---
+
+## Where This System Fits Best
+
+This type of system is especially suitable for:
+
+- Remote farmland without electricity  
+- Orchards with long distances between zones  
+- Open-field irrigation projects  
+- Irrigation retrofit and upgrade work  
+
+---
+
+## Tell Us Your Farm Details
+
+Send us a few basic details:
+
+- Farm size  
+- Water source  
+- Number of irrigation zones  
+
+We will suggest a practical wireless irrigation configuration based on your project.
+
+<div style="text-align:center; margin:35px 0;">
+<a href="https://wa.me/8617395297329?text=I%20want%20a%20LoRa%20irrigation%20system%20for%20my%20farm"
+style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;">
+👉 Chat on WhatsApp
+</a>
+</div>
+
+---
+
+## Start Simple
+
+You do not need a full engineering drawing to begin.
+
+Just send the basic farm information first, and we will help you move toward a practical remote irrigation solution.
