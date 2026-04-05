@@ -4,7 +4,7 @@ date: 2026-04-05
 type: "landing"
 description: "Wireless irrigation system using LoRa technology for remote farms."
 page_code: "lora_lp"
-bg_image: “/images/solution/lora-system.webp”
+bg_image: “/images/landing/lora-system-1.webp”
 draft: false
 ---
 
