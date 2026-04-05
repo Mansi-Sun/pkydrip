@@ -52,21 +52,40 @@ Upgrade My Existing System
 
 ---
 
-## Before and After Irrigation Upgrade
+## Before vs After Irrigation Upgrade
 
-### Before
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+  <tr>
+    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">Before</th>
+    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">After</th>
+  </tr>
 
-- Manual valve operation  
-- Pump runs without clear zoning logic  
-- No visibility of actual water usage  
-- High labor cost and inconsistent irrigation  
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Manual valve operation</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Automatic valve control</td>
+  </tr>
 
-### After
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Pump runs without zoning logic</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Pump linked to irrigation zones</td>
+  </tr>
 
-- Automatic pump and valve control  
-- Clear irrigation zoning and scheduling  
-- Real-time water usage monitoring  
-- Remote control and reduced labor cost  
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No visibility of water usage</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Flow-based water monitoring</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ High labor cost</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Reduced labor with automation</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;">❌ On-site manual control only</td>
+    <td style="padding:12px;">✅ Remote irrigation control</td>
+  </tr>
+
+</table>
 
 <div class="landing-image" style="margin: 30px 0;">
   <img src="/images/landing/upgrade-existing-system.webp" alt="Irrigation upgrade before and after scenario" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
