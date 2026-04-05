@@ -1,6 +1,5 @@
 ---
 title: "Remote Irrigation Without Power or Cables"
-type: "landing"
 description: "Wireless irrigation system using LoRa technology for remote farms."
 page_code: "lora_lp"
 url: "/landing/remote-irrigation/"
@@ -9,10 +8,6 @@ layout: landing
 draft: false
 
 ---
-
-# Remote Irrigation Without Power or Cables
-
-Control irrigation valves across your farm without cables, power lines, or internet.
 
 <div style="text-align:center; margin:25px 0;">
 <a href="https://wa.me/8617395297329?text=I%20need%20a%20remote%20irrigation%20solution"
