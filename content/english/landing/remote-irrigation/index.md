@@ -69,71 +69,52 @@ This makes your system easier to build, operate, and expand.
 
 ## Compare: Traditional vs Wireless Irrigation
 
-<div style="display:flex; flex-direction:column; gap:20px; margin-top:30px;">
+<div style="overflow-x:auto; margin-top:30px;">
 
-  <div style="display:flex; flex-wrap:wrap; gap:20px;">
-    
-    <div style="flex:1; min-width:260px; padding:20px; background:#fff5f5; border-radius:8px;">
-      <div style="font-size:22px;">🔌</div>
-      <strong>Traditional System</strong>
-      <p style="margin-top:8px;">Requires cable trenching across the field</p>
-    </div>
+<table style="width:100%; border-collapse:collapse; font-size:16px;">
 
-    <div style="flex:1; min-width:260px; padding:20px; background:#f3fff5; border-radius:8px;">
-      <div style="font-size:22px;">📡</div>
-      <strong>PKYDrip Wireless Solution</strong>
-      <p style="margin-top:8px;">No cables required — fully wireless deployment</p>
-    </div>
+<thead>
+<tr style="background:#f5f5f5;">
+<th style="padding:12px; text-align:left;">Category</th>
+<th style="padding:12px; text-align:left;">Traditional System</th>
+<th style="padding:12px; text-align:left;">PKYDrip Wireless Solution</th>
+</tr>
+</thead>
 
-  </div>
+<tbody>
 
-  <div style="display:flex; flex-wrap:wrap; gap:20px;">
-    
-    <div style="flex:1; min-width:260px; padding:20px; background:#fff5f5; border-radius:8px;">
-      <div style="font-size:22px;">⚡</div>
-      <strong>Traditional System</strong>
-      <p style="margin-top:8px;">Depends on stable electricity supply</p>
-    </div>
+<tr>
+<td style="padding:12px; border-top:1px solid #ddd;">Installation</td>
+<td style="padding:12px; border-top:1px solid #ddd;">🔌 Cable trenching required</td>
+<td style="padding:12px; border-top:1px solid #ddd;">📡 Wireless deployment, no cables</td>
+</tr>
 
-    <div style="flex:1; min-width:260px; padding:20px; background:#f3fff5; border-radius:8px;">
-      <div style="font-size:22px;">☀️</div>
-      <strong>PKYDrip Wireless Solution</strong>
-      <p style="margin-top:8px;">Solar-powered operation</p>
-    </div>
+<tr>
+<td style="padding:12px; border-top:1px solid #ddd;">Power Supply</td>
+<td style="padding:12px; border-top:1px solid #ddd;">⚡ Requires field electricity</td>
+<td style="padding:12px; border-top:1px solid #ddd;">☀️ Solar-powered operation</td>
+</tr>
 
-  </div>
+<tr>
+<td style="padding:12px; border-top:1px solid #ddd;">Complexity</td>
+<td style="padding:12px; border-top:1px solid #ddd;">🧱 Complex installation</td>
+<td style="padding:12px; border-top:1px solid #ddd;">⚙️ Simple and fast setup</td>
+</tr>
 
-  <div style="display:flex; flex-wrap:wrap; gap:20px;">
-    
-    <div style="flex:1; min-width:260px; padding:20px; background:#fff5f5; border-radius:8px;">
-      <div style="font-size:22px;">🧱</div>
-      <strong>Traditional System</strong>
-      <p style="margin-top:8px;">High installation complexity</p>
-    </div>
+<tr>
+<td style="padding:12px; border-top:1px solid #ddd;">Scalability</td>
+<td style="padding:12px; border-top:1px solid #ddd;">📉 Hard to expand</td>
+<td style="padding:12px; border-top:1px solid #ddd;">📈 Easy to expand anytime</td>
+</tr>
 
-    <div style="flex:1; min-width:260px; padding:20px; background:#f3fff5; border-radius:8px;">
-      <div style="font-size:22px;">⚙️</div>
-      <strong>PKYDrip Wireless Solution</strong>
-      <p style="margin-top:8px;">Simple and fast deployment</p>
-    </div>
+<tr>
+<td style="padding:12px; border-top:1px solid #ddd;">Maintenance</td>
+<td style="padding:12px; border-top:1px solid #ddd;">🔧 Requires manual inspection</td>
+<td style="padding:12px; border-top:1px solid #ddd;">📲 Remote monitoring supported</td>
+</tr>
 
-  </div>
-
-  <div style="display:flex; flex-wrap:wrap; gap:20px;">
-    
-    <div style="flex:1; min-width:260px; padding:20px; background:#fff5f5; border-radius:8px;">
-      <div style="font-size:22px;">📉</div>
-      <strong>Traditional System</strong>
-      <p style="margin-top:8px;">Difficult to expand irrigation zones</p>
-    </div>
-
-    <div style="flex:1; min-width:260px; padding:20px; background:#f3fff5; border-radius:8px;">
-      <div style="font-size:22px;">📈</div>
-      <strong>PKYDrip Wireless Solution</strong>
-      <p style="margin-top:8px;">Easy to expand anytime</p>
-    </div>
-
-  </div>
+</tbody>
+</table>
 
 </div>
 
