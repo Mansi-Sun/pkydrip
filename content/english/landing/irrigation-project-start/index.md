@@ -6,22 +6,26 @@ layout: landing
 draft: false
 ---
 
-Most irrigation projects fail at the same early stage:
+Most irrigation projects run into the same problems:
 
-- Pump size does not match the field layout  
-- Irrigation zones are not properly planned  
-- Systems become complicated during installation  
+- Pump operation is not matched to irrigation zones  
+- Valves are manually controlled or poorly scheduled  
+- Irrigation timing is inconsistent across the field  
 
-Fixing these later is costly and time-consuming.
+This leads to water waste, unstable irrigation results, and high labor cost.
 
 ---
 
-You don’t need full engineering data to start.
+With a practical PKYDrip irrigation control structure, you can:
 
-Just tell us your situation, and we will help you define a practical irrigation system structure.
+- Automatically control pumps and valves by irrigation zone  
+- Set irrigation schedules for different crops and field areas  
+- Monitor actual water usage with flow sensors  
+- Control the irrigation system remotely  
+- Reduce manual work and improve irrigation consistency  
 
-<div class="landing-image">
-  <img src="/images/landing/wizard-system-structure.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" />
+<div class="landing-image" style="margin: 30px 0;">
+  <img src="/images/landing/wizard-system-structure.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" style="max-width:100%;height:auto;border-radius:8px;" />
 </div>
 
 ---
@@ -33,7 +37,7 @@ Just tell us your situation, and we will help you define a practical irrigation 
 Planning a new farm, orchard, greenhouse, or open-field irrigation system?
 
 <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
-Start New Project
+Plan a New Irrigation Project
 </a>
 
 ---
@@ -43,17 +47,38 @@ Start New Project
 Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
 
 <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
-Upgrade Existing System
+Upgrade My Existing System
 </a>
 
 ---
 
-## Why Start This Way
+## Before and After Irrigation Upgrade
 
-- Avoid wrong pump and zoning decisions  
-- Reduce system rework cost  
-- Get a clear system structure before installation  
+### Before
+
+- Manual valve operation  
+- Pump runs without clear zoning logic  
+- No visibility of actual water usage  
+- High labor cost and inconsistent irrigation  
+
+### After
+
+- Automatic pump and valve control  
+- Clear irrigation zoning and scheduling  
+- Real-time water usage monitoring  
+- Remote control and reduced labor cost  
+
+<div class="landing-image" style="margin: 30px 0;">
+  <img src="/images/landing/upgrade-existing-system.webp" alt="Irrigation upgrade before and after scenario" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
+</div>
+
+---
+
+## Start with a Simple Discussion
+
+You do not need full engineering data at this stage.
+
+Just tell us whether you are planning a new project or upgrading an existing system.  
+Our team can help you define the next practical step.
 
 No complex forms. No unnecessary steps.
-
-👉 Start with a simple discussion on WhatsApp.
