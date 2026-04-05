@@ -2,6 +2,7 @@
 title: "Plan or Upgrade Your Farm Irrigation System"
 description: "Start your farm irrigation project with a simple consultation. Choose a new system or an upgrade path and discuss your project with PKYDrip."
 url: "/landing/irrigation-project-start/"
+bg_image: "/images/landing/wizard-hero-field.webp"
 layout: landing
 draft: false
 ---
