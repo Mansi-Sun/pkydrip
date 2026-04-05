@@ -9,15 +9,24 @@ draft: false
 
 # Remote Irrigation Without Power or Cables
 
-Control irrigation valves in remote fields — without trenching, wiring, or grid electricity.
+Control irrigation valves in remote fields — no trenching, no wiring, and no grid electricity required.
 
-<p style="text-align:center; font-size:18px; color:#555;">
+<p style="text-align:center; font-size:20px; color:#555; margin-top:10px;">
 Reliable LoRa wireless control for farms, orchards, and remote irrigation zones.
 </p>
 
+<div style="display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin:28px 0 20px 0; font-size:16px; color:#333;">
+
+<span style="background:#f5f5f5; padding:8px 14px; border-radius:999px;">☀️ Solar Powered</span>
+<span style="background:#f5f5f5; padding:8px 14px; border-radius:999px;">📡 Long-Range LoRa</span>
+<span style="background:#f5f5f5; padding:8px 14px; border-radius:999px;">🚰 Multi-Valve Control</span>
+<span style="background:#f5f5f5; padding:8px 14px; border-radius:999px;">⏱ Automatic Scheduling</span>
+
+</div>
+
 <div style="text-align:center; margin:30px 0;">
 <a href="https://wa.me/8617395297329?text=I%20need%20a%20remote%20irrigation%20solution"
-style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;">
+style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block;">
 👉 Get My Irrigation Plan
 </a>
 </div>
@@ -27,43 +36,39 @@ style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-de
 ## Real Field Deployment Example
 
 <div style="text-align:center; margin:30px 0;">
-<img src="/images/landing/lora-system-real-field.webp" alt="Solar LoRa irrigation valve controller in field" style="max-width:100%; border-radius:8px;">
+<img src="/images/landing/lora-system-real-field.webp" alt="Solar LoRa irrigation valve controller installed in the field" style="max-width:100%; border-radius:8px;">
 </div>
 
 This is a typical wireless irrigation node installed directly in the field:
 
 - Solar panel provides power  
-- LoRa controller communicates with central gateway  
-- Multiple valves are controlled locally  
-- No trenching or electrical wiring required  
+- LoRa controller communicates with a central gateway  
+- Multiple valves can be controlled locally  
+- No trenching or electrical wiring is required  
 
 ---
 
-## Why Remote Irrigation Projects Become Difficult
+## Why Remote Irrigation Is Difficult
 
-If your irrigation area is far from your control point, you may face:
-
-- No electricity available in the field  
-- High cost for trenching and cable installation  
-- Long distances between valves and control system  
-- Difficult expansion when adding new zones  
-
-These problems increase cost, complexity, and manual work.
+- No electricity in the field  
+- High cost of trenching and cable installation  
+- Long distance between valves and control point  
+- Hard to expand irrigation zones later  
 
 ---
 
 ## A Simpler Solution: LoRa Wireless Irrigation
 
-A LoRa-based irrigation system allows you to control your field wirelessly without complex infrastructure.
+A LoRa-based irrigation system allows you to control remote irrigation areas without complex wiring infrastructure.
 
 **Typical system includes:**
 
-- Central LoRa gateway (main controller)  
+- Central LoRa gateway  
 - Wireless valve controllers in the field  
-- Solar-powered operation (no grid required)  
+- Solar-powered operation  
 - Multi-zone irrigation scheduling  
 
-This makes your system easier to build, operate, and expand.
+This makes the system easier to install, easier to expand, and more practical for remote projects.
 
 ---
 
@@ -109,7 +114,7 @@ This makes your system easier to build, operate, and expand.
 
 <tr>
 <td style="padding:12px; border-top:1px solid #ddd;">Maintenance</td>
-<td style="padding:12px; border-top:1px solid #ddd;">🔧 Requires manual inspection</td>
+<td style="padding:12px; border-top:1px solid #ddd;">🔧 More manual inspection required</td>
 <td style="padding:12px; border-top:1px solid #ddd;">📲 Remote monitoring supported</td>
 </tr>
 
@@ -120,22 +125,9 @@ This makes your system easier to build, operate, and expand.
 
 ---
 
-## What You Can Control
+## Used In
 
-- Remote valve operation  
-- Pump start/stop  
-- Multi-zone irrigation  
-- Automatic scheduling  
-- Reduced manual work  
-
----
-
-## Typical Use Cases
-
-- Open field farms (10–200 acres)  
-- Remote irrigation without electricity  
-- Orchard / plantation irrigation  
-- Expansion-ready irrigation projects  
+Farms, orchards, plantations, and other remote irrigation projects where power supply and cable installation are difficult.
 
 ---
 
@@ -145,21 +137,13 @@ Tell us:
 
 - Farm size  
 - Water source  
-- Number of zones  
+- Number of irrigation zones  
 
-We will recommend a practical solution.
+We will recommend a practical wireless irrigation solution based on your project.
 
 <div style="text-align:center; margin:35px 0;">
 <a href="https://wa.me/8617395297329?text=I%20want%20a%20LoRa%20irrigation%20system%20for%20my%20farm"
-style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;">
+style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block;">
 👉 Chat on WhatsApp
 </a>
 </div>
-
----
-
-## Start Simple
-
-You do not need a full engineering design to begin.
-
-Send basic information — we will guide you step by step.
