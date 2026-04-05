@@ -3,32 +3,19 @@
 <!-- Hero Section -->
 {{ with .Params.bg_image }}
 <section style="
-  position:relative;
-  background-image:url('{{ . }}');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  min-height:280px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('{{ . }}') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 ">
-  <!-- Overlay -->
   <div style="
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.4);
-  "></div>
-
-  <!-- Hero Content -->
-  <div style="
-    position:relative;
-    z-index:2;
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-    text-align:center;
-    color:#fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
   ">
     <h1 style="margin:0;font-size:32px;line-height:1.2;color:#fff;">{{ $.Title }}</h1>
   </div>
