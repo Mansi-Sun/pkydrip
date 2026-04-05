@@ -1,84 +1,101 @@
 ---
 title: "Remote Irrigation Without Power or Cables"
-description: "Wireless irrigation system using LoRa technology for remote farms."
+type: "landing"
+description: "Wireless irrigation solution for farms without electricity or cable infrastructure."
 page_code: "lora_lp"
 url: "/landing/remote-irrigation/"
 bg_image: "/images/landing/lora-system-1.webp"
-layout: landing
 draft: false
-
 ---
 
-<div style="text-align:center; margin:25px 0;">
-<a href="https://wa.me/8617395297329?text=I%20need%20a%20remote%20irrigation%20solution"
-style="background:#25D366;color:#fff;padding:14px 30px;border-radius:6px;text-decoration:none;font-weight:bold;">
-👉 Chat on WhatsApp
-</a>
-</div>
+## A Common Challenge in Farm Irrigation
 
----
+You need to irrigate your farm, but:
 
-## Designed for Real Farm Conditions
+- The field is far from your control point  
+- There is no electricity available  
+- Installing cables is expensive and time-consuming  
 
-This system is ideal for:
+As a result, irrigation becomes:
 
-- Farms without electricity  
-- Remote irrigation areas  
-- Long-distance valve control  
-- Projects where cable installation is too expensive  
+- Manual  
+- Inefficient  
+- Difficult to manage  
 
 ---
 
 ## Why Traditional Irrigation Systems Don’t Work
 
-- Power is not available in the field  
-- Trenching cables increases project cost  
-- Expansion is difficult once installed  
-- Remote control becomes unreliable  
+Most irrigation systems rely on:
+
+- Power supply in the field  
+- Wired connections between devices  
+
+In remote farms, this creates problems:
+
+- High installation costs  
+- Complex construction work  
+- Limited flexibility for expansion  
 
 ---
 
-## A Simple Wireless Irrigation Solution
+## A Simpler Solution: Wireless Irrigation with LoRa
 
-Using LoRa wireless technology, you can control irrigation systems across long distances.
+Instead of running cables across your farm, you can use a wireless system.
 
-- No cables required  
-- Solar-powered valve controllers  
-- Long-range communication  
-- Stable and low power consumption  
+With LoRa technology, irrigation devices can communicate over long distances without wiring.
+
+The system typically includes:
+
+- LoRa gateway (central control unit)  
+- Wireless valve controllers in the field  
+- Solar-powered operation  
 
 ---
 
 ## What You Can Control
 
-- Start and stop irrigation pumps  
-- Open and close valves remotely  
+- Open and close irrigation valves remotely  
+- Start and stop pumps  
 - Set irrigation schedules  
 - Manage multiple irrigation zones  
 
 ---
 
-## How the System Works
+## Why This Works Better
 
-LoRa Gateway + Wireless Valve Controllers + Pump Control System
+### Compared to Traditional Wired Systems
 
-### Learn More
+| Traditional Irrigation | LoRa Wireless Irrigation |
+|----------------------|-------------------------|
+| Requires trenching cables | No cables needed |
+| Needs field electricity | Solar-powered operation |
+| High installation cost | Lower setup cost |
+| Hard to expand later | Easy to scale and add zones |
 
-- [Full Wireless Irrigation System](/solution/wireless-irrigation/)
-- [LoRa Valve Controller Details](/solution/lora-wireless-irrigation-control/)
+---
+
+## Typical Applications
+
+- Remote farmland without electricity  
+- Orchard irrigation systems  
+- Large farms with long distances  
+- Irrigation system upgrade projects  
 
 ---
 
 ## Get a Simple Irrigation Plan
 
-Send us your project details:
+Tell us a few details about your farm:
 
 - Farm size  
 - Water source  
 - Number of irrigation zones  
 
+We will suggest a suitable irrigation system configuration.
+
 <div style="text-align:center; margin:30px 0;">
-<a href="https://wa.me/8617395297329?text=I%20want%20a%20LoRa%20irrigation%20system"
+<a href="https://wa.me/8617395297329?text=I%20need%20a%20remote%20irrigation%20solution"
 style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:18px;">
 👉 Get My Irrigation Plan
 </a>
@@ -86,17 +103,8 @@ style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-de
 
 ---
 
-## Typical Use Cases
-
-- Open-field irrigation  
-- Orchards and plantations  
-- Remote agricultural projects  
-- Irrigation system upgrades  
-
----
-
 ## Start Your Project
 
-You don’t need full engineering data.
+You don’t need full technical drawings.
 
-Just send basic information, and we will suggest a suitable irrigation system configuration.
+Just send basic information, and we will help you design a practical irrigation solution for your farm.
