@@ -120,11 +120,3 @@ For simple projects, start with WhatsApp communication first.
 For technical users or engineers, the advanced planning form can be used as a structured input tool.
 
 ---
-
-## Technical reference
-
-Need help understanding irrigation system structure?
-
-- [Read full guide](/docs/tools/irrigation-design-wizard/)
-- [Smart Water-Saving Irrigation System for Open Field Agriculture](/solution/open-field-irrigation/)
-- [Irrigation Retrofit Upgrade](/solution/irrigation-retrofit-upgrade/)
