@@ -1,8 +1,7 @@
 ---
 title: "Remote Irrigation Without Power or Cables"
-type: "landing"
+layout: landing
 description: "Wireless irrigation solution for farms without electricity or cable infrastructure."
-page_code: "lora_lp"
 url: "/landing/remote-irrigation/"
 bg_image: "/images/landing/lora-system-1.webp"
 draft: false
