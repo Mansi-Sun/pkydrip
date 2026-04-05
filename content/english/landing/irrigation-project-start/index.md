@@ -43,79 +43,29 @@ Upgrade My Existing System
 
 ## Common Irrigation Problems vs Practical Solutions
 
-<table style="width:100%;border-collapse:collapse;margin-top:20px;">
-  <tr>
-    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">Common Problems</th>
-    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">What You Can Achieve</th>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Pump operation not matched to irrigation zones</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Pump and valves coordinated by irrigation zones</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Manual or inconsistent valve control</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Automatic valve control based on schedule</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No clear irrigation scheduling</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Structured irrigation plans for different zones</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No visibility of actual water usage</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Flow sensor-based water monitoring</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;">❌ High labor cost and manual operation</td>
-    <td style="padding:12px;">✅ Remote control and reduced labor</td>
-  </tr>
-</table>
+| Common Problems | What You Can Achieve |
+|----------------|---------------------|
+| ❌ Pump operation not matched to irrigation zones | ✅ Pump and valves coordinated by irrigation zones |
+| ❌ Manual or inconsistent valve control | ✅ Automatic valve control based on schedule |
+| ❌ No clear irrigation scheduling | ✅ Structured irrigation plans for different zones |
+| ❌ No visibility of actual water usage | ✅ Flow sensor-based water monitoring |
+| ❌ High labor cost and manual operation | ✅ Remote control and reduced labor |
 
 ---
 
-<div class="landing-image" style="margin: 30px 0;">
-  <img src="/images/landing/irrigation-design-wizard-hero.webp" alt="Real farm irrigation project scene" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
-</div>
+![Real farm irrigation project](/images/landing/irrigation-design-wizard-hero.webp)
 
 ---
 
 ## Before vs After Irrigation Upgrade
 
-<table style="width:100%;border-collapse:collapse;margin-top:20px;">
-  <tr>
-    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">Before</th>
-    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">After</th>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Manual valve operation</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Automatic valve control</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Pump runs without zoning logic</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Pump linked to irrigation zones</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No visibility of water usage</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Flow-based water monitoring</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ High labor cost</td>
-    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Reduced labor with automation</td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px;">❌ On-site manual control only</td>
-    <td style="padding:12px;">✅ Remote irrigation control</td>
-  </tr>
-</table>
+| Before | After |
+|--------|------|
+| ❌ Manual valve operation | ✅ Automatic valve control |
+| ❌ Pump runs without zoning logic | ✅ Pump linked to irrigation zones |
+| ❌ No visibility of water usage | ✅ Flow-based water monitoring |
+| ❌ High labor cost | ✅ Reduced labor with automation |
+| ❌ On-site manual control only | ✅ Remote irrigation control |
 
 ---
 
