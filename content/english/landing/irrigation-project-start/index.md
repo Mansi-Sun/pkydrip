@@ -30,26 +30,30 @@ draft: false
 
 ## Choose Your Situation
 
-<div style="display:flex;flex-wrap:wrap;gap:20px;margin:24px 0 32px 0;">
+<div style="display:flex;flex-wrap:wrap;gap:22px;margin:28px 0 38px 0;">
 
-  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:10px;padding:22px;background:#fff;">
-    <h3 style="margin-top:0;margin-bottom:10px;">Starting a New Irrigation Project?</h3>
-    <p style="color:#666;line-height:1.6;margin-bottom:16px;">
-      Planning a farm, orchard, greenhouse, or open-field system?  
-      We help you define the right structure from the beginning.
+  <div style="flex:1 1 320px;border:1px solid #e8e8e8;border-radius:16px;padding:26px 24px;background:#fcfcfc;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+    <div style="font-size:13px;font-weight:600;letter-spacing:0.4px;text-transform:uppercase;color:#2b6cb0;margin-bottom:10px;">
+      New Project
+    </div>
+    <h3 style="margin:0 0 12px 0;font-size:24px;line-height:1.3;">Start a New Irrigation Project</h3>
+    <p style="color:#666;line-height:1.7;margin:0 0 18px 0;font-size:16px;">
+      Planning a farm, orchard, greenhouse, or open-field irrigation system? We help you define the right structure from the beginning.
     </p>
-    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
       Plan a New Project
     </a>
   </div>
 
-  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:10px;padding:22px;background:#fff;">
-    <h3 style="margin-top:0;margin-bottom:10px;">Upgrade an Existing System?</h3>
-    <p style="color:#666;line-height:1.6;margin-bottom:16px;">
-      Already have a pump or pipeline?  
-      Improve control, automation, and water efficiency.
+  <div style="flex:1 1 320px;border:1px solid #e8e8e8;border-radius:16px;padding:26px 24px;background:#fcfcfc;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+    <div style="font-size:13px;font-weight:600;letter-spacing:0.4px;text-transform:uppercase;color:#2b6cb0;margin-bottom:10px;">
+      Upgrade
+    </div>
+    <h3 style="margin:0 0 12px 0;font-size:24px;line-height:1.3;">Upgrade an Existing System</h3>
+    <p style="color:#666;line-height:1.7;margin:0 0 18px 0;font-size:16px;">
+      Already have a pump or pipeline? Improve control, automation, and water efficiency without rebuilding everything.
     </p>
-    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
       Upgrade My System
     </a>
   </div>
