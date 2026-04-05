@@ -30,30 +30,28 @@ draft: false
 
 ## Choose Your Situation
 
-<div style="display:flex;flex-wrap:wrap;gap:24px;margin:30px 0 40px 0;align-items:stretch;">
+<div style="display:flex;flex-wrap:wrap;gap:20px;margin:24px 0 32px 0;">
 
-  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:12px;padding:28px;background:#fff;display:flex;flex-direction:column;min-height:360px;">
-    <h3 style="margin-top:0;margin-bottom:14px;">Starting a New Irrigation Project?</h3>
-    <p style="color:#666;line-height:1.6;margin-bottom:24px;">
-      Planning a new farm, orchard, greenhouse, or open-field irrigation system?
+  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:10px;padding:22px;background:#fff;">
+    <h3 style="margin-top:0;margin-bottom:10px;">Starting a New Irrigation Project?</h3>
+    <p style="color:#666;line-height:1.6;margin-bottom:16px;">
+      Planning a farm, orchard, greenhouse, or open-field system?  
+      We help you define the right structure from the beginning.
     </p>
-    <div style="margin-top:auto;">
-      <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
-        Plan a New Irrigation Project
-      </a>
-    </div>
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
+      Plan a New Project
+    </a>
   </div>
 
-  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:12px;padding:28px;background:#fff;display:flex;flex-direction:column;min-height:360px;">
-    <h3 style="margin-top:0;margin-bottom:14px;">Upgrading an Existing Irrigation System?</h3>
-    <p style="color:#666;line-height:1.6;margin-bottom:24px;">
-      Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
+  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:10px;padding:22px;background:#fff;">
+    <h3 style="margin-top:0;margin-bottom:10px;">Upgrade an Existing System?</h3>
+    <p style="color:#666;line-height:1.6;margin-bottom:16px;">
+      Already have a pump or pipeline?  
+      Improve control, automation, and water efficiency.
     </p>
-    <div style="margin-top:auto;">
-      <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
-        Upgrade My Existing System
-      </a>
-    </div>
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
+      Upgrade My System
+    </a>
   </div>
 
 </div>
