@@ -33,7 +33,7 @@ For remote irrigation projects, wired systems often create extra problems:
 
 - Trenching and cable work increase labor cost  
 - Field power is not always available  
-- Later expansion becomes more difficult  
+- Expansion becomes difficult later  
 - Long-distance control is harder to manage  
 
 Instead of simplifying the project, the system becomes more complex and expensive.
@@ -46,9 +46,9 @@ A LoRa irrigation system is designed for farms that need remote valve control wi
 
 Typical system structure:
 
-- LoRa gateway at the control side  
+- LoRa gateway (central control unit)  
 - Wireless valve controllers in the field  
-- Solar-powered operation where field power is limited  
+- Solar-powered operation  
 - Central scheduling for multiple irrigation zones  
 
 This makes it easier to build, operate, and expand the irrigation system.
@@ -67,38 +67,65 @@ With the right configuration, the system can help you:
 
 ---
 
-## Traditional Method vs Wireless Method
+<h2>Common Irrigation Problems vs Practical Solutions</h2>
 
-### Traditional Wired Setup
+<div style="display:flex; flex-wrap:wrap; gap:40px; margin-top:20px; margin-bottom:10px;">
+  
+  <div style="flex:1; min-width:280px;">
+    <h3 style="margin-bottom:18px;">Common Problems</h3>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ❌ Pump and valve operation not coordinated
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ❌ Manual or inconsistent valve control
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ❌ No clear irrigation scheduling
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ❌ No visibility of actual water usage
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ❌ High labor cost and manual operation
+    </div>
+  </div>
 
-- Needs cable trenching  
-- Depends on field electricity  
-- Higher installation complexity  
-- Harder to extend later  
+  <div style="flex:1; min-width:280px;">
+    <h3 style="margin-bottom:18px;">What You Can Achieve</h3>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ✅ Pump and valves coordinated by irrigation zones
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ✅ Automatic valve control based on schedule
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ✅ Structured irrigation plans for different zones
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ✅ Flow-based water monitoring
+    </div>
+    
+    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
+      ✅ Remote control and reduced labor cost
+    </div>
+  </div>
 
-### LoRa Wireless Setup
-
-- No long cable runs  
-- Suitable for remote field areas  
-- Easier to add more zones  
-- Simpler for upgrade projects  
+</div>
 
 ---
 
-## Where This System Fits Best
+## Get a Simple Irrigation Plan
 
-This type of system is especially suitable for:
-
-- Remote farmland without electricity  
-- Orchards with long distances between zones  
-- Open-field irrigation projects  
-- Irrigation retrofit and upgrade work  
-
----
-
-## Tell Us Your Farm Details
-
-Send us a few basic details:
+Tell us a few details about your farm:
 
 - Farm size  
 - Water source  
@@ -113,10 +140,8 @@ style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-de
 </a>
 </div>
 
----
-
 ## Start Simple
 
 You do not need a full engineering drawing to begin.
 
-Just send the basic farm information first, and we will help you move toward a practical remote irrigation solution.
+Just send basic information first, and we will help you move toward a practical irrigation solution.
