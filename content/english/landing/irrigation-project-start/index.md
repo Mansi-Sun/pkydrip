@@ -15,9 +15,9 @@ At first, it works.
 
 But as the farm grows, problems appear:
 
-- water is not distributed evenly  
-- irrigation becomes harder to manage  
-- labor cost keeps increasing  
+- Water is not distributed evenly  
+- Irrigation becomes harder to manage  
+- Labor cost keeps increasing  
 
 ---
 
