@@ -67,43 +67,43 @@ With the right configuration, the system can help you:
 
 ---
 
-<h2>Common Irrigation Problems vs Practical Solutions</h2>
+<h2 style="text-align:center;">Solve Common Irrigation Problems Easily</h2>
 
 <div style="display:flex; flex-direction:column; gap:18px; margin-top:25px;">
 
-  <div style="display:flex; flex-wrap:wrap; align-items:flex-start;">
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ❌ Needs cable trenching across the field
+  <div style="display:flex; flex-wrap:wrap; gap:20px;">
+    <div style="flex:1; min-width:260px; font-size:18px; color:#b00020;">
+      <strong>Problem:</strong> Cable trenching across the field
     </div>
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ✅ No cables required, wireless deployment
-    </div>
-  </div>
-
-  <div style="display:flex; flex-wrap:wrap;">
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ❌ Depends on field electricity
-    </div>
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ✅ Solar-powered operation in remote areas
+    <div style="flex:1; min-width:260px; font-size:18px; color:#1e7e34;">
+      <strong>Solution:</strong> No cables required, wireless deployment
     </div>
   </div>
 
-  <div style="display:flex; flex-wrap:wrap;">
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ❌ High installation complexity
+  <div style="display:flex; flex-wrap:wrap; gap:20px;">
+    <div style="flex:1; min-width:260px; font-size:18px; color:#b00020;">
+      <strong>Problem:</strong> Depends on field electricity
     </div>
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ✅ Simple setup and faster deployment
+    <div style="flex:1; min-width:260px; font-size:18px; color:#1e7e34;">
+      <strong>Solution:</strong> Solar-powered operation in remote areas
     </div>
   </div>
 
-  <div style="display:flex; flex-wrap:wrap;">
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ❌ Hard to expand irrigation zones later
+  <div style="display:flex; flex-wrap:wrap; gap:20px;">
+    <div style="flex:1; min-width:260px; font-size:18px; color:#b00020;">
+      <strong>Problem:</strong> High installation complexity
     </div>
-    <div style="flex:1; min-width:260px; font-size:18px;">
-      ✅ Easy to add more zones anytime
+    <div style="flex:1; min-width:260px; font-size:18px; color:#1e7e34;">
+      <strong>Solution:</strong> Simple setup and faster deployment
+    </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:20px;">
+    <div style="flex:1; min-width:260px; font-size:18px; color:#b00020;">
+      <strong>Problem:</strong> Hard to expand irrigation zones later
+    </div>
+    <div style="flex:1; min-width:260px; font-size:18px; color:#1e7e34;">
+      <strong>Solution:</strong> Easy to add more zones anytime
     </div>
   </div>
 
