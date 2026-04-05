@@ -69,53 +69,41 @@ With the right configuration, the system can help you:
 
 <h2>Common Irrigation Problems vs Practical Solutions</h2>
 
-<div style="display:flex; flex-wrap:wrap; gap:40px; margin-top:20px; margin-bottom:10px;">
-  
-  <div style="flex:1; min-width:280px;">
-    <h3 style="margin-bottom:18px;">Common Problems</h3>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ❌ Pump and valve operation not coordinated
+<div style="display:flex; flex-direction:column; gap:18px; margin-top:25px;">
+
+  <div style="display:flex; flex-wrap:wrap; align-items:flex-start;">
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ❌ Needs cable trenching across the field
     </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ❌ Manual or inconsistent valve control
-    </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ❌ No clear irrigation scheduling
-    </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ❌ No visibility of actual water usage
-    </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ❌ High labor cost and manual operation
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ✅ No cables required, wireless deployment
     </div>
   </div>
 
-  <div style="flex:1; min-width:280px;">
-    <h3 style="margin-bottom:18px;">What You Can Achieve</h3>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ✅ Pump and valves coordinated by irrigation zones
+  <div style="display:flex; flex-wrap:wrap;">
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ❌ Depends on field electricity
     </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ✅ Automatic valve control based on schedule
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ✅ Solar-powered operation in remote areas
     </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ✅ Structured irrigation plans for different zones
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap;">
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ❌ High installation complexity
     </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ✅ Flow-based water monitoring
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ✅ Simple setup and faster deployment
     </div>
-    
-    <div style="margin-bottom:14px; font-size:18px; line-height:1.5;">
-      ✅ Remote control and reduced labor cost
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap;">
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ❌ Hard to expand irrigation zones later
+    </div>
+    <div style="flex:1; min-width:260px; font-size:18px;">
+      ✅ Easy to add more zones anytime
     </div>
   </div>
 
