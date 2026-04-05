@@ -60,9 +60,6 @@ Using LoRa wireless technology, you can control irrigation systems across long d
 
 ## How the System Works
 
-
-## How the System Works
-
 LoRa Gateway + Wireless Valve Controllers + Pump Control System
 
 ### Learn More
