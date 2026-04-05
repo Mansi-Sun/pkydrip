@@ -1,6 +1,6 @@
 ---
 title: "Plan or Upgrade Your Farm Irrigation System"
-description: "Start your farm irrigation project with a simple consultation. Choose a new system or an upgrade path and discuss your project with PKYDrip."
+description: "Start with a simple discussion. Choose a new irrigation project or an upgrade path with PKYDrip."
 url: "/landing/irrigation-project-start/"
 bg_image: "/images/landing/wizard-hero-field.webp"
 layout: landing
@@ -11,13 +11,33 @@ In many farms, irrigation starts with a simple setup.
 
 A pump, a few valves, and manual operation.
 
-At first, it works.
+As the project grows, problems appear:
 
-But as the farm grows, problems appear:
+- water is not distributed evenly  
+- irrigation becomes harder to manage  
+- labor cost keeps increasing  
 
-- Water is not distributed evenly  
-- Irrigation becomes harder to manage  
-- Labor cost keeps increasing  
+---
+
+## Choose Your Situation
+
+### Starting a New Irrigation Project?
+
+Planning a new farm, orchard, greenhouse, or open-field irrigation system?
+
+<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
+Plan a New Irrigation Project
+</a>
+
+---
+
+### Upgrading an Existing Irrigation System?
+
+Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
+
+<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
+Upgrade My Existing System
+</a>
 
 ---
 
@@ -53,36 +73,13 @@ But as the farm grows, problems appear:
     <td style="padding:12px;">❌ High labor cost and manual operation</td>
     <td style="padding:12px;">✅ Remote control and reduced labor</td>
   </tr>
-
 </table>
 
 ---
 
 <div class="landing-image" style="margin: 30px 0;">
-  <img src="/images/landing/irrigation-design-wizard-hero.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" style="max-width:100%;height:auto;border-radius:8px;" />
+  <img src="/images/landing/irrigation-design-wizard-hero.webp" alt="Real farm irrigation project scene" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
 </div>
-
----
-
-## Choose Your Situation
-
-### Starting a New Irrigation Project?
-
-Planning a new farm, orchard, greenhouse, or open-field irrigation system?
-
-<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
-Plan a New Irrigation Project
-</a>
-
----
-
-### Upgrading an Existing Irrigation System?
-
-Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
-
-<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
-Upgrade My Existing System
-</a>
 
 ---
 
@@ -118,12 +115,7 @@ Upgrade My Existing System
     <td style="padding:12px;">❌ On-site manual control only</td>
     <td style="padding:12px;">✅ Remote irrigation control</td>
   </tr>
-
 </table>
-
-<div class="landing-image" style="margin: 30px 0;">
-  <img src="/images/landing/upgrade-existing-system.webp" alt="Irrigation upgrade before and after scenario" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
-</div>
 
 ---
 
