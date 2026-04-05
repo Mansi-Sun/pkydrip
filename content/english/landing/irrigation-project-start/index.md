@@ -1,45 +1,58 @@
 ---
 title: "Plan or Upgrade Your Farm Irrigation System"
-description: "Start with a simple discussion. Choose a new irrigation project or an upgrade path with PKYDrip."
+description: "New irrigation project or existing system upgrade."
 url: "/landing/irrigation-project-start/"
 bg_image: "/images/landing/wizard-hero-field.webp"
 layout: landing
 draft: false
 ---
 
-In many farms, irrigation starts with a simple setup.
+<div style="margin: 10px 0 30px 0;">
+  <p style="font-size:20px;font-weight:500;color:#333;margin-bottom:12px;max-width:720px;line-height:1.5;">
+    Not sure how to start your irrigation project?
+  </p>
+  <p style="font-size:16px;color:#666;max-width:720px;line-height:1.6;margin-bottom:0;">
+    Start with a simple discussion and define the right system or upgrade path.
+  </p>
+</div>
 
-A pump, a few valves, and manual operation.
-
-As the project grows, problems appear:
-
-- Water is not distributed evenly  
-- Irrigation becomes harder to manage  
-- Labor cost keeps increasing  
-
----
+<div style="margin: 0 0 28px 0; max-width: 720px;">
+  <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:14px;">
+    In many farms, irrigation starts with a simple setup.
+  </p>
+  <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:14px;">
+    A pump, a few valves, and manual operation.
+  </p>
+  <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:0;">
+    As the project grows, problems appear: uneven water distribution, harder irrigation management, and increasing labor cost.
+  </p>
+</div>
 
 ## Choose Your Situation
 
-### Starting a New Irrigation Project?
+<div style="display:flex;flex-wrap:wrap;gap:24px;margin:30px 0 40px 0;">
 
-Planning a new farm, orchard, greenhouse, or open-field irrigation system?
+  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:12px;padding:28px;background:#fff;">
+    <h3 style="margin-top:0;margin-bottom:14px;">Starting a New Irrigation Project?</h3>
+    <p style="color:#666;line-height:1.6;margin-bottom:20px;">
+      Planning a new farm, orchard, greenhouse, or open-field irrigation system?
+    </p>
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
+      Plan a New Irrigation Project
+    </a>
+  </div>
 
-<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20am%20planning%20a%20new%20farm%20irrigation%20project.%20Can%20you%20help%20me%20define%20the%20system%20structure%3F">
-Plan a New Irrigation Project
-</a>
+  <div style="flex:1 1 320px;border:1px solid #e5e5e5;border-radius:12px;padding:28px;background:#fff;">
+    <h3 style="margin-top:0;margin-bottom:14px;">Upgrading an Existing Irrigation System?</h3>
+    <p style="color:#666;line-height:1.6;margin-bottom:20px;">
+      Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
+    </p>
+    <a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
+      Upgrade My Existing System
+    </a>
+  </div>
 
----
-
-### Upgrading an Existing Irrigation System?
-
-Already have a pump, pipeline, or manual irrigation setup and want better control or automation?
-
-<a class="btn btn-primary" href="https://wa.me/8617395297329?text=Hi,%20I%20already%20have%20an%20irrigation%20system%20and%20want%20to%20upgrade%20it.%20Can%20you%20help%20review%20it%3F">
-Upgrade My Existing System
-</a>
-
----
+</div>
 
 ## Common Irrigation Problems vs Practical Solutions
 
