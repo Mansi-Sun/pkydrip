@@ -6,23 +6,56 @@ layout: landing
 draft: false
 ---
 
-Most irrigation projects run into the same problems:
+In many farms, irrigation starts with a simple setup.
 
-- Pump operation is not matched to irrigation zones  
-- Valves are manually controlled or poorly scheduled  
-- Irrigation timing is inconsistent across the field  
+A pump, a few valves, and manual operation.
 
-This leads to water waste, unstable irrigation results, and high labor cost.
+At first, it works.
+
+But as the farm grows, problems appear:
+
+- water is not distributed evenly  
+- irrigation becomes harder to manage  
+- labor cost keeps increasing  
 
 ---
 
-With a practical PKYDrip irrigation control structure, you can:
+## Common Irrigation Problems vs Practical Solutions
 
-- Automatically control pumps and valves by irrigation zone  
-- Set irrigation schedules for different crops and field areas  
-- Monitor actual water usage with flow sensors  
-- Control the irrigation system remotely  
-- Reduce manual work and improve irrigation consistency  
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+  <tr>
+    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">Common Problems</th>
+    <th style="text-align:left;padding:12px;border-bottom:2px solid #eee;">What You Can Achieve</th>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Pump operation not matched to irrigation zones</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Pump and valves coordinated by irrigation zones</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ Manual or inconsistent valve control</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Automatic valve control based on schedule</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No clear irrigation scheduling</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Structured irrigation plans for different zones</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">❌ No visibility of actual water usage</td>
+    <td style="padding:12px;border-bottom:1px solid #f0f0f0;">✅ Flow sensor-based water monitoring</td>
+  </tr>
+
+  <tr>
+    <td style="padding:12px;">❌ High labor cost and manual operation</td>
+    <td style="padding:12px;">✅ Remote control and reduced labor</td>
+  </tr>
+
+</table>
+
+---
 
 <div class="landing-image" style="margin: 30px 0;">
   <img src="/images/landing/wizard-system-structure.webp" alt="Farm irrigation system pump valve zoning structure" loading="eager" style="max-width:100%;height:auto;border-radius:8px;" />
