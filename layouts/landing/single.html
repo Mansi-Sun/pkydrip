@@ -3,8 +3,8 @@
 {{ with .Params.bg_image }}
 <section style="
   position: relative;
-  min-height: 220px;
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.08)), url('{{ . }}') center center / cover no-repeat;
+  min-height: 260px;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15)), url({{ . }}) center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,16 +12,18 @@
   <div style="
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
     color: #fff;
   ">
-    <h1 style="margin:0;font-size:32px;line-height:1.2;color:#fff;">{{ $.Title }}</h1>
+    <h1 style="margin:0;font-size:36px;line-height:1.2;color:#fff;">
+      {{ $.Title }}
+    </h1>
   </div>
 </section>
 {{ end }}
 
-<section style="padding:30px 15px;">
+<section style="padding:40px 15px;">
   <div style="max-width:760px;margin:auto;">
     <div class="content">
       {{ .Content }}
