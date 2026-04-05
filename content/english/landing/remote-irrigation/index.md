@@ -1,5 +1,5 @@
 ---
-title: "Remote Irrigation System Without Power or Cables"
+title: "Remote Irrigation Without Power"
 layout: landing
 description: "Wireless LoRa irrigation system for farms without electricity. Control valves remotely with solar-powered devices."
 url: "/landing/remote-irrigation/"
