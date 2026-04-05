@@ -34,7 +34,24 @@ style="background:#25D366;color:#fff;padding:16px 34px;border-radius:6px;text-de
 ---
 
 ## Real Field Deployment Example
+This example shows a greenhouse irrigation expansion project using a LoRa wireless system.
 
+In many projects, the main irrigation infrastructure (pipes and layout) has already been completed.  
+When new irrigation zones are added, traditional solutions usually require additional wiring, trenching, and electrical work.
+
+With a LoRa wireless system, expansion becomes much simpler:
+
+- Only extend the pipeline to new irrigation areas  
+- No need to install control cables  
+- No need to modify existing electrical systems  
+
+In this project, three new irrigation zones were added using three wireless valve controllers, each controlling a 1" pulse solenoid valve.
+
+Depending on your project size, larger valves can be selected to control bigger irrigation areas.
+
+A LoRa gateway installed at the top of the greenhouse provides stable communication, enabling centralized and remote control of all zones.
+
+The system is solar-powered and designed for low maintenance, with a typical operation cycle of up to 2 years without battery replacement.
 <div style="text-align:center; margin:30px 0;">
 <img src="/images/landing/lora-system-real-field.webp" alt="Solar LoRa irrigation valve controller installed in the field" style="max-width:100%; border-radius:8px;">
 </div>
