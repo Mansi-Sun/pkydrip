@@ -2,7 +2,7 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/slider-bg.webp"
+  bg_image: "images/home/farm-irrigation-system.webp"
   bg_overlay: true
   title: "Smart Irrigation Systems <br/> for New Projects and Upgrades"
   content: "Plan new irrigation systems, upgrade existing farms, and build scalable control architecture for agriculture, greenhouse, and landscape irrigation."
