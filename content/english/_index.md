@@ -79,3 +79,5 @@ funfacts:
     designation: "Founder - PKYDrip"
     content: "Our goal is to help growers, contractors, and partners build irrigation systems step by step, with modular products, technical support, and scalable control architecture."
 ---
+
+
