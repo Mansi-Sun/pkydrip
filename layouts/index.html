@@ -3,7 +3,30 @@
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
+<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image:url('{{ .bg_image | relURL }}'); position:relative;">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events:none;"></div>
 
+  <div class="container position-relative" style="z-index:1;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
+          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+          {{ with .button }}
+          {{ if .enable }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+<!-- choose your starting point -->
 <section class="section" style="padding:70px 0 50px 0;">
   <div class="container">
     <div class="row justify-content-center">
@@ -164,6 +187,7 @@
     </div>
   </div>
 </section>
+<!-- /choose your starting point -->
 
 <!-- about -->
 {{ with .Params.about }}
