@@ -33,12 +33,12 @@ We focus on practical engineering structure, so your irrigation system can remai
 portfolio:
   enable: true
   bg_image: "images/feature-bg.webp"
-  title: "Built for Real Irrigation Decisions"
-  content: "Explore technical documents, control logic, application pages, and engineering references designed to support practical irrigation decisions for farms, greenhouses, and landscape projects."
+  title: "From Structure to Implementation"
+  content: "After choosing your project path, you can continue with practical solution pages, planning tools, and real application examples. The goal is not to start from isolated products, but from a system structure that fits your project."
   button:
     enable: true
-    label: "View Technical Documentation"
-    link: "/docs/"
+    label: "Browse Solution Pages"
+    link: "/solution/"
 
 ############################# Service ############################
 service:
