@@ -4,27 +4,37 @@ banner:
   enable: true
   bg_image: "images/slider-bg.webp"
   bg_overlay: true
-  title: "Modular Irrigation Control Platform <br/> for Modern Projects"
-  content: "Controllers, valve control, fertigation systems, and engineering tools for agriculture, greenhouse, and landscape irrigation."
+  title: "Smart Irrigation Systems <br/> for New Projects and Upgrades"
+  content: "Plan new irrigation systems, upgrade existing farms, and build scalable control architecture for agriculture, greenhouse, and landscape irrigation."
   button:
     enable: true
     label: "Explore Irrigation Solutions"
-    link: "solution/"
+    link: "/solution/"
 
 ############################# About #################################
 about:
   enable: true
-  title: "About PKYDrip"
-  description: "PKYDrip develops irrigation controllers, fertigation systems, valve control solutions, and remote irrigation platforms for project-based irrigation applications."
-  content: "Our systems are designed for agriculture, greenhouse irrigation, landscape projects, and water-saving control applications. We focus on modular control architecture, practical engineering logic, and scalable system design that helps customers build irrigation projects more efficiently."
+  title: "What We Help You Build"
+  description: "PKYDrip helps growers, contractors, and project partners build irrigation systems with a clear structure — from sensing and communication to execution and control."
+  content: "Instead of starting from isolated products, you can start from the system architecture. This makes it easier to plan new irrigation projects, upgrade existing systems, and expand step by step without rebuilding everything.
+
+Our approach is designed for real project needs:
+
+- New irrigation system planning  
+- Existing system retrofit and upgrade  
+- Remote valve control and communication  
+- Pump, zoning, and fertigation coordination  
+- Scalable integration of sensing, execution, and control  
+
+We focus on practical engineering structure, so your irrigation system can remain clear, expandable, and easier to manage over time."
   image: "images/wrapper-img.webp"
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
   bg_image: "images/feature-bg.webp"
-  title: "Built Around Real Irrigation Projects"
-  content: "PKYDrip is not only a product supplier. We provide modular irrigation control systems, fertigation control, valve automation, and engineering support for real projects. Our platform approach helps growers, contractors, and distributors start with a practical structure and expand over time."
+  title: "Built for Real Irrigation Decisions"
+  content: "Explore technical documents, control logic, application pages, and engineering references designed to support practical irrigation decisions for farms, greenhouses, and landscape projects."
   button:
     enable: true
     label: "View Technical Documentation"
@@ -33,51 +43,19 @@ portfolio:
 ############################# Service ############################
 service:
   enable: true
-  # service content comes from "service.md" file
 
 ############################ call to action ###########################
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "Need Help Planning an Irrigation Project?"
-  content: "Explore irrigation solutions, use engineering tools, or discuss your project with PKYDrip. We support practical system planning for pump control, valve zoning, fertigation integration, and remote irrigation control."
+  title: "Planning a New Irrigation Project?"
+  content: "Use our irrigation design tool to organize your farm size, water source, irrigation method, and control structure before moving into detailed system selection."
   button:
     enable: true
-    label: "View Engineering Tools"
-    link: "/tools/"
+    label: "Open Design Wizard"
+    link: "/tools/irrigation-design-wizard/"
 
 ############################# Funfacts ###############################
 funfacts:
   enable: false
-  title: "Why Project Customers Work With PKYDrip"
-  description: "We focus on modular irrigation control systems, practical project support, and scalable engineering structure."
-  funfact_item:
-  - icon: "fas fa-project-diagram"
-    name: "Project-Oriented Systems"
-    count: "Modular"
-
-  - icon: "fas fa-sliders-h"
-    name: "Control Logic"
-    count: "Multi-Zone"
-
-  - icon: "fas fa-tools"
-    name: "Engineering Support"
-    count: "Practical"
-
-  - icon: "fas fa-globe"
-    name: "Application Scope"
-    count: "Global"
-
-  testimonial_slider:
-  - name: "Junfeng Qiu"
-    image: "images/clients/avater-1.webp"
-    designation: "Founder - PKYDrip"
-    content: "PKYDrip is built around real irrigation control logic — pumps, valves, zoning, fertigation, and practical engineering support for real projects."
-
-  - name: "Junfeng Qiu"
-    image: "images/clients/avater-1.webp"
-    designation: "Founder - PKYDrip"
-    content: "Our goal is to help growers, contractors, and partners build irrigation systems step by step, with modular products, technical support, and scalable control architecture."
 ---
-
-
