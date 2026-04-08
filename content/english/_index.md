@@ -11,56 +11,6 @@ banner:
     label: "Explore Irrigation Solutions"
     link: "solution/"
 
-<section class="section" style="padding:70px 0 40px 0;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 text-center">
-        <div class="section-title">
-          <h2>Start from Your Project Type</h2>
-          <p style="color:#666; max-width:760px; margin:0 auto;">
-            Choose the right starting point for your irrigation project — new system planning, retrofit upgrade, or technical solution exploration.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top:20px;">
-      <div class="col-md-4 col-sm-12" style="margin-bottom:30px;">
-        <div style="height:100%; padding:28px; border:1px solid #e8e8e8; border-radius:12px; background:#fff;">
-          <div style="font-size:30px; margin-bottom:14px;">🌱</div>
-          <h4 style="margin-bottom:12px;">Start a New Irrigation Project</h4>
-          <p style="color:#666; min-height:96px;">
-            Plan irrigation zones, pump structure, and control logic for new farms, orchards, and greenhouse projects.
-          </p>
-          <a href="/tools/irrigation-design-wizard/" class="btn btn-small" style="margin-top:10px;">Open Design Wizard</a>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12" style="margin-bottom:30px;">
-        <div style="height:100%; padding:28px; border:1px solid #e8e8e8; border-radius:12px; background:#fff;">
-          <div style="font-size:30px; margin-bottom:14px;">🔧</div>
-          <h4 style="margin-bottom:12px;">Upgrade an Existing System</h4>
-          <p style="color:#666; min-height:96px;">
-            Improve valve control, pump automation, remote access, and fertigation without rebuilding the whole irrigation system.
-          </p>
-          <a href="/solution/irrigation-retrofit-upgrade/" class="btn btn-small" style="margin-top:10px;">View Upgrade Solutions</a>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12" style="margin-bottom:30px;">
-        <div style="height:100%; padding:28px; border:1px solid #e8e8e8; border-radius:12px; background:#fff;">
-          <div style="font-size:30px; margin-bottom:14px;">🧭</div>
-          <h4 style="margin-bottom:12px;">Explore Technical Solutions</h4>
-          <p style="color:#666; min-height:96px;">
-            Browse irrigation architecture, application scenarios, and technical solution pages for agriculture, greenhouse, and landscape projects.
-          </p>
-          <a href="/solution/" class="btn btn-small" style="margin-top:10px;">Browse Solutions</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 ############################# About #################################
 about:
   enable: true
