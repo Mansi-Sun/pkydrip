@@ -192,30 +192,44 @@
 <!-- /choose your starting point -->
 
 <!-- about -->
-{{ with .Params.about }}
-{{ if .enable }}
-<section class="about section">
+<!-- what we help you build -->
+<section class="section" style="padding:50px 0 40px 0; background:#f9fbfc;">
   <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-            {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          </div>
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
+
+    <!-- 标题 -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <div class="section-title" style="margin-bottom:20px;">
+          <h2 style="margin-bottom:12px;">What We Help You Build</h2>
+          <p style="color:#666; max-width:780px; margin:0 auto; line-height:1.7;">
+            A complete smart irrigation system — from water source to field control,
+            including filtration, fertigation, automation, and remote management.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- 系统图 -->
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <img src="/images/home/irrigation-system-structure.png" 
+             alt="Smart Irrigation System Structure"
+             style="width:100%; max-width:1100px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.05);">
+      </div>
+    </div>
+
+    <!-- 可选：补一行强化理解 -->
+    <div class="row justify-content-center" style="margin-top:20px;">
+      <div class="col-md-8 text-center">
+        <p style="color:#777; font-size:15px; line-height:1.7;">
+          Pump → Filtration → Fertigation → Controller → Irrigation Zones → Remote App Control
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
-{{ end }}
-{{ end }}
+<!-- /what we help you build -->
 <!-- /about -->
 
 <!-- portfolio -->
