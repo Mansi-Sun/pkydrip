@@ -1,6 +1,6 @@
 ---
 title: "Irrigation Design Wizard — Planning Tool for Farms & Projects"
-description: "Irrigation planning tool for farm size, water source, crop, and irrigation method. Practical direction for pumps, valves, and zoning—then share outputs on WhatsApp for engineering review."
+description: "Structured irrigation planning inputs: farm size, water source, crop, and method. Produces a short project summary for discussion—not a hydraulic design or stamped engineering package."
 url: "/tools/irrigation-design-wizard/"
 type: irrigation-wizard
 bg_image: "/images/landing/irrigation-design-wizard-hero.webp"
@@ -12,7 +12,7 @@ draft: false
 
 This tool helps you **organize your irrigation project clearly** (layout, water source, crop type, and irrigation method).
 
-After you generate a summary in the **Project Input** form on this page, you can send it to our engineers on **WhatsApp** for a practical, project-oriented recommendation—useful when you are still planning and need a structured starting point.
+After you generate a summary in the **Project Input** form on this page, you can send it to our team on **WhatsApp** for a **preliminary, project-oriented discussion** (typical response time and scope depend on workload; this is not a formal engineering deliverable).
 
 <p style="margin:16px 0 0 0;">
   <a href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%27m%20planning%20an%20irrigation%20project%20and%20want%20to%20share%20details%20for%20engineering%20review." target="_blank" rel="noopener" style="display:inline-block;background:#25D366;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:16px;">Message us on WhatsApp</a>
@@ -23,8 +23,8 @@ After you generate a summary in the **Project Input** form on this page, you can
 ### Planning workflow on this page
 
 1. **Plan** — Use the structured **Project Input** form below this section to summarize your project.  
-2. **Send** — Generate the summary, then share it via WhatsApp so we can review your inputs.  
-3. **Review** — Get practical direction on layout, pumping, zoning, and automation options (early-stage guidance, not a final stamped engineering design).
+2. **Send** — Generate the summary, then share it via WhatsApp so we can look at your inputs.  
+3. **Discuss** — General discussion points on layout, pumping, zoning, and automation options (**early-stage guidance only**—not a final stamped engineering design or certified calculation).
 
 ---
 
@@ -40,14 +40,14 @@ Get a practical direction for pumps, valves, and irrigation zones.
 ### What This Tool Helps You Do
 
 - Suitable for new farms and early-stage irrigation planning  
-- Helps you estimate pump, valve, and zoning structure  
+- Helps you **structure** pump, valve, and zoning topics for further discussion (not automated hydraulic sizing)  
 - Useful for discussions with suppliers and contractors  
 
 ---
 
-## Get a basic irrigation plan in minutes
+## Build a basic project summary in minutes
 
-You do not need full engineering data to start.
+You do not need full engineering data to start. The output is a **text summary**, not a drawing set or hydraulic calculation.
 
 - Enter your farm size  
 - Select crop type  
@@ -145,6 +145,6 @@ For technical users or engineers, the planning form below can be used as a struc
 ## Next on this page
 
 Continue below this introduction for the **project CTA** (WhatsApp + jump to the form), then the interactive **Project Input** form.  
-After you generate a summary, use **Send to WhatsApp** in the form to share it with our engineers for review.
+After you generate a summary, use **Send to WhatsApp** in the form to share it with our team for a preliminary discussion.
 
 ---

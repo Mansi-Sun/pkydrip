@@ -300,16 +300,16 @@
   </div>
 <div class="farm-cta-box">
   <div class="farm-cta-content">
-    <h2>Get a Practical Irrigation Plan for Your Project</h2>
+    <h2>Discuss your irrigation project (preliminary)</h2>
     <p>
-      Send your farm size, water source, pump info, and irrigation goals.
-      We will help you organize a practical direction for pumps, valves, and irrigation zones.
+      Share your farm size, water source, pump information, and goals.
+      We can discuss general direction for pumps, valves, and irrigation zones—subject to site verification. This is not a substitute for local engineering sign-off where required.
     </p>
 
     <ul class="farm-cta-points">
-      <li>Suitable for new farms and irrigation projects</li>
-      <li>Useful for pump, valve, and zone planning</li>
-      <li>Easy to discuss by WhatsApp with your project details</li>
+      <li>Suitable for new farms and early-stage irrigation planning</li>
+      <li>Helps structure topics for pump, valve, and zone discussions</li>
+      <li>Contact us on WhatsApp with your project details</li>
     </ul>
 
     <div class="farm-cta-actions">
@@ -319,7 +319,7 @@
         target="_blank"
         rel="noopener"
       >
-        Get Free Advice on WhatsApp
+        Contact us on WhatsApp
       </a>
 
       <a
@@ -470,7 +470,7 @@
 
       <hr style="margin:24px 0;">
 
-      <h3>Suggested Direction</h3>
+      <h3>General discussion points</h3>
       <div id="directionText" style="line-height:1.8;"></div>
 
       <h3 style="margin-top:24px;">Recommended Next Step</h3>
@@ -478,8 +478,8 @@
 
       <h3 style="margin-top:24px;">Important Note</h3>
       <p style="line-height:1.8;color:#666;">
-        This summary is a practical planning reference for early discussion.
-        It is not a final engineering design and should be reviewed based on actual pipe length, elevation, pressure, flow, and field conditions.
+        This summary is a practical planning reference for early discussion only.
+        It is not a hydraulic calculation, certified design, or substitute for qualified on-site engineering. Final equipment and pipe sizing must be validated for your actual pipe lengths, elevation, pressure, flow, and local regulations.
       </p>
     </div>
 
@@ -587,12 +587,12 @@ function generateWizardSummary() {
   }
 
   if (!waterSource && !flowInfo && !pumpInfo) {
-    direction += "<p><strong>Note:</strong> Water capacity is still unclear. Pump flow, pressure, and available water condition should be confirmed before final equipment recommendation.</p>";
+    direction += "<p><strong>Note:</strong> Water capacity is still unclear. Pump flow, pressure, and available water condition should be confirmed before selecting equipment.</p>";
   }
 
   let nextStep = "";
   if (isExisting || hasExistingWater) {
-    nextStep += "<p>Recommended next step: review the retrofit logic page and send your current system details for a more accurate upgrade suggestion.</p>";
+    nextStep += "<p>Recommended next step: review the retrofit logic page and send your current system details for further upgrade discussion.</p>";
     nextStep += '<p><a href="/solution/irrigation-retrofit-upgrade/">View Irrigation Retrofit Upgrade</a></p>';
   } else if (projectType === "open field" || projectType === "orchard" || projectType === "greenhouse") {
     nextStep += "<p>Recommended next step: review a typical system structure and then send this summary for project discussion.</p>";
@@ -611,7 +611,7 @@ function generateWizardSummary() {
     "Hello, I completed the PKYDrip Irrigation Design Wizard.%0A%0A" +
     "Project summary:%0A" +
     encodeURIComponent(summary) +
-    "%0A%0APlease review this project and suggest a suitable irrigation control direction.";
+    "%0A%0APlease review this summary for a preliminary discussion of irrigation control options (not a certified design).";
 
   document.getElementById("waButton").href =
     "https://wa.me/8617395297329?text=" + waMessage;
