@@ -5,7 +5,7 @@ type: "product"
 layout: "farm-irrigation-controller"
 
 bg_image: ""
-image: "images/product/smart-controllers.webp"
+image: "images/product/pump-control.webp"
 
 categories:
   - irrigation-controller
