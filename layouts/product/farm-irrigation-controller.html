@@ -1,0 +1,231 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<main class="product-landing">
+
+  {{/* Hero */}}
+  <section class="py-5" style="background: linear-gradient(180deg, rgba(46,139,87,0.08), rgba(255,255,255,1));">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-semibold mb-3">{{ .Params.hero.title | default .Title }}</h1>
+          {{ with .Params.hero.subtitle }}
+            <p class="lead text-muted mb-4">{{ . }}</p>
+          {{ else }}
+            {{ with .Params.description }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+          {{ end }}
+
+          <div class="d-flex flex-wrap gap-2">
+            {{ with .Params.hero.cta_primary }}
+              <a href="{{ .url }}" target="_blank" rel="noopener"
+                 class="btn btn-success px-4"
+                 onclick="return gtag_report_conversion('{{ .url }}');">
+                {{ .label }}
+              </a>
+            {{ end }}
+            {{ with .Params.hero.cta_secondary }}
+              <a href="{{ .url }}" target="_blank" rel="noopener"
+                 class="btn btn-outline-success px-4"
+                 onclick="return gtag_report_conversion('{{ .url }}');">
+                {{ .label }}
+              </a>
+            {{ end }}
+          </div>
+
+          {{ with .Params.hero.note }}
+            <p class="small text-muted mt-3 mb-0">{{ . | markdownify }}</p>
+          {{ end }}
+        </div>
+
+        <div class="col-lg-5 text-center">
+          {{ with .Params.image }}
+            <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Title }}" style="max-height: 340px; object-fit: contain;">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Common use cases */}}
+  {{ with .Params.use_cases }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.use_cases_title | default "Common use cases" }}</h2>
+      <div class="row g-3">
+        {{ range . }}
+          <div class="col-md-6">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="fw-semibold mb-1">{{ .title }}</div>
+              {{ with .desc }}<div class="text-muted">{{ . }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* What it can do */}}
+  {{ with .Params.capabilities }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.capabilities_title | default "What this controller can do" }}</h2>
+      <div class="row g-3">
+        {{ range . }}
+          <div class="col-md-6">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="fw-semibold mb-1">{{ .title }}</div>
+              {{ with .desc }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Typical system structure */}}
+  {{ with .Params.system_structure }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.system_structure_title | default "Typical system structure" }}</h2>
+      <div class="p-4 border rounded bg-white">
+        <div class="fw-semibold mb-2">{{ .diagram }}</div>
+        {{ with .note }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Suitable projects */}}
+  {{ with .Params.suitable_projects }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.suitable_projects_title | default "Suitable projects (quick check)" }}</h2>
+      <div class="row g-3">
+        <div class="col-lg-7">
+          <div class="p-4 border rounded bg-white h-100">
+            <ul class="mb-0">
+              {{ range .fit_points }}
+                <li>{{ . | markdownify }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 border rounded bg-white h-100">
+            <div class="fw-semibold mb-2">Not for consumer garden timers</div>
+            <div class="text-muted">{{ .not_fit_note | markdownify }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Consultation section */}}
+  {{ with .Params.consultation }}
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="h3 mb-3">{{ $.Params.sections.consultation_title | default "Consultation (recommended before purchase)" }}</h2>
+          <div class="text-muted mb-3">{{ .why | markdownify }}</div>
+          <div class="p-4 border rounded bg-white">
+            <div class="fw-semibold mb-2">Send these details on WhatsApp</div>
+            <ul class="mb-0">
+              {{ range .send_list }}
+                <li>{{ . | markdownify }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ with .recommend_list }}
+          <div class="p-4 border rounded bg-white mt-3">
+            <div class="fw-semibold mb-2">PKYDrip will recommend</div>
+            <ul class="mb-0">
+              {{ range . }}
+                <li>{{ . | markdownify }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="col-lg-5">
+          <div class="p-4 border rounded bg-white">
+            <div class="fw-semibold mb-2">Get a suitable controller configuration</div>
+            <div class="text-muted mb-3">{{ .cta_reason | markdownify }}</div>
+            {{ with .cta }}
+              <a href="{{ .url }}" target="_blank" rel="noopener"
+                 class="btn btn-success w-100 py-2"
+                 onclick="return gtag_report_conversion('{{ .url }}');">
+                {{ .label }}
+              </a>
+            {{ end }}
+            {{ with $.Params.page_code }}
+              <div class="small text-muted mt-3">Reference code: <span class="fw-semibold">{{ . }}</span></div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* FAQ */}}
+  {{ with .Params.faq }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.faq_title | default "FAQ" }}</h2>
+      <div class="accordion" id="faqAccordion">
+        {{ range $i, $q := . }}
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading{{ $i }}">
+              <button class="accordion-button {{ if ne $i 0 }}collapsed{{ end }}" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqCollapse{{ $i }}"
+                      aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+                      aria-controls="faqCollapse{{ $i }}">
+                {{ $q.q }}
+              </button>
+            </h3>
+            <div id="faqCollapse{{ $i }}" class="accordion-collapse collapse {{ if eq $i 0 }}show{{ end }}"
+                 aria-labelledby="faqHeading{{ $i }}" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                {{ $q.a | markdownify }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Optional markdown content (kept available) */}}
+  {{ with .Content }}
+    <section class="py-4">
+      <div class="container">
+        <div class="content">{{ . }}</div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* Fallback CTA (keeps existing product CTA support) */}}
+  {{ with .Params.cta }}
+  <section class="py-5">
+    <div class="container text-center">
+      <p class="lead mb-3">{{ .text }}</p>
+      <a href="{{ .button_url }}" target="_blank" rel="noopener"
+         class="btn btn-success px-4"
+         onclick="return gtag_report_conversion('{{ .button_url }}');">
+        {{ .button_label }}
+      </a>
+    </div>
+  </section>
+  {{ end }}
+
+</main>
+
+{{ end }}
+
