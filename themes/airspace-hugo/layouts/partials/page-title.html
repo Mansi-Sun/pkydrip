@@ -7,7 +7,11 @@
       <div class="col-md-12">
         <div class="block text-center text-white">
           <h1>{{ .Title }}</h1>
-          <p>{{ .Params.tagline }}</p>
+          {{ with .Params.tagline }}
+          <div style="max-width:860px;margin:10px auto 0 auto;">
+            {{ . | markdownify }}
+          </div>
+          {{ end }}
         </div>
       </div>
     </div>
