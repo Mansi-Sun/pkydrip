@@ -20,7 +20,7 @@ draft: false
   <a class="btn btn-primary" href="/contact/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
     Request Catalog &amp; OEM Pricing
   </a>
-  <a class="btn btn-outline-primary" href="/downloads/catalogue/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
+  <a class="btn btn-outline-primary" href="/downloads/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
     Get Product Catalog
   </a>
   <a class="btn btn-outline-primary" href="https://wa.me/8617395297329?text=Hi%2C%20I%20am%20an%20irrigation%20distributor%2FOEM%20buyer.%20Please%20share%20your%20OEM%20irrigation%20controller%20catalog%20and%20MOQ%20options." style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
@@ -208,7 +208,7 @@ Best suited for distributors, contractors, and OEM partners.
     <a class="btn btn-primary" href="/contact/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
       Request Catalog &amp; OEM Pricing
     </a>
-    <a class="btn btn-outline-primary" href="/downloads/catalogue/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
+    <a class="btn btn-outline-primary" href="/downloads/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
       Get Catalog
     </a>
     <a class="btn btn-outline-primary" href="https://wa.me/8617395297329?text=Hi%2C%20please%20suggest%20an%20OEM%20irrigation%20controller%20solution%20for%20my%20market.%20I%20want%20to%20discuss%20MOQ%2C%20branding%2C%20and%20configuration." style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
