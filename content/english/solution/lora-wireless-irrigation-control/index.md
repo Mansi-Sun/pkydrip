@@ -3,6 +3,7 @@ title: "LoRa Wireless Irrigation Control System | Remote Valve Automation Soluti
 description: "A modular LoRa-based wireless irrigation control system for farms, orchards, and remote irrigation projects. Control pumps and valve zones without wiring, with scalable gateway-node architecture."
 layout: "solution"
 url: "/solution/lora-wireless-irrigation-control/"
+bg_image: "/images/solutions/lora-wireless-irrigation-diagram.webp"
 draft: false
 ---
 

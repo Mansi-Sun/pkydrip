@@ -3,6 +3,7 @@ title: "Upgrade Existing Irrigation Systems Without Rebuilding Everything"
 description: "Retrofit and upgrade existing irrigation systems with better pump control, valve zoning, automation, and remote management. Suitable for farms with existing wells, reservoirs, pumps, or manual irrigation networks."
 layout: "solution"
 url: "/solution/irrigation-retrofit-upgrade/"
+bg_image: "/images/solutions/irrigation-retrofit-before-after.webp"
 draft: false
 ---
 
