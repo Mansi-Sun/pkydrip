@@ -6,232 +6,118 @@ url: "/solution/irrigation-retrofit-upgrade/"
 draft: false
 ---
 
-## Upgrade Existing Irrigation Systems Without Rebuilding Everything
+## Upgrade existing irrigation systems without rebuilding everything
 
-Many farms already have part of the irrigation infrastructure in place.  
-They may already have a **bore pump**, a **reservoir**, a **main pipeline**, or several **manual valves**.  
-The real problem is often not “how to build a new system from zero,” but **how to upgrade the existing system into a more stable and manageable irrigation structure**.
+Many sites already have **bore pumps, tanks, mains, and manual valves**. The opportunity is to **keep existing pipelines** and add **smart control**: pump logic, valve automation, scheduling, and clearer operation—ideal for **contractor-led upgrades** and **distributor solution packages**.
 
-PKYDrip provides a practical retrofit path for irrigation projects that need:
+---
 
-- pump control improvement
-- multi-zone irrigation control
-- reduced manual valve operation
-- remote monitoring and alarm support
-- staged automation without rebuilding the whole farm
+## Problem: manual pump and valve operation limits the system
 
-This approach is especially useful for orchards, open-field farms, greenhouse retrofits, and water-limited irrigation projects.
+Common starting points:
 
-* * *
+- Pump start/stop is **manual** → labor, inconsistent run times  
+- Too many **manual valves** → hard to enforce zoning when water is limited  
+- **No schedules or records** → weak traceability for commercial operations  
+- Pipes are in the ground, but **control logic** never caught up  
 
-## Suitable Upgrade Scenarios
+Retrofit focuses on **control and zoning**, not replacing the whole hydraulic network.
 
-This page is designed for projects such as:
+---
 
-- farms with an existing **well or bore pump**
-- irrigation systems using **manual valve operation**
-- reservoir or tank projects needing **better zoning**
-- existing pump systems without **automatic scheduling**
-- irrigation projects that want to add **remote control**
-- farms that want to upgrade step by step instead of rebuilding everything at once
+## Solution: add controller, pump control, valve automation, and scheduling
 
-In many cases, the existing water source and pipe network can still be used.  
-The main improvement comes from adding better control logic and a clearer irrigation zoning structure.
+A practical retrofit stack:
 
-* * *
+| Layer | What you add |
+|-------|----------------|
+| **Smart controller** | Schedules, interlocks, zone sequencing |
+| **Pump control** | Safe start/stop, pressure/flow awareness where specified |
+| **Valve automation** | Zone-by-zone irrigation instead of ad-hoc manual switching |
+| **Records / remote** | Optional remote access or wireless expansion later |
 
-## Common Problems in Existing Irrigation Systems
+Design usually follows: **existing water source → available flow → time window → zones → automation**.
 
-Many retrofit projects begin with one or more of the following problems:
+---
 
-### 1. Pump operation is still manual
-The pump is turned on and off manually, which increases labor and creates unnecessary operating risk.
+## Before / after (diagram placeholder)
 
-### 2. Too many valves are difficult to manage
-As the irrigation area expands, manual valve operation becomes inefficient and inconsistent.
+<!-- When ready, add asset: /images/solutions/irrigation-retrofit-before-after.webp -->
 
-### 3. Water supply is limited
-A well, tank, or reservoir may not be able to irrigate the whole farm at the same time.  
-Without proper zoning, pressure becomes unstable and irrigation uniformity suffers.
+<div style="text-align:center;margin:28px 0;padding:34px 18px;border:1px dashed #cfd8e3;border-radius:12px;background:#f8fafc;color:#475569;font-size:15px;line-height:1.6;">
+  <strong style="display:block;margin-bottom:10px;color:#1e293b;">Before / after diagram placeholder</strong>
+  Intended file: <code style="font-size:13px;">/images/solutions/irrigation-retrofit-before-after.webp</code><br/>
+  Suggested content: “before” manual valves + ad-hoc pump use → “after” controller + automated zones + optional remote.
+</div>
 
-### 4. The pipe network exists, but control is weak
-Many farms already have pipelines installed, but the system lacks proper scheduling, remote access, and automation logic.
+**Before:** manual pump operation, manual valves, limited scheduling.  
+**After:** controller-led zoning, automated valves, structured irrigation windows—**same main pipes** in most projects.
 
-### 5. Future expansion is unclear
-The farm may want to add fertigation, sensors, LoRa valve control, or remote management later, but the current system has no structured upgrade path.
+---
 
-* * *
+## Product combination (typical retrofit BOM)
 
-## Typical Retrofit Logic
+| Item | Purpose |
+|------|---------|
+| **Controller cabinet / panel** | Core scheduling, I/O, and project logic |
+| **Pump control** | Relays, starters, or signals matched to the existing pump setup |
+| **Valve control** | Solenoid or actuator drivers per zone |
+| **Sensors (optional)** | Flow, pressure, tank level—where the specification requires feedback |
+| **Wireless expansion (optional)** | e.g. LoRa valve nodes when field wiring is costly |
 
-Retrofitting an irrigation project usually follows a different design path from a completely new project.
+<!-- Optional hero-style image when available: /images/solutions/controller-valve-pump-combination.webp -->
 
-For new farms, the design often starts from **land area and crop demand**.
+<div style="text-align:center;margin:18px 0 8px 0;padding:26px 16px;border:1px dashed #e2e8f0;border-radius:12px;background:#fff;color:#64748b;font-size:14px;line-height:1.55;">
+  <strong style="color:#334155;">Product combination visual placeholder</strong><br/>
+  <code style="font-size:12px;">/images/solutions/controller-valve-pump-combination.webp</code>
+</div>
 
-For existing farms, the logic is often the opposite:
+---
 
-**existing water source → available flow → irrigation time window → zoning structure → automation upgrade**
+## Partner value: easier retrofit projects for local service providers
 
-This is why many retrofit projects should be planned from the **water side first**, not from the land side.
+- **Keep existing pipelines** → less civil work, clearer upgrade scope  
+- **Staged upgrades** → pump first, then zones, then remote—matched to budget and season  
+- **Repeatable packages** for **distributors** selling into contractor networks  
+- **OEM / batch** paths when partners want a standard controller + I/O kit for their market  
 
-* * *
+---
 
-## Typical Upgrade Path
+## Upgrade levels (short reference)
 
-PKYDrip supports staged irrigation upgrades rather than forcing a complete rebuild.
+1. **Timed pump control** — reduce manual switching  
+2. **Multi-zone sequencing** — match limited flow to farm layout  
+3. **Remote / wireless** — LoRa or gateway paths where wiring is painful  
+4. **Fertigation / sensors** — when the project moves beyond basic irrigation  
 
-### Level 1 — Manual to Timed Control
-Suitable for farms that already have a pump and irrigation lines.
+Exact staging depends on the existing pump, electrical, and valve locations.
 
-Upgrade goals:
+---
 
-- automate pump start and stop
-- reduce manual operation
-- schedule irrigation by time
+## When to use this page vs other entry points
 
-Typical result:
+- **Existing pump + pipes, weak control** → start here (retrofit).  
+- **Greenfield open-field system** → see [open-field irrigation](/solution/open-field-irrigation/).  
+- **Early pump / system sizing** → [pump sizing wizard](/tools/pump-sizing/guided-wizard.html).  
 
-- basic controller
-- pump start relay/control
-- simple irrigation schedule
+---
 
-### Level 2 — Add Multi-Zone Irrigation Control
-Suitable when existing water supply cannot support the whole farm at once.
+## Related
 
-Upgrade goals:
+- [Open-field irrigation solution](/solution/open-field-irrigation/)  
+- [Pump sizing guided wizard](/tools/pump-sizing/guided-wizard.html)  
 
-- divide the farm into irrigation zones
-- open valves sequentially
-- balance pressure and pump load
+---
 
-Typical result:
+## Request an upgrade suggestion
 
-- multi-zone controller
-- irrigation valve grouping
-- sequential irrigation logic
+Send **farm or project size**, **water source**, **pump rating (if known)**, **irrigation method**, **number of zones or manual valves**, and **target outcome** (e.g. auto pump, zone sequence, remote valves).
 
-### Level 3 — Add Remote and Wireless Management
-Suitable for larger farms or projects where field wiring is inconvenient.
-
-Upgrade goals:
-
-- remote valve control
-- remote pump management
-- status feedback and alarm support
-
-Typical result:
-
-- LoRa valve control
-- 4G / gateway communication
-- remote access support
-
-### Level 4 — Add Fertigation and Sensor Integration
-Suitable for projects moving from simple irrigation to more advanced control.
-
-Upgrade goals:
-
-- automate fertilizer dosing
-- link irrigation with EC/pH or soil moisture data
-- improve water and nutrient management
-
-Typical result:
-
-- fertigation integration
-- sensor-linked control
-- cloud platform expansion path
-
-* * *
-
-## Example Retrofit Structure
-
-A typical retrofit structure may look like this:
-
-- Water Source / Bore / Tank / Reservoir
-- Existing Pump
-- Pump Control Module
-- Main Pipeline
-- Zone Valves
-- Field Irrigation (drip / sprinkler / micro sprinkler)
-- Optional Upgrades:
-  - LoRa valve control
-  - 4G remote access
-  - sensors
-  - fertigation unit
-
-The exact architecture depends on the existing infrastructure, available flow, pipe condition, project size, and future upgrade goals.
-
-* * *
-
-## Why Retrofit Instead of Rebuild?
-
-In many practical projects, retrofitting is the more realistic engineering choice.
-
-Advantages may include:
-
-- using the **existing water source**
-- keeping the **main pipeline network**
-- reducing installation work
-- lowering initial investment
-- improving irrigation management faster
-- allowing future staged expansion
-
-For many farms, the goal is not to rebuild everything.  
-The goal is to make the existing irrigation system **more controllable, more reliable, and easier to expand**.
-
-* * *
-
-## When This Page Connects to Other PKYDrip Pages
-
-This upgrade page is not meant to replace all other irrigation content.  
-It works best as an entry point for users who already have part of the system in place.
-
-For example:
-
-- If the user is planning a **completely new open-field irrigation system**, the better starting page may be the open-field solution page.
-- If the user already has a well, pump, and pipeline, but wants better control, this retrofit page is the better entry point.
-- If the user is still unsure how to estimate irrigation type, pump requirement, or project direction, the guided design tool is the better first step.
-
-* * *
-
-## Recommended Next Step
-
-Choose the next path based on your project condition:
-
-### A. Existing pump / existing water source / existing pipeline
-Start from retrofit planning and upgrade logic.
-
-### B. New farm / new project / not yet sure about irrigation structure
-Use the guided design wizard first.
-
-* * *
-
-## Related Pages
-
-- [Open-Field Irrigation Solution](/solution/open-field-irrigation/)
-- [Pump Sizing Guided Wizard](/tools/pump-sizing/guided-wizard.html)
-
-* * *
-
-## Request an Upgrade Suggestion
-
-If you already have an irrigation system and want to upgrade pump control, valve zoning, or remote operation, please send the following details:
-
-- farm size
-- crop type
-- existing water source
-- pump power (if known)
-- irrigation method
-- number of manual valves or irrigation zones
-- what kind of upgrade you want to achieve
-
-Examples:
-
-- automatic pump control
-- timed irrigation
-- multi-zone control
-- LoRa remote valve control
-- fertigation upgrade
-
-### Chat on WhatsApp
-
-[https://wa.me/8617395297329](https://wa.me/8617395297329)
+<div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:22px 0 8px 0;">
+  <a class="btn btn-primary" href="/contact/" style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
+    Request Catalog &amp; Pricing
+  </a>
+  <a class="btn btn-outline-primary" href="https://wa.me/8617395297329?text=Hi%2C%20I%20have%20an%20existing%20irrigation%20system%20and%20want%20a%20retrofit%20upgrade%20%28pump%20%2F%20valves%20%2F%20scheduling%29.%20Please%20help%20with%20next%20steps." style="display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;">
+    Talk on WhatsApp
+  </a>
+</div>
