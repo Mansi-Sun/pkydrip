@@ -25,7 +25,7 @@ url: "/distributor-welcome/"
   </div>
   
   <div class="text-center mt-5">
-    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
+    <a class="btn btn-success btn-lg"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
       💬 Contact Our Experts
@@ -78,7 +78,7 @@ url: "/distributor-welcome/"
     </div>
 
   <div class="text-center mt-5">
-    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
+    <a class="btn btn-success btn-lg"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
       💬 Apply via WhatsApp
@@ -102,7 +102,7 @@ url: "/distributor-welcome/"
     <p class="mb-4">Join us as a provincial or city-level distributor in Saudi Arabia or the UAE and lead smart irrigation locally.</p>
   </div>
   <div class="text-center mt-5">
-    <a class="btn btn-success btn-lg" onclick="return gtag_report_conversion('https://wa.me/+8617395297329');"
+    <a class="btn btn-success btn-lg"
        href="https://wa.me/+8617395297329?text=Hi%20PKYDRIP%2C%20I%27m%20ready%20to%20become%20a%20distributor%20in%20[City]."
        target="_blank" rel="noopener">
       💬 Contact Us on WhatsApp

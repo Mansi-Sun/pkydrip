@@ -185,4 +185,4 @@ These materials help partners integrate irrigation products into their own syste
 If your company is interested in OEM manufacturing or customized irrigation systems, you can contact PKYDrip to discuss possible cooperation.
 
 **WhatsApp:**  
-https://wa.me/8617395297329
+[https://wa.me/8617395297329](https://wa.me/8617395297329)

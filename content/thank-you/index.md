@@ -39,7 +39,7 @@ You may prepare the following information for our discussion:
 If your inquiry is urgent, you may contact us directly:
 
 👉 **WhatsApp:**  
-https://wa.me/8617395297329
+[https://wa.me/8617395297329](https://wa.me/8617395297329)
 
 ---
 

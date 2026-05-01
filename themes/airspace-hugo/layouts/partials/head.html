@@ -155,16 +155,51 @@ window.addEventListener('load', function () {
 <!-- WhatsApp click tracking -->
 <script>
 window.addEventListener('load', function () {
-  document.querySelectorAll("a[href*='wa.me']").forEach(function (el) {
+  var WA_SEL = "a[href*='wa.me'], a[href*='whatsapp.com']";
+
+  document.querySelectorAll(WA_SEL).forEach(function (el) {
+    if (!el.dataset.waHrefBase) {
+      el.dataset.waHrefBase = el.getAttribute('href') || '';
+    }
     el.addEventListener('click', function () {
       if (typeof gtag === 'function') {
         gtag('event', 'Whatsapp_Click20250917');
       }
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead');
-      }
     });
   });
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (href.indexOf('wa.me') === -1 && href.indexOf('whatsapp.com') === -1) return;
+    if (!link.dataset.waHrefBase) {
+      link.dataset.waHrefBase = link.getAttribute('href') || '';
+    }
+    var base = link.dataset.waHrefBase;
+    if (!base) return;
+    try {
+      var u = new URL(base, window.location.href);
+      var pageParams = new URLSearchParams(window.location.search);
+      var utmSource = pageParams.get('utm_source') || '';
+      var utmMedium = pageParams.get('utm_medium') || '';
+      var utmCampaign = pageParams.get('utm_campaign') || '';
+      var gclid = pageParams.get('gclid') || '';
+      var pathname = window.location.pathname || '';
+      var lines = ['Page: ' + pathname];
+      if (utmSource) lines.push('Source: ' + utmSource);
+      if (utmMedium) lines.push('Medium: ' + utmMedium);
+      if (utmCampaign) lines.push('Campaign: ' + utmCampaign);
+      if (gclid) lines.push('gclid: ' + gclid);
+      var attribution = lines.join('\n');
+      var existing = u.searchParams.get('text') || '';
+      var combined = existing ? (existing + '\n\n' + attribution) : attribution;
+      u.searchParams.set('text', combined);
+      link.setAttribute('href', u.toString());
+    } catch (err) {
+      /* invalid base URL: leave href unchanged */
+    }
+  }, true);
 });
 </script>
 

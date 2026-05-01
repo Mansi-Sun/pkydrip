@@ -19,15 +19,13 @@
           <div class="d-flex flex-wrap gap-2">
             {{ with .Params.hero.cta_primary }}
               <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-success px-4"
-                 onclick="return gtag_report_conversion('{{ .url }}');">
+                 class="btn btn-success px-4">
                 {{ .label }}
               </a>
             {{ end }}
             {{ with .Params.hero.cta_secondary }}
               <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-outline-success px-4"
-                 onclick="return gtag_report_conversion('{{ .url }}');">
+                 class="btn btn-outline-success px-4">
                 {{ .label }}
               </a>
             {{ end }}
@@ -158,8 +156,7 @@
             <div class="text-muted mb-3">{{ .cta_reason | markdownify }}</div>
             {{ with .cta }}
               <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-success w-100 py-2"
-                 onclick="return gtag_report_conversion('{{ .url }}');">
+                 class="btn btn-success w-100 py-2">
                 {{ .label }}
               </a>
             {{ end }}
@@ -217,8 +214,7 @@
     <div class="container text-center">
       <p class="lead mb-3">{{ .text }}</p>
       <a href="{{ .button_url }}" target="_blank" rel="noopener"
-         class="btn btn-success px-4"
-         onclick="return gtag_report_conversion('{{ .button_url }}');">
+         class="btn btn-success px-4">
         {{ .button_label }}
       </a>
     </div>

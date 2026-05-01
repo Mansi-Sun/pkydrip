@@ -123,4 +123,4 @@ If you are planning to expand your irrigation system:
 We can help you design a practical wireless irrigation solution.
 
 👉 Contact via WhatsApp:
-https://wa.me/8617395297329
+[https://wa.me/8617395297329](https://wa.me/8617395297329)

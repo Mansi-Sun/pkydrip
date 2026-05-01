@@ -100,7 +100,7 @@ Together, they provide a robust wireless communication network between irrigatio
   <section class="custom-cta">
   <h3>Need a custom solution or technical guide?</h3>
   <div>
-    <a onclick="return gtag_report_conversion('https://wa.me/+8617395297329');" href="https://wa.me/+8617395297329?text=Hi, I came from Ads lora-wireless-irrigation-system" target="_blank">📞 Contact Our Experts</a>
+    <a href="https://wa.me/+8617395297329?text=Hi, I came from Ads lora-wireless-irrigation-system" target="_blank">📞 Contact Our Experts</a>
     <a href="mailto:info@pky-dripirrigation.com">✉️ Send an Inquiry Email</a>
     <a href="https://smart.pky-dripirrigation.com/irrigation-controller/" target="_blank">🔗 Product Details Page</a>
   </div>

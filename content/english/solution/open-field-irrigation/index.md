@@ -334,4 +334,4 @@ Contact us for technical drawings, system design support, or integration advice.
 
 ### Chat on WhatsApp
 
-https://wa.me/8617395297329
+[https://wa.me/8617395297329](https://wa.me/8617395297329)

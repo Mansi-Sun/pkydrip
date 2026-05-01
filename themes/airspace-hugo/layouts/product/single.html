@@ -62,8 +62,7 @@
 {{ with .Params.cta }}
 <div class="cta-section" style="text-align: center; margin-top: 30px;">
   <p class="lead mb-4" style="text-align: center; margin-top: 30px;">{{ .text }}</p>
-  <a href="{{ .button_url }}" target="_blank" class="btn btn-success" style="padding: 12px 24px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 18px;"
-     onclick="return gtag_report_conversion('{{ .button_url }}');">
+  <a href="{{ .button_url }}" target="_blank" class="btn btn-success" style="padding: 12px 24px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 18px;">
     {{ .button_label }}
   </a>
 </div>
