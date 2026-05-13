@@ -1,0 +1,17 @@
+# Netlify reads netlify.toml from the repository root only (not themes/airspace-hugo/netlify.toml).
+# Use Hugo directly so deploys always regenerate public/ from content.
+[build]
+  publish = "public"
+  command = "hugo version && hugo --gc --minify --forceSyncStatic"
+
+[build.environment]
+  # Match themes/airspace-hugo/netlify.toml; change if Netlify image drops this version.
+  HUGO_VERSION = "0.115.1"
+  HUGO_ENABLEGITINFO = "true"
+
+# Permanently redirect the legacy www apex to the smart. subdomain, preserving the full path.
+[[redirects]]
+  from = "https://www.pky-dripirrigation.com/*"
+  to = "https://smart.pky-dripirrigation.com/:splat"
+  status = 301
+  force = true
