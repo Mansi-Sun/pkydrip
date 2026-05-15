@@ -68,7 +68,7 @@ Design usually follows: **existing water source → available flow → time wind
 
 <div style="text-align:center;margin:24px 0;">
   <img 
-    src="/images/solutions/controller-valve-pump-combination.webp"
+    src="/images/solution/controller-valve-pump-combination.webp"
     alt="Typical irrigation retrofit BOM with controller cabinet, pump control, valve automation and wireless expansion"
     style="width:100%;max-width:1400px;border-radius:12px;border:1px solid #dbe2ea;"
   >
