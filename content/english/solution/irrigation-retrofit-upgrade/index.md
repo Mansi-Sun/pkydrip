@@ -66,11 +66,12 @@ Design usually follows: **existing water source → available flow → time wind
 | **Sensors (optional)** | Flow, pressure, tank level—where the specification requires feedback |
 | **Wireless expansion (optional)** | e.g. LoRa valve nodes when field wiring is costly |
 
-<!-- Optional hero-style image when available: /images/solutions/controller-valve-pump-combination.webp -->
-
-<div style="text-align:center;margin:18px 0 8px 0;padding:26px 16px;border:1px dashed #e2e8f0;border-radius:12px;background:#fff;color:#64748b;font-size:14px;line-height:1.55;">
-  <strong style="color:#334155;">Product combination visual placeholder</strong><br/>
-  <code style="font-size:12px;">/images/solutions/controller-valve-pump-combination.webp</code>
+<div style="text-align:center;margin:24px 0;">
+  <img 
+    src="/images/solutions/controller-valve-pump-combination.webp"
+    alt="Typical irrigation retrofit BOM with controller cabinet, pump control, valve automation and wireless expansion"
+    style="width:100%;max-width:1400px;border-radius:12px;border:1px solid #dbe2ea;"
+  >
 </div>
 
 ---
