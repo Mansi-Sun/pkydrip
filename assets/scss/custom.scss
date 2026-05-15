@@ -1,3 +1,22 @@
+/* Solution pages: hero with bg_image (e.g. irrigation-retrofit-upgrade) */
+.solution-hero.page-title {
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 768px) {
+    padding: 52px 15px;
+    min-height: 220px !important;
+    .block h1 {
+      font-size: 1.45rem;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+    }
+    .block p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+}
+
 .category-card {
   background-color: #f8f9fa;
   padding: 1.5rem;

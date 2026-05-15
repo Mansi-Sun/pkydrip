@@ -1,16 +1,10 @@
 ---
 title: "Upgrade Existing Irrigation Systems Without Rebuilding Everything"
-description: "Retrofit and upgrade existing irrigation systems with better pump control, valve zoning, automation, and remote management. Suitable for farms with existing wells, reservoirs, pumps, or manual irrigation networks."
+description: "Add pump control, valve zoning, scheduling, and optional remote access to existing irrigation—without rebuilding pipelines. For sites with wells, tanks, pumps, or manual valves; suited to contractor-led upgrades."
 layout: "solution"
 url: "/solution/irrigation-retrofit-upgrade/"
-bg_image: "/images/solutions/irrigation-retrofit-before-after.webp"
+bg_image: "images/solution/irrigation-retrofit-before-after.webp"
 draft: false
----
-
-## Upgrade existing irrigation systems without rebuilding everything
-
-Many sites already have **bore pumps, tanks, mains, and manual valves**. The opportunity is to **keep existing pipelines** and add **smart control**: pump logic, valve automation, scheduling, and clearer operation—ideal for **contractor-led upgrades** and **distributor solution packages**.
-
 ---
 
 ## Problem: manual pump and valve operation limits the system

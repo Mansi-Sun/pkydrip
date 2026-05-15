@@ -1,10 +1,31 @@
 {{ define "main" }}
+{{ $bg := .Params.bg_image }}
+{{ $bgStatic := "" }}
+{{ with $bg }}{{ $bgStatic = strings.TrimPrefix "/" . }}{{ end }}
+{{ if and $bg (fileExists (printf "static/%s" $bgStatic)) }}
+<section class="page-title bg-2 solution-hero" style="background-image: url('{{ $bg | relURL }}'); position: relative; min-height: 280px;">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.45; pointer-events: none;" aria-hidden="true"></div>
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center text-white">
+          <h1 style="text-shadow: 0 2px 8px rgba(0,0,0,0.45);">{{ $.Title }}</h1>
+          {{ with $.Params.description }}
+          <p style="max-width:860px;margin:12px auto 0;font-size:17px;line-height:1.55;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.5);">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
 <section class="page-title-area">
   <div class="container">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
   </div>
 </section>
+{{ end }}
 
 <section class="page-content" style="padding:40px 0;">
   <div class="container">
