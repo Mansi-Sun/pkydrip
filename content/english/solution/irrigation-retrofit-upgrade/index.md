@@ -45,7 +45,7 @@ Design usually follows: **existing water source → available flow → time wind
 
 <div style="text-align:center;margin:32px 0;">
   <img 
-    src="/images/solutions/irrigation-retrofit-before-after.webp"
+    src="/images/solution/irrigation-retrofit-before-after.webp"
     alt="Before and after irrigation retrofit diagram"
     style="width:100%;max-width:1200px;border-radius:12px;border:1px solid #dbe2ea;"
   >
