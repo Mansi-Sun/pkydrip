@@ -43,12 +43,12 @@ Design usually follows: **existing water source → available flow → time wind
 
 ## Before / after (diagram placeholder)
 
-<!-- When ready, add asset: /images/solutions/irrigation-retrofit-before-after.webp -->
-
-<div style="text-align:center;margin:28px 0;padding:34px 18px;border:1px dashed #cfd8e3;border-radius:12px;background:#f8fafc;color:#475569;font-size:15px;line-height:1.6;">
-  <strong style="display:block;margin-bottom:10px;color:#1e293b;">Before / after diagram placeholder</strong>
-  Intended file: <code style="font-size:13px;">/images/solutions/irrigation-retrofit-before-after.webp</code><br/>
-  Suggested content: “before” manual valves + ad-hoc pump use → “after” controller + automated zones + optional remote.
+<div style="text-align:center;margin:32px 0;">
+  <img 
+    src="/images/solutions/irrigation-retrofit-before-after.webp"
+    alt="Before and after irrigation retrofit diagram"
+    style="width:100%;max-width:1200px;border-radius:12px;border:1px solid #dbe2ea;"
+  >
 </div>
 
 **Before:** manual pump operation, manual valves, limited scheduling.  
