@@ -1,0 +1,103 @@
+{{/* ---------------- Third-party plugin scripts (external, deferred) ---------------- */}}
+{{ range site.Params.plugins.js }}
+  {{ if findRE "^http" .link }}
+    <script defer src="{{ .link | relURL }}" {{ .attributes | safeHTMLAttr }}></script>
+  {{ end }}
+{{ end }}
+
+{{/* ---------------- Local scripts via Hugo Pipes (concat/minify/fingerprint) ---------------- */}}
+{{ $locals := slice }}
+{{ range site.Params.plugins.js }}
+  {{ if not (findRE "^http" .link) }}
+    {{ $res := resources.Get .link }}
+    {{ if $res }}
+      {{ if eq (len $locals) 0 }}
+        {{ $locals = slice $res }}
+      {{ else }}
+        {{ $locals = $locals | append $res }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $app := resources.Get "js/script.js" | resources.Minify }}
+
+{{ $inputs := $locals }}
+{{ if $app }}
+  {{ if gt (len $inputs) 0 }}
+    {{ $inputs = $inputs | append $app }}
+  {{ else }}
+    {{ $inputs = slice $app }}
+  {{ end }}
+{{ end }}
+
+{{ $bundle := $inputs | resources.Concat "js/bundle.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{/* Local server: root-relative URL only (never site.BaseURL — that points at production). */}}
+{{ if hugo.IsServer }}
+<script defer src="{{ $bundle.RelPermalink }}"></script>
+{{ else }}
+<script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+
+{{/* ---------------- Cookie notice (no jQuery needed) ---------------- */}}
+{{ with site.Params.cookies }}
+  {{ if .enable }}
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <div id="js-cookie-box" class="cookie-box cookie-box-hide">
+      {{ .content | markdownify }}<span id="js-cookie-button" class="btn btn-sm btn-outline-primary ms-2">{{ .button }}</span>
+    </div>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function () {
+        const box = document.getElementById('js-cookie-box');
+        const btn = document.getElementById('js-cookie-button');
+        if (!window.Cookies || !box || !btn) return;
+        if (!Cookies.get('cookie-box')) {
+          box.classList.remove('cookie-box-hide');
+          btn.addEventListener('click', function () {
+            Cookies.set('cookie-box', true, { expires: {{ .expire_days }} });
+            box.classList.add('cookie-box-hide');
+          }, { passive: true });
+        }
+      });
+    </script>
+    <style>
+      .cookie-box{position:fixed;left:0;right:0;bottom:0;text-align:center;z-index:9999;padding:1rem 2rem;background:#474747;transition:all .75s cubic-bezier(.19,1,.22,1);color:#fdfdfd}
+      .cookie-box-hide{display:none}
+    </style>
+  {{ end }}
+{{ end }}
+
+{{/* ---------------- WebFont Loader (defer) ---------------- */}}
+{{ $pf := site.Params.variables.font_primary }}
+{{ $sf := site.Params.variables.font_secondary }}
+<script defer>
+  (function(){
+    var families = ['{{ $pf | default `Lato:wght@400` }}{{ if not $sf }}&display=swap{{ end }}'{{ with $sf }}, '{{ . | default `Lato:wght@400` }}&display=swap'{{ end }}];
+    window.WebFontConfig = {
+      google: { api: 'https://fonts.googleapis.com/css2', families: families, version: 2 },
+      active: function(){ try{ sessionStorage.fontsLoaded = true }catch(e){} }
+    };
+    var wf = document.createElement('script'); wf.defer = true;
+    wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js';
+    document.head.appendChild(wf);
+  })();
+</script>
+
+{{/* ---------------- Lightweight YouTube: one-time minimal JS ---------------- */}}
+<script defer>
+  document.addEventListener('click', function(e){
+    const wrap = e.target.closest('.yt-lite');
+    if(!wrap) return;
+    const id = wrap.getAttribute('data-ytid');
+    const title = wrap.getAttribute('data-title') || 'YouTube video player';
+    if(!id) return;
+    const src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.title = title;
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.setAttribute('allowfullscreen','');
+    wrap.replaceChildren(iframe);
+  }, { passive: true });
+</script>

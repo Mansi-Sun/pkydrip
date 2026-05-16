@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ block "head_extra" . }}{{ end }}
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "style.html" . }}
+	{{ else }}
+	{{ partial "style.html" . }}
+	{{ end }}
+</head>
+
+<body>
+	{{ partial "header.html" . }}
+	{{ if not hugo.IsServer }}
+	{{ if hugo.IsProduction }}
+	{{ partialCached "preloader.html" . }}
+	{{ else }}
+	{{ partial "preloader.html" . }}
+	{{ end }}
+	{{ end }}
+
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+
+	{{ $showFooter := and (not (eq .Section "landing")) (not (hasPrefix .RelPermalink "/landing/")) }}
+	{{ if $showFooter }}
+	{{ if hugo.IsProduction }}
+	{{ partialCached "footer.html" . "pkydrip-site-footer" }}
+	{{ else }}
+	{{ partial "footer.html" . }}
+	{{ end }}
+	{{ end }}
+	{{ if and hugo.IsProduction (not hugo.IsServer) }}
+	{{ partialCached "script.html" . "pkydrip-js-v3" }}
+	{{ else }}
+	{{ partial "script.html" . }}
+	{{ end }}
+	<script>
+	(function () {
+		function hidePreloader() {
+			document.querySelectorAll('.preloader').forEach(function (el) {
+				el.style.display = 'none';
+			});
+			if (window.jQuery) {
+				window.jQuery('.preloader').hide();
+			}
+		}
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', hidePreloader);
+		} else {
+			hidePreloader();
+		}
+		window.addEventListener('load', hidePreloader);
+		setTimeout(hidePreloader, 3000);
+	})();
+	</script>
+</body>
+
+</html>

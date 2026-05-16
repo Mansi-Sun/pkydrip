@@ -1,0 +1,41 @@
+<footer id="site-footer" class="footer pkydrip-footer" role="contentinfo" style="background:linear-gradient(165deg,#1a3d52 0%,#1e4d3f 100%);color:#fff;padding:2.25rem 0 1.25rem;text-align:left;">
+  <div class="container">
+    <div class="row pkydrip-footer__top">
+      <div class="col-lg-4 col-md-12 pkydrip-footer__brand">
+        <p class="pkydrip-footer__title" style="color:#fff;font-weight:700;">PKYDrip Irrigation Control System</p>
+        <p class="pkydrip-footer__desc" style="color:rgba(255,255,255,.85);">Engineering-oriented irrigation automation solutions for pump control, valve control, wireless field control, fertigation, and project-based customization.</p>
+      </div>
+      <div class="col-6 col-lg-2 col-md-4 pkydrip-footer__col">
+        <p class="pkydrip-footer__heading" style="color:#fff;">Solutions</p>
+        <ul class="pkydrip-footer__links">
+          <li><a href="{{ `/solution/open-field-irrigation/` | relLangURL }}">Open Field Irrigation</a></li>
+          <li><a href="{{ `/solution/irrigation-retrofit-upgrade/` | relLangURL }}">Irrigation Retrofit Upgrade</a></li>
+          <li><a href="{{ `/solution/lora-wireless-irrigation-control/` | relLangURL }}">LoRa Wireless Irrigation</a></li>
+          <li><a href="{{ `/solution/fertigation-system/` | relLangURL }}">Fertigation System</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3 col-md-4 pkydrip-footer__col">
+        <p class="pkydrip-footer__heading" style="color:#fff;">Products</p>
+        <ul class="pkydrip-footer__links">
+          <li><a href="{{ `/product/farm-irrigation-controller/` | relLangURL }}">Farm Irrigation Controller</a></li>
+          <li><a href="{{ `/product/pump-valve-control-system/` | relLangURL }}">Pump &amp; Valve Control System</a></li>
+          <li><a href="{{ `/product/lora-valve-controller/` | relLangURL }}">Wireless Valve Controller</a></li>
+          <li><a href="{{ `/product/pky-fg401-ecph/` | relLangURL }}">Fertigation Control System</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 pkydrip-footer__col">
+        <p class="pkydrip-footer__heading" style="color:#fff;">Contact</p>
+        <ul class="pkydrip-footer__links pkydrip-footer__contact">
+          <li><a href="https://smart.pky-dripirrigation.com/">Website</a></li>
+          <li><a href="https://wa.me/8617395297329" target="_blank" rel="noopener">WhatsApp</a></li>
+          {{ with site.Params.email }}
+          <li><a href="mailto:{{ . }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <div class="pkydrip-footer__bottom">
+      <p>© PKYDrip. Irrigation pump &amp; valve control systems for farms, greenhouses, orchards, and landscape projects.</p>
+    </div>
+  </div>
+</footer>

@@ -4,9 +4,9 @@
   "license": "MIT",
   "author": "gethugothemes",
   "scripts": {
-    "dev": "hugo server",
+    "dev": "hugo server -D --disableFastRender --bind 127.0.0.1 --port 1313",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
-    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "preview": "hugo server -D --disableFastRender --bind 127.0.0.1 --port 1313",
     "dev:example": "cd exampleSite; hugo server --themesDir ../..",
     "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "preview:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",

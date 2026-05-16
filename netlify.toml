@@ -15,3 +15,16 @@
   to = "https://smart.pky-dripirrigation.com/:splat"
   status = 301
   force = true
+
+# Product page upgrade (0516): cabinet → pump & valve control system
+[[redirects]]
+  from = "/product/irrigation-control-cabinet/"
+  to = "/product/pump-valve-control-system/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/product/irrigation-control-cabinet"
+  to = "/product/pump-valve-control-system/"
+  status = 301
+  force = true
