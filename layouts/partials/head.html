@@ -53,7 +53,7 @@
   {{ end }}
 {{ end }}
 
-{{ if not hugo.IsServer }}
+{{ if eq hugo.Environment "production" }}
 <link rel="manifest" href="{{ `manifest.webmanifest` | relLangURL }}">
 {{ end }}
 <meta name="msapplication-TileColor" content="{{ site.Params.variables.color_primary | default `#da532c` }}">

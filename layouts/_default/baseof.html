@@ -14,7 +14,7 @@
 
 <body>
 	{{ partial "header.html" . }}
-	{{ if not hugo.IsServer }}
+	{{ if ne hugo.Environment "development" }}
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
 	{{ else }}
@@ -34,7 +34,7 @@
 	{{ partial "footer.html" . }}
 	{{ end }}
 	{{ end }}
-	{{ if and hugo.IsProduction (not hugo.IsServer) }}
+	{{ if hugo.IsProduction }}
 	{{ partialCached "script.html" . "pkydrip-js-v3" }}
 	{{ else }}
 	{{ partial "script.html" . }}

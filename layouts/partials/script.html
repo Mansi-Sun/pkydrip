@@ -33,7 +33,7 @@
 
 {{ $bundle := $inputs | resources.Concat "js/bundle.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
 {{/* Local server: root-relative URL only (never site.BaseURL — that points at production). */}}
-{{ if hugo.IsServer }}
+{{ if eq hugo.Environment "development" }}
 <script defer src="{{ $bundle.RelPermalink }}"></script>
 {{ else }}
 <script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
