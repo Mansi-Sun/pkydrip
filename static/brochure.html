@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PKYDrip — Irrigation Automation Capability Overview</title>
+  <meta name="description" content="Engineering-oriented overview of PKYDrip irrigation automation systems, control cabinets, fertigation, wireless field control, and OEM development.">
+  <style>
+    :root {
+      --ink: #1a1f26;
+      --muted: #4a5568;
+      --line: #cbd5e1;
+      --bg: #ffffff;
+      --panel: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+      font-size: 11pt;
+      line-height: 1.45;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    h1, h2, h3 { font-weight: 600; line-height: 1.2; }
+    h1 { font-size: 22pt; letter-spacing: -0.02em; margin: 0 0 0.35em; }
+    h2 {
+      font-size: 13pt;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.35em;
+      margin: 0 0 0.75em;
+    }
+    h3 { font-size: 11pt; margin: 1em 0 0.35em; }
+    p { margin: 0 0 0.65em; }
+    ul { margin: 0 0 0.65em; padding-left: 1.15em; }
+    li { margin-bottom: 0.25em; }
+    a { color: #1e4d72; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: var(--muted); font-size: 10pt; }
+    .page {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 18mm 16mm;
+    }
+    .page + .page { border-top: 1px dashed var(--line); }
+    .cover {
+      min-height: 260mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 24mm 16mm;
+    }
+    .cover .brand { font-size: 11pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .cover h1 { font-size: 26pt; }
+    .cover .sub { font-size: 12pt; color: var(--muted); max-width: 36rem; margin: 1rem auto 0; }
+    .cover .doc-id { margin-top: 3rem; font-size: 9pt; color: var(--muted); }
+    figure {
+      margin: 0.75em 0 1em;
+      padding: 0;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+    figure img, figure object {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      font-size: 9pt;
+      color: var(--muted);
+      padding: 0.4em 0.65em;
+      border-top: 1px solid var(--line);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1rem;
+    }
+    @media (max-width: 640px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+    .refs { font-size: 9.5pt; margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
+    .refs strong { display: block; margin-bottom: 0.25em; }
+    @media print {
+      body { font-size: 10.5pt; }
+      .page, .cover {
+        page-break-after: always;
+        border: none;
+        max-width: none;
+        margin: 0;
+        padding: 14mm 12mm;
+      }
+      .page:last-of-type { page-break-after: auto; }
+      a { color: #000; text-decoration: none; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; }
+      a[href^="/"]::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Cover -->
+  <section class="page cover">
+    <div class="brand">PKYDrip</div>
+    <h1>Irrigation automation<br>capability overview</h1>
+    <p class="sub">B2B summary of control architecture, field hardware integration, and engineering services. Not a product catalog.</p>
+    <p class="doc-id muted">Standalone reference — print from browser (Ctrl/Cmd+P) to PDF. Source: site sections linked below.</p>
+  </section>
+
+  <!-- 2. Company introduction -->
+  <section class="page">
+    <h2>Company introduction</h2>
+    <p>PKYDrip focuses on <strong>irrigation automation</strong>: scheduling, pump and valve coordination, sensor feedback, fertigation logic, and optional wireless field layers. Work is structured for integrators, contractors, distributors, and OEM partners who need repeatable control hardware and clear system boundaries.</p>
+    <p>Typical scope includes controller and cabinet delivery, I/O and protocol interfaces for pumps and valves, documentation for commissioning, and paths to expand from timed irrigation to sensor-driven or remote operation.</p>
+    <ul>
+      <li>Modular control building blocks rather than single-SKU “one box does all” claims</li>
+      <li>Emphasis on hydraulic + electrical constraints encountered in real projects</li>
+      <li>Support for staged upgrades (pump → zones → wireless → fertigation) where the site already has mains and valves</li>
+    </ul>
+    <div class="refs">
+      <strong>On-site references</strong>
+      <a href="/about/">About</a> · <a href="/solution/">Solutions index</a> · <a href="/docs/">Documentation</a>
+    </div>
+  </section>
+
+  <!-- 3. Irrigation retrofit & automation -->
+  <section class="page">
+    <h2>Irrigation retrofit &amp; automation</h2>
+    <p>Many sites retain existing wells, pumps, mains, and manual valves. Retrofit work targets <strong>control and zoning</strong>: add controller logic, pump start/stop rules, automated valve sequencing, schedules, and records—without replacing the full pipe network when it is still serviceable.</p>
+    <figure>
+      <img src="/images/solution/irrigation-retrofit-before-after.webp" width="1536" height="1024" alt="Before and after irrigation retrofit diagram">
+      <figcaption>Concept: manual operation vs controller-led zoning (same project framing as the public solution page).</figcaption>
+    </figure>
+    <ul>
+      <li>Pump interlocks and time windows matched to available flow</li>
+      <li>Zone-by-zone sequencing instead of ad-hoc manual switching</li>
+      <li>Optional expansion to remote or wireless valves where trenching is costly</li>
+    </ul>
+    <div class="refs">
+      <strong>Reference</strong> <a href="/solution/irrigation-retrofit-upgrade/">Irrigation retrofit &amp; upgrade</a>
+    </div>
+  </section>
+
+  <!-- 4. Control cabinets & pump control -->
+  <section class="page">
+    <h2>Control cabinets &amp; pump control</h2>
+    <p>Control panels and cabinets consolidate <strong>power, I/O, and application logic</strong> for pump start/stop, valve drivers, operator interface (e.g. touchscreen), and field wiring termination. Delivery is aligned with project electrical standards and cabinet environmental requirements.</p>
+    <div class="two-col">
+      <figure>
+        <img src="/images/solution/controller-valve-pump-combination.webp" alt="Irrigation control cabinet field installation">
+        <figcaption>Cabinet + field context (solution imagery).</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/product/pump-control.webp" alt="Pump control hardware">
+        <figcaption>Pump control product imagery (representative).</figcaption>
+      </figure>
+    </div>
+    <ul>
+      <li>Relay or contactor interfaces matched to existing motor / starter arrangements</li>
+      <li>Pressure / flow inputs where the specification requires feedback</li>
+      <li>Structured documentation for integrators commissioning on site</li>
+    </ul>
+    <div class="refs">
+      <strong>References</strong>
+      <a href="/product/irrigation-control-cabinet/">Irrigation control cabinet</a> ·
+      <a href="/product/irrigation-control-panel/">Irrigation control panel</a> ·
+      <a href="/solution/irrigation-automation-control/">Irrigation automation &amp; control</a>
+    </div>
+  </section>
+
+  <!-- 5. Fertigation systems -->
+  <section class="page">
+    <h2>Fertigation systems</h2>
+    <p>Water–fertilizer integration covers <strong>injection, mixing, and closed-loop EC/pH</strong> where the crop and irrigation method require stable nutrient delivery tied to irrigation events. Systems are described in modular terms: channels, sensors, interlocks with irrigation schedules, and alarm / limit handling appropriate to greenhouse and field projects.</p>
+    <figure>
+      <img src="/images/landing/wizard-system-structure.webp" alt="System structure diagram">
+      <figcaption>High-level system structure (design wizard asset — illustrates layered planning).</figcaption>
+    </figure>
+    <ul>
+      <li>Scheduled fertigation vs closed-loop regulation (project-dependent)</li>
+      <li>Coordination with main irrigation controller and pump run conditions</li>
+      <li>Instrumentation for EC, pH, and flow where specified</li>
+    </ul>
+    <div class="refs">
+      <strong>References</strong>
+      <a href="/solution/fertigation-system/">Water–fertilizer integration system</a> ·
+      <a href="/fertigation-system/">Fertigation system category</a>
+    </div>
+  </section>
+
+  <!-- 6. Wireless / LoRa irrigation -->
+  <section class="page">
+    <h2>Wireless / LoRa irrigation</h2>
+    <p>Where cable pulls are expensive or retrofit windows are short, a <strong>gateway + field node</strong> architecture can distribute valve commands and status without trenching to every solenoid. Design emphasis: range planning, power (solar / battery), duty cycle, and fallback operation.</p>
+    <figure>
+      <object data="/images/solution/open-field-irrigation-architecture-pro.svg" type="image/svg+xml" aria-label="Open-field irrigation architecture diagram">
+        <img src="/images/solution/open-field-irrigation-architecture-pro.svg" alt="Open-field irrigation architecture diagram">
+      </object>
+      <figcaption>Open-field control architecture (vector diagram from static assets).</figcaption>
+    </figure>
+    <ul>
+      <li>Central gateway for schedules and coordination with existing pump logic</li>
+      <li>Nodes at valve manifolds; expansion by adding nodes, not rewiring the farm</li>
+      <li>Suitable for open-field layouts documented on the LoRa solution page</li>
+    </ul>
+    <div class="refs">
+      <strong>References</strong>
+      <a href="/solution/lora-wireless-irrigation-control/">LoRa wireless irrigation control</a> ·
+      <a href="/solution/open-field-irrigation/">Open-field irrigation</a>
+    </div>
+  </section>
+
+  <!-- 7. Applications -->
+  <section class="page">
+    <h2>Applications</h2>
+    <p>Application notes translate architecture into <strong>deployment patterns</strong>: greenhouse expansion, open-field wireless valve groups, and constraints such as power availability, valve grouping, and communication backhaul.</p>
+    <figure>
+      <object data="/images/solution/sequential-valve-logic-pro.svg" type="image/svg+xml" aria-label="Sequential valve logic diagram">
+        <img src="/images/solution/sequential-valve-logic-pro.svg" alt="Sequential valve logic diagram">
+      </object>
+      <figcaption>Sequential valve logic (representative engineering diagram).</figcaption>
+    </figure>
+    <ul>
+      <li>Greenhouse: valve expansion, fertigation tie-in, climate-adjacent controls as per project</li>
+      <li>Open field: long lateral runs, solar nodes, limited simultaneous zones</li>
+      <li>Documentation and tools linked from the main site for sizing and structure</li>
+    </ul>
+    <div class="refs">
+      <strong>References</strong>
+      <a href="/applications/">Applications</a> ·
+      <a href="/applications/greenhouse-lora-irrigation-expansion/">Greenhouse LoRa expansion</a> ·
+      <a href="/applications/open-field-wireless-valve-control/">Open-field wireless valve control</a>
+    </div>
+  </section>
+
+  <!-- 8. OEM / custom development -->
+  <section class="page">
+    <h2>OEM / custom development</h2>
+    <p>OEM engagement covers <strong>hardware variation, branding, firmware behaviour, and interface</strong> agreed per project or product line—not generic rebranding only. Typical deliverables: cabinet or PCB spin, HMI definitions, protocol exposure (e.g. RS485/Modbus), test records, and batch manufacturing support.</p>
+    <figure>
+      <object data="/images/diagrams/pkydrip_open_field_control_architecture.svg" type="image/svg+xml" aria-label="Open field control architecture">
+        <img src="/images/diagrams/pkydrip_open_field_control_architecture.svg" alt="Open field control architecture">
+      </object>
+      <figcaption>Control architecture diagram (static asset — supports technical discussions).</figcaption>
+    </figure>
+    <ul>
+      <li>Controller and cabinet variants for regional electrical and environmental norms</li>
+      <li>Integration support for partner cloud or SCADA where specified</li>
+      <li>MOQ and roadmap items negotiated per partner; see public OEM documentation</li>
+    </ul>
+    <div class="refs">
+      <strong>Reference</strong> <a href="/docs/oem-manufacturing/">OEM manufacturing</a>
+    </div>
+  </section>
+
+  <!-- 9. Contact -->
+  <section class="page">
+    <h2>Contact</h2>
+    <p>For catalog direction, configuration suggestions, or OEM discussion, use the public contact channel. Include market, application type (greenhouse / open field / retrofit), approximate zone count, pump context, and whether wireless or fertigation is in scope.</p>
+    <ul>
+      <li>Web form and messaging: <a href="/contact/">Contact page</a></li>
+      <li>Design tooling: <a href="/tools/irrigation-design-wizard/">Irrigation design wizard</a></li>
+      <li>Downloads index: <a href="/downloads/">Downloads</a></li>
+    </ul>
+    <p class="muted" style="margin-top:2rem;">This HTML file is standalone under <code>/brochure.html</code>. It does not alter site templates. Image paths resolve when served from the deployed site origin.</p>
+  </section>
+
+</body>
+</html>

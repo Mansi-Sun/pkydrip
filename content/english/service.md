@@ -47,47 +47,47 @@ featured_service:
 service:
   enable : true
   title : "Our Products"
-  description : "We offer a one-stop solution for smart and customizable automated irrigation products. <br> Our systems are designed to serve a wide range of applications, including greenhouses, orchards, farms, and urban landscaping projects."
+  description : "PKYDrip products are designed for irrigation automation, pump control, valve management, fertigation, and remote field operation.<br><br>We provide scalable control systems for farms, orchards, greenhouses, and landscape irrigation projects."
   service_item:
     # service item loop
     - icon : fas fa-hand-holding-water #https://fontawesome.com/v5.15/icons
-      name: Fertigation System
-      content: "Automated systems that combine irrigation and fertilization to deliver nutrients efficiently and precisely to crops."
+      name: Irrigation Control Cabinet
+      content: "Integrated control cabinet for pump start/stop, valve sequencing, scheduling, touchscreen operation, and project-level irrigation automation."
 
     # service item loop
     - icon : fas fa-water #https://fontawesome.com/v5.15/icons
-      name: Irrigation Controller
-      content: "Smart controllers that schedule and manage irrigation based on time, zones, or sensor data to optimize water use."
+      name: Fertigation System
+      content: "Automated fertigation systems for fertilizer injection, mixing, EC/pH monitoring, and irrigation-linked nutrient delivery."
 
     # service item loop
     - icon : fas fa-cloud-sun #https://fontawesome.com/v5.15/icons
-      name: Weather Station
-      content: "Collects real-time environmental data (temperature, humidity, rainfall, wind) to support intelligent irrigation decisions."
+      name: Irrigation Controller
+      content: "Smart controllers for zone scheduling, valve operation, sensor-based irrigation, and remote irrigation management."
 
     # service item loop
     - icon : fas fa-thermometer-half #https://fontawesome.com/v5.15/icons
-      name: Smart Sensor
-      content: "Soil moisture, temperature, and other sensors that provide accurate field data for automatic and informed irrigation control."
+      name: LoRa / Wireless Valve Control
+      content: "Wireless valve control solutions for remote fields, retrofit projects, and locations where cable trenching is difficult."
 
     # service item loop
     - icon : fas fa-wifi #https://fontawesome.com/v5.15/icons
-      name: Solenoid Valve
-      content: "Electrically controlled valves used for automated opening and closing of water flow in irrigation systems"
+      name: Sensors & Weather Monitoring
+      content: "Soil, water, and weather sensors for monitoring moisture, pressure, flow, rainfall, temperature, and other field conditions."
 
     # service item loop
     - icon : fas fa-seedling #https://fontawesome.com/v5.15/icons
-      name: Sprinkler
-      content: "Reliable and efficient sprinklers for even water distribution in lawns, fields, or greenhouses"
+      name: Solenoid Valves & Actuators
+      content: "Electric valves and actuator control options for automated zone-by-zone irrigation management."
 
     # service item loop
     - icon : fas fa-ring #https://fontawesome.com/v5.15/icons
-      name: Pipes & Fittings
-      content: "High-quality pipes and connectors that ensure a durable, leak-free irrigation infrastructure"
+      name: Field Components & System Integration
+      content: "Supporting components including valves, filters, pipes, fittings, and irrigation accessories supplied as part of complete irrigation system projects and export delivery."
 
     # service item loop
     - icon : fas fa-cogs #https://fontawesome.com/v5.15/icons
-      name: OEM
-      content: "We offer customized product design, branding, and development to meet your specific market and technical needs."
+      name: OEM / Custom Control System Development
+      content: "Custom irrigation automation solutions including control cabinets, touchscreen operation, remote management, and project-specific system integration."
 
 ############################# call to action #################################
 cta:
