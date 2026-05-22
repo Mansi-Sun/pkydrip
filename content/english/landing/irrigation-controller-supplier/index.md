@@ -47,7 +47,7 @@ product_code: "Farm Irrigation Controller"
 
 ---
 
-![Farm irrigation controller — pump and valve automation](/images/product/pump-control.webp)
+![One control system for pumps and valves — PKYDrip irrigation controller at field pump station](/images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png)
 
 ---
 
@@ -74,6 +74,20 @@ A practical **farm irrigation controller** for **irrigation control system** pro
 - **Irrigation zone valve control** — Control valves by zone with sequential operation (typical for farms) or grouped operation depending on project requirements.  
 - **Pressure and flow monitoring** — Use pressure/flow inputs for alarms and operational verification (e.g. abnormal pressure, no-flow after pump start).  
 - **Practical farm irrigation automation** — Designed for contractors and integrators who need a controller that fits real field panels, pumps, and valve manifolds.  
+
+---
+
+## Smart touchscreen operation
+
+The HMI touchscreen is the day-to-day operator interface—monitor status, run manual or timed valve programs, schedule irrigation plans, and review alarms without scattered timers or undocumented panel logic.
+
+![PKYDrip intelligent irrigation system touchscreen — manual and automatic zone control](/images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves-touchscreen.png)
+
+- Real-time status monitoring  
+- Manual, automatic, and timer irrigation modes  
+- Irrigation plan scheduling  
+- Event and alarm records  
+- Sequential or group valve operation from the screen  
 
 ---
 
