@@ -1,11 +1,11 @@
 ---
-title: "Product Catalogue 2025"
+title: "Smart Agriculture Catalogue 2025"
 product: ""
 category: "Product Catalogue"
 type: "Catalogue"
 language: "English"
 version: "v1"
 updated: "2025-12-01"
-file: "/files/Pkydrip_Smart_Agriculture_Catalogue_2025.pdf"
-description: "PKYDrip full product catalogue including smart controllers,fertigation systems,intelligent sensor and solenoid valves etc."
+file: "/downloads/pdf/pkydrip-smart-agriculture-catalogue-2025.pdf"
+description: "Product family reference covering irrigation controllers, fertigation systems, sensors, wireless valve control, and solenoid valves."
 ---

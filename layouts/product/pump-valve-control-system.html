@@ -108,12 +108,17 @@
       <div class="row g-4 align-items-center">
         {{ with .image }}
         <div class="col-lg-5 text-center">
-          <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="HMI touchscreen" style="max-height:320px;object-fit:contain;">
+          <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Params.hmi_section.image_alt | default "HMI touchscreen" }}" style="max-height:360px;object-fit:contain;">
         </div>
         {{ end }}
         <div class="col-lg-7">
           <h2 class="h3 mb-3">{{ .title }}</h2>
-          {{ with .body }}<p class="text-muted mb-0">{{ . }}</p>{{ end }}
+          {{ with .body }}<p class="text-muted mb-3">{{ . }}</p>{{ end }}
+          {{ with .bullets }}
+          <ul class="mb-0 text-muted">
+            {{ range . }}<li class="mb-2">{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
         </div>
       </div>
     </div>

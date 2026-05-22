@@ -65,7 +65,7 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Tank + gravity irrigation systems</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/solar-irrigation-system/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/solar-powered-irrigation/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>
@@ -101,7 +101,7 @@ This page helps growers, contractors, and project owners quickly find the most r
       <li>Climate + irrigation integration</li>
     </ul>
     <div style="margin-top:auto;">
-      <a href="/solution/design-agriculture-greenhouses/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
+      <a href="/solution/greenhouse-irrigation/" style="display:inline-block;background:#1f7a4d;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;">
         Start Here →
       </a>
     </div>

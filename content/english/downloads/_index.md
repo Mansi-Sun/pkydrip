@@ -4,4 +4,4 @@ description: "Product manuals, wiring diagrams, datasheets, and technical resour
 ---
 
 Welcome to the PKYDrip Download Center.  
-Select a product below to download manuals, wiring diagrams, or specifications.
+Download product catalogues, engineering brochures, manuals, wiring diagrams, and technical specifications.

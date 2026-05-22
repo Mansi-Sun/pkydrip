@@ -28,7 +28,7 @@ Typical crops include:
 - field crops  
 - large-scale agricultural planting
 
-Future content will explain system architecture, zoning strategies, and pump coordination for open-field irrigation projects.
+→ [Open-field wireless valve control](/applications/open-field-wireless-valve-control/) · [Open-field solution](/solution/open-field-irrigation/)
 
 ---
 
@@ -44,6 +44,8 @@ Typical orchard irrigation features include:
 - seasonal irrigation adjustments
 
 PKYDrip controllers help automate irrigation scheduling while allowing growers to manage multiple orchard sections more easily.
+
+→ [Orchard irrigation application](/applications/orchard-irrigation/) · [Orchard solution](/solution/orchard-irrigation/)
 
 ---
 

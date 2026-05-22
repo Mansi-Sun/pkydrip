@@ -37,7 +37,7 @@ hero:
 system_controls:
   title: "What the System Controls"
   intro: "PKYDrip irrigation control systems help automate irrigation infrastructure using centralized pump and valve management—not only a single panel, but a coordinated automation platform for the whole project."
-  diagram: "images/product/irrigation-control-cabinet/one-system-complete-control.png"
+  diagram: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
   items:
     - name: "Water pumps"
       desc: "Start/stop automation, protection logic, and coordination with valve programs."
@@ -65,7 +65,7 @@ pump_valve_automation:
 wireless_control:
   title: "Wireless LoRa Irrigation Expansion"
   body: "Remote irrigation zones can be connected through solar-powered LoRa valve controllers when cable installation is difficult—orchards, hillsides, and expansion blocks are common examples."
-  image: "images/product/pky-ic05.webp"
+  image: "images/brochure/lora-valve-field.jpg"
   bullets:
     - "Long-distance communication"
     - "Solar-powered field devices"
@@ -74,8 +74,15 @@ wireless_control:
 
 hmi_section:
   title: "Simple Touchscreen Operation"
-  body: "The touchscreen interface allows operators to monitor irrigation status, manually operate valves, configure irrigation plans, and view alarms—without relying on scattered timers or undocumented panel logic."
-  image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
+  body: "The HMI touchscreen is the day-to-day operator interface for the pump and valve platform—replacing scattered timers and undocumented panel logic with one structured control screen."
+  image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves-touchscreen.png"
+  image_alt: "Touchscreen HMI for pump and valve irrigation control"
+  bullets:
+    - "Sequential or timed valve programs—run zones in order or on schedule"
+    - "Manual valve open/close from the screen for testing and field adjustments"
+    - "Live pressure and flow readouts when sensors are installed"
+    - "Soil moisture, tank level, and other field sensor values on one dashboard"
+    - "Alarms and status for pump, valve, and communication faults"
 
 control_platform:
   title: "Industrial Control Platform Design"
@@ -92,10 +99,10 @@ applications:
   cards:
     - title: "Orchard Irrigation"
       desc: "Pump automation with zoned valves and optional wireless blocks in remote rows."
-      link: "/solution/open-field-irrigation/"
+      link: "/solution/orchard-irrigation/"
     - title: "Greenhouse Irrigation"
       desc: "Pump, valves, and fertigation coordination from a central control platform."
-      link: "/solution/fertigation-system/"
+      link: "/solution/greenhouse-irrigation/"
     - title: "Open Field Irrigation"
       desc: "Multi-zone sprinkler or drip systems from a pump station."
       link: "/solution/open-field-irrigation/"
@@ -104,7 +111,7 @@ applications:
       link: "/applications/"
     - title: "Fertigation Systems"
       desc: "Water–fertilizer integration with irrigation schedules and monitoring."
-      link: "/solution/fertigation-system/"
+      link: "/product/fertigation-system/"
 
 aliases:
   - "/product/irrigation-control-cabinet/"

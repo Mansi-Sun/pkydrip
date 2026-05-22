@@ -16,6 +16,34 @@ cta:
 products:
 
   # ==============================
+  # Product families (migration batch 1)
+  # ==============================
+  - name: "Pump & Valve Control System"
+    summary: "Central irrigation automation—pumps, valves, HMI, and project-level control."
+    image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
+    url: "/product/pump-valve-control-system/"
+
+  - name: "Fertigation System"
+    summary: "Multi-channel fertigation modules with optional EC/pH control."
+    image: "images/product/pky-fg301.jpg"
+    url: "/product/fertigation-system/"
+
+  - name: "Wireless Valve Controller"
+    summary: "LoRa solar field valves and gateway architecture."
+    image: "images/product/pky-ic05.webp"
+    url: "/product/wireless-valve-controller/"
+
+  - name: "Sensors & Monitoring"
+    summary: "Soil, flow, pressure, weather, and nutrient feedback."
+    image: "images/brochure/lora-system-real-field.webp"
+    url: "/product/sensors-monitoring/"
+
+  - name: "Filters, Valves & Components"
+    summary: "Filtration, valves, drip hardware—quoted as system BOM."
+    image: "images/solution/controller-valve-pump-combination.webp"
+    url: "/product/filters-valves-accessories/"
+
+  # ==============================
   # Irrigation Controllers (Main)
   # ==============================
   - name: "PKY-60W"
