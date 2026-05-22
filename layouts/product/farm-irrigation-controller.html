@@ -38,7 +38,7 @@
 
         <div class="col-lg-5 text-center">
           {{ with .Params.image }}
-            <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Title }}" style="max-height: 340px; object-fit: contain;">
+            <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" style="max-height: 400px; width: 100%; object-fit: contain;">
           {{ end }}
         </div>
       </div>
@@ -78,6 +78,30 @@
             </div>
           </div>
         {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* HMI touchscreen */}}
+  {{ with .Params.hmi_section }}
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        {{ with .image }}
+        <div class="col-lg-6">
+          <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Params.hmi_section.image_alt | default "HMI touchscreen" }}" style="width:100%;max-height:420px;object-fit:contain;">
+        </div>
+        {{ end }}
+        <div class="{{ if .image }}col-lg-6{{ else }}col-12{{ end }}">
+          <h2 class="h3 mb-3">{{ $.Params.sections.hmi_section_title | default .title }}</h2>
+          {{ with .body }}<p class="text-muted mb-3">{{ . }}</p>{{ end }}
+          {{ with .bullets }}
+          <ul class="mb-0 text-muted">
+            {{ range . }}<li class="mb-2">{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>

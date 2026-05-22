@@ -5,7 +5,8 @@ type: "product"
 layout: "farm-irrigation-controller"
 
 bg_image: ""
-image: "images/product/pump-control.webp"
+image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
+image_alt: "One control system for pumps and valves — PKYDrip irrigation controller at field pump station"
 
 categories:
   - irrigation-controller
@@ -45,9 +46,22 @@ hero:
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%27m%20interested%20in%20a%20farm%20irrigation%20controller%20(pump%20%2B%20valves%20%2B%20pressure%2Fflow).%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01."
   note: "**Not a consumer garden timer.** Built for farms, contractors, greenhouse integrators, and irrigation retrofit projects."
 
+hmi_section:
+  title: "Smart Control Interface"
+  body: "The HMI touchscreen is the day-to-day operator interface—monitor status, run manual or timed valve programs, schedule irrigation plans, and review alarms without scattered timers or undocumented panel logic."
+  image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves-touchscreen.png"
+  image_alt: "PKYDrip intelligent irrigation system touchscreen — manual and automatic zone control"
+  bullets:
+    - "Real-time status monitoring"
+    - "Manual, automatic, and timer irrigation modes"
+    - "Irrigation plan scheduling"
+    - "Event and alarm records"
+    - "Sequential or group valve operation from the screen"
+
 sections:
   use_cases_title: "Common use cases"
   capabilities_title: "What this controller can do"
+  hmi_section_title: "Smart touchscreen operation"
   system_structure_title: "Typical system structure"
   suitable_projects_title: "Suitable projects (quick check)"
   consultation_title: "Consultation (recommended before purchase)"
