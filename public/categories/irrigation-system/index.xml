@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Irrigation-System on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/categories/irrigation-system/</link>
+    <description>Recent content in Irrigation-System on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/categories/irrigation-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fertigation System</title>
+      <link>http://localhost:1313/product/fertigation-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/fertigation-system/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Fertigation system&lt;/strong&gt; product family—module specs on PKY-FG301 and PKY-FG401 pages. Integration with &lt;a href=&#34;http://localhost:1313/product/pump-valve-control-system/&#34;&gt;pump &amp;amp; valve control&lt;/a&gt; when sharing a pump station.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Filters, Valves &amp; Irrigation Components</title>
+      <link>http://localhost:1313/product/filters-valves-accessories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/filters-valves-accessories/</guid>
+      <description>&lt;p&gt;Supporting &lt;strong&gt;components&lt;/strong&gt; for engineering projects; control platform pages describe automation logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Irrigation Pump &amp; Valve Control System</title>
+      <link>http://localhost:1313/product/pump-valve-control-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pump-valve-control-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PKY-60W Standard Irrigation Control System | PKYDrip</title>
+      <link>http://localhost:1313/product/pky-60w-standard-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-60w-standard-system/</guid>
+      <description>&lt;p&gt;In farm and commercial irrigation, &lt;strong&gt;PKY-60W&lt;/strong&gt; is often deployed not as a standalone device, but as the &lt;strong&gt;control core of a complete irrigation control system&lt;/strong&gt;: coordinating &lt;strong&gt;pump and valve control&lt;/strong&gt;, managing &lt;strong&gt;multi-zone&lt;/strong&gt; operation, and interfacing with &lt;strong&gt;optional sensors&lt;/strong&gt; and expansion modules.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

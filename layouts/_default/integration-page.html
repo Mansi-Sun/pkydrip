@@ -1,0 +1,139 @@
+{{ define "main" }}
+<main class="integration-page">
+  {{ with .Params.hero }}
+  <section class="integration-hero">
+    <div class="container">
+      <div class="row align-items-center g-5 mx-0">
+        <div class="col-lg-7">
+          <p class="integration-kicker">{{ .kicker }}</p>
+          <h1>{{ .title | default $.Title }}</h1>
+          <p class="integration-hero__subtitle">{{ .subtitle }}</p>
+          <p class="integration-hero__support">{{ .supporting_text }}</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="{{ .cta_primary.url }}" class="btn btn-success px-4">{{ .cta_primary.label }}</a>
+            <a href="{{ .cta_secondary.url }}" class="btn btn-outline-success px-4">{{ .cta_secondary.label }}</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid rounded shadow integration-hero__image" src="{{ .image | relURL }}" alt="{{ .image_alt | default $.Title }}">
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ range $index, $section := .Params.card_sections }}
+  <section class="integration-section {{ if modBool $index 2 }}integration-section--tint{{ end }}">
+    <div class="container">
+      <div class="integration-heading">
+        <p class="integration-kicker">{{ .kicker }}</p>
+        <h2>{{ .title }}</h2>
+        {{ with .intro }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div class="row g-3">
+        {{ range .items }}
+        <div class="{{ if eq $section.columns 2 }}col-md-6{{ else if eq $section.columns 4 }}col-6 col-lg-3{{ else }}col-md-6 col-lg-4{{ end }}">
+          <article class="integration-card">
+            {{ with .icon }}<div class="integration-card__icon"><i class="{{ . }}" aria-hidden="true"></i></div>{{ end }}
+            <h3>{{ .title }}</h3>
+            {{ with .body }}<p>{{ . }}</p>{{ end }}
+            {{ with .bullets }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+            {{ with .link }}<a href="{{ .url }}">{{ .label }} →</a>{{ end }}
+          </article>
+        </div>
+        {{ end }}
+      </div>
+      {{ with .note }}<div class="integration-note mt-4">{{ . }}</div>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.architecture }}
+  <section class="integration-section integration-section--dark">
+    <div class="container">
+      <div class="integration-heading">
+        <p class="integration-kicker">{{ .kicker }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .intro }}</p>
+      </div>
+      <div class="integration-flow" aria-label="{{ .title }}">
+        {{ range .steps }}<div class="integration-flow__step">{{ . }}</div>{{ end }}
+      </div>
+      {{ with .body }}<p class="integration-flow__body">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.quality }}
+  <section class="integration-section integration-section--tint">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <p class="integration-kicker">{{ .kicker }}</p>
+          <h2>{{ .title }}</h2>
+          <p class="integration-muted">{{ .body }}</p>
+          {{ with .additional }}<p class="integration-muted">{{ . }}</p>{{ end }}
+        </div>
+        <div class="col-lg-7">
+          <div class="integration-check-grid">
+            {{ range .items }}<div><span>✓</span>{{ . }}</div>{{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.boundary }}
+  <section class="integration-section">
+    <div class="container">
+      <div class="integration-boundary">
+        <p class="integration-kicker">{{ .kicker }}</p>
+        <h2>{{ .title }}</h2>
+        {{ range .paragraphs }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.faq }}
+  <section class="integration-section integration-section--tint">
+    <div class="container">
+      <div class="integration-heading"><p class="integration-kicker">{{ .kicker }}</p><h2>{{ .title }}</h2></div>
+      <div class="integration-faq">
+        {{ range .items }}
+        <details>
+          <summary>{{ .question }}</summary>
+          <p>{{ .answer }}</p>
+        </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.related_links }}
+  <section class="integration-related">
+    <div class="container">
+      <h2>{{ .title }}</h2>
+      <div class="d-flex flex-wrap gap-2">
+        {{ range .links }}<a class="btn btn-sm btn-outline-secondary" href="{{ .url }}">{{ .label }}</a>{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.final_cta }}
+  <section class="integration-cta">
+    <div class="container text-center">
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <a href="{{ .cta_primary.url }}" class="btn btn-light btn-lg px-4">{{ .cta_primary.label }}</a>
+        <a href="{{ .cta_secondary.url }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">{{ .cta_secondary.label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

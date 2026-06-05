@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Valve-Controller on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/categories/valve-controller/</link>
+    <description>Recent content in Valve-Controller on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/categories/valve-controller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IC03 → IC05-Plus (Product Upgrade Notice)</title>
+      <link>http://localhost:1313/product/pky-ic03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-ic03/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Start Simple. Upgrade Anytime.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LoRa Wireless Irrigation Valve Controller | PKYDrip</title>
+      <link>http://localhost:1313/product/lora-valve-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/lora-valve-controller/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PKY-IC05 LoRa Solar Valve Controller | PKYDrip</title>
+      <link>http://localhost:1313/product/pky-ic05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-ic05/</guid>
+      <description>&lt;h2 id=&#34;role-in-the-irrigation-system&#34;&gt;Role in the Irrigation System&lt;/h2&gt;&#xA;&lt;p&gt;PKY-IC05 is a &lt;strong&gt;LoRa solar valve controller&lt;/strong&gt; designed as a &lt;strong&gt;dedicated field actuator&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PKY-IC05-Plus Wireless Control &amp; Sensing Node | PKYDrip</title>
+      <link>http://localhost:1313/product/pky-ic05-plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-ic05-plus/</guid>
+      <description>&lt;h2 id=&#34;role-in-the-irrigation-system&#34;&gt;Role in the Irrigation System&lt;/h2&gt;&#xA;&lt;p&gt;PKY-IC05-Plus is a &lt;strong&gt;wireless control and sensing node&lt;/strong&gt; designed for modular irrigation systems that require more than basic valve execution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PKYDrip Electric Valve Controller – Model PKY-EVC01</title>
+      <link>http://localhost:1313/product/pky-evc01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-evc01/</guid>
+      <description>&lt;h2 id=&#34;product-overview&#34;&gt;Product Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;PKY-EVC01&lt;/strong&gt; is an electric valve controller designed for irrigation projects where:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wireless Valve Controller</title>
+      <link>http://localhost:1313/product/wireless-valve-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/wireless-valve-controller/</guid>
+      <description>&lt;p&gt;B2B &lt;strong&gt;wireless valve control&lt;/strong&gt; for farms and integrators—not consumer WiFi garden timers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

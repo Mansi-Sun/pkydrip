@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Acquisition on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/categories/data-acquisition/</link>
+    <description>Recent content in Data-Acquisition on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/categories/data-acquisition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PKYDrip Data Acquisition Terminal Module – Model PKY-DAT01</title>
+      <link>http://localhost:1313/product/pky-dat01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-dat01/</guid>
+      <description>&lt;h2 id=&#34;role-in-the-irrigation-system&#34;&gt;Role in the Irrigation System&lt;/h2&gt;&#xA;&lt;p&gt;PKY-DAT01 is a &lt;strong&gt;data acquisition terminal module&lt;/strong&gt; for smart irrigation systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sensors &amp; Monitoring</title>
+      <link>http://localhost:1313/product/sensors-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/sensors-monitoring/</guid>
+      <description>&lt;p&gt;Specify sensor types and quantities in your project quote—this page is the &lt;strong&gt;monitoring module family&lt;/strong&gt; reference, not a parts catalog.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

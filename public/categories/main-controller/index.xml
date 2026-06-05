@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Main-Controller on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/categories/main-controller/</link>
+    <description>Recent content in Main-Controller on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/categories/main-controller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PKY-60W Standard Irrigation Control System | PKYDrip</title>
+      <link>http://localhost:1313/product/pky-60w-standard-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-60w-standard-system/</guid>
+      <description>&lt;p&gt;In farm and commercial irrigation, &lt;strong&gt;PKY-60W&lt;/strong&gt; is often deployed not as a standalone device, but as the &lt;strong&gt;control core of a complete irrigation control system&lt;/strong&gt;: coordinating &lt;strong&gt;pump and valve control&lt;/strong&gt;, managing &lt;strong&gt;multi-zone&lt;/strong&gt; operation, and interfacing with &lt;strong&gt;optional sensors&lt;/strong&gt; and expansion modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PKYDrip Wired Main Controller – PKY-60W</title>
+      <link>http://localhost:1313/product/pky-60w/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-60w/</guid>
+      <description>&lt;h2 id=&#34;role-in-the-irrigation-system&#34;&gt;Role in the Irrigation System&lt;/h2&gt;&#xA;&lt;p&gt;PKY-60W is a &lt;strong&gt;wired main controller&lt;/strong&gt;.&lt;br&gt;&#xA;It serves as the &lt;strong&gt;logic and coordination core&lt;/strong&gt; of a modular irrigation system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

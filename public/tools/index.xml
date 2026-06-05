@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering Tools on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/tools/</link>
+    <description>Recent content in Engineering Tools on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Irrigation Design Wizard — Planning Tool for Farms &amp; Projects</title>
+      <link>http://localhost:1313/tools/irrigation-design-wizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/irrigation-design-wizard/</guid>
+      <description>&lt;h3 id=&#34;before-you-start&#34;&gt;Before you start&lt;/h3&gt;&#xA;&lt;p&gt;This tool helps you &lt;strong&gt;organize your irrigation project clearly&lt;/strong&gt; (layout, water source, crop type, and irrigation method).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

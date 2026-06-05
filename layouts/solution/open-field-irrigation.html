@@ -1,0 +1,285 @@
+{{ define "main" }}
+<main class="solution-open-field">
+
+  {{/* Hero */}}
+  <section class="py-5" style="background: linear-gradient(180deg, rgba(26,61,82,0.06), rgba(255,255,255,1));">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-semibold mb-3">{{ .Params.hero.title | default .Title }}</h1>
+          {{ with .Params.hero.subtitle }}
+            <p class="lead text-muted mb-4">{{ . }}</p>
+          {{ end }}
+          <div class="d-flex flex-wrap gap-2">
+            {{ with .Params.hero.cta_primary }}
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .label }}</a>
+            {{ end }}
+            {{ with .Params.hero.cta_secondary }}
+              <a href="{{ .url | relLangURL }}" class="btn btn-outline-success px-4">{{ .label }}</a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-5">
+          {{ with .Params.hero.image }}
+            <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:cover;">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* What this system controls */}}
+  {{ with .Params.system_controls }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+      <div class="row g-3">
+        {{ range .items }}
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="p-3 border rounded h-100 bg-white of-component-card">
+            <div class="fw-semibold mb-1">{{ .name }}</div>
+            {{ with .desc }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* System architecture */}}
+  {{ with .Params.system_architecture }}
+  <section class="py-5" style="background:#f8fafb;">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .subtitle }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+      <figure class="mb-0">
+        <img class="img-fluid rounded shadow-sm border bg-white" src="{{ .image | relURL }}" alt="{{ .image_alt | default .title }}" style="width:100%;height:auto;">
+      </figure>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* One pump, multiple zones */}}
+  {{ with .Params.zone_flow }}
+  <section class="py-5" style="background:#f8fafb;">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h3 mb-3">{{ .title }}</h2>
+          {{ with .body }}<p class="text-muted mb-3">{{ . }}</p>{{ end }}
+          {{ with .bullets }}
+          <ul class="mb-0 text-muted">
+            {{ range . }}<li class="mb-2">{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        <div class="col-lg-6">
+          {{ with .diagram }}
+          <img class="img-fluid rounded border bg-white p-2" src="{{ . | relURL }}" alt="{{ $.Params.zone_flow.diagram_alt | default "Pump and zone valve flow" }}" style="width:100%;">
+          {{ else }}
+          <div class="of-flow-diagram p-4 rounded border bg-white text-center" aria-label="System flow">
+            {{ range .steps }}
+            <span class="of-flow-step">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Wireless field irrigation */}}
+  {{ with .Params.wireless_control }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .body }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+      {{ with .tags }}
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        {{ range . }}
+        <span class="badge rounded-pill text-bg-success px-3 py-2">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+      <div class="row g-3">
+        {{ range .images }}
+        <div class="col-md-4">
+          <figure class="mb-0">
+            <img class="img-fluid rounded shadow-sm" src="{{ .src | relURL }}" alt="{{ .alt }}" style="width:100%;height:200px;object-fit:cover;">
+            {{ with .caption }}<figcaption class="small text-muted mt-2">{{ . }}</figcaption>{{ end }}
+          </figure>
+        </div>
+        {{ end }}
+      </div>
+      {{ with .link }}
+      <p class="mt-3 mb-0"><a href="{{ .url | relLangURL }}">{{ .label }} →</a></p>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Fertigation */}}
+  {{ with .Params.fertigation }}
+  <section class="py-5" style="background:#f8fafb;">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="h3 mb-3">{{ .title }}</h2>
+          {{ with .body }}<p class="text-muted mb-3">{{ . }}</p>{{ end }}
+          {{ with .bullets }}
+          <ul class="mb-3 text-muted">
+            {{ range . }}<li class="mb-2">{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+          {{ with .link }}
+          <a href="{{ .url | relLangURL }}" class="btn btn-sm btn-outline-success">{{ .label }}</a>
+          {{ end }}
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          {{ with .image }}
+          <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Params.fertigation.image_alt | default "Fertigation integration" }}" style="width:100%;max-height:320px;object-fit:cover;">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* HMI */}}
+  {{ with .Params.hmi_section }}
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="of-hmi-visual position-relative">
+            {{ with .equipment_image }}
+            <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="Irrigation control equipment" style="width:100%;max-height:340px;object-fit:cover;">
+            {{ end }}
+            {{ with .ui_image }}
+            <img class="of-hmi-overlay img-fluid rounded border shadow" src="{{ . | relURL }}" alt="HMI touchscreen interface">
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="h3 mb-3">{{ .title }}</h2>
+          {{ with .body }}<p class="text-muted mb-3">{{ . }}</p>{{ end }}
+          {{ with .features }}
+          <div class="row g-2">
+            {{ range . }}
+            <div class="col-6">
+              <div class="p-2 border rounded bg-white small fw-semibold text-center">{{ . }}</div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Applications */}}
+  {{ with .Params.applications }}
+  <section class="py-5" style="background:#f8fafb;">
+    <div class="container">
+      <h2 class="h3 mb-4">{{ .title }}</h2>
+      <div class="row g-3">
+        {{ range .cards }}
+        {{ $card := . }}
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm overflow-hidden">
+            {{ with $card.image }}
+            <img class="card-img-top" src="{{ . | relURL }}" alt="{{ $card.title }}" style="height:160px;object-fit:cover;">
+            {{ end }}
+            <div class="card-body">
+              <h3 class="h6 fw-semibold mb-2">{{ $card.title }}</h3>
+              {{ with $card.desc }}<p class="text-muted small mb-2">{{ . }}</p>{{ end }}
+              {{ with $card.tags }}
+              <div class="d-flex flex-wrap gap-1">
+                {{ range . }}
+                <span class="badge text-bg-light border text-secondary">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </article>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Demo videos */}}
+  {{ with .Params.demo_videos }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
+      <div class="row g-4">
+        {{ range .items }}
+        <div class="col-md-6 col-lg-3">
+          <h3 class="h6 fw-semibold mb-2">{{ .title }}</h3>
+          {{ if .video_id }}
+          <div class="ratio ratio-16x9">
+            {{ partial "youtube-lite.html" (dict "url" (printf "https://www.youtube.com/watch?v=%s" .video_id) "title" .title) }}
+          </div>
+          {{ else }}
+          <div class="ratio ratio-16x9 of-video-placeholder rounded border bg-light d-flex align-items-center justify-content-center">
+            <span class="text-muted small text-center px-2">{{ .placeholder | default "YouTube video — add video_id in content" }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Compact SEO note + internal links (optional markdown) */}}
+  {{ with .Content }}
+  <section class="py-4 border-top">
+    <div class="container">
+      <div class="content text-muted small col-lg-10">{{ . }}</div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* CTA */}}
+  {{ with .Params.project_cta }}
+  <section class="py-5" style="background: linear-gradient(165deg, #1a3d52 0%, #1e4d3f 100%); color: #fff;">
+    <div class="container text-center">
+      <h2 class="h3 mb-3">{{ .title }}</h2>
+      {{ with .text }}<p class="mb-4 mx-auto" style="max-width:720px;opacity:.9;">{{ . }}</p>{{ end }}
+      <a href="{{ .button_url }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">{{ .button_label }}</a>
+      {{ with $.Params.page_code }}<p class="small mt-3 mb-0" style="opacity:.7;">Reference: {{ . }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</main>
+<style>
+.solution-open-field .of-component-card { transition: box-shadow .2s; }
+.solution-open-field .of-component-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+.solution-open-field .of-flow-diagram { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem; }
+.solution-open-field .of-flow-step {
+  font-weight: 600; font-size: .9rem; padding: .5rem .75rem;
+  background: #e8f4ec; border-radius: .35rem; color: #1e4d3f;
+}
+.solution-open-field .of-flow-step:not(:last-child)::after {
+  content: "→"; margin-left: .5rem; font-weight: 400; color: #6c757d;
+}
+.solution-open-field .of-hmi-visual { min-height: 200px; }
+.solution-open-field .of-hmi-overlay {
+  position: absolute; right: 4%; bottom: 6%; width: 42%; max-width: 220px;
+  background: #fff;
+}
+.solution-open-field .of-video-placeholder { background: #f1f3f5 !important; }
+@media (max-width: 767px) {
+  .solution-open-field .of-hmi-overlay { position: static; width: 70%; margin: -2rem auto 0; display: block; }
+}
+</style>
+{{ end }}

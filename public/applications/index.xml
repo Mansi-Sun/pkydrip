@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Irrigation System Applications on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/applications/</link>
+    <description>Recent content in Irrigation System Applications on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/applications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greenhouse LoRa Irrigation Expansion Project</title>
+      <link>http://localhost:1313/applications/greenhouse-lora-irrigation-expansion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/applications/greenhouse-lora-irrigation-expansion/</guid>
+      <description>&lt;h1 id=&#34;greenhouse-lora-irrigation-expansion-project&#34;&gt;Greenhouse LoRa Irrigation Expansion Project&lt;/h1&gt;&#xA;&lt;p&gt;A practical irrigation expansion case using LoRa wireless valve controllers in a greenhouse environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Orchard Irrigation Application</title>
+      <link>http://localhost:1313/applications/orchard-irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/applications/orchard-irrigation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Project scenario:&lt;/strong&gt; orchard drip automation—see &lt;a href=&#34;http://localhost:1313/solution/orchard-irrigation/&#34;&gt;orchard solution&lt;/a&gt; for system architecture.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tomato Drip Irrigation Application</title>
+      <link>http://localhost:1313/applications/tomato-drip-irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/applications/tomato-drip-irrigation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Project scenario:&lt;/strong&gt; tomato drip in greenhouse or field—linked to &lt;a href=&#34;http://localhost:1313/solution/greenhouse-irrigation/&#34;&gt;greenhouse irrigation&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/docs/fertigation-basics/&#34;&gt;fertigation basics&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wireless Valve Control for Open Field Irrigation | No Wiring Solution</title>
+      <link>http://localhost:1313/applications/open-field-wireless-valve-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/applications/open-field-wireless-valve-control/</guid>
+      <description>&lt;h2 id=&#34;wireless-valve-control-for-open-field-irrigation&#34;&gt;Wireless Valve Control for Open Field Irrigation&lt;/h2&gt;&#xA;&lt;p&gt;Managing irrigation across large farms often becomes difficult due to &lt;strong&gt;long distances, complex wiring, and scattered irrigation zones&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

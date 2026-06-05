@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sensor on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</title>
+    <link>http://localhost:1313/categories/sensor/</link>
+    <description>Recent content in Sensor on Smart Irrigation &amp; Fertigation Systems | PKYDRIP</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/categories/sensor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CO2 Sensor</title>
+      <link>http://localhost:1313/product/co2-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/co2-sensor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/co2-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oxygen Sensor</title>
+      <link>http://localhost:1313/product/oxygen-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/oxygen-sensor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/oxygen1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PKYDrip Data Acquisition Terminal Module – Model PKY-DAT01</title>
+      <link>http://localhost:1313/product/pky-dat01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/pky-dat01/</guid>
+      <description>&lt;h2 id=&#34;role-in-the-irrigation-system&#34;&gt;Role in the Irrigation System&lt;/h2&gt;&#xA;&lt;p&gt;PKY-DAT01 is a &lt;strong&gt;data acquisition terminal module&lt;/strong&gt; for smart irrigation systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rain Sensor</title>
+      <link>http://localhost:1313/product/rain-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/rain-sensor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/rain-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sensors &amp; Monitoring</title>
+      <link>http://localhost:1313/product/sensors-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/sensors-monitoring/</guid>
+      <description>&lt;p&gt;Specify sensor types and quantities in your project quote—this page is the &lt;strong&gt;monitoring module family&lt;/strong&gt; reference, not a parts catalog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Moisture Temperature Conductivity Sensor</title>
+      <link>http://localhost:1313/product/soil-env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/soil-env/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-env-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Nitrogen Phosphorus and Potassium Sensor</title>
+      <link>http://localhost:1313/product/soil-npk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/soil-npk/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/soil-npk-sensor1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Temperature/Humidity/LUX Sensor</title>
+      <link>http://localhost:1313/product/tem-hum-lux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/tem-hum-lux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/tem-hum-lux1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wind Direction Sensor</title>
+      <link>http://localhost:1313/product/wind-direction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/wind-direction/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-direction1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wind Speed Sensor</title>
+      <link>http://localhost:1313/product/wind-speed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/wind-speed/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/product/wind-speed1.webp&#34; alt=&#34;Product Details&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

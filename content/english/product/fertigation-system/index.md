@@ -45,6 +45,9 @@ product_modules:
   title: "Product Modules"
   intro: "Configure the right fertigation controller—single-channel to multi-channel, with or without EC/pH."
   items:
+    - name: "Fertigation Controller"
+      desc: "Integration-ready control layer for existing pumps, tanks, pipelines, and dosing equipment."
+      url: "/product/fertigation-controller/"
     - name: "PKY-FG301"
       desc: "3-channel scheduled fertigation with touchscreen control."
       url: "/product/pky-fg301/"
@@ -87,6 +90,10 @@ applications:
 related_links:
   title: "Related"
   links:
+    - label: "Fertigation controller for integration"
+      url: "/product/fertigation-controller/"
+    - label: "Integration & connectivity"
+      url: "/solution/integration-connectivity/"
     - label: "Fertigation basics (doc)"
       url: "/docs/fertigation-basics/"
     - label: "Greenhouse solution"

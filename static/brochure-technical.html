@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PKYDrip — Technical Brochure</title>
+  <style>
+    @page { size: A4 landscape; margin: 0; }
+    :root {
+      --blue: #1a5f8a;
+      --blue-light: #e8f4fc;
+      --green: #2d7d52;
+      --green-light: #edf7f0;
+      --ink: #1e293b;
+      --muted: #5c6b7a;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #c5d0da; color: var(--ink); font-size: 9.5pt; line-height: 1.4; }
+    .toolbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 99;
+      background: var(--ink); color: #fff; padding: 0.5rem 1rem;
+      display: flex; justify-content: space-between; align-items: center; font-size: 10pt;
+    }
+    .toolbar button { background: #fff; border: none; padding: 0.4rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer; }
+    @media print { .toolbar { display: none !important; } body { background: #fff; } }
+    .deck { margin: 3rem auto 2rem; }
+    @media print { .deck { margin: 0; } }
+    .page {
+      width: 297mm; height: 210mm;
+      margin: 0 auto 12px;
+      background: var(--white);
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+    }
+    @media print {
+      .page { margin: 0; page-break-after: always; }
+      .page:last-child { page-break-after: auto; }
+    }
+    .page-inner { padding: 9mm 11mm; height: 100%; display: flex; flex-direction: column; }
+    .tag { font-size: 7pt; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; }
+    h1 { font-size: 20pt; color: var(--blue); line-height: 1.15; }
+    h2 { font-size: 14pt; color: var(--blue); margin-bottom: 3mm; }
+    h3 { font-size: 10.5pt; color: var(--blue); margin-bottom: 2mm; }
+    .lead { color: var(--muted); max-width: 120mm; margin-bottom: 3mm; }
+    table.data { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin-top: 2mm; }
+    table.data th, table.data td { border: 1px solid #c5dce8; padding: 2mm 2.5mm; text-align: left; vertical-align: top; }
+    table.data th { background: var(--blue-light); color: var(--blue); font-weight: 600; }
+    .media { position: relative; background: var(--blue-light); border: 1px solid #c5dce8; border-radius: 4px; overflow: hidden; }
+    .media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .media .ph { display: none; position: absolute; inset: 0; align-items: center; justify-content: center; font-size: 8.5pt; color: var(--muted); background: #e8eef4; text-align: center; padding: 4mm; }
+    .media.is-missing img { display: none; }
+    .media.is-missing .ph { display: flex; }
+    .flow-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 2mm; margin: 3mm 0; font-size: 8.5pt; font-weight: 600; }
+    .flow-box { background: var(--blue-light); border: 1px solid #94c5e8; padding: 2mm 4mm; border-radius: 4px; color: var(--blue); }
+    .flow-arrow { color: var(--muted); }
+    .split { display: flex; gap: 7mm; flex: 1; min-height: 0; }
+    .split > div:first-child { flex: 1; }
+    .split .media { flex: 0 0 115mm; height: 100%; min-height: 120mm; }
+    .config-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; flex: 1; margin-top: 2mm; }
+    .config-card { border: 1px solid #c5dce8; border-radius: 6px; padding: 3mm; background: var(--green-light); }
+    .config-card h3 { font-size: 9.5pt; }
+    .config-card ul { margin-top: 2mm; padding-left: 4mm; font-size: 8pt; color: var(--muted); }
+    .steps { counter-reset: step; list-style: none; margin-top: 2mm; }
+    .steps li { counter-increment: step; padding-left: 7mm; position: relative; margin-bottom: 1.5mm; font-size: 9pt; }
+    .steps li::before { content: counter(step); position: absolute; left: 0; width: 5mm; height: 5mm; background: var(--blue); color: #fff; border-radius: 50%; font-size: 7pt; text-align: center; line-height: 5mm; }
+    .p-cover .page-inner { flex-direction: row; align-items: center; gap: 8mm; }
+    .p-cover .copy { flex: 0 0 115mm; }
+    .p-cover .media { flex: 1; height: 175mm; }
+    .footer-dark { background: var(--blue); color: #fff; }
+    .footer-dark h2, .footer-dark h3 { color: #fff; }
+    .footer-dark a { color: #b8e0f5; }
+    .checklist { columns: 2; column-gap: 6mm; font-size: 9pt; padding-left: 4mm; margin-top: 2mm; }
+    .diagram-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 3mm; }
+    .diagram-block { background: var(--blue-light); border: 1px solid #c5dce8; border-radius: 6px; padding: 3mm; font-size: 8.5pt; }
+    .diagram-block strong { display: block; color: var(--blue); margin-bottom: 2mm; font-size: 9pt; }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.media img').forEach(function (img) {
+        img.addEventListener('error', function () {
+          this.style.display = 'none';
+          this.closest('.media').classList.add('is-missing');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <span>PKYDrip Technical Brochure — A4 landscape</span>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+  <div class="deck">
+
+    <!-- 1 Cover -->
+    <section class="page p-cover">
+      <div class="page-inner">
+        <div class="copy">
+          <p class="tag">PKYDrip Technical</p>
+          <h1>PKYDrip Irrigation Control System Technical Brochure</h1>
+          <p class="lead" style="margin-top:4mm;">Pump control, valve automation, wireless field control, fertigation integration, and HMI operation.</p>
+        </div>
+        <div class="media" data-file="images/brochure/technical-cover.jpg">
+          <img src="/images/brochure/technical-cover.jpg" alt="Technical cover">
+          <div class="ph">images/brochure/technical-cover.jpg</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 Overview -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Overview</p>
+        <h2>Integrated Control for Irrigation Projects</h2>
+        <p class="lead">PKYDrip irrigation control systems can manage pumps, valves, sensors, wireless valve controllers, fertigation equipment, and HMI touchscreens for agricultural and landscape irrigation projects.</p>
+        <div class="diagram-2col">
+          <div class="diagram-block">
+            <strong>Hydraulic path</strong>
+            <div class="flow-row" style="flex-direction:column;align-items:stretch;">
+              <span class="flow-box">Water Source</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Pump</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Filter</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Main Pipe</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Zone Valves</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Irrigation Area</span>
+            </div>
+          </div>
+          <div class="diagram-block">
+            <strong>Control path</strong>
+            <div class="flow-row" style="flex-direction:column;align-items:stretch;">
+              <span class="flow-box">Control Cabinet</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Pump / Valves / Sensors</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Wireless Gateway</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">HMI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Cabinet functions -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Control cabinet</p>
+        <h2>Irrigation Control Cabinet Functions</h2>
+        <table class="data">
+          <thead><tr><th>Function</th><th>Description</th><th>Typical use</th></tr></thead>
+          <tbody>
+            <tr><td>Pump control</td><td>Start / stop pump according to irrigation plan</td><td>Farm pump station</td></tr>
+            <tr><td>Valve control</td><td>Open and close irrigation zones</td><td>Multi-zone irrigation</td></tr>
+            <tr><td>Sequential irrigation</td><td>Run zones one by one</td><td>Pump protection and water distribution</td></tr>
+            <tr><td>Group irrigation</td><td>Run selected zones together</td><td>Larger flow systems</td></tr>
+            <tr><td>Sensor input</td><td>Pressure, flow, soil moisture, tank level</td><td>Monitoring and protection</td></tr>
+            <tr><td>HMI operation</td><td>Touchscreen operation and status display</td><td>On-site management</td></tr>
+            <tr><td>Wireless communication</td><td>LoRa / 4G / WiFi options</td><td>Remote field control</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4 Protection logic -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Protection</p>
+        <h2>Pump and Valve Protection Logic</h2>
+        <p class="lead">The system is designed to avoid running the pump without an open valve and to avoid closing valves while the pump is still operating.</p>
+        <div class="split">
+          <div>
+            <h3>Typical automatic sequence</h3>
+            <ol class="steps">
+              <li>Open selected valve</li>
+              <li>Wait for valve delay time</li>
+              <li>Start pump</li>
+              <li>Run irrigation</li>
+              <li>Stop pump</li>
+              <li>Close valve after delay</li>
+            </ol>
+            <p style="margin-top:4mm;font-size:9pt;color:var(--muted);"><strong>Note:</strong> This logic helps protect pumps, pipelines, and valves during automatic irrigation.</p>
+          </div>
+          <div class="media" data-file="images/brochure/control-cabinet-inside.jpg">
+            <img src="/images/brochure/control-cabinet-inside.jpg" alt="Control cabinet">
+            <div class="ph">images/brochure/control-cabinet-inside.jpg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 LoRa -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Wireless</p>
+        <h2>Wireless LoRa Valve Control Architecture</h2>
+        <div class="split">
+          <div>
+            <p class="lead" style="max-width:none;">LoRa valve controllers can be used when irrigation zones are far away from the main control cabinet or when cable installation is difficult.</p>
+            <div class="flow-row" style="flex-direction:column;align-items:stretch;margin-top:4mm;">
+              <span class="flow-box">Control cabinet / gateway</span>
+              <span class="flow-arrow">↓ LoRa wireless</span>
+              <span class="flow-box">Solar valve controller</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Solenoid / electric valve</span>
+              <span class="flow-arrow">↓</span>
+              <span class="flow-box">Irrigation zone</span>
+            </div>
+            <ul style="margin-top:4mm;padding-left:4mm;font-size:9pt;color:var(--muted);">
+              <li>Suitable for remote valve stations</li>
+              <li>Solar and battery-powered options</li>
+              <li>Reduces long-distance wiring</li>
+              <li>Useful for orchards, hillsides, and open fields</li>
+            </ul>
+          </div>
+          <div class="media" data-file="images/brochure/lora-valve-field.jpg">
+            <img src="/images/brochure/lora-valve-field.jpg" alt="LoRa valve field">
+            <div class="ph">images/brochure/lora-valve-field.jpg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 HMI -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">HMI</p>
+        <h2>HMI Touchscreen Control Interface</h2>
+        <p class="lead" style="max-width:100%;">The HMI provides local operation for irrigation monitoring, manual control, schedule setting, automatic irrigation, alarm records, and system settings.</p>
+        <div class="split">
+          <div class="media" data-file="images/brochure/hmi-touchscreen-interface.jpg">
+            <img src="/images/brochure/hmi-touchscreen-interface.jpg" alt="HMI">
+            <div class="ph">images/brochure/hmi-touchscreen-interface.jpg</div>
+          </div>
+          <div>
+            <h3>Typical HMI sections</h3>
+            <ul style="padding-left:4mm;font-size:9pt;line-height:1.55;">
+              <li>Manual control page</li>
+              <li>Irrigation monitor page</li>
+              <li>Timer setting page</li>
+              <li>Irrigation plan page</li>
+              <li>Auto irrigation page</li>
+              <li>System setting page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 Configurations -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Configurations</p>
+        <h2>Typical System Configurations</h2>
+        <div class="config-grid">
+          <div class="config-card">
+            <h3>A. Basic pump + valve control</h3>
+            <p style="font-size:8pt;color:var(--muted);margin-bottom:2mm;">For small farms, greenhouses, and landscape systems.</p>
+            <ul>
+              <li>Control cabinet</li>
+              <li>Pump control</li>
+              <li>4–16 valve outputs</li>
+              <li>Timer irrigation</li>
+            </ul>
+          </div>
+          <div class="config-card">
+            <h3>B. Wireless LoRa system</h3>
+            <p style="font-size:8pt;color:var(--muted);margin-bottom:2mm;">For orchards, hillsides, and remote fields.</p>
+            <ul>
+              <li>Control cabinet</li>
+              <li>LoRa gateway</li>
+              <li>Solar valve controllers</li>
+              <li>Remote valve stations</li>
+            </ul>
+          </div>
+          <div class="config-card">
+            <h3>C. Fertigation control</h3>
+            <p style="font-size:8pt;color:var(--muted);margin-bottom:2mm;">For greenhouses and intensive agriculture.</p>
+            <ul>
+              <li>Water pump</li>
+              <li>Fertilizer channels</li>
+              <li>Mixing control</li>
+              <li>EC/pH optional monitoring</li>
+              <li>Irrigation zone linkage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 Applications table -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">Applications</p>
+        <h2>Where This System Is Used</h2>
+        <table class="data">
+          <thead><tr><th>Application</th><th>Typical requirement</th><th>Recommended system</th></tr></thead>
+          <tbody>
+            <tr><td>Orchard</td><td>Remote zones and long-distance valves</td><td>LoRa valve control</td></tr>
+            <tr><td>Greenhouse</td><td>Frequent irrigation and fertigation</td><td>HMI + fertigation control</td></tr>
+            <tr><td>Open field</td><td>Pump and multi-zone valve control</td><td>Pump + valve automation</td></tr>
+            <tr><td>Landscape</td><td>Scheduled irrigation and easy operation</td><td>Control cabinet + timer logic</td></tr>
+            <tr><td>Hillside irrigation</td><td>Difficult wiring and scattered zones</td><td>Solar LoRa valve controllers</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 9 OEM -->
+    <section class="page">
+      <div class="page-inner">
+        <p class="tag">OEM</p>
+        <h2>OEM and Project-Based Customization</h2>
+        <p class="lead" style="max-width:100%;">PKYDrip can customize irrigation control systems according to project requirements, including cabinet size, output quantity, touchscreen interface, communication method, control logic, and branding.</p>
+        <div class="split">
+          <ul style="flex:1;padding-left:4mm;font-size:9.5pt;line-height:1.55;">
+            <li>Cabinet size and internal layout</li>
+            <li>Number of valve control outputs</li>
+            <li>Pump control and protection logic</li>
+            <li>HMI interface design</li>
+            <li>LoRa / 4G / WiFi communication</li>
+            <li>OEM branding and labeling</li>
+          </ul>
+          <div class="media" data-file="images/brochure/control-cabinet.jpg">
+            <img src="/images/brochure/control-cabinet.jpg" alt="Cabinet">
+            <div class="ph">images/brochure/control-cabinet.jpg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 Contact -->
+    <section class="page footer-dark">
+      <div class="page-inner">
+        <p class="tag" style="color:#a8d4bc;">Contact</p>
+        <h2>Request a System Recommendation</h2>
+        <p style="font-size:10pt;opacity:0.95;margin-bottom:3mm;">To recommend a suitable irrigation control system, please provide the following information:</p>
+        <ul class="checklist" style="color:#e2e8f0;">
+          <li>Project type</li>
+          <li>Irrigation area</li>
+          <li>Number of zones</li>
+          <li>Pump power and voltage</li>
+          <li>Valve type and quantity</li>
+          <li>Water source</li>
+          <li>Need for wireless control</li>
+          <li>Need for fertigation</li>
+          <li>Need for sensors or cloud monitoring</li>
+        </ul>
+        <div style="display:flex;gap:12mm;margin-top:6mm;font-size:10pt;">
+          <p><strong>Website</strong><br><a href="https://smart.pky-dripirrigation.com/">smart.pky-dripirrigation.com</a></p>
+          <p><strong>WhatsApp</strong><br><a href="https://wa.me/8617395297329">+86 173 9529 7329</a></p>
+          <p><strong>Email</strong><br><a href="mailto:info@pky-dripirrigation.com">info@pky-dripirrigation.com</a></p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
