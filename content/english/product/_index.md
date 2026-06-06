@@ -28,6 +28,11 @@ products:
     image: "images/product/pky-fg301.jpg"
     url: "/product/fertigation-system/"
 
+  - name: "Fertigation Controller"
+    summary: "Integration-ready EC, pH, dosing, recipe, and records control layer for existing systems."
+    image: "images/product/ecph_control_panel.webp"
+    url: "/product/fertigation-controller/"
+
   - name: "Wireless Valve Controller"
     summary: "LoRa solar field valves and gateway architecture."
     image: "images/product/pky-ic05.webp"

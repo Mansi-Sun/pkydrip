@@ -1,0 +1,94 @@
+{{ define "main" }}
+{{ $whatsapp := .Params.whatsapp_url }}
+<article class="partner-landing">
+  <section class="partner-hero" style="--partner-hero-image: url('{{ .Params.hero_image }}');">
+    <div class="partner-hero__overlay"></div>
+    <div class="container partner-hero__content">
+      <p class="partner-eyebrow">{{ .Params.eyebrow }}</p>
+      <h1>{{ .Params.hero_title }}</h1>
+      <p class="partner-hero__subtitle">{{ .Params.hero_subtitle }}</p>
+      <div class="partner-actions">
+        <a class="partner-btn partner-btn--primary" href="#partner-application">{{ .Params.primary_cta }}</a>
+        <a class="partner-btn partner-btn--whatsapp" href="{{ $whatsapp }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.whatsapp_cta }}</a>
+      </div>
+      <p class="partner-hero__note">{{ .Params.hero_note }}</p>
+    </div>
+  </section>
+
+  <section class="partner-intro">
+    <div class="container">
+      <div class="partner-intro__grid">
+        <div><p class="partner-kicker">{{ .Params.intro.kicker }}</p><h2>{{ .Params.intro.title }}</h2></div>
+        <p>{{ .Params.intro.body }}</p>
+      </div>
+    </div>
+  </section>
+
+  {{ range $index, $section := .Params.sections }}
+  <section class="partner-section {{ if modBool $index 2 }}partner-section--tint{{ end }}">
+    <div class="container">
+      <div class="partner-section__heading">
+        <span>{{ printf "%02d" (add $index 1) }}</span>
+        <div><p class="partner-kicker">{{ $section.kicker }}</p><h2>{{ $section.title }}</h2>{{ with $section.intro }}<p>{{ . }}</p>{{ end }}</div>
+      </div>
+      <div class="partner-card-grid">
+        {{ range $section.items }}
+        <div class="partner-card"><span class="partner-card__check" aria-hidden="true">✓</span><h3>{{ . }}</h3></div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="partner-policy">
+    <div class="container">
+      <div class="partner-policy__box">
+        <p class="partner-kicker">{{ .Params.cooperation.kicker }}</p>
+        <h2>{{ .Params.cooperation.title }}</h2>
+        {{ range .Params.cooperation.paragraphs }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.next_step }}
+  <section class="partner-next-step">
+    <div class="container">
+      <div class="partner-next-step__content">
+        <div><p class="partner-kicker">{{ .kicker }}</p><h2>{{ .title }}</h2><p>{{ .body }}</p></div>
+        <a class="partner-btn partner-btn--light" href="#partner-application">{{ .button_label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="partner-form-section" id="partner-application">
+    <div class="container">
+      <div class="partner-form-layout">
+        <div class="partner-form-copy">
+          <p class="partner-kicker">{{ .Params.form.kicker }}</p>
+          <h2>{{ .Params.form.title }}</h2>
+          <p>{{ .Params.form.body }}</p>
+          <div class="partner-form-copy__contact"><strong>Prefer a quick conversation?</strong><a href="{{ $whatsapp }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.whatsapp_cta }}</a></div>
+        </div>
+        <form class="partner-form" name="{{ .Params.form.name }}" method="POST" action="/message_sent/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="{{ .Params.form.name }}">
+          <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+          <p class="partner-form__hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <div class="partner-form__grid">
+            <label><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
+            <label><span>Company *</span><input type="text" name="company" required autocomplete="organization"></label>
+            <label><span>Country *</span><input type="text" name="country" value="{{ .Params.form.country }}" required autocomplete="country-name"></label>
+            <label><span>State / Region *</span><input type="text" name="state_region" required autocomplete="address-level1"></label>
+            <label><span>Business Type *</span><select name="business_type" required><option value="">Select your business type</option>{{ range .Params.form.business_types }}<option>{{ . }}</option>{{ end }}</select></label>
+            <label><span>WhatsApp *</span><input type="tel" name="whatsapp" required autocomplete="tel"></label>
+            <label class="partner-form__wide"><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
+            <label class="partner-form__wide"><span>Message *</span><textarea name="message" rows="6" required placeholder="{{ .Params.form.message_placeholder }}"></textarea></label>
+          </div>
+          <button class="partner-btn partner-btn--primary partner-form__submit" type="submit">{{ .Params.form.submit_label }}</button>
+          <p class="partner-form__privacy">Your details will only be used to discuss potential PKYDrip projects and cooperation.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}
