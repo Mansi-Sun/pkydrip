@@ -15,8 +15,8 @@ categories:
 hero:
   title: "Fertigation System"
   subtitle: "Automated fertilizer injection linked to irrigation schedules—for greenhouses, orchards, and open-field pump stations."
-  image: "images/brochure/pump-valve-automation.jpg"
-  image_alt: "Fertigation and irrigation control at pump station"
+  image: "images/product/pky-fg401.jpg"
+  image_alt: "PKYDrip PKY-FG401 EC pH fertigation controller"
   cta_primary:
     label: "Discuss Your Project"
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Fertigation%20System%20%7C%20Page%3A%20fertigation-system%0A-%20Crop%20type%3A%20%0A-%20Channels%20needed%3A%20%0A-%20EC%2FpH%20control%3A%20(yes%2Fno)%0A-%20Zones%3A%20"
@@ -65,7 +65,7 @@ feature_blocks:
       - "Scheduled / ratio-based dosing"
       - "EC/pH closed-loop (optional)"
       - "Same platform for irrigation + fertigation"
-    image: "images/brochure/applications-greenhouse.jpg"
+    image: "images/product/pky-fg401.jpg"
     image_right: true
 
 applications:

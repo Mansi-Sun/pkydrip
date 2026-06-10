@@ -461,3 +461,505 @@ header {
     margin-bottom: 1rem;
   }
 }
+
+/* Fertigation upgrade landing page */
+.fertigation-upgrade {
+  color: #243d33;
+
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h2 {
+    color: #173d31;
+    font-size: clamp(1.8rem, 3vw, 2.65rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+}
+
+.fertigation-upgrade__hero {
+  background: linear-gradient(145deg, #153b30 0%, #1e5841 52%, #f3f8f4 52%, #ffffff 100%);
+  overflow: hidden;
+  padding: 86px 0;
+}
+
+.fertigation-upgrade__hero-grid {
+  align-items: center;
+  display: grid;
+  gap: 3.5rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+}
+
+.fertigation-upgrade__hero-copy h1 {
+  color: #fff;
+  font-size: clamp(2.65rem, 5vw, 4.85rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+  margin-bottom: 1.35rem;
+}
+
+.fertigation-upgrade__subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 760px;
+}
+
+.fertigation-upgrade__support {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.75;
+  max-width: 780px;
+}
+
+.fertigation-upgrade__eyebrow {
+  color: #4c9a6f !important;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.fertigation-upgrade__hero .fertigation-upgrade__eyebrow {
+  color: #a8e97b !important;
+}
+
+.fertigation-upgrade__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.9rem;
+}
+
+.fertigation-upgrade__actions--center {
+  justify-content: center;
+}
+
+.fertigation-upgrade__btn {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 0.5rem;
+  justify-content: center;
+  line-height: 1.25;
+  padding: 0.9rem 1.35rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.fertigation-upgrade__btn:hover {
+  transform: translateY(-2px);
+}
+
+.fertigation-upgrade__btn--primary {
+  background: #25d366;
+  color: #0d2a1e !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.fertigation-upgrade__btn--primary:hover {
+  background: #55df86;
+}
+
+.fertigation-upgrade__btn--outline {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff !important;
+}
+
+.fertigation-upgrade__btn--outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.fertigation-upgrade__btn--light {
+  background: #fff;
+  color: #174b39 !important;
+}
+
+.fertigation-upgrade__hero-visual {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(25, 66, 49, 0.18);
+  padding: 1.4rem;
+}
+
+.fertigation-upgrade__visual-card {
+  background: #fff;
+  border: 1px solid #dce8e1;
+  border-radius: 16px;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fertigation-upgrade__visual-card span,
+.fertigation-upgrade__visual-card strong {
+  border-radius: 12px;
+  display: block;
+  line-height: 1.45;
+  padding: 1.15rem;
+}
+
+.fertigation-upgrade__visual-card span {
+  background: #eef7f1;
+  color: #36584a;
+  font-weight: 700;
+}
+
+.fertigation-upgrade__visual-card strong {
+  background: linear-gradient(135deg, #1b513e, #2e8a5d);
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.fertigation-upgrade__visual-card > *:not(:last-child) {
+  position: relative;
+}
+
+.fertigation-upgrade__visual-card > *:not(:last-child)::after {
+  bottom: -1rem;
+  color: #2d865c;
+  content: "v";
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.fertigation-upgrade__section {
+  padding: 78px 0;
+}
+
+.fertigation-upgrade__section--tint {
+  background: #f5f8f6;
+}
+
+.fertigation-upgrade__section--dark {
+  background: linear-gradient(150deg, #143a2d, #1b4a3b);
+}
+
+.fertigation-upgrade__section--dark h2,
+.fertigation-upgrade__section--dark .fertigation-upgrade__architecture-text {
+  color: #fff;
+}
+
+.fertigation-upgrade__section--dark .fertigation-upgrade__eyebrow {
+  color: #a8e97b !important;
+}
+
+.fertigation-upgrade__heading {
+  margin-bottom: 2rem;
+  max-width: 900px;
+}
+
+.fertigation-upgrade__heading p:last-child,
+.fertigation-upgrade__split p {
+  color: #687a72;
+  line-height: 1.75;
+}
+
+.fertigation-upgrade__split {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.fertigation-upgrade__existing-grid,
+.fertigation-upgrade__checklist {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fertigation-upgrade__pill,
+.fertigation-upgrade__checklist div {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dce7e0;
+  border-radius: 10px;
+  color: #335346;
+  display: flex;
+  font-weight: 700;
+  min-height: 62px;
+  padding: 1rem;
+}
+
+.fertigation-upgrade__highlight {
+  background: #e4f4ea;
+  border: 1px solid #c9e7d4;
+  border-radius: 10px;
+  color: #1f6f48;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  line-height: 1.45;
+  padding: 1.15rem;
+}
+
+.fertigation-upgrade__card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fertigation-upgrade__card-grid--four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.fertigation-upgrade__card {
+  background: #fff;
+  border: 1px solid #dce7e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(30, 73, 56, 0.06);
+  height: 100%;
+  padding: 1.35rem;
+}
+
+.fertigation-upgrade__card h3 {
+  color: #214b3a;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+.fertigation-upgrade__card p {
+  color: #6a7b73;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.fertigation-upgrade__card ul {
+  color: #6a7b73;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0.8rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.fertigation-upgrade__card li {
+  margin-bottom: 0.25rem;
+}
+
+.fertigation-upgrade__architecture {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.fertigation-upgrade__architecture div {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 82px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.fertigation-upgrade__architecture div:not(:last-child)::after {
+  color: #a8e47e;
+  content: ">";
+  font-size: 1.2rem;
+  position: absolute;
+  right: -0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.fertigation-upgrade__architecture-text {
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.75;
+  margin: 2rem 0 0;
+  max-width: 900px;
+}
+
+.fertigation-upgrade__note {
+  background: #e8f4ed;
+  border-left: 4px solid #3c8b65;
+  border-radius: 8px;
+  color: #416252 !important;
+  margin: 1.4rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.fertigation-upgrade__checklist div {
+  gap: 0.75rem;
+}
+
+.fertigation-upgrade__checklist span {
+  background: #def2e5;
+  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 24px;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.fertigation-upgrade__checklist span::after {
+  color: #268256;
+  content: "";
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(45deg);
+  width: 10px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.fertigation-upgrade__boundary {
+  background: #fffaf0;
+  border: 1px solid #f0dfbd;
+  border-left: 5px solid #d99b35;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.fertigation-upgrade__boundary p:not(.fertigation-upgrade__eyebrow) {
+  color: #6c665a;
+  line-height: 1.75;
+}
+
+.fertigation-upgrade__faq {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.fertigation-upgrade__faq details {
+  background: #fff;
+  border: 1px solid #dce7e0;
+  border-radius: 9px;
+  padding: 1rem 1.2rem;
+}
+
+.fertigation-upgrade__faq summary {
+  color: #214b3a;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.fertigation-upgrade__faq p {
+  color: #697a72;
+  line-height: 1.7;
+  margin: 0.9rem 0 0;
+}
+
+.fertigation-upgrade__cta {
+  background: linear-gradient(165deg, #1a3d52 0%, #1e4d3f 100%);
+  color: #fff;
+  padding: 75px 0;
+}
+
+.fertigation-upgrade__cta h2 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.fertigation-upgrade__cta p {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.75;
+  margin: 1rem auto 1.6rem;
+  max-width: 820px;
+}
+
+.fertigation-upgrade__related {
+  border-top: 1px solid #e3e9e5;
+  padding: 36px 0;
+}
+
+.fertigation-upgrade__related h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.fertigation-upgrade__related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.fertigation-upgrade__related-links a {
+  background: #f2f7f4;
+  border: 1px solid #dce7e0;
+  border-radius: 999px;
+  color: #256446;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.55rem 0.85rem;
+  text-decoration: none !important;
+}
+
+@media (max-width: 991px) {
+  .fertigation-upgrade__hero {
+    background: linear-gradient(160deg, #153b30 0%, #1e5841 100%);
+  }
+
+  .fertigation-upgrade__hero-grid,
+  .fertigation-upgrade__split {
+    grid-template-columns: 1fr;
+  }
+
+  .fertigation-upgrade__card-grid,
+  .fertigation-upgrade__card-grid--four,
+  .fertigation-upgrade__architecture {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .fertigation-upgrade__hero,
+  .fertigation-upgrade__section {
+    padding: 58px 0;
+  }
+
+  .fertigation-upgrade__hero-grid {
+    gap: 2rem;
+  }
+
+  .fertigation-upgrade__actions,
+  .fertigation-upgrade__actions .fertigation-upgrade__btn {
+    width: 100%;
+  }
+
+  .fertigation-upgrade__existing-grid,
+  .fertigation-upgrade__checklist,
+  .fertigation-upgrade__card-grid,
+  .fertigation-upgrade__card-grid--four,
+  .fertigation-upgrade__architecture {
+    grid-template-columns: 1fr;
+  }
+
+  .fertigation-upgrade__architecture div:not(:last-child)::after {
+    bottom: -0.65rem;
+    content: "v";
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+
+  .fertigation-upgrade__visual-card,
+  .fertigation-upgrade__boundary {
+    padding: 1.25rem;
+  }
+}

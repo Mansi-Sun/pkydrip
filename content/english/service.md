@@ -46,48 +46,32 @@ featured_service:
 ############################# Service ###############################
 service:
   enable : true
-  title : "Our Products"
-  description : "PKYDrip products are designed for irrigation automation, pump control, valve management, fertigation, and remote field operation.<br><br>We provide scalable control systems for farms, orchards, greenhouses, and landscape irrigation projects."
+  title : "Core Systems"
+  description : "PKYDrip systems are organized around irrigation engineering logic first: pump and valve control, fertigation, wireless field devices, monitoring, and automation. Solar pump irrigation is handled as a project configuration inside the irrigation control system."
   service_item:
     # service item loop
-    - icon : fas fa-hand-holding-water #https://fontawesome.com/v5.15/icons
-      name: Irrigation Control Cabinet
-      content: "Integrated control cabinet for pump start/stop, valve sequencing, scheduling, touchscreen operation, and project-level irrigation automation."
+    - icon : fas fa-hand-holding-water
+      name: Irrigation Control System
+      content: "Pump control, valve control, zone scheduling, HMI operation, sequential irrigation logic, control cabinet integration, and solar pump irrigation configurations."
+      url: "/product/irrigation-control-system/"
 
     # service item loop
-    - icon : fas fa-water #https://fontawesome.com/v5.15/icons
+    - icon : fas fa-water
       name: Fertigation System
-      content: "Automated fertigation systems for fertilizer injection, mixing, EC/pH monitoring, and irrigation-linked nutrient delivery."
+      content: "Fertilizer injection, EC/pH monitoring, dosing pump control, recipe management, and irrigation-linked fertigation logic."
+      url: "/product/fertigation-system/"
 
     # service item loop
-    - icon : fas fa-cloud-sun #https://fontawesome.com/v5.15/icons
-      name: Irrigation Controller
-      content: "Smart controllers for zone scheduling, valve operation, sensor-based irrigation, and remote irrigation management."
+    - icon : fas fa-broadcast-tower
+      name: Wireless Field Control System
+      content: "LoRa gateway, solar valve controllers, remote pump control, and wireless expansion for farms without field wiring."
+      url: "/product/wireless-field-control-system/"
 
     # service item loop
-    - icon : fas fa-thermometer-half #https://fontawesome.com/v5.15/icons
-      name: LoRa / Wireless Valve Control
-      content: "Wireless valve control solutions for remote fields, retrofit projects, and locations where cable trenching is difficult."
-
-    # service item loop
-    - icon : fas fa-wifi #https://fontawesome.com/v5.15/icons
-      name: Sensors & Weather Monitoring
-      content: "Soil, water, and weather sensors for monitoring moisture, pressure, flow, rainfall, temperature, and other field conditions."
-
-    # service item loop
-    - icon : fas fa-seedling #https://fontawesome.com/v5.15/icons
-      name: Solenoid Valves & Actuators
-      content: "Electric valves and actuator control options for automated zone-by-zone irrigation management."
-
-    # service item loop
-    - icon : fas fa-ring #https://fontawesome.com/v5.15/icons
-      name: Field Components & System Integration
-      content: "Supporting components including valves, filters, pipes, fittings, and irrigation accessories supplied as part of complete irrigation system projects and export delivery."
-
-    # service item loop
-    - icon : fas fa-cogs #https://fontawesome.com/v5.15/icons
-      name: OEM / Custom Control System Development
-      content: "Custom irrigation automation solutions including control cabinets, touchscreen operation, remote management, and project-specific system integration."
+    - icon : fas fa-chart-line
+      name: Monitoring & Sensor System
+      content: "Flow, pressure, soil moisture, weather, EC/pH, and irrigation operation records for monitoring and system optimization."
+      url: "/product/monitoring-sensor-system/"
 
 ############################# call to action #################################
 cta:

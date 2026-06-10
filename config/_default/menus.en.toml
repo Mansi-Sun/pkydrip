@@ -12,18 +12,18 @@ url = "solution/"
 weight = 2
 
 [[main]]
+name = "Systems"
+url = "system-architecture/"
+weight = 3
+
+[[main]]
 name = "Products"
 url = "product/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 4
-
-[[main]]
-name = "About"
-url = "about/"
 weight = 5
 
 # footer menu

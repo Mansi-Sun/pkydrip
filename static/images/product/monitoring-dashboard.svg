@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PKYDrip monitoring dashboard across web, tablet, and mobile</title>
+  <desc id="desc">A dashboard, tablet, and mobile phone showing irrigation monitoring data, history records, alarms, and trend charts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef9f3"/>
+      <stop offset="0.55" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#eaf4ff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12384d"/>
+      <stop offset="1" stop-color="#1b6b5a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#153142" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="760" rx="44" fill="url(#bg)"/>
+
+  <g opacity="0.75">
+    <circle cx="1040" cy="118" r="74" fill="#d8f1e3"/>
+    <circle cx="128" cy="642" r="96" fill="#dcecff"/>
+    <circle cx="1018" cy="642" r="120" fill="#e9f5ee"/>
+  </g>
+
+  <g transform="translate(80 72)">
+    <text x="0" y="0" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">
+      Irrigation Monitoring &amp; History Records
+    </text>
+    <text x="0" y="42" fill="#5b6b76" font-family="Arial, Helvetica, sans-serif" font-size="20">
+      View pump status, flow, pressure, alarms, and irrigation history on web, tablet, or mobile.
+    </text>
+  </g>
+
+  <g transform="translate(115 185)" filter="url(#shadow)">
+    <rect x="0" y="0" width="610" height="390" rx="28" fill="#ffffff"/>
+    <rect x="28" y="32" width="554" height="326" rx="18" fill="url(#screen)"/>
+
+    <g transform="translate(56 58)">
+      <text x="0" y="0" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+        Web Dashboard
+      </text>
+      <text x="0" y="30" fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="14">
+        Live monitoring + historical data
+      </text>
+    </g>
+
+    <g transform="translate(56 118)">
+      <rect x="0" y="0" width="150" height="78" rx="16" fill="#ffffff" opacity="0.13"/>
+      <text x="18" y="28" fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="14">Flow Today</text>
+      <text x="18" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">128 m³</text>
+
+      <rect x="174" y="0" width="150" height="78" rx="16" fill="#ffffff" opacity="0.13"/>
+      <text x="192" y="28" fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="14">Pressure</text>
+      <text x="192" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">3.2 bar</text>
+
+      <rect x="348" y="0" width="150" height="78" rx="16" fill="#ffffff" opacity="0.13"/>
+      <text x="366" y="28" fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="14">Alarms</text>
+      <text x="366" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">0 Active</text>
+    </g>
+
+    <g transform="translate(56 238)">
+      <text x="0" y="-18" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">
+        Irrigation History
+      </text>
+      <polyline points="0,58 58,36 116,47 174,18 232,30 290,10 348,38 406,24 464,44 512,16"
+        fill="none" stroke="#7ce0a2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="0" y1="76" x2="512" y2="76" stroke="#ffffff" stroke-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="76" stroke="#ffffff" stroke-opacity="0.2"/>
+      <g fill="#ffffff" opacity="0.75" font-family="Arial, Helvetica, sans-serif" font-size="12">
+        <text x="0" y="104">Mon</text>
+        <text x="94" y="104">Tue</text>
+        <text x="188" y="104">Wed</text>
+        <text x="282" y="104">Thu</text>
+        <text x="376" y="104">Fri</text>
+        <text x="470" y="104">Sat</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(760 204)" filter="url(#shadow)">
+    <rect x="0" y="0" width="240" height="320" rx="28" fill="#ffffff"/>
+    <rect x="18" y="24" width="204" height="254" rx="18" fill="#17415a"/>
+    <circle cx="120" cy="298" r="9" fill="#d7e4ea"/>
+
+    <g transform="translate(40 56)">
+      <text x="0" y="0" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Tablet View</text>
+      <rect x="0" y="28" width="158" height="42" rx="12" fill="#2fb36d"/>
+      <text x="16" y="55" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Pump Running</text>
+
+      <rect x="0" y="90" width="158" height="34" rx="10" fill="#ffffff" opacity="0.12"/>
+      <rect x="0" y="138" width="158" height="34" rx="10" fill="#ffffff" opacity="0.12"/>
+      <rect x="0" y="186" width="158" height="34" rx="10" fill="#ffffff" opacity="0.12"/>
+      <g fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="13">
+        <text x="14" y="113">Zone 01 completed</text>
+        <text x="14" y="161">Flow record saved</text>
+        <text x="14" y="209">No alarm today</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(970 296)" filter="url(#shadow)">
+    <rect x="0" y="0" width="132" height="246" rx="24" fill="#ffffff"/>
+    <rect x="14" y="28" width="104" height="176" rx="14" fill="#12384d"/>
+    <circle cx="66" cy="224" r="7" fill="#d7e4ea"/>
+    <rect x="42" y="12" width="48" height="6" rx="3" fill="#d7e4ea"/>
+
+    <g transform="translate(28 52)">
+      <text x="0" y="0" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Mobile</text>
+      <circle cx="20" cy="48" r="19" fill="#2fb36d"/>
+      <path d="M10 48l7 7 15-17" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="95" fill="#bdebd9" font-family="Arial, Helvetica, sans-serif" font-size="12">Status OK</text>
+      <text x="0" y="122" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12">History</text>
+    </g>
+  </g>
+
+  <g transform="translate(116 620)">
+    <g fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+      <text x="0" y="0">Remote Monitoring</text>
+      <text x="260" y="0">Operation Records</text>
+      <text x="520" y="0">Alarm History</text>
+      <text x="750" y="0">Multi-device Access</text>
+    </g>
+    <g stroke="#2fb36d" stroke-width="4" stroke-linecap="round">
+      <path d="M0 22h180"/>
+      <path d="M260 22h180"/>
+      <path d="M520 22h155"/>
+      <path d="M750 22h190"/>
+    </g>
+  </g>
+</svg>

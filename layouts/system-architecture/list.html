@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main class="pkydrip-engineering-page">
+  {{ with .Params.hero }}
+  <section class="py-5" style="background: linear-gradient(180deg, rgba(26,61,82,0.06), rgba(255,255,255,1));">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <h1 class="display-6 fw-semibold mb-3">{{ .title | default $.Title }}</h1>
+          {{ with .subtitle }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.architecture_cards }}
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-3">
+        {{ range . }}
+        <div class="col-md-6 col-lg-4">
+          <article class="p-4 border rounded h-100 bg-white shadow-sm">
+            <h2 class="h5 mb-2">{{ .title }}</h2>
+            <p class="text-muted small mb-3">{{ .text }}</p>
+            <a href="{{ .url | relLangURL }}" class="fw-semibold">View Architecture →</a>
+          </article>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Content }}
+  <section class="py-4" style="background:#f8fafb;">
+    <div class="container col-lg-10">
+      <div class="content">{{ . }}</div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

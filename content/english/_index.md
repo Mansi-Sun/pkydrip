@@ -4,12 +4,16 @@ banner:
   enable: true
   bg_image: "images/home/farm-irrigation-system.webp"
   bg_overlay: true
-  title: "Smart Irrigation Systems <br/> for New Projects and Upgrades"
-  content: "Plan new irrigation systems, upgrade existing farms, and build scalable control architecture for agriculture, greenhouse, and landscape irrigation."
+  title: "PKYDrip Irrigation Automation Systems"
+  content: "Engineering-oriented control systems for irrigation, fertigation, wireless field control, monitoring, and smart farm water management.<br><br>We help farms, greenhouses, orchards, and landscape projects build reliable irrigation automation systems using pumps, valves, fertigation units, sensors, and remote control technologies."
   button:
     enable: true
-    label: "Explore Irrigation Solutions"
-    link: "/solution/"
+    label: "Explore System Architecture"
+    link: "/system-architecture/"
+  button_secondary:
+    enable: true
+    label: "View Core Systems"
+    link: "/product/"
 
 ############################# About #################################
 about:

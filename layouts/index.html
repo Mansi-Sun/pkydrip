@@ -17,6 +17,11 @@
           <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
+          {{ with .button_secondary }}
+          {{ if .enable }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp" style="margin-left:10px;background:transparent;border:1px solid #fff;color:#fff;">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>

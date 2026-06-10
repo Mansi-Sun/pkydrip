@@ -1,0 +1,184 @@
+{{ define "main" }}
+{{ $whatsapp := .Params.whatsapp_url }}
+<article class="fertigation-upgrade">
+  <section class="fertigation-upgrade__hero">
+    <div class="container">
+      <div class="fertigation-upgrade__hero-grid">
+        <div class="fertigation-upgrade__hero-copy">
+          <p class="fertigation-upgrade__eyebrow">{{ .Params.hero.eyebrow }}</p>
+          <h1>{{ .Params.hero.title }}</h1>
+          <p class="fertigation-upgrade__subtitle">{{ .Params.hero.subtitle }}</p>
+          <p class="fertigation-upgrade__support">{{ .Params.hero.support }}</p>
+          <div class="fertigation-upgrade__actions">
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.primary_cta }}</a>
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--outline" href="#fertigation-project-info">{{ .Params.secondary_cta }}</a>
+          </div>
+        </div>
+        <div class="fertigation-upgrade__hero-visual" aria-label="Existing irrigation system upgraded with PKYDrip fertigation control">
+          <div class="fertigation-upgrade__visual-card">
+            <span>Existing Pump + Tank + Filter + Pipeline</span>
+            <strong>PKYDrip Fertigation Control</strong>
+            <span>EC / pH / Dosing / Records</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__split">
+        <div>
+          <p class="fertigation-upgrade__eyebrow">Existing Hardware</p>
+          <h2>{{ .Params.existing.title }}</h2>
+          <p>{{ .Params.existing.text }}</p>
+        </div>
+        <div class="fertigation-upgrade__existing-grid">
+          {{ range .Params.existing.items }}
+          <div class="fertigation-upgrade__pill">{{ . }}</div>
+          {{ end }}
+          <div class="fertigation-upgrade__highlight">{{ .Params.existing.highlight }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <p class="fertigation-upgrade__eyebrow">Control Layer</p>
+        <h2>{{ .Params.adds.title }}</h2>
+        <p>{{ .Params.adds.intro }}</p>
+      </div>
+      <div class="fertigation-upgrade__card-grid">
+        {{ range .Params.adds.cards }}
+        <div class="fertigation-upgrade__card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <p class="fertigation-upgrade__eyebrow">Applications</p>
+        <h2>{{ .Params.applications.title }}</h2>
+        <p>{{ .Params.applications.text }}</p>
+      </div>
+      <div class="fertigation-upgrade__card-grid fertigation-upgrade__card-grid--four">
+        {{ range .Params.applications.cards }}
+        <div class="fertigation-upgrade__card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--dark">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <p class="fertigation-upgrade__eyebrow">Architecture</p>
+        <h2>{{ .Params.architecture.title }}</h2>
+      </div>
+      <div class="fertigation-upgrade__architecture">
+        {{ range .Params.architecture.steps }}
+        <div>{{ . }}</div>
+        {{ end }}
+      </div>
+      <p class="fertigation-upgrade__architecture-text">{{ .Params.architecture.text }}</p>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <p class="fertigation-upgrade__eyebrow">Target Users</p>
+        <h2>{{ .Params.audience.title }}</h2>
+      </div>
+      <div class="fertigation-upgrade__card-grid">
+        {{ range .Params.audience.cards }}
+        <div class="fertigation-upgrade__card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint" id="fertigation-project-info">
+    <div class="container">
+      <div class="fertigation-upgrade__split">
+        <div>
+          <p class="fertigation-upgrade__eyebrow">Project Details</p>
+          <h2>{{ .Params.project_info.title }}</h2>
+          <p>{{ .Params.project_info.text }}</p>
+          <p class="fertigation-upgrade__note">{{ .Params.project_info.cta }}</p>
+          <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.project_info.button }}</a>
+        </div>
+        <div class="fertigation-upgrade__checklist">
+          {{ range .Params.project_info.items }}
+          <div><span aria-hidden="true"></span>{{ . }}</div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__boundary">
+        <p class="fertigation-upgrade__eyebrow">Project Boundary</p>
+        <h2>{{ .Params.boundary.title }}</h2>
+        {{ range .Params.boundary.paragraphs }}
+        <p>{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <p class="fertigation-upgrade__eyebrow">Quick Answers</p>
+        <h2>{{ .Params.faq.title }}</h2>
+      </div>
+      <div class="fertigation-upgrade__faq">
+        {{ range .Params.faq.items }}
+        <details>
+          <summary>{{ .question }}</summary>
+          <p>{{ .answer }}</p>
+        </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__cta">
+    <div class="container text-center">
+      <h2>{{ .Params.final_cta.title }}</h2>
+      <p>{{ .Params.final_cta.text }}</p>
+      <div class="fertigation-upgrade__actions fertigation-upgrade__actions--center">
+        <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.primary_cta }}</a>
+        <a class="fertigation-upgrade__btn fertigation-upgrade__btn--light" href="#fertigation-project-info">{{ .Params.secondary_cta }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__related">
+    <div class="container">
+      <h2>Related Pages</h2>
+      <div class="fertigation-upgrade__related-links">
+        {{ range .Params.related }}
+        <a href="{{ .url }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}
