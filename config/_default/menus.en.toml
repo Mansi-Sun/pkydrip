@@ -7,14 +7,68 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Solutions"
-url = "solution/"
+name = "Systems"
+url = "system-architecture/"
 weight = 2
 
 [[main]]
-name = "Systems"
-url = "system-architecture/"
+parent = "Systems"
+name = "Irrigation Control System"
+url = "system-architecture/irrigation-control-system/"
+weight = 1
+
+[[main]]
+parent = "Systems"
+name = "Fertigation System"
+url = "system-architecture/fertigation-system/"
+weight = 2
+
+[[main]]
+parent = "Systems"
+name = "Wireless Irrigation System"
+url = "system-architecture/wireless-irrigation-system/"
 weight = 3
+
+[[main]]
+parent = "Systems"
+name = "Solar Pump Irrigation System"
+url = "system-architecture/solar-pump-irrigation/"
+weight = 4
+
+[[main]]
+name = "Solutions"
+url = "solution/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Greenhouse Irrigation"
+url = "solution/greenhouse-irrigation/"
+weight = 1
+
+[[main]]
+parent = "Solutions"
+name = "Orchard Irrigation"
+url = "solution/orchard-irrigation/"
+weight = 2
+
+[[main]]
+parent = "Solutions"
+name = "Open Field Irrigation"
+url = "solution/open-field-irrigation/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Hydroponic / Soilless Cultivation"
+url = "solution/hydroponic-irrigation/"
+weight = 4
+
+[[main]]
+parent = "Solutions"
+name = "Irrigation Retrofit"
+url = "solution/irrigation-retrofit-upgrade/"
+weight = 5
 
 [[main]]
 name = "Products"
@@ -22,9 +76,31 @@ url = "product/"
 weight = 4
 
 [[main]]
+name = "Resources"
+weight = 5
+
+[[main]]
+parent = "Resources"
+name = "Docs"
+url = "docs/"
+weight = 1
+
+[[main]]
+parent = "Resources"
+name = "Tools"
+url = "tools/"
+weight = 2
+
+[[main]]
+parent = "Resources"
+name = "Downloads"
+url = "downloads/"
+weight = 3
+
+[[main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 6
 
 # footer menu
 [[footer]]

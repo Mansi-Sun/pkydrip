@@ -127,7 +127,11 @@ Recommended pages:
 - Irrigation Control System
 - Fertigation System
 - Wireless Field Control System
-- Monitoring & Sensor System
+- Solar Pump Irrigation System
+
+Supporting cross-system capability:
+
+- Monitoring & Sensors
 
 ### Solutions
 

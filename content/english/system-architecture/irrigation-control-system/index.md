@@ -1,6 +1,6 @@
 ---
-title: "Irrigation Control System Architecture"
-description: "Pump control, valve control, irrigation scheduling, HMI operation, and sequential zone logic for farm irrigation automation systems."
+title: "Irrigation Control System"
+description: "A system-oriented irrigation control architecture for coordinating pumps, valves, irrigation zones, scheduling, monitoring, and field operation."
 date: 2026-06-10
 draft: false
 type: "system-architecture"
@@ -8,92 +8,113 @@ layout: "engineering-page"
 url: "/system-architecture/irrigation-control-system/"
 
 hero:
-  title: "Irrigation Control System Architecture"
-  subtitle: "Coordinate water source, pump, filtration, controller, zone valves, and field irrigation with clear local control logic."
+  title: "Irrigation Control System"
+  subtitle: "Build a coordinated irrigation control structure for pumps, valves, field zones, schedules, and monitoring instead of operating each device separately."
+  image: "images/solution/controller-valve-pump-combination.webp"
+  image_alt: "Irrigation controller, pump control, valves, and farm irrigation zones working as one system"
+  capabilities:
+    - "Pump and valve coordination"
+    - "Multi-zone irrigation scheduling"
+    - "Manual and automatic operation"
+    - "Monitoring-ready system structure"
   cta_primary:
-    label: "View Irrigation Control System"
-    url: "/product/irrigation-control-system/"
+    label: "Discuss Your Irrigation System"
+    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20an%20irrigation%20control%20system.%0A-%20Farm%20size%3A%20%0A-%20Pump%20type%3A%20%0A-%20Number%20of%20zones%3A%20%0A-%20Project%20type%3A%20"
   cta_secondary:
-    label: "Open Field Application"
+    label: "View Open Field Solution"
     url: "/solution/open-field-irrigation/"
 
-zone_flow:
-  title: "Typical System Structure"
-  body: "A practical irrigation control system connects hydraulic equipment and electrical control logic so pumps and valves operate in the correct sequence."
-  steps:
-    - "Water Source"
-    - "Pump"
-    - "Filter"
-    - "Main Pipeline"
-    - "Irrigation Controller"
-    - "Zone Valves"
-    - "Field Irrigation"
-
-feature_blocks:
-  - title: "What This Architecture Is"
-    body: "This architecture is the core structure for pump and valve irrigation automation. It is used when a farm, orchard, greenhouse, or landscape project needs organized pump start/stop, valve switching, scheduling, and operation records."
-    bullets:
-      - "One controller coordinates pump and valve operation"
-      - "Valve zones can run by manual, timer, or irrigation plan logic"
-      - "The control cabinet is the physical hardware platform inside the system, not the whole product concept"
-  - title: "How Pump and Valve Control Work Together"
-    body: "In a reliable irrigation system, valves and pumps should not operate as separate devices. Valve opening, pump delay, run duration, and shutdown logic need to be coordinated to protect the hydraulic system."
-    bullets:
-      - "Open selected valve before pump start when required"
-      - "Start pump after configured delay"
-      - "Close valves after the irrigation duration finishes"
-      - "Use pressure or flow feedback when the project requires protection logic"
-  - title: "Sequential Irrigation Logic"
-    body: "Sequential irrigation runs zones one by one instead of opening all valves at the same time. This helps match pump capacity, reduce pressure fluctuation, and make irrigation operation easier to manage."
-    bullets:
-      - "Group valves by crop area or field block"
-      - "Run zones in a configured order"
-      - "Record each zone operation for management review"
-
-system_controls:
-  title: "Typical Applications"
-  intro: "This architecture is suitable for projects where pumps, valves, and irrigation schedules need to work as one local automation system."
+common_challenges:
+  title: "Common Irrigation Challenges"
+  intro: "Most irrigation control projects begin with operational problems, not with a controller model number. The system should solve how water is delivered, sequenced, supervised, and expanded."
   items:
-    - name: "Open-field irrigation"
+    - name: "Manual valve operation"
+      desc: "Operators spend time opening and closing valves by hand, and irrigation timing depends on who is available on site."
+    - name: "Pump running without supervision"
+      desc: "Pumps may run without clear valve status, pressure feedback, or shutdown logic, increasing risk and energy waste."
+    - name: "Difficult irrigation scheduling"
+      desc: "Multiple blocks, crops, and irrigation durations become hard to manage with scattered timers or manual records."
+    - name: "Expanding irrigation zones"
+      desc: "New field blocks, orchards, or greenhouse areas need a structure that can grow without rebuilding the whole system."
+    - name: "Lack of visibility"
+      desc: "Farm managers cannot easily see which zone is running, whether the pump has started, or what happened during previous cycles."
+
+system_architecture:
+  title: "System Architecture"
+  subtitle: "A typical irrigation control system connects the water source, pump, mainline, valves, field zones, controller, and optional monitoring points into one coordinated control layer."
+  image: "images/solution/open-field-irrigation-control-system-architecture.png"
+  image_alt: "Irrigation control system architecture showing water source, pump, mainline, controller, valves, monitoring, and field zones"
+
+zone_flow:
+  title: "How The System Works"
+  body: "The controller coordinates irrigation as a sequence, so pump operation and valve operation follow the same plan. This keeps irrigation zones organized and reduces the chance of running equipment out of order."
+  bullets:
+    - "Schedules define which zones should run and for how long"
+    - "Pump start, valve opening, and delays can be coordinated"
+    - "Operation records and optional feedback help support system monitoring"
+  steps:
+    - "Schedule"
+    - "Start Pump"
+    - "Open Zone"
+    - "Close Zone"
+    - "Next Zone"
+    - "Stop Pump"
+
+typical_applications:
+  title: "Typical Applications"
+  intro: "The same irrigation control architecture can be adapted for different farm and landscape environments."
+  cards:
+    - title: "Open Field"
       desc: "Multi-zone drip, sprinkler, or rain-pipe irrigation from a central pump station."
-    - name: "Orchard irrigation"
-      desc: "Block-based irrigation with sequential valve operation."
-    - name: "Greenhouse irrigation"
-      desc: "Pump and valve control linked with fertigation or sensor modules."
-    - name: "Retrofit projects"
-      desc: "Upgrade existing pumps and pipelines with a structured control layer."
+      image: "images/brochure/applications-open-field.jpg"
+      link: "/solution/open-field-irrigation/"
+    - title: "Orchard"
+      desc: "Block-based irrigation with pump coordination, valve sequencing, and optional wireless expansion."
+      image: "images/brochure/applications-orchard.jpg"
+      link: "/solution/orchard-irrigation/"
+    - title: "Greenhouse"
+      desc: "Pump and valve control linked with fertigation, crop zones, and local operator control."
+      image: "images/brochure/applications-greenhouse.jpg"
+      link: "/solution/greenhouse-irrigation/"
+    - title: "Landscape"
+      desc: "Scheduled irrigation for parks, gardens, sports fields, and distributed landscape zones."
+      image: "images/brochure/applications-landscape.jpg"
+      link: "/solution/"
 
 product_modules:
-  title: "Recommended PKYDrip Systems and Modules"
+  title: "Recommended Products"
+  intro: "Products are selected to support the irrigation control architecture. The final configuration depends on pump type, valve quantity, field distance, monitoring needs, and installation conditions."
   items:
     - name: "PKY-60W"
       url: "/product/pky-60w/"
-      desc: "Main irrigation controller for pump and valve automation."
-    - name: "Irrigation Control System"
-      url: "/product/irrigation-control-system/"
-      desc: "System-level pump, valve, HMI, and control cabinet integration."
-    - name: "Pump control module"
-      desc: "Project wiring and relay/contactor interface for pump start/stop."
-    - name: "Valve control output"
-      desc: "Relay or output channels for solenoid valves, electric valves, or field interface modules."
-    - name: "HMI touchscreen"
-      desc: "Local operator interface for schedule, manual control, valve groups, and records."
-    - name: "Control cabinet"
-      desc: "Physical enclosure and wiring platform for the irrigation control system."
+      desc: "Wired main controller for schedules, zones, logic coordination, and system integration."
+    - name: "PKY-IC05"
+      url: "/product/pky-ic05/"
+      desc: "LoRa solar valve controller for remote field valves when wiring is difficult."
+    - name: "PKY-EG08"
+      url: "/product/pky-eg08/"
+      desc: "LoRa gateway for connecting wireless field devices into the irrigation control network."
+    - name: "PKY-DAT01"
+      url: "/product/pky-dat01/"
+      desc: "Data acquisition terminal for reporting flow, pressure, soil moisture, weather, or water level data."
 
 related_links:
-  title: "Related Pages"
+  title: "Related Resources"
   links:
-    - label: "Irrigation Control System"
-      url: "/product/irrigation-control-system/"
-    - label: "Pump & Valve Control System"
-      url: "/product/pump-valve-control-system/"
+    - label: "Controller Selection Guide"
+      url: "/docs/irrigation-controller-selection-guide/"
+    - label: "Pump Sizing Tools"
+      url: "/tools/pump-sizing/"
+    - label: "LoRa Deployment Guide"
+      url: "/docs/lora-wireless-control/deployment-guide/"
     - label: "Open Field Irrigation"
       url: "/solution/open-field-irrigation/"
-    - label: "Greenhouse Irrigation"
-      url: "/solution/greenhouse-irrigation/"
-    - label: "Irrigation Design Wizard"
-      url: "/tools/irrigation-design-wizard/"
+
+project_cta:
+  title: "Plan Your Irrigation Control Architecture"
+  text: "Tell us your farm size, pump type, number of irrigation zones, valve distance, and monitoring requirements. PKYDrip can recommend a suitable irrigation control architecture before product selection."
+  button_label: "Send Project Details on WhatsApp"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20irrigation%20control%20architecture.%0A-%20Farm%20size%3A%20%0A-%20Pump%20type%3A%20%0A-%20Number%20of%20zones%3A%20%0A-%20Valve%20distance%3A%20%0A-%20Monitoring%20needs%3A%20"
 ---
 
-The irrigation control system is the foundation layer for most PKYDrip farm automation projects.
+An irrigation control system should help the customer build a clear operating structure first. Controller models, wireless modules, and sensor terminals are selected after the pump, valve, zone, and monitoring logic is understood.

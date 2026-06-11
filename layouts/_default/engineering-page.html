@@ -8,6 +8,15 @@
         <div class="{{ if .image }}col-lg-7{{ else }}col-12{{ end }}">
           <h1 class="display-6 fw-semibold mb-3">{{ .title | default $.Title }}</h1>
           {{ with .subtitle }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+          {{ with .capabilities }}
+          <div class="row g-2 mb-4">
+            {{ range . }}
+            <div class="col-sm-6">
+              <div class="eng-hero-capability">{{ . }}</div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
           <div class="d-flex flex-wrap gap-2">
             {{ with .cta_primary }}
               <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .label }}</a>
@@ -20,6 +29,25 @@
         {{ with .image }}
         <div class="col-lg-5">
           <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:cover;">
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.common_challenges }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+      <div class="row g-3">
+        {{ range .items }}
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100 bg-white eng-card">
+            <div class="fw-semibold mb-1">{{ .name }}</div>
+            {{ with .desc }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+          </div>
         </div>
         {{ end }}
       </div>
@@ -96,6 +124,30 @@
           </div>
           {{ end }}
         </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.typical_applications }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ .title }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+      <div class="row g-3">
+        {{ range .cards }}
+        {{ $card := . }}
+        <div class="col-md-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm overflow-hidden">
+            {{ with $card.image }}<img class="card-img-top" src="{{ . | relURL }}" alt="{{ $card.title }}" style="height:150px;object-fit:cover;">{{ end }}
+            <div class="card-body">
+              <h3 class="h6 fw-semibold mb-2">{{ $card.title }}</h3>
+              {{ with $card.desc }}<p class="text-muted small mb-2">{{ . }}</p>{{ end }}
+              {{ with $card.link }}<a href="{{ . | relLangURL }}" class="small">View application →</a>{{ end }}
+            </div>
+          </article>
+        </div>
+        {{ end }}
       </div>
     </div>
   </section>
@@ -304,6 +356,7 @@
 <style>
 .pkydrip-engineering-page .eng-card { transition: box-shadow .2s; }
 .pkydrip-engineering-page .eng-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+.pkydrip-engineering-page .eng-hero-capability { height: 100%; padding: .7rem .85rem; border: 1px solid rgba(30,77,63,.14); border-radius: .5rem; background: rgba(255,255,255,.75); color: #1e4d3f; font-size: .92rem; font-weight: 600; }
 .pkydrip-engineering-page .eng-flow-diagram { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem; }
 .pkydrip-engineering-page .eng-flow-step { font-weight: 600; font-size: .9rem; padding: .5rem .75rem; background: #e8f4ec; border-radius: .35rem; color: #1e4d3f; }
 .pkydrip-engineering-page .eng-flow-step:not(:last-child)::after { content: "→"; margin-left: .5rem; font-weight: 400; color: #6c757d; }

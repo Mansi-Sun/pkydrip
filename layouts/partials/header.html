@@ -14,6 +14,8 @@
       <!-- v5 toggler -->
       <button class="navbar-toggler" type="button"
               data-bs-toggle="collapse" data-bs-target="#navigation"
+              data-toggle="collapse" data-target="#navigation"
+              data-pkydrip-nav-toggle
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,16 +29,18 @@
             {{ $active := eq $menuURL $pageURL }}
 
             {{ if .HasChildren }}
-              <li class="nav-item dropdown
+              <li class="nav-item dropdown pkydrip-nav-dropdown
                 {{ range .Children }}
                   {{ $childURL := .URL | absLangURL }}
                   {{ $isChildActive := eq $childURL $pageURL }}
                   {{ if $isChildActive }} current {{ end }}
                 {{ end }}">
                 <a class="nav-link dropdown-toggle"
-                   href="#" role="button"
-                   data-bs-toggle="dropdown" aria-expanded="false">
-                  {{ .Name }} <span class="fas fa-angle-down"></span>
+                   href="{{ if .URL }}{{ .URL | relLangURL }}{{ else }}#{{ end }}" role="button"
+                   data-bs-toggle="dropdown" data-toggle="dropdown"
+                   data-pkydrip-dropdown-toggle
+                   aria-haspopup="true" aria-expanded="false">
+                  {{ .Name }}
                 </a>
 
                 <ul class="dropdown-menu">
@@ -76,5 +80,92 @@
     </nav>
   </div>
 </header>
+<style>
+  .pkydrip-nav-dropdown {
+    position: relative;
+  }
+
+  .pkydrip-nav-dropdown > .dropdown-menu {
+    left: 0;
+    right: auto;
+    top: 100%;
+    min-width: 190px;
+  }
+
+  .pkydrip-nav-dropdown.open > .dropdown-menu,
+  .pkydrip-nav-dropdown.show > .dropdown-menu,
+  .pkydrip-nav-dropdown > .dropdown-menu.show {
+    display: block;
+  }
+
+  @media (max-width: 991px) {
+    .pkydrip-nav-dropdown > .dropdown-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var navToggle = document.querySelector('[data-pkydrip-nav-toggle]');
+    var nav = document.getElementById('navigation');
+
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('show');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    document.querySelectorAll('[data-pkydrip-dropdown-toggle]').forEach(function (toggle) {
+      toggle.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        var item = toggle.closest('.dropdown');
+        var menu = item ? item.querySelector('.dropdown-menu') : null;
+        if (!item || !menu) return;
+
+        document.querySelectorAll('.navbar-nav .dropdown.show, .navbar-nav .dropdown.open').forEach(function (openItem) {
+          if (openItem !== item) {
+            openItem.classList.remove('show', 'open');
+            var openToggle = openItem.querySelector('[data-pkydrip-dropdown-toggle]');
+            var openMenu = openItem.querySelector('.dropdown-menu');
+            if (openToggle) openToggle.setAttribute('aria-expanded', 'false');
+            if (openMenu) openMenu.classList.remove('show');
+          }
+        });
+
+        var isOpen = !item.classList.contains('show') && !item.classList.contains('open');
+        item.classList.toggle('show', isOpen);
+        item.classList.toggle('open', isOpen);
+        menu.classList.toggle('show', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    });
+
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.navbar-nav .dropdown.show, .navbar-nav .dropdown.open').forEach(function (item) {
+        item.classList.remove('show', 'open');
+        var toggle = item.querySelector('[data-pkydrip-dropdown-toggle]');
+        var menu = item.querySelector('.dropdown-menu');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        if (menu) menu.classList.remove('show');
+      });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      document.querySelectorAll('.navbar-nav .dropdown.show, .navbar-nav .dropdown.open').forEach(function (item) {
+        item.classList.remove('show', 'open');
+        var toggle = item.querySelector('[data-pkydrip-dropdown-toggle]');
+        var menu = item.querySelector('.dropdown-menu');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        if (menu) menu.classList.remove('show');
+      });
+    });
+  });
+</script>
 <!-- /navigation -->
 {{ end }}
