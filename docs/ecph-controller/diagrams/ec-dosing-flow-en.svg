@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 780" width="420" height="780">
+  <rect width="420" height="780" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0057B8"/>
+    </marker>
+    <marker id="arrow-yes" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1FA463"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #F4F6F8; stroke: #0057B8; stroke-width: 2; rx: 6; }
+    .diamond { fill: #F4F6F8; stroke: #0057B8; stroke-width: 2; }
+    .box-end { fill: #1FA463; stroke: #1FA463; stroke-width: 2; rx: 6; }
+    .text { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #333333; text-anchor: middle; }
+    .text-white { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #FFFFFF; text-anchor: middle; font-weight: bold; }
+    .label-yes { font-family: Arial, sans-serif; font-size: 11px; fill: #1FA463; }
+    .label-no { font-family: Arial, sans-serif; font-size: 11px; fill: #666666; }
+    .line { stroke: #0057B8; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .line-yes { stroke: #1FA463; stroke-width: 2; fill: none; marker-end: url(#arrow-yes); }
+    .line-no { stroke: #999999; stroke-width: 1.5; fill: none; stroke-dasharray: 4,3; }
+  </style>
+  <rect class="box" x="110" y="16" width="200" height="40"/>
+  <text class="text" x="210" y="41">Read EC</text>
+  <line class="line" x1="210" y1="56" x2="210" y2="76"/>
+  <polygon class="diamond" points="210,76 310,116 210,156 110,116"/>
+  <text class="text" x="210" y="110" font-size="11">EC below target</text>
+  <text class="text" x="210" y="126" font-size="11">minus dead band?</text>
+  <text class="label-yes" x="218" y="168">Yes</text>
+  <line class="line-yes" x1="210" y1="156" x2="210" y2="180"/>
+  <rect class="box" x="110" y="180" width="200" height="40"/>
+  <text class="text" x="210" y="205">Run A pump</text>
+  <line class="line" x1="210" y1="220" x2="210" y2="240"/>
+  <rect class="box" x="110" y="240" width="200" height="36"/>
+  <text class="text" x="210" y="262">Wait (mixing)</text>
+  <line class="line" x1="210" y1="276" x2="210" y2="296"/>
+  <rect class="box" x="110" y="296" width="200" height="40"/>
+  <text class="text" x="210" y="321">Run B pump</text>
+  <line class="line" x1="210" y1="336" x2="210" y2="356"/>
+  <rect class="box" x="110" y="356" width="200" height="36"/>
+  <text class="text" x="210" y="378">Wait (mixing)</text>
+  <line class="line" x1="210" y1="392" x2="210" y2="412"/>
+  <rect class="box" x="110" y="412" width="200" height="40"/>
+  <text class="text" x="210" y="437">Run C pump</text>
+  <line class="line" x1="210" y1="452" x2="210" y2="472"/>
+  <rect class="box" x="110" y="472" width="200" height="36"/>
+  <text class="text" x="210" y="494">Wait (mixing)</text>
+  <line class="line" x1="210" y1="508" x2="210" y2="528"/>
+  <rect class="box" x="110" y="528" width="200" height="40"/>
+  <text class="text" x="210" y="553">Re-read EC</text>
+  <line class="line" x1="210" y1="568" x2="210" y2="588"/>
+  <rect class="box-end" x="90" y="588" width="240" height="44"/>
+  <text class="text-white" x="210" y="608" font-size="12">Stop when target reached</text>
+  <text class="text-white" x="210" y="624" font-size="12">or max cycles exceeded</text>
+  <text class="label-no" x="318" y="112">No</text>
+  <line class="line-no" x1="310" y1="116" x2="370" y2="116"/>
+  <line class="line-no" x1="370" y1="116" x2="370" y2="610"/>
+  <line class="line-no" x1="370" y1="610" x2="330" y2="610"/>
+</svg>
