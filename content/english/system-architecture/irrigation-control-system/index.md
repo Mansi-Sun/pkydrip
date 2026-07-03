@@ -1,11 +1,13 @@
 ---
 title: "Irrigation Control System"
-description: "A system-oriented irrigation control architecture for coordinating pumps, valves, irrigation zones, scheduling, monitoring, and field operation."
+description: "Irrigation control system for pump and valve coordination, multi-zone scheduling, monitoring, and expandable farm automation design."
 date: 2026-06-10
 draft: false
 type: "system-architecture"
 layout: "engineering-page"
-url: "/system-architecture/irrigation-control-system/"
+url: "/system/irrigation-control-system/"
+aliases:
+  - /system-architecture/irrigation-control-system/
 
 hero:
   title: "Irrigation Control System"
@@ -99,16 +101,22 @@ product_modules:
       desc: "Data acquisition terminal for reporting flow, pressure, soil moisture, weather, or water level data."
 
 related_links:
-  title: "Related Resources"
+  title: "Related Systems & Resources"
   links:
+    - label: "Fertigation System"
+      url: "/system/fertigation-system/"
+    - label: "Wireless Irrigation System"
+      url: "/system/wireless-irrigation-system/"
+    - label: "Climate Control System"
+      url: "/system/climate-control-system/"
+    - label: "Orchard Irrigation Case Study"
+      url: "/applications/orchard-irrigation/"
+    - label: "Open Field Irrigation Solution"
+      url: "/solution/open-field-irrigation/"
     - label: "Controller Selection Guide"
       url: "/docs/irrigation-controller-selection-guide/"
-    - label: "Pump Sizing Tools"
-      url: "/tools/pump-sizing/"
     - label: "LoRa Deployment Guide"
       url: "/docs/lora-wireless-control/deployment-guide/"
-    - label: "Open Field Irrigation"
-      url: "/solution/open-field-irrigation/"
 
 project_cta:
   title: "Plan Your Irrigation Control Architecture"
@@ -117,4 +125,4 @@ project_cta:
   button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20irrigation%20control%20architecture.%0A-%20Farm%20size%3A%20%0A-%20Pump%20type%3A%20%0A-%20Number%20of%20zones%3A%20%0A-%20Valve%20distance%3A%20%0A-%20Monitoring%20needs%3A%20"
 ---
 
-An irrigation control system should help the customer build a clear operating structure first. Controller models, wireless modules, and sensor terminals are selected after the pump, valve, zone, and monitoring logic is understood.
+An irrigation control system should help the customer build a clear operating structure first. Controller models, wireless modules, and sensor terminals are selected after the pump, valve, zone, and monitoring logic is understood. PKYDrip supports modular expansion into fertigation, wireless field control, and greenhouse climate integration when the project requires a unified automation platform.

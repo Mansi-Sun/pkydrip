@@ -1,15 +1,17 @@
 ---
-title: "Wireless Irrigation System Architecture"
-description: "LoRa wireless irrigation architecture for wireless valve control, remote pump control, solar field devices, and irrigation expansion without cable trenching."
+title: "Wireless Irrigation System"
+description: "Wireless irrigation system using LoRa for remote valve control, pump coordination, solar field devices, and scalable farm automation without long cable runs."
 date: 2026-06-10
 draft: false
 type: "system-architecture"
 layout: "engineering-page"
-url: "/system-architecture/wireless-irrigation-system/"
+url: "/system/wireless-irrigation-system/"
+aliases:
+  - /system-architecture/wireless-irrigation-system/
 
 hero:
-  title: "Wireless Irrigation System Architecture"
-  subtitle: "Use LoRa wireless field control to expand irrigation automation without long-distance signal cable trenching."
+  title: "Wireless Irrigation System"
+  subtitle: "Use LoRa wireless field control to expand irrigation automation without long-distance signal cable trenching in orchards, open fields, and retrofit projects."
   cta_primary:
     label: "View Wireless Field Control"
     url: "/product/wireless-field-control-system/"
@@ -64,16 +66,22 @@ product_modules:
       desc: "LoRa solar pump controller for remote pump applications."
 
 related_links:
-  title: "Related Pages"
+  title: "Related Systems & Resources"
   links:
-    - label: "Wireless Field Control System"
-      url: "/product/wireless-field-control-system/"
-    - label: "Wireless Valve Controller"
-      url: "/product/wireless-valve-controller/"
-    - label: "Open Field Irrigation"
-      url: "/solution/open-field-irrigation/"
+    - label: "Irrigation Control System"
+      url: "/system/irrigation-control-system/"
+    - label: "Fertigation System"
+      url: "/system/fertigation-system/"
+    - label: "Climate Control System"
+      url: "/system/climate-control-system/"
+    - label: "Open Field Wireless Valve Control"
+      url: "/applications/open-field-wireless-valve-control/"
+    - label: "LoRa Wireless Irrigation Control Solution"
+      url: "/solution/lora-wireless-irrigation-control/"
     - label: "LoRa Deployment Guide"
       url: "/docs/lora-wireless-control/deployment-guide/"
+    - label: "Wireless Field Control System"
+      url: "/product/wireless-field-control-system/"
 ---
 
-Wireless irrigation architecture is useful when the field layout is larger than the wiring budget or the existing farm needs phased expansion.
+Wireless irrigation architecture is useful when the field layout is larger than the wiring budget or the existing farm needs phased expansion. It complements central irrigation control and can support fertigation or monitoring modules through the same project structure.

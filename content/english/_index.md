@@ -48,6 +48,36 @@ portfolio:
 service:
   enable: true
 
+############################# Systems #############################
+systems:
+  enable: true
+  title: "Agricultural Automation Systems"
+  content: "Start from the system architecture that matches your project. PKYDrip provides four core systems for real farm, greenhouse, and nursery automation — choose one to explore, then discuss your layout with our team."
+  cta_label: "Discuss Your System Project"
+  cta_url: "/contact/"
+  items:
+    - name: "Irrigation Control System"
+      desc: "Pump, valve, and zone scheduling for coordinated field irrigation."
+      url: "/system/irrigation-control-system/"
+    - name: "Fertigation System"
+      desc: "Fertilizer injection with EC/pH monitoring and dosing logic."
+      url: "/system/fertigation-system/"
+    - name: "Wireless Irrigation System"
+      desc: "LoRa valve and pump control without long-distance cabling."
+      url: "/system/wireless-irrigation-system/"
+    - name: "Climate Control System"
+      desc: "Greenhouse ventilation, fan-pad cooling, and humidity control."
+      url: "/system/climate-control-system/"
+
+systems_value:
+  enable: true
+  title: "Why PKYDrip Systems"
+  items:
+    - "Real farm automation design"
+    - "Irrigation + Fertigation + Climate integration"
+    - "Modular architecture"
+    - "Supports RS485 / Modbus / LoRa / 4G"
+
 ############################ call to action ###########################
 cta:
   enable: true

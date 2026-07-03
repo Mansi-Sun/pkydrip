@@ -28,3 +28,22 @@
   to = "/product/pump-valve-control-system/"
   status = 301
   force = true
+
+# System pages: legacy architecture URLs → canonical /system/ paths
+[[redirects]]
+  from = "/system-architecture/irrigation-control-system/"
+  to = "/system/irrigation-control-system/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/system-architecture/fertigation-system/"
+  to = "/system/fertigation-system/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/system-architecture/wireless-irrigation-system/"
+  to = "/system/wireless-irrigation-system/"
+  status = 301
+  force = true

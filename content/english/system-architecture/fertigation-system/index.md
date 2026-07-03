@@ -1,15 +1,17 @@
 ---
-title: "Fertigation System Architecture"
-description: "Fertigation system structure for fertilizer injection, EC/pH monitoring, dosing control, recipe-based nutrient delivery, and irrigation-linked operation."
+title: "Fertigation System"
+description: "Fertigation system for fertilizer injection, EC/pH monitoring, dosing control, recipe-based nutrient delivery, and irrigation-linked farm automation."
 date: 2026-06-10
 draft: false
 type: "system-architecture"
 layout: "engineering-page"
-url: "/system-architecture/fertigation-system/"
+url: "/system/fertigation-system/"
+aliases:
+  - /system-architecture/fertigation-system/
 
 hero:
-  title: "Fertigation System Architecture"
-  subtitle: "Connect fertilizer injection, EC/pH monitoring, dosing logic, and irrigation zones into one controlled fertigation structure."
+  title: "Fertigation System"
+  subtitle: "Connect fertilizer injection, EC/pH monitoring, dosing logic, and irrigation zones into one controlled fertigation structure for greenhouse and field projects."
   cta_primary:
     label: "View Fertigation System"
     url: "/product/fertigation-system/"
@@ -80,18 +82,22 @@ product_modules:
       desc: "Hydraulic mixing structure for controlled nutrient delivery."
 
 related_links:
-  title: "Related Pages"
+  title: "Related Systems & Resources"
   links:
-    - label: "Fertigation System"
-      url: "/product/fertigation-system/"
-    - label: "EC/pH Dosing Controller"
-      url: "/product/ec-ph-controller/"
-    - label: "Greenhouse Irrigation"
-      url: "/solution/greenhouse-irrigation/"
-    - label: "Hydroponic Irrigation"
+    - label: "Irrigation Control System"
+      url: "/system/irrigation-control-system/"
+    - label: "Wireless Irrigation System"
+      url: "/system/wireless-irrigation-system/"
+    - label: "Climate Control System"
+      url: "/system/climate-control-system/"
+    - label: "Tomato Drip Irrigation Case Study"
+      url: "/applications/tomato-drip-irrigation/"
+    - label: "Hydroponic Irrigation Solution"
       url: "/solution/hydroponic-irrigation/"
-    - label: "Fertigation Upgrade"
-      url: "/landing/fertigation-upgrade/"
+    - label: "Greenhouse Irrigation Solution"
+      url: "/solution/greenhouse-irrigation/"
+    - label: "Fertigation Basics"
+      url: "/docs/fertigation-basics/"
 ---
 
-Fertigation architecture should be planned as a complete water, fertilizer, sensor, and control system.
+Fertigation architecture should be planned as a complete water, fertilizer, sensor, and control system. It integrates naturally with irrigation control scheduling and can expand with wireless field nodes or greenhouse climate logic when required.

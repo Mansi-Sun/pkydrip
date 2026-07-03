@@ -8,31 +8,31 @@ weight = 1
 
 [[main]]
 name = "Systems"
-url = "system-architecture/"
+url = "system/irrigation-control-system/"
 weight = 2
 
 [[main]]
 parent = "Systems"
 name = "Irrigation Control System"
-url = "system-architecture/irrigation-control-system/"
+url = "system/irrigation-control-system/"
 weight = 1
 
 [[main]]
 parent = "Systems"
 name = "Fertigation System"
-url = "system-architecture/fertigation-system/"
+url = "system/fertigation-system/"
 weight = 2
 
 [[main]]
 parent = "Systems"
 name = "Wireless Irrigation System"
-url = "system-architecture/wireless-irrigation-system/"
+url = "system/wireless-irrigation-system/"
 weight = 3
 
 [[main]]
 parent = "Systems"
-name = "Solar Pump Irrigation System"
-url = "system-architecture/solar-pump-irrigation/"
+name = "Climate Control System"
+url = "system/climate-control-system/"
 weight = 4
 
 [[main]]
