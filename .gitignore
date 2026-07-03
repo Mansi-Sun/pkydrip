@@ -1,1 +1,39 @@
+# =============================================================================
+# PKYDrip — commit Hugo SOURCE only; Netlify runs `hugo` and publishes public/
+# =============================================================================
+
+# --- Hugo build output (never commit) ----------------------------------------
+public/
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# --- OS / editor -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Dependencies ------------------------------------------------------------
+node_modules/
+
+# --- Private local folder (existing) -----------------------------------------
 private/
+
+# --- Internal planning & audits (not website content) --------------------------
+docs/internal/
+migration/
+
+# --- Marketing ad drafts & assets (not site pages) -----------------------------
+marketing/
+
+# --- Local PDF tooling & generated output --------------------------------------
+docs/**/_pdf-build/
+docs/**/build-pdf.py
+docs/**/fix-svgs.py
+
+# --- Local tooling / agent metadata ------------------------------------------
+.codex-gh/
