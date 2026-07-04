@@ -14,7 +14,7 @@ whatsapp_fields:
   - "قدرة المضخة"
   - "مناطق الري"
 hero_subtitle: "أنظمة أتمتة ري موثوقة للمزارع الصحراوية الكبيرة والمشاريع الزراعية في السعودية — مصممة للنطاق والتغطية والموثوقية الميدانية."
-hero_image: "images/sa/sa-home-desert-farm.webp"
+hero_image: "images/markets/sa-home.svg"
 hero_image_alt: "مخطط لبنية ري مزرعة صحراوية واسعة النطاق في السعودية"
 keywords:
   - irrigation system Saudi Arabia

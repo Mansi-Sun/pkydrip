@@ -14,7 +14,7 @@ whatsapp_fields:
   - "مراقبة EC مطلوبة"
   - "التكامل مع نظام الري الحالي"
 hero_subtitle: "في الزراعة السعودية واسعة النطاق، التسميد ثانوي لبنية الري — يُستخدم في مناطق محاصيل عالية القيمة أو خاضعة للتحكم."
-hero_image: "images/sa/sa-fertigation-optional.webp"
+hero_image: "images/markets/sa-fertigation.svg"
 hero_image_alt: "مخطط منطقة تسميد اختيارية مدمجة مع بنية ري مزرعة كبيرة"
 keywords:
   - fertigation system Saudi Arabia

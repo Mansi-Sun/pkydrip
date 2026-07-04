@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Farm size"
   - "Irrigation zones"
 hero_subtitle: "Increase crop yield while reducing water consumption in desert agriculture environments — precision farming for greenhouses, hydroponics, and high-value crops."
-hero_image: "images/uae/uae-home-greenhouse.webp"
+hero_image: "images/markets/uae-home.svg"
 hero_image_alt: "Schematic of smart greenhouse agriculture with water-efficient irrigation in UAE"
 keywords:
   - smart irrigation UAE

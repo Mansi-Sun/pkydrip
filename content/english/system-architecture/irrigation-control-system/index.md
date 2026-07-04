@@ -68,19 +68,19 @@ typical_applications:
   cards:
     - title: "Open Field"
       desc: "Multi-zone drip, sprinkler, or rain-pipe irrigation from a central pump station."
-      image: "images/brochure/applications-open-field.jpg"
+      image: "images/system/app-open-field.svg"
       link: "/solution/open-field-irrigation/"
     - title: "Orchard"
       desc: "Block-based irrigation with pump coordination, valve sequencing, and optional wireless expansion."
-      image: "images/brochure/applications-orchard.jpg"
+      image: "images/system/app-orchard.svg"
       link: "/solution/orchard-irrigation/"
     - title: "Greenhouse"
       desc: "Pump and valve control linked with fertigation, crop zones, and local operator control."
-      image: "images/brochure/applications-greenhouse.jpg"
+      image: "images/system/app-greenhouse.svg"
       link: "/solution/greenhouse-irrigation/"
     - title: "Landscape"
       desc: "Scheduled irrigation for parks, gardens, sports fields, and distributed landscape zones."
-      image: "images/brochure/applications-landscape.jpg"
+      image: "images/system/app-landscape.svg"
       link: "/solution/"
 
 product_modules:

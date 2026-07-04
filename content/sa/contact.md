@@ -14,7 +14,7 @@ whatsapp_fields:
   - "قدرة المضخة"
   - "مناطق الري"
 hero_subtitle: "نصمم أنظمة بنية ري واسعة النطاق للمشاريع الزراعية السعودية — تحكم المضخات، تغطية لاسلكية، وتشغيل صحراوي موثوق."
-hero_image: "images/sa/sa-contact-infrastructure.webp"
+hero_image: "images/markets/sa-contact.svg"
 hero_image_alt: "مخطط استشارة بنية ري واسعة النطاق في السعودية"
 keywords:
   - irrigation system Saudi Arabia

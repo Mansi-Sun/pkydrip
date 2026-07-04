@@ -14,7 +14,7 @@ whatsapp_fields:
   - "قدرة المضخة"
   - "عدد مناطق الري"
 hero_subtitle: "المزارع الكبيرة تحتاج ريًا موثوقًا عبر مسافات واسعة — نصمم أنظمة تحكم لبنية زراعية واسعة النطاق، وليس لإعدادات دقة صغيرة."
-hero_image: "images/sa/sa-irrigation-control.webp"
+hero_image: "images/markets/sa-irrigation.svg"
 hero_image_alt: "مخطط تحكم ري مزرعة كبيرة مع مناطق مضخات وصمامات في الزراعة الصحراوية السعودية"
 keywords:
   - irrigation system Saudi Arabia

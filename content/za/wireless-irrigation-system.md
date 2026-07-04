@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Pump type"
   - "Solar or grid power"
 hero_subtitle: "Expand irrigation coverage without expensive cable runs — wireless valve control for growing farms on a practical budget."
-hero_image: "images/za/za-wireless-expansion.webp"
+hero_image: "images/markets/za-wireless.svg"
 hero_image_alt: "Schematic of wireless irrigation expansion across South African farm zones"
 keywords:
   - irrigation automation Africa

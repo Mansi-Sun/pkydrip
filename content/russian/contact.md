@@ -4,8 +4,8 @@ description: "Свяжитесь с PKYDrip по автоматизации ор
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Решения по автоматизации орошения для российских ферм — от 100 до 5000 гектаров, суровый климат и унаследованные системы с низкой автоматизацией."
-hero_image: "images/russia/ru-contact-system.webp"
-hero_image_alt: "Схема проектирования системы орошения для российской фермы"
+hero_image: "images/markets/ru-contact.svg"
+hero_image_alt: "System consultation infrastructure — Russia"
 keywords:
   - irrigation system Russia
   - farm irrigation automation

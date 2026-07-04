@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Solar panel capacity (if known)"
   - "Irrigation zones"
 hero_subtitle: "Solar pump integration for energy independence — run irrigation when the grid fails and reduce diesel pumping costs on off-grid farms."
-hero_image: "images/za/za-solar-pump.webp"
+hero_image: "images/markets/za-solar.svg"
 hero_image_alt: "Schematic of solar pump irrigation integration for South African off-grid farm"
 keywords:
   - solar irrigation system South Africa

@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Solar or grid power situation"
   - "Irrigation zones"
 hero_subtitle: "Solar-driven irrigation retrofit for off-grid and grid-unreliable farms — reduce electricity dependency, save water, and improve irrigation reliability."
-hero_image: "images/za/za-home-solar-farm.webp"
+hero_image: "images/markets/za-home.svg"
 hero_image_alt: "Schematic of solar irrigation system for off-grid South African farm"
 keywords:
   - solar irrigation system South Africa

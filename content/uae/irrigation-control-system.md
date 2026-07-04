@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Irrigation zones"
   - "Greenhouse or open field"
 hero_subtitle: "In UAE agriculture, the main cost is not equipment — it is water waste. We design irrigation around water efficiency logic, not simple valve control."
-hero_image: "images/uae/uae-irrigation-water.webp"
+hero_image: "images/markets/uae-irrigation.svg"
 hero_image_alt: "Schematic of zone-based drip irrigation for water-efficient UAE greenhouse farming"
 keywords:
   - smart irrigation UAE

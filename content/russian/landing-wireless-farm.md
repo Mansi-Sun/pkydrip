@@ -4,8 +4,8 @@ description: "Беспроводная система орошения в Рос
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Беспроводное управление орошением LoRa для крупных российских ферм — без полевой проводки, стабильная связь на расстоянии, низкие затраты на обслуживание."
-hero_image: "images/russia/ru-wireless-farm.webp"
-hero_image_alt: "Схема беспроводного орошения LoRa на крупном удалённом поле"
+hero_image: "images/markets/ru-wireless.svg"
+hero_image_alt: "Wireless farm network — Russia distributed field systems"
 keywords:
   - wireless irrigation system Russia
   - LoRa irrigation system Russia

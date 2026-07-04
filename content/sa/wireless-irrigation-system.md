@@ -14,7 +14,7 @@ whatsapp_fields:
   - "مصدر المياه"
   - "قدرة المضخة"
 hero_subtitle: "المزارع السعودية تحتاج تحكمًا لمسافات طويلة عبر الحقول الصحراوية — البنية اللاسلكية تقلل تكلفة الأسلاك وتدعم توسع المزرعة."
-hero_image: "images/sa/sa-wireless-field.webp"
+hero_image: "images/markets/sa-wireless.svg"
 hero_image_alt: "مخطط عقد ري لاسلكي لمسافات طويلة عبر مزرعة صحراوية سعودية واسعة"
 keywords:
   - wireless irrigation system Saudi

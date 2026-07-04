@@ -49,5 +49,5 @@
     <line x1="24" y1="86" x2="64" y2="86" stroke="#c4a24a" stroke-width="2.5" stroke-dasharray="6 5"/><text x="76" y="91" font-family="Arial,sans-serif" font-size="13" fill="#4a5560">Fertigation network</text>
     <line x1="24" y1="114" x2="64" y2="114" stroke="#6a9a9f" stroke-width="2.5"/><text x="76" y="119" font-family="Arial,sans-serif" font-size="13" fill="#4a5560">Climate zones</text>
   </g>
-  <text x="800" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6a7a82">Agricultural infrastructure intelligence  regional systems connected globally</text>
+  <text x="800" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6a7a82">Agricultural infrastructure intelligence — regional systems connected globally</text>
 </svg>

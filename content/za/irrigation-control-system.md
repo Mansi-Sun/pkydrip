@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Current control method (manual / timer / none)"
   - "Solar or grid power"
 hero_subtitle: "Upgrade existing pump and valve systems with reliable automation — practical retrofit for farms with outdated or manual irrigation control."
-hero_image: "images/za/za-irrigation-retrofit.webp"
+hero_image: "images/markets/za-irrigation.svg"
 hero_image_alt: "Schematic of pump and valve irrigation retrofit for South African farm"
 keywords:
   - farm irrigation retrofit

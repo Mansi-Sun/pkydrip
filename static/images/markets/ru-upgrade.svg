@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Russia irrigation system upgrade infrastructure">
+  <rect width="1200" height="520" fill="#e4edf2"/>
+  <text x="48" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#2a3a42">System Upgrade  Russia</text>
+  <rect x="48" y="100" width="520" height="340" rx="12" fill="#fff" stroke="#c5d4de"/>
+  <text x="68" y="130" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#8a9098">BEFORE  fragmented zones</text>
+  <rect x="100" y="180" width="70" height="50" rx="6" fill="#e8e8e8" stroke="#ccc"/><rect x="200" y="200" width="70" height="50" rx="6" fill="#e8e8e8" stroke="#ccc"/><rect x="300" y="170" width="70" height="50" rx="6" fill="#e8e8e8" stroke="#ccc"/>
+  <rect x="580" y="100" width="572" height="340" rx="12" fill="#fff" stroke="#c5d4de"/>
+  <text x="600" y="130" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#4a7a62">AFTER  connected system layer</text>
+  <circle cx="866" cy="270" r="24" fill="#fff" stroke="#4a9fd4" stroke-width="2.5"/>
+  <rect x="680" y="240" width="60" height="40" rx="6" fill="#edf5ea" stroke="#a8c8a8"/><rect x="980" y="240" width="60" height="40" rx="6" fill="#edf5ea" stroke="#a8c8a8"/>
+  <line x1="740" y1="260" x2="842" y2="270" stroke="#4a9fd4" stroke-width="2"/><line x1="890" y1="270" x2="980" y2="260" stroke="#4a9fd4" stroke-width="2"/>
+  <path d="M308 270 L572 270" stroke="#4a9fd4" stroke-width="2" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4a9fd4"/></marker></defs>
+</svg>

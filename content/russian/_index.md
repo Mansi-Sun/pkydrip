@@ -4,8 +4,8 @@ description: "Надёжная система орошения для Росси
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Надёжные системы управления орошением для крупных сельхозугодий в России — для сурового климата, больших расстояний и ферм с низким уровнем автоматизации."
-hero_image: "images/russia/ru-home-open-field.webp"
-hero_image_alt: "Схема автоматизации орошения для крупных открытых полей России"
+hero_image: "images/markets/ru-home.svg"
+hero_image_alt: "Global agricultural system infrastructure — Russia cold-climate farm zones"
 keywords:
   - irrigation system Russia
   - farm irrigation automation
