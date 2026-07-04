@@ -6,16 +6,16 @@
 <section class="ru-funnel" style="background:#f9fbfc;border-top:1px solid #e8ece9;padding:28px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
-      <p style="margin:0 0 12px;font-weight:600;color:#1a3a2a;font-size:15px;">Next step — system · landing · contact</p>
+      <p style="margin:0 0 12px;font-weight:600;color:#1a3a2a;font-size:15px;">Следующий шаг — система · лендинг · контакты</p>
       {{ if $route }}
       <div style="display:flex;flex-wrap:wrap;gap:10px;">
         <a href="{{ $route.system.path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">{{ $route.system.label }} →</a>
         <a href="{{ $route.landing.path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">{{ $route.landing.label }} →</a>
         {{ if ne $key "contact" }}
-        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
+        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Контакты →</a>
         {{ else }}
         <a href="{{ $contact.telegram }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#2AABEE;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Telegram →</a>
-        <a href="{{ $contact.whatsapp }}?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20irrigation%20system%20for%20my%20Russian%20farm.%0A-%20Farm%20size%20(ha)%3A%20%0A-%20Crop%3A%20%0A-%20Irrigation%20method%3A%20%0A-%20Pump%20power%3A%20%0A-%20Zones%3A%20" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">WhatsApp →</a>
+        <a href="{{ $contact.whatsapp }}?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20PKYDrip%21%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D0%BF%D0%BE%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B9%D1%82%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83%20%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F.%0A-%20%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%28%D0%B3%D0%B0%29%3A%20%0A-%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%3A%20%0A-%20%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%20%D0%BF%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%3A%20%0A-%20%D0%9C%D0%BE%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%D1%81%D0%BE%D1%81%D0%B0%3A%20%0A-%20%D0%97%D0%BE%D0%BD%D1%8B%3A%20" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">WhatsApp →</a>
         {{ end }}
       </div>
       {{ end }}

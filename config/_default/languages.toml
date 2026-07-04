@@ -32,3 +32,4 @@ languageName = "Русский"
 languageCode = "ru-RU"
 contentDir = "content/russian"
 weight = 5
+title = "PKYDrip — автоматизация орошения для России"

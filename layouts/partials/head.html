@@ -4,7 +4,9 @@
 {{/* pkydrip: no <base> tag — it breaks localhost (scripts resolve to production → CORS). */}}
 
 <!-- multilingual SEO optimizations -->
-{{ if .IsTranslated }}
+{{ if eq .Lang "ru" }}
+  <link rel="alternate" hreflang="ru" href="{{ .Permalink | absURL }}">
+{{ else if .IsTranslated }}
   {{ range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink | absLangURL }}">
   {{ end }}

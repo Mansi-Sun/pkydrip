@@ -1,0 +1,16 @@
+# Russian UI strings for /ru/ section (Hugo i18n)
+
+[contact_whatsapp]
+other = "WhatsApp"
+
+[contact_telegram]
+other = "Telegram"
+
+[read_more]
+other = "Подробнее"
+
+[posted_by]
+other = "Автор"
+
+[home]
+other = "Главная"

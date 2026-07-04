@@ -89,58 +89,58 @@ page_routing:
     cluster: farm_upgrade
     system:
       path: /ru/irrigation-control-system/
-      label: Irrigation Control System
+      label: Система управления орошением
     landing:
       path: /ru/landing-irrigation-upgrade/
-      label: Farm Irrigation Upgrade
+      label: Модернизация орошения
   irrigation-control-system:
     cluster: irrigation_control
     system:
       path: /ru/wireless-irrigation-system/
-      label: Wireless Irrigation System
+      label: Беспроводное орошение
     landing:
       path: /ru/landing-irrigation-upgrade/
-      label: Farm Irrigation Upgrade
+      label: Модернизация орошения
   wireless-irrigation-system:
     cluster: wireless_lora
     system:
       path: /ru/irrigation-control-system/
-      label: Irrigation Control System
+      label: Система управления орошением
     landing:
       path: /ru/landing-wireless-farm/
-      label: Wireless Farm Solution
+      label: Беспроводная ферма
   fertigation-system:
     cluster: fertigation
     system:
       path: /ru/irrigation-control-system/
-      label: Irrigation Control System
+      label: Система управления орошением
     landing:
       path: /ru/landing-irrigation-upgrade/
-      label: Farm Irrigation Upgrade
+      label: Модернизация орошения
   landing-irrigation-upgrade:
     cluster: farm_upgrade
     system:
       path: /ru/irrigation-control-system/
-      label: Irrigation Control System
+      label: Система управления орошением
     landing:
       path: /ru/landing-wireless-farm/
-      label: Wireless Farm Solution
+      label: Беспроводная ферма
   landing-wireless-farm:
     cluster: wireless_lora
     system:
       path: /ru/wireless-irrigation-system/
-      label: Wireless Irrigation System
+      label: Беспроводное орошение
     landing:
       path: /ru/landing-irrigation-upgrade/
-      label: Farm Irrigation Upgrade
+      label: Модернизация орошения
   contact:
     cluster: farm_upgrade
     system:
       path: /ru/irrigation-control-system/
-      label: Irrigation Control System
+      label: Система управления орошением
     landing:
       path: /ru/landing-wireless-farm/
-      label: Wireless Farm Solution
+      label: Беспроводная ферма
 
 traffic_examples:
   - source: Google Search
