@@ -1,9 +1,9 @@
 ---
-title: "Wireless Irrigation System (LoRa) for Remote Fields"
-description: "Wireless irrigation system LoRa for Russian remote farms — long-range field control without underground cabling. Farm irrigation automation for large agricultural fields."
+title: "Беспроводная система орошения (LoRa) для удалённых полей"
+description: "Беспроводная система орошения LoRa для удалённых ферм России — управление полями на расстоянии без подземной прокладки кабелей. Автоматизация полива крупных сельхозугодий."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "Long-range wireless irrigation control for remote Russian farmland — no underground cabling, lower installation cost, reliable rural signal."
+hero_subtitle: "Беспроводное управление орошением на большие расстояния для удалённых полей России — без подземных кабелей, ниже стоимость монтажа, надёжный сигнал в сельской местности."
 keywords:
   - wireless irrigation system LoRa
   - irrigation system Russia
@@ -11,43 +11,43 @@ keywords:
   - автоматизация полива
 ---
 
-[← Russia Home](/ru/) · [Contact for system design](/ru/contact/)
+[← Главная /ru/](/ru/) · [Контакты для проектирования](/ru/contact/)
 
-## Problem
+## Проблема
 
-- Long-distance farmland makes wiring expensive
-- Cable failures in winter and freeze-thaw conditions
-- Difficult maintenance in remote agricultural regions
-- High cost to trench signal cables across 100+ hectare fields
+- Большие расстояния на ферме делают прокладку кабелей дорогой
+- Отказы кабелей зимой и при циклах замерзания-оттаивания
+- Сложное обслуживание в удалённых сельхозрегионах
+- Высокая стоимость траншеи для сигнальных кабелей на полях 100+ гектаров
 
-## Solution
+## Решение
 
-Wireless irrigation control system based on long-range LoRa communication. Field valves and pumps are controlled without running control cables across the entire farm.
+Беспроводная система управления орошением на базе связи LoRa дальнего радиуса действия. Клапаны и насосы в поле управляются без прокладки кабелей по всей ферме.
 
-## Features
+## Возможности
 
-- LoRa long-range communication
-- Low power field nodes
-- Stable signal in rural areas
-- Easy expansion for large farms and new zones
+- Связь LoRa на большие расстояния
+- Низкопотребляющие полевые узлы
+- Стабильный сигнал в сельской местности
+- Простое расширение для крупных ферм и новых зон
 
-## Applications
+## Применение
 
-- Remote farms far from the pump house
-- Large agricultural fields (100–5000 hectares)
-- Multi-zone irrigation areas
-- Retrofit of existing manual valve systems
+- Удалённые фермы вдали от насосной станции
+- Крупные сельхозполя (100–5000 гектаров)
+- Мультизонные участки орошения
+- Модернизация существующих ручных клапанных систем
 
-## Advantage in Russia
+## Преимущество в России
 
-- **No underground cabling needed** — avoids trenching cost and winter cable damage
-- **Lower installation cost** — faster deployment across wide fields
-- **Reliable in remote environments** — designed for rural signal conditions, not urban Wi-Fi
+- **Без подземной прокладки кабелей** — экономия на траншеях и защита от зимних повреждений
+- **Ниже стоимость монтажа** — быстрее развёртывание на широких полях
+- **Надёжность в удалённых условиях** — для сельской местности, а не городского Wi-Fi
 
-## Works With Central Control
+## Совместимость с центральным управлением
 
-Wireless nodes integrate with the **[Irrigation Control System](/ru/irrigation-control-system/)** for coordinated pump and zone scheduling across the farm.
+Беспроводные узлы интегрируются с **[Системой управления орошением](/ru/irrigation-control-system/)** для координации насосов и зон по всей ферме.
 
-## Contact
+## Контакты
 
-Discuss wireless layout for your field via **[WhatsApp / Telegram](/ru/contact/)**.
+Обсудите беспроводную схему для вашего поля через **[WhatsApp / Telegram](/ru/contact/)**.

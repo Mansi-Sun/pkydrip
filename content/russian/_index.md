@@ -1,9 +1,9 @@
 ---
-title: "Industrial Irrigation Automation for Russian Farms"
-description: "Reliable irrigation system Russia — farm irrigation automation and large scale irrigation control for 100–5000 hectare fields. Система орошения фермы, автоматизация полива."
+title: "Промышленная автоматизация орошения для российских ферм"
+description: "Надёжная система орошения для России — автоматизация полива и управление крупными полями 100–5000 га. Система орошения фермы, автоматизация полива."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "Reliable irrigation control systems for large agricultural fields in Russia — built for harsh climate, long distances, and low-automation legacy farms."
+hero_subtitle: "Надёжные системы управления орошением для крупных сельхозугодий в России — для сурового климата, больших расстояний и ферм с низким уровнем автоматизации."
 keywords:
   - irrigation system Russia
   - farm irrigation automation
@@ -12,37 +12,37 @@ keywords:
   - автоматизация полива
 ---
 
-## Key Problems in Russian Farms
+## Основные проблемы российских ферм
 
-- Manual irrigation systems still widely used
-- Large field areas require long-distance control
-- Harsh winter conditions damage weak systems
-- High maintenance cost of complex automation
+- По-прежнему широко используются ручные системы полива
+- Большие площади полей требуют управления на расстоянии
+- Суровые зимние условия повреждают ненадёжное оборудование
+- Высокие затраты на обслуживание сложной автоматизации
 
-## Our Solution
+## Наше решение
 
-PKYDrip provides robust irrigation automation systems designed for:
+PKYDrip предлагает надёжные системы автоматизации орошения для:
 
-- Large-scale farmland (100–5000 hectares)
-- Stable pump and valve control
-- Wireless field communication
-- Simple and reliable operation
+- Крупных сельхозугодий (100–5000 гектаров)
+- Стабильного управления насосами и клапанами
+- Беспроводной связи в поле
+- Простой и надёжной эксплуатации
 
-## Core Systems
+## Основные системы
 
-- **[Irrigation Control System](/ru/irrigation-control-system/)** — Centralized pump and multi-zone valve automation for large open fields
-- **[Wireless Irrigation System](/ru/wireless-irrigation-system/)** — LoRa long-range control without expensive underground cabling
-- **[Fertigation System](/ru/fertigation-system/)** — Simple fertilizer injection integrated with irrigation lines
+- **[Система управления орошением](/ru/irrigation-control-system/)** — централизованная автоматизация насосов и клапанов по зонам на открытых полях
+- **[Беспроводная система орошения](/ru/wireless-irrigation-system/)** — управление LoRa на расстоянии без дорогой подземной прокладки кабелей
+- **[Система фертигации](/ru/fertigation-system/)** — простое внесение удобрений через линии орошения
 
-## Why PKYDrip for Russia
+## Почему PKYDrip для России
 
-- **Stability over complexity** — systems designed for reliable daily operation, not over-engineered platforms
-- **Large farm scale** — multi-zone control across long field distances
-- **Low maintenance** — simple structure, easy field servicing
-- **Harsh climate ready** — equipment suited for low-temperature and seasonal operation
+- **Стабильность важнее сложности** — системы для ежедневной надёжной работы, а не перегруженные платформы
+- **Масштаб крупных ферм** — мультизонное управление на больших расстояниях
+- **Низкие затраты на обслуживание** — простая конструкция, удобное полевое обслуживание
+- **Готовность к суровому климату** — оборудование для низких температур и сезонной эксплуатации
 
-## Contact
+## Контакты
 
-Discuss your farm layout and irrigation zones via **[WhatsApp / Telegram](/ru/contact/)** for system consultation.
+Обсудите планировку фермы и зоны орошения через **[WhatsApp / Telegram](/ru/contact/)**.
 
-[← Back to PKYDrip main site](/)
+[← На основной сайт PKYDrip](/)

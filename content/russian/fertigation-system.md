@@ -1,9 +1,9 @@
 ---
-title: "Fertigation System for Crop Nutrition Control"
-description: "Simple fertigation system for Russian grain and vegetable farms — stable fertilizer injection integrated with irrigation. Farm irrigation automation without complex recipe platforms."
+title: "Система фертигации для контроля питания культур"
+description: "Простая система фертигации для зерновых и овощных ферм России — стабильное внесение удобрений через орошение. Автоматизация полива без сложных рецептурных платформ."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "Simple and reliable fertilizer injection integrated with irrigation — stability and simplicity for Russian open-field crops."
+hero_subtitle: "Простое и надёжное внесение удобрений через систему орошения — стабильность и простота для открытых полей России."
 keywords:
   - farm irrigation automation
   - irrigation system Russia
@@ -11,40 +11,40 @@ keywords:
   - система орошения фермы
 ---
 
-[← Russia Home](/ru/) · [Contact for system design](/ru/contact/)
+[← Главная /ru/](/ru/) · [Контакты для проектирования](/ru/contact/)
 
-## Problem
+## Проблема
 
-- Manual fertilizer mixing and inconsistent dosing
-- Uneven nutrient distribution across large fields
-- Lack of control in field fertilization during irrigation windows
-- Complex recipe systems that are hard to maintain locally
+- Ручное смешивание удобрений и нестабильное дозирование
+- Неравномерное распределение питательных веществ на больших полях
+- Отсутствие контроля при внесении удобрений в окна полива
+- Сложные рецептурные системы, трудные в местном обслуживании
 
-## Solution
+## Решение
 
-Simple and reliable fertilizer injection system integrated with irrigation lines. Nutrients are delivered through the same distribution network as water — reducing manual mixing and improving consistency.
+Простая и надёжная система внесения удобрений, интегрированная в линии орошения. Питательные вещества подаются через ту же сеть, что и вода — меньше ручного смешивания, выше стабильность.
 
-## Features
+## Возможности
 
-- Fertilizer dosing control
-- Basic EC/pH monitoring (optional)
-- Pump-based injection system
-- Compatible with irrigation control and wireless field systems
+- Контроль дозирования удобрений
+- Базовый мониторинг EC/pH (опционально)
+- Насосная система внесения
+- Совместимость с системами управления орошением и беспроводными полевыми узлами
 
-## Applications
+## Применение
 
-- Grain farms
-- Vegetable farms
-- Open field crops
+- Зерновые хозяйства
+- Овощные фермы
+- Культуры на открытом грунте
 
-## Note for Russia
+## Примечание для России
 
-Focus on **stability and simplicity** rather than advanced recipe systems. PKYDrip fertigation is designed for dependable field operation — easy to understand, service, and integrate with existing pump infrastructure.
+Акцент на **стабильность и простоту**, а не на сложные рецептурные системы. Фертигация PKYDrip рассчитана на надёжную полевую эксплуатацию — понятная, обслуживаемая, интегрируемая с существующей насосной инфраструктурой.
 
-## Related Systems
+## Связанные системы
 
-Pair with the **[Irrigation Control System](/ru/irrigation-control-system/)** for scheduled nutrient delivery, or expand field reach via the **[Wireless Irrigation System](/ru/wireless-irrigation-system/)**.
+С **[Системой управления орошением](/ru/irrigation-control-system/)** — для планового внесения питательных веществ; с **[Беспроводной системой орошения](/ru/wireless-irrigation-system/)** — для расширения охвата полей.
 
-## Contact
+## Контакты
 
-Request a simple fertigation layout for your farm via **[WhatsApp / Telegram](/ru/contact/)**.
+Запросите простую схему фертигации для вашей фермы через **[WhatsApp / Telegram](/ru/contact/)**.

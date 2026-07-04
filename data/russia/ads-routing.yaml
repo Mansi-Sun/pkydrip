@@ -1,0 +1,165 @@
+# PKYDrip Russia Ads-to-Lead Routing System
+# Traffic Source → Keyword Cluster → Landing Page → WhatsApp/Telegram
+# DO NOT use for English site. Russia /ru/ section only.
+
+priority:
+  high:
+    - path: /ru/landing-irrigation-upgrade/
+      label: Farm Irrigation Upgrade
+      conversion_tier: 1
+    - path: /ru/landing-wireless-farm/
+      label: Wireless Farm Solution
+      conversion_tier: 2
+  mid:
+    - path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+      conversion_tier: 3
+    - path: /ru/wireless-irrigation-system/
+      label: Wireless Irrigation System
+      conversion_tier: 4
+  low:
+    - path: /ru/fertigation-system/
+      label: Fertigation System
+      conversion_tier: 5
+
+clusters:
+  irrigation_control:
+    name: Irrigation Control
+    priority: mid
+    keywords_en:
+      - irrigation system Russia
+      - farm irrigation control system
+      - large field irrigation automation
+    keywords_ru:
+      - система орошения фермы
+      - автоматизация полива поля
+    primary_landing: /ru/irrigation-control-system/
+    secondary_landing: /ru/landing-irrigation-upgrade/
+
+  wireless_lora:
+    name: Wireless Irrigation (LoRa)
+    priority: mid
+    keywords_en:
+      - wireless irrigation system Russia
+      - LoRa irrigation system
+      - remote farm irrigation control
+    keywords_ru:
+      - беспроводная система полива
+      - LoRa сельское хозяйство
+    primary_landing: /ru/wireless-irrigation-system/
+    secondary_landing: /ru/landing-wireless-farm/
+
+  farm_upgrade:
+    name: Farm Upgrade (High Conversion)
+    priority: high
+    keywords_en:
+      - upgrade irrigation system
+      - modernize farm irrigation Russia
+      - replace manual irrigation system
+    keywords_ru:
+      - модернизация системы орошения
+      - автоматизация старого полива
+    primary_landing: /ru/landing-irrigation-upgrade/
+    secondary_landing: /ru/irrigation-control-system/
+
+  fertigation:
+    name: Fertigation (Lower Priority)
+    priority: low
+    keywords_en:
+      - fertigation system Russia
+      - fertilizer injection system
+      - EC pH control system
+    keywords_ru:
+      - система внесения удобрений
+    primary_landing: /ru/fertigation-system/
+    secondary_landing: /ru/landing-irrigation-upgrade/
+
+contact:
+  telegram: "https://t.me/+8617395297329"
+  whatsapp: "https://wa.me/8617395297329"
+  preferred_order:
+    - telegram
+    - whatsapp
+  email_priority: secondary
+
+# Per-page internal linking: 1 system + 1 landing + contact (no isolated pages)
+# Keys use file slug — NOT URL paths (YAML slash keys break Hugo data parsing)
+page_routing:
+  _index:
+    cluster: farm_upgrade
+    system:
+      path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+    landing:
+      path: /ru/landing-irrigation-upgrade/
+      label: Farm Irrigation Upgrade
+  irrigation-control-system:
+    cluster: irrigation_control
+    system:
+      path: /ru/wireless-irrigation-system/
+      label: Wireless Irrigation System
+    landing:
+      path: /ru/landing-irrigation-upgrade/
+      label: Farm Irrigation Upgrade
+  wireless-irrigation-system:
+    cluster: wireless_lora
+    system:
+      path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+    landing:
+      path: /ru/landing-wireless-farm/
+      label: Wireless Farm Solution
+  fertigation-system:
+    cluster: fertigation
+    system:
+      path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+    landing:
+      path: /ru/landing-irrigation-upgrade/
+      label: Farm Irrigation Upgrade
+  landing-irrigation-upgrade:
+    cluster: farm_upgrade
+    system:
+      path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+    landing:
+      path: /ru/landing-wireless-farm/
+      label: Wireless Farm Solution
+  landing-wireless-farm:
+    cluster: wireless_lora
+    system:
+      path: /ru/wireless-irrigation-system/
+      label: Wireless Irrigation System
+    landing:
+      path: /ru/landing-irrigation-upgrade/
+      label: Farm Irrigation Upgrade
+  contact:
+    cluster: farm_upgrade
+    system:
+      path: /ru/irrigation-control-system/
+      label: Irrigation Control System
+    landing:
+      path: /ru/landing-wireless-farm/
+      label: Wireless Farm Solution
+
+traffic_examples:
+  - source: Google Search
+    query: upgrade irrigation system Russia
+    cluster: farm_upgrade
+    landing: /ru/landing-irrigation-upgrade/
+    conversion: WhatsApp / Telegram inquiry
+  - source: Google Search
+    query: wireless irrigation system Russia
+    cluster: wireless_lora
+    landing: /ru/wireless-irrigation-system/
+    conversion: WhatsApp / Telegram inquiry
+  - source: Yandex
+    query: система орошения фермы
+    cluster: irrigation_control
+    landing: /ru/irrigation-control-system/
+    conversion: WhatsApp / Telegram inquiry
+  - source: Google Search
+    query: LoRa irrigation system
+    cluster: wireless_lora
+    landing: /ru/landing-wireless-farm/
+    conversion: WhatsApp / Telegram inquiry

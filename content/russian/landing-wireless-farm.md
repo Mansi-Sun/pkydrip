@@ -1,9 +1,9 @@
 ---
-title: "Wireless Irrigation for Large Russian Farms"
-description: "Wireless irrigation system Russia — LoRa irrigation system Russia for remote farmland without field wiring. Lower installation cost, faster deployment."
+title: "Беспроводное орошение для крупных российских ферм"
+description: "Беспроводная система орошения в России — LoRa irrigation system Russia для удалённых полей без полевой прокладки кабелей. Ниже стоимость монтажа, быстрее развёртывание."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "LoRa-based wireless irrigation control for large Russian farms — no field wiring, long-distance stable communication, low maintenance."
+hero_subtitle: "Беспроводное управление орошением LoRa для крупных российских ферм — без полевой проводки, стабильная связь на расстоянии, низкие затраты на обслуживание."
 keywords:
   - wireless irrigation system Russia
   - LoRa irrigation system Russia
@@ -12,36 +12,36 @@ keywords:
   - система орошения модернизация
 ---
 
-[← Russia Home](/ru/) · [Wireless Irrigation System](/ru/wireless-irrigation-system/) · [Contact](/ru/contact/)
+[← Главная /ru/](/ru/) · [Беспроводная система орошения](/ru/wireless-irrigation-system/) · [Контакты](/ru/contact/)
 
-## Problem
+## Проблема
 
-Cabling is expensive and unreliable in rural areas. Underground cables fail in winter conditions and trenching across 100+ hectare fields adds major installation cost.
+Прокладка кабелей дорога и ненадёжна в сельской местности. Подземные кабели выходят из строя зимой, а траншеи на полях 100+ гектаров существенно увеличивают стоимость монтажа.
 
-## Solution
+## Решение
 
-LoRa-based wireless irrigation control system:
+Беспроводная система управления орошением на базе LoRa:
 
-- No field wiring required
-- Long distance stable communication
-- Low maintenance system
+- Без полевой проводки
+- Стабильная связь на большие расстояния
+- Система с низкими затратами на обслуживание
 
-## Use cases
+## Сценарии применения
 
-- Remote farmland
-- Large agricultural fields (100–5000 ha)
-- Multi-zone irrigation areas
+- Удалённые сельхозугодья
+- Крупные поля (100–5000 га)
+- Мультизонные участки орошения
 
-## Advantage
+## Преимущества
 
-- Lower installation cost
-- Faster deployment
-- Easier maintenance in remote environments
+- Ниже стоимость монтажа
+- Быстрее развёртывание
+- Проще обслуживание в удалённых условиях
 
-## Works with central control
+## Совместимость с центральным управлением
 
-Wireless nodes integrate with the **[Irrigation Control System](/ru/irrigation-control-system/)** for coordinated pump scheduling across the farm.
+Беспроводные узлы интегрируются с **[Системой управления орошением](/ru/irrigation-control-system/)** для координации насосов по всей ферме.
 
-## Contact
+## Контакты
 
-Request wireless system design via **[Telegram / WhatsApp](/ru/contact/)**.
+Запросите проект беспроводной системы через **[Telegram / WhatsApp](/ru/contact/)**.

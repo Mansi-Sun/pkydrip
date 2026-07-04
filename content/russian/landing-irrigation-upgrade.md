@@ -1,9 +1,9 @@
 ---
-title: "Upgrade Your Farm Irrigation System"
-description: "Farm irrigation upgrade Russia — replace manual irrigation with automated pump and valve control for wheat, corn, and large open fields (100–5000 ha). Система орошения модернизация."
+title: "Модернизация системы орошения вашей фермы"
+description: "Модернизация орошения фермы в России — замена ручного полива автоматическим управлением насосами и клапанами для пшеницы, кукурузы и крупных полей (100–5000 га). Система орошения модернизация."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "Replace manual irrigation with automated control — reduce labor cost and scale irrigation across large Russian farmland."
+hero_subtitle: "Замените ручной полив автоматическим управлением — снизьте затраты на труд и масштабируйте орошение на крупных российских полях."
 keywords:
   - farm irrigation upgrade Russia
   - large farm automation system
@@ -12,41 +12,41 @@ keywords:
   - farm irrigation automation
 ---
 
-[← Russia Home](/ru/) · [Irrigation Control System](/ru/irrigation-control-system/) · [Contact](/ru/contact/)
+[← Главная /ru/](/ru/) · [Система управления орошением](/ru/irrigation-control-system/) · [Контакты](/ru/contact/)
 
-## Replace manual irrigation with automated control
+## Замените ручной полив автоматическим управлением
 
-Many Russian farms still use manual irrigation systems that:
+На многих российских фермах по-прежнему используются ручные системы орошения, которые:
 
-- Waste water
-- Require high labor
-- Cannot scale to large fields
+- Тратят воду впустую
+- Требуют много рабочей силы
+- Не масштабируются на большие поля
 
-## Solution
+## Решение
 
-PKYDrip upgrade system allows you to:
+Система модернизации PKYDrip позволяет:
 
-- Automate pump and valve control
-- Divide large fields into zones
-- Control irrigation remotely
-- Reduce labor cost significantly
+- Автоматизировать управление насосами и клапанами
+- Разделить крупные поля на зоны
+- Управлять поливом удалённо
+- Значительно снизить затраты на труд
 
-## Ideal for
+## Подходит для
 
-- Wheat farms
-- Corn farms
-- Large open fields (100–5000 ha)
+- Пшеничных ферм
+- Кукурузных хозяйств
+- Крупных открытых полей (100–5000 га)
 
-## System includes
+## Система включает
 
-- **[Irrigation Control System](/ru/irrigation-control-system/)** — centralized pump and zone automation
-- **[Wireless Field Nodes](/ru/wireless-irrigation-system/)** — LoRa control for remote valves without cabling
-- Pump automation modules
+- **[Система управления орошением](/ru/irrigation-control-system/)** — централизованная автоматизация насосов и зон
+- **[Беспроводные полевые узлы](/ru/wireless-irrigation-system/)** — управление LoRa для удалённых клапанов без кабелей
+- Модули автоматизации насосов
 
-## Industrial farm modernization
+## Промышленная модернизация фермы
 
-This is not a smart-farming SaaS platform. PKYDrip focuses on **reliable industrial upgrade** for existing farms — simple structure, stable operation, and easy field maintenance.
+Это не SaaS-платформа «умного земледелия». PKYDrip ориентирован на **надёжную промышленную модернизацию** существующих ферм — простая конструкция, стабильная работа, лёгкое полевое обслуживание.
 
-## Get system design
+## Получить проект системы
 
-Send farm details via **[WhatsApp / Telegram](/ru/contact/)** — we will recommend a system layout for your field.
+Отправьте данные о ферме через **[WhatsApp / Telegram](/ru/contact/)** — мы порекомендуем схему системы для вашего поля.

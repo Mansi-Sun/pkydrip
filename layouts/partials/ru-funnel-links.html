@@ -1,29 +1,24 @@
-{{ $path := .RelPermalink }}
+{{ $routing := site.Data.russia.ads_routing.page_routing }}
+{{ $key := .File.BaseFileName }}
+{{ if .IsHome }}{{ $key = "_index" }}{{ end }}
+{{ $route := index $routing $key }}
+{{ $contact := site.Data.russia.ads_routing.contact }}
 <section class="ru-funnel" style="background:#f9fbfc;border-top:1px solid #e8ece9;padding:28px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
-      <p style="margin:0 0 12px;font-weight:600;color:#1a3a2a;font-size:15px;">Next step in your project</p>
+      <p style="margin:0 0 12px;font-weight:600;color:#1a3a2a;font-size:15px;">Next step — system · landing · contact</p>
+      {{ if $route }}
       <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        {{ if eq $path "/ru/" }}
-        <a href="{{ `/ru/landing-irrigation-upgrade/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Farm Irrigation Upgrade →</a>
-        <a href="{{ `/ru/landing-wireless-farm/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Wireless Farm Solution →</a>
-        {{ else if or (eq $path "/ru/irrigation-control-system/") (eq $path "/ru/fertigation-system/") }}
-        <a href="{{ `/ru/landing-irrigation-upgrade/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Farm Irrigation Upgrade →</a>
-        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
-        {{ else if eq $path "/ru/wireless-irrigation-system/" }}
-        <a href="{{ `/ru/landing-wireless-farm/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Wireless Farm Solution →</a>
-        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
-        {{ else if eq $path "/ru/landing-irrigation-upgrade/" }}
-        <a href="{{ `/ru/irrigation-control-system/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">← Irrigation Control System</a>
-        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Get System Design →</a>
-        {{ else if eq $path "/ru/landing-wireless-farm/" }}
-        <a href="{{ `/ru/wireless-irrigation-system/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">← Wireless Irrigation System</a>
-        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Request Wireless Design →</a>
-        {{ else if eq $path "/ru/contact/" }}
-        <a href="{{ `/ru/landing-irrigation-upgrade/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Farm Irrigation Upgrade</a>
-        <a href="{{ `/ru/landing-wireless-farm/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Wireless Farm Solution</a>
+        <a href="{{ $route.system.path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f4f8f5;color:#1a3a2a;border:1px solid #dfe8e3;text-decoration:none;font-size:14px;font-weight:600;">{{ $route.system.label }} →</a>
+        <a href="{{ $route.landing.path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#2d6a4f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">{{ $route.landing.label }} →</a>
+        {{ if ne $key "contact" }}
+        <a href="{{ `/ru/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a3a2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
+        {{ else }}
+        <a href="{{ $contact.telegram }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#2AABEE;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Telegram →</a>
+        <a href="{{ $contact.whatsapp }}?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20irrigation%20system%20for%20my%20Russian%20farm.%0A-%20Farm%20size%20(ha)%3A%20%0A-%20Crop%3A%20%0A-%20Irrigation%20method%3A%20%0A-%20Pump%20power%3A%20%0A-%20Zones%3A%20" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">WhatsApp →</a>
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </div>
 </section>

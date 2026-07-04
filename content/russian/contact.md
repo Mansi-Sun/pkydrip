@@ -1,9 +1,9 @@
 ---
-title: "Contact for Irrigation System Design"
-description: "Contact PKYDrip for Russian farm irrigation automation — system recommendation, layout design, and cost range estimate. WhatsApp and Telegram consultation."
+title: "Контакты для проектирования системы орошения"
+description: "Свяжитесь с PKYDrip по автоматизации орошения для российских ферм — рекомендация системы, базовая схема и ориентировочная стоимость. Консультация WhatsApp и Telegram."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "We provide irrigation automation solutions for Russian farms — from 100 to 5000 hectares, harsh climate, and low-automation legacy systems."
+hero_subtitle: "Решения по автоматизации орошения для российских ферм — от 100 до 5000 гектаров, суровый климат и унаследованные системы с низкой автоматизацией."
 keywords:
   - irrigation system Russia
   - farm irrigation automation
@@ -12,38 +12,36 @@ keywords:
   - автоматизация полива
 ---
 
-[← Russia Home](/ru/)
+[← Главная /ru/](/ru/)
 
-We provide irrigation automation solutions for Russian farms.
+Мы предлагаем решения по автоматизации орошения для российских ферм.
 
-## Please Send
+## Пожалуйста, укажите
 
-- Farm size (hectares)
-- Crop type
-- Water source (river, well, reservoir)
-- Number of irrigation zones
-- Pump details (if available)
-- Whether wireless or wired control is preferred
+- Площадь фермы (гектары)
+- Тип культуры
+- Источник воды (река, скважина, водоём)
+- Количество зон орошения
+- Данные о насосе (если есть)
+- Предпочтение: беспроводное или проводное управление
 
-## Response
+## Мы предоставим
 
-We will provide:
+- Рекомендацию по системе
+- Базовую схему размещения
+- Ориентировочный диапазон стоимости
 
-- System recommendation
-- Basic layout design
-- Cost range estimate
+## Основные системы для ознакомления
 
-## Core Systems to Review
+- **[Система управления орошением](/ru/irrigation-control-system/)** — централизованная автоматизация насосов и клапанов
+- **[Беспроводная система орошения](/ru/wireless-irrigation-system/)** — управление LoRa для удалённых полей
+- **[Система фертигации](/ru/fertigation-system/)** — простое внесение питательных веществ
 
-- **[Irrigation Control System](/ru/irrigation-control-system/)** — centralized pump and valve automation
-- **[Wireless Irrigation System](/ru/wireless-irrigation-system/)** — LoRa control for remote fields
-- **[Fertigation System](/ru/fertigation-system/)** — simple nutrient injection
+## Каналы связи
 
-## Contact Channels
+**WhatsApp / Telegram — предпочтительно для быстрого ответа**
 
-**WhatsApp / Telegram preferred for fast response**
+- [WhatsApp — отправить данные о ферме](https://wa.me/8617395297329?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20PKYDrip%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%B5%D1%80%D0%BC%D1%8B%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8.%0A-%20%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%28%D0%B3%D0%B0%29%3A%20%0A-%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%3A%20%0A-%20%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D0%B2%D0%BE%D0%B4%D1%8B%3A%20%0A-%20%D0%97%D0%BE%D0%BD%D1%8B%3A%20%0A-%20%D0%9D%D0%B0%D1%81%D0%BE%D1%81%3A%20)
+- [Telegram — отправить данные о ферме](https://t.me/+8617395297329)
 
-- [WhatsApp — send farm details](https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20irrigation%20automation%20for%20a%20Russian%20farm.%0A-%20Farm%20size%20(ha)%3A%20%0A-%20Crop%3A%20%0A-%20Water%20source%3A%20%0A-%20Zones%3A%20%0A-%20Pump%3A%20)
-- [Telegram — send farm details](https://t.me/+8617395297329)
-
-Typical response includes system type, zone structure, and next-step configuration discussion.
+Типичный ответ включает тип системы, структуру зон и обсуждение следующих шагов по конфигурации.

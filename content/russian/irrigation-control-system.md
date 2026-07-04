@@ -1,9 +1,9 @@
 ---
-title: "Irrigation Control System for Large Farms"
-description: "Large scale irrigation control system for Russian grain, wheat, and corn farms. Centralized pump and valve automation — farm irrigation automation built for harsh climate."
+title: "Система управления орошением для крупных ферм"
+description: "Система управления орошением крупных полей для зерновых, пшеничных и кукурузных хозяйств России. Централизованная автоматизация насосов и клапанов — автоматизация полива для сурового климата."
 layout: russian-page
 hide_main_nav: true
-hero_subtitle: "Centralized pump and valve automation for large farmland irrigation — simple structure, stable operation, easy maintenance."
+hero_subtitle: "Централизованная автоматизация насосов и клапанов для крупных полей — простая конструкция, стабильная работа, лёгкое обслуживание."
 keywords:
   - irrigation system Russia
   - farm irrigation automation
@@ -11,46 +11,46 @@ keywords:
   - автоматизация полива
 ---
 
-[← Russia Home](/ru/) · [Contact for system design](/ru/contact/)
+[← Главная /ru/](/ru/) · [Контакты для проектирования](/ru/contact/)
 
-## Problem in Russia
+## Проблема в России
 
-- Manual valve operation across large fields
-- Uneven water distribution in 100–5000 hectare farms
-- High labor cost for seasonal irrigation crews
-- Lack of centralized pump and zone control
+- Ручное управление клапанами на больших полях
+- Неравномерное распределение воды на фермах 100–5000 гектаров
+- Высокие затраты на сезонные поливальные бригады
+- Отсутствие централизованного управления насосами и зонами
 
-## Solution
+## Решение
 
-Centralized pump and valve automation system for large farmland irrigation. One control point coordinates multiple zones — reducing manual work and improving water distribution consistency.
+Централизованная система автоматизации насосов и клапанов для орошения крупных полей. Одна точка управления координирует несколько зон — снижает ручной труд и улучшает равномерность полива.
 
-## Features
+## Возможности
 
-- Multi-zone irrigation control
-- Pump automation and sequencing
-- Valve sequencing control
-- Manual override mode for field operators
-- Stable operation in low-temperature environments
+- Мультизонное управление орошением
+- Автоматизация и последовательность работы насосов
+- Последовательное управление клапанами
+- Ручной режим для операторов в поле
+- Стабильная работа при низких температурах
 
-## Applications
+## Применение
 
-- Grain farms
-- Wheat farms
-- Corn plantations
-- Large open fields
+- Зерновые хозяйства
+- Пшеничные фермы
+- Кукурузные плантации
+- Крупные открытые поля
 
-## Why It Works in Russia
+## Почему это работает в России
 
-- **Simple structure** — fewer failure points than complex cloud platforms
-- **Easy maintenance** — local technicians can service pumps, valves, and controllers
-- **Long-distance stable control** — zone logic scales with field size
+- **Простая конструкция** — меньше точек отказа, чем у сложных облачных платформ
+- **Лёгкое обслуживание** — местные техники могут обслуживать насосы, клапаны и контроллеры
+- **Стабильное управление на расстоянии** — логика зон масштабируется с размером поля
 
-## Related Systems
+## Связанные системы
 
-For remote fields without cabling infrastructure, combine with the **[Wireless Irrigation System (LoRa)](/ru/wireless-irrigation-system/)**.
+Для удалённых полей без кабельной инфраструктуры — **[Беспроводная система орошения (LoRa)](/ru/wireless-irrigation-system/)**.
 
-For nutrient delivery during irrigation, add the **[Fertigation System](/ru/fertigation-system/)**.
+Для внесения питательных веществ при поливе — **[Система фертигации](/ru/fertigation-system/)**.
 
-## Contact
+## Контакты
 
-System design available via **[WhatsApp / Telegram](/ru/contact/)**.
+Проектирование системы через **[WhatsApp / Telegram](/ru/contact/)**.
