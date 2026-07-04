@@ -84,6 +84,7 @@ utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 google = "" # Your verification code
 bing = "" # Your verification code
 baidu = "" # Your verification code
+yandex = "1d4b233f4a3c160f" # Yandex Webmaster verification
 
 # google map
 [gmap]

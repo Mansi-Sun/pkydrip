@@ -39,6 +39,11 @@
 <meta name="baidu-site-verification" content="{{ . }}" />
 {{ end }}
 
+<!-- yandex site verification -->
+{{ with site.Params.site_verification.yandex }}
+<meta name="yandex-verification" content="{{ . }}" />
+{{ end }}
+
 <!-- favicon -->
 {{ $favicon := site.Params.favicon }}
 {{ if $favicon }}

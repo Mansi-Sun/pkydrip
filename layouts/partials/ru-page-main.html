@@ -15,6 +15,8 @@
   .ru-body .content ul { padding-left:1.25rem; }
   .ru-body .content li { margin-bottom:8px; }
   .ru-body .content a { color:#2d6a4f; font-weight:600; }
+  .ru-product-image { padding:0 20px 36px; background:#f9fbfc; }
+  .ru-product-image img { width:100%; border-radius:12px; border:1px solid #e0e8e4; box-shadow:0 8px 24px rgba(0,0,0,0.06); display:block; }
 </style>
 
 <nav class="ru-nav">
@@ -42,6 +44,14 @@
   <div class="container">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.hero_image }}
+<section class="ru-product-image">
+  <div class="container" style="max-width:900px;margin:0 auto;">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.hero_image_alt | default $.Title }}" loading="lazy">
   </div>
 </section>
 {{ end }}

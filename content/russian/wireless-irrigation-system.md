@@ -4,6 +4,8 @@ description: "Беспроводная система орошения LoRa дл
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Беспроводное управление орошением на большие расстояния для удалённых полей России — без подземных кабелей, ниже стоимость монтажа, надёжный сигнал в сельской местности."
+hero_image: "images/brochure/lora-wireless-irrigation.jpg"
+hero_image_alt: "Беспроводная система орошения LoRa для удалённых полевых клапанов"
 keywords:
   - wireless irrigation system LoRa
   - irrigation system Russia
