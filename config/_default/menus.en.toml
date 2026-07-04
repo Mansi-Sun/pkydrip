@@ -1,10 +1,4 @@
-############# English navigation — system-first IA ##############
-
-# main menu
-[[main]]
-name = "Home"
-url = ""
-weight = 1
+############# English navigation — stabilized IA ##############
 
 [[main]]
 name = "Systems"
@@ -30,9 +24,38 @@ url = "system/climate-control-system/"
 weight = 3
 
 [[main]]
+name = "Solutions"
+url = "solution/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Open Field Farming"
+url = "solution/open-field-irrigation/"
+weight = 1
+
+[[main]]
+parent = "Solutions"
+name = "Greenhouse Farming"
+url = "solution/greenhouse-irrigation/"
+weight = 2
+
+[[main]]
+parent = "Solutions"
+name = "Orchard Systems"
+url = "solution/orchard-irrigation/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Hydroponic Systems"
+url = "solution/hydroponic-irrigation/"
+weight = 4
+
+[[main]]
 name = "Markets"
 url = "ru/"
-weight = 3
+weight = 4
 
 [[main]]
 parent = "Markets"
@@ -65,43 +88,31 @@ url = "cn/"
 weight = 5
 
 [[main]]
-name = "Scenarios"
-url = "solution/"
-weight = 4
+name = "Company"
+url = "about/"
+weight = 5
 
 [[main]]
-parent = "Scenarios"
-name = "Open Field Farming"
-url = "solution/open-field-irrigation/"
+parent = "Company"
+name = "About PKYDrip"
+url = "about/"
 weight = 1
 
 [[main]]
-parent = "Scenarios"
-name = "Greenhouse Farming"
-url = "solution/greenhouse-irrigation/"
+parent = "Company"
+name = "Contact"
+url = "contact/"
 weight = 2
 
 [[main]]
-parent = "Scenarios"
-name = "Orchard Systems"
-url = "solution/orchard-irrigation/"
+parent = "Company"
+name = "System Architecture"
+url = "system-architecture/"
 weight = 3
 
 [[main]]
-parent = "Scenarios"
-name = "Hydroponic Systems"
-url = "solution/hydroponic-irrigation/"
-weight = 4
-
-[[main]]
-parent = "Scenarios"
-name = "Retrofit Irrigation"
-url = "solution/irrigation-retrofit-upgrade/"
-weight = 5
-
-[[main]]
 name = "Resources"
-weight = 5
+weight = 6
 
 [[main]]
 parent = "Resources"
@@ -121,25 +132,20 @@ name = "Downloads"
 url = "downloads/"
 weight = 3
 
-[[main]]
-name = "Contact"
-url = "contact/"
-weight = 6
-
-# footer menu (theme fallback — custom footer.html is primary)
+# footer menu (theme fallback)
 [[footer]]
 name = "About"
 url = "about/"
 weight = 1
 
 [[footer]]
-name = "Scenarios"
+name = "Solutions"
 url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Download"
-url = "downloads/"
+name = "Contact"
+url = "contact/"
 weight = 3
 
 [[footer]]
@@ -148,6 +154,6 @@ url = "faq/"
 weight = 4
 
 [[footer]]
-name = "Contact"
-url = "contact/"
+name = "Downloads"
+url = "downloads/"
 weight = 5

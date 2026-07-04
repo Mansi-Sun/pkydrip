@@ -2,12 +2,15 @@
 
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="pkydrip-home-hero" style="position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(22,42,34,0.52) 0%,rgba(22,42,34,0.38) 100%),url('{{ .bg_image | relURL }}') center/cover no-repeat;padding:96px 24px 88px;">
+<section class="pkydrip-home-hero" style="position:relative;min-height:480px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(22,42,34,0.55) 0%,rgba(22,42,34,0.4) 100%),url('{{ .bg_image | relURL }}') center/cover no-repeat;padding:88px 24px 80px;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9 text-center">
         {{ with .title }}
-        <h1 style="margin:0;font-size:clamp(28px,4.2vw,44px);line-height:1.28;color:#fff;font-weight:700;letter-spacing:0.02em;text-shadow:0 2px 24px rgba(0,0,0,0.25);">{{ . | markdownify }}</h1>
+        <h1 style="margin:0 0 20px;font-size:clamp(28px,4vw,42px);line-height:1.28;color:#fff;font-weight:700;letter-spacing:0.02em;text-shadow:0 2px 20px rgba(0,0,0,0.22);">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .content }}
+        <p style="margin:0 auto;max-width:720px;font-size:17px;line-height:1.75;color:rgba(255,255,255,0.92);font-weight:400;text-shadow:0 1px 12px rgba(0,0,0,0.18);">{{ . }}</p>
         {{ end }}
       </div>
     </div>
@@ -20,10 +23,26 @@
 {{ if .enable }}
 <section class="section" style="padding:64px 0 56px;background:#fff;">
   <div class="container">
-    <div class="row justify-content-center g-3" style="max-width:920px;margin:0 auto;">
+    {{ with .title }}
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center" style="margin-bottom:28px;">
+        <h2 style="margin:0;font-size:28px;color:#1a3a2a;font-weight:700;">{{ . }}</h2>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row justify-content-center g-4">
       {{ range .items }}
-      <div class="col-md-4">
-        <a href="{{ .url | relLangURL }}" style="display:block;padding:28px 20px;text-align:center;border:1px solid #e4ebe6;border-radius:12px;background:#fafbfa;text-decoration:none;color:#1a3a2a;font-weight:600;font-size:16px;line-height:1.4;transition:box-shadow .2s,border-color .2s;">{{ .name }}</a>
+      {{ $item := . }}
+      <div class="col-md-6 col-lg-4">
+        <a href="{{ $item.url | relLangURL }}" class="pkydrip-system-card" style="display:flex;flex-direction:column;height:100%;border:1px solid #e4ebe6;border-radius:12px;background:#fafbfa;text-decoration:none;color:#1a3a2a;overflow:hidden;">
+          {{ with $item.image }}
+          <img src="{{ . | relURL }}" alt="{{ $item.name }}" style="width:100%;height:180px;object-fit:cover;">
+          {{ end }}
+          <div style="padding:22px 20px;flex:1;display:flex;flex-direction:column;">
+            <h3 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.35;">{{ $item.name }}</h3>
+            {{ with $item.desc }}<p style="margin:0;color:#555;font-size:14px;line-height:1.65;font-weight:400;flex:1;">{{ . }}</p>{{ end }}
+          </div>
+        </a>
       </div>
       {{ end }}
     </div>
@@ -32,11 +51,25 @@
 {{ end }}
 {{ end }}
 
-{{ with .Params.entry }}
+{{ with .Params.global_context }}
 {{ if .enable }}
-<section class="section" style="padding:56px 0 80px;background:#f6f8f7;">
-  <div class="container text-center">
-    <a href="{{ .url | relLangURL }}" class="btn btn-main" style="padding:16px 32px;font-size:15px;font-weight:600;">{{ .label }}</a>
+<section class="section" style="padding:56px 0 72px;background:#f6f8f7;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        {{ with .title }}<h2 style="margin:0 0 16px;font-size:26px;color:#1a3a2a;font-weight:700;">{{ . }}</h2>{{ end }}
+        {{ with .content }}<p style="margin:0 0 20px;color:#555;font-size:16px;line-height:1.75;">{{ . }}</p>{{ end }}
+        {{ with .points }}
+        <ul style="list-style:none;margin:0;padding:0;text-align:left;max-width:560px;margin:0 auto;">
+          {{ range . }}
+          <li style="padding:10px 0 10px 20px;border-bottom:1px solid #e4ebe6;color:#555;font-size:15px;line-height:1.6;position:relative;">
+            <span style="position:absolute;left:0;color:#3d6a52;">—</span>{{ . }}
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
   </div>
 </section>
 {{ end }}

@@ -401,6 +401,17 @@ header {
   margin-bottom: 1.25rem;
 }
 
+.pkydrip-footer__row {
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+
+    > [class*="col-lg-3"] {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+}
+
 .pkydrip-footer__title {
   font-size: 1.05rem;
   font-weight: 700;
