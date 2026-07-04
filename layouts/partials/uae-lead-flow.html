@@ -1,0 +1,24 @@
+{{ $contact := site.Data.uae.ads_routing.contact }}
+<section class="uae-lead" style="background:#fff;border-top:1px solid #e8dfd0;padding:40px 20px;">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;">
+      <h2 style="margin:0 0 14px;font-size:24px;color:#1a4a5c;">Request a UAE farm system recommendation</h2>
+      <p style="margin:0 0 16px;color:#444;line-height:1.7;">Share your farm details via <strong>WhatsApp</strong> (preferred for UAE projects) or <strong>email</strong>. We will recommend a water-efficient irrigation and greenhouse automation plan.</p>
+      <p style="margin:0 0 10px;font-weight:600;color:#333;">Please provide:</p>
+      <ul style="margin:0 0 20px;padding-left:1.25rem;color:#555;line-height:1.8;">
+        <li>Farm type (greenhouse / open field / hydroponic)</li>
+        <li>Crop type</li>
+        <li>Water source type</li>
+        <li>Farm size</li>
+        <li>Irrigation zones</li>
+      </ul>
+      <p style="margin:0 0 18px;color:#666;font-size:15px;">→ System recommendation · water optimization plan · fertigation concept · equipment configuration</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="{{ $contact.whatsapp }}?text={{ $contact.whatsapp_text }}" target="_blank" rel="noopener" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-weight:600;font-size:15px;">WhatsApp — preferred</a>
+        <a href="{{ $contact.mailto }}" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#1a4a5c;color:#fff;text-decoration:none;font-weight:600;font-size:15px;">Email</a>
+        <a href="{{ `/uae/contact/` | relLangURL }}" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#faf8f4;color:#1a4a5c;border:1px solid #e0d5c4;text-decoration:none;font-weight:600;font-size:15px;">Contact page</a>
+      </div>
+      <p style="margin:16px 0 0;color:#888;font-size:13px;">For UAE agricultural projects: WhatsApp is the primary contact channel.</p>
+    </div>
+  </div>
+</section>

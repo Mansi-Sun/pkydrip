@@ -1,0 +1,10 @@
+# UAE UI strings for /uae/ section (Hugo i18n)
+
+[contact_whatsapp]
+other = "WhatsApp"
+
+[contact_email]
+other = "Email"
+
+[home]
+other = "Home"

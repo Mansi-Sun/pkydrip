@@ -33,3 +33,11 @@ languageCode = "ru-RU"
 contentDir = "content/russian"
 weight = 5
 title = "PKYDrip — автоматизация орошения для России"
+
+################ UAE market #####################
+[uae]
+languageName = "UAE"
+languageCode = "en-AE"
+contentDir = "content/uae"
+weight = 6
+title = "PKYDrip — Smart Agriculture Systems for UAE"

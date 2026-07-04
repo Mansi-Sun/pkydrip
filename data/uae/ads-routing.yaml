@@ -1,0 +1,140 @@
+# PKYDrip UAE Ads-to-Lead Routing System
+# Precision agriculture · water efficiency · greenhouse focus
+# DO NOT use for English, Russia, or Saudi sections.
+
+priority:
+  high:
+    - path: /uae/contact/
+      label: Farm System Inquiry
+      conversion_tier: 1
+  mid:
+    - path: /uae/irrigation-control-system/
+      label: Irrigation Control System
+      conversion_tier: 2
+    - path: /uae/fertigation-system/
+      label: Fertigation System
+      conversion_tier: 3
+    - path: /uae/climate-control-system/
+      label: Greenhouse Climate Control
+      conversion_tier: 4
+  low:
+    - path: /uae/
+      label: UAE Smart Agriculture Hub
+      conversion_tier: 5
+
+clusters:
+  smart_agriculture:
+    name: Smart Agriculture UAE
+    priority: low
+    keywords:
+      - smart irrigation UAE
+      - water saving agriculture UAE
+      - precision farming UAE
+      - greenhouse irrigation system UAE
+    primary_landing: /uae/
+    secondary_landing: /uae/irrigation-control-system/
+
+  water_efficiency:
+    name: Water-Efficient Irrigation
+    priority: mid
+    keywords:
+      - drip irrigation UAE greenhouse
+      - irrigation control system UAE
+      - water saving agriculture UAE
+      - smart irrigation UAE
+    primary_landing: /uae/irrigation-control-system/
+    secondary_landing: /uae/fertigation-system/
+
+  fertigation_precision:
+    name: Fertigation & Nutrient Control
+    priority: mid
+    keywords:
+      - fertigation system UAE
+      - hydroponic system UAE
+      - EC pH control greenhouse
+      - nutrient injection system UAE
+    primary_landing: /uae/fertigation-system/
+    secondary_landing: /uae/irrigation-control-system/
+
+  greenhouse_climate:
+    name: Greenhouse Climate Control
+    priority: mid
+    keywords:
+      - greenhouse climate control UAE
+      - greenhouse irrigation system UAE
+      - hydroponic system UAE
+      - vertical farming UAE
+    primary_landing: /uae/climate-control-system/
+    secondary_landing: /uae/fertigation-system/
+
+contact:
+  email: "info@pky-dripirrigation.com"
+  mailto: "mailto:info@pky-dripirrigation.com?subject=UAE%20Farm%20System%20Inquiry%20-%20PKYDrip&body=Hello%20PKYDrip%2C%0A%0APlease%20recommend%20a%20farm%20automation%20system%20for%20my%20UAE%20project.%0A-%20Farm%20type%3A%20%0A-%20Crop%20type%3A%20%0A-%20Water%20source%3A%20%0A-%20Farm%20size%3A%20%0A-%20Irrigation%20zones%3A%20"
+  whatsapp: "https://wa.me/8617395297329"
+  whatsapp_text: "Hello%20PKYDrip%21%20Please%20recommend%20a%20farm%20automation%20system%20for%20my%20UAE%20project.%0A-%20Farm%20type%3A%20%0A-%20Crop%20type%3A%20%0A-%20Water%20source%3A%20%0A-%20Farm%20size%3A%20%0A-%20Irrigation%20zones%3A%20"
+  preferred_order:
+    - whatsapp
+    - email
+
+page_routing:
+  _index:
+    cluster: smart_agriculture
+    related:
+      - path: /uae/irrigation-control-system/
+        label: Irrigation Control
+      - path: /uae/fertigation-system/
+        label: Fertigation System
+      - path: /uae/climate-control-system/
+        label: Climate Control
+  irrigation-control-system:
+    cluster: water_efficiency
+    related:
+      - path: /uae/fertigation-system/
+        label: Fertigation System
+      - path: /uae/climate-control-system/
+        label: Climate Control
+  fertigation-system:
+    cluster: fertigation_precision
+    related:
+      - path: /uae/irrigation-control-system/
+        label: Irrigation Control
+      - path: /uae/climate-control-system/
+        label: Climate Control
+  climate-control-system:
+    cluster: greenhouse_climate
+    related:
+      - path: /uae/irrigation-control-system/
+        label: Irrigation Control
+      - path: /uae/fertigation-system/
+        label: Fertigation System
+  contact:
+    cluster: smart_agriculture
+    related:
+      - path: /uae/irrigation-control-system/
+        label: Irrigation Control
+      - path: /uae/fertigation-system/
+        label: Fertigation System
+      - path: /uae/climate-control-system/
+        label: Climate Control
+
+traffic_examples:
+  - source: Google Search
+    query: greenhouse irrigation system UAE
+    cluster: water_efficiency
+    landing: /uae/irrigation-control-system/
+    conversion: WhatsApp farm inquiry
+  - source: Google Search
+    query: fertigation system UAE
+    cluster: fertigation_precision
+    landing: /uae/fertigation-system/
+    conversion: WhatsApp farm inquiry
+  - source: Google Search
+    query: hydroponic system UAE
+    cluster: fertigation_precision
+    landing: /uae/fertigation-system/
+    conversion: WhatsApp farm inquiry
+  - source: Google Search
+    query: water saving agriculture UAE
+    cluster: smart_agriculture
+    landing: /uae/
+    conversion: WhatsApp farm inquiry
