@@ -4,8 +4,8 @@ description: "Простая система фертигации для зерн
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Простое и надёжное внесение удобрений через систему орошения — стабильность и простота для открытых полей России."
-hero_image: "images/solution/open-field-irrigation/fertigation-equipment.jpg"
-hero_image_alt: "Оборудование фертигации для внесения удобрений через систему орошения"
+hero_image: "images/russia/ru-fertigation.webp"
+hero_image_alt: "Схема системы фертигации для внесения удобрений через орошение"
 keywords:
   - farm irrigation automation
   - irrigation system Russia

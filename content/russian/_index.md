@@ -4,8 +4,8 @@ description: "Надёжная система орошения для Росси
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Надёжные системы управления орошением для крупных сельхозугодий в России — для сурового климата, больших расстояний и ферм с низким уровнем автоматизации."
-hero_image: "images/brochure/applications-open-field.jpg"
-hero_image_alt: "Крупное открытое поле с системой орошения PKYDrip"
+hero_image: "images/russia/ru-home-open-field.webp"
+hero_image_alt: "Схема автоматизации орошения для крупных открытых полей России"
 keywords:
   - irrigation system Russia
   - farm irrigation automation

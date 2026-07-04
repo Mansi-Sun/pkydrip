@@ -4,8 +4,8 @@ description: "Система управления орошением крупн�
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Централизованная автоматизация насосов и клапанов для крупных полей — простая конструкция, стабильная работа, лёгкое обслуживание."
-hero_image: "images/solution/controller-valve-pump-combination.webp"
-hero_image_alt: "Контроллер орошения, насос и клапаны в единой системе управления"
+hero_image: "images/russia/ru-irrigation-control.webp"
+hero_image_alt: "Схема централизованной системы управления орошением для крупных ферм"
 keywords:
   - irrigation system Russia
   - farm irrigation automation
