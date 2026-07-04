@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- banner -->
+<!-- hero -->
 {{ with .Params.banner }}
 {{ if .enable }}
 <section class="pkydrip-home-hero" style="background:linear-gradient(180deg,#dfe8ef 0%,#eef3f7 55%,#f9fbfc 100%);padding:72px 0 56px;position:relative;">
@@ -9,20 +9,12 @@
       <div class="col-lg-10 text-center">
         {{ with .title }}<h1 style="margin:0 0 16px;font-size:38px;line-height:1.25;color:#1a3a2a;font-weight:700;letter-spacing:0.02em;">{{ . | markdownify }}</h1>{{ end }}
         {{ with .bg_image }}
-        <img src="{{ . | relURL }}" alt="Global agricultural automation system map — regional infrastructure and system flows" style="width:100%;max-width:920px;margin:0 auto 20px;display:block;border-radius:12px;border:1px solid #d5dee6;box-shadow:0 8px 28px rgba(26,58,42,0.08);background:#fff;" loading="eager">
+        <img src="{{ . | relURL }}" alt="Global agricultural automation infrastructure map" style="width:100%;max-width:920px;margin:0 auto 20px;display:block;border-radius:12px;border:1px solid #d5dee6;box-shadow:0 8px 28px rgba(26,58,42,0.08);background:#fff;" loading="eager">
         {{ end }}
         {{ with .content }}<div style="max-width:760px;margin:0 auto 24px;color:#555;font-size:17px;line-height:1.75;font-weight:400;">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
-          {{ with .button }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-          {{ with .button_secondary }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp" style="background:transparent;border:2px solid #1a3a2a;color:#1a3a2a;">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
+          {{ with .button }}{{ if .enable }}<a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>{{ end }}{{ end }}
+          {{ with .button_secondary }}{{ if .enable }}<a href="{{ .link }}" class="btn btn-main animated fadeInUp" style="background:transparent;border:2px solid #1a3a2a;color:#1a3a2a;">{{ .label }}</a>{{ end }}{{ end }}
         </div>
       </div>
     </div>
@@ -30,42 +22,25 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /banner -->
 
-<!-- global platform structure -->
-{{ with .Params.platform }}
+<!-- section 1: philosophy -->
+{{ with .Params.philosophy }}
 {{ if .enable }}
-<section class="section" style="padding:48px 0 32px 0;background:#fff;">
+<section class="section" style="padding:50px 0 40px;background:#fff;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center">
         <div class="section-title" style="margin-bottom:20px;">
           <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-          {{ with .content }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-style:normal;font-weight:400;">{{ . }}</p>{{ end }}
+          <p style="color:#1a3a2a;max-width:720px;margin:0 auto 12px;line-height:1.7;font-size:20px;font-weight:600;font-style:normal;">{{ .content }}</p>
+          {{ with .subcontent }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.75;font-weight:400;">{{ . }}</p>{{ end }}
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top:8px;display:flex;flex-wrap:wrap;">
-      {{ range .layers }}
-      <div class="col-md-4 col-sm-12" style="margin-bottom:20px;display:flex;">
-        <div style="width:100%;display:flex;flex-direction:column;padding:28px 24px;border:1px solid #dde3e8;border-radius:14px;background:#f9fbfc;box-shadow:0 4px 14px rgba(0,0,0,0.03);">
-          <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#4a9fd4;text-transform:uppercase;letter-spacing:0.04em;">Infrastructure layer</p>
-          <h4 style="margin-bottom:12px;line-height:1.4;color:#1a3a2a;">{{ .title }}</h4>
-          <p style="color:#666;line-height:1.75;flex:1;margin-bottom:20px;font-size:15px;">{{ .desc }}</p>
-          <a href="{{ .link | relLangURL }}" style="color:#1a3a2a;font-weight:600;text-decoration:none;font-size:14px;">{{ .label }} →</a>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    {{ with .markets }}
-    <div class="row justify-content-center" style="margin-top:8px;">
-      <div class="col-md-10 text-center">
-        <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#888;">Regional markets</p>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
-          {{ range . }}
-          <a href="{{ .url }}" style="padding:8px 16px;border-radius:8px;background:#f0f4f8;color:#333;border:1px solid #dde3e8;text-decoration:none;font-size:13px;font-weight:500;">{{ .label }}</a>
-          {{ end }}
-        </div>
+    {{ with .image }}
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.philosophy.image_alt | default "Agricultural system layers" }}" style="width:100%;max-width:900px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.05);">
       </div>
     </div>
     {{ end }}
@@ -73,81 +48,39 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /global platform structure -->
 
-<!-- about -->
-<!-- what we help you build -->
-<section class="section" style="padding:50px 0 40px 0; background:#f9fbfc;">
-  <div class="container">
-
-    <!-- 标题 -->
-    <div class="row justify-content-center">
-      <div class="col-md-10 text-center">
-        <div class="section-title" style="margin-bottom:20px;">
-          <h2 style="margin-bottom:12px;">What We Help You Build</h2>
-          <p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-style:normal;font-weight:400;">
-            A global agricultural automation platform — environment layers, control systems,
-            and regional farm configurations working as one infrastructure model.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 系统图 -->
-    <div class="row justify-content-center">
-      <div class="col-md-12 text-center">
-        <img src="/images/home/agricultural-system-layers.svg" 
-             alt="Agricultural system layer diagram — environment, irrigation, fertigation, climate control, and agricultural output"
-             style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.05);">
-      </div>
-    </div>
-
-  <div style="margin-top:25px;">
-  <a href="/tools/irrigation-design-wizard/" class="btn btn-main">
-    Start Your Irrigation Plan
-  </a>
- </div>
-    
-    <!-- 可选：补一行强化理解 -->
-    <div class="row justify-content-center" style="margin-top:20px;">
-      <div class="col-md-8 text-center">
-        <p style="color:#777; font-size:15px; line-height:1.7;">
-          Environment → Control Systems (Irrigation · Fertigation · Wireless · Climate · Monitoring) → Agricultural Output
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- /what we help you build -->
-<!-- /about -->
-
-<!-- agricultural automation systems -->
+<!-- section 2: core systems (3 only) -->
 {{ with .Params.systems }}
 {{ if .enable }}
-<section class="section" style="padding:50px 0 40px 0;">
+<section class="section" style="padding:50px 0 40px;background:#f9fbfc;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center">
         <div class="section-title" style="margin-bottom:20px;">
           <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-          {{ with .content }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-style:normal;font-weight:400;">{{ . }}</p>{{ end }}
+          {{ with .content }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-weight:400;">{{ . }}</p>{{ end }}
         </div>
       </div>
     </div>
     <div class="row justify-content-center" style="margin-top:10px;">
       {{ range .items }}
-      <div class="col-md-6 col-lg-4" style="margin-bottom:16px;">
-        <a href="{{ .url | relLangURL }}" style="display:flex;flex-direction:column;height:100%;padding:22px 20px;border:1px solid #e8e8e8;border-radius:14px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.03);text-decoration:none;color:#222;">
-          <span style="font-weight:600;margin-bottom:8px;">{{ .name }}</span>
-          {{ with .desc }}<span style="color:#666;font-size:14px;line-height:1.6;font-weight:400;flex:1;">{{ . }}</span>{{ end }}
-          <span style="margin-top:12px;font-size:13px;font-weight:600;color:#1a3a2a;">View System →</span>
+      {{ $item := . }}
+      <div class="col-md-6 col-lg-4" style="margin-bottom:20px;">
+        <a href="{{ $item.url | relLangURL }}" style="display:flex;flex-direction:column;height:100%;padding:0;border:1px solid #e8e8e8;border-radius:14px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.03);text-decoration:none;color:#222;overflow:hidden;">
+          {{ with $item.image }}
+          <img src="{{ . | relURL }}" alt="{{ $item.name }}" style="width:100%;height:160px;object-fit:cover;background:#f6f9fb;border-bottom:1px solid #eef2f5;">
+          {{ end }}
+          <div style="padding:22px 20px;display:flex;flex-direction:column;flex:1;">
+            <span style="font-weight:600;margin-bottom:8px;">{{ $item.name }}</span>
+            {{ with $item.desc }}<span style="color:#666;font-size:14px;line-height:1.6;font-weight:400;flex:1;">{{ . }}</span>{{ end }}
+            <span style="margin-top:12px;font-size:13px;font-weight:600;color:#1a3a2a;">View System →</span>
+          </div>
         </a>
       </div>
       {{ end }}
     </div>
     {{ with .cta_label }}
-    <div class="row justify-content-center" style="margin-top:20px;">
+    <div class="row justify-content-center" style="margin-top:12px;">
       <div class="col-md-10 text-center">
         <a href="{{ $.Params.systems.cta_url | relLangURL }}" class="btn btn-main">{{ . }}</a>
       </div>
@@ -157,112 +90,54 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /agricultural automation systems -->
 
-<!-- why pkydrip systems -->
-{{ with .Params.systems_value }}
+<!-- section 3: global logic -->
+{{ with .Params.global_logic }}
 {{ if .enable }}
-<section class="section" style="padding:0 0 50px 0; background:#f9fbfc;">
+<section class="section" id="global-markets" style="padding:50px 0 40px;background:#fff;">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="section-title text-center" style="margin-bottom:20px;">
+      <div class="col-md-10 text-center">
+        <div class="section-title" style="margin-bottom:20px;">
           <h2 style="margin-bottom:12px;">{{ .title }}</h2>
+          {{ with .content }}<p style="color:#555;max-width:800px;margin:0 auto;line-height:1.7;font-weight:400;">{{ . }}</p>{{ end }}
         </div>
-        <ul style="max-width:720px;margin:0 auto;padding-left:1.25rem;color:#555;line-height:1.9;font-size:16px;">
-          {{ range .items }}
-          <li style="margin-bottom:8px;">{{ . }}</li>
-          {{ end }}
-        </ul>
+      </div>
+    </div>
+    {{ with .image }}
+    <div class="row justify-content-center" style="margin-bottom:28px;">
+      <div class="col-md-12 text-center">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.global_logic.image_alt | default "Global system logic" }}" style="width:100%;max-width:960px;border-radius:12px;border:1px solid #dde3e8;">
+      </div>
+    </div>
+    {{ end }}
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <p style="margin:0 0 12px;font-size:13px;font-weight:700;color:#4a9fd4;text-transform:uppercase;letter-spacing:0.04em;">Regional Markets</p>
+        {{ range .markets }}
+        <a href="{{ .url }}" style="display:block;padding:16px 18px;margin-bottom:10px;border:1px solid #dde3e8;border-radius:12px;background:#f9fbfc;text-decoration:none;color:#222;">
+          <span style="font-weight:600;display:block;margin-bottom:4px;">{{ .label }}</span>
+          <span style="color:#666;font-size:14px;display:block;">{{ .context }}</span>
+          <span style="color:#888;font-size:12px;margin-top:6px;display:block;">Systems: {{ .systems }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <p style="margin:0 0 12px;font-size:13px;font-weight:700;color:#3d6a52;text-transform:uppercase;letter-spacing:0.04em;">Deployment Scenarios</p>
+        {{ range .scenarios }}
+        <a href="{{ .url | relLangURL }}" style="display:block;padding:14px 18px;margin-bottom:10px;border:1px solid #dde3e8;border-radius:12px;background:#fff;text-decoration:none;color:#1a3a2a;font-weight:600;font-size:15px;">{{ .label }} →</a>
+        {{ end }}
+        <a href="{{ `/solution/` | relLangURL }}" style="display:block;padding:14px 18px;margin-top:4px;border:1px dashed #c5d0d8;border-radius:12px;text-decoration:none;color:#555;font-size:14px;">Browse all deployment scenarios →</a>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
-<!-- /why pkydrip systems -->
-
-<!-- portfolio -->
-{{ with .Params.portfolio }}
-{{ if .enable }}
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-6"></div>
-      <div class="col-md-6 col-md-offset-6">
-        {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        {{ with .button }}
-        {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /portfolio -->
-
-<!-- service -->
-{{ if .Params.service.enable }}
-{{ partial "service.html" . }}
-{{ end }}
-<!-- /service -->
 
 <!-- call to action -->
 {{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
-<!-- /call to action -->
-
-<!-- funfacts -->
-{{ with .Params.funfacts }}
-{{ if .enable }}
-<section class="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="block">
-          <ul class="counter-box clearfix">
-            {{ range .funfact_item }}
-            <li class="counter-item">
-              <i class="{{ .icon }}"></i>
-              <h4 class="count" data-count="{{ .count }}">0</h4>
-              <span>{{ .name | markdownify }}</span>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .testimonial_slider }}
-            <div>
-              <i class="fas fa-quote-left"></i>
-              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-              <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /funfacts -->
 
 {{ end }}

@@ -28,7 +28,15 @@ keywords:
 
 [← الرئيسية /sa/](/sa/)
 
-## تحديات الزراعة السعودية
+## Regional System Context
+
+This is **not a translation of the global homepage**. Saudi farms require large-scale irrigation infrastructure across desert field regions.
+
+| System | Regional adaptation |
+|--------|---------------------|
+| **Irrigation Control** | Multi-zone pump and valve coordination across vast farm areas |
+| **Fertigation** | Optional nutrient support for specific crop zones |
+| **Field expansion** | Wireless modules for long-distance field connectivity |
 
 - مساحات زراعية ضخمة — مئات إلى آلاف الهكتارات
 - بيئة صحراوية قاسية تُجهد المعدات التشغيلية

@@ -26,7 +26,15 @@ keywords:
 
 [← Home /za/](/za/)
 
-## South African Agriculture Challenge
+## Regional System Context
+
+This is **not a translation of the global homepage**. South African farms often face unreliable grid power and off-grid conditions where solar-driven irrigation retrofit is the primary system need.
+
+| System | Regional adaptation |
+|--------|---------------------|
+| **Irrigation Control** | Pump and valve retrofit automation for existing infrastructure |
+| **Solar integration** | Off-grid and backup energy for irrigation operation |
+| **Climate layers** | Where greenhouse or nursery projects require environmental control |
 
 - Unreliable grid electricity in many rural farming areas
 - High cost of diesel pumping for irrigation

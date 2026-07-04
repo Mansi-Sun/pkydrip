@@ -15,16 +15,16 @@ tags:
   - lora-wireless
 
 hero:
-  title: "Open Field Irrigation Pump & Valve Control System"
-  subtitle: "Automated pump and valve control for large-area irrigation projects."
-  image: "images/brochure/applications-open-field.jpg"
-  image_alt: "Open field irrigation pump station, pipelines, and control system"
+  title: "Open Field Farming — Irrigation Control Deployment"
+  subtitle: "System-level zone irrigation for large-area field regions — pump coordination, valve sequencing, and regional infrastructure."
+  image: "images/system/app-open-field.svg"
+  image_alt: "Open field farming deployment scenario — regional irrigation zones and control network"
   cta_primary:
     label: "Discuss Your Project"
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Solution%3A%20Open%20Field%20Irrigation%20%7C%20Page%3A%20open-field-irrigation%0A-%20Irrigation%20zones%3A%20%0A-%20Pump%20information%3A%20%0A-%20Valve%20quantity%3A%20%0A-%20Project%20requirements%3A%20"
   cta_secondary:
-    label: "View Control System"
-    url: "/product/pump-valve-control-system/"
+    label: "View Irrigation Control System"
+    url: "/system/irrigation-control-system/"
 
 system_controls:
   title: "What This System Controls"
@@ -90,8 +90,8 @@ fertigation:
     - "Fertigation tanks and dosing pumps"
     - "EC/pH monitoring when specified"
     - "Linked to pump and valve programs"
-  image: "images/solution/open-field-irrigation/fertigation-equipment.jpg"
-  image_alt: "Fertigation equipment at irrigation pump station"
+  image: "images/system/system-fertigation-layer.svg"
+  image_alt: "Fertigation system layer — nutrient flow network integrated with irrigation regions"
   link:
     label: "Fertigation system (product)"
     url: "/product/fertigation-system/"
@@ -99,7 +99,7 @@ fertigation:
 hmi_section:
   title: "HMI Touchscreen Operation"
   body: "Operators use a touchscreen interface to monitor irrigation status, run manual valve control, configure plans, and review alarms—without scattered timers or undocumented panel logic."
-  equipment_image: "images/solution/open-field-irrigation/hmi-control-cabinet.png"
+  equipment_image: "images/system/system-irrigation-layer.svg"
   # ui_image: add when you have a real HMI screen close-up (e.g. images/solution/open-field-irrigation/hmi-screen.jpg)
   features:
     - "Irrigation status"

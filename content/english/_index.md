@@ -3,126 +3,105 @@
 banner:
   enable: true
   bg_image: "images/home/global-agricultural-system-hero.svg"
-  bg_overlay: true
-  title: "PKYDrip Irrigation Automation Systems"
-  content: "A global agricultural automation platform connecting environment layers, control systems, and regional farm infrastructure.<br><br>PKYDrip supports irrigation, fertigation, wireless field networks, and climate control as one coordinated system architecture — not isolated equipment."
+  title: "Agricultural Automation Infrastructure for Global Farming Systems"
+  content: "PKYDrip is a system-first platform — irrigation control, fertigation, and climate control configured by regional market and deployment scenario.<br><br>System defines product. Market defines system usage."
   button:
     enable: true
-    label: "Explore System Architecture"
-    link: "/system-architecture/"
+    label: "Explore Core Systems"
+    link: "/system/irrigation-control-system/"
   button_secondary:
     enable: true
-    label: "View Core Systems"
-    link: "/system/irrigation-control-system/"
+    label: "View Regional Markets"
+    link: "#global-markets"
 
-############################# Platform #############################
-platform:
+############################# Philosophy ############################
+philosophy:
   enable: true
-  title: "Global Agricultural Infrastructure Platform"
-  content: "PKYDrip is structured as a system platform — not a product catalog. Each layer connects geography, control systems, and regional farm infrastructure into one model."
-  layers:
-    - title: "Environment Layer"
-      desc: "Climate zones, farmland regions, and soil abstraction — the agricultural context that defines how systems are configured."
-      link: "/system-architecture/"
-      label: "System architecture"
-    - title: "Control Systems Layer"
-      desc: "Irrigation, fertigation, wireless, climate, and monitoring — coordinated as infrastructure layers, not standalone devices."
-      link: "/system/irrigation-control-system/"
-      label: "Core systems"
-    - title: "Regional Infrastructure"
-      desc: "Different regions use different system configurations. Explore market-specific infrastructure models across global farm projects."
-      link: "/contact/"
-      label: "Discuss your region"
-  markets:
-    - label: "Russia"
-      url: "/ru/"
-    - label: "UAE"
-      url: "/uae/"
-    - label: "Saudi Arabia"
-      url: "/sa/"
-    - label: "South Africa"
-      url: "/za/"
-    - label: "China"
-      url: "/cn/"
-
-############################# About #################################
-about:
-  enable: true
-  title: "What We Help You Build"
-  description: "PKYDrip helps growers, contractors, and project partners build irrigation systems with a clear structure — from sensing and communication to execution and control."
-  content: "Instead of starting from isolated products, you can start from the system architecture. This makes it easier to plan new irrigation projects, upgrade existing systems, and expand step by step without rebuilding everything.
-
-Our approach is designed for real project needs:
-
-- New irrigation system planning  
-- Existing system retrofit and upgrade  
-- Remote valve control and communication  
-- Pump, zoning, and fertigation coordination  
-- Scalable integration of sensing, execution, and control  
-
-We focus on practical engineering structure, so your irrigation system can remain clear, expandable, and easier to manage over time."
-  image: "images/wrapper-img.webp"
-
-######################### Portfolio ###############################
-portfolio:
-  enable: true
-  bg_image: "images/feature-bg.webp"
-  title: "From System Structure to Regional Implementation"
-  content: "After understanding the platform layers, explore solution pages, system architecture, and regional market configurations that match your farm infrastructure scope."
-  button:
-    enable: true
-    label: "Browse Solution Pages"
-    link: "/solution/"
-
-############################# Service ############################
-service:
-  enable: false
+  title: "System-Level Agricultural Automation"
+  content: "We design system-level agricultural automation, not standalone devices."
+  subcontent: "Every project starts from infrastructure logic — how water, nutrients, and climate flow across farm regions — before any equipment selection. This keeps systems expandable, regionally adapted, and easier to manage over time."
+  image: "images/home/agricultural-system-layers.svg"
+  image_alt: "Agricultural system layer model — environment, control systems, and output"
 
 ############################# Systems #############################
 systems:
   enable: true
   title: "Core Systems"
-  content: "PKYDrip organizes agricultural automation as connected infrastructure layers — irrigation, fertigation, wireless field networks, climate control, and monitoring data flow — configured by region and farm scope."
+  content: "Three coordinated infrastructure layers — the main entry point for every global farm project."
   cta_label: "Discuss Your System Architecture"
   cta_url: "/contact/"
   items:
     - name: "Irrigation Control System"
-      desc: "Regional zone flow, scheduling logic, and coordinated irrigation control across farm infrastructure."
+      desc: "Regional zone flow, pump coordination, scheduling logic, and irrigation control across farm infrastructure."
       url: "/system/irrigation-control-system/"
+      image: "images/system/system-irrigation-layer.svg"
     - name: "Fertigation System"
-      desc: "Nutrient flow network with EC/pH logic integrated into irrigation regions."
+      desc: "Nutrient flow network with EC/pH logic integrated into irrigation regions and crop zones."
       url: "/system/fertigation-system/"
-    - name: "Wireless Irrigation System"
-      desc: "Distributed field connectivity and remote zone expansion without long-distance wiring."
-      url: "/system/wireless-irrigation-system/"
+      image: "images/system/system-fertigation-layer.svg"
     - name: "Climate Control System"
-      desc: "Greenhouse and nursery climate zones — ventilation, cooling, and humidity layers."
+      desc: "Greenhouse and nursery climate zones — ventilation, heating, cooling, and humidity layers."
       url: "/system/climate-control-system/"
-    - name: "Monitoring & Sensor System"
-      desc: "Data flow network for flow, pressure, soil, weather, EC/pH, and operation records."
-      url: "/system-architecture/irrigation-monitoring-system/"
+      image: "images/system/system-climate-layer.svg"
 
-systems_value:
+############################# Global Logic ##########################
+global_logic:
   enable: true
-  title: "Platform Structure"
-  items:
-    - "Environment → Control Systems → Monitoring → Agricultural output"
-    - "Irrigation + Fertigation + Wireless + Climate + Monitoring integration"
-    - "Modular infrastructure configured by region"
-    - "Global system hubs with regional market implementations"
+  title: "One System → Multiple Markets → Multiple Deployment Scenarios"
+  content: "The same core systems adapt to different climate regions and farm types. Markets provide system context — not translations of the homepage."
+  image: "images/home/global-system-logic.svg"
+  image_alt: "Global system logic — core systems, regional markets, and deployment scenarios"
+  markets:
+    - label: "Russia"
+      context: "Greenhouse irrigation + heating efficiency"
+      systems: "Irrigation · Climate"
+      url: "/ru/"
+    - label: "UAE"
+      context: "Precision fertigation + desert agriculture"
+      systems: "Fertigation · Climate · Irrigation"
+      url: "/uae/"
+    - label: "Saudi Arabia"
+      context: "Large-scale irrigation systems"
+      systems: "Irrigation · Fertigation"
+      url: "/sa/"
+    - label: "South Africa"
+      context: "Solar irrigation + off-grid systems"
+      systems: "Irrigation · Climate"
+      url: "/za/"
+  scenarios:
+    - label: "Open Field Farming"
+      url: "/solution/open-field-irrigation/"
+    - label: "Greenhouse Farming"
+      url: "/solution/greenhouse-irrigation/"
+    - label: "Orchard Systems"
+      url: "/solution/orchard-irrigation/"
+    - label: "Hydroponic Systems"
+      url: "/solution/hydroponic-irrigation/"
+    - label: "Retrofit Irrigation Systems"
+      url: "/solution/irrigation-retrofit-upgrade/"
 
 ############################ call to action ###########################
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
   title: "Discuss Your System Architecture"
-  content: "Tell us your farm region, crop type, and system scope. PKYDrip can recommend an infrastructure model before detailed configuration."
+  content: "Tell us your farm region, crop type, and deployment scenario. PKYDrip recommends an infrastructure model before detailed configuration."
   button:
     enable: true
     label: "Contact PKYDrip"
     link: "/contact/"
 
-############################# Funfacts ###############################
+############################# Disabled legacy sections ##############
+about:
+  enable: false
+platform:
+  enable: false
+portfolio:
+  enable: false
+service:
+  enable: false
+systems_value:
+  enable: false
 funfacts:
   enable: false
 ---

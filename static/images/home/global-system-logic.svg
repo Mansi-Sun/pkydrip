@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="One system, multiple markets, multiple deployment scenarios">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f9fb"/>
+      <stop offset="100%" stop-color="#eef3f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg)" rx="18"/>
+  <text x="60" y="48" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#243038">Global System Logic</text>
+  <text x="60" y="76" font-family="Arial,sans-serif" font-size="14" fill="#66737d">One system architecture ’ regional adaptation ’ deployment scenario</text>
+
+  <!-- Column 1: Core Systems -->
+  <rect x="60" y="110" width="300" height="360" rx="16" fill="#fff" stroke="#d5dee6"/>
+  <text x="88" y="142" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#5a6872">CORE SYSTEMS</text>
+  <rect x="88" y="160" width="244" height="72" rx="12" fill="#e8f3fa" stroke="#b8d4e8"/>
+  <text x="110" y="192" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#2f5f78">Irrigation Control</text>
+  <text x="110" y="214" font-family="Arial,sans-serif" font-size="11" fill="#5a7080">zone flow · scheduling</text>
+  <rect x="88" y="248" width="244" height="72" rx="12" fill="#faf4e8" stroke="#e0d4b0"/>
+  <text x="110" y="280" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#6a5830">Fertigation</text>
+  <text x="110" y="302" font-family="Arial,sans-serif" font-size="11" fill="#7a7060">nutrient network · EC/pH</text>
+  <rect x="88" y="336" width="244" height="72" rx="12" fill="#eef6f2" stroke="#c0d8cc"/>
+  <text x="110" y="368" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#3d6a52">Climate Control</text>
+  <text x="110" y="390" font-family="Arial,sans-serif" font-size="11" fill="#5a7068">ventilation · heating · zones</text>
+
+  <!-- Arrow 1 -->
+  <line x1="370" y1="290" x2="420" y2="290" stroke="#9aabb5" stroke-width="2.5"/>
+  <polygon points="420,290 408,284 408,296" fill="#9aabb5"/>
+
+  <!-- Column 2: Markets -->
+  <rect x="430" y="110" width="340" height="360" rx="16" fill="#fff" stroke="#d5dee6"/>
+  <text x="458" y="142" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#5a6872">REGIONAL MARKETS</text>
+  <rect x="458" y="160" width="284" height="58" rx="10" fill="#f0f4f8" stroke="#dde3e8"/>
+  <text x="476" y="184" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#1a3a2a">Russia</text>
+  <text x="476" y="204" font-family="Arial,sans-serif" font-size="11" fill="#667080">greenhouse irrigation · heating efficiency</text>
+  <rect x="458" y="228" width="284" height="58" rx="10" fill="#faf8f0" stroke="#e8e0cc"/>
+  <text x="476" y="252" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#1a3a2a">UAE</text>
+  <text x="476" y="272" font-family="Arial,sans-serif" font-size="11" fill="#667080">precision fertigation · desert agriculture</text>
+  <rect x="458" y="296" width="284" height="58" rx="10" fill="#f5f0ea" stroke="#e8ddd0"/>
+  <text x="476" y="320" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#1a3a2a">Saudi Arabia</text>
+  <text x="476" y="340" font-family="Arial,sans-serif" font-size="11" fill="#667080">large-scale irrigation systems</text>
+  <rect x="458" y="364" width="284" height="58" rx="10" fill="#eef6f2" stroke="#d0e0d8"/>
+  <text x="476" y="388" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#1a3a2a">South Africa</text>
+  <text x="476" y="408" font-family="Arial,sans-serif" font-size="11" fill="#667080">solar irrigation · off-grid systems</text>
+
+  <!-- Arrow 2 -->
+  <line x1="780" y1="290" x2="830" y2="290" stroke="#9aabb5" stroke-width="2.5"/>
+  <polygon points="830,290 818,284 818,296" fill="#9aabb5"/>
+
+  <!-- Column 3: Scenarios -->
+  <rect x="840" y="110" width="300" height="360" rx="16" fill="#fff" stroke="#d5dee6"/>
+  <text x="868" y="142" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#5a6872">DEPLOYMENT SCENARIOS</text>
+  <rect x="868" y="160" width="244" height="44" rx="8" fill="#edf5ea" stroke="#c8dcc0"/>
+  <text x="990" y="188" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Open Field Farming</text>
+  <rect x="868" y="214" width="244" height="44" rx="8" fill="#edf5ea" stroke="#c8dcc0"/>
+  <text x="990" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Greenhouse Farming</text>
+  <rect x="868" y="268" width="244" height="44" rx="8" fill="#edf5ea" stroke="#c8dcc0"/>
+  <text x="990" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Orchard Systems</text>
+  <rect x="868" y="322" width="244" height="44" rx="8" fill="#edf5ea" stroke="#c8dcc0"/>
+  <text x="990" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Hydroponic Systems</text>
+  <rect x="868" y="376" width="244" height="44" rx="8" fill="#edf5ea" stroke="#c8dcc0"/>
+  <text x="990" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Retrofit Irrigation</text>
+</svg>
