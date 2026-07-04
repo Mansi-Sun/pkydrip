@@ -26,7 +26,7 @@ platform:
       link: "/system-architecture/"
       label: "System architecture"
     - title: "Control Systems Layer"
-      desc: "Irrigation, fertigation, wireless networks, and climate control — coordinated as infrastructure layers, not standalone devices."
+      desc: "Irrigation, fertigation, wireless, climate, and monitoring — coordinated as infrastructure layers, not standalone devices."
       link: "/system/irrigation-control-system/"
       label: "Core systems"
     - title: "Regional Infrastructure"
@@ -76,37 +76,40 @@ portfolio:
 
 ############################# Service ############################
 service:
-  enable: true
+  enable: false
 
 ############################# Systems #############################
 systems:
   enable: true
-  title: "Agricultural Automation Systems"
-  content: "Start from the system architecture that matches your project. PKYDrip provides four core systems for real farm, greenhouse, and nursery automation — choose one to explore, then discuss your layout with our team."
-  cta_label: "Discuss Your System Project"
+  title: "Core Systems"
+  content: "PKYDrip organizes agricultural automation as connected infrastructure layers — irrigation, fertigation, wireless field networks, climate control, and monitoring data flow — configured by region and farm scope."
+  cta_label: "Discuss Your System Architecture"
   cta_url: "/contact/"
   items:
     - name: "Irrigation Control System"
-      desc: "Pump, valve, and zone scheduling for coordinated field irrigation."
+      desc: "Regional zone flow, scheduling logic, and coordinated irrigation control across farm infrastructure."
       url: "/system/irrigation-control-system/"
     - name: "Fertigation System"
-      desc: "Fertilizer injection with EC/pH monitoring and dosing logic."
+      desc: "Nutrient flow network with EC/pH logic integrated into irrigation regions."
       url: "/system/fertigation-system/"
     - name: "Wireless Irrigation System"
-      desc: "LoRa valve and pump control without long-distance cabling."
+      desc: "Distributed field connectivity and remote zone expansion without long-distance wiring."
       url: "/system/wireless-irrigation-system/"
     - name: "Climate Control System"
-      desc: "Greenhouse ventilation, fan-pad cooling, and humidity control."
+      desc: "Greenhouse and nursery climate zones — ventilation, cooling, and humidity layers."
       url: "/system/climate-control-system/"
+    - name: "Monitoring & Sensor System"
+      desc: "Data flow network for flow, pressure, soil, weather, EC/pH, and operation records."
+      url: "/system-architecture/irrigation-monitoring-system/"
 
 systems_value:
   enable: true
-  title: "Why PKYDrip Systems"
+  title: "Platform Structure"
   items:
-    - "Real farm automation design"
-    - "Irrigation + Fertigation + Climate integration"
-    - "Modular architecture"
-    - "Supports RS485 / Modbus / LoRa / 4G"
+    - "Environment → Control Systems → Monitoring → Agricultural output"
+    - "Irrigation + Fertigation + Wireless + Climate + Monitoring integration"
+    - "Modular infrastructure configured by region"
+    - "Global system hubs with regional market implementations"
 
 ############################ call to action ###########################
 cta:

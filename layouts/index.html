@@ -112,7 +112,7 @@
     <div class="row justify-content-center" style="margin-top:20px;">
       <div class="col-md-8 text-center">
         <p style="color:#777; font-size:15px; line-height:1.7;">
-          Environment → Control Systems (Irrigation · Fertigation · Climate) → Agricultural Output
+          Environment → Control Systems (Irrigation · Fertigation · Wireless · Climate · Monitoring) → Agricultural Output
         </p>
       </div>
     </div>
@@ -137,10 +137,11 @@
     </div>
     <div class="row justify-content-center" style="margin-top:10px;">
       {{ range .items }}
-      <div class="col-md-6 col-lg-3" style="margin-bottom:16px;">
+      <div class="col-md-6 col-lg-4" style="margin-bottom:16px;">
         <a href="{{ .url | relLangURL }}" style="display:flex;flex-direction:column;height:100%;padding:22px 20px;border:1px solid #e8e8e8;border-radius:14px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.03);text-decoration:none;color:#222;">
           <span style="font-weight:600;margin-bottom:8px;">{{ .name }}</span>
-          {{ with .desc }}<span style="color:#666;font-size:14px;line-height:1.6;font-weight:400;">{{ . }}</span>{{ end }}
+          {{ with .desc }}<span style="color:#666;font-size:14px;line-height:1.6;font-weight:400;flex:1;">{{ . }}</span>{{ end }}
+          <span style="margin-top:12px;font-size:13px;font-weight:600;color:#1a3a2a;">View System →</span>
         </a>
       </div>
       {{ end }}
