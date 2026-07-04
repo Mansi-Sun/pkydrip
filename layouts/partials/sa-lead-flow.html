@@ -1,0 +1,28 @@
+{{ $contact := site.Data.sa_market.ads_routing.contact }}
+{{ $email := $contact.email | default "info@pky-dripirrigation.com" }}
+{{ $mailtoSubject := printf "SA Farm Inquiry - %s" .Params.page_code | urlquery }}
+{{ $mailtoBody := printf "Hi PKYDrip,\nPage: %s\n\nFarm size (hectares): \nCrop type: \nWater source: \nPump capacity: \nIrrigation zones: \n" .Params.page_code | urlquery }}
+{{ $mailto := printf "mailto:%s?subject=%s&body=%s" $email $mailtoSubject $mailtoBody }}
+<section class="sa-lead" style="background:#fff;border-top:1px solid #e0d5c4;padding:40px 20px;">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;">
+      <h2 style="margin:0 0 14px;font-size:24px;color:#3d2e1f;">Request Saudi irrigation infrastructure design</h2>
+      <p style="margin:0 0 16px;color:#444;line-height:1.7;">Share your project details via <strong>WhatsApp</strong> (preferred for Saudi projects) or <strong>email</strong>. We will recommend a large-scale irrigation infrastructure plan for your farm.</p>
+      <p style="margin:0 0 10px;font-weight:600;color:#333;">Please provide:</p>
+      <ul style="margin:0 0 20px;padding-left:1.25rem;color:#555;line-height:1.8;">
+        <li>Farm size (hectares)</li>
+        <li>Crop type</li>
+        <li>Water source type</li>
+        <li>Pump capacity</li>
+        <li>Irrigation zones</li>
+      </ul>
+      <p style="margin:0 0 18px;color:#666;font-size:15px;">→ System architecture · pump and valve plan · wireless coverage · infrastructure layout</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-weight:600;font-size:15px;">Chat on WhatsApp</a>
+        <a href="{{ $mailto }}" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-weight:600;font-size:15px;">Email</a>
+        <a href="{{ `/sa/contact/` | relLangURL }}" style="display:inline-block;padding:12px 22px;border-radius:8px;background:#f8f5ef;color:#3d2e1f;border:1px solid #e0d5c4;text-decoration:none;font-weight:600;font-size:15px;">Contact page</a>
+      </div>
+      <p style="margin:16px 0 0;color:#888;font-size:13px;">For Saudi agricultural projects: WhatsApp is the primary contact channel.</p>
+    </div>
+  </div>
+</section>

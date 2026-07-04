@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-SA" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ block "head_extra" . }}{{ end }}
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "style.html" . }}
+	{{ else }}
+	{{ partial "style.html" . }}
+	{{ end }}
+</head>
+
+<body>
+	{{ if ne hugo.Environment "development" }}
+	{{ if hugo.IsProduction }}
+	{{ partialCached "preloader.html" . }}
+	{{ else }}
+	{{ partial "preloader.html" . }}
+	{{ end }}
+	{{ end }}
+
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "script.html" . "pkydrip-js-v3" }}
+	{{ else }}
+	{{ partial "script.html" . }}
+	{{ end }}
+	<script>
+	(function () {
+		function hidePreloader() {
+			document.querySelectorAll('.preloader').forEach(function (el) {
+				el.style.display = 'none';
+			});
+			if (window.jQuery) {
+				window.jQuery('.preloader').hide();
+			}
+		}
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', hidePreloader);
+		} else {
+			hidePreloader();
+		}
+		window.addEventListener('load', hidePreloader);
+		setTimeout(hidePreloader, 3000);
+	})();
+	</script>
+</body>
+
+</html>

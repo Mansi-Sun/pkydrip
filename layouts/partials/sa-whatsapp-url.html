@@ -1,0 +1,21 @@
+{{/*
+  Build page-specific WhatsApp URL for /sa/ pages.
+  Matches English site format: Hi PKYDrip + topic + Page code + Action + intro + fields.
+*/}}
+{{ $contact := site.Data.sa_market.ads_routing.contact }}
+{{ $whatsappBase := "https://wa.me/8617395297329" }}
+{{ with $contact.whatsapp }}{{ $whatsappBase = . }}{{ end }}
+{{ $pageCode := .Params.page_code }}
+{{ $topic := .Params.whatsapp_topic | default .Title }}
+{{ $action := .Params.whatsapp_action }}
+{{ $intro := .Params.whatsapp_intro | default "I would like an irrigation infrastructure recommendation for my Saudi Arabia farm project." }}
+{{ $fields := .Params.whatsapp_fields | default (slice "Farm size (hectares)" "Crop type" "Water source" "Pump capacity" "Irrigation zones") }}
+
+{{ $lines := slice (printf "Hi PKYDrip, SA: %s | Page: %s" $topic $pageCode) }}
+{{ if $action }}{{ $lines = $lines | append (printf "Action: %s" $action) }}{{ end }}
+{{ $lines = $lines | append $intro }}
+{{ range $fields }}
+  {{ $lines = $lines | append (printf "- %s: " .) }}
+{{ end }}
+{{ $msg := delimit $lines "\n" }}
+{{ return (printf "%s?text=%s" $whatsappBase ($msg | urlquery)) }}

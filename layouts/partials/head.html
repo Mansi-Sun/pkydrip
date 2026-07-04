@@ -8,6 +8,8 @@
   <link rel="alternate" hreflang="ru" href="{{ .Permalink | absURL }}">
 {{ else if eq .Lang "uae" }}
   <link rel="alternate" hreflang="en-AE" href="{{ .Permalink | absURL }}">
+{{ else if eq .Lang "sa" }}
+  <link rel="alternate" hreflang="en-SA" href="{{ .Permalink | absURL }}">
 {{ else if .IsTranslated }}
   {{ range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink | absLangURL }}">

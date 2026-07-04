@@ -1,0 +1,27 @@
+{{ $routing := site.Data.sa_market.ads_routing.page_routing }}
+{{ $key := .File.BaseFileName }}
+{{ if .IsHome }}{{ $key = "_index" }}{{ end }}
+{{ $route := index $routing $key }}
+{{ $contact := site.Data.sa_market.ads_routing.contact }}
+<section class="sa-funnel" style="background:#f8f5ef;border-top:1px solid #e0d5c4;padding:28px 20px;">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;">
+      <p style="margin:0 0 12px;font-weight:600;color:#3d2e1f;font-size:15px;">Explore Saudi irrigation infrastructure</p>
+      {{ if $route }}
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <a href="{{ `/sa/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f0e8d8;color:#3d2e1f;border:1px solid #e0d5c4;text-decoration:none;font-size:14px;font-weight:600;">Home →</a>
+        {{ range $route.related }}
+        <a href="{{ .path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#6b4f2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">{{ .label }} →</a>
+        {{ end }}
+        {{ if ne $key "contact" }}
+        <a href="{{ `/sa/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
+        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
+        {{ else }}
+        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
+        <a href="{{ printf "mailto:%s?subject=SA%%20Farm%%20Inquiry" ($contact.email | default "info@pky-dripirrigation.com") }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Email →</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

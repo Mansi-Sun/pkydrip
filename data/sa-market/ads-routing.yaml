@@ -1,0 +1,139 @@
+# PKYDrip Saudi Arabia Ads-to-Lead Routing System
+# Data path: data/sa-market/ads-routing.yaml (NOT data/sa/ — conflicts with [sa] language code)
+# Large-scale desert irrigation infrastructure focus
+# DO NOT use for English, Russia, or UAE sections.
+
+priority:
+  high:
+    - path: /sa/contact/
+      label: Infrastructure Inquiry
+      conversion_tier: 1
+  mid:
+    - path: /sa/irrigation-control-system/
+      label: Irrigation Control System
+      conversion_tier: 2
+    - path: /sa/wireless-irrigation-system/
+      label: Wireless Irrigation System
+      conversion_tier: 3
+  low:
+    - path: /sa/fertigation-system/
+      label: Fertigation System (Optional)
+      conversion_tier: 4
+    - path: /sa/
+      label: SA Infrastructure Hub
+      conversion_tier: 5
+
+clusters:
+  large_farm_infrastructure:
+    name: Large Farm Infrastructure
+    priority: low
+    keywords:
+      - irrigation system Saudi Arabia
+      - large farm irrigation system
+      - desert agriculture irrigation Saudi
+      - agriculture infrastructure Saudi Arabia
+    primary_landing: /sa/
+    secondary_landing: /sa/irrigation-control-system/
+
+  irrigation_control:
+    name: Large-Scale Irrigation Control
+    priority: mid
+    keywords:
+      - irrigation system Saudi Arabia
+      - pump control irrigation system
+      - large farm irrigation system
+      - desert agriculture irrigation Saudi
+    primary_landing: /sa/irrigation-control-system/
+    secondary_landing: /sa/wireless-irrigation-system/
+
+  wireless_field:
+    name: Wireless Field Control
+    priority: mid
+    keywords:
+      - wireless irrigation system Saudi
+      - large farm irrigation system
+      - desert agriculture irrigation Saudi
+      - agriculture infrastructure Saudi Arabia
+    primary_landing: /sa/wireless-irrigation-system/
+    secondary_landing: /sa/irrigation-control-system/
+
+  fertigation_optional:
+    name: Fertigation (Optional)
+    priority: low
+    keywords:
+      - fertigation system Saudi Arabia
+      - pump control irrigation system
+    primary_landing: /sa/fertigation-system/
+    secondary_landing: /sa/irrigation-control-system/
+
+contact:
+  email: "info@pky-dripirrigation.com"
+  whatsapp: "https://wa.me/8617395297329"
+  preferred_order:
+    - whatsapp
+    - email
+
+page_codes:
+  _index: PC-SA-HOME-01
+  irrigation-control-system: PC-SA-IRRIGATION-01
+  wireless-irrigation-system: PC-SA-WIRELESS-01
+  fertigation-system: PC-SA-FERTIGATION-01
+  contact: PC-SA-CONTACT-01
+
+page_routing:
+  _index:
+    cluster: large_farm_infrastructure
+    related:
+      - path: /sa/irrigation-control-system/
+        label: Irrigation Control
+      - path: /sa/wireless-irrigation-system/
+        label: Wireless Irrigation
+      - path: /sa/fertigation-system/
+        label: Fertigation (Optional)
+  irrigation-control-system:
+    cluster: irrigation_control
+    related:
+      - path: /sa/wireless-irrigation-system/
+        label: Wireless Irrigation
+      - path: /sa/fertigation-system/
+        label: Fertigation (Optional)
+  wireless-irrigation-system:
+    cluster: wireless_field
+    related:
+      - path: /sa/irrigation-control-system/
+        label: Irrigation Control
+      - path: /sa/fertigation-system/
+        label: Fertigation (Optional)
+  fertigation-system:
+    cluster: fertigation_optional
+    related:
+      - path: /sa/irrigation-control-system/
+        label: Irrigation Control
+      - path: /sa/wireless-irrigation-system/
+        label: Wireless Irrigation
+  contact:
+    cluster: large_farm_infrastructure
+    related:
+      - path: /sa/irrigation-control-system/
+        label: Irrigation Control
+      - path: /sa/wireless-irrigation-system/
+        label: Wireless Irrigation
+      - path: /sa/fertigation-system/
+        label: Fertigation (Optional)
+
+traffic_examples:
+  - source: Google Search
+    query: irrigation system Saudi Arabia
+    cluster: irrigation_control
+    landing: /sa/irrigation-control-system/
+    conversion: WhatsApp infrastructure inquiry
+  - source: Google Search
+    query: wireless irrigation system Saudi
+    cluster: wireless_field
+    landing: /sa/wireless-irrigation-system/
+    conversion: WhatsApp infrastructure inquiry
+  - source: Google Search
+    query: large farm irrigation system
+    cluster: large_farm_infrastructure
+    landing: /sa/
+    conversion: WhatsApp infrastructure inquiry
