@@ -5,8 +5,9 @@
   command = "hugo version && hugo --gc --minify --forceSyncStatic"
 
 [build.environment]
-  # Match themes/airspace-hugo/netlify.toml; change if Netlify image drops this version.
-  HUGO_VERSION = "0.115.1"
+  # Must match local Hugo (extended). 0.115.x cannot build hugo.Data templates or current config.
+  HUGO_VERSION = "0.161.1"
+  NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
 
 # Permanently redirect the legacy www apex to the smart. subdomain, preserving the full path.
