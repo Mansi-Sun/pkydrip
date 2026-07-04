@@ -5,7 +5,7 @@ banner:
   bg_image: "images/home/global-agricultural-system-hero.svg"
   bg_overlay: true
   title: "PKYDrip Irrigation Automation Systems"
-  content: "Engineering-oriented control systems for irrigation, fertigation, wireless field control, monitoring, and smart farm water management.<br><br>We help farms, greenhouses, orchards, and landscape projects build reliable irrigation automation systems using pumps, valves, fertigation units, sensors, and remote control technologies."
+  content: "A global agricultural automation platform connecting environment layers, control systems, and regional farm infrastructure.<br><br>PKYDrip supports irrigation, fertigation, wireless field networks, and climate control as one coordinated system architecture — not isolated equipment."
   button:
     enable: true
     label: "Explore System Architecture"
@@ -13,7 +13,37 @@ banner:
   button_secondary:
     enable: true
     label: "View Core Systems"
-    link: "/product/"
+    link: "/system/irrigation-control-system/"
+
+############################# Platform #############################
+platform:
+  enable: true
+  title: "Global Agricultural Infrastructure Platform"
+  content: "PKYDrip is structured as a system platform — not a product catalog. Each layer connects geography, control systems, and regional farm infrastructure into one model."
+  layers:
+    - title: "Environment Layer"
+      desc: "Climate zones, farmland regions, and soil abstraction — the agricultural context that defines how systems are configured."
+      link: "/system-architecture/"
+      label: "System architecture"
+    - title: "Control Systems Layer"
+      desc: "Irrigation, fertigation, wireless networks, and climate control — coordinated as infrastructure layers, not standalone devices."
+      link: "/system/irrigation-control-system/"
+      label: "Core systems"
+    - title: "Regional Infrastructure"
+      desc: "Different regions use different system configurations. Explore market-specific infrastructure models across global farm projects."
+      link: "/contact/"
+      label: "Discuss your region"
+  markets:
+    - label: "Russia"
+      url: "/ru/"
+    - label: "UAE"
+      url: "/uae/"
+    - label: "Saudi Arabia"
+      url: "/sa/"
+    - label: "South Africa"
+      url: "/za/"
+    - label: "China"
+      url: "/cn/"
 
 ############################# About #################################
 about:
@@ -37,8 +67,8 @@ We focus on practical engineering structure, so your irrigation system can remai
 portfolio:
   enable: true
   bg_image: "images/feature-bg.webp"
-  title: "From Structure to Implementation"
-  content: "After choosing your project path, you can continue with practical solution pages, planning tools, and real application examples. The goal is not to start from isolated products, but from a system structure that fits your project."
+  title: "From System Structure to Regional Implementation"
+  content: "After understanding the platform layers, explore solution pages, system architecture, and regional market configurations that match your farm infrastructure scope."
   button:
     enable: true
     label: "Browse Solution Pages"
@@ -82,12 +112,12 @@ systems_value:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "Planning a New Irrigation Project?"
-  content: "Use our irrigation design tool to organize your farm size, water source, irrigation method, and control structure before moving into detailed system selection."
+  title: "Discuss Your System Architecture"
+  content: "Tell us your farm region, crop type, and system scope. PKYDrip can recommend an infrastructure model before detailed configuration."
   button:
     enable: true
-    label: "Open Design Wizard"
-    link: "/tools/irrigation-design-wizard/"
+    label: "Contact PKYDrip"
+    link: "/contact/"
 
 ############################# Funfacts ###############################
 funfacts:
