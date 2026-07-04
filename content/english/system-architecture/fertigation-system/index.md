@@ -12,6 +12,8 @@ aliases:
 hero:
   title: "Fertigation System"
   subtitle: "Connect fertilizer injection, EC/pH monitoring, dosing logic, and irrigation zones into one controlled fertigation structure for greenhouse and field projects."
+  image: "images/system/system-fertigation-layer.svg"
+  image_alt: "Fertigation system layer — nutrient flow network integrated with regional irrigation zones"
   cta_primary:
     label: "View Fertigation System"
     url: "/product/fertigation-system/"

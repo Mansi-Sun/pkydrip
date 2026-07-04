@@ -12,8 +12,8 @@ aliases:
 hero:
   title: "Irrigation Control System"
   subtitle: "Build a coordinated irrigation control structure for pumps, valves, field zones, schedules, and monitoring instead of operating each device separately."
-  image: "images/solution/controller-valve-pump-combination.webp"
-  image_alt: "Irrigation controller, pump control, valves, and farm irrigation zones working as one system"
+  image: "images/system/system-irrigation-layer.svg"
+  image_alt: "Irrigation control system layer — regional zones, control network, and agricultural output"
   capabilities:
     - "Pump and valve coordination"
     - "Multi-zone irrigation scheduling"
@@ -44,8 +44,8 @@ common_challenges:
 system_architecture:
   title: "System Architecture"
   subtitle: "A typical irrigation control system connects the water source, pump, mainline, valves, field zones, controller, and optional monitoring points into one coordinated control layer."
-  image: "images/solution/open-field-irrigation-control-system-architecture.png"
-  image_alt: "Irrigation control system architecture showing water source, pump, mainline, controller, valves, monitoring, and field zones"
+  image: "images/home/agricultural-system-layers.svg"
+  image_alt: "Irrigation control system architecture — environment, control layer, and field output abstraction"
 
 zone_flow:
   title: "How The System Works"

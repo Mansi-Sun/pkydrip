@@ -28,7 +28,7 @@
         </div>
         {{ with .image }}
         <div class="col-lg-5">
-          <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:cover;">
+          <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:contain;background:#f6f9fb;">
         </div>
         {{ end }}
       </div>

@@ -33,6 +33,11 @@
 
 <section class="cn-header">
   <div class="container">
+    {{ if .IsHome }}
+    <div style="max-width:760px;margin:0 auto 20px;text-align:center;">
+      <img src="{{ `/images/cn/cn-global-system-abstract.svg` | relURL }}" alt="PKYDrip 全球农业自动化系统平台示意图" style="width:100%;max-width:520px;border-radius:8px;" loading="lazy">
+    </div>
+    {{ end }}
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </div>

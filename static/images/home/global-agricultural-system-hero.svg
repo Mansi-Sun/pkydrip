@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-label="Global agricultural automation system map">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe8ef"/>
+      <stop offset="100%" stop-color="#eef3f7"/>
+    </linearGradient>
+    <linearGradient id="globe" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#d8e6df"/>
+      <stop offset="100%" stop-color="#b8cfc4"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="720" fill="url(#sky)"/>
+  <circle cx="800" cy="360" r="248" fill="url(#globe)" opacity="0.55"/>
+  <ellipse cx="800" cy="360" rx="248" ry="248" fill="none" stroke="#8aa89a" stroke-width="2" opacity="0.45"/>
+  <ellipse cx="800" cy="360" rx="248" ry="118" fill="none" stroke="#9bb5a8" stroke-width="1.2" opacity="0.35"/>
+  <ellipse cx="800" cy="360" rx="248" ry="186" fill="none" stroke="#9bb5a8" stroke-width="1.2" opacity="0.35"/>
+  <path d="M552 360h496" stroke="#9bb5a8" stroke-width="1.2" opacity="0.35"/>
+  <!-- regions -->
+  <ellipse cx="620" cy="320" rx="72" ry="44" fill="#6fa882" opacity="0.28"/>
+  <ellipse cx="930" cy="290" rx="84" ry="50" fill="#5f9fbf" opacity="0.26"/>
+  <ellipse cx="760" cy="410" rx="68" ry="40" fill="#8fae6a" opacity="0.24"/>
+  <ellipse cx="1010" cy="390" rx="58" ry="36" fill="#7a9f88" opacity="0.22"/>
+  <ellipse cx="560" cy="400" rx="52" ry="32" fill="#6a9a78" opacity="0.22"/>
+  <!-- nodes -->
+  <circle cx="620" cy="320" r="10" fill="#fff" stroke="#4d8a66" stroke-width="2"/>
+  <circle cx="930" cy="290" r="10" fill="#fff" stroke="#3d7a96" stroke-width="2"/>
+  <circle cx="760" cy="410" r="10" fill="#fff" stroke="#5a8a52" stroke-width="2"/>
+  <circle cx="1010" cy="390" r="9" fill="#fff" stroke="#4a7a62" stroke-width="2"/>
+  <circle cx="560" cy="400" r="9" fill="#fff" stroke="#4a7a62" stroke-width="2"/>
+  <circle cx="800" cy="360" r="14" fill="#fff" stroke="#2f5f48" stroke-width="2.5"/>
+  <!-- irrigation flow -->
+  <path d="M800 360 C720 300,660 280,620 320" fill="none" stroke="#4a9fd4" stroke-width="2.5" opacity="0.7"/>
+  <path d="M800 360 C860 300,910 285,930 290" fill="none" stroke="#4a9fd4" stroke-width="2.5" opacity="0.7"/>
+  <path d="M800 360 C780 390,770 405,760 410" fill="none" stroke="#4a9fd4" stroke-width="2.5" opacity="0.65"/>
+  <!-- fertigation flow -->
+  <path d="M800 360 C880 390,960 395,1010 390" fill="none" stroke="#c4a24a" stroke-width="2.2" opacity="0.65" stroke-dasharray="6 5"/>
+  <path d="M800 360 C690 380,610 395,560 400" fill="none" stroke="#c4a24a" stroke-width="2.2" opacity="0.65" stroke-dasharray="6 5"/>
+  <!-- climate flow -->
+  <path d="M800 360 C830 280,890 250,930 290" fill="none" stroke="#6a9a9f" stroke-width="2" opacity="0.55"/>
+  <path d="M800 360 C740 260,670 250,620 320" fill="none" stroke="#6a9a9f" stroke-width="2" opacity="0.55"/>
+  <!-- legend -->
+  <g transform="translate(1120,120)">
+    <rect width="300" height="150" rx="14" fill="#ffffff" opacity="0.88" stroke="#cfd8df"/>
+    <text x="24" y="34" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#2a3a35">Global System Flows</text>
+    <line x1="24" y1="58" x2="64" y2="58" stroke="#4a9fd4" stroke-width="3"/><text x="76" y="63" font-family="Arial,sans-serif" font-size="13" fill="#4a5560">Irrigation regions</text>
+    <line x1="24" y1="86" x2="64" y2="86" stroke="#c4a24a" stroke-width="2.5" stroke-dasharray="6 5"/><text x="76" y="91" font-family="Arial,sans-serif" font-size="13" fill="#4a5560">Fertigation network</text>
+    <line x1="24" y1="114" x2="64" y2="114" stroke="#6a9a9f" stroke-width="2.5"/><text x="76" y="119" font-family="Arial,sans-serif" font-size="13" fill="#4a5560">Climate zones</text>
+  </g>
+  <text x="800" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6a7a82">Agricultural infrastructure intelligence  regional systems connected globally</text>
+</svg>

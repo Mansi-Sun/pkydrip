@@ -12,6 +12,8 @@ aliases:
 hero:
   title: "Wireless Irrigation System"
   subtitle: "Use LoRa wireless field control to expand irrigation automation without long-distance signal cable trenching in orchards, open fields, and retrofit projects."
+  image: "images/system/system-wireless-layer.svg"
+  image_alt: "Wireless irrigation system layer — distributed field nodes connected across agricultural regions"
   cta_primary:
     label: "View Wireless Field Control"
     url: "/product/wireless-field-control-system/"

@@ -12,6 +12,8 @@ aliases:
 hero:
   title: "Climate Control System"
   subtitle: "Greenhouse environmental control for managing temperature, humidity, ventilation, and lighting in coordinated automation projects."
+  image: "images/system/system-climate-layer.svg"
+  image_alt: "Climate control system layer — greenhouse climate zones managed as one system infrastructure"
   capabilities:
     - "Temperature-based fan and cooling control"
     - "Humidity regulation logic"

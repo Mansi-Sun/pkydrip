@@ -2,7 +2,7 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/home/farm-irrigation-system.webp"
+  bg_image: "images/home/global-agricultural-system-hero.svg"
   bg_overlay: true
   title: "PKYDrip Irrigation Automation Systems"
   content: "Engineering-oriented control systems for irrigation, fertigation, wireless field control, monitoring, and smart farm water management.<br><br>We help farms, greenhouses, orchards, and landscape projects build reliable irrigation automation systems using pumps, valves, fertigation units, sensors, and remote control technologies."

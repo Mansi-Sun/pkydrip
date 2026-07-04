@@ -46,7 +46,7 @@ system_controls:
 system_architecture:
   title: "Open Field Irrigation Control System Architecture"
   subtitle: "From water source through pump station, filtration, fertigation, mainline, zone valves, and field irrigation—with central control and mobile monitoring."
-  image: "images/solution/full-system-1.jpg"
+  image: "images/home/agricultural-system-layers.svg"
   image_alt: "PKYDrip open field irrigation control system architecture — pump station, filters, fertigation, zone valves, control cabinet, and mobile remote control"
 
 zone_flow:
