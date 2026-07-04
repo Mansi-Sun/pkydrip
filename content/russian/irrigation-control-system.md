@@ -53,4 +53,4 @@ keywords:
 
 ## Контакты
 
-Проектирование системы через **[WhatsApp / Telegram](/ru/contact/)**.
+Проектирование системы — **[email или WhatsApp](/ru/contact/)**.

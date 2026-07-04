@@ -15,12 +15,6 @@
   .ru-body .content ul { padding-left:1.25rem; }
   .ru-body .content li { margin-bottom:8px; }
   .ru-body .content a { color:#2d6a4f; font-weight:600; }
-  .ru-cta { background:#f4f8f5; border-top:1px solid #dfe8e3; padding:36px 20px; text-align:center; }
-  .ru-cta__btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:16px; }
-  .ru-cta__btn { display:inline-block; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; }
-  .ru-cta__btn--wa { background:#25D366; color:#fff; }
-  .ru-cta__btn--tg { background:#2AABEE; color:#fff; }
-  .ru-cta__btn--contact { background:#1a3a2a; color:#fff; }
 </style>
 
 <nav class="ru-nav">
@@ -62,16 +56,3 @@
 
 {{ partial "ru-funnel-links.html" . }}
 {{ partial "ru-lead-flow.html" . }}
-
-{{ $contact := site.Data.russia.ads_routing.contact }}
-<section class="ru-cta">
-  <div class="container">
-    <p style="margin:0;font-size:17px;color:#333;font-weight:600;">Получить рекомендацию по системе</p>
-    <p style="margin:8px 0 0;color:#666;font-size:15px;">Telegram / WhatsApp — канал связи для российских ферм</p>
-    <div class="ru-cta__btns">
-      <a class="ru-cta__btn ru-cta__btn--tg" href="{{ $contact.telegram }}" target="_blank" rel="noopener">Telegram (предпочтительно)</a>
-      <a class="ru-cta__btn ru-cta__btn--wa" href="{{ $contact.whatsapp }}?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20PKYDrip%21%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D0%BF%D0%BE%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B9%D1%82%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83%20%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F.%0A-%20%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%28%D0%B3%D0%B0%29%3A%20%0A-%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%3A%20%0A-%20%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%20%D0%BF%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%3A%20%0A-%20%D0%9C%D0%BE%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%D1%81%D0%BE%D1%81%D0%B0%3A%20%0A-%20%D0%97%D0%BE%D0%BD%D1%8B%3A%20" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="ru-cta__btn ru-cta__btn--contact" href="{{ `/ru/contact/` | relLangURL }}">Страница контактов</a>
-    </div>
-  </div>
-</section>
