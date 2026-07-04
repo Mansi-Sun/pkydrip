@@ -25,3 +25,10 @@ languageName = "German"
 languageCode = "de-at"
 contentDir = "content/german"
 weight = 4
+
+################ Russian market ###################
+[ru]
+languageName = "Русский"
+languageCode = "ru-RU"
+contentDir = "content/russian"
+weight = 5

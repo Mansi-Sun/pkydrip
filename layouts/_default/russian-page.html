@@ -1,0 +1,78 @@
+{{ define "main" }}
+<style>
+  .ru-nav { background:#1a2e1f; padding:12px 0; }
+  .ru-nav .container { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
+  .ru-nav__brand { color:#fff; font-weight:700; text-decoration:none; font-size:18px; }
+  .ru-nav__links { display:flex; flex-wrap:wrap; gap:8px 18px; list-style:none; margin:0; padding:0; }
+  .ru-nav__links a { color:#d4e8d4; text-decoration:none; font-size:14px; }
+  .ru-nav__links a:hover { color:#fff; }
+  .ru-hero { background:linear-gradient(135deg,#1a3a2a 0%,#2d5a3d 100%); color:#fff; padding:56px 20px; text-align:center; }
+  .ru-hero h1 { margin:0 0 12px; font-size:34px; line-height:1.25; color:#fff; }
+  .ru-hero p { margin:0 auto; max-width:720px; font-size:17px; line-height:1.7; color:#e8f0e8; }
+  .ru-body { padding:48px 20px; }
+  .ru-body .content { max-width:800px; margin:0 auto; line-height:1.75; color:#333; }
+  .ru-body .content h2 { margin-top:36px; margin-bottom:14px; font-size:24px; color:#1a3a2a; }
+  .ru-body .content h3 { margin-top:24px; margin-bottom:10px; font-size:18px; }
+  .ru-body .content ul { padding-left:1.25rem; }
+  .ru-body .content li { margin-bottom:8px; }
+  .ru-body .content a { color:#2d6a4f; font-weight:600; }
+  .ru-cta { background:#f4f8f5; border-top:1px solid #dfe8e3; padding:36px 20px; text-align:center; }
+  .ru-cta__btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:16px; }
+  .ru-cta__btn { display:inline-block; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; }
+  .ru-cta__btn--wa { background:#25D366; color:#fff; }
+  .ru-cta__btn--tg { background:#2AABEE; color:#fff; }
+  .ru-cta__btn--contact { background:#1a3a2a; color:#fff; }
+</style>
+
+<nav class="ru-nav">
+  <div class="container">
+    <a class="ru-nav__brand" href="{{ `/ru/` | relLangURL }}">PKYDrip Russia</a>
+    <ul class="ru-nav__links">
+      <li><a href="{{ `/ru/` | relLangURL }}">Home</a></li>
+      <li><a href="{{ `/ru/irrigation-control-system/` | relLangURL }}">Irrigation Control</a></li>
+      <li><a href="{{ `/ru/wireless-irrigation-system/` | relLangURL }}">Wireless Irrigation</a></li>
+      <li><a href="{{ `/ru/fertigation-system/` | relLangURL }}">Fertigation</a></li>
+      <li><a href="{{ `/ru/contact/` | relLangURL }}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+{{ with .Params.hero_subtitle }}
+<section class="ru-hero">
+  <div class="container">
+    <h1>{{ $.Title }}</h1>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ else }}
+<section class="ru-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="ru-body">
+  <div class="container">
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ partial "ru-funnel-links.html" . }}
+{{ partial "ru-lead-flow.html" . }}
+
+<section class="ru-cta">
+  <div class="container">
+    <p style="margin:0;font-size:17px;color:#333;font-weight:600;">Request system recommendation for your farm</p>
+    <p style="margin:8px 0 0;color:#666;font-size:15px;">Telegram / WhatsApp preferred — industrial farm modernization consultation</p>
+    <div class="ru-cta__btns">
+      <a class="ru-cta__btn ru-cta__btn--tg" href="https://t.me/+8617395297329" target="_blank" rel="noopener">Telegram (Preferred)</a>
+      <a class="ru-cta__btn ru-cta__btn--wa" href="https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20irrigation%20system%20for%20my%20Russian%20farm.%0A-%20Farm%20size%20(ha)%3A%20%0A-%20Crop%3A%20%0A-%20Water%20source%3A%20%0A-%20Zones%3A%20%0A-%20Pump%20power%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="ru-cta__btn ru-cta__btn--contact" href="{{ `/ru/contact/` | relLangURL }}">Contact Details</a>
+    </div>
+  </div>
+</section>
+{{ end }}
