@@ -1,0 +1,10 @@
+# South Africa UI strings for /za/ section (Hugo i18n)
+
+[contact_whatsapp]
+other = "WhatsApp"
+
+[contact_email]
+other = "Email"
+
+[home]
+other = "Home"

@@ -1,6 +1,6 @@
 {{/*
-  Build page-specific WhatsApp URL for /sa/ pages.
-  Matches English site format: Hi PKYDrip + topic + Page code + Action + intro + fields.
+  Build page-specific WhatsApp URL for /sa/ pages (Arabic).
+  Page code kept in English for internal tracking.
 */}}
 {{ $contact := site.Data.sa_market.ads_routing.contact }}
 {{ $whatsappBase := "https://wa.me/8617395297329" }}
@@ -8,11 +8,11 @@
 {{ $pageCode := .Params.page_code }}
 {{ $topic := .Params.whatsapp_topic | default .Title }}
 {{ $action := .Params.whatsapp_action }}
-{{ $intro := .Params.whatsapp_intro | default "I would like an irrigation infrastructure recommendation for my Saudi Arabia farm project." }}
-{{ $fields := .Params.whatsapp_fields | default (slice "Farm size (hectares)" "Crop type" "Water source" "Pump capacity" "Irrigation zones") }}
+{{ $intro := .Params.whatsapp_intro | default "أرغب في الحصول على توصية لبنية ري لمشروعي الزراعي في السعودية." }}
+{{ $fields := .Params.whatsapp_fields | default (slice "مساحة المزرعة (هكتار)" "نوع المحصول" "مصدر المياه" "قدرة المضخة" "مناطق الري") }}
 
-{{ $lines := slice (printf "Hi PKYDrip, SA: %s | Page: %s" $topic $pageCode) }}
-{{ if $action }}{{ $lines = $lines | append (printf "Action: %s" $action) }}{{ end }}
+{{ $lines := slice (printf "مرحباً PKYDrip، السعودية: %s | الصفحة: %s" $topic $pageCode) }}
+{{ if $action }}{{ $lines = $lines | append (printf "الإجراء: %s" $action) }}{{ end }}
 {{ $lines = $lines | append $intro }}
 {{ range $fields }}
   {{ $lines = $lines | append (printf "- %s: " .) }}

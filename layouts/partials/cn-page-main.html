@@ -1,0 +1,53 @@
+<style>
+  .cn-nav { background:#2a2a2a; padding:12px 0; border-bottom:1px solid #444; }
+  .cn-nav .container { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
+  .cn-nav__brand { color:#fff; font-weight:600; text-decoration:none; font-size:17px; }
+  .cn-nav__links { display:flex; flex-wrap:wrap; gap:8px 16px; list-style:none; margin:0; padding:0; }
+  .cn-nav__links a { color:#ccc; text-decoration:none; font-size:14px; }
+  .cn-nav__links a:hover { color:#fff; }
+  .cn-header { background:#f5f5f5; border-bottom:1px solid #e0e0e0; padding:40px 20px; }
+  .cn-header h1 { margin:0 0 10px; font-size:28px; line-height:1.35; color:#222; font-weight:600; }
+  .cn-header p { margin:0; max-width:720px; font-size:15px; line-height:1.7; color:#555; }
+  .cn-body { padding:40px 20px; }
+  .cn-body .content { max-width:760px; margin:0 auto; line-height:1.8; color:#333; font-size:15px; }
+  .cn-body .content h2 { margin-top:32px; margin-bottom:12px; font-size:20px; color:#222; font-weight:600; border-left:3px solid #555; padding-left:12px; }
+  .cn-body .content h3 { margin-top:22px; margin-bottom:8px; font-size:16px; color:#333; font-weight:600; }
+  .cn-body .content ul { padding-left:1.25rem; }
+  .cn-body .content li { margin-bottom:6px; }
+  .cn-body .content a { color:#333; font-weight:500; text-decoration:underline; }
+  .cn-body .content table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+  .cn-body .content th, .cn-body .content td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  .cn-body .content th { background:#f5f5f5; font-weight:600; }
+</style>
+
+<nav class="cn-nav">
+  <div class="container">
+    <a class="cn-nav__brand" href="{{ `/cn/` | relLangURL }}">PKYDrip 中国</a>
+    <ul class="cn-nav__links">
+      <li><a href="{{ `/cn/irrigation-control-system/` | relLangURL }}">灌溉控制</a></li>
+      <li><a href="{{ `/cn/fertigation-system/` | relLangURL }}">施肥系统</a></li>
+      <li><a href="{{ `/cn/ec-ph-controller/` | relLangURL }}">EC/pH 控制</a></li>
+      <li><a href="{{ `/cn/contact/` | relLangURL }}">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="cn-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.hero_subtitle }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+  </div>
+</section>
+
+<section class="cn-body">
+  <div class="container">
+    <div class="content">
+      {{ .Content }}
+      {{ with .Params.page_code }}
+      <p style="margin-top:32px;font-size:12px;color:#999;">页面编号：<span style="font-weight:600;color:#666;">{{ . }}</span></p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "cn-contact-block.html" . }}

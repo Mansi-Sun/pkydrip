@@ -1,0 +1,138 @@
+# PKYDrip South Africa Ads-to-Lead Routing System
+# Data path: data/za-market/ads-routing.yaml (NOT data/za/ — conflicts with [za] language code)
+# Solar irrigation · retrofit · off-grid focus
+# DO NOT use for UAE, SA Saudi, or Russia sections.
+
+priority:
+  high:
+    - path: /za/contact/
+      label: Farm Inquiry
+      conversion_tier: 1
+  mid:
+    - path: /za/solar-irrigation-system/
+      label: Solar Irrigation System
+      conversion_tier: 2
+    - path: /za/irrigation-control-system/
+      label: Irrigation Control System
+      conversion_tier: 3
+    - path: /za/wireless-irrigation-system/
+      label: Wireless Irrigation System
+      conversion_tier: 4
+  low:
+    - path: /za/
+      label: South Africa Solar Irrigation Hub
+      conversion_tier: 5
+
+clusters:
+  solar_offgrid:
+    name: Solar Off-Grid Irrigation
+    priority: low
+    keywords:
+      - solar irrigation system South Africa
+      - off-grid irrigation system Africa
+      - solar water pump control system
+      - irrigation automation Africa
+    primary_landing: /za/
+    secondary_landing: /za/solar-irrigation-system/
+
+  solar_pump:
+    name: Solar Pump Integration
+    priority: mid
+    keywords:
+      - solar irrigation system South Africa
+      - solar water pump control system
+      - off-grid irrigation system Africa
+    primary_landing: /za/solar-irrigation-system/
+    secondary_landing: /za/irrigation-control-system/
+
+  retrofit_control:
+    name: Pump and Valve Retrofit
+    priority: mid
+    keywords:
+      - farm irrigation retrofit
+      - irrigation automation Africa
+      - pump control irrigation system
+    primary_landing: /za/irrigation-control-system/
+    secondary_landing: /za/solar-irrigation-system/
+
+  wireless_expansion:
+    name: Low-Cost Wireless Expansion
+    priority: mid
+    keywords:
+      - irrigation automation Africa
+      - off-grid irrigation system Africa
+      - farm irrigation retrofit
+    primary_landing: /za/wireless-irrigation-system/
+    secondary_landing: /za/irrigation-control-system/
+
+contact:
+  email: "info@pky-dripirrigation.com"
+  whatsapp: "https://wa.me/8617395297329"
+  preferred_order:
+    - whatsapp
+    - email
+
+page_codes:
+  _index: PC-ZA-HOME-01
+  solar-irrigation-system: PC-ZA-SOLAR-01
+  irrigation-control-system: PC-ZA-IRRIGATION-01
+  wireless-irrigation-system: PC-ZA-WIRELESS-01
+  contact: PC-ZA-CONTACT-01
+
+page_routing:
+  _index:
+    cluster: solar_offgrid
+    related:
+      - path: /za/solar-irrigation-system/
+        label: Solar Irrigation
+      - path: /za/irrigation-control-system/
+        label: Control System
+      - path: /za/wireless-irrigation-system/
+        label: Wireless
+  solar-irrigation-system:
+    cluster: solar_pump
+    related:
+      - path: /za/irrigation-control-system/
+        label: Control System
+      - path: /za/wireless-irrigation-system/
+        label: Wireless
+  irrigation-control-system:
+    cluster: retrofit_control
+    related:
+      - path: /za/solar-irrigation-system/
+        label: Solar Irrigation
+      - path: /za/wireless-irrigation-system/
+        label: Wireless
+  wireless-irrigation-system:
+    cluster: wireless_expansion
+    related:
+      - path: /za/solar-irrigation-system/
+        label: Solar Irrigation
+      - path: /za/irrigation-control-system/
+        label: Control System
+  contact:
+    cluster: solar_offgrid
+    related:
+      - path: /za/solar-irrigation-system/
+        label: Solar Irrigation
+      - path: /za/irrigation-control-system/
+        label: Control System
+      - path: /za/wireless-irrigation-system/
+        label: Wireless
+
+traffic_examples:
+  - source: Google Search
+    query: solar irrigation system South Africa
+    cluster: solar_pump
+    landing: /za/solar-irrigation-system/
+    conversion: WhatsApp farm inquiry
+  - source: Google Search
+    query: off-grid irrigation system Africa
+    cluster: solar_offgrid
+    landing: /za/
+    conversion: WhatsApp farm inquiry
+  - source: Google Search
+    query: farm irrigation retrofit
+    cluster: retrofit_control
+    landing: /za/irrigation-control-system/
+    conversion: WhatsApp farm inquiry

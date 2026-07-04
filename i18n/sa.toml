@@ -1,10 +1,10 @@
-# Saudi Arabia UI strings for /sa/ section (Hugo i18n)
+# Arabic UI strings for /sa/ section (Hugo i18n)
 
 [contact_whatsapp]
-other = "WhatsApp"
+other = "واتساب"
 
 [contact_email]
-other = "Email"
+other = "البريد الإلكتروني"
 
 [home]
-other = "Home"
+other = "الرئيسية"

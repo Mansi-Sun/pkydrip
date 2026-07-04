@@ -1,0 +1,71 @@
+<style>
+  .za-nav { background:#1a3d2e; padding:12px 0; }
+  .za-nav .container { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
+  .za-nav__brand { color:#fff; font-weight:700; text-decoration:none; font-size:18px; }
+  .za-nav__links { display:flex; flex-wrap:wrap; gap:8px 18px; list-style:none; margin:0; padding:0; }
+  .za-nav__links a { color:#c8e6d4; text-decoration:none; font-size:14px; }
+  .za-nav__links a:hover { color:#fff; }
+  .za-hero { background:linear-gradient(135deg,#1a3d2e 0%,#2d6a4f 45%,#e8a317 100%); color:#fff; padding:56px 20px; text-align:center; }
+  .za-hero h1 { margin:0 0 12px; font-size:34px; line-height:1.25; color:#fff; }
+  .za-hero p { margin:0 auto; max-width:720px; font-size:17px; line-height:1.7; color:#eef6f0; }
+  .za-body { padding:48px 20px; }
+  .za-body .content { max-width:800px; margin:0 auto; line-height:1.75; color:#333; }
+  .za-body .content h2 { margin-top:36px; margin-bottom:14px; font-size:24px; color:#1a3d2e; }
+  .za-body .content h3 { margin-top:24px; margin-bottom:10px; font-size:18px; }
+  .za-body .content ul { padding-left:1.25rem; }
+  .za-body .content li { margin-bottom:8px; }
+  .za-body .content a { color:#2d6a4f; font-weight:600; }
+  .za-product-image { padding:0 20px 36px; background:#f6faf7; }
+  .za-product-image img { width:100%; border-radius:12px; border:1px solid #dce8e0; box-shadow:0 8px 24px rgba(0,0,0,0.06); display:block; }
+</style>
+
+<nav class="za-nav">
+  <div class="container">
+    <a class="za-nav__brand" href="{{ `/za/` | relLangURL }}">PKYDrip South Africa</a>
+    <ul class="za-nav__links">
+      <li><a href="{{ `/za/` | relLangURL }}">Home</a></li>
+      <li><a href="{{ `/za/solar-irrigation-system/` | relLangURL }}">Solar Irrigation</a></li>
+      <li><a href="{{ `/za/irrigation-control-system/` | relLangURL }}">Control System</a></li>
+      <li><a href="{{ `/za/wireless-irrigation-system/` | relLangURL }}">Wireless</a></li>
+      <li><a href="{{ `/za/contact/` | relLangURL }}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+{{ with .Params.hero_subtitle }}
+<section class="za-hero">
+  <div class="container">
+    <h1>{{ $.Title }}</h1>
+    <p>{{ . }}</p>
+  </div>
+</section>
+{{ else }}
+<section class="za-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.hero_image }}
+<section class="za-product-image">
+  <div class="container" style="max-width:900px;margin:0 auto;">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.hero_image_alt | default $.Title }}" loading="lazy">
+  </div>
+</section>
+{{ end }}
+
+<section class="za-body">
+  <div class="container">
+    <div class="content">
+      {{ .Content }}
+      {{ with .Params.page_code }}
+      <p style="margin-top:36px;font-size:13px;color:#888;">Reference: <span style="font-weight:600;color:#666;">{{ . }}</span></p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "za-funnel-links.html" . }}
+{{ partial "za-lead-flow.html" . }}

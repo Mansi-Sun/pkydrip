@@ -44,8 +44,24 @@ title = "PKYDrip — Smart Agriculture Systems for UAE"
 
 ################ Saudi Arabia market ################
 [sa]
-languageName = "Saudi Arabia"
-languageCode = "en-SA"
+languageName = "العربية"
+languageCode = "ar-SA"
 contentDir = "content/sa"
 weight = 7
-title = "PKYDrip — Large-Scale Irrigation Systems for Saudi Arabia"
+title = "PKYDrip — أنظمة الري واسعة النطاق للمزارع السعودية"
+
+################ South Africa market ################
+[za]
+languageName = "South Africa"
+languageCode = "en-ZA"
+contentDir = "content/za"
+weight = 8
+title = "PKYDrip — Solar Irrigation Systems for South Africa"
+
+################ China market #####################
+[cn]
+languageName = "简体中文"
+languageCode = "zh-CN"
+contentDir = "content/cn"
+weight = 9
+title = "PKYDrip — 灌溉与施肥控制系统"

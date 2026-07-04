@@ -1,72 +1,72 @@
 ---
-title: "Irrigation Control System for Large Farms"
-description: "Large-scale irrigation control for Saudi desert farms. Pump and valve automation, multi-zone sequencing, agriculture infrastructure Saudi Arabia."
+title: "نظام التحكم بالري للمزارع الكبيرة"
+description: "تحكم ري واسع النطاق للمزارع الصحراوية السعودية. أتمتة المضخات والصمامات، تسلسل متعدد المناطق، بنية الزراعة السعودية."
 layout: sa-page
 hide_main_nav: true
 page_code: "PC-SA-IRRIGATION-01"
-whatsapp_topic: "Irrigation Control System"
+whatsapp_topic: "نظام التحكم بالري"
 whatsapp_action: "AC-WA-SA-IRRIGATION-WEB-01"
-whatsapp_intro: "I need a large-scale irrigation control system for my Saudi Arabia farm."
+whatsapp_intro: "أحتاج نظام تحكم ري واسع النطاق لمزرعتي في السعودية."
 whatsapp_fields:
-  - "Farm size (hectares)"
-  - "Crop type (wheat / corn / alfalfa / other)"
-  - "Water source"
-  - "Pump capacity"
-  - "Number of irrigation zones"
-hero_subtitle: "Large farms require reliable irrigation across wide distances — we design control systems for large-scale agricultural infrastructure, not small-scale precision setups."
+  - "مساحة المزرعة (هكتار)"
+  - "نوع المحصول (قمح / ذرة / برسيم / أخرى)"
+  - "مصدر المياه"
+  - "قدرة المضخة"
+  - "عدد مناطق الري"
+hero_subtitle: "المزارع الكبيرة تحتاج ريًا موثوقًا عبر مسافات واسعة — نصمم أنظمة تحكم لبنية زراعية واسعة النطاق، وليس لإعدادات دقة صغيرة."
 hero_image: "images/sa/sa-irrigation-control.webp"
-hero_image_alt: "Schematic of large farm irrigation control with pump and valve zones in Saudi desert agriculture"
+hero_image_alt: "مخطط تحكم ري مزرعة كبيرة مع مناطق مضخات وصمامات في الزراعة الصحراوية السعودية"
 keywords:
   - irrigation system Saudi Arabia
+  - نظام ري السعودية
   - large farm irrigation system
   - pump control irrigation system
   - desert agriculture irrigation Saudi
-  - agriculture infrastructure Saudi Arabia
 ---
 
-[← Home /sa/](/sa/) · [Wireless](/sa/wireless-irrigation-system/) · [Fertigation](/sa/fertigation-system/)
+[← الرئيسية /sa/](/sa/) · [لاسلكي](/sa/wireless-irrigation-system/) · [تسميد](/sa/fertigation-system/)
 
-## Saudi Agriculture Problem
+## مشكلة الزراعة السعودية
 
-Large farms require reliable irrigation across wide distances.
+المزارع الكبيرة تحتاج ريًا موثوقًا عبر مسافات واسعة.
 
-- Manual irrigation is not scalable across hundreds or thousands of hectares
-- Pump coordination is complex across multiple zones and distances
-- Valve control must cover large field areas reliably
-- System failures cause significant crop and water losses
+- الري اليدوي غير قابل للتوسع عبر مئات أو آلاف الهكتارات
+- تنسيق المضخات معقد عبر مناطق ومسافات متعددة
+- يجب أن يغطي التحكم بالصمامات مساحات ميدانية كبيرة بموثوقية
+- أعطال النظام تسبب خسائر كبيرة في المحصول والمياه
 
-## PKYDrip Approach
+## نهج PKYDrip
 
-We design irrigation control systems for **large-scale agricultural infrastructure** — stable pump and valve operation built for desert field conditions.
+نصمم أنظمة تحكم ري لـ **بنية زراعية واسعة النطاق** — تشغيل مستقر للمضخات والصمامات في ظروف الحقول الصحراوية.
 
-## System Capabilities
+## قدرات النظام
 
-- Multi-zone irrigation control across large open fields
-- Pump automation system integration
-- Valve sequencing control for coordinated field operation
-- Long-distance field operation support
-- Manual + automatic hybrid mode for field operators
+- تحكم ري متعدد المناطق عبر الحقول المفتوحة الكبيرة
+- تكامل نظام أتمتة المضخات
+- تحكم تسلسلي بالصمامات للتشغيل الميداني المنسق
+- دعم التشغيل الميداني لمسافات طويلة
+- وضع هجين يدوي + تلقائي لمشغلي الحقل
 
-## Applications
+## التطبيقات
 
-- Wheat production farms
-- Grain agriculture
-- Large open-field irrigation
-- Government agriculture projects
-- Pivot and drip irrigation zones at scale
+- مزارع إنتاج القمح
+- زراعة الحبوب
+- ري الحقول المفتوحة الكبيرة
+- المشاريع الزراعية الحكومية
+- مناطق الري المحوري والتنقيط على نطاق واسع
 
-## Saudi Advantage
+## الميزة السعودية
 
-- Designed for large-scale deployment across wide farm areas
-- Stable operation in desert environment conditions
-- Easy maintenance for field operators
-- Pair with **[wireless irrigation](/sa/wireless-irrigation-system/)** for long-distance field coverage
+- مصمم للنشر واسع النطاق عبر مساحات المزرعة
+- تشغيل مستقر في الظروف الصحراوية
+- صيانة سهلة لمشغلي الحقل
+- يُدمج مع **[الري اللاسلكي](/sa/wireless-irrigation-system/)** لتغطية ميدانية لمسافات طويلة
 
-## Related systems
+## أنظمة ذات صلة
 
-- **[Wireless Irrigation System](/sa/wireless-irrigation-system/)** — long-range field control without cable infrastructure
-- **[Fertigation System](/sa/fertigation-system/)** — optional support for selected crop zones
+- **[نظام الري اللاسلكي](/sa/wireless-irrigation-system/)** — تحكم ميداني لمسافات طويلة دون بنية كابلات
+- **[نظام التسميد](/sa/fertigation-system/)** — دعم اختياري لمناطق محاصيل محددة
 
-## Contact
+## اتصل بنا
 
-Discuss your farm size and irrigation zones via {{< sa-whatsapp-link text="WhatsApp" >}}.
+ناقش مساحة مزرعتك ومناطق الري عبر {{< sa-whatsapp-link text="واتساب" >}}.

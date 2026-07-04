@@ -1,33 +1,34 @@
 <style>
-  .sa-nav { background:#3d2e1f; padding:12px 0; }
+  .sa-nav { background:#3d2e1f; padding:12px 0; direction:rtl; }
   .sa-nav .container { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
   .sa-nav__brand { color:#fff; font-weight:700; text-decoration:none; font-size:18px; }
   .sa-nav__links { display:flex; flex-wrap:wrap; gap:8px 18px; list-style:none; margin:0; padding:0; }
   .sa-nav__links a { color:#e8dcc8; text-decoration:none; font-size:14px; }
   .sa-nav__links a:hover { color:#fff; }
-  .sa-hero { background:linear-gradient(135deg,#3d2e1f 0%,#6b4f2a 50%,#8a9a5b 100%); color:#fff; padding:56px 20px; text-align:center; }
-  .sa-hero h1 { margin:0 0 12px; font-size:34px; line-height:1.25; color:#fff; }
-  .sa-hero p { margin:0 auto; max-width:720px; font-size:17px; line-height:1.7; color:#f5f0e6; }
-  .sa-body { padding:48px 20px; }
-  .sa-body .content { max-width:800px; margin:0 auto; line-height:1.75; color:#333; }
+  .sa-hero { background:linear-gradient(135deg,#3d2e1f 0%,#6b4f2a 50%,#8a9a5b 100%); color:#fff; padding:56px 20px; text-align:center; direction:rtl; }
+  .sa-hero h1 { margin:0 0 12px; font-size:34px; line-height:1.4; color:#fff; }
+  .sa-hero p { margin:0 auto; max-width:720px; font-size:17px; line-height:1.8; color:#f5f0e6; }
+  .sa-body { padding:48px 20px; direction:rtl; }
+  .sa-body .content { max-width:800px; margin:0 auto; line-height:1.85; color:#333; text-align:right; }
   .sa-body .content h2 { margin-top:36px; margin-bottom:14px; font-size:24px; color:#3d2e1f; }
   .sa-body .content h3 { margin-top:24px; margin-bottom:10px; font-size:18px; }
-  .sa-body .content ul { padding-left:1.25rem; }
+  .sa-body .content ul { padding-right:1.25rem; padding-left:0; }
   .sa-body .content li { margin-bottom:8px; }
   .sa-body .content a { color:#6b4f2a; font-weight:600; }
   .sa-product-image { padding:0 20px 36px; background:#f8f5ef; }
   .sa-product-image img { width:100%; border-radius:12px; border:1px solid #e0d5c4; box-shadow:0 8px 24px rgba(0,0,0,0.06); display:block; }
+  .sa-funnel, .sa-lead { direction:rtl; text-align:right; }
 </style>
 
 <nav class="sa-nav">
   <div class="container">
-    <a class="sa-nav__brand" href="{{ `/sa/` | relLangURL }}">PKYDrip Saudi Arabia</a>
+    <a class="sa-nav__brand" href="{{ `/sa/` | relLangURL }}">PKYDrip السعودية</a>
     <ul class="sa-nav__links">
-      <li><a href="{{ `/sa/` | relLangURL }}">Home</a></li>
-      <li><a href="{{ `/sa/irrigation-control-system/` | relLangURL }}">Irrigation Control</a></li>
-      <li><a href="{{ `/sa/wireless-irrigation-system/` | relLangURL }}">Wireless</a></li>
-      <li><a href="{{ `/sa/fertigation-system/` | relLangURL }}">Fertigation</a></li>
-      <li><a href="{{ `/sa/contact/` | relLangURL }}">Contact</a></li>
+      <li><a href="{{ `/sa/` | relLangURL }}">الرئيسية</a></li>
+      <li><a href="{{ `/sa/irrigation-control-system/` | relLangURL }}">التحكم بالري</a></li>
+      <li><a href="{{ `/sa/wireless-irrigation-system/` | relLangURL }}">الري اللاسلكي</a></li>
+      <li><a href="{{ `/sa/fertigation-system/` | relLangURL }}">التسميد</a></li>
+      <li><a href="{{ `/sa/contact/` | relLangURL }}">اتصل بنا</a></li>
     </ul>
   </div>
 </nav>
@@ -61,7 +62,7 @@
     <div class="content">
       {{ .Content }}
       {{ with .Params.page_code }}
-      <p style="margin-top:36px;font-size:13px;color:#888;">Reference: <span style="font-weight:600;color:#666;">{{ . }}</span></p>
+      <p style="margin-top:36px;font-size:13px;color:#888;">المرجع: <span style="font-weight:600;color:#666;">{{ . }}</span></p>
       {{ end }}
     </div>
   </div>

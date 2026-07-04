@@ -6,19 +6,19 @@
 <section class="sa-funnel" style="background:#f8f5ef;border-top:1px solid #e0d5c4;padding:28px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
-      <p style="margin:0 0 12px;font-weight:600;color:#3d2e1f;font-size:15px;">Explore Saudi irrigation infrastructure</p>
+      <p style="margin:0 0 12px;font-weight:600;color:#3d2e1f;font-size:15px;">استكشف أنظمة الري السعودية</p>
       {{ if $route }}
       <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <a href="{{ `/sa/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f0e8d8;color:#3d2e1f;border:1px solid #e0d5c4;text-decoration:none;font-size:14px;font-weight:600;">Home →</a>
+        <a href="{{ `/sa/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#f0e8d8;color:#3d2e1f;border:1px solid #e0d5c4;text-decoration:none;font-size:14px;font-weight:600;">الرئيسية ←</a>
         {{ range $route.related }}
-        <a href="{{ .path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#6b4f2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">{{ .label }} →</a>
+        <a href="{{ .path | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#6b4f2a;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">{{ .label }} ←</a>
         {{ end }}
         {{ if ne $key "contact" }}
-        <a href="{{ `/sa/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
-        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
+        <a href="{{ `/sa/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">اتصل بنا ←</a>
+        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">واتساب ←</a>
         {{ else }}
-        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
-        <a href="{{ printf "mailto:%s?subject=SA%%20Farm%%20Inquiry" ($contact.email | default "info@pky-dripirrigation.com") }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Email →</a>
+        <a href="{{ partial "sa-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">واتساب ←</a>
+        <a href="{{ printf "mailto:%s?subject=%s" ($contact.email | default "info@pky-dripirrigation.com") ("استفسار مزرعة سعودية" | urlquery) }}" style="padding:10px 16px;border-radius:8px;background:#3d2e1f;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">البريد الإلكتروني ←</a>
         {{ end }}
       </div>
       {{ end }}
