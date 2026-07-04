@@ -1,4 +1,5 @@
 # PKYDrip UAE Ads-to-Lead Routing System
+# Data path: data/uae-market/ads-routing.yaml (NOT data/uae/ — conflicts with [uae] language code)
 # Precision agriculture · water efficiency · greenhouse focus
 # DO NOT use for English, Russia, or Saudi sections.
 
@@ -46,7 +47,7 @@ clusters:
     secondary_landing: /uae/fertigation-system/
 
   fertigation_precision:
-    name: Fertigation & Nutrient Control
+    name: "Fertigation & Nutrient Control"
     priority: mid
     keywords:
       - fertigation system UAE
@@ -69,12 +70,18 @@ clusters:
 
 contact:
   email: "info@pky-dripirrigation.com"
-  mailto: "mailto:info@pky-dripirrigation.com?subject=UAE%20Farm%20System%20Inquiry%20-%20PKYDrip&body=Hello%20PKYDrip%2C%0A%0APlease%20recommend%20a%20farm%20automation%20system%20for%20my%20UAE%20project.%0A-%20Farm%20type%3A%20%0A-%20Crop%20type%3A%20%0A-%20Water%20source%3A%20%0A-%20Farm%20size%3A%20%0A-%20Irrigation%20zones%3A%20"
+  mailto: "mailto:info@pky-dripirrigation.com?subject=UAE%20Farm%20System%20Inquiry%20-%20PKYDrip&body=Hi%20PKYDrip%2C%0A%0AI%20would%20like%20a%20farm%20system%20recommendation%20for%20my%20UAE%20project.%0APage%20code%3A%20%0A-%20Farm%20type%3A%20%0A-%20Crop%20type%3A%20%0A-%20Water%20source%3A%20%0A-%20Farm%20size%3A%20%0A-%20Irrigation%20zones%3A%20"
   whatsapp: "https://wa.me/8617395297329"
-  whatsapp_text: "Hello%20PKYDrip%21%20Please%20recommend%20a%20farm%20automation%20system%20for%20my%20UAE%20project.%0A-%20Farm%20type%3A%20%0A-%20Crop%20type%3A%20%0A-%20Water%20source%3A%20%0A-%20Farm%20size%3A%20%0A-%20Irrigation%20zones%3A%20"
   preferred_order:
     - whatsapp
     - email
+
+page_codes:
+  _index: PC-UAE-HOME-01
+  irrigation-control-system: PC-UAE-IRRIGATION-01
+  fertigation-system: PC-UAE-FERTIGATION-01
+  climate-control-system: PC-UAE-CLIMATE-01
+  contact: PC-UAE-CONTACT-01
 
 page_routing:
   _index:

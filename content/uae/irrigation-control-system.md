@@ -3,6 +3,16 @@ title: "Irrigation Control System for Water-Efficient Farming"
 description: "Water-efficient irrigation control for UAE greenhouses and farms. Drip irrigation UAE greenhouse, smart irrigation UAE, zone-based water optimization."
 layout: uae-page
 hide_main_nav: true
+page_code: "PC-UAE-IRRIGATION-01"
+whatsapp_topic: "Irrigation Control System"
+whatsapp_action: "AC-WA-UAE-IRRIGATION-WEB-01"
+whatsapp_intro: "I need a water-efficient irrigation control system for my UAE farm."
+whatsapp_fields:
+  - "Farm type (greenhouse / open field / hydroponic)"
+  - "Crop type"
+  - "Water source"
+  - "Irrigation zones"
+  - "Greenhouse or open field"
 hero_subtitle: "In UAE agriculture, the main cost is not equipment — it is water waste. We design irrigation around water efficiency logic, not simple valve control."
 hero_image: "images/uae/uae-irrigation-water.webp"
 hero_image_alt: "Schematic of zone-based drip irrigation for water-efficient UAE greenhouse farming"
@@ -60,4 +70,4 @@ The goal is to deliver the right amount of water to each crop zone at the right 
 
 ## Contact
 
-Discuss your irrigation zones and water source via **[WhatsApp](/uae/contact/)**.
+Discuss your irrigation zones and water source via {{< uae-whatsapp-link text="WhatsApp" >}}.

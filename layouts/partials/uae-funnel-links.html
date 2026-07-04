@@ -1,8 +1,8 @@
-{{ $routing := site.Data.uae.ads_routing.page_routing }}
+{{ $routing := site.Data.uae_market.ads_routing.page_routing }}
 {{ $key := .File.BaseFileName }}
 {{ if .IsHome }}{{ $key = "_index" }}{{ end }}
 {{ $route := index $routing $key }}
-{{ $contact := site.Data.uae.ads_routing.contact }}
+{{ $contact := site.Data.uae_market.ads_routing.contact }}
 <section class="uae-funnel" style="background:#faf8f4;border-top:1px solid #e8dfd0;padding:28px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
@@ -15,10 +15,10 @@
         {{ end }}
         {{ if ne $key "contact" }}
         <a href="{{ `/uae/contact/` | relLangURL }}" style="padding:10px 16px;border-radius:8px;background:#1a4a5c;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Contact →</a>
-        <a href="{{ $contact.whatsapp }}?text={{ $contact.whatsapp_text }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">WhatsApp →</a>
+        <a href="{{ partial "uae-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
         {{ else }}
-        <a href="{{ $contact.whatsapp }}?text={{ $contact.whatsapp_text }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">WhatsApp — preferred →</a>
-        <a href="{{ $contact.mailto }}" style="padding:10px 16px;border-radius:8px;background:#1a4a5c;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Email →</a>
+        <a href="{{ partial "uae-whatsapp-url.html" . }}" target="_blank" rel="noopener" style="padding:10px 16px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Chat on WhatsApp →</a>
+        <a href="{{ $contact.mailto | default (printf "mailto:info@pky-dripirrigation.com?subject=UAE%%20Farm%%20Inquiry") }}" style="padding:10px 16px;border-radius:8px;background:#1a4a5c;color:#fff;text-decoration:none;font-size:14px;font-weight:600;">Email →</a>
         {{ end }}
       </div>
       {{ end }}

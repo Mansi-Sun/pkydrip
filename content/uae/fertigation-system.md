@@ -3,6 +3,16 @@ title: "Fertigation System for Precision Crop Nutrition"
 description: "Controlled fertigation for UAE greenhouse and hydroponic farms. EC pH monitoring, nutrient dosing, fertigation system UAE, hydroponic system UAE."
 layout: uae-page
 hide_main_nav: true
+page_code: "PC-UAE-FERTIGATION-01"
+whatsapp_topic: "Fertigation System"
+whatsapp_action: "AC-WA-UAE-FERTIGATION-WEB-01"
+whatsapp_intro: "I need a fertigation system with EC / pH control for my UAE greenhouse or hydroponic farm."
+whatsapp_fields:
+  - "Crop type"
+  - "Farm type (greenhouse / hydroponic)"
+  - "EC / pH control needed"
+  - "Irrigation zones"
+  - "Channels required"
 hero_subtitle: "Fertilizer cost and efficiency directly affect profitability in UAE greenhouse farming. Precise nutrient delivery per crop stage improves yield consistency."
 hero_image: "images/uae/uae-fertigation-ecph.webp"
 hero_image_alt: "Schematic of EC pH fertigation system for UAE hydroponic and greenhouse crops"
@@ -59,4 +69,4 @@ Integrated with your irrigation schedule, fertigation becomes a predictable part
 
 ## Contact
 
-Share your crop type and fertigation requirements via **[WhatsApp](/uae/contact/)**.
+Share your crop type and fertigation requirements via {{< uae-whatsapp-link text="WhatsApp" >}}.

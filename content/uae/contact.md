@@ -3,6 +3,16 @@ title: "Request UAE Farm System Design"
 description: "Contact PKYDrip for UAE farm irrigation and greenhouse automation design. WhatsApp preferred for UAE agricultural projects."
 layout: uae-page
 hide_main_nav: true
+page_code: "PC-UAE-CONTACT-01"
+whatsapp_topic: "UAE Farm System Design"
+whatsapp_action: "AC-WA-UAE-CONTACT-WEB-01"
+whatsapp_intro: "I would like to request a UAE farm system design from PKYDrip."
+whatsapp_fields:
+  - "Farm type (greenhouse / open field / hydroponic)"
+  - "Crop type"
+  - "Water source type"
+  - "Farm size"
+  - "Irrigation zones"
 hero_subtitle: "We design irrigation and greenhouse automation systems for UAE agriculture projects — water efficiency, fertigation precision, and climate stability."
 hero_image: "images/uae/uae-contact-farm.webp"
 hero_image_alt: "Schematic of UAE farm system design consultation for greenhouse and irrigation projects"
@@ -46,6 +56,6 @@ We design irrigation and greenhouse automation systems for UAE agriculture proje
 
 **WhatsApp preferred for UAE agricultural projects.**
 
-Send your farm details and we will respond with a system recommendation path.
+Send your farm details via {{< uae-whatsapp-link text="Chat on WhatsApp" >}} and we will respond with a system recommendation path.
 
 [← Main PKYDrip website](/)

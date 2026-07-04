@@ -3,6 +3,16 @@ title: "Greenhouse Climate Control System"
 description: "Greenhouse climate control for UAE heat stress management. Ventilation, cooling pads, humidity regulation — greenhouse irrigation system UAE."
 layout: uae-page
 hide_main_nav: true
+page_code: "PC-UAE-CLIMATE-01"
+whatsapp_topic: "Greenhouse Climate Control"
+whatsapp_action: "AC-WA-UAE-CLIMATE-WEB-01"
+whatsapp_intro: "I need a greenhouse climate control system for UAE heat and humidity management."
+whatsapp_fields:
+  - "Greenhouse type"
+  - "Crop type"
+  - "Greenhouse area"
+  - "Cooling method (fans / pads / roof vents)"
+  - "Irrigation zones"
 hero_subtitle: "Greenhouses in UAE face extreme heat stress. We design climate systems that stabilize temperature and humidity to protect crops and improve yield consistency."
 hero_image: "images/uae/uae-climate-greenhouse.webp"
 hero_image_alt: "Schematic of greenhouse climate control with ventilation and cooling for UAE farms"
@@ -60,4 +70,4 @@ We design climate systems that stabilize greenhouse environment conditions — p
 
 ## Contact
 
-Describe your greenhouse type and climate challenges via **[WhatsApp](/uae/contact/)**.
+Describe your greenhouse type and climate challenges via {{< uae-whatsapp-link text="WhatsApp" >}}.

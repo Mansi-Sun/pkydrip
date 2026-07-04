@@ -60,6 +60,9 @@
   <div class="container">
     <div class="content">
       {{ .Content }}
+      {{ with .Params.page_code }}
+      <p style="margin-top:36px;font-size:13px;color:#888;">Reference: <span style="font-weight:600;color:#666;">{{ . }}</span></p>
+      {{ end }}
     </div>
   </div>
 </section>

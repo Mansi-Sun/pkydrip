@@ -3,6 +3,16 @@ title: "Smart Agriculture Systems for UAE Farms"
 description: "Increase crop yield while reducing water consumption in UAE desert agriculture. Smart irrigation UAE, greenhouse irrigation system UAE, water saving agriculture UAE."
 layout: uae-page
 hide_main_nav: true
+page_code: "PC-UAE-HOME-01"
+whatsapp_topic: "Smart Agriculture Systems"
+whatsapp_action: "AC-WA-UAE-HOME-WEB-01"
+whatsapp_intro: "I would like a smart agriculture system recommendation for my UAE farm."
+whatsapp_fields:
+  - "Farm type (greenhouse / open field / hydroponic)"
+  - "Crop type"
+  - "Water source"
+  - "Farm size"
+  - "Irrigation zones"
 hero_subtitle: "Increase crop yield while reducing water consumption in desert agriculture environments — precision farming for greenhouses, hydroponics, and high-value crops."
 hero_image: "images/uae/uae-home-greenhouse.webp"
 hero_image_alt: "Schematic of smart greenhouse agriculture with water-efficient irrigation in UAE"
@@ -57,6 +67,6 @@ We design agricultural automation systems focused on:
 
 ## Contact
 
-Request a farm system recommendation via **[WhatsApp or our contact page](/uae/contact/)**.
+Request a farm system recommendation via {{< uae-whatsapp-link text="WhatsApp" >}} or our **[contact page](/uae/contact/)**.
 
 [← Main PKYDrip website](/)
