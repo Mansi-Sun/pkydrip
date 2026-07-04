@@ -15,19 +15,18 @@
   .cn-body .content ul { padding-left:1.25rem; }
   .cn-body .content li { margin-bottom:6px; }
   .cn-body .content a { color:#333; font-weight:500; text-decoration:underline; }
-  .cn-body .content table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
-  .cn-body .content th, .cn-body .content td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
-  .cn-body .content th { background:#f5f5f5; font-weight:600; }
+  .cn-footer { background:#2a2a2a; color:#aaa; padding:24px 20px; font-size:12px; text-align:center; }
+  .cn-footer p { margin:0; }
 </style>
 
 <nav class="cn-nav">
   <div class="container">
-    <a class="cn-nav__brand" href="{{ `/cn/` | relLangURL }}">PKYDrip 中国</a>
+    <a class="cn-nav__brand" href="{{ `/cn/` | relLangURL }}">PKYDrip</a>
     <ul class="cn-nav__links">
-      <li><a href="{{ `/cn/irrigation-control-system/` | relLangURL }}">灌溉控制</a></li>
-      <li><a href="{{ `/cn/fertigation-system/` | relLangURL }}">施肥系统</a></li>
-      <li><a href="{{ `/cn/ec-ph-controller/` | relLangURL }}">EC/pH 控制</a></li>
-      <li><a href="{{ `/cn/contact/` | relLangURL }}">联系</a></li>
+      <li><a href="{{ `/cn/` | relLangURL }}">首页</a></li>
+      <li><a href="{{ `/cn/company/` | relLangURL }}">公司信息</a></li>
+      <li><a href="{{ `/cn/compliance/` | relLangURL }}">合规信息</a></li>
+      <li><a href="{{ `/cn/contact/` | relLangURL }}">联系我们</a></li>
     </ul>
   </div>
 </nav>
@@ -35,7 +34,7 @@
 <section class="cn-header">
   <div class="container">
     <h1>{{ .Title }}</h1>
-    {{ with .Params.hero_subtitle }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </div>
 </section>
 
@@ -43,11 +42,14 @@
   <div class="container">
     <div class="content">
       {{ .Content }}
-      {{ with .Params.page_code }}
-      <p style="margin-top:32px;font-size:12px;color:#999;">页面编号：<span style="font-weight:600;color:#666;">{{ . }}</span></p>
-      {{ end }}
     </div>
   </div>
 </section>
 
-{{ partial "cn-contact-block.html" . }}
+{{ partial "cn-internal-nav.html" . }}
+
+<footer class="cn-footer">
+  <div class="container">
+    <p>© Shijiazhuang Keshun Trading Co., Ltd. · PKYDrip</p>
+  </div>
+</footer>

@@ -1,4 +1,4 @@
-{{ $contact := site.Data.sa_market.ads_routing.contact }}
+{{ $contact := (index hugo.Data "sa-market" "ads-routing").contact }}
 {{ $email := $contact.email | default "info@pky-dripirrigation.com" }}
 {{ $mailtoSubject := printf "استفسار مزرعة سعودية - %s" .Params.page_code | urlquery }}
 {{ $mailtoBody := printf "مرحباً PKYDrip،\nالصفحة: %s\n\nمساحة المزرعة (هكتار): \nنوع المحصول: \nمصدر المياه: \nقدرة المضخة: \nمناطق الري: \n" .Params.page_code | urlquery }}

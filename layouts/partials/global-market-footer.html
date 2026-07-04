@@ -1,0 +1,41 @@
+{{ $graph := index hugo.Data "seo-linkgraph" "internal-links" }}
+{{ $market := index $graph.markets .Lang }}
+{{ if $market }}
+{{ $rtl := eq .Lang "sa" }}
+<footer class="global-market-footer" style="background:#2a2a2a;color:#ccc;padding:32px 20px 20px;font-size:13px;line-height:1.7;{{ if $rtl }}direction:rtl;text-align:right;{{ end }}">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:32px 48px;max-width:960px;margin:0 auto;">
+      <div style="flex:1 1 200px;min-width:180px;">
+        <p style="margin:0 0 8px;font-weight:700;color:#fff;font-size:15px;">PKYDrip</p>
+        <p style="margin:0;color:#aaa;font-size:12px;">{{ $market.ui.footer_tagline }}</p>
+        <p style="margin:12px 0 0;"><a href="{{ $graph.global.home }}" style="color:#ddd;text-decoration:none;">{{ $market.ui.global_hub }} →</a></p>
+      </div>
+      <div style="flex:0 1 160px;">
+        <p style="margin:0 0 10px;font-weight:600;color:#fff;font-size:13px;">{{ $market.ui.markets_heading }}</p>
+        <ul style="margin:0;padding:0;list-style:none;">
+          {{ range $graph.footer_markets }}
+          <li style="margin-bottom:6px;"><a href="{{ .path }}" style="color:#bbb;text-decoration:none;{{ if eq .lang $.Lang }}font-weight:600;color:#fff;{{ end }}">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div style="flex:0 1 180px;">
+        <p style="margin:0 0 10px;font-weight:600;color:#fff;font-size:13px;">{{ $market.ui.systems_heading }}</p>
+        <ul style="margin:0;padding:0;list-style:none;">
+          {{ range $market.systems }}
+          <li style="margin-bottom:6px;"><a href="{{ .path }}" style="color:#bbb;text-decoration:none;">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div style="flex:0 1 180px;">
+        <p style="margin:0 0 10px;font-weight:600;color:#fff;font-size:13px;">Global Systems</p>
+        <ul style="margin:0;padding:0;list-style:none;">
+          {{ range $graph.global.systems }}
+          <li style="margin-bottom:6px;"><a href="{{ .path }}" style="color:#bbb;text-decoration:none;">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <p style="margin:24px auto 0;max-width:960px;padding-top:16px;border-top:1px solid #444;color:#888;font-size:11px;">© PKYDrip · Irrigation automation systems</p>
+  </div>
+</footer>
+{{ end }}

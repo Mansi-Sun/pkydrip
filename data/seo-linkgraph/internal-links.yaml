@@ -1,0 +1,203 @@
+# PKYDrip Global Internal Link Graph
+# Market-to-market SEO web — do NOT use slash keys in nested maps
+
+global:
+  home: /
+  contact: /contact/
+  systems:
+    - key: irrigation
+      path: /system/irrigation-control-system/
+      label: Irrigation Control System
+    - key: fertigation
+      path: /system/fertigation-system/
+      label: Fertigation System
+    - key: wireless
+      path: /system/wireless-irrigation-system/
+      label: Wireless Irrigation System
+    - key: climate
+      path: /system/climate-control-system/
+      label: Climate Control System
+
+# Same system type across markets (for "Available in" row)
+system_availability:
+  irrigation-control-system:
+    ru: /ru/irrigation-control-system/
+    uae: /uae/irrigation-control-system/
+    sa: /sa/irrigation-control-system/
+    za: /za/irrigation-control-system/
+    cn: /cn/irrigation-control-system/
+    global: /system/irrigation-control-system/
+  fertigation-system:
+    ru: /ru/fertigation-system/
+    uae: /uae/fertigation-system/
+    sa: /sa/fertigation-system/
+    cn: /cn/fertigation-system/
+    global: /system/fertigation-system/
+  wireless-irrigation-system:
+    ru: /ru/wireless-irrigation-system/
+    sa: /sa/wireless-irrigation-system/
+    za: /za/wireless-irrigation-system/
+    global: /system/wireless-irrigation-system/
+  climate-control-system:
+    uae: /uae/climate-control-system/
+    global: /system/climate-control-system/
+  solar-irrigation-system:
+    za: /za/solar-irrigation-system/
+  ec-ph-controller:
+    cn: /cn/ec-ph-controller/
+    global: /product/ec-ph-controller/
+
+markets:
+  ru:
+    name: Russia
+    home: /ru/
+    contact: /ru/contact/
+    systems:
+      - key: irrigation
+        path: /ru/irrigation-control-system/
+        label: Irrigation Control
+      - key: fertigation
+        path: /ru/fertigation-system/
+        label: Fertigation
+      - key: wireless
+        path: /ru/wireless-irrigation-system/
+        label: Wireless Irrigation
+    cross_markets:
+      - path: /uae/
+        label: UAE — precision agriculture
+      - path: /sa/
+        label: Saudi Arabia — large-scale infrastructure
+    ui:
+      systems_heading: PKYDrip Systems
+      available_in: "Available in:"
+      related_markets: Related markets
+      global_hub: Global PKYDrip site
+      markets_heading: Markets
+      contact: Contact
+      footer_tagline: Industrial irrigation automation — Russia market
+
+  uae:
+    name: UAE
+    home: /uae/
+    contact: /uae/contact/
+    systems:
+      - key: irrigation
+        path: /uae/irrigation-control-system/
+        label: Irrigation Control
+      - key: fertigation
+        path: /uae/fertigation-system/
+        label: Fertigation
+      - key: climate
+        path: /uae/climate-control-system/
+        label: Climate Control
+    cross_markets:
+      - path: /ru/
+        label: Russia — large-scale irrigation
+      - path: /sa/
+        label: Saudi Arabia — infrastructure scale
+    ui:
+      systems_heading: PKYDrip Systems
+      available_in: "Available in:"
+      related_markets: Related markets
+      global_hub: Global PKYDrip site
+      markets_heading: Markets
+      contact: Contact
+      footer_tagline: Precision agriculture irrigation — UAE market
+
+  sa:
+    name: Saudi Arabia
+    home: /sa/
+    contact: /sa/contact/
+    systems:
+      - key: irrigation
+        path: /sa/irrigation-control-system/
+        label: التحكم بالري
+      - key: wireless
+        path: /sa/wireless-irrigation-system/
+        label: الري اللاسلكي
+      - key: fertigation
+        path: /sa/fertigation-system/
+        label: التسميد
+    cross_markets:
+      - path: /ru/
+        label: روسيا — أنظمة الري اللاسلكي
+      - path: /uae/
+        label: الإمارات — التسميد والدقة
+    ui:
+      systems_heading: أنظمة PKYDrip
+      available_in: "متوفر في:"
+      related_markets: أسواق ذات صلة
+      global_hub: الموقع العالمي PKYDrip
+      markets_heading: الأسواق
+      contact: اتصل بنا
+      footer_tagline: بنية الري واسعة النطاق — السوق السعودي
+
+  za:
+    name: South Africa
+    home: /za/
+    contact: /za/contact/
+    systems:
+      - key: solar
+        path: /za/solar-irrigation-system/
+        label: Solar Irrigation
+      - key: irrigation
+        path: /za/irrigation-control-system/
+        label: Control System
+      - key: wireless
+        path: /za/wireless-irrigation-system/
+        label: Wireless Irrigation
+    cross_markets:
+      - path: /sa/
+        label: Saudi Arabia — large-scale irrigation
+      - path: /ru/
+        label: Russia — wireless control systems
+    ui:
+      systems_heading: PKYDrip Systems
+      available_in: "Available in:"
+      related_markets: Related markets
+      global_hub: Global PKYDrip site
+      markets_heading: Markets
+      contact: Contact
+      footer_tagline: Solar irrigation retrofit — South Africa market
+
+  cn:
+    name: China
+    home: /cn/
+    contact: /cn/contact/
+    global_only_cross: true
+    systems:
+      - key: irrigation
+        path: /cn/irrigation-control-system/
+        label: 灌溉控制
+      - key: fertigation
+        path: /cn/fertigation-system/
+        label: 施肥系统
+      - key: ecph
+        path: /cn/ec-ph-controller/
+        label: EC/pH 控制
+    cross_markets: []
+    ui:
+      systems_heading: PKYDrip 系统
+      available_in: "全球系统页面:"
+      related_markets: 全球技术参考
+      global_hub: PKYDrip 全球站点
+      markets_heading: 全球市场
+      contact: 联系
+      footer_tagline: 灌溉与施肥控制系统 — 中国市场
+
+footer_markets:
+  - lang: ru
+    path: /ru/
+    label: Russia
+  - lang: uae
+    path: /uae/
+    label: UAE
+  - lang: sa
+    path: /sa/
+    label: Saudi Arabia
+  - lang: za
+    path: /za/
+    label: South Africa
+  - lang: cn
+    path: /cn/
+    label: China

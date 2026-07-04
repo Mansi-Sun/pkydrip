@@ -1,12 +1,6 @@
-# PKYDrip China market contact (minimal, compliant)
+# PKYDrip China — corporate compliance site (NOT product SEO)
 # Data path: data/cn-market/ (NOT data/cn/ — conflicts with [cn] language code)
 
 contact:
   email: "info@pky-dripirrigation.com"
-
-page_codes:
-  _index: PC-CN-HOME-01
-  irrigation-control-system: PC-CN-IRRIGATION-01
-  fertigation-system: PC-CN-FERTIGATION-01
-  ec-ph-controller: PC-CN-ECPH-01
-  contact: PC-CN-CONTACT-01
+  address: "河北省石家庄市裕华区体育南大街联创1号 B-605"

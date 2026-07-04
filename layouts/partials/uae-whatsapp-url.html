@@ -2,7 +2,7 @@
   Build page-specific WhatsApp URL for /uae/ pages.
   Matches English site format: Hi PKYDrip + topic + Page code + Action + intro + fields.
 */}}
-{{ $contact := site.Data.uae_market.ads_routing.contact }}
+{{ $contact := (index hugo.Data "uae-market" "ads-routing").contact }}
 {{ $whatsappBase := "https://wa.me/8617395297329" }}
 {{ with $contact.whatsapp }}{{ $whatsappBase = . }}{{ end }}
 {{ $pageCode := .Params.page_code }}

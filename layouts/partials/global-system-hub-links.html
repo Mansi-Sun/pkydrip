@@ -1,0 +1,36 @@
+{{ $graph := index hugo.Data "seo-linkgraph" "internal-links" }}
+{{ if eq .Lang "en" }}
+{{ $slug := .File.BaseFileName }}
+{{ if eq $slug "index" }}{{ $slug = path.BaseName (strings.TrimSuffix "/" .RelPermalink) }}{{ end }}
+{{ $availability := index $graph.system_availability $slug }}
+<section class="global-system-hub-links py-4 border-top" style="background:#f4f8f5;">
+  <div class="container col-lg-10">
+    <h2 class="h5 mb-3" style="color:#1a3a2a;">PKYDrip Core Systems</h2>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      {{ range $graph.global.systems }}
+      <a href="{{ .path | relLangURL }}" class="btn btn-sm btn-outline-secondary">{{ .label }}</a>
+      {{ end }}
+    </div>
+    {{ if $availability }}
+    <p class="small fw-semibold text-muted mb-2">Available in:</p>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      {{ $labels := dict "ru" "RU" "uae" "UAE" "sa" "SA" "za" "ZA" "cn" "CN" }}
+      {{ range $lang, $path := $availability }}
+        {{ if ne $lang "global" }}
+        <a href="{{ $path }}" class="btn btn-sm btn-outline-success">{{ index $labels $lang | default $lang }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+    <p class="small mb-1 fw-semibold text-muted">Regional markets</p>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      {{ range $graph.footer_markets }}
+      <a href="{{ .path }}" class="btn btn-sm btn-light border">{{ .label }}</a>
+      {{ end }}
+    </div>
+    <p class="small mb-0">
+      <a href="{{ $graph.global.contact | relLangURL }}" class="fw-semibold text-decoration-none" style="color:#1e4d3f;">Contact PKYDrip →</a>
+    </p>
+  </div>
+</section>
+{{ end }}

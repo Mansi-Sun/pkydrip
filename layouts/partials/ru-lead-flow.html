@@ -1,4 +1,4 @@
-{{ $contact := site.Data.russia.ads_routing.contact }}
+{{ $contact := (index hugo.Data.russia "ads-routing").contact }}
 <section class="ru-lead" style="background:#fff;border-top:1px solid #e8ece9;padding:40px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">

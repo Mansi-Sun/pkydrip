@@ -352,6 +352,10 @@
   </section>
   {{ end }}
 
+  {{ if and (eq .Lang "en") (hasPrefix .RelPermalink "/system/") }}
+  {{ partial "global-system-hub-links.html" . }}
+  {{ end }}
+
 </main>
 <style>
 .pkydrip-engineering-page .eng-card { transition: box-shadow .2s; }

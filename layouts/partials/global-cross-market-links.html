@@ -1,0 +1,24 @@
+{{ $graph := index hugo.Data "seo-linkgraph" "internal-links" }}
+{{ $market := index $graph.markets .Lang }}
+{{ if $market }}
+{{ $rtl := eq .Lang "sa" }}
+<section class="global-cross-market" style="background:#fff;border-top:1px solid #e8ece9;padding:20px 20px;{{ if $rtl }}direction:rtl;text-align:right;{{ end }}">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;">
+      <p style="margin:0 0 10px;font-weight:600;color:#333;font-size:14px;">{{ $market.ui.related_markets }}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="{{ $graph.global.home }}" style="padding:8px 14px;border-radius:6px;background:#f0f4f8;color:#333;border:1px solid #dde3e8;text-decoration:none;font-size:13px;">{{ $market.ui.global_hub }} →</a>
+        {{ if $market.global_only_cross }}
+        {{ range $graph.global.systems }}
+        <a href="{{ .path }}" style="padding:8px 14px;border-radius:6px;background:#f0f4f8;color:#333;border:1px solid #dde3e8;text-decoration:none;font-size:13px;">{{ .label }} →</a>
+        {{ end }}
+        {{ else }}
+        {{ range $market.cross_markets }}
+        <a href="{{ .path }}" style="padding:8px 14px;border-radius:6px;background:#f0f4f8;color:#333;border:1px solid #dde3e8;text-decoration:none;font-size:13px;">{{ .label }} →</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

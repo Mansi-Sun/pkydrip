@@ -1,8 +1,9 @@
-{{ $routing := site.Data.sa_market.ads_routing.page_routing }}
+{{ $ads := index hugo.Data "sa-market" "ads-routing" }}
+{{ $routing := $ads.page_routing }}
 {{ $key := .File.BaseFileName }}
 {{ if .IsHome }}{{ $key = "_index" }}{{ end }}
 {{ $route := index $routing $key }}
-{{ $contact := site.Data.sa_market.ads_routing.contact }}
+{{ $contact := $ads.contact }}
 <section class="sa-funnel" style="background:#f8f5ef;border-top:1px solid #e0d5c4;padding:28px 20px;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
