@@ -185,19 +185,24 @@
 {{ end }}
 <!-- /agricultural automation systems -->
 
-<!-- why pkydrip systems -->
+<!-- open platform principles -->
 {{ with .Params.systems_value }}
 {{ if .enable }}
-<section class="section" style="padding:0 0 50px 0; background:#f9fbfc;">
+<section class="section" style="padding:56px 0;background:#f9fbfc;">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="section-title text-center" style="margin-bottom:20px;">
-          <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-        </div>
-        <ul style="max-width:720px;margin:0 auto;padding-left:1.25rem;color:#555;line-height:1.9;font-size:16px;">
+    <div class="row align-items-center g-4">
+      {{ with .image }}
+      <div class="col-lg-6">
+        <img src="{{ . | relURL }}"
+             alt="{{ $.Params.systems_value.image_alt }}"
+             style="width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+      </div>
+      {{ end }}
+      <div class="col-lg-6">
+        <h2 style="margin:0 0 20px;font-size:28px;color:#1a3a2a;font-weight:700;">{{ .title }}</h2>
+        <ul style="margin:0;padding-left:1.25rem;color:#555;line-height:1.9;font-size:16px;">
           {{ range .items }}
-          <li style="margin-bottom:8px;">{{ . }}</li>
+          <li style="margin-bottom:10px;">{{ . }}</li>
           {{ end }}
         </ul>
       </div>
@@ -206,21 +211,27 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /why pkydrip systems -->
+<!-- /open platform principles -->
 
-<!-- portfolio -->
+<!-- field deployment -->
 {{ with .Params.portfolio }}
 {{ if .enable }}
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
+<section class="section" style="padding:56px 0;background:#fff;">
   <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-6"></div>
-      <div class="col-md-6 col-md-offset-6">
-        {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+    <div class="row align-items-center g-4">
+      {{ with .image }}
+      <div class="col-lg-6">
+        <img src="{{ . | relURL }}"
+             alt="{{ $.Params.portfolio.image_alt }}"
+             style="width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+      </div>
+      {{ end }}
+      <div class="col-lg-6">
+        {{ with .title }}<h2 style="margin:0 0 16px;font-size:28px;color:#1a3a2a;font-weight:700;">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .content }}<p style="color:#555;line-height:1.75;font-size:16px;margin-bottom:24px;">{{ . }}</p>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
+        <a href="{{ .link | relLangURL }}" class="btn btn-main">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
@@ -229,7 +240,7 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /portfolio -->
+<!-- /field deployment -->
 
 <!-- service -->
 {{ if .Params.service.enable }}

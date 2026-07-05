@@ -75,19 +75,21 @@ systems:
 systems_value:
   enable: true
   title: "Open Platform Principles"
+  image: "images/home/open-platform-principles.webp"
+  image_alt: "Connected smart farm at sunrise — sensor nodes, field mesh network, cloud integration across greenhouse, irrigation, and orchard zones"
   items:
     - "Sensor, execution, and decision layers — openly connected across the farm"
-    - "Cloud-ready integration (MQTT / 4G) with local-first control independence"
+    - "Cloud-ready integration with local-first control independence"
     - "Products integrate as modules within subsystems — not isolated device sales"
     - "Designed for growers, integrators, dealers, and research partners"
-    - "Modular protocols: RS485 / Modbus / LoRa / 4G"
 
-######################### Portfolio ###################################
+######################### Deployment ################################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg.webp"
+  image: "images/home/deployment-scenarios.webp"
+  image_alt: "Farm deployment panorama at sunset — orchard sensors, greenhouse, center-pivot irrigation, and pump infrastructure connected across field scenarios"
   title: "From Platform Logic to Field Deployment"
-  content: "After understanding the platform structure, explore deployment scenarios for greenhouse, orchard, open field, and retrofit projects — each scenario configures the same subsystems differently."
+  content: "Once the platform structure is clear, choose how it lands in the field. Greenhouse, orchard, open field, and retrofit projects configure the same subsystems differently — each scenario is a path from planning to real farm deployment."
   button:
     enable: true
     label: "Browse Deployment Scenarios"
