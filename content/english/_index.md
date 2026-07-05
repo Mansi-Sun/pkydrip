@@ -2,7 +2,7 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/home/global-farmland-atmosphere.jpg"
+  bg_image: "images/home/global-farmland-atmosphere-v2.webp"
   bg_overlay: true
   title: "PKYDrip Agricultural Automation Platform"
   content: "Data-driven agriculture starts with connected automation — irrigation control, fertigation, climate coordination, and wireless field systems working as one platform.<br><br>This site is for project planning and system design. Product specifications remain on Alibaba; here we help you configure the right automation structure for your farm, greenhouse, or integration project."

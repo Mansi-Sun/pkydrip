@@ -32,7 +32,7 @@ product_groups:
         url: "/product/fertigation-system/"
       - name: "Wireless Field Control System"
         summary: "LoRa gateway, solar valve controllers, remote pump control, and wireless expansion without long field cabling."
-        image: "images/brochure/lora-wireless-irrigation.jpg"
+        image: "images/scenes/scene-wireless-field.webp"
         url: "/product/wireless-field-control-system/"
       - name: "Monitoring & Sensor System"
         summary: "Flow, pressure, soil moisture, weather, EC/pH, and irrigation operation records."
@@ -157,17 +157,17 @@ products:
 
   - name: "Sensors & Monitoring"
     summary: "Soil, flow, pressure, weather, and nutrient feedback."
-    image: "images/brochure/lora-system-real-field.webp"
+    image: "images/scenes/scene-wireless-field.webp"
     url: "/product/sensors-monitoring/"
 
   - name: "Monitoring & Sensor System"
     summary: "Flow, pressure, soil moisture, weather, EC/pH, and irrigation operation records."
-    image: "images/brochure/lora-system-real-field.webp"
+    image: "images/scenes/scene-wireless-field.webp"
     url: "/product/monitoring-sensor-system/"
 
   - name: "Solar Pump Irrigation System"
     summary: "Solar pumping, water storage, irrigation automation, and off-grid farm water management."
-    image: "images/brochure/lora-hero-remote-irrigation.webp"
+    image: "images/scenes/scene-wireless-field.webp"
     url: "/product/solar-pump-irrigation-system/"
 
   - name: "PKY-ECpH-301 EC/pH Dosing Controller"

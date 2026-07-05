@@ -73,17 +73,17 @@ applications:
   cards:
     - title: "Greenhouse production"
       desc: "Multi-zone drip with consistent nutrient delivery per crop block."
-      image: "images/brochure/applications-greenhouse.jpg"
+      image: "images/scenes/scene-climate-greenhouse.webp"
       tags: ["Drip", "EC/pH optional"]
       link: "/solution/greenhouse-irrigation/"
     - title: "Orchard fertigation"
       desc: "Tank station dosing linked to pump and valve programs."
-      image: "images/brochure/applications-orchard.jpg"
+      image: "images/scenes/scene-orchard.webp"
       tags: ["Pump station", "Zones"]
       link: "/solution/orchard-irrigation/"
     - title: "Open-field blocks"
       desc: "Field manifolds fed from a central fertigation skid."
-      image: "images/brochure/applications-open-field.jpg"
+      image: "images/scenes/scene-open-field.webp"
       tags: ["Mainline", "Sequential zones"]
       link: "/solution/open-field-irrigation/"
 

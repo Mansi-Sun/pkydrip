@@ -3,7 +3,7 @@ title: "Remote Irrigation Without Power"
 layout: landing
 description: "Wireless LoRa irrigation system for farms without electricity. Control valves remotely with solar-powered devices."
 url: "/landing/remote-irrigation/"
-bg_image: "/images/landing/lora-hero-remote-irrigation.webp"
+bg_image: "/images/landing/lora-hero-remote-irrigation-v2.webp"
 draft: false
 ---
 
@@ -53,7 +53,7 @@ A LoRa gateway installed at the top of the greenhouse provides stable communicat
 
 The system is solar-powered and designed for low maintenance, with a typical operation cycle of up to 2 years without battery replacement.
 <div style="text-align:center; margin:30px 0;">
-<img src="/images/landing/lora-system-real-field.webp" alt="Solar LoRa irrigation valve controller installed in the field" style="max-width:100%; border-radius:8px;">
+<img src="/images/scenes/scene-wireless-field.webp" alt="Solar-powered wireless irrigation node in an open agricultural field" style="max-width:100%; border-radius:8px;">
 </div>
 
 This is a typical wireless irrigation node installed directly in the field:

@@ -11,7 +11,7 @@ page_code: "APP-0801-2-02-TOMATO-01"
 hero:
   title: "Tomato Drip Irrigation Application"
   subtitle: "Engineering reference for greenhouse and open-field tomato drip—zones, flow, and fertigation timing."
-  image: "images/brochure/applications-greenhouse.jpg"
+  image: "images/scenes/scene-climate-greenhouse.webp"
   image_alt: "Tomato greenhouse drip irrigation"
   cta_primary:
     label: "Discuss Your Project"

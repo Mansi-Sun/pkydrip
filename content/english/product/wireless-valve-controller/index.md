@@ -19,7 +19,7 @@ categories:
 hero:
   title: "Wireless Valve Controller"
   subtitle: "LoRa field valve automation when trenching and power at every valve are impractical."
-  image: "images/brochure/lora-valve-field.jpg"
+  image: "images/scenes/scene-wireless-field.webp"
   image_alt: "Solar LoRa valve controller in the field"
   cta_primary:
     label: "Discuss Your Project"
@@ -79,13 +79,13 @@ wireless_control:
     - "Long Distance"
     - "Retrofit Friendly"
   images:
-    - src: "images/brochure/applications-orchard.jpg"
+    - src: "images/scenes/scene-orchard.webp"
       alt: "Orchard wireless irrigation"
       caption: "Orchard rows"
-    - src: "images/brochure/lora-valve-field.jpg"
+    - src: "images/scenes/scene-wireless-field.webp"
       alt: "Field LoRa valve node"
       caption: "Field controller"
-    - src: "images/brochure/lora-hero-remote-irrigation.webp"
+    - src: "images/landing/lora-hero-remote-irrigation-v2.webp"
       alt: "Remote farm irrigation"
       caption: "Remote zones"
   link:

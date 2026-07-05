@@ -17,8 +17,8 @@ tags:
 hero:
   title: "Open Field Farming — Irrigation Control Deployment"
   subtitle: "System-level zone irrigation for large-area field regions — pump coordination, valve sequencing, and regional infrastructure."
-  image: "images/system/app-open-field.svg"
-  image_alt: "Open field farming deployment scenario — regional irrigation zones and control network"
+  image: "images/scenes/scene-open-field.webp"
+  image_alt: "Open field farming — center-pivot irrigation and regional zone control"
   cta_primary:
     label: "Discuss Your Project"
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Solution%3A%20Open%20Field%20Irrigation%20%7C%20Page%3A%20open-field-irrigation%0A-%20Irrigation%20zones%3A%20%0A-%20Pump%20information%3A%20%0A-%20Valve%20quantity%3A%20%0A-%20Project%20requirements%3A%20"
@@ -46,8 +46,8 @@ system_controls:
 system_architecture:
   title: "Open Field Irrigation Control System Architecture"
   subtitle: "From water source through pump station, filtration, fertigation, mainline, zone valves, and field irrigation—with central control and mobile monitoring."
-  image: "images/home/agricultural-system-layers.svg"
-  image_alt: "PKYDrip open field irrigation control system architecture — pump station, filters, fertigation, zone valves, control cabinet, and mobile remote control"
+  image: "images/scenes/scene-open-field.webp"
+  image_alt: "Open field irrigation — pump coordination, zone valves, and field automation"
 
 zone_flow:
   title: "One Pump, Multiple Irrigation Zones"
@@ -70,13 +70,13 @@ wireless_control:
     - "Long Distance"
     - "Remote Valve Control"
   images:
-    - src: "images/brochure/applications-orchard.jpg"
+    - src: "images/scenes/scene-orchard.webp"
       alt: "Orchard irrigation with wireless valve control"
       caption: "Orchard blocks"
-    - src: "images/brochure/lora-valve-field.jpg"
+    - src: "images/scenes/scene-wireless-field.webp"
       alt: "LoRa solar valve controller in the field"
       caption: "LoRa valve controller"
-    - src: "images/brochure/lora-hero-remote-irrigation.webp"
+    - src: "images/landing/lora-hero-remote-irrigation-v2.webp"
       alt: "Remote hillside irrigation"
       caption: "Hillside / remote zones"
   link:
@@ -90,8 +90,8 @@ fertigation:
     - "Fertigation tanks and dosing pumps"
     - "EC/pH monitoring when specified"
     - "Linked to pump and valve programs"
-  image: "images/system/system-fertigation-layer.svg"
-  image_alt: "Fertigation system layer — nutrient flow network integrated with irrigation regions"
+  image: "images/scenes/scene-fertigation.webp"
+  image_alt: "Fertigation integrated with irrigation zones in a growing environment"
   link:
     label: "Fertigation system (product)"
     url: "/product/fertigation-system/"
@@ -99,7 +99,7 @@ fertigation:
 hmi_section:
   title: "HMI Touchscreen Operation"
   body: "Operators use a touchscreen interface to monitor irrigation status, run manual valve control, configure plans, and review alarms—without scattered timers or undocumented panel logic."
-  equipment_image: "images/system/system-irrigation-layer.svg"
+  equipment_image: "images/solution/controller-valve-pump-combination.webp"
   # ui_image: add when you have a real HMI screen close-up (e.g. images/solution/open-field-irrigation/hmi-screen.jpg)
   features:
     - "Irrigation status"
@@ -112,21 +112,21 @@ applications:
   cards:
     - title: "Orchard Irrigation"
       desc: "Pump automation with zoned valves and optional wireless blocks in remote rows."
-      image: "images/brochure/applications-orchard.jpg"
+      image: "images/scenes/scene-orchard.webp"
       tags:
         - "Pump + valves"
         - "LoRa expansion"
       link: "/applications/orchard-irrigation/"
     - title: "Open Field Farming"
       desc: "Multi-zone drip or sprinkler systems from a central pump station."
-      image: "images/brochure/applications-open-field.jpg"
+      image: "images/scenes/scene-open-field.webp"
       tags:
         - "Zone sequencing"
         - "Pump control"
       link: "/solution/open-field-irrigation/"
     - title: "Hillside Irrigation"
       desc: "Wireless valve nodes where trenching and power are costly on slopes."
-      image: "images/brochure/lora-hero-remote-irrigation.webp"
+      image: "images/landing/lora-hero-remote-irrigation-v2.webp"
       tags:
         - "Solar LoRa"
         - "Remote zones"
@@ -140,7 +140,7 @@ applications:
       link: "/solution/solar-powered-irrigation/"
     - title: "Greenhouse Expansion"
       desc: "Extend open-field pump logic to linked greenhouse blocks on the same platform."
-      image: "images/brochure/applications-greenhouse.jpg"
+      image: "images/scenes/scene-climate-greenhouse.webp"
       tags:
         - "Multi-block"
         - "Central control"

@@ -11,7 +11,7 @@ page_code: "SOL-0801-2-02-GREENHOUSE-01"
 hero:
   title: "Greenhouse Irrigation Control System"
   subtitle: "Pump, valve, and fertigation automation for greenhouse drip and substrate irrigation."
-  image: "images/brochure/applications-greenhouse.jpg"
+  image: "images/scenes/scene-climate-greenhouse.webp"
   image_alt: "Greenhouse irrigation and fertigation"
   cta_primary:
     label: "Discuss Your Project"

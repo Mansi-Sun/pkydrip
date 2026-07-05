@@ -67,7 +67,7 @@ This tool helps you structure your project clearly and prepare for real implemen
 ## What this wizard helps you do
 
 <div class="landing-image">
-  <img src="/images/landing/wizard-system-structure.webp" alt="Irrigation system pump valve zoning structure" loading="lazy" />
+  <img src="/images/landing/wizard-hero-field.webp" alt="Open field farm planning for irrigation automation" loading="lazy" />
 </div>
 
 This wizard helps you:

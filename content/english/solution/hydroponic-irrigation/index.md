@@ -11,7 +11,7 @@ page_code: "SOL-0801-2-02-HYDROPONIC-01"
 hero:
   title: "Hydroponic & Soilless Cultivation Control"
   subtitle: "Nutrient dosing, EC/pH control, irrigation timing, and monitoring for NFT, DWC, strawberry, leafy green, and greenhouse growing systems."
-  image: "images/brochure/applications-greenhouse.jpg"
+  image: "images/scenes/scene-fertigation.webp"
   image_alt: "Greenhouse growing system with controlled irrigation and nutrient management"
   capabilities:
     - "EC and pH monitoring"
@@ -69,7 +69,7 @@ typical_applications:
   cards:
     - title: "NFT Lettuce System"
       desc: "Needs nutrient circulation, EC/pH control, reservoir monitoring, and stable timing for leafy vegetable production."
-      image: "images/brochure/applications-greenhouse.jpg"
+      image: "images/scenes/scene-fertigation.webp"
       link: "/solution/greenhouse-irrigation/"
     - title: "DWC System"
       desc: "Needs nutrient tank control, oxygenation support, EC/pH monitoring, level awareness, and alarm logic."

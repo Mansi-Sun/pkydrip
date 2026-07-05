@@ -14,7 +14,7 @@ aliases:
 hero:
   title: "Orchard Irrigation Control System"
   subtitle: "Automate tree-row irrigation with pump control, zoned valves, and optional wireless field nodes."
-  image: "images/brochure/applications-orchard.jpg"
+  image: "images/scenes/scene-orchard.webp"
   image_alt: "Orchard drip irrigation"
   cta_primary:
     label: "Discuss Your Project"
@@ -48,13 +48,13 @@ wireless_control:
     - "Slope / distance"
     - "Block zoning"
   images:
-    - src: "images/brochure/applications-orchard.jpg"
+    - src: "images/scenes/scene-orchard.webp"
       alt: "Orchard blocks"
       caption: "Tree blocks"
-    - src: "images/brochure/lora-valve-field.jpg"
+    - src: "images/scenes/scene-wireless-field.webp"
       alt: "Wireless valve"
       caption: "Field node"
-    - src: "images/brochure/lora-wireless-irrigation.jpg"
+    - src: "images/landing/lora-hero-remote-irrigation-v2.webp"
       alt: "LoRa system"
       caption: "LoRa network"
   link:

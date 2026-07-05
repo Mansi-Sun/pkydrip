@@ -3,7 +3,7 @@ title: "Irrigation Controllers for Distributors & OEM Partners"
 layout: landing
 description: "OEM irrigation controller manufacturer for distributors and local brands. Private label support, flexible MOQ, and market-ready configurations with LoRa/4G/RS485, pump and valve control."
 url: "/landing/oem-irrigation-controller/"
-bg_image: "/images/landing/wizard-system-structure.webp"
+bg_image: "/images/solution/controller-valve-pump-combination.webp"
 draft: false
 ---
 

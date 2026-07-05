@@ -2,7 +2,7 @@
 title: "Solutions"
 description: "Agricultural application solutions — open field, greenhouse, orchard, and hydroponic farming — connected to core system architecture and regional markets."
 draft: false
-bg_image: "images/call-to-action-bg.jpg"
+bg_image: "images/home/deployment-scenarios.webp"
 ---
 
 ## Solutions

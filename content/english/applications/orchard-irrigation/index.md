@@ -14,7 +14,7 @@ aliases:
 hero:
   title: "Orchard Irrigation Application"
   subtitle: "How PKYDrip automates tree-crop irrigation—from 5 ha blocks to 20+ ha orchard drip systems."
-  image: "images/brochure/applications-orchard.jpg"
+  image: "images/scenes/scene-orchard.webp"
   image_alt: "Orchard drip irrigation application"
   cta_primary:
     label: "Discuss Your Orchard Project"
@@ -47,7 +47,7 @@ feature_blocks:
       - "6–24+ valve zones typical"
       - "Pump 5–15 kW class common"
       - "Wireless for remote headlands"
-    image: "images/brochure/applications-orchard.jpg"
+    image: "images/scenes/scene-orchard.webp"
     image_right: false
   - title: "Crops Covered"
     body: "Same architecture applies across tree crops; emitter and lateral design changes by crop and age."
@@ -55,7 +55,7 @@ feature_blocks:
       - "Citrus, apple, grape, kiwi"
       - "Coconut and oil-palm style layouts"
       - "Young vs mature tree spacing"
-    image: "images/solution/open-field-irrigation-control-system-architecture.png"
+    image: "images/scenes/scene-orchard.webp"
     image_right: true
 
 related_links:

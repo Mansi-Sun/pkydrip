@@ -65,7 +65,7 @@ pump_valve_automation:
 wireless_control:
   title: "Wireless LoRa Irrigation Expansion"
   body: "Remote irrigation zones can be connected through solar-powered LoRa valve controllers when cable installation is difficult—orchards, hillsides, and expansion blocks are common examples."
-  image: "images/brochure/lora-valve-field.jpg"
+  image: "images/scenes/scene-wireless-field.webp"
   bullets:
     - "Long-distance communication"
     - "Solar-powered field devices"

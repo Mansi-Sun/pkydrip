@@ -42,7 +42,7 @@ This structure allows centralized control without additional wiring.
 ## Field Deployment
 
 <div style="text-align:center; margin:30px 0;">
-<img src="/images/landing/lora-system-real-field.webp" alt="LoRa wireless irrigation valve controller installed in greenhouse" style="max-width:100%; border-radius:8px;">
+<img src="/images/scenes/scene-climate-greenhouse.webp" alt="LoRa wireless irrigation valve controller installed in greenhouse" style="max-width:100%; border-radius:8px;">
 </div>
 
 The system is installed directly inside the greenhouse, close to the irrigation zones.

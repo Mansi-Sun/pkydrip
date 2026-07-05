@@ -14,7 +14,7 @@ aliases:
 hero:
   title: "Solar-Powered Irrigation System"
   subtitle: "Pump and field automation when grid power is limited—solar pumps, solar valve nodes, and hybrid control architecture."
-  image: "images/brochure/lora-hero-remote-irrigation.webp"
+  image: "images/scenes/scene-wireless-field.webp"
   image_alt: "Solar powered remote irrigation"
   cta_primary:
     label: "Discuss Your Project"

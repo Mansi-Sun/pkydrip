@@ -16,7 +16,7 @@ categories:
 hero:
   title: "Sensors & Monitoring"
   subtitle: "Field feedback for irrigation automation—optional modules that inform pump, valve, and fertigation logic."
-  image: "images/brochure/lora-system-real-field.webp"
+  image: "images/scenes/scene-wireless-field.webp"
   image_alt: "Agricultural sensors and field monitoring"
   cta_primary:
     label: "Discuss Your Project"
@@ -70,7 +70,7 @@ feature_blocks:
       - "Soil moisture for demand-based zones (when specified)"
       - "Weather station for rain hold-off"
       - "EC/pH linked to fertigation programs"
-    image: "images/brochure/applications-greenhouse.jpg"
+    image: "images/scenes/scene-climate-greenhouse.webp"
     image_right: false
 
 related_links:

@@ -12,8 +12,8 @@ aliases:
 hero:
   title: "Irrigation Control System"
   subtitle: "Build a coordinated irrigation control structure for pumps, valves, field zones, schedules, and monitoring instead of operating each device separately."
-  image: "images/system/system-irrigation-layer.svg"
-  image_alt: "Irrigation control system layer — regional zones, control network, and agricultural output"
+  image: "images/scenes/scene-open-field.webp"
+  image_alt: "Open field irrigation — center-pivot and crop zone automation across farm infrastructure"
   capabilities:
     - "Pump and valve coordination"
     - "Multi-zone irrigation scheduling"
@@ -44,8 +44,8 @@ common_challenges:
 system_architecture:
   title: "System Architecture"
   subtitle: "A typical irrigation control system connects the water source, pump, mainline, valves, field zones, controller, and optional monitoring points into one coordinated control layer."
-  image: "images/home/agricultural-system-layers.svg"
-  image_alt: "Irrigation control system architecture — environment, control layer, and field output abstraction"
+  image: "images/scenes/scene-open-field.webp"
+  image_alt: "Irrigated open field with coordinated pump and zone control across crop regions"
 
 zone_flow:
   title: "How The System Works"
@@ -68,19 +68,19 @@ typical_applications:
   cards:
     - title: "Open Field"
       desc: "Multi-zone drip, sprinkler, or rain-pipe irrigation from a central pump station."
-      image: "images/system/app-open-field.svg"
+      image: "images/scenes/scene-open-field.webp"
       link: "/solution/open-field-irrigation/"
     - title: "Orchard"
       desc: "Block-based irrigation with pump coordination, valve sequencing, and optional wireless expansion."
-      image: "images/system/app-orchard.svg"
+      image: "images/scenes/scene-orchard.webp"
       link: "/solution/orchard-irrigation/"
     - title: "Greenhouse"
       desc: "Pump and valve control linked with fertigation, crop zones, and local operator control."
-      image: "images/system/app-greenhouse.svg"
+      image: "images/scenes/scene-fertigation.webp"
       link: "/solution/greenhouse-irrigation/"
     - title: "Landscape"
       desc: "Scheduled irrigation for parks, gardens, sports fields, and distributed landscape zones."
-      image: "images/system/app-landscape.svg"
+      image: "images/home/deployment-scenarios.webp"
       link: "/solution/"
 
 product_modules:
