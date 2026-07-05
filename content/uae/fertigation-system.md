@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Irrigation zones"
   - "Channels required"
 hero_subtitle: "Fertilizer cost and efficiency directly affect profitability in UAE greenhouse farming. Precise nutrient delivery per crop stage improves yield consistency."
-hero_image: "images/markets/uae-fertigation.svg"
+hero_image: "images/uae/uae-fertigation-ecph.webp"
 hero_image_alt: "Schematic of EC pH fertigation system for UAE hydroponic and greenhouse crops"
 keywords:
   - fertigation system UAE

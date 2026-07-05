@@ -1,59 +1,59 @@
 ---
-title: "نظام التسميد (اختياري للمزارع الكبيرة)"
-description: "دعم تسميد اختياري لمناطق محاصيل سعودية محددة. ثانوي لبنية الري واسعة النطاق — حقن أسمدة أساسي ومراقبة EC."
+title: "Fertigation System (Optional for Large Farms)"
+description: "Optional fertigation support for selected Saudi crop zones. Secondary to large-scale irrigation infrastructure — basic fertilizer injection and EC monitoring."
 layout: sa-page
 hide_main_nav: true
 page_code: "PC-SA-FERTIGATION-01"
-whatsapp_topic: "نظام التسميد (اختياري)"
+whatsapp_topic: "Fertigation System (Optional)"
 whatsapp_action: "AC-WA-SA-FERTIGATION-WEB-01"
-whatsapp_intro: "أحتاج دعم تسميد اختياري لمنطقة محاصيل محددة في مزرعتي السعودية."
+whatsapp_intro: "I need optional fertigation support for a specific crop zone on my Saudi Arabia farm."
 whatsapp_fields:
-  - "مساحة المزرعة (هكتار)"
-  - "نوع المحصول"
-  - "مساحة منطقة التسميد"
-  - "مراقبة EC مطلوبة"
-  - "التكامل مع نظام الري الحالي"
-hero_subtitle: "في الزراعة السعودية واسعة النطاق، التسميد ثانوي لبنية الري — يُستخدم في مناطق محاصيل عالية القيمة أو خاضعة للتحكم."
-hero_image: "images/markets/sa-fertigation.svg"
-hero_image_alt: "مخطط منطقة تسميد اختيارية مدمجة مع بنية ري مزرعة كبيرة"
+  - "Farm size (hectares)"
+  - "Crop type"
+  - "Zone size for fertigation"
+  - "EC monitoring needed"
+  - "Integration with existing irrigation"
+hero_subtitle: "In Saudi large-scale farming, fertigation is secondary to irrigation infrastructure — used in selected high-value or controlled crop zones."
+hero_image: "images/sa/sa-fertigation-optional.webp"
+hero_image_alt: "Schematic of optional fertigation zone integrated with large farm irrigation infrastructure"
 keywords:
   - fertigation system Saudi Arabia
-  - نظام تسميد السعودية
   - irrigation system Saudi Arabia
   - large farm irrigation system
+  - pump control irrigation system
 ---
 
-[← الرئيسية /sa/](/sa/) · [التحكم بالري](/sa/irrigation-control-system/) · [لاسلكي](/sa/wireless-irrigation-system/)
+[← Home /sa/](/sa/) · [Irrigation Control](/sa/irrigation-control-system/) · [Wireless](/sa/wireless-irrigation-system/)
 
-## الدور في الزراعة السعودية
+## Role in Saudi Agriculture
 
-يُستخدم التسميد في **مناطق زراعية عالية القيمة أو خاضعة للتحكم** — وليس كتركيز البنية التحتية الأساسي لإنتاج الحبوب الصحراوي واسع النطاق.
+Fertigation is used in **selected high-value or controlled farming zones** — not as the primary infrastructure focus for large-scale desert grain production.
 
-في الزراعة السعودية الكبيرة، الأولوية هي التحكم الموثوق بالمضخات والصمامات عبر مساحات ميدانية واسعة. التسميد يدعم مناطق محددة حيث يضيف توصيل المغذيات قيمة.
+In Saudi large-scale farming, the priority is reliable pump and valve control across wide field areas. Fertigation supports specific zones where nutrient delivery adds value.
 
-## وظائف النظام
+## System Function
 
-- نظام حقن أسمدة أساسي مدمج مع خطوط الري
-- مراقبة EC اختيارية لتركيز المغذيات
-- تكامل مع بنية نظام الري الحالي
-- نشر خاص بالمنطقة — غير مطلوب للمزرعة بأكملها
+- Basic fertilizer injection system integrated with irrigation lines
+- Optional EC monitoring for nutrient concentration
+- Integration with existing irrigation system infrastructure
+- Zone-specific deployment — not required for entire farm
 
-## التطبيق
+## Application
 
-- مناطق محاصيل محددة داخل المزارع الكبيرة
-- مشاريع زراعية تجريبية
-- مناطق ري خاضعة للتحكم
-- كتل محاصيل عالية القيمة مختارة
+- Specific crop zones within large farms
+- Pilot agricultural projects
+- Controlled irrigation areas
+- Selected high-value crop blocks
 
-## ملاحظة
+## Note
 
-في الزراعة السعودية واسعة النطاق، **التسميد ثانوي لبنية الري**. معظم مشاريع الحبوب الصحراوية الكبيرة تعطي الأولوية للتحكم بالمضخات وتسلسل الصمامات والتغطية اللاسلكية أولاً.
+In Saudi large-scale farming, **fertigation is secondary to irrigation infrastructure**. Most large desert grain projects prioritize pump control, valve sequencing, and wireless field coverage first.
 
-## الأنظمة الأساسية ذات الصلة
+## Related systems (primary)
 
-- **[نظام التحكم بالري](/sa/irrigation-control-system/)** — بنية المضخات والصمامات واسعة النطاق
-- **[نظام الري اللاسلكي](/sa/wireless-irrigation-system/)** — تحكم ميداني لمسافات طويلة
+- **[Irrigation Control System](/sa/irrigation-control-system/)** — core large-scale pump and valve infrastructure
+- **[Wireless Irrigation System](/sa/wireless-irrigation-system/)** — long-distance field control
 
-## اتصل بنا
+## Contact
 
-ناقش التسميد لمنطقة محاصيل محددة عبر {{< sa-whatsapp-link text="واتساب" >}}.
+Discuss fertigation for a specific crop zone via {{< sa-whatsapp-link text="WhatsApp" >}}.

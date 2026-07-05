@@ -4,8 +4,8 @@ description: "Модернизация орошения фермы в Росси
 layout: russian-page
 hide_main_nav: true
 hero_subtitle: "Замените ручной полив автоматическим управлением — снизьте затраты на труд и масштабируйте орошение на крупных российских полях."
-hero_image: "images/markets/ru-upgrade.svg"
-hero_image_alt: "System upgrade infrastructure — Russia farm zones"
+hero_image: "images/russia/ru-farm-upgrade.webp"
+hero_image_alt: "Схема модернизации орошения — от ручного управления к автоматизации"
 keywords:
   - farm irrigation upgrade Russia
   - large farm automation system

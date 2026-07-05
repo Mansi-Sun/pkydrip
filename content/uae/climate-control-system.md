@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Cooling method (fans / pads / roof vents)"
   - "Irrigation zones"
 hero_subtitle: "Greenhouses in UAE face extreme heat stress. We design climate systems that stabilize temperature and humidity to protect crops and improve yield consistency."
-hero_image: "images/markets/uae-climate.svg"
+hero_image: "images/uae/uae-climate-greenhouse.webp"
 hero_image_alt: "Schematic of greenhouse climate control with ventilation and cooling for UAE farms"
 keywords:
   - greenhouse irrigation system UAE

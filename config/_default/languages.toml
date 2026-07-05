@@ -44,11 +44,11 @@ title = "PKYDrip — Smart Agriculture Systems for UAE"
 
 ################ Saudi Arabia market ################
 [sa]
-languageName = "العربية"
-languageCode = "ar-SA"
+languageName = "Saudi Arabia"
+languageCode = "en-SA"
 contentDir = "content/sa"
 weight = 7
-title = "PKYDrip — أنظمة الري واسعة النطاق للمزارع السعودية"
+title = "PKYDrip — Large-Scale Irrigation Systems for Saudi Arabia"
 
 ################ South Africa market ################
 [za]

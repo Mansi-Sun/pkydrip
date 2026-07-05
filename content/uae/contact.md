@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Farm size"
   - "Irrigation zones"
 hero_subtitle: "We design irrigation and greenhouse automation systems for UAE agriculture projects — water efficiency, fertigation precision, and climate stability."
-hero_image: "images/markets/uae-contact.svg"
+hero_image: "images/uae/uae-contact-farm.webp"
 hero_image_alt: "Schematic of UAE farm system design consultation for greenhouse and irrigation projects"
 keywords:
   - smart irrigation UAE

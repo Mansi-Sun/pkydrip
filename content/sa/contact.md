@@ -1,61 +1,61 @@
 ---
-title: "استشارة نظام الري في السعودية"
-description: "اتصل بـ PKYDrip لتصميم بنية ري واسعة النطاق في السعودية. واتساب مفضل للمشاريع الزراعية السعودية."
+title: "Saudi Arabia Irrigation System Consultation"
+description: "Contact PKYDrip for large-scale irrigation infrastructure design in Saudi Arabia. WhatsApp preferred for Saudi agricultural projects."
 layout: sa-page
 hide_main_nav: true
 page_code: "PC-SA-CONTACT-01"
-whatsapp_topic: "استشارة بنية الري السعودية"
+whatsapp_topic: "SA Irrigation Infrastructure Consultation"
 whatsapp_action: "AC-WA-SA-CONTACT-WEB-01"
-whatsapp_intro: "أرغب في طلب استشارة لبنية ري واسعة النطاق لمشروعي في السعودية."
+whatsapp_intro: "I would like to request a large-scale irrigation infrastructure consultation for my Saudi Arabia project."
 whatsapp_fields:
-  - "مساحة المزرعة (هكتار)"
-  - "نوع المحصول"
-  - "نوع مصدر المياه"
-  - "قدرة المضخة"
-  - "مناطق الري"
-hero_subtitle: "نصمم أنظمة بنية ري واسعة النطاق للمشاريع الزراعية السعودية — تحكم المضخات، تغطية لاسلكية، وتشغيل صحراوي موثوق."
-hero_image: "images/markets/sa-contact.svg"
-hero_image_alt: "مخطط استشارة بنية ري واسعة النطاق في السعودية"
+  - "Farm size (hectares)"
+  - "Crop type"
+  - "Water source type"
+  - "Pump capacity"
+  - "Irrigation zones"
+hero_subtitle: "We design large-scale irrigation infrastructure systems for Saudi agricultural projects — pump control, wireless field coverage, and reliable desert operation."
+hero_image: "images/sa/sa-contact-infrastructure.webp"
+hero_image_alt: "Schematic of Saudi Arabia large-scale irrigation infrastructure consultation"
 keywords:
   - irrigation system Saudi Arabia
-  - نظام ري السعودية
   - large farm irrigation system
   - desert agriculture irrigation Saudi
-  - wireless irrigation system Saudi
   - agriculture infrastructure Saudi Arabia
+  - wireless irrigation system Saudi
+  - pump control irrigation system
 ---
 
-[← الرئيسية /sa/](/sa/) · [التحكم بالري](/sa/irrigation-control-system/) · [لاسلكي](/sa/wireless-irrigation-system/) · [تسميد](/sa/fertigation-system/)
+[← Home /sa/](/sa/) · [Irrigation Control](/sa/irrigation-control-system/) · [Wireless](/sa/wireless-irrigation-system/) · [Fertigation](/sa/fertigation-system/)
 
-## استشارة نظام الري في السعودية
+## Saudi Arabia Irrigation System Consultation
 
-نصمم أنظمة بنية ري واسعة النطاق للمشاريع الزراعية السعودية.
+We design large-scale irrigation infrastructure systems for Saudi agricultural projects.
 
-## يرجى تقديم:
+## Please provide:
 
-- مساحة المزرعة (هكتار)
-- نوع المحصول
-- نوع مصدر المياه
-- قدرة المضخة
-- مناطق الري
+- Farm size (hectares)
+- Crop type
+- Water source type
+- Pump capacity
+- Irrigation zones
 
-## نقدم لك:
+## We provide:
 
-- توصية هندسة النظام
-- خطة تكوين المضخات والصمامات
-- تصميم التغطية اللاسلكية
-- اقتراح تخطيط البنية التحتية
+- System architecture recommendation
+- Pump and valve configuration plan
+- Wireless coverage design
+- Infrastructure layout suggestion
 
-## استكشف الأنظمة أثناء الانتظار
+## Explore systems while you wait
 
-- **[التحكم بالري](/sa/irrigation-control-system/)** — أتمتة المضخات والصمامات متعددة المناطق
-- **[الري اللاسلكي](/sa/wireless-irrigation-system/)** — تحكم ميداني لمسافات طويلة
-- **[التسميد](/sa/fertigation-system/)** — اختياري لمناطق محاصيل محددة
+- **[Irrigation Control](/sa/irrigation-control-system/)** — multi-zone pump and valve automation
+- **[Wireless Irrigation](/sa/wireless-irrigation-system/)** — long-distance field control
+- **[Fertigation](/sa/fertigation-system/)** — optional for selected crop zones
 
-## اتصل بنا
+## Contact
 
-**واتساب مفضل للتواصل في المشاريع السعودية.**
+**WhatsApp preferred for Saudi project communication.**
 
-أرسل تفاصيل مشروعك عبر {{< sa-whatsapp-link text="تواصل عبر واتساب" >}} وسنرد بمسار توصية البنية التحتية.
+Send your project details via {{< sa-whatsapp-link text="Chat on WhatsApp" >}} and we will respond with an infrastructure recommendation path.
 
-[← الموقع الرئيسي PKYDrip](/)
+[← Main PKYDrip website](/)

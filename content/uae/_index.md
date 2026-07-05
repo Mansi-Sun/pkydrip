@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Farm size"
   - "Irrigation zones"
 hero_subtitle: "Increase crop yield while reducing water consumption in desert agriculture environments — precision farming for greenhouses, hydroponics, and high-value crops."
-hero_image: "images/markets/uae-home.svg"
+hero_image: "images/uae/uae-home-greenhouse.webp"
 hero_image_alt: "Schematic of smart greenhouse agriculture with water-efficient irrigation in UAE"
 keywords:
   - smart irrigation UAE
@@ -27,15 +27,7 @@ keywords:
 
 [← Home /uae/](/uae/)
 
-## Regional System Context
-
-This is **not a translation of the global homepage**. UAE farms operate in desert agriculture conditions where water efficiency and fertigation precision define system design.
-
-| System | Regional adaptation |
-|--------|---------------------|
-| **Fertigation** | Precision nutrient delivery for hydroponic and greenhouse crops |
-| **Climate Control** | Heat stress protection, ventilation, humidity stability |
-| **Irrigation Control** | Water-efficient zone irrigation for limited water supply |
+## UAE Agriculture Challenge
 
 - Water is expensive and limited
 - High temperature increases evaporation

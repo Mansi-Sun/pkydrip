@@ -85,41 +85,41 @@ page_routing:
     cluster: large_farm_infrastructure
     related:
       - path: /sa/irrigation-control-system/
-        label: التحكم بالري
+        label: Irrigation Control
       - path: /sa/wireless-irrigation-system/
-        label: الري اللاسلكي
+        label: Wireless Irrigation
       - path: /sa/fertigation-system/
-        label: التسميد (اختياري)
+        label: Fertigation (Optional)
   irrigation-control-system:
     cluster: irrigation_control
     related:
       - path: /sa/wireless-irrigation-system/
-        label: الري اللاسلكي
+        label: Wireless Irrigation
       - path: /sa/fertigation-system/
-        label: التسميد (اختياري)
+        label: Fertigation (Optional)
   wireless-irrigation-system:
     cluster: wireless_field
     related:
       - path: /sa/irrigation-control-system/
-        label: التحكم بالري
+        label: Irrigation Control
       - path: /sa/fertigation-system/
-        label: التسميد (اختياري)
+        label: Fertigation (Optional)
   fertigation-system:
     cluster: fertigation_optional
     related:
       - path: /sa/irrigation-control-system/
-        label: التحكم بالري
+        label: Irrigation Control
       - path: /sa/wireless-irrigation-system/
-        label: الري اللاسلكي
+        label: Wireless Irrigation
   contact:
     cluster: large_farm_infrastructure
     related:
       - path: /sa/irrigation-control-system/
-        label: التحكم بالري
+        label: Irrigation Control
       - path: /sa/wireless-irrigation-system/
-        label: الري اللاسلكي
+        label: Wireless Irrigation
       - path: /sa/fertigation-system/
-        label: التسميد (اختياري)
+        label: Fertigation (Optional)
 
 traffic_examples:
   - source: Google Search
