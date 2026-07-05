@@ -1,58 +1,114 @@
 ---
-############################### Hero ################################
+############################### Banner ##############################
 banner:
   enable: true
   bg_image: "images/home/global-farmland-atmosphere.jpg"
+  bg_overlay: true
   title: "PKYDrip Agricultural Automation Platform"
-  content: "System-first infrastructure for global farming — irrigation control, fertigation, and climate control configured by regional market and deployment scenario."
+  content: "Data-driven agriculture starts with connected automation — irrigation control, fertigation, climate coordination, and wireless field systems working as one platform.<br><br>This site is for project planning and system design. Product specifications remain on Alibaba; here we help you configure the right automation structure for your farm, greenhouse, or integration project."
+  button:
+    enable: true
+    label: "Explore Platform Architecture"
+    link: "/system-architecture/"
+  button_secondary:
+    enable: true
+    label: "Start Your Project Plan"
+    link: "/tools/irrigation-design-wizard/"
 
-############################# Core Systems ##########################
-systems:
+############################# Entry Paths ###########################
+entry_paths:
   enable: true
-  title: "Core Systems"
+  title: "Choose Your Starting Point"
+  content: "Different projects need different entry logic. These paths help you move from idea to a customized automation plan — faster than browsing a product catalog alone."
   items:
-    - name: "Irrigation Control System"
-      desc: "Regional zone flow and coordinated irrigation control across open field, orchard, and farm infrastructure."
-      url: "/system/irrigation-control-system/"
-      image: "images/home/global-farmland-atmosphere.jpg"
-    - name: "Fertigation System"
-      desc: "Nutrient delivery integrated with irrigation schedules — EC and pH logic across crop zones and growing environments."
-      url: "/system/fertigation-system/"
-      image: "images/brochure/applications-orchard.jpg"
-    - name: "Climate Control System"
-      desc: "Greenhouse and nursery environmental layers — ventilation, heating, cooling, and humidity coordination."
-      url: "/system/climate-control-system/"
-      image: "images/brochure/applications-greenhouse.jpg"
+    - icon: "🌱"
+      title: "Start a New Irrigation Project"
+      desc: "For farms, orchards, greenhouses, and new installations that need irrigation automation, fertigation, and climate coordination planned from the beginning."
+      button_label: "Open Design Wizard"
+      button_link: "/tools/irrigation-design-wizard/"
+    - icon: "🔧"
+      title: "Upgrade an Existing System"
+      desc: "For projects with pumps, pipelines, or field infrastructure already in place — upgrade to better control, fertigation integration, and IoT monitoring."
+      button_label: "View Upgrade Solutions"
+      button_link: "/solution/irrigation-retrofit-upgrade/"
+    - icon: "📡"
+      title: "Remote / Wireless Irrigation"
+      desc: "For remote fields and expansion zones where cabling is difficult — extend the platform with LoRa wireless valves, sensors, and cloud-ready monitoring."
+      button_label: "View Wireless Solution"
+      button_link: "/landing/remote-irrigation/"
 
-############################# Global Context ########################
-global_context:
+############################# Platform ##############################
+platform:
   enable: true
-  title: "Global Agricultural Infrastructure"
-  content: "Agriculture is evolving from isolated equipment toward system-based automation. Different regions require different system configurations — and modern farming is becoming infrastructure-driven."
-  points:
-    - "System-based automation replaces standalone device thinking"
-    - "Regional markets adapt the same core systems to local climate and farm types"
-    - "Infrastructure logic comes before product or equipment selection"
+  title: "An Open Agricultural Operating System"
+  description: "PKYDrip organizes automation as subsystem series and IoT layers — products integrate as modules, not as a pasted equipment catalog."
+  content: "Field data flows from sensors through decision logic to execution. Four subsystem series — irrigation, fertigation, climate, and wireless — share the same platform structure. Products bridge into these series when a project is configured."
+  image: "images/home/platform-subsystems-series.webp"
+  image_alt: "Smart farm landscape — center-pivot irrigation, orchard rows, greenhouse, vineyard, and wireless field connectivity across coordinated agricultural zones"
+  caption: "Irrigation, fertigation, climate, and wireless automation woven into open fields, orchards, greenhouses, and remote farm blocks"
 
-############################# Disabled sections #####################
-entry:
-  enable: false
-philosophy:
-  enable: false
-global_logic:
-  enable: false
-cta:
-  enable: false
+############################# About (disabled) ######################
 about:
   enable: false
-platform:
-  enable: false
+
+############################# Systems ###############################
+systems:
+  enable: true
+  title: "Platform Subsystems"
+  content: "Four core subsystems within the PKYDrip agricultural OS. Each subsystem defines how a part of the farm operates — products and controllers integrate inside these layers."
+  cta_label: "Discuss Platform Integration"
+  cta_url: "/contact/"
+  items:
+    - name: "Irrigation Control System"
+      desc: "Pump, valve, and zone scheduling — the execution backbone for open field, orchard, and farm irrigation automation."
+      url: "/system/irrigation-control-system/"
+    - name: "Fertigation System"
+      desc: "Nutrient delivery coordinated with irrigation zones — EC/pH logic integrated into the same automation structure."
+      url: "/system/fertigation-system/"
+    - name: "Climate Control System"
+      desc: "Greenhouse and nursery environmental coordination — ventilation, cooling, heating, and humidity as a connected layer."
+      url: "/system/climate-control-system/"
+    - name: "Wireless Irrigation System"
+      desc: "LoRa field expansion for valve and pump control — extending the platform where cabling is impractical."
+      url: "/system/wireless-irrigation-system/"
+
+systems_value:
+  enable: true
+  title: "Open Platform Principles"
+  items:
+    - "Sensor, execution, and decision layers — openly connected across the farm"
+    - "Cloud-ready integration (MQTT / 4G) with local-first control independence"
+    - "Products integrate as modules within subsystems — not isolated device sales"
+    - "Designed for growers, integrators, dealers, and research partners"
+    - "Modular protocols: RS485 / Modbus / LoRa / 4G"
+
+######################### Portfolio ###################################
 portfolio:
-  enable: false
+  enable: true
+  bg_image: "images/feature-bg.webp"
+  title: "From Platform Logic to Field Deployment"
+  content: "After understanding the platform structure, explore deployment scenarios for greenhouse, orchard, open field, and retrofit projects — each scenario configures the same subsystems differently."
+  button:
+    enable: true
+    label: "Browse Deployment Scenarios"
+    link: "/solution/"
+
+############################# Service ###############################
 service:
   enable: false
-systems_value:
-  enable: false
+
+############################ call to action ###########################
+cta:
+  enable: true
+  bg_image: "images/call-to-action-bg.jpg"
+  title: "Planning Agricultural Automation?"
+  content: "Use the irrigation design tool to map your farm structure, water source, and control layers before subsystem and product selection."
+  button:
+    enable: true
+    label: "Open Design Wizard"
+    link: "/tools/irrigation-design-wizard/"
+
+############################# Funfacts ###############################
 funfacts:
   enable: false
 ---

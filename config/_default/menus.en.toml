@@ -1,4 +1,10 @@
-############# English navigation — stabilized IA ##############
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
 
 [[main]]
 name = "Systems"
@@ -19,9 +25,15 @@ weight = 2
 
 [[main]]
 parent = "Systems"
+name = "Wireless Irrigation System"
+url = "system/wireless-irrigation-system/"
+weight = 3
+
+[[main]]
+parent = "Systems"
 name = "Climate Control System"
 url = "system/climate-control-system/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Solutions"
@@ -30,89 +42,42 @@ weight = 3
 
 [[main]]
 parent = "Solutions"
-name = "Open Field Farming"
-url = "solution/open-field-irrigation/"
+name = "Greenhouse Irrigation"
+url = "solution/greenhouse-irrigation/"
 weight = 1
 
 [[main]]
 parent = "Solutions"
-name = "Greenhouse Farming"
-url = "solution/greenhouse-irrigation/"
+name = "Orchard Irrigation"
+url = "solution/orchard-irrigation/"
 weight = 2
 
 [[main]]
 parent = "Solutions"
-name = "Orchard Systems"
-url = "solution/orchard-irrigation/"
+name = "Open Field Irrigation"
+url = "solution/open-field-irrigation/"
 weight = 3
 
 [[main]]
 parent = "Solutions"
-name = "Hydroponic Systems"
+name = "Hydroponic / Soilless Cultivation"
 url = "solution/hydroponic-irrigation/"
 weight = 4
 
 [[main]]
-name = "Markets"
-url = "ru/"
-weight = 4
-
-[[main]]
-parent = "Markets"
-name = "Russia"
-url = "ru/"
-weight = 1
-
-[[main]]
-parent = "Markets"
-name = "UAE"
-url = "uae/"
-weight = 2
-
-[[main]]
-parent = "Markets"
-name = "Saudi Arabia"
-url = "sa/"
-weight = 3
-
-[[main]]
-parent = "Markets"
-name = "South Africa"
-url = "za/"
-weight = 4
-
-[[main]]
-parent = "Markets"
-name = "China"
-url = "cn/"
+parent = "Solutions"
+name = "Irrigation Retrofit"
+url = "solution/irrigation-retrofit-upgrade/"
 weight = 5
 
 [[main]]
-name = "Company"
-url = "about/"
-weight = 5
-
-[[main]]
-parent = "Company"
-name = "About PKYDrip"
-url = "about/"
-weight = 1
-
-[[main]]
-parent = "Company"
-name = "Contact"
-url = "contact/"
-weight = 2
-
-[[main]]
-parent = "Company"
-name = "System Architecture"
-url = "system-architecture/"
-weight = 3
+name = "Products"
+url = "product/"
+weight = 4
 
 [[main]]
 name = "Resources"
-weight = 6
+weight = 5
 
 [[main]]
 parent = "Resources"
@@ -132,7 +97,12 @@ name = "Downloads"
 url = "downloads/"
 weight = 3
 
-# footer menu (theme fallback)
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 6
+
+# footer menu
 [[footer]]
 name = "About"
 url = "about/"
@@ -144,16 +114,21 @@ url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Contact"
-url = "contact/"
+name = "Products"
+url = "product/"
 weight = 3
+
+[[footer]]
+name = "Download"
+url = "downloads/"
+weight = 4
 
 [[footer]]
 name = "FAQ"
 url = "faq/"
-weight = 4
+weight = 5
 
 [[footer]]
-name = "Downloads"
-url = "downloads/"
-weight = 5
+name = "Contact"
+url = "contact/"
+weight = 6
