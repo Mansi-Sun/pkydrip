@@ -9,6 +9,9 @@ url: "/system-architecture/"
 hero:
   title: "Agricultural Automation System Architecture"
   subtitle: "Three core systems adapt to regional markets and deployment scenarios — understand the infrastructure model before any equipment selection."
+  image: "images/home/platform-subsystems-series.webp"
+  image_alt: "PKYDrip system architecture — coordinated irrigation, fertigation, climate, and wireless subsystems across global farm environments"
+  caption: "One platform · core subsystems · regional markets · deployment scenarios"
 
 architecture_cards:
   - title: "Irrigation Control System"

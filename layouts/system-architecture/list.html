@@ -3,11 +3,21 @@
   {{ with .Params.hero }}
   <section class="py-5" style="background: linear-gradient(180deg, rgba(26,61,82,0.06), rgba(255,255,255,1));">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-10">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
           <h1 class="display-6 fw-semibold mb-3">{{ .title | default $.Title }}</h1>
-          {{ with .subtitle }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+          {{ with .subtitle }}<p class="lead text-muted mb-0">{{ . }}</p>{{ end }}
         </div>
+        {{ with .image }}
+        <div class="col-lg-7">
+          <img src="{{ . | relURL }}"
+               alt="{{ $.Params.hero.image_alt }}"
+               style="width:100%;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+          {{ with $.Params.hero.caption }}
+          <p class="text-muted small text-center mt-3 mb-0">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
     </div>
   </section>
