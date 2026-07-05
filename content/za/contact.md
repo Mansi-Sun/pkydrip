@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Solar or grid power situation"
   - "Irrigation zones"
 hero_subtitle: "We design solar-driven irrigation retrofit systems for South African farms — off-grid pumping, pump and valve automation, and practical wireless expansion."
-hero_image: "images/markets/za-contact.svg"
+hero_image: "images/za/za-contact-consultation.webp"
 hero_image_alt: "Schematic of South Africa solar irrigation farm consultation"
 keywords:
   - solar irrigation system South Africa

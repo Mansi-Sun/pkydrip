@@ -14,7 +14,7 @@ whatsapp_fields:
   - "Solar or grid power situation"
   - "Irrigation zones"
 hero_subtitle: "Solar-driven irrigation retrofit for off-grid and grid-unreliable farms — reduce electricity dependency, save water, and improve irrigation reliability."
-hero_image: "images/markets/za-home.svg"
+hero_image: "images/za/za-home-solar-farm.webp"
 hero_image_alt: "Schematic of solar irrigation system for off-grid South African farm"
 keywords:
   - solar irrigation system South Africa
@@ -26,15 +26,7 @@ keywords:
 
 [← Home /za/](/za/)
 
-## Regional System Context
-
-This is **not a translation of the global homepage**. South African farms often face unreliable grid power and off-grid conditions where solar-driven irrigation retrofit is the primary system need.
-
-| System | Regional adaptation |
-|--------|---------------------|
-| **Irrigation Control** | Pump and valve retrofit automation for existing infrastructure |
-| **Solar integration** | Off-grid and backup energy for irrigation operation |
-| **Climate layers** | Where greenhouse or nursery projects require environmental control |
+## South African Agriculture Challenge
 
 - Unreliable grid electricity in many rural farming areas
 - High cost of diesel pumping for irrigation
