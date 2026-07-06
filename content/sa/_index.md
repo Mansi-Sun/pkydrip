@@ -1,74 +1,74 @@
 ---
-title: "Large-Scale Irrigation Systems for Saudi Agriculture"
-description: "Reliable irrigation automation for large desert farms in Saudi Arabia. Irrigation system Saudi Arabia, large farm irrigation, desert agriculture infrastructure."
+title: "أنظمة ري واسعة النطاق للزراعة السعودية"
+description: "أتمتة ري موثوقة للمزارع الصحراوية الكبيرة في المملكة العربية السعودية — بنية تحتية للري والمشاريع الزراعية واسعة النطاق."
 layout: sa-page
 hide_main_nav: true
 page_code: "PC-SA-HOME-01"
-whatsapp_topic: "Large-Scale Irrigation Systems"
+whatsapp_topic: "أنظمة ري واسعة النطاق"
 whatsapp_action: "AC-WA-SA-HOME-WEB-01"
-whatsapp_intro: "I would like an irrigation infrastructure recommendation for my Saudi Arabia farm project."
+whatsapp_intro: "أرغب في الحصول على توصية لبنية ري لمشروعي الزراعي في المملكة العربية السعودية."
 whatsapp_fields:
-  - "Farm size (hectares)"
-  - "Crop type"
-  - "Water source"
-  - "Pump capacity"
-  - "Irrigation zones"
-hero_subtitle: "Reliable irrigation automation systems for large desert farms and agricultural projects in Saudi Arabia — built for scale, coverage, and field reliability."
+  - "مساحة المزرعة (هكتار)"
+  - "نوع المحصول"
+  - "مصدر المياه"
+  - "قدرة المضخة"
+  - "مناطق الري"
+hero_subtitle: "أنظمة أتمتة ري موثوقة للمزارع الصحراوية الكبيرة والمشاريع الزراعية في المملكة العربية السعودية — مصممة للنطاق والتغطية والموثوقية الميدانية."
 hero_image: "images/sa/sa-home-desert-farm.webp"
-hero_image_alt: "Schematic of large-scale desert farm irrigation infrastructure in Saudi Arabia"
+hero_image_alt: "مخطط لبنية تحتية للري في مزرعة صحراوية واسعة النطاق في السعودية"
 keywords:
-  - irrigation system Saudi Arabia
-  - large farm irrigation system
-  - desert agriculture irrigation Saudi
-  - agriculture infrastructure Saudi Arabia
-  - pump control irrigation system
-  - wireless irrigation system Saudi
+  - نظام ري السعودية
+  - ري المزارع الكبيرة
+  - الزراعة الصحراوية السعودية
+  - البنية التحتية الزراعية
+  - التحكم بالمضخات والصمامات
+  - الري اللاسلكي السعودية
 ---
 
-[← Home /sa/](/sa/)
+[الرئيسية ←](/sa/)
 
-## Saudi Agriculture Challenge
+## تحديات الزراعة السعودية
 
-- Extremely large farmland areas — hundreds to thousands of hectares
-- Harsh desert environment with high operational stress on equipment
-- Long irrigation distances across open fields
-- High dependency on pump systems and water distribution networks
-- Manual irrigation is inefficient and unscalable at this scale
+- مساحات زراعية شاسعة — من مئات إلى آلاف الهكتارات
+- بيئة صحراوية قاسية تُشدد الضغط التشغيلي على المعدات
+- مسافات ري طويلة عبر الحقول المفتوحة
+- اعتماد كبير على أنظمة المضخات وشبكات توزيع المياه
+- الري اليدوي غير فعّال وغير قابل للتوسع على هذا النطاق
 
-The core question for Saudi farms is not crop optimization in a greenhouse — it is **how to control irrigation across a very large desert farm reliably**.
+السؤال الجوهري للمزارع السعودية ليس تحسين المحصول داخل البيوت المحمية — بل **كيفية التحكم بالري عبر مزرعة صحراوية واسعة بشكل موثوق**.
 
-## PKYDrip Solution
+## حل PKYDrip
 
-We provide irrigation infrastructure systems designed for:
+نوفر أنظمة بنية تحتية للري مصممة من أجل:
 
-- **Large farm irrigation control** — multi-zone pump and valve coordination
-- **Pump and valve automation** — reliable sequencing across wide field areas
-- **Long-distance wireless communication** — field control without expensive cable runs
-- **Solar-powered irrigation systems** — practical power for remote desert locations
+- **التحكم بالري للمزارع الكبيرة** — تنسيق المضخات والصمامات عبر مناطق متعددة
+- **أتمتة المضخات والصمامات** — تسلسل موثوق عبر مساحات ميدانية واسعة
+- **اتصال لاسلكي لمسافات طويلة** — تحكم ميداني دون تمديدات كابلات مكلفة
+- **أنظمة ري بالطاقة الشمسية** — طاقة عملية للمواقع الصحراوية النائية
 
-## Core Applications
+## التطبيقات الأساسية
 
-- Wheat farms
-- Corn farms
-- Alfalfa farms
-- Government agricultural projects
-- Large open-field grain production
+- مزارع القمح
+- مزارع الذرة
+- مزارع البرسيم
+- المشاريع الزراعية الحكومية
+- إنتاج الحبوب في الحقول المفتوحة واسعة النطاق
 
-## Key Value
+## القيمة الرئيسية
 
-- Reliable large-scale irrigation control across wide farm areas
-- Reduce manual labor dependency for daily pump and valve operation
-- Improve water distribution efficiency across zones
-- Support remote farm operation with stable infrastructure design
+- تحكم موثوق بالري واسع النطاق عبر مساحات مزرعية شاسعة
+- تقليل الاعتماد على العمالة اليدوية لتشغيل المضخات والصمامات يومياً
+- تحسين كفاءة توزيع المياه عبر المناطق
+- دعم التشغيل عن بُعد ببنية تحتية مستقرة
 
-## Explore Saudi systems
+## استكشف أنظمة السعودية
 
-- **[Irrigation Control System](/sa/irrigation-control-system/)** — multi-zone pump and valve automation for large farms
-- **[Wireless Irrigation System](/sa/wireless-irrigation-system/)** — long-distance field control without cable infrastructure
-- **[Fertigation System](/sa/fertigation-system/)** — optional support for selected crop zones (secondary to infrastructure)
+- **[نظام التحكم بالري](/sa/irrigation-control-system/)** — أتمتة المضخات والصمامات متعددة المناطق للمزارع الكبيرة
+- **[نظام الري اللاسلكي](/sa/wireless-irrigation-system/)** — تحكم ميداني لمسافات طويلة دون بنية كابلات
+- **[نظام التسميد](/sa/fertigation-system/)** — دعم اختياري لمناطق محاصيل محددة (ثانوي بالنسبة للبنية التحتية)
 
-## Contact
+## اتصل بنا
 
-Request irrigation system design via {{< sa-whatsapp-link text="WhatsApp" >}} or our **[contact page](/sa/contact/)**.
+اطلب تصميم نظام الري عبر {{< sa-whatsapp-link text="واتساب" >}} أو **[صفحة الاتصال](/sa/contact/)**.
 
-[← Main PKYDrip website](/)
+[الموقع الرئيسي لـ PKYDrip ←](/)

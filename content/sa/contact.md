@@ -1,61 +1,61 @@
 ---
-title: "Saudi Arabia Irrigation System Consultation"
-description: "Contact PKYDrip for large-scale irrigation infrastructure design in Saudi Arabia. WhatsApp preferred for Saudi agricultural projects."
+title: "استشارة أنظمة الري في المملكة العربية السعودية"
+description: "تواصل مع PKYDrip لتصميم بنية تحتية للري واسعة النطاق في السعودية. واتساب هو القناة المفضلة للمشاريع الزراعية السعودية."
 layout: sa-page
 hide_main_nav: true
 page_code: "PC-SA-CONTACT-01"
-whatsapp_topic: "SA Irrigation Infrastructure Consultation"
+whatsapp_topic: "استشارة بنية الري السعودية"
 whatsapp_action: "AC-WA-SA-CONTACT-WEB-01"
-whatsapp_intro: "I would like to request a large-scale irrigation infrastructure consultation for my Saudi Arabia project."
+whatsapp_intro: "أرغب في طلب استشارة لبنية ري واسعة النطاق لمشروعي الزراعي في المملكة العربية السعودية."
 whatsapp_fields:
-  - "Farm size (hectares)"
-  - "Crop type"
-  - "Water source type"
-  - "Pump capacity"
-  - "Irrigation zones"
-hero_subtitle: "We design large-scale irrigation infrastructure systems for Saudi agricultural projects — pump control, wireless field coverage, and reliable desert operation."
+  - "مساحة المزرعة (هكتار)"
+  - "نوع المحصول"
+  - "نوع مصدر المياه"
+  - "قدرة المضخة"
+  - "مناطق الري"
+hero_subtitle: "نصمم أنظمة بنية تحتية للري واسعة النطاق للمشاريع الزراعية السعودية — التحكم بالمضخات، التغطية اللاسلكية الميدانية، وتشغيل موثوق في البيئة الصحراوية."
 hero_image: "images/sa/sa-contact-infrastructure.webp"
-hero_image_alt: "Schematic of Saudi Arabia large-scale irrigation infrastructure consultation"
+hero_image_alt: "مخطط لاستشارة بنية تحتية للري واسعة النطاق في المملكة العربية السعودية"
 keywords:
-  - irrigation system Saudi Arabia
-  - large farm irrigation system
-  - desert agriculture irrigation Saudi
-  - agriculture infrastructure Saudi Arabia
-  - wireless irrigation system Saudi
-  - pump control irrigation system
+  - نظام ري السعودية
+  - ري المزارع الكبيرة
+  - الزراعة الصحراوية السعودية
+  - البنية التحتية الزراعية
+  - الري اللاسلكي السعودية
+  - التحكم بالمضخات
 ---
 
-[← Home /sa/](/sa/) · [Irrigation Control](/sa/irrigation-control-system/) · [Wireless](/sa/wireless-irrigation-system/) · [Fertigation](/sa/fertigation-system/)
+[الرئيسية ←](/sa/) · [التحكم بالري](/sa/irrigation-control-system/) · [الري اللاسلكي](/sa/wireless-irrigation-system/) · [التسميد](/sa/fertigation-system/)
 
-## Saudi Arabia Irrigation System Consultation
+## استشارة أنظمة الري في المملكة العربية السعودية
 
-We design large-scale irrigation infrastructure systems for Saudi agricultural projects.
+نصمم أنظمة بنية تحتية للري واسعة النطاق للمشاريع الزراعية السعودية.
 
-## Please provide:
+## يرجى تقديم:
 
-- Farm size (hectares)
-- Crop type
-- Water source type
-- Pump capacity
-- Irrigation zones
+- مساحة المزرعة (هكتار)
+- نوع المحصول
+- نوع مصدر المياه
+- قدرة المضخة
+- مناطق الري
 
-## We provide:
+## نوفر:
 
-- System architecture recommendation
-- Pump and valve configuration plan
-- Wireless coverage design
-- Infrastructure layout suggestion
+- توصية بهندسة النظام
+- خطة تكوين المضخات والصمامات
+- تصميم التغطية اللاسلكية
+- اقتراح تخطيط البنية التحتية
 
-## Explore systems while you wait
+## استكشف الأنظمة أثناء الانتظار
 
-- **[Irrigation Control](/sa/irrigation-control-system/)** — multi-zone pump and valve automation
-- **[Wireless Irrigation](/sa/wireless-irrigation-system/)** — long-distance field control
-- **[Fertigation](/sa/fertigation-system/)** — optional for selected crop zones
+- **[التحكم بالري](/sa/irrigation-control-system/)** — أتمتة المضخات والصمامات متعددة المناطق
+- **[الري اللاسلكي](/sa/wireless-irrigation-system/)** — تحكم ميداني لمسافات طويلة
+- **[التسميد](/sa/fertigation-system/)** — اختياري لمناطق محاصيل محددة
 
-## Contact
+## اتصل بنا
 
-**WhatsApp preferred for Saudi project communication.**
+**واتساب هو القناة المفضلة للتواصل في المشاريع السعودية.**
 
-Send your project details via {{< sa-whatsapp-link text="Chat on WhatsApp" >}} and we will respond with an infrastructure recommendation path.
+أرسل تفاصيل مشروعك عبر {{< sa-whatsapp-link text="تواصل عبر واتساب" >}} وسنرد بمسار توصية للبنية التحتية.
 
-[← Main PKYDrip website](/)
+[الموقع الرئيسي لـ PKYDrip ←](/)

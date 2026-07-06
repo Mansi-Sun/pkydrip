@@ -3,7 +3,7 @@
 {{ $mailtoSubject := printf "استفسار مزرعة سعودية - %s" .Params.page_code | urlquery }}
 {{ $mailtoBody := printf "مرحباً PKYDrip،\nالصفحة: %s\n\nمساحة المزرعة (هكتار): \nنوع المحصول: \nمصدر المياه: \nقدرة المضخة: \nمناطق الري: \n" .Params.page_code | urlquery }}
 {{ $mailto := printf "mailto:%s?subject=%s&body=%s" $email $mailtoSubject $mailtoBody }}
-<section class="sa-lead" style="background:#fff;border-top:1px solid #e0d5c4;padding:40px 20px;">
+<section class="sa-lead" style="background:#fff;border-top:1px solid #e0d5c4;padding:40px 20px;direction:rtl;text-align:right;">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;">
       <h2 style="margin:0 0 14px;font-size:24px;color:#3d2e1f;">اطلب تصميم بنية الري للمزرعة السعودية</h2>

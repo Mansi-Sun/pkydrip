@@ -6,21 +6,21 @@
 priority:
   high:
     - path: /sa/contact/
-      label: Infrastructure Inquiry
+      label: استفسار البنية التحتية
       conversion_tier: 1
   mid:
     - path: /sa/irrigation-control-system/
-      label: Irrigation Control System
+      label: نظام التحكم بالري
       conversion_tier: 2
     - path: /sa/wireless-irrigation-system/
-      label: Wireless Irrigation System
+      label: نظام الري اللاسلكي
       conversion_tier: 3
   low:
     - path: /sa/fertigation-system/
-      label: Fertigation System (Optional)
+      label: نظام التسميد (اختياري)
       conversion_tier: 4
     - path: /sa/
-      label: SA Infrastructure Hub
+      label: مركز البنية التحتية السعودية
       conversion_tier: 5
 
 clusters:
@@ -85,41 +85,41 @@ page_routing:
     cluster: large_farm_infrastructure
     related:
       - path: /sa/irrigation-control-system/
-        label: Irrigation Control
+        label: التحكم بالري
       - path: /sa/wireless-irrigation-system/
-        label: Wireless Irrigation
+        label: الري اللاسلكي
       - path: /sa/fertigation-system/
-        label: Fertigation (Optional)
+        label: التسميد (اختياري)
   irrigation-control-system:
     cluster: irrigation_control
     related:
       - path: /sa/wireless-irrigation-system/
-        label: Wireless Irrigation
+        label: الري اللاسلكي
       - path: /sa/fertigation-system/
-        label: Fertigation (Optional)
+        label: التسميد (اختياري)
   wireless-irrigation-system:
     cluster: wireless_field
     related:
       - path: /sa/irrigation-control-system/
-        label: Irrigation Control
+        label: التحكم بالري
       - path: /sa/fertigation-system/
-        label: Fertigation (Optional)
+        label: التسميد (اختياري)
   fertigation-system:
     cluster: fertigation_optional
     related:
       - path: /sa/irrigation-control-system/
-        label: Irrigation Control
+        label: التحكم بالري
       - path: /sa/wireless-irrigation-system/
-        label: Wireless Irrigation
+        label: الري اللاسلكي
   contact:
     cluster: large_farm_infrastructure
     related:
       - path: /sa/irrigation-control-system/
-        label: Irrigation Control
+        label: التحكم بالري
       - path: /sa/wireless-irrigation-system/
-        label: Wireless Irrigation
+        label: الري اللاسلكي
       - path: /sa/fertigation-system/
-        label: Fertigation (Optional)
+        label: التسميد (اختياري)
 
 traffic_examples:
   - source: Google Search
