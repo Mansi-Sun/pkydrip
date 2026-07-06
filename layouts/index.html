@@ -3,8 +3,8 @@
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image:url('{{ .bg_image | relURL }}'); position:relative;">
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events:none;"></div>
+<section class="slider home-hero {{ if .bg_overlay }}overly{{ end }}" style="background-image:url('{{ .bg_image | relURL }}'); position:relative;">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-10" style="pointer-events:none;"></div>
 
   <div class="container position-relative" style="z-index:1;">
     <div class="row">
@@ -12,16 +12,18 @@
         <div class="block">
           {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
           {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+          <div class="home-hero__actions">
           {{ with .button }}
           {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          <a href="{{ .link | relLangURL }}" class="btn btn-main home-hero__btn animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
           {{ with .button_secondary }}
           {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp" style="margin-left:10px;background:transparent;border:1px solid #fff;color:#fff;">{{ .label }}</a>
+          <a href="{{ .link | relLangURL }}" class="btn btn-main home-hero__btn home-hero__btn--secondary animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
+          </div>
         </div>
       </div>
     </div>
@@ -34,59 +36,32 @@
 <!-- entry paths -->
 {{ with .Params.entry_paths }}
 {{ if .enable }}
-<section class="section" style="padding:38px 0 24px 0;">
+<section class="section home-entry-paths">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 text-center">
-        <div class="section-title" style="margin-bottom:14px;">
-          <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-          {{ with .content }}<p style="color:#666; max-width:760px; margin:0 auto; line-height:1.7; font-style:normal;">{{ . }}</p>{{ end }}
+        <div class="section-title home-section-title">
+          <h2>{{ .title }}</h2>
+          {{ with .content }}<p>{{ . }}</p>{{ end }}
         </div>
       </div>
     </div>
 
-    <div class="row" style="margin-top:10px; display:flex; flex-wrap:wrap;">
+    <div class="row home-entry-cards">
       {{ range .items }}
-      <div class="col-md-4 col-sm-12" style="margin-bottom:20px; display:flex;">
-        <div style="
-          width:100%;
-          display:flex;
-          flex-direction:column;
-          padding:28px 26px;
-          border:1px solid #e8e8e8;
-          border-radius:14px;
-          background:#fff;
-          box-shadow:0 4px 14px rgba(0,0,0,0.03);
-          transition:all 0.25s ease;
-        "
-        onmouseover="this.style.transform='translateY(-4px)'"
-        onmouseout="this.style.transform='translateY(0)'">
+      <div class="col-md-4 col-sm-12 home-entry-card-col">
+        <div class="home-entry-card">
 
           {{ with .icon }}
-          <div style="
-            width:68px;
-            height:68px;
-            margin-bottom:18px;
-            border-radius:50%;
-            background:#eef7ee;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:30px;
-          ">{{ . }}</div>
+          <div class="home-entry-card__icon">{{ . }}</div>
           {{ end }}
 
-          <h4 style="margin-bottom:14px; line-height:1.4; min-height:52px;">{{ .title }}</h4>
+          <h4>{{ .title }}</h4>
 
-          <p style="
-            color:#666;
-            line-height:1.8;
-            min-height:150px;
-            margin-bottom:22px;
-          ">{{ .desc }}</p>
+          <p>{{ .desc }}</p>
 
-          <div style="margin-top:auto;">
-            <a href="{{ .button_link | relLangURL }}" class="btn btn-small" style="width:250px; text-align:center;">
+          <div class="home-entry-card__action">
+            <a href="{{ .button_link | relLangURL }}" class="btn btn-small">
               {{ .button_label }}
             </a>
           </div>
@@ -103,13 +78,13 @@
 <!-- platform -->
 {{ with .Params.platform }}
 {{ if .enable }}
-<section class="section" style="padding:50px 0 40px 0; background:#f9fbfc;">
+<section class="section home-platform">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center">
-        <div class="section-title" style="margin-bottom:20px;">
-          <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-          {{ with .description }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-style:normal;font-weight:400;">{{ . }}</p>{{ end }}
+        <div class="section-title home-section-title">
+          <h2>{{ .title }}</h2>
+          {{ with .description }}<p class="home-platform__lead">{{ . }}</p>{{ end }}
         </div>
       </div>
     </div>
@@ -117,7 +92,7 @@
     {{ with .content }}
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <p style="color:#666;font-size:15px;line-height:1.75;margin-bottom:24px;">{{ . }}</p>
+        <p class="home-platform__body">{{ . }}</p>
       </div>
     </div>
     {{ end }}
@@ -126,19 +101,21 @@
       <div class="col-md-12 text-center">
         <img src="{{ .image | relURL }}"
              alt="{{ .image_alt }}"
-             style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.05);">
+             class="home-platform__image"
+             loading="lazy"
+             decoding="async">
       </div>
     </div>
 
     {{ with .caption }}
-    <div class="row justify-content-center" style="margin-top:20px;">
+    <div class="row justify-content-center home-platform__caption-row">
       <div class="col-md-8 text-center">
-        <p style="color:#777; font-size:15px; line-height:1.7;">{{ . }}</p>
+        <p class="home-platform__caption">{{ . }}</p>
       </div>
     </div>
     {{ end }}
 
-    <div class="row justify-content-center" style="margin-top:25px;">
+    <div class="row justify-content-center home-platform__cta-row">
       <div class="col-md-12 text-center">
         <a href="{{ `/system-architecture/` | relLangURL }}" class="btn btn-main">Explore Platform Architecture</a>
       </div>
@@ -152,22 +129,22 @@
 <!-- agricultural automation systems -->
 {{ with .Params.systems }}
 {{ if .enable }}
-<section class="section" style="padding:50px 0 40px 0;">
+<section class="section home-systems">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center">
-        <div class="section-title" style="margin-bottom:20px;">
-          <h2 style="margin-bottom:12px;">{{ .title }}</h2>
-          {{ with .content }}<p style="color:#555;max-width:760px;margin:0 auto;line-height:1.7;font-style:normal;font-weight:400;">{{ . }}</p>{{ end }}
+        <div class="section-title home-section-title">
+          <h2>{{ .title }}</h2>
+          {{ with .content }}<p>{{ . }}</p>{{ end }}
         </div>
       </div>
     </div>
-    <div class="row justify-content-center" style="margin-top:10px;">
+    <div class="row justify-content-center home-systems__grid">
       {{ range .items }}
-      <div class="col-md-6 col-lg-3" style="margin-bottom:16px;">
-        <a href="{{ .url | relLangURL }}" style="display:flex;flex-direction:column;height:100%;padding:22px 20px;border:1px solid #e8e8e8;border-radius:14px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.03);text-decoration:none;color:#222;">
-          <span style="font-weight:600;margin-bottom:8px;">{{ .name }}</span>
-          {{ with .desc }}<span style="color:#666;font-size:14px;line-height:1.6;font-weight:400;">{{ . }}</span>{{ end }}
+      <div class="col-md-6 col-lg-3 home-systems__item">
+        <a href="{{ .url | relLangURL }}" class="home-systems__card">
+          <span class="home-systems__card-title">{{ .name }}</span>
+          {{ with .desc }}<span class="home-systems__card-desc">{{ . }}</span>{{ end }}
         </a>
       </div>
       {{ end }}
@@ -188,21 +165,23 @@
 <!-- open platform principles -->
 {{ with .Params.systems_value }}
 {{ if .enable }}
-<section class="section" style="padding:56px 0;background:#f9fbfc;">
+<section class="section home-split-section home-split-section--muted">
   <div class="container">
     <div class="row align-items-center g-4">
       {{ with .image }}
       <div class="col-lg-6">
         <img src="{{ . | relURL }}"
              alt="{{ $.Params.systems_value.image_alt }}"
-             style="width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+             class="home-split-section__image"
+             loading="lazy"
+             decoding="async">
       </div>
       {{ end }}
       <div class="col-lg-6">
-        <h2 style="margin:0 0 20px;font-size:28px;color:#1a3a2a;font-weight:700;">{{ .title }}</h2>
-        <ul style="margin:0;padding-left:1.25rem;color:#555;line-height:1.9;font-size:16px;">
+        <h2 class="home-split-section__title">{{ .title }}</h2>
+        <ul class="home-split-section__list">
           {{ range .items }}
-          <li style="margin-bottom:10px;">{{ . }}</li>
+          <li>{{ . }}</li>
           {{ end }}
         </ul>
       </div>
@@ -216,22 +195,24 @@
 <!-- field deployment -->
 {{ with .Params.portfolio }}
 {{ if .enable }}
-<section class="section" style="padding:56px 0;background:#fff;">
+<section class="section home-split-section">
   <div class="container">
     <div class="row align-items-center g-4">
       {{ with .image }}
       <div class="col-lg-6">
         <img src="{{ . | relURL }}"
              alt="{{ $.Params.portfolio.image_alt }}"
-             style="width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+             class="home-split-section__image"
+             loading="lazy"
+             decoding="async">
       </div>
       {{ end }}
       <div class="col-lg-6">
-        {{ with .title }}<h2 style="margin:0 0 16px;font-size:28px;color:#1a3a2a;font-weight:700;">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}<p style="color:#555;line-height:1.75;font-size:16px;margin-bottom:24px;">{{ . }}</p>{{ end }}
+        {{ with .title }}<h2 class="home-split-section__title">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .content }}<p class="home-split-section__body">{{ . }}</p>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-main">{{ .label }}</a>
+        <a href="{{ .link | relLangURL }}" class="btn btn-main home-split-section__btn">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

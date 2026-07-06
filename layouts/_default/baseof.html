@@ -12,7 +12,7 @@
 	{{ end }}
 </head>
 
-<body>
+<body{{ if .IsHome }} class="page-home"{{ end }}>
 	{{ partial "header.html" . }}
 	{{ if ne hugo.Environment "development" }}
 	{{ if hugo.IsProduction }}
