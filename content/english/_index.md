@@ -1,4 +1,6 @@
 ---
+title: "PKYDrip Irrigation Automation Systems | Smart Farm Infrastructure"
+description: "PKYDrip provides irrigation automation systems for farms, greenhouses, orchards and retrofit projects, including irrigation control, fertigation, wireless valve control and smart farm solutions."
 ############################### Banner ##############################
 banner:
   enable: true
