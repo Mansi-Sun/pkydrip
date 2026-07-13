@@ -33,6 +33,12 @@ PKYDrip solutions describe **how core systems** (irrigation control, fertigation
   </div>
 
   <div style="background:#fff;border:1px solid #dfe9e3;border-radius:14px;padding:22px;box-shadow:0 4px 14px rgba(0,0,0,0.04);">
+    <h3 style="margin:0 0 10px 0;">Greenhouse Turnkey Package</h3>
+    <p style="color:#617168;line-height:1.65;">Traditional greenhouse structure and film plus complete fertigation — deliverable packages from ~0.2 ha to 3–5 ha.</p>
+    <a href="/solution/greenhouse-turnkey-package/" style="font-weight:700;">View turnkey packages →</a>
+  </div>
+
+  <div style="background:#fff;border:1px solid #dfe9e3;border-radius:14px;padding:22px;box-shadow:0 4px 14px rgba(0,0,0,0.04);">
     <h3 style="margin:0 0 10px 0;">Orchard Systems</h3>
     <p style="color:#617168;line-height:1.65;">Block-based tree crop irrigation — pump coordination, zone sequencing, and regional field expansion.</p>
     <a href="/solution/orchard-irrigation/" style="font-weight:700;">View solution →</a>

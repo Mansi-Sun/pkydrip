@@ -66,6 +66,12 @@ product_modules:
 related_links:
   title: "Related"
   links:
+    - label: "Greenhouse Turnkey Package"
+      url: "/solution/greenhouse-turnkey-package/"
+    - label: "0.2 ha Greenhouse Turnkey Package"
+      url: "/solution/greenhouse-turnkey-0-2-hectare/"
+    - label: "1 ha Greenhouse Turnkey Package"
+      url: "/solution/greenhouse-turnkey-1-hectare/"
     - label: "Tomato drip application"
       url: "/applications/tomato-drip-irrigation/"
     - label: "Hydroponic solution"
