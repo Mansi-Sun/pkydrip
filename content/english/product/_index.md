@@ -16,7 +16,7 @@ cta:
 intro:
   eyebrow: "Product Directory"
   title: "Start from the system you want to build"
-  text: "PKYDrip products are organized around five core irrigation automation systems. Choose the system direction first, then discuss the right controller, cabinet, wireless device, fertigation module, or sensor configuration for your project."
+  text: "PKYDrip products are organized around six core agricultural automation systems. Choose the system direction first, then discuss the right controller, cabinet, wireless device, fertigation module, climate layer, or sensor configuration for your project."
 
 product_groups:
   - title: "Core Systems"
@@ -30,6 +30,10 @@ product_groups:
         summary: "Fertilizer injection, dosing control, optional EC/pH monitoring, and integration with irrigation schedules."
         image: "images/product/pky-fg401.jpg"
         url: "/product/fertigation-system/"
+      - name: "Climate Control System"
+        summary: "Climate control logic, ventilation and cooling coordination, sensor integration, electrical cabinet execution, sequential startup, and remote monitoring for greenhouse and facility automation."
+        image: "images/scenes/scene-climate-greenhouse.webp"
+        url: "/product/climate-control-system/"
       - name: "Wireless Field Control System"
         summary: "LoRa gateway, solar valve controllers, remote pump control, and wireless expansion without long field cabling."
         image: "images/scenes/scene-wireless-field.webp"
@@ -51,8 +55,11 @@ module_groups:
         summary: "Central irrigation automation for pumps, valves, HMI, and project-level control."
         url: "/product/pump-valve-control-system/"
       - name: "PKY-60W"
-        summary: "Wired master controller for irrigation automation projects."
+        summary: "Wired master controller for irrigation and climate automation projects."
         url: "/product/pky-60w/"
+      - name: "Climate Control System"
+        summary: "Greenhouse and facility climate automation — logic, cabinets, sensors, and equipment coordination."
+        url: "/product/climate-control-system/"
       - name: "Farm Irrigation Controller"
         summary: "Project-oriented controller page for farm pump and valve control."
         url: "/product/farm-irrigation-controller/"
@@ -139,6 +146,11 @@ products:
     summary: "Multi-channel fertigation modules with optional EC/pH control."
     image: "images/product/pky-fg301.jpg"
     url: "/product/fertigation-system/"
+
+  - name: "Climate Control System"
+    summary: "Climate control logic, ventilation and cooling coordination, sensor integration, electrical cabinet execution, and remote monitoring."
+    image: "images/scenes/scene-climate-greenhouse.webp"
+    url: "/product/climate-control-system/"
 
   - name: "Fertigation Controller"
     summary: "Integration-ready EC, pH, dosing, recipe, and records control layer for existing systems."
