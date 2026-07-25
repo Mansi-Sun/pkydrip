@@ -23,11 +23,13 @@
       </div>
     </div>
     <div class="row counter-box text-center mt-50">
+      {{ $counterColumn := "col-md-2" }}
+      {{ if eq (len .funfacts) 4 }}{{ $counterColumn = "col-md-3" }}{{ end }}
       {{ range .funfacts }}
-      <div class="col-md-2">
+      <div class="{{ $counterColumn }}">
         <div class="counter-item">
           {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
-          {{ with .count }}<h4 class="count" data-count="{{ . }}">0</h4>{{ end }}
+          {{ with .count }}<h4>{{ . }}</h4>{{ end }}
           {{ with .name }}<span>{{ . }}</span>{{ end }}
         </div>
       </div>

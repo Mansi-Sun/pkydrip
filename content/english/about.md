@@ -1,6 +1,6 @@
 ---
 title: "Smart Irrigation & Fertigation Systems | PKYDRIP"
-description: "PKYDRIP provides smart irrigation and fertigation solutions designed for greenhouses, orchards, and open-field farms. Our systems support remote control, zoning irrigation, real-time sensor data, and automated fertigation — helping farmers save water, reduce costs, and increase crop yields."
+description: "PKYDrip develops industrial-standard PCB controllers, Android terminals, wireless devices, and cloud-connected automation systems for irrigation, fertigation, and greenhouse control."
 bg_image: "images/slider-bg.webp"
 layout: "about"
 draft: false
@@ -9,34 +9,28 @@ draft: false
 about:
   enable : true
   image : "images/company/about.webp"
-  title : "Modular Irrigation Automation <br> Built for Real Projects"
-  content : "PKYDrip is a modular smart irrigation & fertigation automation company serving agricultural and landscaping markets worldwide.<br><br>
+  title : "Smart Irrigation Control <br> Built on Real Industry Experience"
+  content : |
+    PKYDrip built its industry experience through drip irrigation solutions, irrigation projects, and the production and supply of PE irrigation pipes and related components.<br><br>
 
-We specialize in building structured control architectures that integrate:<br>
-• Water pump management<br>
-• Multi-zone irrigation sequencing (stable pressure, safer piping)<br>
-• Fertigation systems (single or multi-channel dosing)<br>
-• Remote monitoring & control via LoRa, WiFi, or 4G<br>
-• Solar and hybrid power solutions<br><br>
+    This practical background gave us a close understanding of water distribution, pump and valve operation, field installation, maintenance, and the challenges faced by growers and irrigation contractors.<br><br>
 
-Our philosophy is simple:<br>
-Irrigation systems should be structured, reliable, and scalable.<br><br>
+    In 2024, responding to market changes and customer demand, PKYDrip expanded its focus from conventional irrigation products to smart control technology and integrated automation systems. We began developing PCB-based controllers, Android smart terminals, wireless communication products, and cloud-connected irrigation solutions.<br><br>
 
-Instead of selling isolated devices, we focus on system logic — how pumps, valves, sensors, and communication modules work together as one integrated solution.<br><br>
+    Our irrigation controllers, EC/pH controllers, integrated irrigation and fertigation machines, greenhouse environmental control systems, and wireless valve systems all use PCB control boards developed by our own team. We use proven technical solutions and mature modules, with hardware designed in accordance with industrial standards for dependable field operation.<br><br>
 
-PKYDrip develops and supplies water-saving irrigation products such as irrigation controllers, wireless valve control modules, LoRa gateways, remote pump control, sensor integration, and fertigation control units.<br><br>
+    Today, our development and production capabilities include:<br>
+    • Custom PCB control boards and embedded firmware<br>
+    • Irrigation, fertigation, EC/pH, pump, valve, and sensor control<br>
+    • Android-based control terminals and user interfaces<br>
+    • LoRa, Wi-Fi, 4G, RS485, and Modbus communication<br>
+    • Greenhouse environmental monitoring and automation<br>
+    • Cloud monitoring and remote-control platforms<br>
+    • Product assembly, testing, and OEM/ODM system integration<br><br>
 
-We collaborate with engineers, system integrators, agricultural service companies, and farm owners who require structured irrigation control solutions rather than standalone devices.<br><br>
+    By combining irrigation experience with intelligent hardware and software, PKYDrip provides customers with complete products and services rather than isolated components. We also offer product training and practical irrigation fundamentals training to help customers understand, install, operate, and support the systems effectively.<br><br>
 
-PKYDrip supports modular configurations and OEM/ODM customization to adapt to different power standards (110V / 240V / 415V) and regional requirements. Our platform can be integrated through common field protocols (e.g., RS485/Modbus) and scaled from small sites to large multi-zone projects.<br><br>
-
-Typical applications include:<br>
-• Orchard irrigation (drip systems)<br>
-• Greenhouse automation & fertigation<br>
-• Solar-powered remote farms<br>
-• Landscape and municipal water-saving projects<br><br>
-
-We believe irrigation automation is not just about turning valves on and off — it is about designing stable water management systems for long-term operation."
+    We serve irrigation equipment manufacturers, contractors, distributors, system integrators, and agricultural projects that need practical, reliable, and scalable control solutions.
 
   button:
     enable : true
@@ -47,49 +41,49 @@ We believe irrigation automation is not just about turning valves on and off —
 
   funfacts:
   - icon : "fas fa-chart-line"
-    name : "Years of Experience"
-    count : "11"
+    name : "Years of Industry Experience"
+    count : "7+"
 
   - icon : "fas fa-thumbs-up"
-    name : "Satisfied Customer"
-    count : "105"
+    name : "Customers Served"
+    count : "105+"
 
   - icon : "fas fa-globe"
-    name : "Countries Covered"
-    count : "65"
+    name : "Countries Served"
+    count : "6"
 
-  - icon : "fas fa-certificate"
-    name : "CE Certification"
-    count : "2"
+  - icon : "fas fa-microchip"
+    name : "Smart Control R&D Started"
+    count : "2024"
 
 ################################ feature #####################################
 features:
   enable : true
-  title : "Engineering-Oriented Automation, Ready for Deployment"
+  title : "From Irrigation Experience to Integrated Smart Control"
   feature_item:
-  - icon : "fab fa-app-store-ios"
-    name : "Remote Control"
-    content : "iOS/Android apps and cloud access for remote pump & valve control, irrigation plans, and on-site status monitoring."
+  - icon : "fas fa-microchip"
+    name : "In-House PCB Development"
+    content : "Our irrigation controllers, EC/pH controllers, fertigation machines, greenhouse control systems, and wireless valve systems are built around PCB control boards developed by our own team."
 
-  - icon : "fas fa-project-diagram"
-    name : "Pump + Valve Logic Control"
-    content : "Built for safe sequencing: pump ON → pressurize mainline → run zones one-by-one → pump OFF automatically, reducing pressure spikes and equipment cost."
+  - icon : "fas fa-industry"
+    name : "Industrial-Standard Design"
+    content : "We combine proven circuit solutions and mature modules with industrial design practices to support dependable operation in real irrigation environments."
+
+  - icon : "fab fa-android"
+    name : "Android & Cloud Platforms"
+    content : "Android smart terminals and cloud-connected platforms provide clear local operation, remote monitoring, control, and system management."
 
   - icon : "fas fa-satellite-dish"
-    name : "LoRa / WiFi / 4G Connectivity"
-    content : "Flexible networking options for different project environments — greenhouse, orchards, open-field farms, and remote sites."
-
-  - icon : "fas fa-tint"
-    name : "Multi-Zone Irrigation"
-    content : "Scalable multi-zone control for drip, sprinklers, and landscape systems — compatible with common AC 24V solenoid valves and field wiring practices."
-
-  - icon : "fas fa-flask"
-    name : "Fertigation Automation"
-    content : "Supports fertigation workflows with configurable channels and scheduling — designed to integrate with EC/pH monitoring and dosing strategies."
+    name : "Wireless & Field Integration"
+    content : "LoRa, Wi-Fi, 4G, RS485, and Modbus connect pumps, valves, sensors, control terminals, and cloud services into one coordinated system."
 
   - icon : "fas fa-cogs"
-    name : "OEM/ODM & Integration"
-    content : "Modular hardware, configurable IO, and standard interfaces (e.g., RS485/Modbus) to support customization, integration, and regional power standards."
+    name : "Complete Product Integration"
+    content : "We support product development, assembly, testing, system configuration, and OEM/ODM integration—not only the supply of individual components."
+
+  - icon : "fas fa-chalkboard-teacher"
+    name : "Product & Irrigation Training"
+    content : "We provide product training and practical irrigation fundamentals to help customers install, operate, maintain, and support complete systems."
 
 #################################### testimonial & mission vision #######################################
 testimonial:
