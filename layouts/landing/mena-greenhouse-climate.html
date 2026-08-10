@@ -128,6 +128,17 @@
         </div>
       </div>
       <p class="mena-lp__note">{{ .Params.architecture.note }}</p>
+      {{ with .Params.hero.cabinet_image }}
+      <div class="mena-lp__cabinet">
+        <div class="mena-lp__cabinet-copy">
+          <h3>{{ $.Params.architecture.cabinet_title }}</h3>
+          <p>{{ $.Params.architecture.cabinet_lead }}</p>
+        </div>
+        <figure class="mena-lp__cabinet-media">
+          <img src="{{ . }}" alt="{{ $.Params.hero.cabinet_image_alt }}" width="675" height="1200" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      {{ end }}
     </div>
   </section>
 

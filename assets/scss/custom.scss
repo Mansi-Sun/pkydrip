@@ -1521,6 +1521,47 @@ body.page-home {
   }
 }
 
+.mena-lp__cabinet {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 0.85fr;
+  margin-top: 2rem;
+}
+
+.mena-lp__cabinet-copy h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.65rem;
+}
+
+.mena-lp__cabinet-copy p {
+  color: #52665e;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.mena-lp__cabinet-media {
+  background: #fff;
+  border: 1px solid #e0e9e3;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(28, 67, 51, 0.08);
+  margin: 0;
+  max-width: 360px;
+  overflow: hidden;
+  padding: 0.55rem;
+
+  img {
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+  }
+}
+
 .mena-lp__hero h1 {
   color: #fff;
   font-size: clamp(1.55rem, 5vw, 2.55rem);
@@ -2066,12 +2107,17 @@ body.page-home {
   .mena-lp__pillar-grid,
   .mena-lp__flow,
   .mena-lp__form-layout,
-  .mena-lp__hero-grid {
+  .mena-lp__hero-grid,
+  .mena-lp__cabinet {
     grid-template-columns: 1fr;
   }
 
   .mena-lp__hero-media {
     max-width: 260px;
+  }
+
+  .mena-lp__cabinet-media {
+    max-width: 280px;
   }
 
   .mena-lp__arch {

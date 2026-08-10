@@ -19,6 +19,8 @@ hero:
   product_image_alt: "pkydrip climate controller with Android HMI mounted on a commercial growing system"
   hmi_image: "/images/system/pkydrip-climate-hmi-dashboard.webp"
   hmi_image_alt: "PKY Climate HMI dashboard showing outdoor weather station data and multi-zone greenhouse monitoring"
+  cabinet_image: "/images/system/pkydrip-climate-cabinet.webp"
+  cabinet_image_alt: "Interior of pkydrip climate electrical control cabinet with contactors, relays and labeled wiring"
 pillars:
   title: "What This System Is Built For"
   items:
@@ -63,7 +65,9 @@ hmi:
   lead: "Weather, multi-zone climate, equipment status and alarms in one view — easy for operators, ready for electrical automation coordination."
 architecture:
   title: "Software Logic + Electrical Cabinet — Separated by Design"
-  note: "PKY Climate Controller = logic & local storage. Electrical control cabinet = high-power switching (Schneider contactors). MQTT cloud optional — local operation is the baseline."
+  note: "PKY Climate Controller = logic & local storage. Electrical control cabinet = high-power switching (contactors & relays). MQTT cloud optional — local operation is the baseline."
+  cabinet_title: "Electrical Power Layer — Inside the Control Cabinet"
+  cabinet_lead: "High-power switching stays in the electrical cabinet: breakers, contactors, relays and labeled field terminals. The climate software issues commands; the cabinet executes them safely."
 specs:
   title: "Technical Specifications"
   rows:
