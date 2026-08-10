@@ -1,0 +1,249 @@
+{{ define "main" }}
+{{ $wa := .Params.whatsapp_url }}
+{{ $waDisplay := .Params.whatsapp_display | default "+86 173 9529 7329" }}
+
+<header class="mena-lp__topbar">
+  <div class="container mena-lp__topbar-inner">
+    <a class="mena-lp__logo" href="{{ site.BaseURL | relLangURL }}" aria-label="pkydrip home">
+      {{ partial "logo.html" . }}
+    </a>
+  </div>
+</header>
+
+<article class="mena-lp">
+  {{/* SECTION 1 — Hero */}}
+  <section class="mena-lp__hero">
+    <div class="container mena-lp__hero-grid">
+      <div class="mena-lp__hero-copy">
+        <h1>{{ .Params.hero.title }}</h1>
+        <p class="mena-lp__subtitle">{{ .Params.hero.subtitle }}</p>
+        <p class="mena-lp__arabic" lang="ar" dir="rtl">{{ .Params.hero.arabic }}</p>
+        <div class="mena-lp__actions">
+          <a class="mena-lp__btn mena-lp__btn--wa" href="{{ $wa }}" target="_blank" rel="noopener">{{ .Params.primary_cta }}</a>
+          <a class="mena-lp__btn mena-lp__btn--outline" href="#inquiry-form">{{ .Params.secondary_cta }}</a>
+        </div>
+        <p class="mena-lp__trust">{{ .Params.hero.trust }}</p>
+      </div>
+      {{ with .Params.hero.product_image }}
+      <div class="mena-lp__hero-media">
+        <img src="{{ . }}" alt="{{ $.Params.hero.product_image_alt }}" width="675" height="1200" loading="eager" decoding="async">
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* Positioning pillars */}}
+  <section class="mena-lp__section">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.pillars.title }}</h2>
+      <div class="mena-lp__pillar-grid">
+        {{ range .Params.pillars.items }}
+        <div class="mena-lp__pillar-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* SECTION 2 — Pain / Solution */}}
+  <section class="mena-lp__section mena-lp__section--tint">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.pain_section.title }}</h2>
+      <div class="mena-lp__pain-grid">
+        {{ range .Params.pain_section.cards }}
+        <div class="mena-lp__pain-card">
+          <div class="mena-lp__icon" aria-hidden="true">
+            {{ if eq .icon "thermo" }}
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0Z"/><path d="M12 18a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+            {{ else if eq .icon "power" }}
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            {{ else }}
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/><path d="M8 6h8M8 10h8"/></svg>
+            {{ end }}
+          </div>
+          <h3>{{ .pain }}</h3>
+          <p>{{ .solution }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* How it works */}}
+  <section class="mena-lp__section">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.how_it_works.title }}</h2>
+      <p class="mena-lp__lead">{{ .Params.how_it_works.lead }}</p>
+      <div class="mena-lp__flow">
+        {{ range $i, $step := .Params.how_it_works.steps }}
+        <div class="mena-lp__flow-step">
+          <span>{{ add $i 1 }}</span>
+          <h3>{{ $step.title }}</h3>
+          <p>{{ $step.text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* HMI screenshot */}}
+  {{ with .Params.hero.hmi_image }}
+  <section class="mena-lp__section mena-lp__section--tint">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ $.Params.hmi.title }}</h2>
+      <p class="mena-lp__lead">{{ $.Params.hmi.lead }}</p>
+      <figure class="mena-lp__hmi">
+        <img src="{{ . }}" alt="{{ $.Params.hero.hmi_image_alt }}" width="1400" height="990" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* SECTION 3 — Architecture */}}
+  <section class="mena-lp__section">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.architecture.title }}</h2>
+      <div class="mena-lp__arch" role="img" aria-label="Greenhouse climate system architecture — software logic separated from electrical cabinet">
+        <div class="mena-lp__arch-sensors">
+          <div class="mena-lp__arch-box">Weather Station</div>
+          <div class="mena-lp__arch-box">Temp / Humidity</div>
+          <div class="mena-lp__arch-box">CO₂</div>
+          <div class="mena-lp__arch-box">Light</div>
+        </div>
+        <div class="mena-lp__arch-arrow mena-lp__arch-arrow--side" aria-hidden="true">→</div>
+        <div class="mena-lp__arch-core">
+          <div class="mena-lp__arch-box mena-lp__arch-box--accent">Android HMI · Local Storage</div>
+          <div class="mena-lp__arch-link">RS485 Modbus · Logic layer</div>
+          <div class="mena-lp__arch-box mena-lp__arch-box--core">PKY Climate Controller — STM32</div>
+          <div class="mena-lp__arch-link">Commands → Electrical cabinet (power layer)</div>
+        </div>
+        <div class="mena-lp__arch-equipment">
+          <div class="mena-lp__arch-box">Ventilation Fans</div>
+          <div class="mena-lp__arch-box">Wet Curtains</div>
+          <div class="mena-lp__arch-box">Circulation Fans</div>
+          <div class="mena-lp__arch-box">Shade Screens</div>
+          <div class="mena-lp__arch-box">CO₂ / Heating</div>
+        </div>
+      </div>
+      <p class="mena-lp__note">{{ .Params.architecture.note }}</p>
+    </div>
+  </section>
+
+  {{/* SECTION 4 — Specs */}}
+  <section class="mena-lp__section mena-lp__section--tint">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.specs.title }}</h2>
+      <div class="mena-lp__table-wrap">
+        <table class="mena-lp__table">
+          <thead>
+            <tr><th scope="col">Parameter</th><th scope="col">Specification</th></tr>
+          </thead>
+          <tbody>
+            {{ range .Params.specs.rows }}
+            <tr><td>{{ index . 0 }}</td><td>{{ index . 1 }}</td></tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  {{/* SECTION 5 — ROI */}}
+  <section class="mena-lp__section">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.roi.title }}</h2>
+      <div class="mena-lp__roi">
+        <div class="mena-lp__roi-card">
+          <strong>{{ .Params.roi.worker }}</strong>
+          <p>{{ .Params.roi.monthly }}</p>
+        </div>
+        <div class="mena-lp__roi-op" aria-hidden="true">×</div>
+        <div class="mena-lp__roi-card">
+          <strong>{{ .Params.roi.price }}</strong>
+        </div>
+        <div class="mena-lp__roi-op" aria-hidden="true">=</div>
+        <div class="mena-lp__roi-card mena-lp__roi-card--result">
+          <strong>{{ .Params.roi.payback }}</strong>
+        </div>
+      </div>
+      <p class="mena-lp__note">{{ .Params.roi.note }}</p>
+    </div>
+  </section>
+
+  {{/* SECTION 6 — Form */}}
+  <section class="mena-lp__section mena-lp__section--tint" id="inquiry-form">
+    <div class="container">
+      <h2 class="mena-lp__section-title">{{ .Params.form.title }}</h2>
+      <p class="mena-lp__lead">{{ .Params.form.subtitle }}</p>
+
+      <div class="mena-lp__form-layout">
+        <aside class="mena-lp__wa-panel">
+          <h3>Prefer WhatsApp?</h3>
+          <p>Fastest way to get a configuration recommendation for your greenhouse.</p>
+          <a class="mena-lp__btn mena-lp__btn--wa" href="{{ $wa }}" target="_blank" rel="noopener">WhatsApp Us Now →</a>
+          <p class="mena-lp__wa-number"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ $waDisplay }}</p>
+        </aside>
+
+        <form class="mena-lp__form" name="{{ .Params.form.name }}" method="POST" action="/message_sent/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="{{ .Params.form.name }}">
+          <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+          <p class="mena-lp__honeypot"><label>Do not fill this out: <input name="bot-field"></label></p>
+
+          <label><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
+          <label><span>Company / Farm Name *</span><input type="text" name="company" required autocomplete="organization"></label>
+
+          <label>
+            <span>Country *</span>
+            <select name="country" required>
+              <option value="">Select country</option>
+              <option value="UAE">UAE</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Greenhouse Area *</span>
+            <select name="greenhouse_area" required>
+              <option value="">Select area</option>
+              <option value="<500m2">&lt;500m²</option>
+              <option value="500-2000m2">500–2000m²</option>
+              <option value="2000-5000m2">2000–5000m²</option>
+              <option value=">5000m2">&gt;5000m²</option>
+            </select>
+          </label>
+
+          <fieldset class="mena-lp__needs">
+            <legend>Primary Need * <span class="mena-lp__hint">(select all that apply)</span></legend>
+            {{ range .Params.form.needs }}
+            <label class="mena-lp__check"><input type="checkbox" name="primary_need" value="{{ . }}"> {{ . }}</label>
+            {{ end }}
+          </fieldset>
+
+          <label><span>WhatsApp Number *</span><input type="tel" name="whatsapp" required autocomplete="tel" placeholder="+971 / +20 …"></label>
+          <label><span>Email <span class="mena-lp__hint">(optional)</span></span><input type="email" name="email" autocomplete="email"></label>
+          <label class="mena-lp__wide"><span>Message <span class="mena-lp__hint">(optional)</span></span><textarea name="message" rows="4" placeholder="{{ .Params.form.message_placeholder }}"></textarea></label>
+
+          <button class="mena-lp__btn mena-lp__btn--submit" type="submit">{{ .Params.form.submit_label }}</button>
+          <p class="mena-lp__form-alt">Prefer WhatsApp? Message us directly: <a href="{{ $wa }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ $waDisplay }}</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  {{/* SECTION 7 — Minimal footer */}}
+  <footer class="mena-lp__footer">
+    <div class="container">
+      <p>pkydrip Smart Agriculture Control Systems · smart.pky-dripirrigation.com · <a href="{{ $wa }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></p>
+    </div>
+  </footer>
+</article>
+
+<a class="mena-lp__float-wa" href="{{ $wa }}" target="_blank" rel="noopener" aria-label="WhatsApp us">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+{{ end }}
