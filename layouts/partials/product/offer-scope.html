@@ -1,0 +1,30 @@
+{{/* Offer scope — Standard / Configurable / Engineering Review */}}
+{{ with .Params.offer_scope }}
+{{ if .columns }}
+<section class="py-5 eng-offer-scope" style="background:#f8fafb;">
+  <div class="container">
+    <h2 class="h3 mb-2">{{ .title | default "Standard product, configurable where it matters" }}</h2>
+    {{ with .intro }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
+    <div class="row g-3">
+      {{ range .columns }}
+      {{ $key := .key | default "standard" }}
+      {{ $tone := "standard" }}
+      {{ if eq $key "configurable" }}{{ $tone = "configurable" }}{{ end }}
+      {{ if eq $key "engineering" }}{{ $tone = "engineering" }}{{ end }}
+      <div class="col-md-4">
+        <div class="eng-scope-col eng-scope-{{ $tone }} h-100">
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+            <h3 class="h6 fw-semibold mb-0">{{ .title }}</h3>
+            {{ with .badge }}<span class="eng-scope-badge">{{ . }}</span>{{ end }}
+          </div>
+          {{ with .items }}
+          <ul class="mb-0">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

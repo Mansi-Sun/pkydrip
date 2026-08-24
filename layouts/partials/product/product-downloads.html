@@ -1,0 +1,46 @@
+{{/* Product documents — available / request / coming_soon (preview only) */}}
+{{ with .Params.product_downloads }}
+{{ $ctaURL := "" }}
+{{ with $.Params.product_cta }}{{ $ctaURL = .button_url }}{{ end }}
+{{ if not $ctaURL }}{{ with $.Params.project_cta }}{{ $ctaURL = .button_url }}{{ end }}{{ end }}
+{{ $visible := slice }}
+{{ range .items }}
+  {{ $show := false }}
+  {{ if eq .status "available" }}{{ if .url }}{{ $show = true }}{{ end }}{{ end }}
+  {{ if eq .status "request" }}{{ $show = true }}{{ end }}
+  {{ if and (eq .status "coming_soon") (not hugo.IsProduction) }}{{ $show = true }}{{ end }}
+  {{ if $show }}{{ $visible = $visible | append . }}{{ end }}
+{{ end }}
+{{ if $visible }}
+<section class="py-5 eng-product-downloads" style="background:#f8fafb;">
+  <div class="container">
+    <h2 class="h3 mb-2">{{ .title | default "Product documents" }}</h2>
+    {{ with .intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
+    <div class="row g-3">
+      {{ range $visible }}
+      <div class="col-sm-6 col-lg-4">
+        <div class="eng-download-card h-100">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <div class="fw-semibold">{{ .title }}</div>
+            {{ with .format }}<span class="badge text-bg-light border text-secondary">{{ . }}</span>{{ end }}
+          </div>
+          {{ if eq .status "available" }}
+            <a class="btn btn-sm btn-outline-success" href="{{ .url | relURL }}"{{ if strings.HasSuffix .url ".pdf" }} target="_blank" rel="noopener"{{ end }}>Download</a>
+          {{ else if eq .status "request" }}
+            {{ $req := .request_url | default .url | default $ctaURL }}
+            {{ if $req }}
+              <a class="btn btn-sm btn-outline-secondary" href="{{ $req }}"{{ if or (in $req "wa.me") (hasPrefix $req "http") }} target="_blank" rel="noopener"{{ end }}>Request this document</a>
+            {{ else }}
+              <span class="small text-muted">Request via inquiry CTA below</span>
+            {{ end }}
+          {{ else }}
+            <span class="small text-muted">Coming soon (preview)</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

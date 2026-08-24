@@ -1,0 +1,18 @@
+{{/* Prefer product_cta; fall back to project_cta; never render both */}}
+{{ $cta := false }}
+{{ with .Params.product_cta }}{{ $cta = . }}{{ end }}
+{{ if not $cta }}{{ with .Params.project_cta }}{{ $cta = . }}{{ end }}{{ end }}
+{{ with $cta }}
+{{ $label := .button_label | default "Send Configuration Requirements" }}
+{{ $ref := .reference | default $.Params.page_code }}
+<section class="py-5 eng-product-cta" style="background: linear-gradient(165deg, #1a3d52 0%, #1e4d3f 100%); color: #fff;">
+  <div class="container text-center">
+    <h2 class="h3 mb-3">{{ .title }}</h2>
+    {{ with .text }}<p class="mb-4 mx-auto" style="max-width:720px;opacity:.9;">{{ . }}</p>{{ end }}
+    {{ with .button_url }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">{{ $label }}</a>
+    {{ end }}
+    {{ with $ref }}<p class="small mt-3 mb-0" style="opacity:.7;">Reference: {{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}

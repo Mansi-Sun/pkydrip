@@ -1,0 +1,45 @@
+{{/* Fit summary — Best for / Recommended buyer / Not designed for */}}
+{{ with .Params.fit_summary }}
+{{ $best := .best_for }}
+{{ $not := .not_for }}
+{{ $partner := .partner_fit }}
+{{ if or (and $best $best.items) (and $not $not.items) (and $partner $partner.items) }}
+<section class="py-5 eng-fit-summary">
+  <div class="container">
+    <h2 class="h3 mb-4">{{ .title | default "Is this product a fit?" }}</h2>
+    <div class="row g-3">
+      {{ with $best }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-fit-col eng-fit-best h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "Best for" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+      {{ with $partner }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-fit-col eng-fit-partner h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "Recommended buyer" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+      {{ with $not }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-fit-col eng-fit-not h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "Not designed for" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
