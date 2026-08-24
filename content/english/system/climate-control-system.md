@@ -119,6 +119,12 @@ typical_applications:
 product_modules:
   title: "Related System Modules"
   items:
+    - name: "PKY-GHC01"
+      url: "/product/pky-ghc01-greenhouse-controller/"
+      desc: "Global-standard modular greenhouse automation controller with power-cabinet separation."
+    - name: "Climate Control System family"
+      url: "/product/climate-control-system/"
+      desc: "Product-family entry for greenhouse climate automation."
     - name: "Climate Controller"
       url: "/product/pky-60w/"
       desc: "Automation logic layer for schedules, rules, and climate coordination with electrical cabinets."
@@ -132,6 +138,10 @@ product_modules:
 related_links:
   title: "Related Systems & Resources"
   links:
+    - label: "PKY-GHC01 Greenhouse Controller"
+      url: "/product/pky-ghc01-greenhouse-controller/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "Irrigation Control System"
       url: "/system/irrigation-control-system/"
     - label: "Fertigation System"
@@ -140,12 +150,6 @@ related_links:
       url: "/system/wireless-irrigation-system/"
     - label: "Commercial Greenhouse Climate Control Solution"
       url: "/solution/commercial-greenhouse-climate-control/"
-    - label: "Greenhouse LoRa Irrigation Expansion"
-      url: "/applications/greenhouse-lora-irrigation-expansion/"
-    - label: "Greenhouse Irrigation Solution"
-      url: "/solution/greenhouse-irrigation/"
-    - label: "Greenhouse Fertigation & Climate Control"
-      url: "/solution/greenhouse-fertigation-climate-control/"
 
 project_cta:
   title: "Request a Climate Automation Recommendation"

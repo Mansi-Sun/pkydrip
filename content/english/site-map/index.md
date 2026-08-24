@@ -56,10 +56,26 @@ This page is for administrators and content planning. It is not intended as the 
 
 ## Products
 
+### Global standard products
+
+- [PKYDrip E / S / P fertigation family](/products/fertigation/)
+- [PKYDrip-S05 5-channel precision fertigation](/products/fertigation/pkydrip-s05/)
+- [PKY-FG501 5-Channel Premix Fertigation Unit](/product/pky-fg501-premix-fertigation/)
+- [PKY-GHC01 Modular Greenhouse Automation Controller](/product/pky-ghc01-greenhouse-controller/)
+- [PKY-RIC01 Remote Irrigation Control System](/product/pky-ric01-remote-irrigation-control/)
+- [PKYDrip Open Automation Platform](/open-platform/)
+
+### Product family entries
+
+- [Fertigation System](/product/fertigation-system/)
+- [Climate Control System](/product/climate-control-system/)
+- [Wireless Field Control System](/product/wireless-field-control-system/)
+
+### Catalog
+
 - [CO2 Sensor](/product/co2-sensor/)
 - [Farm Irrigation Controller for Pump + Valve Automation | PKYDrip](/product/farm-irrigation-controller/)
 - [Fertigation Controller](/product/fertigation-controller/)
-- [Fertigation System](/product/fertigation-system/)
 - [Filters, Valves & Irrigation Components](/product/filters-valves-accessories/)
 - [Hydroponic PH and EC controller & Smart Dosing System](/product/hydroponic/)
 - [IC03 → IC05-Plus (Product Upgrade Notice)](/product/pky-ic03/)
@@ -91,7 +107,6 @@ This page is for administrators and content planning. It is not intended as the 
 - [Temperature/Humidity/LUX Sensor](/product/tem-hum-lux/)
 - [Wind Direction Sensor](/product/wind-direction/)
 - [Wind Speed Sensor](/product/wind-speed/)
-- [Wireless Field Control System](/product/wireless-field-control-system/)
 - [Wireless Valve Controller](/product/wireless-valve-controller/)
 
 ## Resources
@@ -191,5 +206,7 @@ This page is for administrators and content planning. It is not intended as the 
 
 - Future public navigation should follow: Home, Systems, Solutions, Products, Resources, Contact.
 - Products should support Systems and Solutions.
+- Global standard products for new B2B inquiries: FG501, GHC01, RIC01, plus Open Platform.
 - Landing pages may remain hidden from navigation and used for campaigns.
 - This page should stay hidden from main navigation.
+- Old product pages remain published; see `docs/global-product-pages-step6-old-page-roles.md`.
