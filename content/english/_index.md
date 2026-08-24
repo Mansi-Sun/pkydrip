@@ -84,6 +84,9 @@ systems_value:
     - "Cloud-ready integration with local-first control independence"
     - "Products integrate as modules within subsystems — not isolated device sales"
     - "Designed for growers, integrators, dealers, and research partners"
+  cta:
+    label: "View Open Platform"
+    url: "/open-platform/"
 
 ######################### Deployment ################################
 portfolio:

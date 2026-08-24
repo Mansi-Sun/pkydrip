@@ -147,6 +147,8 @@ In practice:
 Related pages:
 - 🧩 Solution:  
   [Water–Fertilizer Integration System](/solution/water-fertilizer-integration-system/)
+- 🔧 Product (Global standard premix):  
+  [PKY-FG501 – 5-Channel Premix Fertigation Unit](/product/pky-fg501-premix-fertigation/)
 - 🔧 Product (Scheduled Fertigation):  
   [PKY-FG301 – Fertigation Controller](/product/pky-fg301/)
 - 🔬 Product (EC/pH Control):  
