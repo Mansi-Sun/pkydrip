@@ -1,0 +1,18 @@
+{{/* Accessible FAQ — details/summary, content readable by crawlers */}}
+{{ with .Params.product_faq }}
+{{ if .items }}
+<section class="py-5 eng-product-faq" id="product-faq">
+  <div class="container col-lg-10">
+    <h2 class="h3 mb-4">{{ .title | default "Frequently asked questions" }}</h2>
+    <div class="eng-faq-list">
+      {{ range $i, $item := .items }}
+      <details class="eng-faq-item"{{ if eq $i 0 }} open{{ end }}>
+        <summary>{{ $item.question }}</summary>
+        <div class="eng-faq-answer text-muted">{{ $item.answer | markdownify }}</div>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

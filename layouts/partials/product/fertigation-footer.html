@@ -1,0 +1,13 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $chrome := index site.Data.pkydrip_fertigation_ui.chrome $locale }}
+<footer>
+  <div class="brand footer-brand">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40"><path d="M20 5c-5 8-11 13-11 21a11 11 0 0 0 22 0C31 18 25 13 20 5Z"/></svg>
+    </span>
+    <span><b>PKYDRIP</b><small>SMART IRRIGATION</small></span>
+  </div>
+  <p>{{ $chrome.footerTag }}</p>
+  <small>© <span id="year"></span> {{ $chrome.footerCopy }}</small>
+</footer>
+<script src="{{ `js/pkydrip-fertigation.js` | relURL }}"></script>

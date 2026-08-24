@@ -1,0 +1,50 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $chrome := index site.Data.pkydrip_fertigation_ui.chrome $locale }}
+{{ $family := "/products/fertigation/" | absLangURL }}
+{{ $home := "/" | absLangURL }}
+{{ $products := "/product/" | absURL }}
+{{ $image := site.Params.image | absURL }}
+{{ $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" $chrome.breadcrumbHome "item" $home)
+  (dict "@type" "ListItem" "position" 2 "name" $chrome.breadcrumbProducts "item" $products)
+}}
+
+{{ if .Params.model }}
+  {{ $product := dict
+    "@context" "https://schema.org"
+    "@type" "Product"
+    "name" .Params.model
+    "description" (.Params.description | default .Title | plainify)
+    "brand" (dict "@type" "Brand" "name" "PKYDrip")
+    "model" .Params.model
+    "sku" .Params.model
+    "category" "Fertigation system"
+    "url" .Permalink
+    "image" $image
+  }}
+  <script type="application/ld+json">{{ $product | jsonify | safeJS }}</script>
+  {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" $chrome.breadcrumbFamily "item" $family) }}
+  {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 4 "name" .Params.model "item" .Permalink) }}
+{{ else }}
+  {{ $itemList := slice }}
+  {{ range site.Data.pkydrip_fertigation_ui.models }}
+    {{ $itemList = $itemList | append (dict "@type" "Product" "name" .id "url" (printf "%s%s/" $family .slug)) }}
+  {{ end }}
+  {{ $collection := dict
+    "@context" "https://schema.org"
+    "@type" "CollectionPage"
+    "name" .Title
+    "description" (.Params.description | default .Title | plainify)
+    "url" .Permalink
+    "mainEntity" (dict "@type" "ItemList" "itemListElement" $itemList)
+  }}
+  <script type="application/ld+json">{{ $collection | jsonify | safeJS }}</script>
+  {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" $chrome.breadcrumbFamily "item" .Permalink) }}
+{{ end }}
+
+{{ $breadcrumb := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $crumbs
+}}
+<script type="application/ld+json">{{ $breadcrumb | jsonify | safeJS }}</script>

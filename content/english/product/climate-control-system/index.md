@@ -74,6 +74,9 @@ zone_flow:
 product_modules:
   title: "Related Modules"
   items:
+    - name: "PKY-GHC01"
+      url: "/product/pky-ghc01-greenhouse-controller/"
+      desc: "Modular greenhouse automation controller with local-first logic and power-cabinet separation."
     - name: "PKY-60W"
       url: "/product/pky-60w/"
       desc: "Main controller for climate logic, schedules, and cabinet coordination."
@@ -109,24 +112,24 @@ applications:
 related_links:
   title: "Related Pages"
   links:
+    - label: "PKY-GHC01 Greenhouse Controller"
+      url: "/product/pky-ghc01-greenhouse-controller/"
     - label: "Climate Control System Architecture"
       url: "/system/climate-control-system/"
     - label: "Commercial Greenhouse Climate Control"
       url: "/solution/commercial-greenhouse-climate-control/"
     - label: "Greenhouse Irrigation Solution"
       url: "/solution/greenhouse-irrigation/"
-    - label: "Greenhouse Turnkey Package"
-      url: "/solution/greenhouse-turnkey-package/"
-    - label: "Irrigation Control System"
-      url: "/product/irrigation-control-system/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "Fertigation System"
       url: "/product/fertigation-system/"
 
 project_cta:
   title: "Discuss Your Climate Control Project"
-  text: "Share facility type, climate zones, fan and cooling layout, and whether an electrical control cabinet already exists. PKYDrip can recommend a suitable climate control system configuration."
+  text: "For new global-standard greenhouse controller inquiries, start with PKY-GHC01. Share facility type, climate zones, fan and cooling layout, and whether an electrical control cabinet already exists."
   button_label: "Chat on WhatsApp"
   button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Climate%20Control%20System%20%7C%20Page%3A%20climate-control-system%0A-%20Facility%20type%3A%20%0A-%20Climate%20zones%3A%20%0A-%20Fans%20%2F%20cooling%20%2F%20heating%3A%20%0A"
 ---
 
-Use this page as the **product-level entry** for climate automation — before selecting controller models, cabinet hardware, sensors, or zone layout. Full system architecture is on the [Climate Control System](/system/climate-control-system/) page.
+Use this page as the **product-family entry** for climate automation. Prefer [PKY-GHC01](/product/pky-ghc01-greenhouse-controller/) for new global-standard controller inquiries. Full system architecture is on the [Climate Control System](/system/climate-control-system/) page. Open integration boundaries are on [Open Platform](/open-platform/).

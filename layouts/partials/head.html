@@ -4,7 +4,18 @@
 {{/* pkydrip: no <base> tag — it breaks localhost (scripts resolve to production → CORS). */}}
 
 <!-- multilingual SEO optimizations -->
-{{ if eq .Lang "ru" }}
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    {{ $hl := .Language.Lang }}
+    {{ if eq $hl "zh-cn" }}{{ $hl = "zh-CN" }}{{ else if eq $hl "en" }}{{ $hl = "en" }}{{ else if eq $hl "cn" }}{{ $hl = "zh-CN" }}{{ else if eq $hl "uae" }}{{ $hl = "en-AE" }}{{ else if eq $hl "sa" }}{{ $hl = "ar-SA" }}{{ else if eq $hl "za" }}{{ $hl = "en-ZA" }}{{ end }}
+    <link rel="alternate" hreflang="{{ $hl }}" href="{{ .Permalink }}">
+  {{ end }}
+  {{ range .AllTranslations }}
+    {{ if eq .Language.Lang "en" }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
+{{ else if eq .Lang "ru" }}
   <link rel="alternate" hreflang="ru" href="{{ .Permalink | absURL }}">
 {{ else if eq .Lang "uae" }}
   <link rel="alternate" hreflang="en-AE" href="{{ .Permalink | absURL }}">
@@ -14,11 +25,12 @@
   <link rel="alternate" hreflang="en-ZA" href="{{ .Permalink | absURL }}">
 {{ else if eq .Lang "cn" }}
   <link rel="alternate" hreflang="zh-CN" href="{{ .Permalink | absURL }}">
-{{ else if .IsTranslated }}
-  {{ range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink | absLangURL }}">
-  {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
+{{ else if eq .Lang "zh-cn" }}
+  <link rel="alternate" hreflang="zh-CN" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ `/products/fertigation/` | absURL }}">
+{{ else if eq .Lang "ar" }}
+  <link rel="alternate" hreflang="ar" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ `/products/fertigation/` | absURL }}">
 {{ end }}
 
 <!-- mobile responsive meta -->
@@ -28,6 +40,11 @@
 <meta name="author" content="{{ . }}">
 {{ end }}
 {{ hugo.Generator }}
+
+{{/* Canonical for standard product pages (and any page that sets product_code) */}}
+{{ if or .Params.product_identity .Params.product_code }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
 
 <!-- theme meta -->
 <meta name="theme-name" content="airspace-hugo" />

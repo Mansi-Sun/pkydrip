@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ if eq .Lang `ar` }}ar{{ else if eq .Lang `zh-cn` }}zh-CN{{ else }}en{{ end }}"{{ if eq .Lang `ar` }} dir="rtl"{{ end }}>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ `/products/fertigation/` | absLangURL }}">
+  <link rel="canonical" href="{{ `/products/fertigation/` | absLangURL }}">
+  <title>{{ .Title }}</title>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <p><a href="{{ `/products/fertigation/` | relLangURL }}">PKYDrip</a></p>
+</body>
+</html>

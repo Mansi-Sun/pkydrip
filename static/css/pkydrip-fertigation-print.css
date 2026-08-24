@@ -1,0 +1,55 @@
+@page { size: A4; margin: 12mm 11mm 14mm; }
+* { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+body { background: #fff; font-size: 9.2pt; }
+.site-header { position: static; height: 55px; padding: 0; border-bottom: 1px solid var(--line); backdrop-filter: none; }
+.site-header nav, .site-header > .button, .hero-actions, .cta-card .button { display: none !important; }
+.section-shell { width: 100%; max-width: none; }
+.hero { padding: 16mm 0 12mm; grid-template-columns: 1.05fr .95fr; gap: 10mm; min-height: 175mm; }
+.hero h1 { font-size: 34pt; }
+.hero-lead { font-size: 12pt; }
+.hero-visual { height: 130mm; border-radius: 20px; box-shadow: none; }
+.hero-points { margin-top: 20px; gap: 16px; }
+.trust-strip { min-height: 48px; gap: 15px; font-size: 8pt; }
+.section { padding: 14mm 0; }
+.section-heading { margin-bottom: 7mm; }
+.section-heading { break-after: avoid; }
+#series, #compare { break-before: page; }
+.section-heading h2, .selection-layout h2, .cta-card h2 { font-size: 24pt; }
+.section-heading > p { font-size: 9pt; }
+.series-grid { grid-template-columns: 1fr 1fr; gap: 5mm; }
+.series-card { min-height: 98mm; padding: 7mm; break-inside: avoid; box-shadow: none; }
+.series-card.featured { padding: calc(7mm - 1px); }
+.series-index { font-size: 34pt; }
+.series-card h3 { font-size: 15pt; }
+.series-card p, .series-card ul { font-size: 8.6pt; }
+.comparison-wrap { overflow: visible; }
+.comparison-table { min-width: 0; font-size: 7.4pt; }
+.comparison-table th, .comparison-table td { padding: 3.1mm 2.6mm; }
+.comparison-table tbody th { font-size: 7pt; }
+.table-note, .disclaimer { font-size: 7pt; }
+.model-builder { grid-template-columns: 1.35fr .65fr; box-shadow: none; padding: 7mm; margin-bottom: 10mm; break-inside: avoid; }
+.model-builder.selection-guide,
+.guide-grid { display: flex; flex-direction: column; grid-template-columns: 1fr; }
+.segmented button { min-height: 30px; padding: 0 10px; font-size: 8pt; }
+.model-result strong { font-size: 18pt; }
+.product-detail { min-height: 0; grid-template-columns: .85fr 1.15fr; break-inside: avoid; page-break-inside: avoid; }
+.product-detail.reverse .product-photo { order: 2; }
+.product-photo { min-height: 102mm; }
+.product-copy { padding: 8mm; }
+.product-copy h3 { font-size: 21pt; }
+.product-copy .intro { font-size: 9pt; margin-bottom: 4mm; }
+.product-copy dl { grid-template-columns: 1fr 1fr; }
+.product-copy dl div { padding: 2.6mm 2mm 2.6mm 0; }
+.product-copy dt { font-size: 7pt; }
+.product-copy dd { font-size: 7.8pt; }
+.detail-stack { gap: 7mm; }
+.technical-reference { break-before: page; }
+.spec-table { font-size: 7.5pt; }
+.selection-layout { grid-template-columns: .8fr 1.2fr; gap: 15mm; }
+.selection-steps li { padding: 4mm 0; }
+.selection-steps b { font-size: 11pt; }
+.selection-steps p { font-size: 8pt; }
+.cta-card { padding: 9mm; break-inside: avoid; }
+.cta-card h2 { font-size: 20pt; }
+footer { padding: 7mm 0; border-top: 1px solid var(--line); }
+footer p { margin-left: auto; }

@@ -1,0 +1,300 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $model := .Params.model }}
+{{ $series := .Params.series }}
+{{ $channel := .Params.channel }}
+{{ $slug := .Params.model_slug }}
+{{ $channels := .Params.channels }}
+{{ $catalog := site.Data.pkydrip_fertigation_catalog }}
+{{ $ui := site.Data.pkydrip_fertigation_ui }}
+{{ $copy := site.Data.pkydrip_fertigation_copy }}
+{{ $common := index $catalog.common $locale }}
+{{ $labels := index $ui.specLabels $locale }}
+{{ $status := index $ui.specStatus $locale }}
+{{ $chrome := index $ui.chrome $locale }}
+{{ $detail := index $catalog.detailPage $locale }}
+{{ $landing := index $ui.landing $locale }}
+{{ $seriesInfo := index (index $catalog.series $series) $locale }}
+{{ $channelInfo := index (index $catalog.channelProfiles $channel) $locale }}
+{{ $position := index (index $copy.positioning $series) $locale }}
+{{ $whySeries := index (index $copy.whyChoose $series) $locale }}
+{{ $whyChannel := index (index $copy.whyChoose.channel $channel) $locale }}
+{{ $apps := index (index $copy.applications $series) $locale }}
+{{ $process := index (index $copy.process $series) $locale }}
+{{ $connectivity := index (index $copy.connectivity $series) $locale }}
+{{ $install := index $copy.installation $locale }}
+{{ $options := index $copy.options $locale }}
+{{ $familyURL := "/products/fertigation/" | relLangURL }}
+{{ $htmlLang := "en" }}
+{{ if eq .Lang "zh-cn" }}{{ $htmlLang = "zh-CN" }}{{ else if eq .Lang "ar" }}{{ $htmlLang = "ar" }}{{ end }}
+{{ $waText := printf "Hi PKYDrip, Product: %s | Page: %s" $model .RelPermalink }}
+{{ $dosing := $landing.dlDosingE }}
+{{ $ec := $landing.techTargetE }}
+{{ $ph := $landing.techPhE }}
+{{ $sensor := $landing.techSensorE }}
+{{ $pump := $landing.techPumpE }}
+{{ $comm := $landing.techCommE }}
+{{ $climate := $landing.rowClimateE }}
+{{ $weather := $landing.rowClimateE }}
+{{ if eq $series "S" }}
+  {{ $dosing = $landing.dlDosingS }}
+  {{ $ec = $landing.techTargetS }}
+  {{ $ph = $landing.techPhS }}
+  {{ $sensor = $landing.techSensorS }}
+  {{ $pump = $landing.techPumpS }}
+  {{ $comm = $landing.techCommS }}
+  {{ $climate = $landing.rowClimateS }}
+  {{ $weather = $landing.rowClimateS }}
+{{ else if eq $series "P" }}
+  {{ $dosing = $landing.dlDosingP }}
+  {{ $ec = $landing.techTargetP }}
+  {{ $ph = $landing.techPhP }}
+  {{ $sensor = $landing.techSensorP }}
+  {{ $pump = $landing.techPumpP }}
+  {{ $comm = $landing.techCommP }}
+  {{ $climate = $landing.rowClimateP }}
+  {{ $weather = $landing.rowClimateP }}
+{{ end }}
+{{ $prevCh := "" }}
+{{ $nextCh := "" }}
+{{ if eq $channel "04" }}{{ $prevCh = "03" }}{{ $nextCh = "05" }}{{ end }}
+{{ if eq $channel "05" }}{{ $prevCh = "04" }}{{ $nextCh = "06" }}{{ end }}
+{{ if eq $channel "03" }}{{ $nextCh = "04" }}{{ end }}
+{{ if eq $channel "06" }}{{ $prevCh = "05" }}{{ end }}
+{{ $upgradeSeries := "" }}
+{{ if eq $series "E" }}{{ $upgradeSeries = "S" }}{{ else if eq $series "S" }}{{ $upgradeSeries = "P" }}{{ end }}
+<!DOCTYPE html>
+<html lang="{{ $htmlLang }}"{{ if eq .Lang "ar" }} dir="rtl"{{ end }} itemscope itemtype="http://schema.org/WebPage">
+<head>
+  {{ partial "head.html" . }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Params.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ site.Params.image | absURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation.css` | relURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation-extra.css` | relURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation-print.css` | relURL }}" media="print">
+</head>
+<body class="pkydrip-fertigation-page" data-fertigation-page data-family-url="{{ $familyURL }}">
+{{ partial "product/fertigation-header.html" . }}
+<main id="top">
+  <div class="section-shell">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ `/` | relLangURL }}">{{ $chrome.breadcrumbHome }}</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ `/product/` | relURL }}">{{ $chrome.breadcrumbProducts }}</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ $familyURL }}">{{ $chrome.breadcrumbFamily }}</a>
+      <span aria-hidden="true">/</span>
+      <span class="ltr" dir="ltr">{{ $model }}</span>
+    </nav>
+  </div>
+
+  <section class="section-shell detail-hero">
+    <div>
+      <p class="detail-kicker ltr" dir="ltr">{{ $model }} · {{ $seriesInfo.name }}</p>
+      <h1><span class="ltr" dir="ltr">{{ $model }}</span></h1>
+      <p class="hero-lead">{{ $position }} {{ $channelInfo.application }}</p>
+      <div class="hero-actions">
+        <a class="button" href="https://wa.me/8617395297329?text={{ $waText | urlquery }}">{{ $detail.inquiry }}</a>
+        <a class="button button-ghost" href="{{ $familyURL }}#selection-guide">{{ $common.selectionGuide }}</a>
+      </div>
+    </div>
+    <div class="detail-photos">
+      <div class="photo-placeholder photo-main" data-photo="assets/{{ $slug }}-main.webp">
+        <div>
+          <span class="photo-label">{{ $chrome.photoMain }}</span>
+          <strong>{{ $chrome.photoMainHint }}</strong>
+          <small>{{ $chrome.photoMainSize }}</small>
+        </div>
+      </div>
+      <div class="photo-placeholder photo-close" data-photo="assets/{{ $slug }}-channels.webp">
+        <div>
+          <span class="photo-label">{{ $chrome.photoClose }}</span>
+          <strong>{{ $chrome.photoCloseHint }}</strong>
+          <small>{{ $chrome.photoCloseSize }}</small>
+        </div>
+      </div>
+      <div class="photo-placeholder photo-scene" data-photo="assets/{{ $slug }}-scene.webp">
+        <div>
+          <span class="photo-label">{{ $chrome.photoScene }}</span>
+          <strong>{{ $chrome.photoSceneHint }}</strong>
+          <small>{{ $chrome.photoSceneSize }}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell">
+    <div class="section-heading compact">
+      <div><p class="eyebrow">{{ $model }}</p><h2>{{ $detail.whyChoose }}</h2></div>
+      <p>{{ $chrome.whyIntro }}</p>
+    </div>
+    <div class="benefit-grid">
+      {{ range $whySeries }}
+      <article class="benefit-card"><p>{{ partial "product/fertigation-text.html" (dict "text" . "locale" $locale) }}</p></article>
+      {{ end }}
+      <article class="benefit-card"><p>{{ partial "product/fertigation-text.html" (dict "text" $whyChannel "locale" $locale) }}</p></article>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-shell">
+      <div class="section-heading compact"><div><h2>{{ $detail.applications }}</h2></div></div>
+      <div class="scenario-grid">
+        {{ range $apps }}
+        <article class="scenario-card"><p>{{ partial "product/fertigation-text.html" (dict "text" . "locale" $locale) }}</p></article>
+        {{ end }}
+        <article class="scenario-card"><p>{{ partial "product/fertigation-text.html" (dict "text" $channelInfo.application "locale" $locale) }}</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell">
+    <div class="section-heading compact"><div><h2>{{ $chrome.keyConfig }}</h2></div></div>
+    <div class="comparison-wrap">
+      <table class="config-list">
+        <tbody>
+          <tr><th>{{ $labels.model }}</th><td><span class="ltr" dir="ltr">{{ $model }}</span></td></tr>
+          <tr><th>{{ $labels.series }}</th><td>{{ $series }} · {{ $seriesInfo.name }}</td></tr>
+          <tr><th>{{ $labels.channels }}</th><td>{{ $channels }} · {{ $channelInfo.configuration }}</td></tr>
+          <tr><th>{{ $labels.touchscreen }}</th><td>{{ $common.standardScreen }} / {{ $common.customScreen }}</td></tr>
+          <tr><th>{{ $labels.dosing }}</th><td>{{ $dosing }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-shell">
+      <div class="section-heading compact"><div><h2>{{ $detail.specifications }}</h2></div></div>
+      <div class="comparison-wrap">
+        <table class="spec-table-detail comparison-table">
+          <tbody>
+            <tr><th>{{ $labels.model }}</th><td><span class="ltr" dir="ltr">{{ $model }}</span></td></tr>
+            <tr><th>{{ $labels.series }}</th><td>{{ $series }} · {{ $seriesInfo.name }}</td></tr>
+            <tr><th>{{ $labels.channels }}</th><td>{{ $channels }}</td></tr>
+            <tr><th>{{ $labels.dosing }}</th><td>{{ $dosing }}</td></tr>
+            <tr><th>{{ $labels.ec }}</th><td>{{ $ec }} <span class="spec-status">{{ $status.planned }}</span></td></tr>
+            <tr><th>{{ $labels.ph }}</th><td>{{ $ph }}</td></tr>
+            <tr><th>{{ $labels.sensor }}</th><td>{{ $sensor }}</td></tr>
+            <tr><th>{{ $labels.touchscreen }}</th><td>{{ $common.standardScreen }} / {{ $common.customScreen }}</td></tr>
+            <tr><th>{{ $labels.zones }}</th><td>{{ $common.zoneManagement }}</td></tr>
+            <tr><th>{{ $labels.pump }}</th><td>{{ $pump }}</td></tr>
+            <tr><th>{{ $labels.flow }}</th><td>{{ $landing.techFlowVal }} <span class="spec-status">{{ $status.typical }}</span></td></tr>
+            <tr><th>{{ $labels.pressure }}</th><td>{{ $landing.techPressureVal }} <span class="spec-status">{{ $status.typical }}</span></td></tr>
+            <tr><th>{{ $labels.dosingCapacity }}</th><td>{{ $landing.techDoseVal }} <span class="spec-status">{{ $status.planned }}</span></td></tr>
+            <tr><th>{{ $labels.communication }}</th><td>{{ partial "product/fertigation-text.html" (dict "text" $comm "locale" $locale) }}</td></tr>
+            <tr><th>{{ $labels.climate }}</th><td>{{ $climate }}</td></tr>
+            <tr><th>{{ $labels.weather }}</th><td>{{ $weather }}</td></tr>
+            <tr><th>{{ $labels.power }}</th><td>{{ $landing.techPowerVal }} <span class="spec-status">{{ $status.project }}</span></td></tr>
+            <tr><th>{{ $labels.dimensions }}</th><td>{{ $common.pending }}</td></tr>
+            <tr><th>{{ $labels.weight }}</th><td>{{ $common.pending }}</td></tr>
+            <tr><th>{{ $labels.protection }}</th><td>{{ $common.pending }}</td></tr>
+            <tr><th>{{ $labels.hydraulic }}</th><td>{{ $common.hydraulic }}</td></tr>
+            <tr><th>{{ $labels.installation }}</th><td>{{ $status.project }}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">{{ $chrome.controlTargetNote }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell">
+    <div class="section-heading compact"><div><h2>{{ $detail.process }}</h2></div></div>
+    <ol class="process-steps">
+      {{ range $i, $step := $process }}
+      <li><span>{{ printf "%02d" (add $i 1) }}</span><div>{{ partial "product/fertigation-text.html" (dict "text" $step "locale" $locale) }}</div></li>
+      {{ end }}
+    </ol>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-shell">
+      <div class="section-heading compact"><div><h2>{{ $detail.connectivity }}</h2></div></div>
+      <p>{{ partial "product/fertigation-text.html" (dict "text" $connectivity "locale" $locale) }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell">
+    <div class="section-heading compact"><div><h2>{{ $detail.installation }}</h2></div></div>
+    <div class="option-grid">
+      {{ range $install }}
+      <article class="install-card"><p>{{ partial "product/fertigation-text.html" (dict "text" . "locale" $locale) }}</p></article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-shell">
+      <div class="section-heading compact"><div><h2>{{ $detail.options }}</h2></div></div>
+      <div class="option-grid">
+        {{ range $options }}
+        <article class="option-card"><p>{{ partial "product/fertigation-text.html" (dict "text" . "locale" $locale) }}</p></article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell">
+    <div class="section-heading compact"><div><h2>{{ $detail.downloads }}</h2></div></div>
+    <div class="download-grid">
+      <article class="download-card"><strong>{{ $chrome.datasheet }}</strong><p>{{ $chrome.downloadPending }}</p></article>
+      <article class="download-card"><strong>{{ $chrome.installGuide }}</strong><p>{{ $chrome.downloadPending }}</p></article>
+      <article class="download-card"><strong>{{ $chrome.wiringGuide }}</strong><p>{{ $chrome.downloadPending }}</p></article>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-shell">
+      <div class="section-heading compact"><div><h2>{{ $detail.related }}</h2></div></div>
+      <div class="related-grid">
+        {{ if $prevCh }}
+        {{ $prev := printf "PKYDrip-%s%s" $series $prevCh }}
+        <article class="related-card">
+          <strong>{{ $chrome.previous }}</strong>
+          <p class="ltr" dir="ltr">{{ $prev }}</p>
+          <a href="{{ printf "%spkydrip-%s%s/" $familyURL (lower $series) $prevCh }}">{{ $chrome.viewDetails }}</a>
+        </article>
+        {{ end }}
+        {{ if $nextCh }}
+        {{ $next := printf "PKYDrip-%s%s" $series $nextCh }}
+        <article class="related-card">
+          <strong>{{ $chrome.next }}</strong>
+          <p class="ltr" dir="ltr">{{ $next }}</p>
+          <a href="{{ printf "%spkydrip-%s%s/" $familyURL (lower $series) $nextCh }}">{{ $chrome.viewDetails }}</a>
+        </article>
+        {{ end }}
+        {{ if $upgradeSeries }}
+        {{ $up := printf "PKYDrip-%s%s" $upgradeSeries $channel }}
+        <article class="related-card">
+          <strong>{{ $chrome.upgrade }}</strong>
+          <p class="ltr" dir="ltr">{{ $up }}</p>
+          <a href="{{ printf "%spkydrip-%s%s/" $familyURL (lower $upgradeSeries) $channel }}">{{ $chrome.viewDetails }}</a>
+        </article>
+        {{ end }}
+        <article class="related-card">
+          <strong>{{ $common.selectionGuide }}</strong>
+          <p>{{ $common.selectionGuideIntro }}</p>
+          <a href="{{ $familyURL }}#selection-guide">{{ $common.selectionGuide }}</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="contact">
+    <div class="cta-card">
+      <div>
+        <p class="eyebrow ltr" dir="ltr">{{ $model }}</p>
+        <h2>{{ $detail.inquiry }}</h2>
+        <p>{{ $common.disclaimer }}</p>
+      </div>
+      <a class="button" href="https://wa.me/8617395297329?text={{ $waText | urlquery }}">{{ $detail.inquiry }}</a>
+    </div>
+    <p class="disclaimer">{{ $common.disclaimer }}</p>
+  </section>
+</main>
+{{ partial "product/fertigation-footer.html" . }}
+{{ partial "product/fertigation-schema.html" . }}
+</body>
+</html>

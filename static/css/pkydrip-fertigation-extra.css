@@ -1,0 +1,301 @@
+/* Additive styles for selection guide, detail pages, language switcher and RTL.
+   Do not override the approved family-page layout, cards, colors or placeholders. */
+
+.pkydrip-fertigation-page .lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #52645a;
+}
+.pkydrip-fertigation-page .lang-switcher a {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.pkydrip-fertigation-page .lang-switcher a[aria-current="page"] {
+  color: var(--green);
+  border-color: var(--line);
+  background: #fff;
+}
+.pkydrip-fertigation-page .ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+.pkydrip-fertigation-page .hero-actions {
+  flex-wrap: wrap;
+}
+.pkydrip-fertigation-page .hero-actions .button {
+  white-space: nowrap;
+}
+.pkydrip-fertigation-page .hero-points {
+  align-items: flex-start;
+}
+.pkydrip-fertigation-page .hero-points li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.pkydrip-fertigation-page .hero-points span {
+  white-space: nowrap;
+}
+.pkydrip-fertigation-page .hero-points em {
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.selection-guide {
+  padding: 36px;
+  margin-top: 8px;
+  border: 2px solid var(--green);
+  box-shadow: var(--shadow);
+}
+.model-builder.selection-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.selection-guide .section-heading {
+  display: block;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.selection-guide .section-heading > p {
+  margin-top: 12px;
+  max-width: none;
+}
+.guide-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.selection-guide .guide-result {
+  min-height: 0;
+}
+#selection-guide.section {
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+#series.section {
+  padding-top: 40px;
+}
+.guide-conditions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #40574c;
+  font-size: 13px;
+}
+.guide-conditions li {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f8faf8;
+}
+.guide-result .button {
+  margin-top: 16px;
+  align-self: flex-start;
+}
+.model-result .button {
+  margin-top: 16px;
+  align-self: flex-start;
+  background: #fff;
+  color: var(--green);
+  border-color: #fff;
+}
+.model-result .button:hover {
+  background: var(--lime);
+  color: var(--ink);
+  border-color: var(--lime);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 22px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--green); font-weight: 700; }
+.breadcrumb span[aria-hidden="true"] { color: #b3c2b9; }
+
+.detail-hero {
+  padding: 28px 0 18px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+  align-items: start;
+}
+.detail-kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: var(--green);
+}
+.detail-hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+.detail-hero .hero-lead { margin-bottom: 22px; }
+.detail-photos {
+  display: grid;
+  grid-template-columns: 1.4fr .9fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+}
+.detail-photos .photo-main {
+  grid-row: 1 / span 2;
+  min-height: 420px;
+  border-radius: 28px;
+}
+.detail-photos .photo-close,
+.detail-photos .photo-scene {
+  min-height: 200px;
+  border-radius: 22px;
+}
+.detail-photos .photo-scene { aspect-ratio: 8 / 5; }
+.detail-photos .photo-main,
+.detail-photos .photo-close { aspect-ratio: 4 / 3; }
+
+.benefit-grid,
+.scenario-grid,
+.option-grid,
+.download-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.benefit-card,
+.scenario-card,
+.option-card,
+.download-card,
+.related-card,
+.install-card {
+  padding: 22px 22px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+.benefit-card strong,
+.related-card strong { display: block; margin-bottom: 6px; }
+.related-card a { color: var(--green); font-weight: 800; font-size: 13px; }
+.config-list,
+.spec-table-detail {
+  width: 100%;
+  border-collapse: collapse;
+}
+.config-list th,
+.config-list td,
+.spec-table-detail th,
+.spec-table-detail td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #e4ebe6;
+  text-align: left;
+  vertical-align: top;
+}
+.config-list th,
+.spec-table-detail th {
+  width: 32%;
+  font-size: 12px;
+  color: #728078;
+  font-weight: 700;
+}
+.spec-status {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: #e6f1e9;
+  color: var(--green-dark);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.process-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.process-steps li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.process-steps span {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--green);
+  letter-spacing: .08em;
+}
+
+html[dir="rtl"] .pkydrip-fertigation-page {
+  font-family: "Noto Naskh Arabic", "Segoe UI", Tahoma, "PingFang SC", system-ui, sans-serif;
+}
+html[dir="rtl"] .site-header nav { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .pkydrip-fertigation-page .lang-switcher { margin-left: 0; margin-right: 12px; }
+html[dir="rtl"] .recommend { right: auto; left: 0; border-radius: 0 0 11px 0; }
+html[dir="rtl"] .comparison-table th,
+html[dir="rtl"] .comparison-table td,
+html[dir="rtl"] .config-list th,
+html[dir="rtl"] .config-list td,
+html[dir="rtl"] .spec-table-detail th,
+html[dir="rtl"] .spec-table-detail td { text-align: right; }
+html[dir="rtl"] .series-card ul,
+html[dir="rtl"] .product-copy dl { padding-left: 0; padding-right: 18px; }
+html[dir="rtl"] .product-copy dl { padding-right: 0; }
+html[dir="rtl"] .product-copy dl div { padding: 14px 0 14px 12px; }
+html[dir="rtl"] .spec-status { margin-left: 0; margin-right: 8px; }
+html[dir="rtl"] footer p { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .footer-brand { transform-origin: right center; }
+
+@media (max-width: 1024px) {
+  .guide-grid,
+  .detail-hero,
+  .detail-photos { grid-template-columns: 1fr; }
+  .detail-photos .photo-main { grid-row: auto; min-height: 320px; }
+}
+@media (max-width: 1000px) {
+  .pkydrip-fertigation-page .site-header nav.lang-switcher {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  #selection-guide.section {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+  #series.section {
+    padding-top: 28px;
+  }
+  .selection-guide { padding: 18px; }
+  .guide-conditions,
+  .benefit-grid,
+  .scenario-grid,
+  .option-grid,
+  .download-grid,
+  .related-grid { grid-template-columns: 1fr; }
+  .pkydrip-fertigation-page .site-header nav:not(.lang-switcher) { display: none; }
+  .pkydrip-fertigation-page .lang-switcher { font-size: 11px; gap: 4px; }
+}
+@media (max-width: 390px) {
+  .detail-hero h1 { font-size: 30px; }
+  .detail-photos .photo-main { min-height: 240px; }
+}

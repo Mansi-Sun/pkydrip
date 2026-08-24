@@ -27,15 +27,15 @@ product_groups:
         image: "images/product/irrigation-control-cabinet/irrigation-system-hmi-interface.png"
         url: "/product/irrigation-control-system/"
       - name: "Fertigation System"
-        summary: "Fertilizer injection, dosing control, optional EC/pH monitoring, and integration with irrigation schedules."
+        summary: "Start with PKY-FG501 for global-standard premix fertigation. Family page also covers FG301, FG401 and integration modules."
         image: "images/product/pky-fg401.jpg"
         url: "/product/fertigation-system/"
       - name: "Climate Control System"
-        summary: "Climate control logic, ventilation and cooling coordination, sensor integration, electrical cabinet execution, sequential startup, and remote monitoring for greenhouse and facility automation."
+        summary: "Start with PKY-GHC01 for modular greenhouse automation. Family page covers climate logic, cabinet coordination and sensors."
         image: "images/scenes/scene-climate-greenhouse.webp"
         url: "/product/climate-control-system/"
       - name: "Wireless Field Control System"
-        summary: "LoRa gateway, solar valve controllers, remote pump control, and wireless expansion without long field cabling."
+        summary: "Start with PKY-RIC01 for 8/16/32-point remote irrigation packages built from EG08, IC05, IC05-Plus and IC06-PUMP."
         image: "images/scenes/scene-wireless-field.webp"
         url: "/product/wireless-field-control-system/"
       - name: "Monitoring & Sensor System"
@@ -51,6 +51,9 @@ module_groups:
   - title: "Controllers & Control Cabinets"
     description: "Main control hardware for pump stations, valve groups, and local automation panels."
     items:
+      - name: "PKY-GHC01 Greenhouse Controller"
+        summary: "Modular greenhouse automation controller with local-first logic and power-cabinet separation."
+        url: "/product/pky-ghc01-greenhouse-controller/"
       - name: "Pump & Valve Control System"
         summary: "Central irrigation automation for pumps, valves, HMI, and project-level control."
         url: "/product/pump-valve-control-system/"
@@ -70,6 +73,9 @@ module_groups:
   - title: "Wireless Field Devices"
     description: "LoRa gateway and field nodes for remote valves, sensors, and pump signals."
     items:
+      - name: "PKY-RIC01 Remote Irrigation"
+        summary: "Standard 8/16/32-point remote irrigation packages using EG08, IC05, IC05-Plus and IC06-PUMP."
+        url: "/product/pky-ric01-remote-irrigation-control/"
       - name: "Wireless Valve Controller"
         summary: "Solar LoRa valve control system for field valve automation."
         url: "/product/wireless-valve-controller/"
@@ -89,6 +95,12 @@ module_groups:
   - title: "Fertigation & EC/pH"
     description: "Fertilizer dosing, nutrient control, and EC/pH control modules."
     items:
+      - name: "PKYDrip E / S / P Fertigation Family"
+        summary: "Twelve base models from PKYDrip-E03 to P06, with a selection guide, 7-inch standard and 10-inch customized screens."
+        url: "/products/fertigation/"
+      - name: "PKY-FG501 Premix"
+        summary: "5-channel premix fertigation unit with 200 L tank and before/after EC/pH measurement."
+        url: "/product/pky-fg501-premix-fertigation/"
       - name: "Fertigation Controller"
         summary: "Integration-ready fertigation control layer for existing irrigation systems."
         url: "/product/fertigation-controller/"
@@ -152,6 +164,11 @@ products:
     image: "images/scenes/scene-climate-greenhouse.webp"
     url: "/product/climate-control-system/"
 
+  - name: "PKY-GHC01 Greenhouse Controller"
+    summary: "PKYDrip Modular Greenhouse Automation Controller – Model PKY-GHC01"
+    image: "images/system/climate-control-architecture.webp"
+    url: "/product/pky-ghc01-greenhouse-controller/"
+
   - name: "Fertigation Controller"
     summary: "Integration-ready EC, pH, dosing, recipe, and records control layer for existing systems."
     image: "images/product/ecph_control_panel.webp"
@@ -203,6 +220,11 @@ products:
   # ==============================
   # LoRa Wireless Irrigation Network
   # ==============================
+  - name: "PKY-RIC01 Remote Irrigation"
+    summary: "PKYDrip Remote Irrigation Control System – System PKY-RIC01"
+    image: "images/system/system-wireless-layer.svg"
+    url: "/product/pky-ric01-remote-irrigation-control/"
+
   - name: "PKY-EG08"
     summary: "PKYDrip Wireless Irrigation Gateway – Model PKY-EG08"
     image: "images/product/pkyeg08.webp"
@@ -226,6 +248,16 @@ products:
   # ==============================
   # Fertigation Systems
   # ==============================
+  - name: "PKYDrip E / S / P Fertigation Family"
+    summary: "Easy, Standard and Professional fertigation systems — PKYDrip-E03 to P06."
+    image: "images/system/system-fertigation-layer.svg"
+    url: "/products/fertigation/"
+
+  - name: "PKY-FG501 Premix"
+    summary: "PKYDrip 5-Channel Premix Smart Fertigation Unit – Model PKY-FG501"
+    image: "images/system/system-fertigation-layer.svg"
+    url: "/product/pky-fg501-premix-fertigation/"
+
   - name: "PKY-FG301"
     summary: "PKYDrip Fertigation Controller – Model PKY-FG301"
     image: "images/product/pky-fg301.jpg"

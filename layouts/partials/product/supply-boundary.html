@@ -1,0 +1,45 @@
+{{/* Supply and responsibility boundary */}}
+{{ with .Params.supply_boundary }}
+{{ $included := .included }}
+{{ $partner := .partner }}
+{{ $optional := .optional }}
+{{ if or (and $included $included.items) (and $partner $partner.items) (and $optional $optional.items) }}
+<section class="py-5 eng-supply-boundary" style="background:#f8fafb;">
+  <div class="container">
+    <h2 class="h3 mb-4">{{ .title | default "Supply and responsibility boundary" }}</h2>
+    <div class="row g-3">
+      {{ with $included }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-boundary-col eng-boundary-included h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "PKYDrip supply" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+      {{ with $partner }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-boundary-col eng-boundary-partner h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "Local partner / customer" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+      {{ with $optional }}
+      {{ if .items }}
+      <div class="col-md-4">
+        <div class="eng-boundary-col eng-boundary-optional h-100">
+          <h3 class="h6 fw-semibold mb-3">{{ .title | default "Optional from PKYDrip" }}</h3>
+          <ul class="mb-0">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

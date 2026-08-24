@@ -1,0 +1,188 @@
+{{/* Shared styles for standard product page components */}}
+<style>
+.pkydrip-engineering-page .eng-card { transition: box-shadow .2s; }
+.pkydrip-engineering-page .eng-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+.pkydrip-engineering-page .eng-hero-capability {
+  height: 100%;
+  padding: .7rem .85rem;
+  border: 1px solid rgba(30,77,63,.14);
+  border-radius: .5rem;
+  background: rgba(255,255,255,.75);
+  color: #1e4d3f;
+  font-size: .92rem;
+  font-weight: 600;
+}
+.pkydrip-engineering-page .eng-hero-eyebrow {
+  display: inline-block;
+  margin-bottom: .75rem;
+  color: #1e4d3f;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.pkydrip-engineering-page .eng-flow-diagram { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem; }
+.pkydrip-engineering-page .eng-flow-step { font-weight: 600; font-size: .9rem; padding: .5rem .75rem; background: #e8f4ec; border-radius: .35rem; color: #1e4d3f; }
+.pkydrip-engineering-page .eng-flow-step:not(:last-child)::after { content: "→"; margin-left: .5rem; font-weight: 400; color: #6c757d; }
+.pkydrip-engineering-page .eng-hmi-visual { min-height: 200px; }
+.pkydrip-engineering-page .eng-hmi-overlay { position: absolute; right: 4%; bottom: 6%; width: 42%; max-width: 220px; background: #fff; }
+.pkydrip-engineering-page .eng-video-placeholder { background: #f1f3f5 !important; }
+
+/* Product identity */
+.pkydrip-engineering-page .eng-identity-card {
+  padding: .85rem 1rem;
+  background: #f6f9f8;
+  border: 1px solid rgba(30,77,63,.12);
+  border-radius: .5rem;
+}
+.pkydrip-engineering-page .eng-identity-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin-bottom: .25rem;
+}
+.pkydrip-engineering-page .eng-identity-value {
+  font-size: .95rem;
+  font-weight: 600;
+  color: #1a3d52;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.pkydrip-engineering-page .eng-identity-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .88rem;
+}
+
+/* Fit summary */
+.pkydrip-engineering-page .eng-fit-col {
+  padding: 1.1rem 1.15rem;
+  border-radius: .5rem;
+  border: 1px solid transparent;
+  background: #fff;
+}
+.pkydrip-engineering-page .eng-fit-col ul {
+  padding-left: 1.1rem;
+  margin: 0;
+  color: #555;
+}
+.pkydrip-engineering-page .eng-fit-col li + li { margin-top: .4rem; }
+.pkydrip-engineering-page .eng-fit-best { border-color: rgba(30,77,63,.2); background: #f3faf6; }
+.pkydrip-engineering-page .eng-fit-partner { border-color: rgba(26,61,82,.16); background: #f5f8fb; }
+.pkydrip-engineering-page .eng-fit-not { border-color: rgba(108,117,125,.25); background: #f7f7f8; }
+
+/* Offer scope */
+.pkydrip-engineering-page .eng-scope-col {
+  padding: 1.15rem;
+  border-radius: .5rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+.pkydrip-engineering-page .eng-scope-col ul {
+  padding-left: 1.1rem;
+  margin: 0;
+  color: #555;
+  font-size: .95rem;
+}
+.pkydrip-engineering-page .eng-scope-col li + li { margin-top: .4rem; }
+.pkydrip-engineering-page .eng-scope-badge {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  padding: .2rem .5rem;
+  border-radius: .25rem;
+  white-space: nowrap;
+}
+.pkydrip-engineering-page .eng-scope-standard { border-top-color: #1e4d3f; }
+.pkydrip-engineering-page .eng-scope-standard .eng-scope-badge { background: #e8f4ec; color: #1e4d3f; }
+.pkydrip-engineering-page .eng-scope-configurable { border-top-color: #2a7a7a; }
+.pkydrip-engineering-page .eng-scope-configurable .eng-scope-badge { background: #e6f4f4; color: #1f5f5f; }
+.pkydrip-engineering-page .eng-scope-engineering { border-top-color: #b08900; }
+.pkydrip-engineering-page .eng-scope-engineering .eng-scope-badge { background: #f8f1d8; color: #7a5c00; }
+
+/* Tables */
+.pkydrip-engineering-page .eng-table-wrap {
+  border-radius: .35rem;
+  border: 1px solid rgba(0,0,0,.06);
+}
+.pkydrip-engineering-page .eng-table-wrap th:first-child,
+.pkydrip-engineering-page .eng-table-wrap td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #1a3d52;
+}
+
+/* Supply boundary */
+.pkydrip-engineering-page .eng-boundary-col {
+  padding: 1.1rem 1.15rem;
+  border-radius: .5rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+}
+.pkydrip-engineering-page .eng-boundary-col ul {
+  padding-left: 1.1rem;
+  margin: 0;
+  color: #555;
+}
+.pkydrip-engineering-page .eng-boundary-col li + li { margin-top: .4rem; }
+.pkydrip-engineering-page .eng-boundary-included { border-top: 3px solid #1e4d3f; }
+.pkydrip-engineering-page .eng-boundary-partner { border-top: 3px solid #6c757d; }
+.pkydrip-engineering-page .eng-boundary-optional { border-top: 3px solid #2a7a7a; }
+
+/* Regional */
+.pkydrip-engineering-page .eng-regional-item {
+  padding: .9rem 1rem;
+  border: 1px solid rgba(26,61,82,.12);
+  border-radius: .5rem;
+  background: #fff;
+}
+
+/* Downloads */
+.pkydrip-engineering-page .eng-download-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  background: #fff;
+}
+
+/* FAQ */
+.pkydrip-engineering-page .eng-faq-item {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  background: #fff;
+  padding: 0;
+  margin-bottom: .65rem;
+}
+.pkydrip-engineering-page .eng-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .95rem 1.15rem;
+  font-weight: 600;
+  color: #1a3d52;
+}
+.pkydrip-engineering-page .eng-faq-item summary::-webkit-details-marker { display: none; }
+.pkydrip-engineering-page .eng-faq-item summary::after {
+  content: "+";
+  float: right;
+  font-weight: 400;
+  color: #6c757d;
+}
+.pkydrip-engineering-page .eng-faq-item[open] summary::after { content: "–"; }
+.pkydrip-engineering-page .eng-faq-answer {
+  padding: 0 1.15rem 1rem;
+  border-top: 1px solid rgba(0,0,0,.05);
+  padding-top: .85rem;
+}
+
+@media (max-width: 767px) {
+  .pkydrip-engineering-page .eng-hmi-overlay { position: static; width: 70%; margin: -2rem auto 0; display: block; }
+  .pkydrip-engineering-page .eng-identity-value { font-size: .88rem; }
+  .pkydrip-engineering-page .eng-table-wrap td:first-child,
+  .pkydrip-engineering-page .eng-table-wrap th:first-child { white-space: normal; }
+}
+</style>

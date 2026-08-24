@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "defaultLocale": "en",
+    "locales": ["en", "zh-CN", "ar"],
+    "standardScreen": "7-inch",
+    "customScreen": "10-inch",
+    "baseModels": [
+      "PKYDrip-E03", "PKYDrip-E04", "PKYDrip-E05", "PKYDrip-E06",
+      "PKYDrip-S03", "PKYDrip-S04", "PKYDrip-S05", "PKYDrip-S06",
+      "PKYDrip-P03", "PKYDrip-P04", "PKYDrip-P05", "PKYDrip-P06"
+    ]
+  },
+  "common": {
+    "en": {
+      "selectionGuide": "Fertigation Product Selection Guide",
+      "selectionGuideIntro": "Choose the management level, nutrient channels and interface first. Confirm flow, pressure, zones, power and connectivity before ordering.",
+      "standardScreen": "7-inch standard touchscreen",
+      "customScreen": "10-inch customized touchscreen",
+      "zoneManagement": "Irrigation-zone management included; local I/O and expansion quantity are project dependent.",
+      "hydraulic": "Hydraulic arrangement is project dependent. Standardized mainline and bypass variants are under development.",
+      "disclaimer": "Specifications are provided for preliminary selection. Final configuration and performance follow the quotation and signed technical agreement.",
+      "pending": "To be confirmed"
+    },
+    "zh-CN": {
+      "selectionGuide": "水肥系列产品选型指南",
+      "selectionGuideIntro": "先选择管理深度、施肥通道和操作界面，订货前再确认流量、压力、分区、电源和通信条件。",
+      "standardScreen": "7 英寸标准触摸屏",
+      "customScreen": "10 英寸定制触摸屏",
+      "zoneManagement": "包含灌溉分区管理，本机 I/O 点数和扩展数量按项目确定。",
+      "hydraulic": "水力形式按项目确定，标准化主路式和旁路式型号正在规划中。",
+      "disclaimer": "页面参数仅用于初步选型，最终配置和性能以报价单及双方签署的技术协议为准。",
+      "pending": "待定型确认"
+    },
+    "ar": {
+      "selectionGuide": "دليل اختيار أنظمة التسميد والري من PKYDrip",
+      "selectionGuideIntro": "ابدأ بتحديد مستوى الإدارة وعدد قنوات محاليل الأسمدة وواجهة التشغيل، ثم أكّد التدفق والضغط والمناطق ومصدر الكهرباء والاتصال قبل الطلب.",
+      "standardScreen": "شاشة لمس قياسية مقاس 7 بوصات",
+      "customScreen": "شاشة لمس مخصصة مقاس 10 بوصات",
+      "zoneManagement": "إدارة مناطق الري مشمولة، بينما يعتمد عدد نقاط الإدخال والإخراج والتوسعة على المشروع.",
+      "hydraulic": "يُحدد الترتيب الهيدروليكي حسب المشروع، ويجري تطوير طرازات قياسية للخط الرئيسي والتركيب الجانبي.",
+      "disclaimer": "المواصفات مخصصة للاختيار الأولي، وتعتمد التجهيزة والأداء النهائيان على عرض السعر والاتفاقية الفنية الموقعة.",
+      "pending": "يُحدد بعد اعتماد الإنتاج"
+    }
+  },
+  "series": {
+    "E": {
+      "en": {"name": "Easy", "headline": "Replace repetitive manual work with dependable automation", "description": "Entry-level automation for stable fertilizer programs, proportional or time-based dosing and straightforward local operation."},
+      "zh-CN": {"name": "简易型", "headline": "用可靠自动化替代重复人工", "description": "面向肥料流程稳定的项目，通过比例或定时施肥和简洁的本地操作实现入门自动化。"},
+      "ar": {"name": "السلسلة السهلة", "headline": "استبدال الأعمال اليدوية المتكررة بأتمتة موثوقة", "description": "أتمتة أساسية للبرامج السمادية المستقرة، مع حقن نسبي أو زمني وتشغيل محلي مبسط."}
+    },
+    "S": {
+      "en": {"name": "Standard", "headline": "Standardized precise fertigation for repeatable production", "description": "The primary production series with EC/pH closed-loop control, VFD pump control, fertilizer channels and irrigation-zone valves."},
+      "zh-CN": {"name": "标准型", "headline": "面向规模复制的标准化精准配肥", "description": "主力量产系列，集成 EC/pH 闭环、变频泵控、施肥通道与灌溉分区阀控制。"},
+      "ar": {"name": "السلسلة القياسية", "headline": "تسميد وري دقيقان لإنتاج قياسي قابل للتكرار", "description": "سلسلة الإنتاج الأساسية مع تحكم مغلق الحلقة في EC وpH، وتحكم بالمضخة عبر مغير التردد، وقنوات الأسمدة وصمامات مناطق الري."}
+    },
+    "P": {
+      "en": {"name": "Professional", "headline": "Recipes, traceability and system integration", "description": "Professional fertigation for high-value crops with recipes, configurable workflows, batch records, trends, alarms and third-party integration."},
+      "zh-CN": {"name": "专业版", "headline": "配方、追溯与系统集成", "description": "面向高价值作物的专业水肥系统，支持配方、可配置工艺、批次记录、趋势、告警和第三方系统对接。"},
+      "ar": {"name": "السلسلة الاحترافية", "headline": "وصفات قابلة للإدارة وتتبع وتكامل مع الأنظمة", "description": "نظام احترافي للمحاصيل عالية القيمة يدعم الوصفات ومسارات التشغيل القابلة للتهيئة وسجلات الدفعات والاتجاهات والإنذارات والتكامل مع الأنظمة الخارجية."}
+    }
+  },
+  "channelProfiles": {
+    "03": {
+      "channels": 3,
+      "en": {"configuration": "A + B + acid", "application": "Compact projects and common two-part nutrient recipes with pH correction."},
+      "zh-CN": {"configuration": "A + B + 酸液", "application": "适合紧凑型项目和常见的两组分营养液加 pH 调节。"},
+      "ar": {"configuration": "A + B + حمض", "application": "للمشروعات المدمجة ووصفات التغذية الشائعة المكونة من جزأين مع تصحيح pH."}
+    },
+    "04": {
+      "channels": 4,
+      "en": {"configuration": "A + B + additional nutrient/additive + acid", "application": "For one additional stock solution, additive or crop-specific nutrient channel."},
+      "zh-CN": {"configuration": "A + B + 附加肥料/添加剂 + 酸液", "application": "适合增加一路原液、添加剂或作物专用营养通道。"},
+      "ar": {"configuration": "A + B + محلول غذائي أو إضافة + حمض", "application": "لإضافة محلول مركز أو مادة مضافة أو قناة تغذية خاصة بالمحصول."}
+    },
+    "05": {
+      "channels": 5,
+      "en": {"configuration": "A + B + A1 + B1 + acid", "application": "Recommended flagship configuration for precision greenhouse crops, multiple recipes and crop-stage flexibility."},
+      "zh-CN": {"configuration": "A + B + A1 + B1 + 酸液", "application": "推荐用于精准温室种植，是兼顾多配方和不同生育阶段的五通道主力配置。"},
+      "ar": {"configuration": "A + B + A1 + B1 + حمض", "application": "التجهيزة الرئيسية الموصى بها للزراعة الدقيقة داخل البيوت المحمية ولتعدد الوصفات ومراحل نمو المحصول."}
+    },
+    "06": {
+      "channels": 6,
+      "en": {"configuration": "Six configurable stock-solution channels", "application": "For complex recipes, frequent crop changes or a reserved channel for future expansion."},
+      "zh-CN": {"configuration": "六路可配置肥料原液", "application": "适合复杂配方、频繁换茬，或为未来扩展预留一路通道。"},
+      "ar": {"configuration": "ست قنوات قابلة لتهيئة محاليل الأسمدة المركزة", "application": "للوصفات المعقدة أو التبديل المتكرر بين المحاصيل أو حجز قناة للتوسعة المستقبلية."}
+    }
+  },
+  "detailPage": {
+    "en": {
+      "whyChoose": "Why choose this model",
+      "applications": "Application scenarios",
+      "specifications": "Technical specifications",
+      "process": "Operation and process",
+      "connectivity": "Connectivity and expansion",
+      "installation": "Installation requirements",
+      "options": "Optional accessories",
+      "downloads": "Downloads",
+      "related": "Related models",
+      "inquiry": "Request configuration advice"
+    },
+    "zh-CN": {
+      "whyChoose": "为什么选择这个型号",
+      "applications": "应用场景",
+      "specifications": "技术参数",
+      "process": "运行与工艺流程",
+      "connectivity": "通信与扩展",
+      "installation": "安装要求",
+      "options": "选配附件",
+      "downloads": "资料下载",
+      "related": "相关型号",
+      "inquiry": "获取配置建议"
+    },
+    "ar": {
+      "whyChoose": "لماذا تختار هذا الطراز",
+      "applications": "مجالات الاستخدام",
+      "specifications": "المواصفات الفنية",
+      "process": "التشغيل وتسلسل العملية",
+      "connectivity": "الاتصال والتوسعة",
+      "installation": "متطلبات التركيب",
+      "options": "الملحقات الاختيارية",
+      "downloads": "التنزيلات",
+      "related": "الطرازات ذات الصلة",
+      "inquiry": "اطلب توصية بالتجهيزة المناسبة"
+    }
+  }
+}

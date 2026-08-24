@@ -1,0 +1,27 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $chrome := index site.Data.pkydrip_fertigation_ui.chrome $locale }}
+{{ $family := "/products/fertigation/" | relLangURL }}
+{{ $isDetail := eq .Params.layout "fertigation-model" }}
+{{ $waText := printf "Hi PKYDrip, Product: fertigation family | Page: %s" .RelPermalink }}
+{{ if .Params.model }}{{ $waText = printf "Hi PKYDrip, Product: %s | Page: %s" .Params.model .RelPermalink }}{{ end }}
+<header class="site-header">
+  <a class="brand" href="{{ $family }}" aria-label="PKYDrip">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40"><path d="M20 5c-5 8-11 13-11 21a11 11 0 0 0 22 0C31 18 25 13 20 5Z"/><path d="M14.5 25.5a5.5 5.5 0 0 0 5.5 5.5"/></svg>
+    </span>
+    <span><b>PKYDRIP</b><small>SMART IRRIGATION</small></span>
+  </a>
+  <nav aria-label="{{ $chrome.navProducts }}">
+    {{ if $isDetail }}
+    <a href="{{ $family }}">{{ $chrome.viewFamily }}</a>
+    <a href="{{ $family }}#selection-guide">{{ $chrome.navGuide }}</a>
+    {{ else }}
+    <a href="#selection-guide">{{ $chrome.navGuide }}</a>
+    <a href="#series">{{ $chrome.navSeries }}</a>
+    <a href="#compare">{{ $chrome.navCompare }}</a>
+    <a href="#models">{{ $chrome.navModels }}</a>
+    {{ end }}
+  </nav>
+  {{ partial "product/fertigation-lang.html" . }}
+  <a class="button button-small" href="https://wa.me/8617395297329?text={{ $waText | urlquery }}">{{ $chrome.cta }}</a>
+</header>

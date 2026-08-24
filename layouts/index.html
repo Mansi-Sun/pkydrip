@@ -184,6 +184,11 @@
           <li>{{ . }}</li>
           {{ end }}
         </ul>
+        {{ with .cta }}
+        <p class="mt-4 mb-0">
+          <a href="{{ .url | relLangURL }}" class="btn btn-outline-success">{{ .label }}</a>
+        </p>
+        {{ end }}
       </div>
     </div>
   </div>

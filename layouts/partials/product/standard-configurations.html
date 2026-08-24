@@ -1,0 +1,36 @@
+{{/* Standard configuration table — no price/stock/lead-time claims */}}
+{{ with .Params.standard_configurations }}
+{{ if .rows }}
+<section class="py-5 eng-standard-configs">
+  <div class="container">
+    <h2 class="h3 mb-2">{{ .title | default "Choose a standard configuration" }}</h2>
+    {{ with .intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
+    <div class="table-responsive eng-table-wrap">
+      <table class="table table-bordered bg-white mb-2">
+        <thead class="table-light">
+          <tr>
+            {{ range (.headers | default (slice "Configuration" "Standard scope" "Typical fit")) }}
+            <th scope="col">{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .rows }}
+          <tr>
+            {{ if reflect.IsMap . }}
+              <td>{{ .configuration | default .name | default .config }}</td>
+              <td>{{ .scope | default .standard_scope }}</td>
+              <td>{{ .fit | default .typical_fit }}</td>
+            {{ else }}
+              {{ range . }}<td>{{ . }}</td>{{ end }}
+            {{ end }}
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    {{ with .note }}<p class="small text-muted mb-0">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

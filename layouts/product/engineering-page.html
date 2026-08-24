@@ -6,26 +6,47 @@
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="{{ if .image }}col-lg-7{{ else }}col-12{{ end }}">
-          <h1 class="display-6 fw-semibold mb-3">{{ .title | default $.Title }}</h1>
+          {{ with .eyebrow }}<p class="eng-hero-eyebrow mb-2">{{ . }}</p>{{ end }}
+          <h1 class="display-6 fw-semibold mb-2">{{ .title | default $.Title }}</h1>
+          {{ with $.Params.product_identity }}
+            {{ with .model }}<p class="mb-3 text-muted"><span class="fw-semibold text-dark">{{ $.Params.product_identity.model_label | default "Model" }}:</span> {{ . }}{{ with $.Params.product_identity.product_code }} · <span class="eng-identity-code">{{ . }}</span>{{ end }}</p>{{ end }}
+          {{ end }}
           {{ with .subtitle }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+          {{ with .capabilities }}
+          <div class="row g-2 mb-4">
+            {{ range . }}
+            <div class="col-sm-6 col-lg-4">
+              <div class="eng-hero-capability">{{ . }}</div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
           <div class="d-flex flex-wrap gap-2">
             {{ with .cta_primary }}
-              <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .label }}</a>
+              <a href="{{ .url }}"{{ if or (hasPrefix .url "http") (in .url "wa.me") }} target="_blank" rel="noopener"{{ end }} class="btn btn-success px-4">{{ .label }}</a>
             {{ end }}
             {{ with .cta_secondary }}
+              {{ if hasPrefix .url "#" }}
+              <a href="{{ .url }}" class="btn btn-outline-success px-4">{{ .label }}</a>
+              {{ else }}
               <a href="{{ .url | relLangURL }}" class="btn btn-outline-success px-4">{{ .label }}</a>
+              {{ end }}
             {{ end }}
           </div>
         </div>
         {{ with .image }}
         <div class="col-lg-5">
-          <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:cover;">
+          <img class="img-fluid rounded shadow" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt | default $.Title }}" style="width:100%;max-height:380px;object-fit:contain;background:#f6f9fb;">
         </div>
         {{ end }}
       </div>
     </div>
   </section>
   {{ end }}
+
+  {{ partial "product/product-identity.html" . }}
+  {{ partial "product/fit-summary.html" . }}
+  {{ partial "product/offer-scope.html" . }}
 
   {{ with .Params.system_controls }}
   <section class="py-5">
@@ -47,7 +68,7 @@
   {{ end }}
 
   {{ with .Params.system_architecture }}
-  <section class="py-5" style="background:#f8fafb;">
+  <section class="py-5" style="background:#f8fafb;"{{ with .id }} id="{{ . }}"{{ end }}>
     <div class="container">
       <h2 class="h3 mb-2">{{ .title }}</h2>
       {{ with .subtitle }}<p class="text-muted mb-4 col-lg-10">{{ . }}</p>{{ end }}
@@ -79,7 +100,7 @@
   {{ end }}
 
   {{ with .Params.zone_flow }}
-  <section class="py-5" style="background:#f8fafb;">
+  <section class="py-5" style="background:#f8fafb;"{{ with .id }} id="{{ . }}"{{ end }}>
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-lg-6">
@@ -164,6 +185,8 @@
   </section>
   {{ end }}
 
+  {{ partial "product/standard-configurations.html" . }}
+
   {{ with .Params.product_modules }}
   <section class="py-5" style="background:#f8fafb;">
     <div class="container">
@@ -183,6 +206,9 @@
     </div>
   </section>
   {{ end }}
+
+  {{ partial "product/regional-configuration.html" . }}
+  {{ partial "product/supply-boundary.html" . }}
 
   {{ with .Params.applications }}
   <section class="py-5" style="background:#f8fafb;">
@@ -213,8 +239,8 @@
     <div class="container">
       <h2 class="h3 mb-3">{{ .title }}</h2>
       {{ with .intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
-      <div class="table-responsive">
-        <table class="table table-bordered bg-white">
+      <div class="table-responsive eng-table-wrap">
+        <table class="table table-bordered bg-white mb-0">
           <thead class="table-light">
             <tr>{{ range .headers }}<th scope="col">{{ . }}</th>{{ end }}</tr>
           </thead>
@@ -242,6 +268,9 @@
     </div>
   </section>
   {{ end }}
+
+  {{ partial "product/product-downloads.html" . }}
+  {{ partial "product/product-faq.html" . }}
 
   {{ with .Params.demo_videos }}
   <section class="py-5">
@@ -273,7 +302,7 @@
     <div class="container">
       <h2 class="h5 mb-3">{{ .title | default "Related pages" }}</h2>
       <div class="d-flex flex-wrap gap-2">
-        {{ range .links }}
+        {{ range first 6 .links }}
         <a href="{{ .url | relLangURL }}" class="btn btn-sm btn-outline-secondary">{{ .label }}</a>
         {{ end }}
       </div>
@@ -289,29 +318,9 @@
   </section>
   {{ end }}
 
-  {{ with .Params.project_cta }}
-  <section class="py-5" style="background: linear-gradient(165deg, #1a3d52 0%, #1e4d3f 100%); color: #fff;">
-    <div class="container text-center">
-      <h2 class="h3 mb-3">{{ .title }}</h2>
-      {{ with .text }}<p class="mb-4 mx-auto" style="max-width:720px;opacity:.9;">{{ . }}</p>{{ end }}
-      <a href="{{ .button_url }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">{{ .button_label }}</a>
-      {{ with $.Params.page_code }}<p class="small mt-3 mb-0" style="opacity:.7;">Reference: {{ . }}</p>{{ end }}
-    </div>
-  </section>
-  {{ end }}
+  {{ partial "product/product-cta.html" . }}
 
 </main>
-<style>
-.pkydrip-engineering-page .eng-card { transition: box-shadow .2s; }
-.pkydrip-engineering-page .eng-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
-.pkydrip-engineering-page .eng-flow-diagram { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem; }
-.pkydrip-engineering-page .eng-flow-step { font-weight: 600; font-size: .9rem; padding: .5rem .75rem; background: #e8f4ec; border-radius: .35rem; color: #1e4d3f; }
-.pkydrip-engineering-page .eng-flow-step:not(:last-child)::after { content: "→"; margin-left: .5rem; font-weight: 400; color: #6c757d; }
-.pkydrip-engineering-page .eng-hmi-visual { min-height: 200px; }
-.pkydrip-engineering-page .eng-hmi-overlay { position: absolute; right: 4%; bottom: 6%; width: 42%; max-width: 220px; background: #fff; }
-.pkydrip-engineering-page .eng-video-placeholder { background: #f1f3f5 !important; }
-@media (max-width: 767px) {
-  .pkydrip-engineering-page .eng-hmi-overlay { position: static; width: 70%; margin: -2rem auto 0; display: block; }
-}
-</style>
+{{ partial "product/styles.html" . }}
+{{ partial "product/schema.html" . }}
 {{ end }}

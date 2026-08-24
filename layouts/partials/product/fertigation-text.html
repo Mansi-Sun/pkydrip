@@ -1,0 +1,13 @@
+{{ $t := .text | string }}
+{{ if eq .locale "ar" }}
+  {{ $tokens := slice
+    "PKYDrip-E06" "PKYDrip-E05" "PKYDrip-E04" "PKYDrip-E03"
+    "PKYDrip-S06" "PKYDrip-S05" "PKYDrip-S04" "PKYDrip-S03"
+    "PKYDrip-P06" "PKYDrip-P05" "PKYDrip-P04" "PKYDrip-P03"
+    "ThingsBoard" "Modbus" "MQTT" "Wi-Fi" "LoRa" "PKYDrip" "API" "EC" "pH"
+  }}
+  {{ range $tokens }}
+    {{ $t = replace $t . (printf "<span class=\"ltr\" dir=\"ltr\">%s</span>" .) }}
+  {{ end }}
+{{ end }}
+{{ $t | safeHTML }}

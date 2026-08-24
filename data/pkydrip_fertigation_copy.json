@@ -1,0 +1,269 @@
+{
+  "positioning": {
+    "E": {
+      "en": "Entry automation for replacing repetitive manual irrigation and fertilizer operations.",
+      "zh-CN": "用于替代重复人工灌溉和施肥操作的入门自动化。",
+      "ar": "أتمتة أساسية لاستبدال عمليات الري والتسميد اليدوية المتكررة."
+    },
+    "S": {
+      "en": "The primary standardized production series for repeatable fertigation at greenhouses, orchards and professional farms.",
+      "zh-CN": "面向温室、果园和专业农场可重复生产的主力量产系列。",
+      "ar": "سلسلة الإنتاج القياسية الأساسية لتسميد وري قابل للتكرار في البيوت المحمية والبساتين والمزارع المهنية."
+    },
+    "P": {
+      "en": "Professional fertigation for high-value crops, advanced growers and system integrators.",
+      "zh-CN": "面向高价值作物、专业种植者和系统集成商的专业水肥系统。",
+      "ar": "تسميد وري احترافي للمحاصيل عالية القيمة والمزارعين المتقدمين ومكاملي الأنظمة."
+    }
+  },
+  "whyChoose": {
+    "E": {
+      "en": [
+        "Short learning curve for operators who currently start pumps, open valves and dose fertilizer by hand.",
+        "Proportional or time-based dosing keeps a stable fertilizer program without requiring closed-loop tuning.",
+        "Irrigation-zone management is included so water and fertilizer follow the same local sequence.",
+        "Remote communication stays optional, which suits sites that need dependable local operation first."
+      ],
+      "zh-CN": [
+        "适合目前仍在手动开泵、开关阀门和加肥的操作人员，学习成本低。",
+        "比例或定时施肥即可稳住既有肥料方案，不必一开始就做闭环整定。",
+        "标配灌溉分区管理，水和肥料走同一套本地流程。",
+        "远程通信保持选配，先保证现场可靠运行。"
+      ],
+      "ar": [
+        "منحنى تعلم قصير للمشغّلين الذين يشغّلون المضخات والصمامات والحقن يدوياً اليوم.",
+        "يحافظ الحقن النسبي أو الزمني على برنامج سمادي مستقر دون الحاجة إلى ضبط حلقة مغلقة.",
+        "إدارة مناطق الري مشمولة، فيتبع الماء والسماد التسلسل المحلي نفسه.",
+        "يبقى الاتصال عن بُعد اختيارياً، وهذا يناسب المواقع التي تحتاج تشغيلاً محلياً موثوقاً أولاً."
+      ]
+    },
+    "S": {
+      "en": [
+        "EC/pH closed-loop control is intended for repeatable production, not one-off manual correction.",
+        "VFD pump control, fertilizer channels and zone valves are treated as one production machine.",
+        "The 7-inch standard touchscreen is the public interface; a 10-inch customized screen is quoted when required.",
+        "The series is specified for greenhouses, orchards and professional farms that need the same result shift after shift."
+      ],
+      "zh-CN": [
+        "EC/pH 闭环面向可重复生产，而不是临时人工校正。",
+        "变频泵控、施肥通道和分区阀作为同一台生产设备来配置。",
+        "对外标准界面为 7 英寸触摸屏，10 英寸定制屏按需报价。",
+        "适合需要班次之间结果一致的温室、果园和专业农场。"
+      ],
+      "ar": [
+        "التحكم مغلق الحلقة في EC/pH موجّه للإنتاج القابل للتكرار، لا للتصحيح اليدوي لمرة واحدة.",
+        "يُتعامل مع التحكم بالمضخة عبر مغير التردد وقنوات الأسمدة وصمامات المناطق كآلة إنتاج واحدة.",
+        "شاشة اللمس القياسية 7 بوصات هي الواجهة العلنية؛ وتُسعَّر شاشة 10 بوصات المخصصة عند الحاجة.",
+        "السلسلة محددة للبيوت المحمية والبساتين والمزارع المهنية التي تحتاج النتيجة نفسها من وردية إلى أخرى."
+      ]
+    },
+    "P": {
+      "en": [
+        "Recipe management, configurable workflows, batch records, trends and alarms are part of the professional layer.",
+        "MQTT, API and Modbus interfaces support ThingsBoard and other third-party platforms after engineering review.",
+        "Climate-control systems and weather stations can be added with extra hardware; they are not assumed in the base cabinet.",
+        "The same 7-inch standard / 10-inch customized screen rule applies, so the public model name stays short."
+      ],
+      "zh-CN": [
+        "专业层包含配方管理、可配置工艺、批次记录、趋势和告警。",
+        "MQTT、API 和 Modbus 接口可在工程评估后对接 ThingsBoard 等第三方平台。",
+        "环控系统和气象站需增加硬件，不默认包含在基础机柜内。",
+        "同样采用 7 英寸标准 / 10 英寸定制规则，公开型号名称保持简短。"
+      ],
+      "ar": [
+        "إدارة الوصفات ومسارات التشغيل القابلة للتهيئة وسجلات الدفعات والاتجاهات والإنذارات جزء من الطبقة الاحترافية.",
+        "تدعم واجهات MQTT وAPI وModbus منصة ThingsBoard وغيرها من المنصات الخارجية بعد المراجعة الهندسية.",
+        "يمكن إضافة أنظمة التحكم البيئي والمحطات المناخية بعتاد إضافي؛ ولا تُفترض ضمن الخزانة الأساسية.",
+        "تنطبق قاعدة الشاشة القياسية 7 بوصات / المخصصة 10 بوصات نفسها، فيبقى اسم الطراز العلني قصيراً."
+      ]
+    },
+    "channel": {
+      "03": {
+        "en": "Three channels match the compact A + B + acid recipe with lower process complexity.",
+        "zh-CN": "三通道对应紧凑的 A + B + 酸液配方，工艺复杂度更低。",
+        "ar": "ثلاث قنوات تناسب وصفة A + B + حمض المدمجة وبتعقيد تشغيلي أقل."
+      },
+      "04": {
+        "en": "The fourth channel adds one extra fertilizer, additive or crop-specific stock solution.",
+        "zh-CN": "第四通道用于增加一路肥料、添加剂或作物专用原液。",
+        "ar": "تضيف القناة الرابعة محلولاً سمادياً أو مادة مضافة أو محلولاً مركزاً خاصاً بالمحصول."
+      },
+      "05": {
+        "en": "Five channels are the recommended flagship layout: A + B + A1 + B1 + acid for precision greenhouse recipes.",
+        "zh-CN": "五通道是推荐主力配置：A + B + A1 + B1 + 酸液，适合精准温室配方。",
+        "ar": "خمس قنوات هي التجهيزة الرئيسية الموصى بها: A + B + A1 + B1 + حمض لوصفات البيوت المحمية الدقيقة."
+      },
+      "06": {
+        "en": "Six channels leave room for complex multi-stock recipes, crop switching or a reserved expansion line.",
+        "zh-CN": "六通道为复杂多原液配方、换茬或预留扩展留出余量。",
+        "ar": "ست قنوات تتيح وصفات متعددة المحاليل أو تبديل المحاصيل أو خط توسعة محجوز."
+      }
+    }
+  },
+  "applications": {
+    "E": {
+      "en": [
+        "Orchards and hoop houses that already have a stable fertilizer recipe and need to stop repeating the same manual sequence.",
+        "Projects where operators change often and the control logic must stay obvious on a local panel.",
+        "Sites that may add remote access later, but must run correctly with local power and local I/O first."
+      ],
+      "zh-CN": [
+        "已有稳定肥料配方、需要停止重复手动流程的果园和拱棚。",
+        "操作人员变动频繁、控制逻辑必须在本地面板上一眼看懂的项目。",
+        "以后可能加远程访问，但必须先保证本地电源和本地 I/O 正确运行的现场。"
+      ],
+      "ar": [
+        "بساتين وبيوت أنفاق تملك وصفة سماد مستقرة وتحتاج إلى إيقاف تكرار التسلسل اليدوي نفسه.",
+        "مشروعات يتغير فيها المشغّلون كثيراً ويجب أن يبقى منطق التحكم واضحاً على لوحة محلية.",
+        "مواقع قد تضيف وصولاً عن بُعد لاحقاً، لكن يجب أن تعمل أولاً بالكهرباء المحلية ونقاط الإدخال والإخراج المحلية."
+      ]
+    },
+    "S": {
+      "en": [
+        "Commercial greenhouses that need the same EC/pH result across blocks and shifts.",
+        "Orchard and farm pump stations where fertigation must share valve logic with irrigation zones.",
+        "Integrators standardizing one production SKU across multiple similar sites."
+      ],
+      "zh-CN": [
+        "需要在不同种植区和班次之间保持同一 EC/pH 结果的商业温室。",
+        "水肥必须与灌溉分区阀逻辑共用的果园和农场泵房。",
+        "要在多个相似现场复制同一生产型号的集成商。"
+      ],
+      "ar": [
+        "بيوت محمية تجارية تحتاج نتيجة EC/pH نفسها عبر البلوكات والورديات.",
+        "محطات ضخ البساتين والمزارع حيث يجب أن يشارك التسميد منطق الصمامات مع مناطق الري.",
+        "مكاملون يوحّدون وحدة حفظ مخزون إنتاجية واحدة عبر مواقع متشابهة متعددة."
+      ]
+    },
+    "P": {
+      "en": [
+        "High-value vegetables, berries, nursery and hydroponic sites that keep more than one active recipe.",
+        "Growers who need batch records, trends and alarms for internal QA or customer traceability.",
+        "Projects that will connect fertigation to climate, weather or a farm platform through reviewed interfaces."
+      ],
+      "zh-CN": [
+        "同时使用多种配方的高价值蔬菜、浆果、育苗和基质/水培现场。",
+        "需要批次记录、趋势和告警做内部质控或客户追溯的种植者。",
+        "将通过已评估接口把水肥接入环控、气象或农场平台的项目。"
+      ],
+      "ar": [
+        "مواقع خضر وتوت ومشاتل وزراعة مائية عالية القيمة تحتفظ بأكثر من وصفة نشطة.",
+        "مزارعون يحتاجون سجلات دفعات واتجاهات وإنذارات لضمان الجودة الداخلي أو تتبع العملاء.",
+        "مشروعات ستربط التسميد بالمناخ أو الطقس أو منصة المزرعة عبر واجهات مراجعة."
+      ]
+    }
+  },
+  "process": {
+    "E": {
+      "en": [
+        "Select the irrigation zone and start the local automatic or timed program.",
+        "Dosing channels run by ratio or duration while the pump and valves follow the same sequence.",
+        "Alarms stay local unless optional remote communication is specified."
+      ],
+      "zh-CN": [
+        "选择灌溉分区，启动本地自动或定时程序。",
+        "施肥通道按比例或时间运行，泵和阀门走同一流程。",
+        "告警默认在本地处理，除非配置了远程通信。"
+      ],
+      "ar": [
+        "اختر منطقة الري وابدأ البرنامج التلقائي أو الزمني المحلي.",
+        "تعمل قنوات الحقن بالنسبة أو بالمدة بينما تتبع المضخة والصمامات التسلسل نفسه.",
+        "تبقى الإنذارات محلية ما لم يُحدد اتصال عن بُعد اختياري."
+      ]
+    },
+    "S": {
+      "en": [
+        "The controller holds EC and pH targets for the selected program and zone group.",
+        "Fertilizer valves, acid channel, VFD pump and irrigation valves operate as one closed-loop sequence.",
+        "Operators adjust standard recipes and parameters on the 7-inch standard interface, or on a 10-inch customized screen when quoted."
+      ],
+      "zh-CN": [
+        "控制器为选定程序和分区组保持 EC、pH 目标。",
+        "施肥阀、酸通道、变频泵和灌溉阀作为同一闭环流程运行。",
+        "操作人员在 7 英寸标准界面（或报价的 10 英寸定制屏）上调整标准配方和参数。"
+      ],
+      "ar": [
+        "يحافظ المتحكم على أهداف EC وpH للبرنامج ومجموعة المناطق المحددة.",
+        "تعمل صمامات الأسمدة وقناة الحمض ومضخة مغير التردد وصمامات الري كتسلسل واحد مغلق الحلقة.",
+        "يضبط المشغّلون الوصفات والمعاملات القياسية على الواجهة القياسية 7 بوصات، أو على شاشة 10 بوصات المخصصة عند تسعيرها."
+      ]
+    },
+    "P": {
+      "en": [
+        "Select or edit a recipe, then bind it to a configurable process workflow and irrigation-zone group.",
+        "The machine records batches, trends and alarms while EC/pH remain under closed-loop control.",
+        "Approved users can review history locally and, when specified, through remote or third-party interfaces."
+      ],
+      "zh-CN": [
+        "选择或编辑配方，再绑定到可配置工艺流程和灌溉分区组。",
+        "设备在 EC/pH 闭环控制的同时记录批次、趋势和告警。",
+        "授权用户可在本地查阅历史，并在配置后通过远程或第三方接口查阅。"
+      ],
+      "ar": [
+        "اختر وصفة أو حرّرها، ثم اربطها بمسار تشغيل قابل للتهيئة وبمجموعة مناطق ري.",
+        "تسجّل الآلة الدفعات والاتجاهات والإنذارات بينما يبقى EC/pH تحت تحكم مغلق الحلقة.",
+        "يمكن للمستخدمين المعتمدين مراجعة السجل محلياً، وعبر واجهات بعيدة أو خارجية عند تحديد ذلك."
+      ]
+    }
+  },
+  "connectivity": {
+    "E": {
+      "en": "Local operation is the default. 4G, Wi-Fi, Ethernet or LoRa can be added by configuration. Climate and weather-station integration is not part of the Easy series.",
+      "zh-CN": "默认为本地运行。4G、Wi-Fi、以太网或 LoRa 可按配置增加。环控和气象站集成不属于 E 系列范围。",
+      "ar": "التشغيل المحلي هو الافتراضي. يمكن إضافة 4G أو Wi-Fi أو Ethernet أو LoRa حسب التهيئة. لا يشمل تكامل المناخ والمحطة المناخية سلسلة Easy."
+    },
+    "S": {
+      "en": "4G, Wi-Fi, Ethernet and LoRa are selected by project. Remote management is optional. Climate and weather interfaces can be reserved; they are not a standard bundled station.",
+      "zh-CN": "4G、Wi-Fi、以太网和 LoRa 按项目选择。远程管理为选配。环控和气象接口可预留，不作为标准捆绑站点。",
+      "ar": "يُختار 4G وWi-Fi وEthernet وLoRa حسب المشروع. الإدارة عن بُعد اختيارية. يمكن حجز واجهات المناخ والطقس؛ وهي ليست محطة قياسية مضمّنة."
+    },
+    "P": {
+      "en": "Communication options include 4G, Wi-Fi, Ethernet and LoRa. Integration interfaces are MQTT, API and Modbus; ThingsBoard can be supported after review. Climate-control systems and weather stations require additional hardware.",
+      "zh-CN": "通信选项包括 4G、Wi-Fi、以太网和 LoRa。集成接口为 MQTT、API 和 Modbus，ThingsBoard 可在评估后支持。环控系统和气象站需要额外硬件。",
+      "ar": "تشمل خيارات الاتصال 4G وWi-Fi وEthernet وLoRa. واجهات التكامل هي MQTT وAPI وModbus؛ ويمكن دعم ThingsBoard بعد المراجعة. تتطلب أنظمة التحكم البيئي والمحطات المناخية عتاداً إضافياً."
+    }
+  },
+  "installation": {
+    "en": [
+      "Provide a level, drained mounting position with access for suction lines, water mains, valves and service clearance.",
+      "Confirm incoming power before ordering. AC 380 V is a common project configuration; AC 220 V requires evaluation.",
+      "Mainline flow, pressure, fertilizer tank layout and zone-valve count must be submitted for hydraulic and I/O review.",
+      "Sensor location, mixing time and field calibration are part of commissioning, not a factory guarantee of one-sensor accuracy."
+    ],
+    "zh-CN": [
+      "提供平整、可排水的安装位置，并预留吸肥管路、主管、阀门和检修空间。",
+      "订货前确认进线电源。AC 380 V 为常用项目配置，AC 220 V 需要评估。",
+      "须提交主管流量、压力、肥料罐布置和分区阀数量，以便进行水力和 I/O 复核。",
+      "传感器安装位置、混合时间和现场标定属于调试内容，不构成单传感器精度的出厂保证。"
+    ],
+    "ar": [
+      "وفّر موضع تركيب مستوٍ ومصرَّف مع وصول لخطوط السحب والخطوط الرئيسية والصمامات وخلوص الخدمة.",
+      "أكّد الكهرباء الواردة قبل الطلب. AC 380 V تهيئة شائعة للمشروعات؛ ويتطلب AC 220 V تقييماً.",
+      "يجب تقديم تدفق الخط الرئيسي والضغط وتخطيط خزانات السماد وعدد صمامات المناطق للمراجعة الهيدروليكية ونقاط الإدخال والإخراج.",
+      "موضع المستشعر وزمن الخلط والمعايرة الميدانية جزء من التشغيل التجريبي، وليست ضماناً مصنعياً لدقة مستشعر واحد."
+    ]
+  },
+  "options": {
+    "en": [
+      "10-inch customized touchscreen in place of the 7-inch standard interface",
+      "Additional irrigation-zone I/O or remote expansion modules",
+      "Redundant EC/pH sensing on S and P series",
+      "4G, Wi-Fi, Ethernet or LoRa communication modules",
+      "Climate-control and weather-station hardware on P series after engineering review"
+    ],
+    "zh-CN": [
+      "以 10 英寸定制触摸屏替代 7 英寸标准界面",
+      "额外灌溉分区 I/O 或远程扩展模块",
+      "S / P 系列冗余 EC/pH 传感",
+      "4G、Wi-Fi、以太网或 LoRa 通信模块",
+      "P 系列环控和气象站硬件，须经工程评估"
+    ],
+    "ar": [
+      "شاشة لمس مخصصة 10 بوصات بدل الواجهة القياسية 7 بوصات",
+      "نقاط إدخال وإخراج إضافية لمناطق الري أو وحدات توسعة بعيدة",
+      "استشعار EC/pH ازدواجية في سلسلتي S وP",
+      "وحدات اتصال 4G أو Wi-Fi أو Ethernet أو LoRa",
+      "عتاد التحكم البيئي والمحطة المناخية في السلسلة P بعد المراجعة الهندسية"
+    ]
+  }
+}

@@ -65,3 +65,19 @@ languageCode = "zh-CN"
 contentDir = "content/cn"
 weight = 9
 title = "PKYDrip — 企业信息"
+
+################ Product catalog: Simplified Chinese ################
+[zh-cn]
+languageName = "简体中文"
+languageCode = "zh-CN"
+contentDir = "content/zh-cn"
+weight = 10
+title = "PKYDrip 水肥一体化产品系列"
+
+################ Product catalog: Arabic ################
+[ar]
+languageName = "العربية"
+languageCode = "ar"
+contentDir = "content/ar"
+weight = 11
+title = "أنظمة التسميد والري من PKYDrip"

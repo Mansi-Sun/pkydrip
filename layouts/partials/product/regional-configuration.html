@@ -1,0 +1,25 @@
+{{/* Regional configuration — same core product, market-selected options */}}
+{{ with .Params.regional_configuration }}
+{{ if .items }}
+<section class="py-5 eng-regional-config">
+  <div class="container">
+    <h2 class="h3 mb-2">{{ .title | default "Regional configuration" }}</h2>
+    {{ with .intro }}
+    <p class="text-muted mb-4 col-lg-10">{{ . }}</p>
+    {{ else }}
+    <p class="text-muted mb-4 col-lg-10">The core product remains the same. Power, radio, communications and language are selected for the destination market.</p>
+    {{ end }}
+    <div class="row g-3">
+      {{ range .items }}
+      <div class="col-6 col-md-4 col-lg">
+        <div class="eng-regional-item h-100">
+          <div class="fw-semibold mb-1">{{ .name }}</div>
+          {{ with .desc }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

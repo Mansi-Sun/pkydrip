@@ -45,6 +45,12 @@ product_modules:
   title: "Product Modules"
   intro: "Configure the right fertigation controller—single-channel to multi-channel, with or without EC/pH."
   items:
+    - name: "PKYDrip E / S / P family"
+      desc: "Easy, Standard and Professional fertigation systems, PKYDrip-E03 to P06, with an on-page selection guide."
+      url: "/products/fertigation/"
+    - name: "PKY-FG501 Premix"
+      desc: "5-channel premix fertigation unit with 200 L tank and before/after EC/pH process measurement."
+      url: "/product/pky-fg501-premix-fertigation/"
     - name: "Fertigation Controller"
       desc: "Integration-ready control layer for existing pumps, tanks, pipelines, and dosing equipment."
       url: "/product/fertigation-controller/"
@@ -90,6 +96,12 @@ applications:
 related_links:
   title: "Related"
   links:
+    - label: "PKYDrip E / S / P family"
+      url: "/products/fertigation/"
+    - label: "PKY-FG501 Premix"
+      url: "/product/pky-fg501-premix-fertigation/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "Fertigation controller for integration"
       url: "/product/fertigation-controller/"
     - label: "Integration & connectivity"
@@ -98,14 +110,12 @@ related_links:
       url: "/docs/fertigation-basics/"
     - label: "Greenhouse solution"
       url: "/solution/greenhouse-irrigation/"
-    - label: "Hydroponic solution"
-      url: "/solution/hydroponic-irrigation/"
 
 project_cta:
   title: "Discuss Your Fertigation Project"
-  text: "Share crop type, channel count, EC/pH requirements, and irrigation zone layout. PKYDrip will recommend a suitable fertigation module configuration."
+  text: "Share crop type, channel count, EC/pH requirements, and irrigation zone layout. For new commercial premix projects, start with PKY-FG501. Existing FG301 and FG401 pages remain available."
   button_label: "Chat on WhatsApp"
   button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Fertigation%20System%20%7C%20Page%3A%20fertigation-system%0A-%20Crop%3A%20%0A-%20Channels%3A%20%0A-%20EC%2FpH%3A%20%0A-%20Zones%3A%20"
 ---
 
-**Fertigation system** product family—module specs on PKY-FG301 and PKY-FG401 pages. Integration with [pump & valve control](/product/pump-valve-control-system/) when sharing a pump station.
+**Fertigation system** product family. For the new E / S / P production range, start at the [PKYDrip fertigation family](/products/fertigation/). Prefer [PKY-FG501](/product/pky-fg501-premix-fertigation/) for new global-standard premix inquiries. Existing [PKY-FG301](/product/pky-fg301/) and [PKY-FG401](/product/pky-fg401-ecph/) pages remain published. Integration with [pump & valve control](/product/pump-valve-control-system/) when sharing a pump station.

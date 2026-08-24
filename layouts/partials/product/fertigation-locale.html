@@ -1,0 +1,3 @@
+{{ $locale := "en" }}
+{{ if eq .Lang "zh-cn" }}{{ $locale = "zh-CN" }}{{ else if eq .Lang "ar" }}{{ $locale = "ar" }}{{ end }}
+{{ return $locale }}

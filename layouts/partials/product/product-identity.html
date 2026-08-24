@@ -1,0 +1,41 @@
+{{/* Product identity strip — Model / Product code / Family / Status */}}
+{{ with .Params.product_identity }}
+<section class="py-3 border-bottom eng-product-identity" aria-label="Product identity">
+  <div class="container">
+    <div class="row g-2 g-md-3">
+      {{ with .model }}
+      <div class="col-6 col-md-3">
+        <div class="eng-identity-card h-100">
+          <div class="eng-identity-label">{{ $.Params.product_identity.model_label | default "Model" }}</div>
+          <div class="eng-identity-value">{{ . }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ with .product_code }}
+      <div class="col-6 col-md-3">
+        <div class="eng-identity-card h-100">
+          <div class="eng-identity-label">{{ $.Params.product_identity.code_label | default "Product code" }}</div>
+          <div class="eng-identity-value eng-identity-code">{{ . }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ with .family }}
+      <div class="col-6 col-md-3">
+        <div class="eng-identity-card h-100">
+          <div class="eng-identity-label">{{ $.Params.product_identity.family_label | default "Product family" }}</div>
+          <div class="eng-identity-value">{{ . }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ with .lifecycle }}
+      <div class="col-6 col-md-3">
+        <div class="eng-identity-card h-100">
+          <div class="eng-identity-label">{{ $.Params.product_identity.lifecycle_label | default "Status" }}</div>
+          <div class="eng-identity-value">{{ . }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

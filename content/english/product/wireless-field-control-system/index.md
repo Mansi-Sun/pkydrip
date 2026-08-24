@@ -43,6 +43,9 @@ feature_blocks:
 product_modules:
   title: "Related PKYDrip Modules"
   items:
+    - name: "PKY-RIC01"
+      url: "/product/pky-ric01-remote-irrigation-control/"
+      desc: "Standard remote irrigation packages built from EG08, IC05, IC05-Plus and IC06-PUMP."
     - name: "PKY-EG08"
       url: "/product/pky-eg08/"
       desc: "LoRa gateway for wireless irrigation."
@@ -59,14 +62,18 @@ product_modules:
 related_links:
   title: "Related Pages"
   links:
+    - label: "PKY-RIC01 Remote Irrigation Control"
+      url: "/product/pky-ric01-remote-irrigation-control/"
     - label: "Wireless Irrigation Architecture"
       url: "/system-architecture/wireless-irrigation-system/"
     - label: "Wireless Valve Controller"
       url: "/product/wireless-valve-controller/"
     - label: "Open Field Irrigation"
       url: "/solution/open-field-irrigation/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "LoRa Deployment Guide"
       url: "/docs/lora-wireless-control/deployment-guide/"
 ---
 
-Wireless field control is a system expansion layer, not only a single valve controller product.
+Wireless field control is a system expansion layer and product-family entry. Prefer [PKY-RIC01](/product/pky-ric01-remote-irrigation-control/) for new remote irrigation package inquiries. Existing EG08 / IC05 / IC05-Plus / IC06-PUMP module pages remain published. Open integration boundaries are on [Open Platform](/open-platform/).

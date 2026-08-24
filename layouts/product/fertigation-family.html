@@ -1,0 +1,335 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $landing := index site.Data.pkydrip_fertigation_ui.landing $locale }}
+{{ $guide := index site.Data.pkydrip_fertigation_ui.guide $locale }}
+{{ $chrome := index site.Data.pkydrip_fertigation_ui.chrome $locale }}
+{{ $catalog := site.Data.pkydrip_fertigation_catalog }}
+{{ $common := index $catalog.common $locale }}
+{{ $familyURL := "/products/fertigation/" | relLangURL }}
+{{ $htmlLang := "en" }}
+{{ if eq .Lang "zh-cn" }}{{ $htmlLang = "zh-CN" }}{{ else if eq .Lang "ar" }}{{ $htmlLang = "ar" }}{{ end }}
+<!DOCTYPE html>
+<html lang="{{ $htmlLang }}"{{ if eq .Lang "ar" }} dir="rtl"{{ end }} itemscope itemtype="http://schema.org/WebPage">
+<head>
+  {{ partial "head.html" . }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Params.description | default $landing.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ site.Params.image | absURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation.css` | relURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation-extra.css` | relURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-fertigation-print.css` | relURL }}" media="print">
+</head>
+<body class="pkydrip-fertigation-page"
+  data-fertigation-page
+  data-family-url="{{ $familyURL }}"
+  data-summary-e="{{ $landing.summaryE }}"
+  data-summary-s="{{ $landing.summaryS }}"
+  data-summary-p="{{ $landing.summaryP }}"
+  data-guide-summary-e="{{ $landing.summaryE }}"
+  data-guide-summary-s="{{ $landing.summaryS }}"
+  data-guide-summary-p="{{ $landing.summaryP }}"
+  data-screen-07="{{ $common.standardScreen }}"
+  data-screen-10="{{ $common.customScreen }}">
+{{ partial "product/fertigation-header.html" . }}
+<main id="top">
+  <section class="hero section-shell">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ $landing.eyebrow }}</p>
+      <h1>{{ $landing.heroTitle }}</h1>
+      <p class="hero-lead">{{ $landing.heroLead }}</p>
+      <div class="hero-actions">
+        <a class="button" href="#selection-guide">{{ $landing.heroGuide }}</a>
+        <a class="button button-ghost" href="#models">{{ $landing.heroModels }}</a>
+      </div>
+      <ul class="hero-points" aria-label="{{ $landing.title }}">
+        <li><span>{{ $landing.heroPoint1Label }}</span><em>{{ $landing.heroPoint1 }}</em></li>
+        <li><span>{{ $landing.heroPoint2Label }}</span><em>{{ $landing.heroPoint2 }}</em></li>
+        <li><span>{{ $landing.heroPoint3Label }}</span><em>{{ $landing.heroPoint3 }}</em></li>
+      </ul>
+    </div>
+    <div class="hero-visual photo-placeholder" data-photo="assets/pkydrip-family.webp">
+      <div>
+        <span class="photo-label">{{ $landing.familyPhoto }}</span>
+        <strong>{{ $landing.familyPhotoHint }}</strong>
+        <small>{{ $landing.familyPhotoSize }}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip" aria-label="{{ $landing.title }}">
+    <span>{{ $landing.trust1 }}</span><i></i><span>{{ $landing.trust2 }}</span><i></i><span>{{ $landing.trust3 }}</span><i></i><span>{{ $landing.trust4 }}</span><i></i><span>{{ $landing.trust5 }}</span>
+  </section>
+
+  <section class="section section-shell" id="selection-guide">
+    <div class="model-builder selection-guide">
+      <div>
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">{{ $guide.eyebrow }}</p>
+            <h2>{{ $guide.title }}</h2>
+          </div>
+          <p>{{ $guide.intro }}</p>
+        </div>
+        <div class="guide-grid">
+          <div class="builder-controls">
+            <label>{{ $guide.step1 }}</label>
+            <div class="segmented" id="guide-series" role="group">
+              <button type="button" data-series="E" aria-pressed="false">{{ $guide.levelE }}</button>
+              <button type="button" class="active" data-series="S" aria-pressed="true">{{ $guide.levelS }}</button>
+              <button type="button" data-series="P" aria-pressed="false">{{ $guide.levelP }}</button>
+            </div>
+            <label>{{ $guide.step2 }}</label>
+            <div class="segmented" id="guide-channel" role="group">
+              <button type="button" data-channel="03" aria-pressed="false">{{ $guide.ch03 }}</button>
+              <button type="button" data-channel="04" aria-pressed="false">{{ $guide.ch04 }}</button>
+              <button type="button" class="active" data-channel="05" aria-pressed="true">{{ $guide.ch05 }}</button>
+              <button type="button" data-channel="06" aria-pressed="false">{{ $guide.ch06 }}</button>
+            </div>
+            <label>{{ $guide.step3 }}</label>
+            <div class="segmented" id="guide-screen" role="group">
+              <button type="button" class="active" data-screen="07" aria-pressed="true">{{ $guide.screen07 }}</button>
+              <button type="button" data-screen="10" aria-pressed="false">{{ $guide.screen10 }}</button>
+            </div>
+            <label>{{ $guide.step4 }}</label>
+            <ul class="guide-conditions">
+              <li>{{ $guide.condFlow }}</li>
+              <li>{{ $guide.condZones }}</li>
+              <li>{{ $guide.condPower }}</li>
+              <li>{{ $guide.condStock }}</li>
+              <li>{{ $guide.condNet }}</li>
+              <li>{{ $guide.condClimate }}</li>
+            </ul>
+          </div>
+          <div class="model-result guide-result" aria-live="polite">
+            <small>{{ $guide.resultLabel }}</small>
+            <strong id="guide-model" class="ltr" dir="ltr">PKYDrip-S05</strong>
+            <p id="guide-summary">5 nutrient channels / EC-pH closed loop / {{ $common.standardScreen }}</p>
+            <span>{{ $guide.resultNote }}</span>
+            <a class="button" id="guide-link" href="{{ printf "%spkydrip-s05/" $familyURL }}">{{ $guide.resultCta }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="series">
+    <div class="section-heading">
+      <div><p class="eyebrow">{{ $landing.rangeEyebrow }}</p><h2>{{ $landing.rangeTitle }}</h2></div>
+      <p>{{ $landing.rangeLead }}</p>
+    </div>
+    <div class="series-grid">
+      <article class="series-card e-card">
+        <div class="series-index">E</div><span class="tag">{{ $landing.eTag }}</span>
+        <h3>{{ $landing.eTitle }}</h3>
+        <p>{{ $landing.eBody }}</p>
+        <ul><li>{{ $landing.e1 }}</li><li>{{ $landing.e2 }}</li><li>{{ $landing.e3 }}</li></ul>
+        <a href="#e-detail">{{ $landing.eLink }} <span>→</span></a>
+      </article>
+      <article class="series-card s-card featured">
+        <div class="recommend">{{ $landing.sRecommend }}</div>
+        <div class="series-index">S</div><span class="tag">{{ $landing.sTag }}</span>
+        <h3>{{ $landing.sTitle }}</h3>
+        <p>{{ $landing.sBody }}</p>
+        <ul><li>{{ $landing.s1 }}</li><li>{{ $landing.s2 }}</li><li>{{ $landing.s3 }}</li></ul>
+        <a href="#s-detail">{{ $landing.sLink }} <span>→</span></a>
+      </article>
+      <article class="series-card p-card">
+        <div class="series-index">P</div><span class="tag">{{ $landing.pTag }}</span>
+        <h3>{{ $landing.pTitle }}</h3>
+        <p>{{ $landing.pBody }}</p>
+        <ul><li>{{ $landing.p1 }}</li><li>{{ $landing.p2 }}</li><li>{{ $landing.p3 }}</li></ul>
+        <a href="#p-detail">{{ $landing.pLink }} <span>→</span></a>
+      </article>
+      <article class="series-card oem-card">
+        <div class="series-index">OEM</div><span class="tag">{{ $landing.oemTag }}</span>
+        <h3>{{ $landing.oemTitle }}</h3>
+        <p>{{ $landing.oemBody }}</p>
+        <ul><li>{{ $landing.oem1 }}</li><li>{{ $landing.oem2 }}</li><li>{{ $landing.oem3 }}</li></ul>
+        <a href="#oem-detail">{{ $landing.oemLink }} <span>→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="compare">
+    <div class="section-shell">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">{{ $landing.compareEyebrow }}</p><h2>{{ $landing.compareTitle }}</h2></div>
+        <p>{{ $landing.compareLead }}</p>
+      </div>
+      <div class="comparison-wrap">
+        <table class="comparison-table">
+          <thead><tr><th>{{ $landing.compareCol0 }}</th><th>{{ $landing.compareColE }}</th><th class="selected">{{ $landing.compareColS }}</th><th>{{ $landing.compareColP }}</th><th>{{ $landing.compareColOem }}</th></tr></thead>
+          <tbody>
+            <tr><th>{{ $landing.rowPosition }}</th><td>{{ $landing.rowPositionE }}</td><td class="selected">{{ $landing.rowPositionS }}</td><td>{{ $landing.rowPositionP }}</td><td>{{ $landing.rowPositionOem }}</td></tr>
+            <tr><th>{{ $landing.rowChannels }}</th><td>{{ $landing.rowChannelsAll }}</td><td class="selected">{{ $landing.rowChannelsAll }}</td><td>{{ $landing.rowChannelsAll }}</td><td>{{ $landing.rowChannelsOem }}</td></tr>
+            <tr><th>{{ $landing.rowDosing }}</th><td>{{ $landing.rowDosingE }}</td><td class="selected"><b>{{ $landing.rowDosingSP }}</b></td><td><b>{{ $landing.rowDosingSP }}</b></td><td>{{ $landing.rowChannelsOem }}</td></tr>
+            <tr><th>{{ $landing.rowUi }}</th><td>{{ $landing.rowUiE }}</td><td class="selected">{{ $landing.rowUiSP }}</td><td>{{ $landing.rowUiSP }}</td><td>{{ $landing.rowUiOem }}</td></tr>
+            <tr><th>{{ $landing.rowZones }}</th><td>{{ $landing.rowZonesYes }}</td><td class="selected">{{ $landing.rowZonesYes }}</td><td>{{ $landing.rowZonesYes }}</td><td>{{ $landing.rowChannelsOem }}</td></tr>
+            <tr><th>{{ $landing.rowRecipe }}</th><td>{{ $landing.rowRecipeE }}</td><td class="selected">{{ $landing.rowRecipeS }}</td><td><b>{{ $landing.rowRecipeP }}</b></td><td>{{ $landing.rowRecipeOem }}</td></tr>
+            <tr><th>{{ $landing.rowNetwork }}</th><td>{{ $landing.rowNetworkE }}</td><td class="selected">{{ $landing.rowNetworkS }}</td><td><b>{{ $landing.rowNetworkP }}</b></td><td>{{ $landing.rowUiOem }}</td></tr>
+            <tr><th>{{ $landing.rowClimate }}</th><td>{{ $landing.rowClimateE }}</td><td class="selected">{{ $landing.rowClimateS }}</td><td><b>{{ $landing.rowClimateP }}</b></td><td>{{ $landing.rowUiOem }}</td></tr>
+            <tr><th>{{ $landing.rowAudience }}</th><td>{{ $landing.rowAudienceE }}</td><td class="selected">{{ $landing.rowAudienceS }}</td><td>{{ $landing.rowAudienceP }}</td><td>{{ $landing.rowAudienceOem }}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">{{ $landing.compareNote }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="models">
+    <div class="section-heading">
+      <div><p class="eyebrow">{{ $landing.modelEyebrow }}</p><h2>{{ $landing.modelTitle }}</h2></div>
+      <p>{{ $landing.modelLead }}</p>
+    </div>
+    <div class="model-builder">
+      <div class="builder-controls">
+        <label>{{ $landing.pickSeries }}</label>
+        <div class="segmented" id="series-picker" role="group" aria-label="{{ $landing.pickSeries }}">
+          <button type="button" data-series="E" aria-pressed="false">{{ $landing.seriesE }}</button>
+          <button type="button" class="active" data-series="S" aria-pressed="true">{{ $landing.seriesS }}</button>
+          <button type="button" data-series="P" aria-pressed="false">{{ $landing.seriesP }}</button>
+        </div>
+        <label>{{ $landing.pickChannels }}</label>
+        <div class="segmented" id="channel-picker" role="group" aria-label="{{ $landing.pickChannels }}">
+          <button type="button" data-channel="03" aria-pressed="false">{{ $landing.ch3 }}</button>
+          <button type="button" data-channel="04" aria-pressed="false">{{ $landing.ch4 }}</button>
+          <button type="button" class="active" data-channel="05" aria-pressed="true">{{ $landing.ch5 }}</button>
+          <button type="button" data-channel="06" aria-pressed="false">{{ $landing.ch6 }}</button>
+        </div>
+        <label>{{ $landing.pickScreen }}</label>
+        <div class="segmented" id="screen-picker" role="group" aria-label="{{ $landing.pickScreen }}">
+          <button type="button" class="active" data-screen="07" aria-pressed="true">{{ $common.standardScreen }}</button>
+          <button type="button" data-screen="10" aria-pressed="false">{{ $common.customScreen }}</button>
+        </div>
+      </div>
+      <div class="model-result" aria-live="polite">
+        <small>{{ $chrome.orderCode }}</small>
+        <strong id="model-code" class="ltr" dir="ltr">PKYDrip-S05</strong>
+        <p id="model-summary">{{ replace $landing.summaryS "{channel}" "5" }}</p>
+        <span id="model-screen">{{ $common.standardScreen }}</span>
+        <span>{{ $chrome.configNote }}</span>
+        <a class="button" id="model-link" href="{{ printf "%spkydrip-s05/" $familyURL }}">{{ $chrome.viewDetails }}</a>
+      </div>
+    </div>
+
+    <div class="detail-stack">
+      <article class="product-detail" id="e-detail">
+        <div class="product-photo photo-placeholder" data-photo="assets/pkydrip-e-series.webp"><div><span class="photo-label">{{ $landing.ePhoto }}</span><strong>{{ $landing.ePhotoHint }}</strong><small>{{ $landing.ePhotoSize }}</small></div></div>
+        <div class="product-copy">
+          <span class="tag ltr" dir="ltr">{{ $landing.eModels }}</span>
+          <h3>{{ $landing.eName }}</h3>
+          <p class="intro">{{ $landing.eIntro }}</p>
+          <dl>
+            <div><dt>{{ $landing.dlDosing }}</dt><dd>{{ $landing.dlDosingE }}</dd></div>
+            <div><dt>{{ $landing.dlChannels }}</dt><dd>{{ $landing.dlChannelsVal }}</dd></div>
+            <div><dt>{{ $landing.dlZones }}</dt><dd>{{ $landing.dlZonesVal }}</dd></div>
+            <div><dt>{{ $landing.dlCapability }}</dt><dd>{{ $landing.dlCapabilityE }}</dd></div>
+            <div><dt>{{ $landing.dlComm }}</dt><dd>{{ $landing.dlCommE }}</dd></div>
+            <div><dt>{{ $landing.dlUse }}</dt><dd>{{ $landing.dlUseE }}</dd></div>
+          </dl>
+          <p><a class="button button-ghost" href="{{ printf "%spkydrip-e05/" $familyURL }}">PKYDrip-E05 · {{ $chrome.viewDetails }}</a></p>
+        </div>
+      </article>
+      <article class="product-detail reverse" id="s-detail">
+        <div class="product-photo photo-placeholder" data-photo="assets/pkydrip-s-series.webp"><div><span class="photo-label">{{ $landing.sPhoto }}</span><strong>{{ $landing.sPhotoHint }}</strong><small>{{ $landing.sPhotoSize }}</small></div></div>
+        <div class="product-copy">
+          <span class="tag ltr" dir="ltr">{{ $landing.sModels }}</span>
+          <h3>{{ $landing.sName }}</h3>
+          <p class="intro">{{ $landing.sIntro }}</p>
+          <dl>
+            <div><dt>{{ $landing.dlDosing }}</dt><dd>{{ $landing.dlDosingS }}</dd></div>
+            <div><dt>{{ $landing.dlChannels }}</dt><dd>{{ $landing.dlChannelsVal }}</dd></div>
+            <div><dt>{{ $landing.dlUi }}</dt><dd>{{ $landing.dlUiS }}</dd></div>
+            <div><dt>{{ $landing.dlCore }}</dt><dd>{{ $landing.dlCoreS }}</dd></div>
+            <div><dt>{{ $landing.dlSensor }}</dt><dd>{{ $landing.dlSensorS }}</dd></div>
+            <div><dt>{{ $landing.dlUse }}</dt><dd>{{ $landing.dlUseS }}</dd></div>
+          </dl>
+          <p><a class="button button-ghost" href="{{ printf "%spkydrip-s05/" $familyURL }}">PKYDrip-S05 · {{ $chrome.viewDetails }}</a></p>
+        </div>
+      </article>
+      <article class="product-detail" id="p-detail">
+        <div class="product-photo photo-placeholder" data-photo="assets/pkydrip-p-series.webp"><div><span class="photo-label">{{ $landing.pPhoto }}</span><strong>{{ $landing.pPhotoHint }}</strong><small>{{ $landing.pPhotoSize }}</small></div></div>
+        <div class="product-copy">
+          <span class="tag ltr" dir="ltr">{{ $landing.pModels }}</span>
+          <h3>{{ $landing.pName }}</h3>
+          <p class="intro">{{ $landing.pIntro }}</p>
+          <dl>
+            <div><dt>{{ $landing.dlDosing }}</dt><dd>{{ $landing.dlDosingP }}</dd></div>
+            <div><dt>{{ $landing.dlChannels }}</dt><dd>{{ $landing.dlChannelsVal }}</dd></div>
+            <div><dt>{{ $landing.dlUi }}</dt><dd>{{ $landing.dlUiP }}</dd></div>
+            <div><dt>{{ $landing.dlData }}</dt><dd>{{ $landing.dlDataP }}</dd></div>
+            <div><dt>{{ $landing.dlApi }}</dt><dd>{{ $landing.dlApiP }}</dd></div>
+            <div><dt>{{ $landing.dlExpand }}</dt><dd>{{ $landing.dlExpandP }}</dd></div>
+          </dl>
+          <p><a class="button button-ghost" href="{{ printf "%spkydrip-p05/" $familyURL }}">PKYDrip-P05 · {{ $chrome.viewDetails }}</a></p>
+        </div>
+      </article>
+      <article class="product-detail reverse" id="oem-detail">
+        <div class="product-photo photo-placeholder" data-photo="assets/pkydrip-oem.webp"><div><span class="photo-label">{{ $landing.oemPhoto }}</span><strong>{{ $landing.oemPhotoHint }}</strong><small>{{ $landing.oemPhotoSize }}</small></div></div>
+        <div class="product-copy">
+          <span class="tag">{{ $landing.oemModels }}</span>
+          <h3>{{ $landing.oemName }}</h3>
+          <p class="intro">{{ $landing.oemIntro }}</p>
+          <dl>
+            <div><dt>{{ $landing.dlMoq }}</dt><dd>{{ $landing.dlMoqVal }}</dd></div>
+            <div><dt>{{ $landing.dlPlatform }}</dt><dd>{{ $landing.dlPlatformVal }}</dd></div>
+            <div><dt>{{ $landing.dlBrand }}</dt><dd>{{ $landing.dlBrandVal }}</dd></div>
+            <div><dt>{{ $landing.dlSoftware }}</dt><dd>{{ $landing.dlSoftwareVal }}</dd></div>
+            <div><dt>{{ $landing.dlProtocol }}</dt><dd>{{ $landing.dlProtocolVal }}</dd></div>
+            <div><dt>{{ $landing.dlDelivery }}</dt><dd>{{ $landing.dlDeliveryVal }}</dd></div>
+          </dl>
+          <p class="intro">{{ $chrome.oemNote }}</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-tint technical-reference" id="technical-reference">
+    <div class="section-shell">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">{{ $landing.techEyebrow }}</p><h2>{{ $landing.techTitle }}</h2></div>
+        <p>{{ $landing.techLead }}</p>
+      </div>
+      <div class="comparison-wrap">
+        <table class="comparison-table spec-table">
+          <thead><tr><th>{{ $landing.techItem }}</th><th>{{ $landing.compareColE }}</th><th>{{ $landing.compareColS }}</th><th>{{ $landing.compareColP }}</th></tr></thead>
+          <tbody>
+            <tr><th>{{ $landing.techBase }}</th><td>{{ $landing.techBaseE }}</td><td>{{ $landing.techBaseS }}</td><td>{{ $landing.techBaseP }}</td></tr>
+            <tr><th>{{ $landing.techChannels }}</th><td colspan="3">{{ $landing.techChannelsVal }}</td></tr>
+            <tr><th>{{ $landing.techHydraulic }}</th><td colspan="3">{{ $landing.techHydraulicVal }}</td></tr>
+            <tr><th>{{ $landing.techFlow }}</th><td colspan="3">{{ $landing.techFlowVal }}</td></tr>
+            <tr><th>{{ $landing.techDose }}</th><td colspan="3">{{ $landing.techDoseVal }}</td></tr>
+            <tr><th>{{ $landing.techPressure }}</th><td colspan="3">{{ $landing.techPressureVal }}</td></tr>
+            <tr><th>{{ $landing.techTarget }}</th><td>{{ $landing.techTargetE }}</td><td>{{ $landing.techTargetS }}</td><td>{{ $landing.techTargetP }}</td></tr>
+            <tr><th>{{ $landing.techPh }}</th><td>{{ $landing.techPhE }}</td><td>{{ $landing.techPhS }}</td><td>{{ $landing.techPhP }}</td></tr>
+            <tr><th>{{ $landing.techSensor }}</th><td>{{ $landing.techSensorE }}</td><td>{{ $landing.techSensorS }}</td><td>{{ $landing.techSensorP }}</td></tr>
+            <tr><th>{{ $landing.techScreen }}</th><td>{{ $landing.techScreenE }}</td><td>{{ $landing.techScreenSP }}</td><td>{{ $landing.techScreenSP }}</td></tr>
+            <tr><th>{{ $landing.techPump }}</th><td>{{ $landing.techPumpE }}</td><td>{{ $landing.techPumpS }}</td><td>{{ $landing.techPumpP }}</td></tr>
+            <tr><th>{{ $landing.techZones }}</th><td colspan="3">{{ $landing.techZonesVal }}</td></tr>
+            <tr><th>{{ $landing.techComm }}</th><td>{{ $landing.techCommE }}</td><td>{{ $landing.techCommS }}</td><td>{{ $landing.techCommP }}</td></tr>
+            <tr><th>{{ $landing.techPower }}</th><td colspan="3">{{ $landing.techPowerVal }}</td></tr>
+            <tr><th>{{ $landing.techProtect }}</th><td colspan="3">{{ $landing.techProtectVal }}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">{{ $landing.techNote }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="contact">
+    <div class="cta-card">
+      <div>
+        <p class="eyebrow">{{ $landing.selectEyebrow }}</p>
+        <h2>{{ $landing.selectTitle }}</h2>
+        <p>{{ $landing.selectLead }}</p>
+      </div>
+      <a class="button" href="{{ `/contact/` | relURL }}">{{ $chrome.cta }}</a>
+    </div>
+    <p class="disclaimer">{{ $landing.disclaimer }}</p>
+  </section>
+</main>
+{{ partial "product/fertigation-footer.html" . }}
+{{ partial "product/fertigation-schema.html" . }}
+</body>
+</html>
