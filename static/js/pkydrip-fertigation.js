@@ -110,4 +110,47 @@
 
   var year = document.querySelector("#year");
   if (year) year.textContent = new Date().getFullYear();
+
+  function photoUrl(path) {
+    if (!path) return "";
+    if (/^https?:\/\//i.test(path) || path.charAt(0) === "/") return path;
+    return "/" + path.replace(/^\.\//, "");
+  }
+
+  function photoFallbacks(path) {
+    var list = [path];
+    var dir = "images/pkydrip-fertigation/";
+    var match = String(path || "").match(/pkydrip-([esp])(\d{2})-(main|channels|scene)\.webp/i);
+    if (!match) return list;
+    var series = match[1].toLowerCase();
+    var kind = match[3].toLowerCase();
+    if (kind === "main") {
+      if (series === "s") {
+        list.push(dir + "pkydrip-s1.webp");
+      } else {
+        list.push(dir + "pkydrip-" + series + "-series.webp");
+      }
+    }
+    return list;
+  }
+
+  function applyPhoto(el, src) {
+    el.classList.add("has-photo");
+    el.style.backgroundImage = "url(\"" + src + "\")";
+    el.setAttribute("role", "img");
+  }
+
+  document.querySelectorAll("[data-photo]").forEach(function (el) {
+    var candidates = photoFallbacks(el.getAttribute("data-photo"));
+    var index = 0;
+    function tryNext() {
+      if (index >= candidates.length) return;
+      var src = photoUrl(candidates[index++]);
+      var img = new Image();
+      img.onload = function () { applyPhoto(el, src); };
+      img.onerror = tryNext;
+      img.src = src;
+    }
+    tryNext();
+  });
 })();

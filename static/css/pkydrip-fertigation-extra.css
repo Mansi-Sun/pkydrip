@@ -294,7 +294,39 @@ html[dir="rtl"] .footer-brand { transform-origin: right center; }
   .related-grid { grid-template-columns: 1fr; }
   .pkydrip-fertigation-page .site-header nav:not(.lang-switcher) { display: none; }
   .pkydrip-fertigation-page .lang-switcher { font-size: 11px; gap: 4px; }
+  .product-photo-pair,
+  .product-detail.reverse .product-photo-pair {
+    order: 0;
+  }
 }
+.product-photo-pair {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-height: 485px;
+  order: 2;
+}
+.product-detail.reverse .product-photo-pair {
+  order: 2;
+}
+.product-photo-pair .product-photo {
+  min-height: 280px;
+  order: 0;
+}
+.photo-placeholder.has-photo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.photo-placeholder.has-photo:before,
+.photo-placeholder.has-photo:after,
+.hero-visual.has-photo:after {
+  display: none;
+}
+.photo-placeholder.has-photo > div {
+  display: none;
+}
+
 @media (max-width: 390px) {
   .detail-hero h1 { font-size: 30px; }
   .detail-photos .photo-main { min-height: 240px; }
