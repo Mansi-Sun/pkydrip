@@ -23,6 +23,10 @@ node_modules/
 # --- Private local folder (existing) -----------------------------------------
 private/
 
+# --- Private DB imports & analysis (never commit) ----------------------------
+data/import-data/
+data/private-analysis/
+
 # --- Internal planning & audits (not website content) --------------------------
 docs/internal/
 migration/

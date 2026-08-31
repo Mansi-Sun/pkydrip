@@ -7,76 +7,146 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Über uns"
-url = "about/"
+name = "Systeme"
+url = "system/irrigation-control-system/"
 weight = 2
 
 [[main]]
-name = "Projekt"
-url = "project/"
+parent = "Systeme"
+name = "Bewässerungssteuerung"
+url = "system/irrigation-control-system/"
+weight = 1
+
+[[main]]
+parent = "Systeme"
+name = "Fertigation"
+url = "system/fertigation-system/"
+weight = 2
+
+[[main]]
+parent = "Systeme"
+name = "Drahtlose Bewässerung"
+url = "system/wireless-irrigation-system/"
 weight = 3
 
 [[main]]
-name = "Blog"
-url = "blog/"
+parent = "Systeme"
+name = "Klimasteuerung"
+url = "system/climate-control-system/"
 weight = 4
 
 [[main]]
+name = "Lösungen"
+url = "solution/"
+weight = 3
+
+[[main]]
+parent = "Lösungen"
+name = "Gewächshausbewässerung"
+url = "solution/greenhouse-irrigation/"
+weight = 1
+
+[[main]]
+parent = "Lösungen"
+name = "Obstbewässerung"
+url = "solution/orchard-irrigation/"
+weight = 2
+
+[[main]]
+parent = "Lösungen"
+name = "Freilandbewässerung"
+url = "solution/open-field-irrigation/"
+weight = 3
+
+[[main]]
+parent = "Lösungen"
+name = "Hydroponik / erdelos"
+url = "solution/hydroponic-irrigation/"
+weight = 4
+
+[[main]]
+parent = "Lösungen"
+name = "Bewässerungs-Modernisierung"
+url = "solution/irrigation-retrofit-upgrade/"
 weight = 5
-name = "Mehr"
-hasChildren = true
 
-  [[main]]
-  parent = "Mehr"
-  name = "Dienstleistung"
-  url = "service/"
-  weight = 1
+[[main]]
+name = "Produkte"
+url = "product/"
+weight = 4
 
-  [[main]]
-  parent = "Mehr"
-  name = "Preise"
-  url = "pricing/"
-  weight = 2
+[[main]]
+parent = "Produkte"
+name = "Produktverzeichnis"
+url = "product/"
+weight = 1
 
-  [[main]]
-  parent = "Mehr"
-  name = "Häufige Fragen"
-  url = "faq/"
-  weight = 3
-  
+[[main]]
+parent = "Produkte"
+name = "Fertigationsserie"
+url = "products/fertigation/"
+weight = 2
+
+[[main]]
+parent = "Produkte"
+name = "Gewächshaus-Klimasteuerung"
+url = "products/greenhouse-climate-control/"
+weight = 3
+
+[[main]]
+name = "Ressourcen"
+weight = 5
+
+[[main]]
+parent = "Ressourcen"
+name = "Docs"
+url = "docs/"
+weight = 1
+
+[[main]]
+parent = "Ressourcen"
+name = "Werkzeuge"
+url = "tools/"
+weight = 2
+
+[[main]]
+parent = "Ressourcen"
+name = "Downloads"
+url = "downloads/"
+weight = 3
+
 [[main]]
 name = "Kontakt"
 url = "contact/"
 weight = 6
-
 
 # footer menu
 [[footer]]
 name = "Über uns"
 url = "about/"
+weight = 1
+
+[[footer]]
+name = "Lösungen"
+url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Projekt"
-url = "project/"
+name = "Produkte"
+url = "product/"
 weight = 3
 
 [[footer]]
-name = "Dienstleistung"
-url = "service/"
+name = "Downloads"
+url = "downloads/"
 weight = 4
 
 [[footer]]
-name = "Preise"
-url = "pricing/"
-weight = 5
-
-[[footer]]
-name = "Häufige Fragen"
+name = "FAQ"
 url = "faq/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "Kontakt"
 url = "contact/"
-weight = 7
+weight = 6

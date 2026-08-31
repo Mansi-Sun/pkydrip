@@ -1,0 +1,1314 @@
+{
+  "chrome": {
+    "en": {
+      "navProducts": "Products",
+      "navOverview": "System overview",
+      "navSensors": "Sensors",
+      "navControls": "Controls",
+      "navSpecs": "Specifications",
+      "cta": "Get configuration advice",
+      "footerCta": "Submit configuration request",
+      "whatsappCta": "WhatsApp us directly",
+      "langEn": "English",
+      "langZh": "简体中文",
+      "langAr": "العربية",
+      "footerTag": "Smart irrigation · Precise fertigation · System coordination",
+      "footerCopy": "PKYDrip. Product parameters are for preliminary selection.",
+      "viewDetails": "View product details",
+      "photoLabel": "Product photo",
+      "photoHint": "Place the climate control cabinet photo here",
+      "photoSize": "Recommended size: 1600 × 1200 px, 4:3"
+    },
+    "zh-CN": {
+      "navProducts": "产品",
+      "navOverview": "系统概览",
+      "navSensors": "传感器",
+      "navControls": "设备控制",
+      "navSpecs": "技术规格",
+      "cta": "获取配置建议",
+      "footerCta": "提交配置申请",
+      "whatsappCta": "直接 WhatsApp 沟通",
+      "langEn": "English",
+      "langZh": "简体中文",
+      "langAr": "العربية",
+      "footerTag": "智慧灌溉 · 精准水肥 · 系统协同",
+      "footerCopy": "PKYDrip。页面参数仅供初步选型。",
+      "viewDetails": "查看产品详情",
+      "photoLabel": "产品照片",
+      "photoHint": "在此放置环控柜产品照片",
+      "photoSize": "建议尺寸：1600 × 1200 px，4:3"
+    },
+    "ar": {
+      "navProducts": "المنتجات",
+      "navOverview": "نظرة عامة على النظام",
+      "navSensors": "المستشعرات",
+      "navControls": "التحكم",
+      "navSpecs": "المواصفات",
+      "cta": "اطلب توصية بالتجهيزة",
+      "footerCta": "قدّم طلب التجهيزة",
+      "whatsappCta": "تواصل عبر واتساب مباشرة",
+      "langEn": "English",
+      "langZh": "简体中文",
+      "langAr": "العربية",
+      "footerTag": "ري ذكي · تسميد دقيق · تنسيق الأنظمة",
+      "footerCopy": "PKYDrip. معلمات الصفحة للاختيار الأولي.",
+      "viewDetails": "عرض تفاصيل المنتج",
+      "photoLabel": "صورة المنتج",
+      "photoHint": "ضع هنا صورة خزانة التحكم المناخي",
+      "photoSize": "الحجم المقترح: 1600 × 1200 بكسل، 4:3"
+    }
+  },
+  "page": {
+    "en": {
+      "title": "Greenhouse Climate Control System | PKYDrip",
+      "description": "Outdoor weather station plus automated control of wet walls, exhaust fans, shade curtains and roll-up ventilation. Condition-based logic, full event logging, MQTT and Modbus integration.",
+      "eyebrow": "PKYDRIP GREENHOUSE CLIMATE CONTROL",
+      "heroTitle": "From outdoor conditions\nto controlled growing environment",
+      "heroLead": "One climate control platform for outdoor weather monitoring and greenhouse equipment automation. Controls wet walls, exhaust fans, circulation fans, shade curtains and roll-up ventilation from a single Android industrial controller — with condition-based logic and full event logging.",
+      "heroOverview": "System overview",
+      "heroSpecs": "View specifications",
+      "stat1": "6",
+      "stat1Label": "monitored parameters",
+      "stat2": "64",
+      "stat2Label": "relay output channels",
+      "stat3": "S / P",
+      "stat3Label": "fertigation integration",
+      "trust1": "Outdoor weather station",
+      "trust2": "Wet wall and fan control",
+      "trust3": "Shade curtain automation",
+      "trust4": "Condition-based logic",
+      "trust5": "MQTT and Modbus integration",
+      "overviewEyebrow": "SYSTEM OVERVIEW",
+      "overviewTitle": "Monitor outdoor conditions. Control the greenhouse environment.",
+      "overviewP1": "The PKYDrip Greenhouse Climate Control System connects an outdoor weather station to the greenhouse controller, giving the system real data on air temperature, humidity, wind speed, wind direction, light intensity and solar radiation — before those conditions reach the crop.",
+      "overviewP2": "Inside the greenhouse, temperature and humidity sensors at canopy level feed the same controller. When any measurement crosses a user-defined threshold, the system responds: wet walls activate, fan banks stage on, shade curtains deploy, roll-up ventilation opens or closes. Every action is logged with the sensor reading and trigger condition that caused it.",
+      "overviewP3": "The system is built on the same Android industrial controller platform as the PKYDrip fertigation system. On S-series and P-series installations, both systems run on the same hardware with separate dedicated interfaces — climate operators see climate data; fertigation operators see fertigation data. The two interfaces do not share screens.",
+      "cap1Title": "Outdoor Weather Station",
+      "cap1Body": "Six-parameter monitoring — temperature, humidity, wind direction, wind speed, light intensity, solar radiation.",
+      "cap2Title": "Greenhouse Sensing",
+      "cap2Body": "Canopy-level temperature and humidity sensors via RS485 Modbus.",
+      "cap3Title": "Wet Wall and Fan Control",
+      "cap3Body": "Wet walls, water pumps, multiple exhaust fan banks and circulation fans — staged activation by condition.",
+      "cap4Title": "Shade and Ventilation",
+      "cap4Body": "Shade curtains and roll-up film ventilation, controlled by light intensity or temperature setpoints.",
+      "cap5Title": "Condition-Based Logic",
+      "cap5Body": "AND/OR conditions, time windows and sensor averaging prevent false triggering from transient readings.",
+      "cap6Title": "Full Event Logging",
+      "cap6Body": "Every action recorded: timestamp, trigger condition, sensor reading, equipment state, run duration.",
+      "sensorsEyebrow": "SENSING",
+      "sensorsTitle": "What the system monitors",
+      "sensorsLead": "The outdoor station provides advance warning. If wind speed rises sharply or solar radiation surges, the system prepares equipment before the greenhouse interior is affected.",
+      "outdoorTitle": "Outdoor Weather Station",
+      "indoorTitle": "Greenhouse Interior",
+      "colParam": "Parameter",
+      "colDetail": "Detail",
+      "colEquipment": "Equipment",
+      "colMethod": "Control Method",
+      "colIf": "If this condition",
+      "colThen": "Then this action",
+      "sensorNote": "Sensor quantity and placement are confirmed at project configuration. Additional sensor nodes can be added without changing the controller hardware.",
+      "outdoorRows": [
+        [
+          "Air temperature",
+          "Outdoor temperature probe, RS485"
+        ],
+        [
+          "Air humidity",
+          "Outdoor relative humidity sensor, RS485"
+        ],
+        [
+          "Wind direction",
+          "Wind vane, 16-point compass resolution"
+        ],
+        [
+          "Wind speed",
+          "Anemometer, 0–60 m/s range"
+        ],
+        [
+          "Light intensity",
+          "Pyranometer / lux sensor"
+        ],
+        [
+          "Solar radiation",
+          "Solar radiation sensor, W/m²"
+        ],
+        [
+          "Polling interval",
+          "Configurable, default 10 seconds"
+        ]
+      ],
+      "indoorRows": [
+        [
+          "Air temperature",
+          "Multiple probes, RS485 Modbus RTU"
+        ],
+        [
+          "Air humidity",
+          "Capacitive RH sensors, RS485 Modbus RTU"
+        ],
+        [
+          "Sensor placement",
+          "Canopy level, user-defined quantity"
+        ],
+        [
+          "Sensor addressing",
+          "Modbus device address configurable"
+        ]
+      ],
+      "controlsEyebrow": "EQUIPMENT CONTROL",
+      "controlsTitle": "What the system manages",
+      "coolingTitle": "Cooling and Ventilation",
+      "coolingRows": [
+        [
+          "Wet walls (cooling pads)",
+          "On/off by temperature setpoint; pump interlock enforced"
+        ],
+        [
+          "Wet wall water pumps",
+          "Sequenced with wet wall activation; dry-run protection"
+        ],
+        [
+          "Exhaust fans",
+          "Multiple banks; staged activation by temperature threshold"
+        ],
+        [
+          "Circulation fans",
+          "Independent scheduling and condition-based control"
+        ]
+      ],
+      "shadeTitle": "Shading and Ventilation",
+      "shadeRows": [
+        [
+          "Shade curtains",
+          "Deploy/retract by outdoor light intensity setpoint"
+        ],
+        [
+          "Roll-up film ventilation",
+          "Open/close by greenhouse temperature or manual command"
+        ]
+      ],
+      "seqTitle": "Sequential startup — each group ≤ 2 kW",
+      "seqBody": "All equipment groups start in sequence, not simultaneously. Each group is limited to ≤ 2 kW inrush load, protecting generators, transformers and grid connections from simultaneous load spikes. Inter-group delay is configurable from 1 to 60 seconds. Group composition and sequence are confirmed at project configuration.",
+      "logicTitle": "Condition-Based Control Logic",
+      "logicP1": "Every piece of equipment is controlled by user-defined conditions, not fixed timers. Operators set the rules. The system executes, logs and repeats them consistently across every cycle.",
+      "logicP2": "Conditions can combine AND/OR logic, time windows and sensor averaging to prevent false triggering from transient spikes in a single reading.",
+      "logicH4": "Example conditions",
+      "logicRows": [
+        [
+          "Greenhouse temperature > 28°C",
+          "Activate wet wall pump → start exhaust fan bank 1"
+        ],
+        [
+          "Greenhouse temperature > 32°C",
+          "Start exhaust fan bank 2"
+        ],
+        [
+          "Outdoor light intensity > 60,000 lux",
+          "Deploy shade curtain to 70%"
+        ],
+        [
+          "Wind speed > 8 m/s",
+          "Close roll-up ventilation"
+        ],
+        [
+          "Greenhouse temperature < 18°C (night window)",
+          "Close all ventilation"
+        ]
+      ],
+      "intEyebrow": "INTEGRATION",
+      "intTitle": "Connects to the fertigation system and your platform",
+      "int1Title": "Same Hardware, Separate Interfaces",
+      "int1Body": "On S-series and P-series installations, the climate control and fertigation systems run on the same Android industrial controller. Each has its own dedicated interface module. Operators see only the data relevant to their task.",
+      "int2Title": "Modbus Register Map",
+      "int2Body": "All sensor readings and equipment states are accessible via RS485 Modbus RTU/TCP. Connect to any SCADA, PLC or third-party monitoring platform. Register map available to qualified partners.",
+      "int3Title": "MQTT Telemetry",
+      "int3Body": "Push outdoor weather data, greenhouse readings and all equipment events to ThingsBoard, AWS IoT, Azure IoT Hub or any MQTT-compatible broker.",
+      "int4Title": "White-Label UI",
+      "int4Body": "Android interface fully rebrandable — logo, color scheme and product name. Available via OEM agreement. Minimum order: 5 units.",
+      "sBadge": "S · STANDARD",
+      "sName": "PKYDrip-GCC-S — Standard Climate Control",
+      "sBody": "The primary machine for commercial greenhouse climate management. An integrated controller with outdoor weather station, greenhouse sensor inputs, and control outputs for wet walls, fans, curtains and ventilation — all in one cabinet.",
+      "sCta": "PKYDrip-GCC-S · View product details",
+      "sRows": [
+        [
+          "Outdoor weather station",
+          "Temperature, humidity, wind direction, wind speed, light, solar radiation"
+        ],
+        [
+          "Greenhouse sensors",
+          "Temperature + humidity, RS485 Modbus, quantity per project"
+        ],
+        [
+          "Cooling control",
+          "Wet walls + pumps + exhaust fan banks (staged)"
+        ],
+        [
+          "Ventilation control",
+          "Circulation fans, roll-up film"
+        ],
+        [
+          "Shade control",
+          "Curtain deploy/retract by light setpoint"
+        ],
+        [
+          "Output relay channels",
+          "Up to 32 (expandable)"
+        ],
+        [
+          "Contactor type",
+          "Schneider Electric D-type (LC1D series)"
+        ],
+        [
+          "Sequential startup",
+          "Each group ≤ 2 kW; delay 1–60 sec configurable"
+        ],
+        [
+          "HMI",
+          "7\" Android industrial touchscreen"
+        ],
+        [
+          "Communication",
+          "RS485 Modbus RTU/TCP; remote optional"
+        ],
+        [
+          "Enclosure",
+          "IP54, S / M sizes"
+        ],
+        [
+          "Typical use",
+          "Standard commercial greenhouses, rose houses, tunnel farms"
+        ]
+      ],
+      "pBadge": "P · PROFESSIONAL",
+      "pName": "PKYDrip-GCC-P — Professional Climate Control",
+      "pBody": "For high-value crops and professional growing operations. Adds recipe management, historical trend logging, alarm history and full system integration via MQTT, API and Modbus — including ThingsBoard and third-party farm management platforms.",
+      "pCta": "PKYDrip-GCC-P · View product details",
+      "pRows": [
+        [
+          "Outdoor weather station",
+          "Full 6-parameter station (same as S)"
+        ],
+        [
+          "Greenhouse sensors",
+          "Temperature + humidity + optional CO₂, RS485 Modbus"
+        ],
+        [
+          "Cooling control",
+          "Wet walls + pumps + exhaust fan banks (staged)"
+        ],
+        [
+          "Ventilation control",
+          "Circulation fans, roll-up film, heating system interface"
+        ],
+        [
+          "Shade control",
+          "Curtain deploy/retract; multi-stage setpoints"
+        ],
+        [
+          "Output relay channels",
+          "Up to 64 (expandable via intermediate relay)"
+        ],
+        [
+          "Contactor type",
+          "Schneider Electric D-type (LC1D series)"
+        ],
+        [
+          "Sequential startup",
+          "Each group ≤ 2 kW; delay 1–60 sec configurable"
+        ],
+        [
+          "HMI",
+          "7\" standard or 10\" customized Android touchscreen"
+        ],
+        [
+          "Communication",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/Ethernet"
+        ],
+        [
+          "Data logging",
+          "Climate events, equipment history, alarm log, trend charts"
+        ],
+        [
+          "Fertigation link",
+          "Integrated with GCC-S/P and fertigation P-series"
+        ],
+        [
+          "Enclosure",
+          "IP54, M / L / XL sizes"
+        ],
+        [
+          "Typical use",
+          "High-value flowers, cannabis, vertical farms, multi-zone complexes"
+        ]
+      ],
+      "oemBadge": "OEM",
+      "oemName": "OEM White-Label — Climate Control Platform",
+      "oemBody": "Distributors and equipment brands can form their own greenhouse climate control product on the S or P platform — spending time on market and channel development instead of repeating controller hardware development.",
+      "oemCta": "Apply for OEM cooperation",
+      "oemNote": "White-label versions may be based on S or P platforms. Minimum order quantity: 5 units. Brand and interface adaptation require engineering review and a signed technical agreement.",
+      "oemRows": [
+        [
+          "Minimum order",
+          "5 units"
+        ],
+        [
+          "Base platform",
+          "S or P series"
+        ],
+        [
+          "Brand adaptation",
+          "Nameplate, logo, color, packaging"
+        ],
+        [
+          "Software adaptation",
+          "Language, interface, accounts, cloud destination"
+        ],
+        [
+          "Communication links",
+          "Third-party integration by technical agreement"
+        ],
+        [
+          "Delivery basis",
+          "Prototype approval + signed technical agreement"
+        ]
+      ],
+      "specEyebrow": "PLANNED SPECIFICATION",
+      "specTitle": "Planning values for preliminary selection",
+      "specLead": "Use these figures for product planning and first-pass project selection. Final values are confirmed after prototype testing and production design freeze.",
+      "specCol0": "Parameter",
+      "specColS": "GCC-S Standard",
+      "specColP": "GCC-P Professional",
+      "specRows": [
+        [
+          "Base model",
+          "PKYDrip-GCC-S",
+          "PKYDrip-GCC-P"
+        ],
+        [
+          "Outdoor weather station",
+          "6 parameters (temp, humidity, wind dir/speed, light, solar radiation)",
+          "Same"
+        ],
+        [
+          "Greenhouse temp sensors",
+          "RS485 Modbus, qty per project",
+          "RS485 Modbus, qty per project; CO₂ optional"
+        ],
+        [
+          "Output relay channels",
+          "Up to 32",
+          "Up to 64 (expandable)"
+        ],
+        [
+          "Contactor type",
+          "Schneider Electric LC1D series",
+          "Schneider Electric LC1D series"
+        ],
+        [
+          "Sequential startup",
+          "Each group ≤ 2 kW; delay 1–60 sec",
+          "Each group ≤ 2 kW; delay 1–60 sec"
+        ],
+        [
+          "Controlled equipment",
+          "Wet walls, pumps, exhaust fans, circulation fans, curtains, roll-up ventilation",
+          "Same + heating system interface, CO₂ injection (optional)"
+        ],
+        [
+          "Condition logic",
+          "Temperature, humidity, light, wind, time window, AND/OR",
+          "Same + recipe-based scheduling"
+        ],
+        [
+          "Data logging",
+          "Equipment state + trigger condition",
+          "Full climate history, trend charts, alarm log"
+        ],
+        [
+          "HMI",
+          "7\" Android industrial touchscreen",
+          "7\" standard or 10\" customized"
+        ],
+        [
+          "Communication",
+          "RS485 Modbus RTU/TCP; remote optional",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/Ethernet/LoRa"
+        ],
+        [
+          "ThingsBoard / cloud",
+          "Optional",
+          "Supported"
+        ],
+        [
+          "Fertigation integration",
+          "Interface reserved",
+          "Integrated with fertigation P-series"
+        ],
+        [
+          "Power supply",
+          "AC 380V 3-phase / AC 220V single-phase (specify)",
+          "Same"
+        ],
+        [
+          "Enclosure rating",
+          "IP54",
+          "IP54"
+        ],
+        [
+          "Enclosure sizes",
+          "S / M",
+          "M / L / XL"
+        ],
+        [
+          "Operating temperature",
+          "-10°C to 55°C",
+          "-10°C to 55°C"
+        ],
+        [
+          "Dimensions",
+          "Confirmed per project configuration",
+          "Confirmed per project configuration"
+        ]
+      ],
+      "specNote": "Control targets are system-level targets, not the nominal accuracy of a single sensor. Sensor placement, cabling, calibration interval and local conditions all affect result. Final specifications follow the frozen production documents and the signed technical agreement.",
+      "ctaEyebrow": "PROJECT CONFIGURATION",
+      "ctaTitle": "Confirm the final system with a configuration sheet",
+      "ctaLead": "Page values are for first-pass selection. Before a firm order, PKYDrip confirms the model, bill of materials and technical agreement based on your site conditions.",
+      "disclaimer": "This page is a product-planning and sales page. Relay channel count, contactor ratings, enclosure dimensions, protection rating, sensor quantity, communication options and expansion capacity follow the frozen production documents and the signed technical agreement. Standardized model suffixes are confirmed per project configuration."
+    },
+    "zh-CN": {
+      "title": "温室环境控制系统 | PKYDrip",
+      "description": "室外气象站加湿帘、排风机、遮阳幕和卷膜通风自动控制。条件逻辑、完整事件记录，以及 MQTT 与 Modbus 集成。",
+      "eyebrow": "PKYDRIP 温室环境控制",
+      "heroTitle": "从室外气象条件，\n到可控的种植环境",
+      "heroLead": "一套环控平台，同时完成室外气象监测和温室设备自动化。用一台 Android 工控机控制湿帘、排风机、循环风机、遮阳幕和卷膜通风，带条件逻辑和完整事件记录。",
+      "heroOverview": "系统概览",
+      "heroSpecs": "查看规格",
+      "stat1": "6",
+      "stat1Label": "监测参数",
+      "stat2": "64",
+      "stat2Label": "继电器输出通道",
+      "stat3": "S / P",
+      "stat3Label": "与水肥系统集成",
+      "trust1": "室外气象站",
+      "trust2": "湿帘与风机控制",
+      "trust3": "遮阳幕自动化",
+      "trust4": "条件逻辑",
+      "trust5": "MQTT 与 Modbus 集成",
+      "overviewEyebrow": "SYSTEM OVERVIEW",
+      "overviewTitle": "监测室外条件，控制温室环境",
+      "overviewP1": "PKYDrip 温室环控系统把室外气象站接到温室控制器，在气温、湿度、风速、风向、光照和太阳辐射到达作物之前，系统已经拿到这些真实数据。",
+      "overviewP2": "温室内冠层温湿度传感器接入同一台控制器。任一测量越过用户设定阈值，系统即响应：湿帘启动、风机分组分级、遮阳幕展开、卷膜通风开闭。每一次动作都记录触发时的传感器读数和条件。",
+      "overviewP3": "系统与 PKYDrip 水肥机共用同一 Android 工控平台。在 S 系列和 P 系列项目中，两套系统跑在同一硬件上，但界面独立——环控人员只看环控数据，水肥人员只看水肥数据，屏幕互不共用。",
+      "cap1Title": "室外气象站",
+      "cap1Body": "六参数监测：温度、湿度、风向、风速、光照强度、太阳辐射。",
+      "cap2Title": "温室内传感",
+      "cap2Body": "冠层温湿度传感器，RS485 Modbus。",
+      "cap3Title": "湿帘与风机控制",
+      "cap3Body": "湿帘、水泵、多组排风机和循环风机，按条件分级启动。",
+      "cap4Title": "遮阳与通风",
+      "cap4Body": "遮阳幕和卷膜通风，按光照或温度设定控制。",
+      "cap5Title": "条件逻辑",
+      "cap5Body": "AND/OR 条件、时间窗口和传感器平均，避免瞬时读数误触发。",
+      "cap6Title": "完整事件记录",
+      "cap6Body": "每次动作记录时间戳、触发条件、传感器读数、设备状态和运行时长。",
+      "sensorsEyebrow": "SENSING",
+      "sensorsTitle": "系统监测什么",
+      "sensorsLead": "室外气象站提供提前量。风速骤升或辐射突增时，系统在温室内部受影响前先准备设备。",
+      "outdoorTitle": "室外气象站",
+      "indoorTitle": "温室内部",
+      "colParam": "参数",
+      "colDetail": "说明",
+      "colEquipment": "设备",
+      "colMethod": "控制方式",
+      "colIf": "若满足此条件",
+      "colThen": "则执行此动作",
+      "sensorNote": "传感器数量与安装位置按项目配置确认。增加传感节点无需更换控制器硬件。",
+      "outdoorRows": [
+        [
+          "空气温度",
+          "室外温度探头，RS485"
+        ],
+        [
+          "空气湿度",
+          "室外相对湿度传感器，RS485"
+        ],
+        [
+          "风向",
+          "风向标，16 方位"
+        ],
+        [
+          "风速",
+          "风速仪，0–60 m/s"
+        ],
+        [
+          "光照强度",
+          "辐射/照度传感器"
+        ],
+        [
+          "太阳辐射",
+          "太阳辐射传感器，W/m²"
+        ],
+        [
+          "轮询间隔",
+          "可配置，默认 10 秒"
+        ]
+      ],
+      "indoorRows": [
+        [
+          "空气温度",
+          "多探头，RS485 Modbus RTU"
+        ],
+        [
+          "空气湿度",
+          "电容式湿度传感器，RS485 Modbus RTU"
+        ],
+        [
+          "安装位置",
+          "冠层高度，数量按项目确定"
+        ],
+        [
+          "地址设定",
+          "Modbus 设备地址可配置"
+        ]
+      ],
+      "controlsEyebrow": "EQUIPMENT CONTROL",
+      "controlsTitle": "系统管理哪些设备",
+      "coolingTitle": "降温与通风",
+      "coolingRows": [
+        [
+          "湿帘（降温垫）",
+          "按温度设定开关；强制水泵联锁"
+        ],
+        [
+          "湿帘水泵",
+          "与湿帘联动顺序启动；干转保护"
+        ],
+        [
+          "排风机",
+          "多组风机；按温度阈值分级启动"
+        ],
+        [
+          "循环风机",
+          "独立时序与条件控制"
+        ]
+      ],
+      "shadeTitle": "遮阳与通风",
+      "shadeRows": [
+        [
+          "遮阳幕",
+          "按室外光照设定展开/收回"
+        ],
+        [
+          "卷膜通风",
+          "按温室内温度或手动指令开闭"
+        ]
+      ],
+      "seqTitle": "顺序启动 — 每组 ≤ 2 kW",
+      "seqBody": "所有设备组分时启动，不同时合闸。每组冲击负荷限制在 ≤ 2 kW，保护发电机、变压器和电网。组间延时 1–60 秒可配置。分组与顺序按项目配置确认。",
+      "logicTitle": "条件控制逻辑",
+      "logicP1": "每台设备由用户定义的条件控制，而不是固定定时。操作员设定规则，系统执行、记录并在每个周期中一致重复。",
+      "logicP2": "条件可组合 AND/OR、时间窗口和传感器平均，避免单次瞬时尖峰误触发。",
+      "logicH4": "条件示例",
+      "logicRows": [
+        [
+          "温室内温度 > 28°C",
+          "启动湿帘水泵 → 启动排风机组 1"
+        ],
+        [
+          "温室内温度 > 32°C",
+          "启动排风机组 2"
+        ],
+        [
+          "室外光照 > 60,000 lux",
+          "遮阳幕展开至 70%"
+        ],
+        [
+          "风速 > 8 m/s",
+          "关闭卷膜通风"
+        ],
+        [
+          "温室内温度 < 18°C（夜间窗口）",
+          "关闭全部通风"
+        ]
+      ],
+      "intEyebrow": "INTEGRATION",
+      "intTitle": "连接水肥系统与您的平台",
+      "int1Title": "同一硬件，独立界面",
+      "int1Body": "在 S 系列和 P 系列项目中，环控与水肥跑在同一 Android 工控机上，各自独立界面模块。操作员只看到与自己任务相关的数据。",
+      "int2Title": "Modbus 寄存器表",
+      "int2Body": "全部传感器读数和设备状态可通过 RS485 Modbus RTU/TCP 读取，接入 SCADA、PLC 或第三方监测平台。寄存器表向合格合作伙伴提供。",
+      "int3Title": "MQTT 遥测",
+      "int3Body": "把室外气象、温室内读数和全部设备事件推送到 ThingsBoard、AWS IoT、Azure IoT Hub 或任意 MQTT 代理。",
+      "int4Title": "白标界面",
+      "int4Body": "Android 界面可完整换标——Logo、配色和产品名。通过 OEM 协议提供，起订 5 台。",
+      "sBadge": "S · STANDARD",
+      "sName": "PKYDrip-GCC-S — 标准环控",
+      "sBody": "商业温室环控的主力机型。集成控制器、室外气象站、温室传感输入，以及湿帘、风机、幕布和通风输出，全部在一个控制柜内。",
+      "sCta": "PKYDrip-GCC-S · 查看产品详情",
+      "sRows": [
+        [
+          "室外气象站",
+          "温度、湿度、风向、风速、光照、太阳辐射"
+        ],
+        [
+          "温室传感器",
+          "温湿度，RS485 Modbus，数量按项目"
+        ],
+        [
+          "降温控制",
+          "湿帘 + 水泵 + 排风机组（分级）"
+        ],
+        [
+          "通风控制",
+          "循环风机、卷膜"
+        ],
+        [
+          "遮阳控制",
+          "按光照设定展开/收回"
+        ],
+        [
+          "继电器输出",
+          "最多 32 路（可扩展）"
+        ],
+        [
+          "接触器",
+          "施耐德电气 D 系列（LC1D）"
+        ],
+        [
+          "顺序启动",
+          "每组 ≤ 2 kW；延时 1–60 秒可配"
+        ],
+        [
+          "人机界面",
+          "7 英寸 Android 工业触摸屏"
+        ],
+        [
+          "通信",
+          "RS485 Modbus RTU/TCP；远程选配"
+        ],
+        [
+          "防护",
+          "IP54，S / M 柜型"
+        ],
+        [
+          "典型用途",
+          "标准商业温室、玫瑰温室、拱棚"
+        ]
+      ],
+      "pBadge": "P · PROFESSIONAL",
+      "pName": "PKYDrip-GCC-P — 专业环控",
+      "pBody": "面向高价值作物和专业种植。增加配方管理、历史趋势、报警记录，以及 MQTT、API 和 Modbus 全系统集成，含 ThingsBoard 和第三方农场管理平台。",
+      "pCta": "PKYDrip-GCC-P · 查看产品详情",
+      "pRows": [
+        [
+          "室外气象站",
+          "完整六参数（与 S 相同）"
+        ],
+        [
+          "温室传感器",
+          "温湿度 + 可选 CO₂，RS485 Modbus"
+        ],
+        [
+          "降温控制",
+          "湿帘 + 水泵 + 排风机组（分级）"
+        ],
+        [
+          "通风控制",
+          "循环风机、卷膜、加热系统接口"
+        ],
+        [
+          "遮阳控制",
+          "展开/收回；多级设定"
+        ],
+        [
+          "继电器输出",
+          "最多 64 路（经中间继电器扩展）"
+        ],
+        [
+          "接触器",
+          "施耐德电气 D 系列（LC1D）"
+        ],
+        [
+          "顺序启动",
+          "每组 ≤ 2 kW；延时 1–60 秒可配"
+        ],
+        [
+          "人机界面",
+          "7 英寸标准或 10 英寸定制 Android 屏"
+        ],
+        [
+          "通信",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/以太网"
+        ],
+        [
+          "数据记录",
+          "气候事件、设备历史、报警、趋势图"
+        ],
+        [
+          "水肥联动",
+          "可与 GCC-S/P 及水肥 P 系列集成"
+        ],
+        [
+          "防护",
+          "IP54，M / L / XL 柜型"
+        ],
+        [
+          "典型用途",
+          "高价值花卉、药用作物、垂直农场、多区园区"
+        ]
+      ],
+      "oemBadge": "OEM",
+      "oemName": "OEM 白标 — 环控平台",
+      "oemBody": "经销商和设备品牌可在 S 或 P 平台上形成自有温室环控产品，把时间花在市场和渠道，而不是重复开发控制器硬件。",
+      "oemCta": "申请 OEM 合作",
+      "oemNote": "白标版本可基于 S 或 P 平台。起订 5 台。品牌与界面适配需工程评审并签署技术协议。",
+      "oemRows": [
+        [
+          "起订量",
+          "5 台"
+        ],
+        [
+          "基础平台",
+          "S 或 P 系列"
+        ],
+        [
+          "品牌适配",
+          "铭牌、Logo、颜色、包装"
+        ],
+        [
+          "软件适配",
+          "语言、界面、账户、云端目标"
+        ],
+        [
+          "通信对接",
+          "第三方集成按技术协议"
+        ],
+        [
+          "交付依据",
+          "样机确认 + 已签署技术协议"
+        ]
+      ],
+      "specEyebrow": "PLANNED SPECIFICATION",
+      "specTitle": "规划值，供初步选型",
+      "specLead": "这些数字用于产品规划和项目初选。最终值在样机测试和量产设计冻结后确认。",
+      "specCol0": "参数",
+      "specColS": "GCC-S 标准型",
+      "specColP": "GCC-P 专业型",
+      "specRows": [
+        [
+          "基础型号",
+          "PKYDrip-GCC-S",
+          "PKYDrip-GCC-P"
+        ],
+        [
+          "室外气象站",
+          "6 参数（温湿度、风向风速、光照、辐射）",
+          "相同"
+        ],
+        [
+          "温室温度传感器",
+          "RS485 Modbus，数量按项目",
+          "RS485 Modbus，数量按项目；CO₂ 可选"
+        ],
+        [
+          "继电器输出",
+          "最多 32 路",
+          "最多 64 路（可扩展）"
+        ],
+        [
+          "接触器",
+          "施耐德电气 LC1D 系列",
+          "施耐德电气 LC1D 系列"
+        ],
+        [
+          "顺序启动",
+          "每组 ≤ 2 kW；延时 1–60 秒",
+          "每组 ≤ 2 kW；延时 1–60 秒"
+        ],
+        [
+          "受控设备",
+          "湿帘、水泵、排风机、循环风机、幕布、卷膜",
+          "相同 + 加热接口、CO₂ 注入（可选）"
+        ],
+        [
+          "条件逻辑",
+          "温度、湿度、光照、风、时间窗口、AND/OR",
+          "相同 + 配方时序"
+        ],
+        [
+          "数据记录",
+          "设备状态 + 触发条件",
+          "完整气候历史、趋势、报警"
+        ],
+        [
+          "人机界面",
+          "7 英寸 Android 工业触摸屏",
+          "7 英寸标准或 10 英寸定制"
+        ],
+        [
+          "通信",
+          "RS485 Modbus RTU/TCP；远程选配",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/以太网/LoRa"
+        ],
+        [
+          "ThingsBoard / 云",
+          "选配",
+          "支持"
+        ],
+        [
+          "水肥集成",
+          "预留接口",
+          "与水肥 P 系列集成"
+        ],
+        [
+          "电源",
+          "AC 380V 三相 / AC 220V 单相（需指定）",
+          "相同"
+        ],
+        [
+          "防护等级",
+          "IP54",
+          "IP54"
+        ],
+        [
+          "柜型",
+          "S / M",
+          "M / L / XL"
+        ],
+        [
+          "工作温度",
+          "-10°C 至 55°C",
+          "-10°C 至 55°C"
+        ],
+        [
+          "外形尺寸",
+          "按项目配置确认",
+          "按项目配置确认"
+        ]
+      ],
+      "specNote": "控制目标是系统级目标，不等于单只传感器标称精度。安装位置、布线、标定周期和现场条件都会影响结果。最终规格以冻结的量产文件和已签署技术协议为准。",
+      "ctaEyebrow": "PROJECT CONFIGURATION",
+      "ctaTitle": "用配置表确认最终系统",
+      "ctaLead": "页面数值用于初选。正式订货前，PKYDrip 根据现场条件确认型号、物料清单和技术协议。",
+      "disclaimer": "本页为产品规划与销售页面。继电器路数、接触器规格、柜体尺寸、防护等级、传感器数量、通信选项和扩展能力，以冻结的量产文件和已签署技术协议为准。标准化型号后缀按项目配置确认。"
+    },
+    "ar": {
+      "title": "نظام التحكم بمناخ البيوت المحمية | PKYDrip",
+      "description": "محطة طقس خارجية مع التحكم الآلي بجدران الترطيب ومراوح العادم والستائر المظللة والتهوية باللف. منطق قائم على الشروط، وتسجيل كامل للأحداث، وتكامل MQTT وModbus.",
+      "eyebrow": "PKYDRIP GREENHOUSE CLIMATE CONTROL",
+      "heroTitle": "من الظروف الخارجية\nإلى بيئة زراعة محكومة",
+      "heroLead": "منصة واحدة لمراقبة الطقس الخارجي وأتمتة معدات البيت المحمي. تتحكم بجدران الترطيب ومراوح العادم ومراوح الدوران والستائر المظللة وتهوية اللف من وحدة تحكم أندرويد صناعية واحدة — مع منطق قائم على الشروط وتسجيل كامل للأحداث.",
+      "heroOverview": "نظرة عامة على النظام",
+      "heroSpecs": "عرض المواصفات",
+      "stat1": "6",
+      "stat1Label": "معاملات مراقبة",
+      "stat2": "64",
+      "stat2Label": "قنوات خرج مرحّل",
+      "stat3": "S / P",
+      "stat3Label": "تكامل التسميد",
+      "trust1": "محطة طقس خارجية",
+      "trust2": "التحكم بالجدار الرطب والمراوح",
+      "trust3": "أتمتة ستائر التظليل",
+      "trust4": "منطق قائم على الشروط",
+      "trust5": "تكامل MQTT وModbus",
+      "overviewEyebrow": "SYSTEM OVERVIEW",
+      "overviewTitle": "راقب الظروف الخارجية. تحكّم ببيئة البيت المحمي.",
+      "overviewP1": "يربط نظام PKYDrip للتحكم المناخي محطة طقس خارجية بوحدة التحكم، فيحصل النظام على بيانات حقيقية لدرجة الحرارة والرطوبة وسرعة واتجاه الرياح وكثافة الضوء والإشعاع الشمسي — قبل أن تصل تلك الظروف إلى المحصول.",
+      "overviewP2": "داخل البيت المحمي تغذي حساسات الحرارة والرطوبة عند مستوى المظلة النباتية الوحدة نفسها. عند تجاوز أي قياس لعتبة يحددها المستخدم يستجيب النظام: تشغيل الجدران الرطبة، وتشغيل مجموعات المراوح على مراحل، ونشر الستائر، وفتح أو إغلاق تهوية اللف. يُسجَّل كل إجراء مع قراءة الحساس وشرط التشغيل.",
+      "overviewP3": "يُبنى النظام على منصة وحدة التحكم الصناعية أندرويد نفسها المستخدمة في نظام التسميد. في تركيبات السلسلتين S وP يعمل النظامان على العتاد نفسه بواجهتين منفصلتين — يرى مشغّل المناخ بيانات المناخ فقط، ومشغّل التسميد بيانات التسميد فقط. لا تشترك الواجهتان في الشاشات.",
+      "cap1Title": "محطة الطقس الخارجية",
+      "cap1Body": "مراقبة بستة معاملات — الحرارة والرطوبة واتجاه الرياح وسرعتها وكثافة الضوء والإشعاع الشمسي.",
+      "cap2Title": "الاستشعار داخل البيت المحمي",
+      "cap2Body": "حساسات حرارة ورطوبة عند مستوى المظلة عبر RS485 Modbus.",
+      "cap3Title": "التحكم بالجدار الرطب والمراوح",
+      "cap3Body": "جدران ترطيب ومضخات مياه ومجموعات مراوح عادم ودوران — تشغيل مرحلي حسب الشرط.",
+      "cap4Title": "التظليل والتهوية",
+      "cap4Body": "ستائر تظليل وتهوية فيلم باللف، تُتحكم بكثافة الضوء أو نقاط ضبط الحرارة.",
+      "cap5Title": "منطق قائم على الشروط",
+      "cap5Body": "شروط AND/OR ونوافذ زمنية ومتوسط الحساسات تمنع التشغيل الخاطئ من القراءات العابرة.",
+      "cap6Title": "تسجيل كامل للأحداث",
+      "cap6Body": "يسجَّل كل إجراء: الوقت وشرط التشغيل وقراءة الحساس وحالة المعدات ومدة التشغيل.",
+      "sensorsEyebrow": "SENSING",
+      "sensorsTitle": "ما يراقبه النظام",
+      "sensorsLead": "توفر المحطة الخارجية إنذاراً مسبقاً. إذا ارتفعت سرعة الرياح أو زاد الإشعاع فجأة، يجهّز النظام المعدات قبل تأثر داخل البيت المحمي.",
+      "outdoorTitle": "محطة الطقس الخارجية",
+      "indoorTitle": "داخل البيت المحمي",
+      "colParam": "المعامل",
+      "colDetail": "التفصيل",
+      "colEquipment": "المعدة",
+      "colMethod": "طريقة التحكم",
+      "colIf": "إذا تحقق هذا الشرط",
+      "colThen": "ينفَّذ هذا الإجراء",
+      "sensorNote": "يُؤكد عدد الحساسات ومواقعها حسب تهيئة المشروع. يمكن إضافة عقد استشعار دون تغيير عتاد وحدة التحكم.",
+      "outdoorRows": [
+        [
+          "درجة حرارة الهواء",
+          "مسبار حرارة خارجي، RS485"
+        ],
+        [
+          "رطوبة الهواء",
+          "حساس رطوبة نسبية خارجي، RS485"
+        ],
+        [
+          "اتجاه الرياح",
+          "ريشة رياح، دقة 16 نقطة"
+        ],
+        [
+          "سرعة الرياح",
+          "مقياس سرعة، نطاق 0–60 م/ث"
+        ],
+        [
+          "كثافة الضوء",
+          "بيرانومتر / حساس لكس"
+        ],
+        [
+          "الإشعاع الشمسي",
+          "حساس إشعاع شمسي، W/m²"
+        ],
+        [
+          "فترة الاستطلاع",
+          "قابلة للتهيئة، الافتراضي 10 ثوانٍ"
+        ]
+      ],
+      "indoorRows": [
+        [
+          "درجة حرارة الهواء",
+          "مسبارات متعددة، RS485 Modbus RTU"
+        ],
+        [
+          "رطوبة الهواء",
+          "حساسات RH سعوية، RS485 Modbus RTU"
+        ],
+        [
+          "موضع الحساس",
+          "مستوى المظلة، كمية يحددها المستخدم"
+        ],
+        [
+          "عنونة الحساس",
+          "عنوان جهاز Modbus قابل للتهيئة"
+        ]
+      ],
+      "controlsEyebrow": "EQUIPMENT CONTROL",
+      "controlsTitle": "ما يديره النظام",
+      "coolingTitle": "التبريد والتهوية",
+      "coolingRows": [
+        [
+          "الجدران الرطبة (وسائد التبريد)",
+          "تشغيل/إيقاف حسب نقطة ضبط الحرارة؛ قفل المضخة إلزامي"
+        ],
+        [
+          "مضخات مياه الجدار الرطب",
+          "متسلسلة مع تشغيل الجدار؛ حماية التشغيل الجاف"
+        ],
+        [
+          "مراوح العادم",
+          "مجموعات متعددة؛ تشغيل مرحلي حسب عتبة الحرارة"
+        ],
+        [
+          "مراوح الدوران",
+          "جدولة مستقلة وتحكم قائم على الشروط"
+        ]
+      ],
+      "shadeTitle": "التظليل والتهوية",
+      "shadeRows": [
+        [
+          "ستائر التظليل",
+          "نشر/سحب حسب نقطة ضبط الضوء الخارجي"
+        ],
+        [
+          "تهوية الفيلم باللف",
+          "فتح/إغلاق حسب حرارة البيت أو أمر يدوي"
+        ]
+      ],
+      "seqTitle": "تشغيل متتابع — كل مجموعة ≤ 2 كيلوواط",
+      "seqBody": "تبدأ مجموعات المعدات بالتتابع لا في وقت واحد. تُحدَّ كل مجموعة بحمل اندفاع ≤ 2 كيلوواط لحماية المولدات والمحولات والشبكة. تأخير ما بين المجموعات قابل للتهيئة من 1 إلى 60 ثانية. تكوين المجموعات وترتيبها يُؤكد حسب تهيئة المشروع.",
+      "logicTitle": "منطق التحكم القائم على الشروط",
+      "logicP1": "تُتحكم كل معدة بشروط يحددها المستخدم لا بمؤقتات ثابتة. يضع المشغّلون القواعد، وينفّذ النظام ويسجّل ويكررها باتساق في كل دورة.",
+      "logicP2": "يمكن جمع الشروط بمنطق AND/OR ونوافذ زمنية ومتوسط الحساسات لمنع التشغيل الخاطئ من ذروات عابرة في قراءة واحدة.",
+      "logicH4": "أمثلة على الشروط",
+      "logicRows": [
+        [
+          "حرارة البيت المحمي > 28°م",
+          "تشغيل مضخة الجدار الرطب → تشغيل مجموعة مراوح العادم 1"
+        ],
+        [
+          "حرارة البيت المحمي > 32°م",
+          "تشغيل مجموعة مراوح العادم 2"
+        ],
+        [
+          "كثافة الضوء الخارجي > 60,000 لكس",
+          "نشر ستارة التظليل إلى 70%"
+        ],
+        [
+          "سرعة الرياح > 8 م/ث",
+          "إغلاق تهوية اللف"
+        ],
+        [
+          "حرارة البيت المحمي < 18°م (نافذة ليلية)",
+          "إغلاق كل التهوية"
+        ]
+      ],
+      "intEyebrow": "INTEGRATION",
+      "intTitle": "يتصل بنظام التسميد وبمنصتكم",
+      "int1Title": "العتاد نفسه، واجهات منفصلة",
+      "int1Body": "في تركيبات السلسلتين S وP يعمل التحكم المناخي والتسميد على وحدة أندرويد الصناعية نفسها. لكل منهما وحدة واجهة مخصصة. يرى المشغّلون فقط البيانات ذات الصلة بمهمتهم.",
+      "int2Title": "خريطة سجلات Modbus",
+      "int2Body": "كل قراءات الحساسات وحالات المعدات متاحة عبر RS485 Modbus RTU/TCP. اتصل بأي SCADA أو PLC أو منصة مراقبة. الخريطة متاحة للشركاء المؤهلين.",
+      "int3Title": "قياس MQTT",
+      "int3Body": "ادفع بيانات الطقس الخارجي وقراءات البيت المحمي وكل أحداث المعدات إلى ThingsBoard أو AWS IoT أو Azure IoT Hub أو أي وسيط MQTT.",
+      "int4Title": "واجهة بالعلامة البيضاء",
+      "int4Body": "واجهة أندرويد قابلة لإعادة العلامة بالكامل — الشعار والألوان واسم المنتج. متاحة باتفاق OEM. الحد الأدنى للطلب: 5 وحدات.",
+      "sBadge": "S · STANDARD",
+      "sName": "PKYDrip-GCC-S — التحكم المناخي القياسي",
+      "sBody": "الجهاز الأساسي لإدارة مناخ البيوت المحمية التجارية. وحدة متكاملة مع محطة طقس خارجية ومدخلات حساسات البيت ومخرجات للجدار الرطب والمراوح والستائر والتهوية — في خزانة واحدة.",
+      "sCta": "PKYDrip-GCC-S · عرض تفاصيل المنتج",
+      "sRows": [
+        [
+          "محطة الطقس الخارجية",
+          "الحرارة والرطوبة واتجاه وسرعة الرياح والضوء والإشعاع"
+        ],
+        [
+          "حساسات البيت المحمي",
+          "حرارة + رطوبة، RS485 Modbus، الكمية حسب المشروع"
+        ],
+        [
+          "التحكم بالتبريد",
+          "جدران رطبة + مضخات + مجموعات عادم (مرحلي)"
+        ],
+        [
+          "التحكم بالتهوية",
+          "مراوح دوران، فيلم باللف"
+        ],
+        [
+          "التحكم بالتظليل",
+          "نشر/سحب الستارة حسب نقطة الضوء"
+        ],
+        [
+          "قنوات المرحّل",
+          "حتى 32 (قابلة للتوسعة)"
+        ],
+        [
+          "نوع المقاول",
+          "شنايدر إلكتريك فئة D (سلسلة LC1D)"
+        ],
+        [
+          "التشغيل المتتابع",
+          "كل مجموعة ≤ 2 كيلوواط؛ تأخير 1–60 ث قابل للتهيئة"
+        ],
+        [
+          "واجهة المشغّل",
+          "شاشة أندرويد صناعية 7 بوصة"
+        ],
+        [
+          "الاتصال",
+          "RS485 Modbus RTU/TCP؛ بعيد اختياري"
+        ],
+        [
+          "الغلاف",
+          "IP54، مقاسات S / M"
+        ],
+        [
+          "الاستخدام النموذجي",
+          "بيوت تجارية قياسية، بيوت ورد، أنفاق زراعية"
+        ]
+      ],
+      "pBadge": "P · PROFESSIONAL",
+      "pName": "PKYDrip-GCC-P — التحكم المناخي المهني",
+      "pBody": "للمحاصيل عالية القيمة والعمليات المهنية. يضيف إدارة الوصفات وسجلات الاتجاهات التاريخية وسجل الإنذارات وتكاملاً كاملاً عبر MQTT وAPI وModbus — بما في ذلك ThingsBoard ومنصات إدارة المزارع.",
+      "pCta": "PKYDrip-GCC-P · عرض تفاصيل المنتج",
+      "pRows": [
+        [
+          "محطة الطقس الخارجية",
+          "محطة بستة معاملات كاملة (كما في S)"
+        ],
+        [
+          "حساسات البيت المحمي",
+          "حرارة + رطوبة + CO₂ اختياري، RS485 Modbus"
+        ],
+        [
+          "التحكم بالتبريد",
+          "جدران رطبة + مضخات + مجموعات عادم (مرحلي)"
+        ],
+        [
+          "التحكم بالتهوية",
+          "مراوح دوران، فيلم باللف، واجهة نظام تدفئة"
+        ],
+        [
+          "التحكم بالتظليل",
+          "نشر/سحب؛ نقاط ضبط متعددة المراحل"
+        ],
+        [
+          "قنوات المرحّل",
+          "حتى 64 (قابلة للتوسعة عبر مرحّل وسيط)"
+        ],
+        [
+          "نوع المقاول",
+          "شنايدر إلكتريك فئة D (سلسلة LC1D)"
+        ],
+        [
+          "التشغيل المتتابع",
+          "كل مجموعة ≤ 2 كيلوواط؛ تأخير 1–60 ث قابل للتهيئة"
+        ],
+        [
+          "واجهة المشغّل",
+          "7 بوصة قياسية أو 10 بوصة مخصصة"
+        ],
+        [
+          "الاتصال",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/Ethernet"
+        ],
+        [
+          "تسجيل البيانات",
+          "أحداث المناخ وتاريخ المعدات وسجل الإنذار ومخططات الاتجاه"
+        ],
+        [
+          "رابط التسميد",
+          "متكامل مع GCC-S/P وسلسلة التسميد P"
+        ],
+        [
+          "الغلاف",
+          "IP54، مقاسات M / L / XL"
+        ],
+        [
+          "الاستخدام النموذجي",
+          "زهور عالية القيمة، مزارع عمودية، مجمعات متعددة المناطق"
+        ]
+      ],
+      "oemBadge": "OEM",
+      "oemName": "OEM بالعلامة البيضاء — منصة التحكم المناخي",
+      "oemBody": "يمكن للموزعين وعلامات المعدات بناء منتجهم الخاص للتحكم بمناخ البيوت المحمية على منصة S أو P — بقضاء الوقت في السوق والقنوات بدل تكرار تطوير عتاد التحكم.",
+      "oemCta": "التقدم لتعاون OEM",
+      "oemNote": "قد تعتمد الإصدارات بالعلامة البيضاء على منصات S أو P. الحد الأدنى للطلب: 5 وحدات. تتطلب مواءمة العلامة والواجهة مراجعة هندسية واتفاقية فنية موقعة.",
+      "oemRows": [
+        [
+          "الحد الأدنى للطلب",
+          "5 وحدات"
+        ],
+        [
+          "المنصة الأساسية",
+          "سلسلة S أو P"
+        ],
+        [
+          "مواءمة العلامة",
+          "اللوحة والشعار واللون والتغليف"
+        ],
+        [
+          "مواءمة البرمجيات",
+          "اللغة والواجهة والحسابات ووجهة السحابة"
+        ],
+        [
+          "روابط الاتصال",
+          "تكامل طرف ثالث حسب الاتفاقية الفنية"
+        ],
+        [
+          "أساس التسليم",
+          "اعتماد النموذج الأولي + اتفاقية فنية موقعة"
+        ]
+      ],
+      "specEyebrow": "PLANNED SPECIFICATION",
+      "specTitle": "قيم تخطيطية للاختيار الأولي",
+      "specLead": "استخدم هذه الأرقام لتخطيط المنتج والاختيار الأولي للمشروع. تُؤكد القيم النهائية بعد اختبار النموذج وتجميد تصميم الإنتاج.",
+      "specCol0": "المعامل",
+      "specColS": "GCC-S القياسي",
+      "specColP": "GCC-P المهني",
+      "specRows": [
+        [
+          "الطراز الأساسي",
+          "PKYDrip-GCC-S",
+          "PKYDrip-GCC-P"
+        ],
+        [
+          "محطة الطقس الخارجية",
+          "6 معاملات (حرارة، رطوبة، اتجاه/سرعة رياح، ضوء، إشعاع)",
+          "نفسه"
+        ],
+        [
+          "حساسات حرارة البيت",
+          "RS485 Modbus، الكمية حسب المشروع",
+          "RS485 Modbus؛ CO₂ اختياري"
+        ],
+        [
+          "قنوات المرحّل",
+          "حتى 32",
+          "حتى 64 (قابلة للتوسعة)"
+        ],
+        [
+          "نوع المقاول",
+          "شنايدر إلكتريك سلسلة LC1D",
+          "شنايدر إلكتريك سلسلة LC1D"
+        ],
+        [
+          "التشغيل المتتابع",
+          "كل مجموعة ≤ 2 كيلوواط؛ تأخير 1–60 ث",
+          "كل مجموعة ≤ 2 كيلوواط؛ تأخير 1–60 ث"
+        ],
+        [
+          "المعدات المحكومة",
+          "جدران رطبة، مضخات، عادم، دوران، ستائر، تهوية لف",
+          "نفسه + واجهة تدفئة وحقن CO₂ (اختياري)"
+        ],
+        [
+          "منطق الشروط",
+          "حرارة، رطوبة، ضوء، رياح، نافذة زمنية، AND/OR",
+          "نفسه + جدولة بالوصفات"
+        ],
+        [
+          "تسجيل البيانات",
+          "حالة المعدات + شرط التشغيل",
+          "تاريخ مناخي كامل ومخططات إنذار"
+        ],
+        [
+          "واجهة المشغّل",
+          "شاشة أندرويد صناعية 7 بوصة",
+          "7 بوصة قياسية أو 10 بوصة مخصصة"
+        ],
+        [
+          "الاتصال",
+          "RS485 Modbus RTU/TCP؛ بعيد اختياري",
+          "RS485 Modbus RTU/TCP + MQTT + API + 4G/Wi-Fi/Ethernet/LoRa"
+        ],
+        [
+          "ThingsBoard / السحابة",
+          "اختياري",
+          "مدعوم"
+        ],
+        [
+          "تكامل التسميد",
+          "واجهة محجوزة",
+          "متكامل مع سلسلة التسميد P"
+        ],
+        [
+          "التغذية الكهربائية",
+          "AC 380V ثلاثي / AC 220V أحادي (يُحدد)",
+          "نفسه"
+        ],
+        [
+          "تصنيف الغلاف",
+          "IP54",
+          "IP54"
+        ],
+        [
+          "مقاسات الغلاف",
+          "S / M",
+          "M / L / XL"
+        ],
+        [
+          "درجة حرارة التشغيل",
+          "-10°م إلى 55°م",
+          "-10°م إلى 55°م"
+        ],
+        [
+          "الأبعاد",
+          "تُؤكد حسب تهيئة المشروع",
+          "تُؤكد حسب تهيئة المشروع"
+        ]
+      ],
+      "specNote": "أهداف التحكم هي أهداف على مستوى النظام وليست دقة حساس واحد. يؤثر موضع الحساس والكابلات وفترة المعايرة والظروف المحلية في النتيجة. تتبع المواصفات النهائية وثائق الإنتاج المجمّدة والاتفاقية الفنية الموقعة.",
+      "ctaEyebrow": "PROJECT CONFIGURATION",
+      "ctaTitle": "أكّد النظام النهائي بورقة تجهيزة",
+      "ctaLead": "قيم الصفحة للاختيار الأولي. قبل طلب مؤكد، تؤكد PKYDrip الطراز وقائمة المواد والاتفاقية الفنية وفق ظروف الموقع.",
+      "disclaimer": "هذه صفحة تخطيط وبيع. يتبع عدد قنوات المرحّل وتصنيف المقاول وأبعاد الغلاف ودرجة الحماية وكمية الحساسات وخيارات الاتصال وسعة التوسعة وثائق الإنتاج المجمّدة والاتفاقية الفنية الموقعة. تُؤكد لواحق الطراز القياسية حسب تهيئة المشروع."
+    }
+  }
+}

@@ -15,12 +15,12 @@
           <div class="home-hero__actions">
           {{ with .button }}
           {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main home-hero__btn animated fadeInUp">{{ .label }}</a>
+          <a href="{{ partial "lang-or-en-url.html" .link }}" class="btn btn-main home-hero__btn animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
           {{ with .button_secondary }}
           {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main home-hero__btn home-hero__btn--secondary animated fadeInUp">{{ .label }}</a>
+          <a href="{{ partial "lang-or-en-url.html" .link }}" class="btn btn-main home-hero__btn home-hero__btn--secondary animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
           </div>
@@ -61,7 +61,7 @@
           <p>{{ .desc }}</p>
 
           <div class="home-entry-card__action">
-            <a href="{{ .button_link | relLangURL }}" class="btn btn-small">
+            <a href="{{ partial "lang-or-en-url.html" .button_link }}" class="btn btn-small">
               {{ .button_label }}
             </a>
           </div>
@@ -117,7 +117,7 @@
 
     <div class="row justify-content-center home-platform__cta-row">
       <div class="col-md-12 text-center">
-        <a href="{{ `/system-architecture/` | relLangURL }}" class="btn btn-main">Explore Platform Architecture</a>
+        <a href="{{ partial "lang-or-en-url.html" `/system-architecture/` }}" class="btn btn-main">{{ .cta_label | default "Explore Platform Architecture" }}</a>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@
     <div class="row justify-content-center home-systems__grid">
       {{ range .items }}
       <div class="col-md-6 col-lg-3 home-systems__item">
-        <a href="{{ .url | relLangURL }}" class="home-systems__card">
+        <a href="{{ partial "lang-or-en-url.html" .url }}" class="home-systems__card">
           <span class="home-systems__card-title">{{ .name }}</span>
           {{ with .desc }}<span class="home-systems__card-desc">{{ . }}</span>{{ end }}
         </a>
@@ -152,7 +152,7 @@
     {{ with .cta_label }}
     <div class="row justify-content-center" style="margin-top:20px;">
       <div class="col-md-10 text-center">
-        <a href="{{ $.Params.systems.cta_url | relLangURL }}" class="btn btn-main">{{ . }}</a>
+        <a href="{{ partial "lang-or-en-url.html" $.Params.systems.cta_url }}" class="btn btn-main">{{ . }}</a>
       </div>
     </div>
     {{ end }}
@@ -186,7 +186,7 @@
         </ul>
         {{ with .cta }}
         <p class="mt-4 mb-0">
-          <a href="{{ .url | relLangURL }}" class="btn btn-outline-success">{{ .label }}</a>
+          <a href="{{ partial "lang-or-en-url.html" .url }}" class="btn btn-outline-success">{{ .label }}</a>
         </p>
         {{ end }}
       </div>
@@ -217,7 +217,7 @@
         {{ with .content }}<p class="home-split-section__body">{{ . }}</p>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-main home-split-section__btn">{{ .label }}</a>
+        <a href="{{ partial "lang-or-en-url.html" .link }}" class="btn btn-main home-split-section__btn">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

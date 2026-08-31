@@ -58,7 +58,13 @@
   </section>
 
   <section class="trust-strip" aria-label="{{ $landing.title }}">
-    <span>{{ $landing.trust1 }}</span><i></i><span>{{ $landing.trust2 }}</span><i></i><span>{{ $landing.trust3 }}</span><i></i><span>{{ $landing.trust4 }}</span><i></i><span>{{ $landing.trust5 }}</span>
+    <div class="trust-group trust-features">
+      <span>{{ $landing.trust1 }}</span><i></i><span>{{ $landing.trust2 }}</span><i></i><span>{{ $landing.trust3 }}</span><i></i><span>{{ $landing.trust4 }}</span><i></i><span>{{ $landing.trust5 }}</span>
+    </div>
+    <span class="trust-divider" aria-hidden="true">|</span>
+    <div class="trust-group trust-proof">
+      <span>{{ $landing.trustProof1 }}</span><i></i><span>{{ $landing.trustProof2 }}</span><i></i><span>{{ $landing.trustProof3 }}</span>
+    </div>
   </section>
 
   <section class="section section-shell" id="selection-guide">
@@ -327,7 +333,7 @@
         <h2>{{ $landing.selectTitle }}</h2>
         <p>{{ $landing.selectLead }}</p>
       </div>
-      <a class="button" href="{{ `/contact/` | relURL }}">{{ $chrome.cta }}</a>
+      <a class="button" href="{{ `/contact/` | relURL }}">{{ $chrome.footerCta | default $chrome.cta }}</a>
     </div>
     <p class="disclaimer">{{ $landing.disclaimer }}</p>
   </section>

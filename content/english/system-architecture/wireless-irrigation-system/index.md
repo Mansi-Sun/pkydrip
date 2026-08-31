@@ -15,11 +15,11 @@ hero:
   image: "images/scenes/scene-wireless-field.webp"
   image_alt: "Remote open field with solar-powered wireless irrigation node and field connectivity"
   cta_primary:
-    label: "View Wireless Field Control"
-    url: "/product/wireless-field-control-system/"
+    label: "View PKY-RIC01 Packages"
+    url: "/product/pky-ric01-remote-irrigation-control/"
   cta_secondary:
-    label: "Wireless Valve Controller"
-    url: "/product/wireless-valve-controller/"
+    label: "Wireless Field Control Family"
+    url: "/product/wireless-field-control-system/"
 
 zone_flow:
   title: "Typical System Structure"
@@ -54,6 +54,9 @@ feature_blocks:
 product_modules:
   title: "Related Products and Modules"
   items:
+    - name: "PKY-RIC01"
+      url: "/product/pky-ric01-remote-irrigation-control/"
+      desc: "Standard 8/16/32-point remote irrigation packages built from existing LoRa modules."
     - name: "PKY-EG08"
       url: "/product/pky-eg08/"
       desc: "LoRa gateway for wireless irrigation field networks."
@@ -70,20 +73,18 @@ product_modules:
 related_links:
   title: "Related Systems & Resources"
   links:
+    - label: "PKY-RIC01 Remote Irrigation"
+      url: "/product/pky-ric01-remote-irrigation-control/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "Irrigation Control System"
       url: "/system/irrigation-control-system/"
     - label: "Fertigation System"
       url: "/system/fertigation-system/"
-    - label: "Climate Control System"
-      url: "/system/climate-control-system/"
     - label: "Open Field Wireless Valve Control"
       url: "/applications/open-field-wireless-valve-control/"
-    - label: "LoRa Wireless Irrigation Control Solution"
-      url: "/solution/lora-wireless-irrigation-control/"
     - label: "LoRa Deployment Guide"
       url: "/docs/lora-wireless-control/deployment-guide/"
-    - label: "Wireless Field Control System"
-      url: "/product/wireless-field-control-system/"
 ---
 
 Wireless irrigation architecture is useful when the field layout is larger than the wiring budget or the existing farm needs phased expansion. It complements central irrigation control and can support fertigation or monitoring modules through the same project structure.

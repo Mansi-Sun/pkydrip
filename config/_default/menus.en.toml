@@ -76,6 +76,24 @@ url = "product/"
 weight = 4
 
 [[main]]
+parent = "Products"
+name = "Product Directory"
+url = "product/"
+weight = 1
+
+[[main]]
+parent = "Products"
+name = "Fertigation Family"
+url = "products/fertigation/"
+weight = 2
+
+[[main]]
+parent = "Products"
+name = "Greenhouse Climate Control"
+url = "products/greenhouse-climate-control/"
+weight = 3
+
+[[main]]
 name = "Resources"
 weight = 5
 

@@ -1,0 +1,15 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $ui := index site.Data.pkydrip_climate_ui.chrome $locale }}
+{{ $en := "/products/greenhouse-climate-control/" }}
+{{ $zh := "/zh-cn/products/greenhouse-climate-control/" }}
+{{ $ar := "/ar/products/greenhouse-climate-control/" }}
+{{ range .AllTranslations }}
+  {{ if eq .Lang "en" }}{{ $en = .RelPermalink }}{{ end }}
+  {{ if eq .Lang "zh-cn" }}{{ $zh = .RelPermalink }}{{ end }}
+  {{ if eq .Lang "ar" }}{{ $ar = .RelPermalink }}{{ end }}
+{{ end }}
+<nav class="lang-switcher" aria-label="Language">
+  <a href="{{ $en }}" hreflang="en" lang="en"{{ if eq $.Lang "en" }} aria-current="page"{{ end }}>{{ $ui.langEn }}</a>
+  <a href="{{ $zh }}" hreflang="zh-CN" lang="zh-CN"{{ if eq $.Lang "zh-cn" }} aria-current="page"{{ end }}>{{ $ui.langZh }}</a>
+  <a href="{{ $ar }}" hreflang="ar" lang="ar"{{ if eq $.Lang "ar" }} aria-current="page"{{ end }}>{{ $ui.langAr }}</a>
+</nav>

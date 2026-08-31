@@ -327,6 +327,64 @@ html[dir="rtl"] .footer-brand { transform-origin: right center; }
   display: none;
 }
 
+.pkydrip-fertigation-page .trust-strip {
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow: hidden;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 18px;
+}
+.pkydrip-fertigation-page .trust-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.pkydrip-fertigation-page .trust-divider {
+  color: var(--line);
+  opacity: 0.5;
+  font-weight: 400;
+  padding: 0 2px;
+}
+.pkydrip-fertigation-page .trust-proof {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .comparison-wrap .comparison-table thead th:first-child,
+  .comparison-wrap .comparison-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 2px 0 6px rgba(26, 73, 50, 0.08);
+    min-width: 130px;
+    max-width: 160px;
+    white-space: normal;
+    background-color: #fff;
+  }
+  .comparison-wrap .comparison-table thead th:first-child {
+    background-color: #f8faf8;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 680px) {
+  .pkydrip-fertigation-page .trust-strip {
+    flex-direction: column;
+    overflow: visible;
+    white-space: normal;
+  }
+  .pkydrip-fertigation-page .trust-divider {
+    display: none;
+  }
+  .pkydrip-fertigation-page .trust-group {
+    gap: 12px 18px;
+  }
+}
+
 @media (max-width: 390px) {
   .detail-hero h1 { font-size: 30px; }
   .detail-photos .photo-main { min-height: 240px; }

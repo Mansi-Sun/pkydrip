@@ -1,0 +1,366 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $page := index site.Data.pkydrip_climate_ui.page $locale }}
+{{ $chrome := index site.Data.pkydrip_climate_ui.chrome $locale }}
+{{ $familyURL := "/products/greenhouse-climate-control/" | relLangURL }}
+{{ $gccS := printf "%spkydrip-gcc-s/" $familyURL }}
+{{ $gccP := printf "%spkydrip-gcc-p/" $familyURL }}
+{{ $contact := "/contact/" | relLangURL }}
+{{ $htmlLang := "en" }}
+{{ if eq .Lang "zh-cn" }}{{ $htmlLang = "zh-CN" }}{{ else if eq .Lang "ar" }}{{ $htmlLang = "ar" }}{{ end }}
+<!DOCTYPE html>
+<html lang="{{ $htmlLang }}"{{ if eq .Lang "ar" }} dir="rtl"{{ end }} itemscope itemtype="http://schema.org/WebPage">
+<head>
+  {{ partial "head.html" . }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Params.og_title | default .Title }}">
+  <meta property="og:description" content="{{ .Params.description | default $page.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ site.Params.image | absURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-climate.css` | relURL }}">
+  <link rel="stylesheet" href="{{ `css/pkydrip-climate-extra.css` | relURL }}">
+</head>
+<body class="pkydrip-climate-page" data-climate-page>
+{{ partial "product/climate-header.html" . }}
+<main id="top">
+  <section class="hero section-shell">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ $page.eyebrow }}</p>
+      <h1>{{ replace $page.heroTitle "\n" "<br>" | safeHTML }}</h1>
+      <p class="hero-lead">{{ $page.heroLead }}</p>
+      <div class="hero-actions">
+        <a class="button" href="#overview">{{ $page.heroOverview }}</a>
+        <a class="button button-ghost" href="#specs">{{ $page.heroSpecs }}</a>
+      </div>
+      <ul class="hero-points" aria-label="{{ $page.title }}">
+        <li><span>{{ $page.stat1 }}</span><em>{{ $page.stat1Label }}</em></li>
+        <li><span>{{ $page.stat2 }}</span><em>{{ $page.stat2Label }}</em></li>
+        <li><span class="ltr" dir="ltr">{{ $page.stat3 }}</span><em>{{ $page.stat3Label }}</em></li>
+      </ul>
+    </div>
+    <!-- TODO: insert product photo of the climate control cabinet here -->
+    <div class="hero-visual photo-placeholder" data-photo="images/system/pkydrip-climate-cabinet.webp" data-todo="insert product photo of the climate control cabinet here" aria-label="PKYDrip Greenhouse Climate Control Cabinet">
+      <div>
+        <span class="photo-label">{{ $chrome.photoLabel }}</span>
+        <strong>{{ $chrome.photoHint }}</strong>
+        <small>{{ $chrome.photoSize }}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip" aria-label="{{ $page.title }}">
+    <span>{{ $page.trust1 }}</span><i></i>
+    <span>{{ $page.trust2 }}</span><i></i>
+    <span>{{ $page.trust3 }}</span><i></i>
+    <span>{{ $page.trust4 }}</span><i></i>
+    <span>{{ $page.trust5 }}</span>
+  </section>
+
+  <section class="section section-shell" id="overview">
+    <div class="section-heading compact">
+      <div>
+        <p class="eyebrow">{{ $page.overviewEyebrow }}</p>
+        <h2>{{ $page.overviewTitle }}</h2>
+      </div>
+    </div>
+    <div class="overview-copy">
+      <p>{{ $page.overviewP1 }}</p>
+      <p>{{ $page.overviewP2 }}</p>
+      <p>{{ $page.overviewP3 }}</p>
+    </div>
+    <div class="capability-grid">
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">01</div>
+        <h3>{{ $page.cap1Title }}</h3>
+        <p>{{ $page.cap1Body }}</p>
+      </article>
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">02</div>
+        <h3>{{ $page.cap2Title }}</h3>
+        <p>{{ $page.cap2Body }}</p>
+      </article>
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">03</div>
+        <h3>{{ $page.cap3Title }}</h3>
+        <p>{{ $page.cap3Body }}</p>
+      </article>
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">04</div>
+        <h3>{{ $page.cap4Title }}</h3>
+        <p>{{ $page.cap4Body }}</p>
+      </article>
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">05</div>
+        <h3>{{ $page.cap5Title }}</h3>
+        <p>{{ $page.cap5Body }}</p>
+      </article>
+      <article class="capability-card">
+        <div class="capability-icon" aria-hidden="true">06</div>
+        <h3>{{ $page.cap6Title }}</h3>
+        <p>{{ $page.cap6Body }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="sensors">
+    <div class="section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">{{ $page.sensorsEyebrow }}</p>
+          <h2>{{ $page.sensorsTitle }}</h2>
+        </div>
+        <p>{{ $page.sensorsLead }}</p>
+      </div>
+      <div class="sensor-grid">
+        <div class="sensor-panel">
+          <h3>{{ $page.outdoorTitle }}</h3>
+          <div class="table-scroll">
+            <table class="config-list">
+              <thead><tr><th>{{ $page.colParam }}</th><th>{{ $page.colDetail }}</th></tr></thead>
+              <tbody>
+                {{ range $page.outdoorRows }}
+                <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="sensor-panel">
+          <h3>{{ $page.indoorTitle }}</h3>
+          <div class="table-scroll">
+            <table class="config-list">
+              <thead><tr><th>{{ $page.colParam }}</th><th>{{ $page.colDetail }}</th></tr></thead>
+              <tbody>
+                {{ range $page.indoorRows }}
+                <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p class="sensor-note">{{ $page.sensorNote }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="controls">
+    <div class="section-heading compact">
+      <div>
+        <p class="eyebrow">{{ $page.controlsEyebrow }}</p>
+        <h2>{{ $page.controlsTitle }}</h2>
+      </div>
+    </div>
+    <div class="control-block">
+      <h3>{{ $page.coolingTitle }}</h3>
+      <div class="table-scroll">
+        <table class="config-list">
+          <thead><tr><th>{{ $page.colEquipment }}</th><th>{{ $page.colMethod }}</th></tr></thead>
+          <tbody>
+            {{ range $page.coolingRows }}
+            <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="control-block">
+      <h3>{{ $page.shadeTitle }}</h3>
+      <div class="table-scroll">
+        <table class="config-list">
+          <thead><tr><th>{{ $page.colEquipment }}</th><th>{{ $page.colMethod }}</th></tr></thead>
+          <tbody>
+            {{ range $page.shadeRows }}
+            <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="model-result sequential-callout">
+      <h3>{{ $page.seqTitle }}</h3>
+      <p>{{ $page.seqBody }}</p>
+    </div>
+    <div class="logic-copy">
+      <h3>{{ $page.logicTitle }}</h3>
+      <p>{{ $page.logicP1 }}</p>
+      <p>{{ $page.logicP2 }}</p>
+      <h4>{{ $page.logicH4 }}</h4>
+    </div>
+    <div class="table-scroll">
+      <table class="config-list">
+        <thead><tr><th>{{ $page.colIf }}</th><th>{{ $page.colThen }}</th></tr></thead>
+        <tbody>
+          {{ range $page.logicRows }}
+          <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="integration">
+    <div class="section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">{{ $page.intEyebrow }}</p>
+          <h2>{{ $page.intTitle }}</h2>
+        </div>
+      </div>
+      <div class="integration-grid">
+        <article class="integration-card">
+          <h3>{{ $page.int1Title }}</h3>
+          <p>{{ $page.int1Body }}</p>
+        </article>
+        <article class="integration-card">
+          <h3>{{ $page.int2Title }}</h3>
+          <p>{{ $page.int2Body }}</p>
+        </article>
+        <article class="integration-card">
+          <h3>{{ $page.int3Title }}</h3>
+          <p>{{ $page.int3Body }}</p>
+        </article>
+        <article class="integration-card">
+          <h3>{{ $page.int4Title }}</h3>
+          <p>{{ $page.int4Body }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="models">
+    <div class="detail-stack">
+      <article class="product-detail" id="gcc-s">
+        <!-- TODO: insert S series climate cabinet product photo -->
+        <div class="product-photo photo-placeholder" data-photo="images/system/pkydrip-climate-cabinet.webp" data-todo="insert S series climate cabinet product photo">
+          <div>
+            <span class="photo-label">{{ $chrome.photoLabel }}</span>
+            <strong>{{ $chrome.photoHint }}</strong>
+            <small>{{ $chrome.photoSize }}</small>
+          </div>
+        </div>
+        <div class="product-copy">
+          <span class="tag ltr" dir="ltr">{{ $page.sBadge }}</span>
+          <h3>{{ $page.sName }}</h3>
+          <p class="intro">{{ $page.sBody }}</p>
+          <div class="table-scroll">
+            <table class="config-list">
+              <thead><tr><th>{{ $page.colParam }}</th><th>{{ $page.colDetail }}</th></tr></thead>
+              <tbody>
+                {{ range $page.sRows }}
+                <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <!-- TODO: create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-s/ -->
+          <p><a class="button" href="{{ $gccS }}" data-todo="create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-s/">{{ $page.sCta }}</a></p>
+        </div>
+      </article>
+      <article class="product-detail reverse" id="gcc-p">
+        <!-- TODO: insert P series climate cabinet product photo -->
+        <div class="product-photo photo-placeholder" data-photo="images/system/pkydrip-climate-hmi-dashboard.webp" data-todo="insert P series climate cabinet product photo">
+          <div>
+            <span class="photo-label">{{ $chrome.photoLabel }}</span>
+            <strong>{{ $chrome.photoHint }}</strong>
+            <small>{{ $chrome.photoSize }}</small>
+          </div>
+        </div>
+        <div class="product-copy">
+          <span class="tag tag-blue ltr" dir="ltr">{{ $page.pBadge }}</span>
+          <h3>{{ $page.pName }}</h3>
+          <p class="intro">{{ $page.pBody }}</p>
+          <div class="table-scroll">
+            <table class="config-list">
+              <thead><tr><th>{{ $page.colParam }}</th><th>{{ $page.colDetail }}</th></tr></thead>
+              <tbody>
+                {{ range $page.pRows }}
+                <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <!-- TODO: create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-p/ -->
+          <p><a class="button" href="{{ $gccP }}" data-todo="create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-p/">{{ $page.pCta }}</a></p>
+        </div>
+      </article>
+      <article class="product-detail" id="oem-detail">
+        <!-- TODO: insert OEM mockup photo (YOUR BRAND / Powered by PKYDrip) -->
+        <div class="product-photo photo-placeholder" data-photo="images/system/pkydrip-climate-controller-product.webp" data-todo="insert OEM mockup photo">
+          <div>
+            <span class="photo-label">{{ $chrome.photoLabel }}</span>
+            <strong>{{ $chrome.photoHint }}</strong>
+            <small>{{ $chrome.photoSize }}</small>
+          </div>
+        </div>
+        <div class="product-copy">
+          <span class="tag tag-warm">{{ $page.oemBadge }}</span>
+          <h3>{{ $page.oemName }}</h3>
+          <p class="intro">{{ $page.oemBody }}</p>
+          <div class="table-scroll">
+            <table class="config-list">
+              <thead><tr><th>{{ $page.colParam }}</th><th>{{ $page.colDetail }}</th></tr></thead>
+              <tbody>
+                {{ range $page.oemRows }}
+                <tr><th>{{ index . 0 }}</th><td>{{ index . 1 }}</td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <p class="oem-note">{{ $page.oemNote }}</p>
+          <p><a class="button button-ghost" href="#inquiry">{{ $page.oemCta }}</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="specs">
+    <div class="section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">{{ $page.specEyebrow }}</p>
+          <h2>{{ $page.specTitle }}</h2>
+        </div>
+        <p>{{ $page.specLead }}</p>
+      </div>
+      <div class="comparison-wrap">
+        <table class="comparison-table spec-table">
+          <thead>
+            <tr>
+              <th>{{ $page.specCol0 }}</th>
+              <th>{{ $page.specColS }}</th>
+              <th class="selected">{{ $page.specColP }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $page.specRows }}
+            <tr>
+              <th>{{ index . 0 }}</th>
+              <td>{{ index . 1 }}</td>
+              <td>{{ index . 2 }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">{{ $page.specNote }}</p>
+    </div>
+  </section>
+
+  <section class="section section-shell" id="inquiry">
+    <div class="cta-banner-dark model-result">
+      <div>
+        <p class="eyebrow">{{ $page.ctaEyebrow }}</p>
+        <h2>{{ $page.ctaTitle }}</h2>
+        <p>{{ $page.ctaLead }}</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button" href="{{ $contact }}">{{ $chrome.footerCta }}</a>
+        <a class="button button-ghost" href="https://wa.me/8617395297329?text=Hi%2C+I%27d+like+to+discuss+a+PKYDrip+greenhouse+climate+control+project." target="_blank" rel="noopener">{{ $chrome.whatsappCta }}</a>
+      </div>
+    </div>
+    <p class="disclaimer">{{ $page.disclaimer }}</p>
+  </section>
+</main>
+{{ partial "product/climate-footer.html" . }}
+{{ partial "product/climate-schema.html" . }}
+</body>
+</html>

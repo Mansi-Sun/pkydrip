@@ -36,7 +36,7 @@
                   {{ if $isChildActive }} current {{ end }}
                 {{ end }}">
                 <a class="nav-link dropdown-toggle"
-                   href="{{ if .URL }}{{ .URL | relLangURL }}{{ else }}#{{ end }}" role="button"
+                   href="{{ if .URL }}{{ partial "lang-or-en-url.html" .URL }}{{ else }}#{{ end }}" role="button"
                    data-bs-toggle="dropdown" data-toggle="dropdown"
                    data-pkydrip-dropdown-toggle
                    aria-haspopup="true" aria-expanded="false">
@@ -53,7 +53,7 @@
                          href="{{ if findRE `^#` .URL }}
                                   {{ if not $.IsHome }}{{ site.BaseURL | relLangURL }}{{ end }}{{ .URL }}
                                 {{ else }}
-                                  {{ .URL | relLangURL }}
+                                  {{ partial "lang-or-en-url.html" .URL }}
                                 {{ end }}">
                         {{ .Name }}
                       </a>
@@ -65,10 +65,10 @@
               <li class="nav-item">
                 <a class="nav-link {{ if $active }}current{{ end }}"
                    {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
-                   href="{{ if findRE `^#` .URL }}
+                   href="{{ if not .URL }}{{ site.Home.RelPermalink }}{{ else if findRE `^#` .URL }}
                             {{ if not $.IsHome }}{{ site.BaseURL | relLangURL }}{{ end }}{{ .URL }}
                           {{ else }}
-                            {{ .URL | relLangURL }}
+                            {{ partial "lang-or-en-url.html" .URL }}
                           {{ end }}">
                   {{ .Name }}
                 </a>

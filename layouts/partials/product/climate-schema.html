@@ -1,0 +1,31 @@
+{{ $locale := partial "product/fertigation-locale.html" . }}
+{{ $chrome := index site.Data.pkydrip_climate_ui.chrome $locale }}
+{{ $family := "/products/greenhouse-climate-control/" | absLangURL }}
+{{ $home := "/" | absLangURL }}
+{{ $products := "/product/" | absURL }}
+{{ $image := site.Params.image | absURL }}
+{{ $itemList := slice
+  (dict "@type" "Product" "name" "PKYDrip-GCC-S" "url" (printf "%spkydrip-gcc-s/" $family))
+  (dict "@type" "Product" "name" "PKYDrip-GCC-P" "url" (printf "%spkydrip-gcc-p/" $family))
+}}
+{{ $collection := dict
+  "@context" "https://schema.org"
+  "@type" "CollectionPage"
+  "name" .Title
+  "description" (.Params.description | default .Title | plainify)
+  "url" .Permalink
+  "image" $image
+  "mainEntity" (dict "@type" "ItemList" "itemListElement" $itemList)
+}}
+<script type="application/ld+json">{{ $collection | jsonify | safeJS }}</script>
+{{ $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $home)
+  (dict "@type" "ListItem" "position" 2 "name" $chrome.navProducts "item" $products)
+  (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+}}
+{{ $breadcrumb := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $crumbs
+}}
+<script type="application/ld+json">{{ $breadcrumb | jsonify | safeJS }}</script>

@@ -2,81 +2,151 @@
 
 # main menu
 [[main]]
-name = "Pagina iniziale"
+name = "Home"
 url = ""
 weight = 1
 
 [[main]]
-name = "Chi siamo"
-url = "about/"
+name = "Sistemi"
+url = "system/irrigation-control-system/"
 weight = 2
 
 [[main]]
-name = "Progetto"
-url = "project/"
+parent = "Sistemi"
+name = "Controllo irrigazione"
+url = "system/irrigation-control-system/"
+weight = 1
+
+[[main]]
+parent = "Sistemi"
+name = "Fertirrigazione"
+url = "system/fertigation-system/"
+weight = 2
+
+[[main]]
+parent = "Sistemi"
+name = "Irrigazione wireless"
+url = "system/wireless-irrigation-system/"
 weight = 3
 
 [[main]]
-name = "Blog"
-url = "blog/"
+parent = "Sistemi"
+name = "Controllo climatico"
+url = "system/climate-control-system/"
 weight = 4
 
 [[main]]
-weight = 5
-name = "Più"
-hasChildren = true
+name = "Soluzioni"
+url = "solution/"
+weight = 3
 
-  [[main]]
-  parent = "Più"
-  name = "Servizio"
-  url = "service/"
-  weight = 1
-
-  [[main]]
-  parent = "Più"
-  name = "Tariffazione"
-  url = "pricing/"
-  weight = 2
-
-  [[main]]
-  parent = "Più"
-  name = "Domande frequenti"
-  url = "faq/"
-  weight = 3
-  
 [[main]]
-name = "Contatta"
+parent = "Soluzioni"
+name = "Irrigazione in serra"
+url = "solution/greenhouse-irrigation/"
+weight = 1
+
+[[main]]
+parent = "Soluzioni"
+name = "Irrigazione del frutteto"
+url = "solution/orchard-irrigation/"
+weight = 2
+
+[[main]]
+parent = "Soluzioni"
+name = "Irrigazione di pieno campo"
+url = "solution/open-field-irrigation/"
+weight = 3
+
+[[main]]
+parent = "Soluzioni"
+name = "Idroponica / fuori suolo"
+url = "solution/hydroponic-irrigation/"
+weight = 4
+
+[[main]]
+parent = "Soluzioni"
+name = "Ammodernamento irriguo"
+url = "solution/irrigation-retrofit-upgrade/"
+weight = 5
+
+[[main]]
+name = "Prodotti"
+url = "product/"
+weight = 4
+
+[[main]]
+parent = "Prodotti"
+name = "Catalogo prodotti"
+url = "product/"
+weight = 1
+
+[[main]]
+parent = "Prodotti"
+name = "Gamma fertirrigazione"
+url = "products/fertigation/"
+weight = 2
+
+[[main]]
+parent = "Prodotti"
+name = "Controllo climatico serra"
+url = "products/greenhouse-climate-control/"
+weight = 3
+
+[[main]]
+name = "Risorse"
+weight = 5
+
+[[main]]
+parent = "Risorse"
+name = "Docs"
+url = "docs/"
+weight = 1
+
+[[main]]
+parent = "Risorse"
+name = "Strumenti"
+url = "tools/"
+weight = 2
+
+[[main]]
+parent = "Risorse"
+name = "Download"
+url = "downloads/"
+weight = 3
+
+[[main]]
+name = "Contatti"
 url = "contact/"
 weight = 6
-
 
 # footer menu
 [[footer]]
 name = "Chi siamo"
 url = "about/"
+weight = 1
+
+[[footer]]
+name = "Soluzioni"
+url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Progetto"
-url = "project/"
+name = "Prodotti"
+url = "product/"
 weight = 3
 
 [[footer]]
-name = "Servizio"
-url = "service/"
+name = "Download"
+url = "downloads/"
 weight = 4
 
 [[footer]]
-name = "Tariffazione"
-url = "pricing/"
+name = "FAQ"
+url = "faq/"
 weight = 5
 
 [[footer]]
-name = "Domande frequenti"
-url = "faq/"
-weight = 6
-
-[[footer]]
-name = "Contatta"
+name = "Contatti"
 url = "contact/"
-weight = 7
+weight = 6

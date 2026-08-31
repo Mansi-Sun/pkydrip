@@ -112,6 +112,8 @@ applications:
 related_links:
   title: "Related Pages"
   links:
+    - label: "PKYDrip Greenhouse Climate Control Family"
+      url: "/products/greenhouse-climate-control/"
     - label: "PKY-GHC01 Greenhouse Controller"
       url: "/product/pky-ghc01-greenhouse-controller/"
     - label: "Climate Control System Architecture"
@@ -132,4 +134,4 @@ project_cta:
   button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Climate%20Control%20System%20%7C%20Page%3A%20climate-control-system%0A-%20Facility%20type%3A%20%0A-%20Climate%20zones%3A%20%0A-%20Fans%20%2F%20cooling%20%2F%20heating%3A%20%0A"
 ---
 
-Use this page as the **product-family entry** for climate automation. Prefer [PKY-GHC01](/product/pky-ghc01-greenhouse-controller/) for new global-standard controller inquiries. Full system architecture is on the [Climate Control System](/system/climate-control-system/) page. Open integration boundaries are on [Open Platform](/open-platform/).
+For the new GCC-S / GCC-P production range, start at the [PKYDrip greenhouse climate control family](/products/greenhouse-climate-control/). This page remains the engineering family entry for climate automation. Prefer [PKY-GHC01](/product/pky-ghc01-greenhouse-controller/) for modular controller inquiries. Full system architecture is on the [Climate Control System](/system/climate-control-system/) page. Open integration boundaries are on [Open Platform](/open-platform/).

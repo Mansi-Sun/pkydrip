@@ -64,6 +64,9 @@ wireless_control:
 product_modules:
   title: "System Modules"
   items:
+    - name: "PKY-RIC01 Remote Irrigation"
+      url: "/product/pky-ric01-remote-irrigation-control/"
+      desc: "Standard remote irrigation packages for orchard valve blocks."
     - name: "Pump & valve control system"
       url: "/product/pump-valve-control-system/"
       desc: "Pump station and zone logic."
@@ -80,8 +83,12 @@ product_modules:
 related_links:
   title: "Related"
   links:
+    - label: "PKY-RIC01 Remote Irrigation"
+      url: "/product/pky-ric01-remote-irrigation-control/"
     - label: "Open-field solution"
       url: "/solution/open-field-irrigation/"
+    - label: "Open Platform"
+      url: "/open-platform/"
     - label: "Orchard application scenario"
       url: "/applications/orchard-irrigation/"
     - label: "Filter selection (doc)"

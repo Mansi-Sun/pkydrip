@@ -1,105 +1,123 @@
 ---
+title: "PKYDrip Bewässerungsautomatisierung | Intelligente Agrarinfrastruktur"
+description: "PKYDrip liefert Bewässerungsautomatisierung für Betriebe, Gewächshäuser, Obstanlagen und Modernisierungsprojekte: Bewässerungssteuerung, Fertigation, drahtlose Ventile und Smart-Farm-Lösungen."
+translationKey: "home"
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/slider-bg.jpg"
+  bg_image: "images/home/global-farmland-atmosphere-v2.webp"
   bg_overlay: true
-  title: "A Digital Marketing <br/> & Design Agency"
-  content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  title: "PKYDrip Plattform für landwirtschaftliche Automatisierung"
+  content: "Datenbasierte Landwirtschaft beginnt mit verbundener Automatisierung — Bewässerungssteuerung, Fertigation, Klimakoordination und drahtlose Feldsysteme auf einer gemeinsamen Plattform.<br><br>Wir helfen, Automatisierungssysteme für Betriebe, Gewächshäuser, Obstanlagen und großflächige Feldprojekte zu definieren und zu planen."
   button:
     enable: true
-    label: "Discover Our Project"
-    link: "project/"
+    label: "Plattformarchitektur ansehen"
+    link: "/system-architecture/"
+  button_secondary:
+    enable: true
+    label: "Projektplan starten"
+    link: "/tools/irrigation-design-wizard/"
 
-############################# About #################################
-about:
+############################# Entry Paths ###########################
+entry_paths:
   enable: true
-  title: "About Us"
-  description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
-  image: "images/wrapper-img.png"
+  title: "Wählen Sie Ihren Einstieg"
+  content: "Jedes Projekt braucht eine andere Einstiegslogik. Diese Wege führen von der Idee zum Automatisierungsplan — schneller als allein durch einen Produktkatalog."
+  items:
+    - icon: "🌱"
+      title: "Neues Bewässerungsprojekt starten"
+      desc: "Für Betriebe, Obstanlagen, Gewächshäuser und Neuinstallationen, die Bewässerungsautomatisierung, Fertigation und Klimakoordination von Anfang an brauchen."
+      button_label: "Planungsassistent öffnen"
+      button_link: "/tools/irrigation-design-wizard/"
+    - icon: "🔧"
+      title: "Bestehendes System modernisieren"
+      desc: "Für Anlagen mit vorhandenen Pumpen, Leitungen oder Feldinfrastruktur — Umstieg auf bessere Steuerung, Fertigation und IoT-Monitoring."
+      button_label: "Modernisierungslösungen ansehen"
+      button_link: "/solution/irrigation-retrofit-upgrade/"
+    - icon: "📡"
+      title: "Fern- / drahtlose Bewässerung"
+      desc: "Für abgelegene Felder und Erweiterungszonen, in denen Verkabelung schwierig ist — Plattform mit LoRa-Ventilen, Sensoren und cloud-fähigem Monitoring erweitern."
+      button_label: "Drahtlose Lösung ansehen"
+      button_link: "/landing/remote-irrigation/"
 
+############################# Platform ##############################
+platform:
+  enable: true
+  title: "Ein offenes landwirtschaftliches Betriebssystem"
+  description: "PKYDrip organisiert Automatisierung als Subsystem-Serien und IoT-Schichten — Produkte integrieren sich als Module, nicht als angeklebter Gerätekatalog."
+  content: "Felddaten fließen von Sensoren über Entscheidungslogik zur Ausführung. Vier Subsystem-Serien — Bewässerung, Fertigation, Klima und Funk — teilen dieselbe Plattformstruktur. Produkte werden bei der Projektkonfiguration in diese Serien eingebunden."
+  image: "images/home/platform-subsystems-series.webp"
+  image_alt: "Smart-Farm-Landschaft — Pivot-Bewässerung, Obstreihungen, Gewächshaus, Weinberg und drahtlose Konnektivität über koordinierte Agrarzonen"
+  caption: "Bewässerung, Fertigation, Klima und drahtlose Automatisierung in Freiland, Obstanlagen, Gewächshäusern und abgelegenen Feldblöcken"
+  cta_label: "Plattformarchitektur ansehen"
 
-######################### Portfolio ###############################
+############################# About (disabled) ######################
+about:
+  enable: false
+
+############################# Systems ###############################
+systems:
+  enable: true
+  title: "Plattform-Subsysteme"
+  content: "Vier Kernsubsysteme im landwirtschaftlichen Betriebssystem von PKYDrip. Jedes Subsystem definiert, wie ein Teil des Betriebs arbeitet — Produkte und Controller greifen in diese Schichten ein."
+  cta_label: "Plattformintegration besprechen"
+  cta_url: "/contact/"
+  items:
+    - name: "Bewässerungssteuerungssystem"
+      desc: "Pumpen, Ventile und Zonenplanung — die Ausführungsebene für Freiland-, Obst- und Betriebsbewässerung."
+      url: "/system/irrigation-control-system/"
+    - name: "Fertigationssystem"
+      desc: "Nährstoffgabe abgestimmt auf Bewässerungszonen — EC/pH-Logik in derselben Automatisierungsstruktur."
+      url: "/system/fertigation-system/"
+    - name: "Klimasteuerungssystem"
+      desc: "Umgebungskoordination für Gewächshäuser und Jungpflanzen — Lüftung, Kühlung, Heizung und Feuchte als verbundene Schicht."
+      url: "/system/climate-control-system/"
+    - name: "Drahtloses Bewässerungssystem"
+      desc: "LoRa-Felderweiterung für Ventil- und Pumpensteuerung — dort, wo Verkabelung unpraktisch ist."
+      url: "/system/wireless-irrigation-system/"
+
+systems_value:
+  enable: true
+  title: "Prinzipien der offenen Plattform"
+  image: "images/home/open-platform-principles.webp"
+  image_alt: "Vernetzte Smart Farm bei Sonnenaufgang — Sensorknoten, Feld-Mesh, Cloud-Anbindung über Gewächshaus, Bewässerung und Obst"
+  items:
+    - "Sensor-, Ausführungs- und Entscheidungsschichten — offen über den Betrieb verbunden"
+    - "Cloud-Anbindung möglich, mit lokal unabhängigem Steuerbetrieb"
+    - "Produkte integrieren sich als Module in Subsysteme — nicht als isolierte Geräte"
+    - "Ausgelegt für Erzeuger, Integratoren, Händler und Forschungspartner"
+  cta:
+    label: "Offene Plattform ansehen"
+    url: "/open-platform/"
+
+######################### Deployment ################################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg.jpg"
-  title: "WE BELIEVE IN GREAT IDEAS"
-  content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  "
+  image: "images/home/deployment-scenarios.webp"
+  image_alt: "Agrar-Deployment im Sonnenuntergang — Obstsensors, Gewächshaus, Pivot-Bewässerung und Pumpeninfrastruktur"
+  title: "Von der Plattformlogik zum Feldeinsatz"
+  content: "Ist die Plattformstruktur klar, wählen Sie, wie sie auf dem Feld landet. Gewächshaus, Obst, Freiland und Modernisierung konfigurieren dieselben Subsysteme unterschiedlich — jedes Szenario ist ein Weg von der Planung zum realen Betrieb."
   button:
     enable: true
-    label: "View Works"
-    link: "project/"
+    label: "Einsatzszenarien durchsuchen"
+    link: "/solution/"
 
-
-############################# Service ############################
+############################# Service ###############################
 service:
-  enable: true
-  # service content comes from "service.md" file
-
+  enable: false
 
 ############################ call to action ###########################
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  title: "Planen Sie landwirtschaftliche Automatisierung?"
+  content: "Nutzen Sie das Bewässerungs-Planungstool, um Betriebsstruktur, Wasserquelle und Steuerschichten zu erfassen, bevor Subsysteme und Produkte ausgewählt werden."
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact/"
+    label: "Planungsassistent öffnen"
+    link: "/tools/irrigation-design-wizard/"
 
 ############################# Funfacts ###############################
 funfacts:
-  enable: true
-  title: "Fun Facts About Us"
-  description: "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
-  funfact_item:
-  # funfacts item loop
-  - icon: "fas fa-glass-cheers" #https://fontawesome.com/v5.15/icons
-    name: "Cups Of Coffee"
-    count: "99"
-
-  # funfacts item loop
-  - icon: "fas fa-glasses" #https://fontawesome.com/v5.15/icons
-    name: "Article Written"
-    count: "45"
-
-  # funfacts item loop
-  - icon: "fas fa-keyboard" #https://fontawesome.com/v5.15/icons
-    name: "Projects Completed"
-    count: "125"
-
-  # funfacts item loop
-  - icon: "fas fa-clock" #https://fontawesome.com/v5.15/icons
-    name: "Combined Projects"
-    count: "200"
-
-  testimonial_slider:
-  # testimonial item loop
-  - name: "Raymond Roy"
-    image: "images/clients/avater-1.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-
-  # testimonial item loop
-  - name: "Randi Renin"
-    image: "images/clients/avater-1.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-
-  # testimonial item loop
-  - name: "Rose Rio"
-    image: "images/clients/avater-3.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-
-
+  enable: false
 ---

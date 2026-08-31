@@ -7,76 +7,146 @@ url = ""
 weight = 1
 
 [[main]]
-name = "À propos"
-url = "about/"
+name = "Systèmes"
+url = "system/irrigation-control-system/"
 weight = 2
 
 [[main]]
-name = "Projet"
-url = "project/"
+parent = "Systèmes"
+name = "Contrôle d'irrigation"
+url = "system/irrigation-control-system/"
+weight = 1
+
+[[main]]
+parent = "Systèmes"
+name = "Fertigation"
+url = "system/fertigation-system/"
+weight = 2
+
+[[main]]
+parent = "Systèmes"
+name = "Irrigation sans fil"
+url = "system/wireless-irrigation-system/"
 weight = 3
 
 [[main]]
-name = "Blog"
-url = "blog/"
+parent = "Systèmes"
+name = "Contrôle climatique"
+url = "system/climate-control-system/"
 weight = 4
 
 [[main]]
+name = "Solutions"
+url = "solution/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Irrigation de serre"
+url = "solution/greenhouse-irrigation/"
+weight = 1
+
+[[main]]
+parent = "Solutions"
+name = "Irrigation de verger"
+url = "solution/orchard-irrigation/"
+weight = 2
+
+[[main]]
+parent = "Solutions"
+name = "Irrigation de plein champ"
+url = "solution/open-field-irrigation/"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Hydroponie / hors-sol"
+url = "solution/hydroponic-irrigation/"
+weight = 4
+
+[[main]]
+parent = "Solutions"
+name = "Modernisation d'irrigation"
+url = "solution/irrigation-retrofit-upgrade/"
 weight = 5
-name = "Plus"
-hasChildren = true
 
-  [[main]]
-  parent = "Plus"
-  name = "Service"
-  url = "service/"
-  weight = 1
+[[main]]
+name = "Produits"
+url = "product/"
+weight = 4
 
-  [[main]]
-  parent = "Plus"
-  name = "Tarification"
-  url = "pricing/"
-  weight = 2
+[[main]]
+parent = "Produits"
+name = "Catalogue produits"
+url = "product/"
+weight = 1
 
-  [[main]]
-  parent = "Plus"
-  name = "Questions fréquentes"
-  url = "faq/"
-  weight = 3
-  
+[[main]]
+parent = "Produits"
+name = "Gamme fertigation"
+url = "products/fertigation/"
+weight = 2
+
+[[main]]
+parent = "Produits"
+name = "Contrôle climatique de serre"
+url = "products/greenhouse-climate-control/"
+weight = 3
+
+[[main]]
+name = "Ressources"
+weight = 5
+
+[[main]]
+parent = "Ressources"
+name = "Docs"
+url = "docs/"
+weight = 1
+
+[[main]]
+parent = "Ressources"
+name = "Outils"
+url = "tools/"
+weight = 2
+
+[[main]]
+parent = "Ressources"
+name = "Téléchargements"
+url = "downloads/"
+weight = 3
+
 [[main]]
 name = "Contact"
 url = "contact/"
 weight = 6
-
 
 # footer menu
 [[footer]]
 name = "À propos"
 url = "about/"
+weight = 1
+
+[[footer]]
+name = "Solutions"
+url = "solution/"
 weight = 2
 
 [[footer]]
-name = "Projet"
-url = "project/"
+name = "Produits"
+url = "product/"
 weight = 3
 
 [[footer]]
-name = "Service"
-url = "service/"
+name = "Téléchargements"
+url = "downloads/"
 weight = 4
 
 [[footer]]
-name = "Tarification"
-url = "pricing/"
-weight = 5
-
-[[footer]]
-name = "Questions fréquentes"
+name = "FAQ"
 url = "faq/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 6

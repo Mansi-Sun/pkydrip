@@ -60,6 +60,7 @@ This page is for administrators and content planning. It is not intended as the 
 
 - [PKYDrip E / S / P fertigation family](/products/fertigation/)
 - [PKYDrip-S05 5-channel precision fertigation](/products/fertigation/pkydrip-s05/)
+- [PKYDrip Greenhouse Climate Control](/products/greenhouse-climate-control/)
 - [PKY-FG501 5-Channel Premix Fertigation Unit](/product/pky-fg501-premix-fertigation/)
 - [PKY-GHC01 Modular Greenhouse Automation Controller](/product/pky-ghc01-greenhouse-controller/)
 - [PKY-RIC01 Remote Irrigation Control System](/product/pky-ric01-remote-irrigation-control/)
@@ -162,7 +163,7 @@ This page is for administrators and content planning. It is not intended as the 
 
 - [Landing Pages Index](/landing/)
 - [Become a PKYDrip Irrigation Partner in Australia](/landing/australia-irrigation-partner/)
-- [Farm Irrigation Controller Supplier | Irrigation Control System](/landing/irrigation-controller-supplier/)
+- [Factory Supplier of Greenhouse Climate & Irrigation Control Systems | OEM Private Label](/landing/irrigation-controller-supplier/)
 - [Irrigation Controllers for Distributors & OEM Partners](/landing/oem-irrigation-controller/)
 - [Modular DIY Fertigation Control System](/landing/modular-fertigation-control/)
 - [PKYDrip Irrigation Project Partner Program for UAE & Middle East](/landing/uae-middle-east-irrigation-project-partner/)

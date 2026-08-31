@@ -150,6 +150,9 @@ product_modules:
   title: "System Modules"
   intro: "Open-field projects typically combine these PKYDrip product families."
   items:
+    - name: "PKY-RIC01 Remote Irrigation"
+      url: "/product/pky-ric01-remote-irrigation-control/"
+      desc: "Standard remote irrigation packages for distributed valve and pump control."
     - name: "Pump & valve control system"
       url: "/product/pump-valve-control-system/"
       desc: "Central automation platform."
@@ -172,4 +175,4 @@ project_cta:
 
 PKYDrip provides **open-field irrigation automation** for pump stations, irrigation valves, fertigation, and wireless field expansion—designed for farms, orchards, and project-based upgrades rather than consumer garden timers.
 
-Related: [Pump & valve control system](/product/pump-valve-control-system/) · [Wireless irrigation](/solution/lora-wireless-irrigation-control/) · [Irrigation automation control](/solution/irrigation-automation-control/) · [Irrigation design wizard](/tools/irrigation-design-wizard/)
+Related: [PKY-RIC01](/product/pky-ric01-remote-irrigation-control/) · [Pump & valve control system](/product/pump-valve-control-system/) · [Wireless irrigation](/solution/lora-wireless-irrigation-control/) · [Open Platform](/open-platform/) · [Irrigation design wizard](/tools/irrigation-design-wizard/)

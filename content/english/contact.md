@@ -4,6 +4,7 @@ description: "Upgrade your irrigation system today"
 bg_image: "images/feature-bg.jpg"
 layout: "contact"
 draft: false
+translationKey: "contact"
 tagline: |
   Tell us your market, customer type, and product direction. PKYDrip will suggest suitable irrigation controller options, OEM cooperation details, and next-step communication.
   
