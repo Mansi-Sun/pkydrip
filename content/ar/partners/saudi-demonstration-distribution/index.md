@@ -16,7 +16,7 @@ translationKey: "saudi-demo-program"
       <span style="opacity:.75;">شارك الرابط فقط مع العملاء المؤهلين عبر واتساب / البريد.</span>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <a href="/en/partners/saudi-demonstration-distribution/" style="padding:8px 10px;border:1px solid rgba(0,0,0,.16);border-radius:10px;text-decoration:none;font-weight:700;">English</a>
+      <a href="/partner/saudi-demonstration-distribution/" style="padding:8px 10px;border:1px solid rgba(0,0,0,.16);border-radius:10px;text-decoration:none;font-weight:700;">English</a>
       <a href="/ar/partners/saudi-demonstration-distribution/" style="padding:8px 10px;border:1px solid rgba(0,0,0,.16);border-radius:10px;text-decoration:none;font-weight:700;">العربية</a>
     </div>
   </div>

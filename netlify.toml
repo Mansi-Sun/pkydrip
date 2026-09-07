@@ -48,3 +48,36 @@
   to = "/system/wireless-irrigation-system/"
   status = 301
   force = true
+
+# 2026-09-07 SEO: /cn/ (企业信息 4 页) merged into /zh-cn/ — one path per language
+[[redirects]]
+  from = "/cn/*"
+  to = "/zh-cn/:splat"
+  status = 301
+  force = true
+
+# 2026-09-07 SEO: unfinished languages fr/it/de temporarily removed (3 pages each)
+[[redirects]]
+  from = "/fr/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/it/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/*"
+  to = "/"
+  status = 301
+  force = true
+
+# 2026-09-07 SEO: internal roadmap page taken offline
+[[redirects]]
+  from = "/strategy/pkydrip-farm-control-platform/"
+  to = "/about/"
+  status = 301
+  force = true

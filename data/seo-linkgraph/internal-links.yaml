@@ -25,13 +25,11 @@ system_availability:
     uae: /uae/irrigation-control-system/
     sa: /sa/irrigation-control-system/
     za: /za/irrigation-control-system/
-    cn: /cn/irrigation-control-system/
     global: /system/irrigation-control-system/
   fertigation-system:
     ru: /ru/fertigation-system/
     uae: /uae/fertigation-system/
     sa: /sa/fertigation-system/
-    cn: /cn/fertigation-system/
     global: /system/fertigation-system/
   wireless-irrigation-system:
     ru: /ru/wireless-irrigation-system/
@@ -44,7 +42,6 @@ system_availability:
   solar-irrigation-system:
     za: /za/solar-irrigation-system/
   ec-ph-controller:
-    cn: /cn/ec-ph-controller/
     global: /product/ec-ph-controller/
 
 markets:
@@ -162,18 +159,18 @@ markets:
 
   cn:
     name: China
-    home: /cn/
-    contact: /cn/contact/
+    home: /zh-cn/
+    contact: /zh-cn/contact/
     global_only_cross: true
     systems:
       - key: irrigation
-        path: /cn/irrigation-control-system/
+        path: /zh-cn/products/
         label: 灌溉控制
       - key: fertigation
-        path: /cn/fertigation-system/
+        path: /zh-cn/products/fertigation/
         label: 施肥系统
       - key: ecph
-        path: /cn/ec-ph-controller/
+        path: /zh-cn/products/
         label: EC/pH 控制
     cross_markets: []
     ui:
@@ -199,5 +196,5 @@ footer_markets:
     path: /za/
     label: South Africa
   - lang: cn
-    path: /cn/
+    path: /zh-cn/
     label: China

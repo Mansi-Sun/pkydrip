@@ -2,8 +2,8 @@
 {{ $page := index site.Data.pkydrip_climate_ui.page $locale }}
 {{ $chrome := index site.Data.pkydrip_climate_ui.chrome $locale }}
 {{ $familyURL := "/products/greenhouse-climate-control/" | relLangURL }}
-{{ $gccS := printf "%spkydrip-gcc-s/" $familyURL }}
-{{ $gccP := printf "%spkydrip-gcc-p/" $familyURL }}
+{{ $gccS := "/product/pky-ghc01-greenhouse-controller/" | relLangURL }}
+{{ $gccP := "/product/pky-ghc01-greenhouse-controller/" | relLangURL }}
 {{ $contact := "/contact/" | relLangURL }}
 {{ $htmlLang := "en" }}
 {{ if eq .Lang "zh-cn" }}{{ $htmlLang = "zh-CN" }}{{ else if eq .Lang "ar" }}{{ $htmlLang = "ar" }}{{ end }}
@@ -252,7 +252,7 @@
             </table>
           </div>
           <!-- TODO: create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-s/ -->
-          <p><a class="button" href="{{ $gccS }}" data-todo="create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-s/">{{ $page.sCta }}</a></p>
+          <p><a class="button" href="{{ $gccS }}">{{ $page.sCta }}</a></p>
         </div>
       </article>
       <article class="product-detail reverse" id="gcc-p">
@@ -279,7 +279,7 @@
             </table>
           </div>
           <!-- TODO: create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-p/ -->
-          <p><a class="button" href="{{ $gccP }}" data-todo="create individual product page at /products/greenhouse-climate-control/pkydrip-gcc-p/">{{ $page.pCta }}</a></p>
+          <p><a class="button" href="{{ $gccP }}">{{ $page.pCta }}</a></p>
         </div>
       </article>
       <article class="product-detail" id="oem-detail">

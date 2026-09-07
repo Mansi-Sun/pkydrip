@@ -5,8 +5,8 @@
 {{ $products := "/product/" | absURL }}
 {{ $image := site.Params.image | absURL }}
 {{ $itemList := slice
-  (dict "@type" "Product" "name" "PKYDrip-GCC-S" "url" (printf "%spkydrip-gcc-s/" $family))
-  (dict "@type" "Product" "name" "PKYDrip-GCC-P" "url" (printf "%spkydrip-gcc-p/" $family))
+  (dict "@type" "Product" "name" "PKYDrip-GCC-S" "url" "/product/pky-ghc01-greenhouse-controller/")
+  (dict "@type" "Product" "name" "PKYDrip-GCC-P" "url" "/product/pky-ghc01-greenhouse-controller/")
 }}
 {{ $collection := dict
   "@context" "https://schema.org"

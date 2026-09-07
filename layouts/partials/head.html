@@ -42,9 +42,8 @@
 {{ hugo.Generator }}
 
 {{/* Canonical for standard product pages (and any page that sets product_code) */}}
-{{ if or .Params.product_identity .Params.product_code }}
+{{/* Canonical: every page outputs its own absolute URL (SEO 2026-09-07). */}}
 <link rel="canonical" href="{{ .Permalink }}">
-{{ end }}
 
 <!-- theme meta -->
 <meta name="theme-name" content="airspace-hugo" />
