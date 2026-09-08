@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /tags/
-Disallow: /categories/
-Disallow: /author/
-Disallow: /message_sent/
-Disallow: /internal/
-Disallow: /strategy/
-Sitemap: https://smart.pky-dripirrigation.com/sitemap.xml
