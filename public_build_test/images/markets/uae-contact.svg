@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="UAE system consultation infrastructure">
+  <rect width="1200" height="520" fill="#f0ebe3"/>
+  <text x="48" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#3a3028">System Consultation  UAE</text>
+  <rect x="48" y="100" width="500" height="360" rx="12" fill="#fff" stroke="#ddd0c0"/>
+  <ellipse cx="298" cy="280" rx="140" ry="90" fill="#e8ddd0" opacity="0.5" stroke="#c4a878"/>
+  <circle cx="298" cy="280" r="14" fill="#fff" stroke="#4a9fd4" stroke-width="2.5"/>
+  <rect x="580" y="100" width="572" height="360" rx="12" fill="#fff" stroke="#ddd0c0"/>
+  <circle cx="866" cy="280" r="20" fill="#fff" stroke="#2f6a90" stroke-width="2.5"/>
+  <circle cx="720" cy="220" r="10" fill="#eef6f2" stroke="#6a9a9f" stroke-width="2"/><circle cx="1010" cy="220" r="10" fill="#e8f3fa" stroke="#4a9fd4" stroke-width="2"/>
+  <circle cx="720" cy="340" r="10" fill="#faf4e8" stroke="#c4a24a" stroke-width="2"/><circle cx="1010" cy="340" r="10" fill="#edf5ea" stroke="#a8c8a8" stroke-width="2"/>
+  <line x1="720" y1="220" x2="866" y2="280" stroke="#4a9fd4" stroke-width="1.8" opacity="0.5"/><line x1="1010" y1="220" x2="866" y2="280" stroke="#4a9fd4" stroke-width="1.8" opacity="0.5"/>
+</svg>

@@ -7,38 +7,38 @@ banner:
   enable: true
   bg_image: "images/home/global-farmland-atmosphere-v2.webp"
   bg_overlay: true
-  title: "PKYDrip Agricultural Automation Platform"
-  content: "Data-driven agriculture starts with connected automation — irrigation control, fertigation, climate coordination, and wireless field systems working as one unified platform.<br><br>We help define and design agricultural automation systems for farms, greenhouses, orchards, and large-scale field deployments."
+  title: "PKYDrip Smart Irrigation & Fertigation Systems"
+  content: "Manufacturer of fertigation machines, irrigation controllers, EC/pH controllers and wireless valve controllers — with a customizable cloud platform behind them.<br><br>Built for distributors and smart-agriculture companies with local installation teams: proven hardware ready to ship, open documentation, and regional protection."
   button:
     enable: true
-    label: "Explore Platform Architecture"
-    link: "/system-architecture/"
+    label: "Browse Products"
+    link: "/product/"
   button_secondary:
     enable: true
-    label: "Start Your Project Plan"
-    link: "/tools/irrigation-design-wizard/"
+    label: "Become a Distributor"
+    link: "/become-a-distributor/"
 
 ############################# Entry Paths ###########################
 entry_paths:
   enable: true
-  title: "Choose Your Starting Point"
-  content: "Different projects need different entry logic. These paths help you move from idea to a customized automation plan — faster than browsing a product catalog alone."
+  title: "Your Path to Selling PKYDrip"
+  content: "Three steps from first look to first order — built for dealers, greenhouse builders, agricultural machinery and irrigation equipment companies."
   items:
-    - icon: "🌱"
-      title: "Start a New Irrigation Project"
-      desc: "For farms, orchards, greenhouses, and new installations that need irrigation automation, fertigation, and climate coordination planned from the beginning."
-      button_label: "Open Design Wizard"
-      button_link: "/tools/irrigation-design-wizard/"
-    - icon: "🔧"
-      title: "Upgrade an Existing System"
-      desc: "For projects with pumps, pipelines, or field infrastructure already in place — upgrade to better control, fertigation integration, and IoT monitoring."
-      button_label: "View Upgrade Solutions"
-      button_link: "/solution/irrigation-retrofit-upgrade/"
-    - icon: "📡"
-      title: "Remote / Wireless Irrigation"
-      desc: "For remote fields and expansion zones where cabling is difficult — extend the platform with LoRa wireless valves, sensors, and cloud-ready monitoring."
-      button_label: "View Wireless Solution"
-      button_link: "/landing/remote-irrigation/"
+    - icon: "🛒"
+      title: "Explore the Product Range"
+      desc: "Irrigation controllers, 3-channel and 5-channel fertigation machines, EC/pH controllers, wireless valve controllers and sensors — shipping hardware, not prototypes."
+      button_label: "Open Product Directory"
+      button_link: "/product/"
+    - icon: "📄"
+      title: "Review Docs & Real Projects"
+      desc: "Installation guides, platform integration examples (including ThingsBoard), and case notes from real deployments — watermelon, 1 ha strawberry and more."
+      button_label: "View Docs & Cases"
+      button_link: "/docs/"
+    - icon: "🤝"
+      title: "Get Distributor Pricing & MOQ"
+      desc: "Public price ranges and MOQ for evaluation, regional exclusivity under agreement, training for your installation team and remote support from our engineers."
+      button_label: "Become a Distributor"
+      button_link: "/become-a-distributor/"
 
 ############################# Platform ##############################
 platform:
@@ -60,8 +60,8 @@ systems:
   enable: true
   title: "Platform Subsystems"
   content: "Four core subsystems within the PKYDrip agricultural OS. Each subsystem defines how a part of the farm operates — products and controllers integrate inside these layers."
-  cta_label: "Discuss Platform Integration"
-  cta_url: "/contact/"
+  cta_label: "Ask About Integration Support"
+  cta_url: "/api-integration/"
   items:
     - name: "Irrigation Control System"
       desc: "Pump, valve, and zone scheduling — the execution backbone for open field, orchard, and farm irrigation automation."
@@ -110,12 +110,12 @@ service:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "Planning Agricultural Automation?"
-  content: "Use the irrigation design tool to map your farm structure, water source, and control layers before subsystem and product selection."
+  title: "Ready to Sell PKYDrip in Your Region?"
+  content: "Get the distributor price list, MOQ terms and a live platform demo — and put shipping fertigation machines and controllers into your local market."
   button:
     enable: true
-    label: "Open Design Wizard"
-    link: "/tools/irrigation-design-wizard/"
+    label: "Become a Distributor"
+    link: "/become-a-distributor/"
 
 ############################# Funfacts ###############################
 funfacts:

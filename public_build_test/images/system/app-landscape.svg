@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Landscape irrigation zones">
+  <rect width="400" height="240" fill="#eef3f6" rx="8"/>
+  <ellipse cx="120" cy="110" rx="60" ry="35" fill="#dce8dc" opacity="0.6" stroke="#a8c4a8"/><ellipse cx="280" cy="110" rx="60" ry="35" fill="#dce8dc" opacity="0.6" stroke="#a8c4a8"/>
+  <circle cx="200" cy="170" r="12" fill="#fff" stroke="#4a9fd4" stroke-width="2"/>
+  <line x1="120" y1="110" x2="200" y2="170" stroke="#4a9fd4" stroke-width="1.8" opacity="0.5"/><line x1="280" y1="110" x2="200" y2="170" stroke="#4a9fd4" stroke-width="1.8" opacity="0.5"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520">
+  <defs>
+    <style>
+      .title { font: 700 20px Arial, sans-serif; fill: #111; }
+      .txt { font: 16px Arial, sans-serif; fill: #111; }
+      .small { font: 14px Arial, sans-serif; fill: #111; }
+      .box { fill: #fff; stroke: #111; stroke-width: 2; rx: 14; }
+      .line { stroke: #111; stroke-width: 2.2; fill: none; }
+      .arrow { fill: #111; }
+      .badge { font: 700 14px Arial, sans-serif; fill: #111; }
+    </style>
+  </defs>
+
+  <text x="40" y="48" class="title">Sequential Valve Logic (One Zone at a Time)</text>
+  <text x="40" y="76" class="small">Goal: stable pressure, lower pump load, lower pipe cost, reliable scheduling</text>
+
+  <rect x="90" y="120" width="260" height="70" class="box"></rect>
+  <text x="120" y="160" class="txt">Start Irrigation Program</text>
+
+  <rect x="410" y="120" width="220" height="70" class="box"></rect>
+  <text x="440" y="160" class="txt">Pump ON</text>
+
+  <rect x="690" y="120" width="320" height="70" class="box"></rect>
+  <text x="720" y="150" class="txt">Open Valve Zone 1</text>
+  <text x="720" y="172" class="small">Run time = T1 minutes</text>
+
+  <rect x="690" y="220" width="320" height="70" class="box"></rect>
+  <text x="720" y="250" class="txt">Close Zone 1</text>
+  <text x="720" y="272" class="small">Log flow &amp; pressure</text>
+
+  <rect x="690" y="320" width="320" height="70" class="box"></rect>
+  <text x="720" y="350" class="txt">Open Valve Zone 2</text>
+  <text x="720" y="372" class="small">Run time = T2 minutes</text>
+
+  <rect x="690" y="420" width="320" height="70" class="box"></rect>
+  <text x="720" y="450" class="txt">Repeat for Zones 3…N</text>
+  <text x="720" y="472" class="small">Stop pump after last zone</text>
+
+  <!-- Lines -->
+  <path d="M350 155 L410 155" class="line"></path>
+  <polygon points="410,155 400,149 400,161" class="arrow"></polygon>
+
+  <path d="M630 155 L690 155" class="line"></path>
+  <polygon points="690,155 680,149 680,161" class="arrow"></polygon>
+
+  <path d="M850 190 L850 220" class="line"></path>
+  <polygon points="850,220 844,210 856,210" class="arrow"></polygon>
+
+  <path d="M850 290 L850 320" class="line"></path>
+  <polygon points="850,320 844,310 856,310" class="arrow"></polygon>
+
+  <path d="M850 390 L850 420" class="line"></path>
+  <polygon points="850,420 844,410 856,410" class="arrow"></polygon>
+
+  <!-- Side note -->
+  <rect x="90" y="240" width="540" height="160" class="box"></rect>
+  <text x="120" y="275" class="txt">Protection checks during operation</text>
+  <text x="120" y="305" class="small">• Over-pressure: stop pump + close valves + alarm</text>
+  <text x="120" y="330" class="small">• Low-flow / dry-run: stop pump + alarm (water shortage / blockage)</text>
+  <text x="120" y="355" class="small">• Data log: flow total, real-time flow, pipeline pressure</text>
+
+  <text x="90" y="110" class="badge">Sequence Example</text>
+</svg>

@@ -1,0 +1,139 @@
+<svg width="1800" height="1160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill:#f6f8fb; }
+    .panel { fill:#ffffff; stroke:#cfd8e3; stroke-width:2; rx:20; ry:20; }
+    .box { fill:#eef3f8; stroke:#cfd8e3; stroke-width:2; rx:16; ry:16; }
+    .soft { fill:#dbe6f2; stroke:#a6b7c8; stroke-width:1.5; rx:12; ry:12; }
+    .title { font:700 40px Arial; fill:#1f2d3a; }
+    .sub { font:20px Arial; fill:#5b6b79; }
+    .h2 { font:700 24px Arial; fill:#1f2d3a; }
+    .label { font:700 19px Arial; fill:#1f2d3a; }
+    .body { font:18px Arial; fill:#4e5d6b; }
+    .small { font:15px Arial; fill:#738190; }
+    .line { stroke:#8ea4ba; stroke-width:3; }
+    .dash { stroke:#a9b9c8; stroke-width:2; stroke-dasharray:8 6; }
+    .tag { fill:#20364d; rx:10; ry:10; }
+    .tagtext { font:700 14px Arial; fill:#ffffff; }
+  </style>
+
+  <rect width="1800" height="1160" class="bg"></rect>
+
+  <text x="70" y="58" class="title">Open Field Irrigation Architecture</text>
+  <text x="70" y="92" class="sub">Reference diagram for solution page, brochure, and technical explanation</text>
+
+  <rect x="50" y="130" width="1700" height="980" class="panel"></rect>
+
+  <rect x="1450" y="145" width="120" height="32" class="tag"></rect>
+  <text x="1476" y="166" class="tagtext">Solution</text>
+
+  <rect x="1585" y="145" width="130" height="32" class="tag"></rect>
+  <text x="1613" y="166" class="tagtext">Engineering</text>
+
+  <!-- left flow -->
+  <text x="90" y="210" class="h2">Hydraulic + Control Structure</text>
+  <text x="90" y="245" class="small">Core irrigation path for typical open-field farm or orchard projects</text>
+
+  <rect x="110" y="300" width="220" height="90" class="box"></rect>
+  <text x="150" y="355" class="label">Water Source</text>
+  <text x="138" y="382" class="small">well / river / tank / reservoir</text>
+
+  <rect x="410" y="300" width="220" height="90" class="box"></rect>
+  <text x="465" y="355" class="label">Pump System</text>
+  <text x="430" y="382" class="small">pressure supply / booster pump</text>
+
+  <rect x="710" y="300" width="230" height="90" class="box"></rect>
+  <text x="765" y="355" class="label">Filter Section</text>
+  <text x="735" y="382" class="small">screen / disc / media filter</text>
+
+  <rect x="1020" y="300" width="250" height="90" class="box"></rect>
+  <text x="1065" y="355" class="label">Mainline Network</text>
+  <text x="1055" y="382" class="small">main pipe / submain structure</text>
+
+  <rect x="1350" y="300" width="260" height="90" class="box"></rect>
+  <text x="1405" y="355" class="label">Zone Valves</text>
+  <text x="1385" y="382" class="small">sequential irrigation control</text>
+
+  <line x1="330" y1="345" x2="410" y2="345" class="line"></line>
+  <line x1="630" y1="345" x2="710" y2="345" class="line"></line>
+  <line x1="940" y1="345" x2="1020" y2="345" class="line"></line>
+  <line x1="1270" y1="345" x2="1350" y2="345" class="line"></line>
+
+  <!-- field areas -->
+  <rect x="1240" y="480" width="130" height="80" class="soft"></rect>
+  <text x="1278" y="528" class="label">Zone 1</text>
+
+  <rect x="1415" y="480" width="130" height="80" class="soft"></rect>
+  <text x="1453" y="528" class="label">Zone 2</text>
+
+  <rect x="1590" y="480" width="130" height="80" class="soft"></rect>
+  <text x="1628" y="528" class="label">Zone 3+</text>
+
+  <line x1="1480" y1="390" x2="1480" y2="450" class="line"></line>
+  <line x1="1305" y1="450" x2="1655" y2="450" class="line"></line>
+  <line x1="1305" y1="450" x2="1305" y2="480" class="line"></line>
+  <line x1="1480" y1="450" x2="1480" y2="480" class="line"></line>
+  <line x1="1655" y1="450" x2="1655" y2="480" class="line"></line>
+
+  <text x="1250" y="595" class="small">drip / sprinkler / orchard submain irrigation areas</text>
+
+  <!-- controller layer -->
+  <text x="90" y="660" class="h2">Control Layer</text>
+  <text x="90" y="695" class="small">Main logic controlling pump operation and irrigation sequencing</text>
+
+  <rect x="650" y="730" width="270" height="90" class="box"></rect>
+  <text x="700" y="785" class="label">Main Irrigation Controller</text>
+  <text x="685" y="812" class="small">schedule / sequence / manual override</text>
+
+  <rect x="330" y="870" width="240" height="90" class="box"></rect>
+  <text x="385" y="925" class="label">Pump Control</text>
+  <text x="368" y="952" class="small">start / stop / contactor output</text>
+
+  <rect x="650" y="870" width="270" height="90" class="box"></rect>
+  <text x="725" y="925" class="label">Valve Outputs</text>
+  <text x="682" y="952" class="small">zone sequence / irrigation program</text>
+
+  <rect x="1000" y="870" width="240" height="90" class="box"></rect>
+  <text x="1060" y="925" class="label">Optional</text>
+  <text x="1028" y="952" class="small">fertigation / local expansion</text>
+
+  <line x1="785" y1="820" x2="785" y2="850" class="line"></line>
+  <line x1="450" y1="850" x2="1120" y2="850" class="line"></line>
+  <line x1="450" y1="850" x2="450" y2="870" class="line"></line>
+  <line x1="785" y1="850" x2="785" y2="870" class="line"></line>
+  <line x1="1120" y1="850" x2="1120" y2="870" class="line"></line>
+
+  <!-- communication -->
+  <rect x="1080" y="730" width="220" height="90" class="box"></rect>
+  <text x="1130" y="785" class="label">Gateway / Comms</text>
+  <text x="1120" y="812" class="small">LoRa / 4G / WiFi</text>
+
+  <line x1="920" y1="775" x2="1080" y2="775" class="line"></line>
+
+  <rect x="1410" y="730" width="220" height="90" class="box"></rect>
+  <text x="1465" y="785" class="label">Cloud / App</text>
+  <text x="1452" y="812" class="small">remote visibility / control</text>
+
+  <line x1="1300" y1="775" x2="1410" y2="775" class="line"></line>
+
+  <!-- sensor side -->
+  <text x="90" y="1030" class="h2">Optional Monitoring Inputs</text>
+
+  <rect x="330" y="1000" width="190" height="70" class="soft"></rect>
+  <text x="365" y="1043" class="label">Soil Moisture</text>
+
+  <rect x="560" y="1000" width="170" height="70" class="soft"></rect>
+  <text x="615" y="1043" class="label">Flow</text>
+
+  <rect x="770" y="1000" width="170" height="70" class="soft"></rect>
+  <text x="815" y="1043" class="label">Pressure</text>
+
+  <rect x="980" y="1000" width="170" height="70" class="soft"></rect>
+  <text x="1035" y="1043" class="label">EC / pH</text>
+
+  <line x1="425" y1="1000" x2="700" y2="820" class="dash"></line>
+  <line x1="645" y1="1000" x2="760" y2="820" class="dash"></line>
+  <line x1="855" y1="1000" x2="820" y2="820" class="dash"></line>
+  <line x1="1065" y1="1000" x2="880" y2="820" class="dash"></line>
+
+  <text x="1220" y="1038" class="small">Sensors can be added based on project stage and control requirements</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="PKYDrip global agricultural platform">
+  <rect width="1200" height="420" fill="#f5f7f8"/>
+  <circle cx="600" cy="190" r="120" fill="#e2ebe6" opacity="0.7"/>
+  <ellipse cx="600" cy="190" rx="120" ry="120" fill="none" stroke="#9bb5a8" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="560" cy="175" rx="42" ry="26" fill="#6fa882" opacity="0.25"/>
+  <ellipse cx="660" cy="168" rx="48" ry="28" fill="#5f9fbf" opacity="0.22"/>
+  <ellipse cx="610" cy="215" rx="36" ry="22" fill="#8fae6a" opacity="0.22"/>
+  <circle cx="560" cy="175" r="7" fill="#fff" stroke="#4d8a66" stroke-width="1.8"/>
+  <circle cx="660" cy="168" r="7" fill="#fff" stroke="#3d7a96" stroke-width="1.8"/>
+  <circle cx="610" cy="215" r="7" fill="#fff" stroke="#5a8a52" stroke-width="1.8"/>
+  <circle cx="600" cy="190" r="10" fill="#fff" stroke="#2f5f48" stroke-width="2"/>
+  <path d="M600 190 C570 170,560 165,560 175" fill="none" stroke="#4a9fd4" stroke-width="2" opacity="0.65"/>
+  <path d="M600 190 C630 165,650 160,660 168" fill="none" stroke="#4a9fd4" stroke-width="2" opacity="0.65"/>
+  <path d="M600 190 C605 205,608 212,610 215" fill="none" stroke="#6a9a9f" stroke-width="1.8" opacity="0.55"/>
+  <text x="600" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#6a7a82">hœê¨ûßsð</text>
+</svg>

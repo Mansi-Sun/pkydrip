@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Climate control system layer visualization">
+  <rect width="960" height="540" fill="#f4f8f7" rx="14"/>
+  <text x="48" y="46" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#243038">Climate Control System</text>
+  <text x="48" y="72" font-family="Arial,sans-serif" font-size="13" fill="#66737d">Greenhouse and nursery climate zones managed as one system layer</text>
+  <rect x="48" y="96" width="864" height="88" rx="12" fill="#fff" stroke="#d0deda"/>
+  <text x="68" y="122" font-size="12" font-weight="700" fill="#5a7068" font-family="Arial,sans-serif">ENVIRONMENT</text>
+  <rect x="120" y="134" width="200" height="36" rx="8" fill="#eef6f2" stroke="#c0d8cc"/><text x="220" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3d6a52">Climate zones</text>
+  <rect x="380" y="134" width="200" height="36" rx="8" fill="#eef6f2" stroke="#c0d8cc"/><text x="480" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3d6a52">Greenhouse regions</text>
+  <rect x="640" y="134" width="200" height="36" rx="8" fill="#eef6f2" stroke="#c0d8cc"/><text x="740" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3d6a52">Humidity layers</text>
+  <line x1="480" y1="184" x2="480" y2="210" stroke="#9ab0a8" stroke-width="2"/>
+  <rect x="48" y="220" width="864" height="140" rx="12" fill="#fff" stroke="#d0deda"/>
+  <text x="68" y="246" font-size="12" font-weight="700" fill="#5a7068" font-family="Arial,sans-serif">CLIMATE CONTROL LAYER</text>
+  <rect x="140" y="268" width="680" height="72" rx="14" fill="#f0f7f4" stroke="#b8d4c8"/>
+  <path d="M160 304 Q240 270,320 304 T480 304 T640 304 T800 304" fill="none" stroke="#6a9a9f" stroke-width="2.5"/>
+  <circle cx="240" cy="292" r="10" fill="#fff" stroke="#6a9a9f" stroke-width="2"/>
+  <circle cx="400" cy="304" r="12" fill="#fff" stroke="#4a7a72" stroke-width="2.5"/>
+  <circle cx="560" cy="292" r="10" fill="#fff" stroke="#6a9a9f" stroke-width="2"/>
+  <circle cx="720" cy="304" r="10" fill="#fff" stroke="#6a9a9f" stroke-width="2"/>
+  <text x="400" y="308" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4a7a72">Vent · Cool · Humidity</text>
+  <line x1="480" y1="360" x2="480" y2="386" stroke="#9ab0a8" stroke-width="2"/>
+  <rect x="48" y="396" width="864" height="88" rx="12" fill="#fff" stroke="#d0deda"/>
+  <text x="68" y="422" font-size="12" font-weight="700" fill="#5a7068" font-family="Arial,sans-serif">OUTPUT</text>
+  <rect x="200" y="434" width="160" height="36" rx="8" fill="#edf5ea" stroke="#c8dcc0"/><text x="280" y="458" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Stable climate</text>
+  <rect x="400" y="434" width="160" height="36" rx="8" fill="#edf5ea" stroke="#c8dcc0"/><text x="480" y="458" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Crop comfort</text>
+  <rect x="600" y="434" width="160" height="36" rx="8" fill="#edf5ea" stroke="#c8dcc0"/><text x="680" y="458" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#4a6048">Season balance</text>
+</svg>

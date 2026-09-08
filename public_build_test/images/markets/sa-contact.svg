@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Saudi Arabia system consultation infrastructure">
+  <rect width="1200" height="520" fill="#ede6d8"/>
+  <text x="48" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#3a3020">Infrastructure Consultation  Saudi Arabia</text>
+  <rect x="48" y="100" width="500" height="360" rx="12" fill="#fff" stroke="#d8c8b0"/>
+  <ellipse cx="298" cy="280" rx="170" ry="100" fill="#e0d8c8" opacity="0.45" stroke="#b8a888"/>
+  <circle cx="298" cy="280" r="16" fill="#fff" stroke="#4a9fd4" stroke-width="2.5"/>
+  <rect x="580" y="100" width="572" height="360" rx="12" fill="#fff" stroke="#d8c8b0"/>
+  <circle cx="866" cy="280" r="22" fill="#fff" stroke="#2f6a90" stroke-width="2.5"/>
+  <line x1="680" y1="240" x2="1050" y2="240" stroke="#4a9fd4" stroke-width="2" opacity="0.45"/>
+  <line x1="680" y1="320" x2="1050" y2="320" stroke="#4a9fd4" stroke-width="2" opacity="0.45"/>
+</svg>

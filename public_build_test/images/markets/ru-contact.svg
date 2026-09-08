@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Russia system consultation infrastructure">
+  <rect width="1200" height="520" fill="#e4edf2"/>
+  <text x="48" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#2a3a42">System Consultation  Russia</text>
+  <rect x="48" y="100" width="500" height="360" rx="12" fill="#fff" stroke="#c5d4de"/>
+  <text x="68" y="130" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5a6872">REGIONAL MAP</text>
+  <ellipse cx="298" cy="280" rx="160" ry="100" fill="#dce8dc" opacity="0.4" stroke="#a8c4a8"/>
+  <circle cx="298" cy="280" r="14" fill="#fff" stroke="#4a9fd4" stroke-width="2.5"/>
+  <rect x="580" y="100" width="572" height="360" rx="12" fill="#fff" stroke="#c5d4de"/>
+  <text x="600" y="130" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5a6872">SYSTEM CONNECTIVITY</text>
+  <circle cx="866" cy="220" r="12" fill="#e8f3fa" stroke="#4a9fd4" stroke-width="2"/><circle cx="750" cy="280" r="12" fill="#e8f3fa" stroke="#4a9fd4" stroke-width="2"/>
+  <circle cx="980" cy="280" r="12" fill="#e8f3fa" stroke="#4a9fd4" stroke-width="2"/><circle cx="866" cy="340" r="16" fill="#fff" stroke="#2f6a90" stroke-width="2.5"/>
+  <line x1="750" y1="280" x2="980" y2="280" stroke="#4a9fd4" stroke-width="2" opacity="0.55"/>
+  <line x1="866" y1="220" x2="866" y2="340" stroke="#4a9fd4" stroke-width="2" opacity="0.55"/>
+</svg>

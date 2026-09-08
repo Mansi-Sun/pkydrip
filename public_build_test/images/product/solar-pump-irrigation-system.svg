@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PKYDrip solar pump irrigation system architecture</title>
+  <desc id="desc">A custom solar pump irrigation system showing solar panels, pump controller, water pump, tank storage, irrigation controller, wireless valve control, monitoring, and field irrigation zones.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff4ff"/>
+      <stop offset="0.55" stop-color="#f5fbff"/>
+      <stop offset="1" stop-color="#eff8ef"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2fb36d"/>
+      <stop offset="1" stop-color="#1f8f5a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c8ed6"/>
+      <stop offset="1" stop-color="#145e9d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#173444" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#1f8f5a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" rx="44" fill="url(#sky)"/>
+  <circle cx="1040" cy="104" r="54" fill="#ffd36a"/>
+  <g stroke="#ffd36a" stroke-width="7" stroke-linecap="round" opacity="0.75">
+    <path d="M1040 18v34"/>
+    <path d="M1040 156v34"/>
+    <path d="M954 104h34"/>
+    <path d="M1092 104h34"/>
+    <path d="M978 42l24 24"/>
+    <path d="M1078 142l24 24"/>
+    <path d="M1102 42l-24 24"/>
+    <path d="M1002 142l-24 24"/>
+  </g>
+
+  <g transform="translate(72 64)">
+    <text x="0" y="0" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">
+      Solar Pump Irrigation System
+    </text>
+    <text x="0" y="44" fill="#5d6d78" font-family="Arial, Helvetica, sans-serif" font-size="20">
+      Custom control architecture for solar pumping, water storage, irrigation automation, and remote monitoring.
+    </text>
+  </g>
+
+  <path d="M0 610 C160 570 300 620 480 586 C650 552 780 610 970 576 C1070 558 1140 568 1200 548 L1200 760 L0 760Z" fill="#d9f0d6"/>
+  <path d="M0 654 C180 622 345 664 530 636 C710 610 860 650 1200 620 L1200 760 L0 760Z" fill="#bfe5bf"/>
+
+  <g transform="translate(76 190)" filter="url(#shadow)">
+    <rect x="0" y="0" width="230" height="176" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Solar Panels</text>
+    <g transform="translate(34 62) skewX(-12)">
+      <rect x="0" y="0" width="156" height="82" rx="8" fill="#17415a"/>
+      <g stroke="#79c8ff" stroke-width="3">
+        <path d="M0 28h156"/>
+        <path d="M0 56h156"/>
+        <path d="M39 0v82"/>
+        <path d="M78 0v82"/>
+        <path d="M117 0v82"/>
+      </g>
+      <rect x="0" y="0" width="156" height="82" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="3"/>
+    </g>
+    <text x="24" y="156" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">PV power source</text>
+  </g>
+
+  <g transform="translate(384 190)" filter="url(#shadow)">
+    <rect x="0" y="0" width="220" height="176" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Pump Controller</text>
+    <rect x="64" y="58" width="90" height="96" rx="12" fill="#eef4f7" stroke="#cbd8df" stroke-width="3"/>
+    <rect x="80" y="74" width="58" height="26" rx="5" fill="#12384d"/>
+    <circle cx="90" cy="124" r="8" fill="#2fb36d"/>
+    <circle cx="112" cy="124" r="8" fill="#ffd36a"/>
+    <circle cx="134" cy="124" r="8" fill="#e45757"/>
+    <text x="24" y="156" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">VFD / protection optional</text>
+  </g>
+
+  <g transform="translate(690 190)" filter="url(#shadow)">
+    <rect x="0" y="0" width="210" height="176" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Water Pump</text>
+    <g transform="translate(44 78)">
+      <rect x="30" y="24" width="90" height="42" rx="18" fill="#1f8f5a"/>
+      <circle cx="30" cy="45" r="24" fill="#2fb36d"/>
+      <rect x="118" y="38" width="34" height="14" rx="7" fill="#17415a"/>
+      <rect x="72" y="0" width="30" height="28" rx="8" fill="#17415a"/>
+    </g>
+    <text x="24" y="156" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">Bore / river / reservoir</text>
+  </g>
+
+  <g transform="translate(960 184)" filter="url(#shadow)">
+    <rect x="0" y="0" width="166" height="188" rx="24" fill="#ffffff"/>
+    <text x="22" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Water Tank</text>
+    <ellipse cx="83" cy="76" rx="48" ry="16" fill="#73c3ef"/>
+    <rect x="35" y="76" width="96" height="76" fill="#2c8ed6"/>
+    <ellipse cx="83" cy="152" rx="48" ry="16" fill="#145e9d"/>
+    <path d="M35 76v76M131 76v76" stroke="#145e9d" stroke-width="3"/>
+    <text x="22" y="174" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">Storage buffer</text>
+  </g>
+
+  <g stroke="#1f8f5a" stroke-width="7" fill="none" marker-end="url(#arrow)">
+    <path d="M306 278H370"/>
+    <path d="M604 278H674"/>
+    <path d="M900 278H944"/>
+  </g>
+
+  <g transform="translate(246 450)" filter="url(#shadow)">
+    <rect x="0" y="0" width="260" height="170" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Irrigation Controller</text>
+    <rect x="30" y="58" width="88" height="82" rx="12" fill="#eef4f7" stroke="#cbd8df" stroke-width="3"/>
+    <rect x="45" y="74" width="58" height="24" rx="5" fill="#12384d"/>
+    <circle cx="54" cy="118" r="7" fill="#2fb36d"/>
+    <circle cx="76" cy="118" r="7" fill="#ffd36a"/>
+    <circle cx="98" cy="118" r="7" fill="#e45757"/>
+    <g transform="translate(142 66)" fill="#5f6f79" font-family="Arial, Helvetica, sans-serif" font-size="14">
+      <text x="0" y="0">Zone scheduling</text>
+      <text x="0" y="30">Pump interlock</text>
+      <text x="0" y="60">Valve sequence</text>
+    </g>
+  </g>
+
+  <g transform="translate(586 450)" filter="url(#shadow)">
+    <rect x="0" y="0" width="238" height="170" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Remote Valves</text>
+    <g transform="translate(34 70)">
+      <circle cx="22" cy="22" r="18" fill="#2fb36d"/>
+      <rect x="40" y="14" width="54" height="16" rx="8" fill="#17415a"/>
+      <circle cx="122" cy="22" r="18" fill="#2fb36d"/>
+      <rect x="140" y="14" width="54" height="16" rx="8" fill="#17415a"/>
+      <path d="M22 58v32M122 58v32" stroke="#1f8f5a" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <text x="24" y="142" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">LoRa field expansion</text>
+  </g>
+
+  <g transform="translate(910 450)" filter="url(#shadow)">
+    <rect x="0" y="0" width="218" height="170" rx="24" fill="#ffffff"/>
+    <text x="24" y="36" fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Monitoring</text>
+    <g transform="translate(34 62)">
+      <rect x="0" y="0" width="150" height="78" rx="14" fill="url(#blue)"/>
+      <polyline points="18,54 42,40 66,46 90,24 116,34 136,18" fill="none" stroke="#8ff0bd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="18" y="28" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13">Tank / flow / pump</text>
+    </g>
+    <text x="24" y="142" fill="#62727c" font-family="Arial, Helvetica, sans-serif" font-size="14">App / web data optional</text>
+  </g>
+
+  <g stroke="#1f8f5a" stroke-width="7" fill="none" marker-end="url(#arrow)">
+    <path d="M1044 372C1044 410 1018 430 978 450"/>
+    <path d="M506 535H570"/>
+    <path d="M824 535H894"/>
+  </g>
+
+  <g transform="translate(80 660)">
+    <rect x="0" y="0" width="1040" height="54" rx="27" fill="#ffffff" opacity="0.88"/>
+    <g fill="#17415a" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">
+      <text x="32" y="34">Solar power</text>
+      <text x="214" y="34">Pump control</text>
+      <text x="414" y="34">Tank storage</text>
+      <text x="612" y="34">Irrigation automation</text>
+      <text x="856" y="34">Remote monitoring</text>
+    </g>
+    <g fill="#2fb36d">
+      <circle cx="18" cy="29" r="7"/>
+      <circle cx="200" cy="29" r="7"/>
+      <circle cx="400" cy="29" r="7"/>
+      <circle cx="598" cy="29" r="7"/>
+      <circle cx="842" cy="29" r="7"/>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,6 @@
 ############# English navigation ##############
+# Supplier-first order (Phase 1 supplier transformation, 2026-09-08):
+# Products before Systems/Solutions; For Distributors as top-level entry.
 
 # main menu
 [[main]]
@@ -7,9 +9,55 @@ url = ""
 weight = 1
 
 [[main]]
+name = "Products"
+url = "product/"
+weight = 2
+
+[[main]]
+parent = "Products"
+name = "Product Directory"
+url = "product/"
+weight = 1
+
+[[main]]
+parent = "Products"
+name = "Fertigation Family"
+url = "products/fertigation/"
+weight = 2
+
+[[main]]
+parent = "Products"
+name = "Greenhouse Climate Control"
+url = "products/greenhouse-climate-control/"
+weight = 3
+
+[[main]]
+name = "For Distributors"
+url = "become-a-distributor/"
+weight = 3
+
+[[main]]
+parent = "For Distributors"
+name = "Become a Distributor"
+url = "become-a-distributor/"
+weight = 1
+
+[[main]]
+parent = "For Distributors"
+name = "Book a Live Demo"
+url = "book-a-demo/"
+weight = 2
+
+[[main]]
+parent = "For Distributors"
+name = "API & Integrations"
+url = "api-integration/"
+weight = 3
+
+[[main]]
 name = "Systems"
 url = "system/irrigation-control-system/"
-weight = 2
+weight = 4
 
 [[main]]
 parent = "Systems"
@@ -38,7 +86,7 @@ weight = 4
 [[main]]
 name = "Solutions"
 url = "solution/"
-weight = 3
+weight = 5
 
 [[main]]
 parent = "Solutions"
@@ -73,7 +121,7 @@ weight = 5
 [[main]]
 name = "Products"
 url = "product/"
-weight = 4
+weight = 2
 
 [[main]]
 parent = "Products"
@@ -95,7 +143,7 @@ weight = 3
 
 [[main]]
 name = "Resources"
-weight = 5
+weight = 6
 
 [[main]]
 parent = "Resources"
@@ -118,7 +166,7 @@ weight = 3
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
 
 # footer menu
 [[footer]]
@@ -127,26 +175,31 @@ url = "about/"
 weight = 1
 
 [[footer]]
-name = "Solutions"
-url = "solution/"
+name = "Products"
+url = "product/"
 weight = 2
 
 [[footer]]
-name = "Products"
-url = "product/"
+name = "Solutions"
+url = "solution/"
 weight = 3
+
+[[footer]]
+name = "For Distributors"
+url = "become-a-distributor/"
+weight = 4
 
 [[footer]]
 name = "Download"
 url = "downloads/"
-weight = 4
+weight = 5
 
 [[footer]]
 name = "FAQ"
 url = "faq/"
-weight = 5
+weight = 6
 
 [[footer]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7

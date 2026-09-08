@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="South Africa wireless irrigation expansion">
+  <rect width="1200" height="520" fill="#e8ede4"/>
+  <text x="48" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#2a3828">Wireless Expansion  South Africa</text>
+  <rect x="48" y="198" width="1104" height="150" rx="12" fill="#fff" stroke="#c8d4c0"/>
+  <circle cx="600" cy="290" r="30" fill="#fff" stroke="#3d6a82" stroke-width="2.5"/>
+  <circle cx="280" cy="270" r="12" fill="#eef4f8" stroke="#5a8aa8" stroke-width="2"/><circle cx="920" cy="270" r="12" fill="#eef4f8" stroke="#5a8aa8" stroke-width="2"/>
+  <circle cx="380" cy="330" r="10" fill="#eef4f8" stroke="#5a8aa8" stroke-width="2"/><circle cx="820" cy="330" r="10" fill="#eef4f8" stroke="#5a8aa8" stroke-width="2"/>
+  <line x1="600" y1="290" x2="280" y2="270" stroke="#7aa0b8" stroke-width="2" opacity="0.55"/><line x1="600" y1="290" x2="920" y2="270" stroke="#7aa0b8" stroke-width="2" opacity="0.55"/>
+  <rect x="48" y="368" width="1104" height="120" rx="12" fill="#fff" stroke="#c8d4c0"/>
+  <text x="68" y="394" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5a6858">FIELD ZONE EXPANSION NETWORK</text>
+</svg>
