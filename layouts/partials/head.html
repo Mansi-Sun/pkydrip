@@ -31,6 +31,9 @@
 {{ else if eq .Lang "ar" }}
   <link rel="alternate" hreflang="ar" href="{{ .Permalink }}">
   <link rel="alternate" hreflang="x-default" href="{{ `/products/fertigation/` | absURL }}">
+{{ else if eq .Lang "en" }}
+  <link rel="alternate" hreflang="en" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
 {{ end }}
 
 <!-- mobile responsive meta -->
@@ -41,7 +44,6 @@
 {{ end }}
 {{ hugo.Generator }}
 
-{{/* Canonical for standard product pages (and any page that sets product_code) */}}
 {{/* Canonical: every page outputs its own absolute URL (SEO 2026-09-07). */}}
 <link rel="canonical" href="{{ .Permalink }}">
 

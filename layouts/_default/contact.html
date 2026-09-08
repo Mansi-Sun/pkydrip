@@ -1,0 +1,210 @@
+{{ define "head_extra" }}
+<style>
+/* 变更方案-02：/contact/ 转化重构样式（2026-09-08，自包含，不依赖主题 contact CSS） */
+.c2-hero{background:#f3f8f5;border-bottom:1px solid #e0e9e3;padding:44px 0 34px}
+.c2-hero h1{font-size:30px;font-weight:500;color:#173d31;margin:0 0 10px}
+.c2-hero p{max-width:720px;color:#4a6156;font-size:15px;line-height:1.7;margin:0}
+.c2-hero__tips{margin-top:16px;padding:14px 18px;background:#fff;border:1px solid #dcebe1;border-radius:12px}
+.c2-hero__tips b{color:#1e4d3f;display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.c2-hero__tips ul{margin:0;padding-left:18px;color:#4a6156;font-size:13px;line-height:1.75}
+.c2-body{padding:36px 0 56px}
+.c2-card{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:26px 28px}
+.c2-card h2{font-size:19px;font-weight:500;color:#173d31;margin:0 0 4px}
+.c2-card__sub{color:#67817a;font-size:13px;margin:0 0 20px}
+.c2-form label{font-size:13px;font-weight:500;color:#234d3d;margin-bottom:5px}
+.c2-form .form-control,.c2-form .form-select{border-color:#cfdcd4;border-radius:8px;font-size:14px;padding:9px 12px;color:#26463a}
+.c2-form .form-control:focus,.c2-form .form-select:focus{border-color:#3c8b65;box-shadow:0 0 0 3px rgba(60,139,101,.13)}
+.c2-form .form-text{font-size:12px;color:#80948a;margin-top:5px}
+.c2-form .was-validated .form-control:invalid,.c2-form .was-validated .form-select:invalid{border-color:#e24b4a}
+.c2-btn-submit{background:#1e4d3f;border:0;border-radius:9px;color:#fff;font-size:15px;font-weight:500;padding:12px 22px;width:100%}
+.c2-btn-submit:hover{background:#173d31;color:#fff}
+.c2-honeypot{position:absolute!important;left:-9999px!important;opacity:0;height:0;width:0;overflow:hidden}
+.c2-note{font-size:12px;color:#67817a;text-align:center;margin:10px 0 0}
+.c2-rail{position:sticky;top:20px;display:grid;gap:18px}
+.c2-wa{background:#173d31;border:0;border-radius:14px;color:#fff;padding:22px}
+.c2-wa h3{color:#fff;font-size:17px;font-weight:500;margin:0 0 6px}
+.c2-wa p{color:rgba(255,255,255,.85);font-size:13px;line-height:1.6;margin:0 0 16px}
+.c2-wa-btn{background:#25d366;border:0;border-radius:10px;color:#fff;display:block;font-size:15px;font-weight:500;padding:12px 16px;text-align:center;text-decoration:none}
+.c2-wa-btn:hover{background:#1fbd5b;color:#fff}
+.c2-wa-alt{color:rgba(255,255,255,.8);display:block;font-size:12px;margin-top:10px;text-align:center;text-decoration:none}
+.c2-wa-alt:hover{color:#fff}
+.c2-wa-sep{border-top:1px solid rgba(255,255,255,.14);margin:14px 0 0}
+.c2-info{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:22px}
+.c2-info h3{color:#173d31;font-size:16px;font-weight:500;margin:0 0 14px}
+.c2-info li{color:#3a5248;display:flex;font-size:13px;gap:10px;line-height:1.55;margin-bottom:11px}
+.c2-info li i{color:#3c8b65;margin-top:3px;width:15px}
+.c2-info a{color:#1e5841;text-decoration:underline}
+.c2-info__addr{white-space:pre-line}
+.c2-social{display:flex;gap:9px;margin-top:14px}
+.c2-social a{align-items:center;background:#eef5f0;border:1px solid #dcebe1;border-radius:9px;color:#1e4d3f;display:inline-flex;height:34px;justify-content:center;text-decoration:none;width:34px}
+.c2-social a:hover{background:#dcebe1}
+.c2-steps{margin:0;padding:0}
+.c2-steps li{color:#3a5248;display:flex;font-size:13px;gap:11px;line-height:1.55;margin-bottom:12px}
+.c2-steps li:last-child{margin-bottom:0}
+.c2-steps__n{background:#e1f4e8;border-radius:50%;color:#1e5841;flex:0 0 24px;font-size:12px;font-weight:500;height:24px;line-height:24px;text-align:center;width:24px}
+@media(max-width:991px){.c2-rail{position:static;margin-top:22px}.c2-hero{padding:34px 0 28px}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="c2-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.tagline | markdownify }}</p>
+    <div class="c2-hero__tips">
+      <b>To speed up our reply, please include</b>
+      <ul>
+        <li>Your country or market</li>
+        <li>Business type: distributor, contractor, wholesaler, OEM buyer, farm project or other</li>
+        <li>Product interest: irrigation controller, valve controller, LoRa wireless, pump control, fertigation or greenhouse climate control</li>
+        <li>Estimated order type: sample, pilot order, batch order or project use</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="c2-body">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="c2-card">
+          <h2>Request catalog, pricing &amp; OEM support</h2>
+          <p class="c2-card__sub">Fill in the form and we will reply with product catalog, pricing direction and a recommended configuration.</p>
+          {{ $form := site.Params.contact.form }}
+          <form method="POST" name="contact_en" class="c2-form needs-validation" novalidate
+                {{ if $form.use_netlify }}netlify netlify-honeypot="nhp" action="/message_sent"{{ else }}action="{{ $form.action | safeURL }}"{{ end }}>
+            <input type="hidden" name="form-name" value="contact_en">
+            <div class="c2-honeypot">
+              <label>Leave this field empty<input name="nhp" type="text" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="c2-name">Full name *</label>
+                <input id="c2-name" name="name" type="text" class="form-control" placeholder="Your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="c2-email">Work email *</label>
+                <input id="c2-email" name="email" type="email" class="form-control" autocomplete="email" inputmode="email"
+                       placeholder="name@company.com" pattern="^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,}$" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="c2-market">Country / market *</label>
+                <input id="c2-market" name="market" type="text" class="form-control" placeholder="e.g. Saudi Arabia, Chile, Spain" required>
+                <div class="invalid-feedback">Please tell us your market.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="c2-phone">Phone / WhatsApp <span class="form-text d-inline">(optional)</span></label>
+                <input id="c2-phone" name="phone" type="tel" class="form-control" autocomplete="tel" placeholder="+86 ... / WhatsApp number" inputmode="tel">
+              </div>
+              <div class="col-md-6">
+                <label for="c2-biz">Business type *</label>
+                <select id="c2-biz" name="business_type" class="form-select" required>
+                  <option value="" selected disabled>Select your business type</option>
+                  <option>Distributor</option>
+                  <option>Wholesaler</option>
+                  <option>Contractor / Installer</option>
+                  <option>OEM buyer</option>
+                  <option>Farm / Grower</option>
+                  <option>Project engineer</option>
+                  <option>Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a business type.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="c2-product">Product interest *</label>
+                <select id="c2-product" name="product_interest" class="form-select" required>
+                  <option value="" selected disabled>Select your product interest</option>
+                  <option>Irrigation controller</option>
+                  <option>Valve / LoRa wireless system</option>
+                  <option>Fertigation system</option>
+                  <option>Greenhouse climate control</option>
+                  <option>EC &amp; pH monitoring</option>
+                  <option>Solar / pump control</option>
+                  <option>Other / not sure yet</option>
+                </select>
+                <div class="invalid-feedback">Please select a product.</div>
+              </div>
+              <div class="col-12">
+                <label for="c2-order">Estimated order type *</label>
+                <select id="c2-order" name="order_type" class="form-select" required>
+                  <option value="" selected disabled>Select order type</option>
+                  <option>Just catalog &amp; pricing</option>
+                  <option>Sample order</option>
+                  <option>Pilot order</option>
+                  <option>Batch order</option>
+                  <option>Project use</option>
+                  <option>OEM cooperation</option>
+                </select>
+                <div class="invalid-feedback">Please select an order type.</div>
+              </div>
+              <div class="col-12">
+                <label for="c2-message">Project details *</label>
+                <textarea id="c2-message" name="message" class="form-control" rows="5" required
+                          placeholder="Tell us about your project or inquiry…"></textarea>
+                <div class="invalid-feedback">Please describe your inquiry.</div>
+                <div class="form-text">Including farm size, water source, number of zones or target crop helps us reply faster.</div>
+              </div>
+              <div class="col-12">
+                <button class="c2-btn-submit" type="submit">Send inquiry</button>
+                <p class="c2-note">Usually replied within 1 business day · Your information stays private</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="c2-rail">
+          <div class="c2-wa">
+            <h3>Prefer WhatsApp?</h3>
+            <p>Send us a message directly — fastest for catalog &amp; pricing requests.</p>
+            <a class="c2-wa-btn" href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20would%20like%20to%20inquire%20about%20your%20irrigation%20systems.">
+              <i class="fab fa-whatsapp"></i>&nbsp; Chat on WhatsApp
+            </a>
+            <a class="c2-wa-alt" href="https://wa.me/8613803373007?text=Hello%20PKYDrip.">Alt: +86 138 0337 3007</a>
+            <div class="c2-wa-sep"></div>
+            <p style="margin:14px 0 0;font-size:12px;color:rgba(255,255,255,.72)">English, Español, العربية, Русский supported. We reply within 1 business day.</p>
+          </div>
+
+          <div class="c2-info">
+            <h3>Direct contact</h3>
+            <ul style="list-style:none;margin:0;padding:0">
+              {{ with site.Params.email }}
+              <li><i class="fas fa-envelope"></i><span><a href="mailto:{{ . }}">{{ . }}</a></span></li>
+              {{ end }}
+              {{ with site.Params.phone }}
+              <li><i class="fas fa-phone"></i><span>{{ . }}</span></li>
+              {{ end }}
+              {{ with site.Params.location }}
+              <li><i class="fas fa-map-marker-alt"></i><span class="c2-info__addr">{{ . }}</span></li>
+              {{ end }}
+            </ul>
+            {{ with site.Params.social }}
+            <div class="c2-social">
+              {{ range . }}
+              {{ if .link }}
+              <a href="{{ .link | safeURL }}" rel="noopener" aria-label="{{ .title }}"><i class="{{ .icon }}"></i></a>
+              {{ end }}
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+
+          <div class="c2-info">
+            <h3>What happens next</h3>
+            <ul class="c2-steps" style="list-style:none">
+              <li><span class="c2-steps__n">1</span><span>We review your inquiry and reply within 1 business day.</span></li>
+              <li><span class="c2-steps__n">2</span><span>You receive product catalog, pricing direction and a recommended configuration.</span></li>
+              <li><span class="c2-steps__n">3</span><span>Samples, pilot or batch order — with engineering support throughout.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
