@@ -1,10 +1,11 @@
 ---
 title: "Frequently Asked Questions"
-description: ""
+description: "Irrigation planning, fertigation design, ordering and shipping — frequently asked questions about PKYDrip smart irrigation systems."
 subtitle : "CultivateCultivating Smarter Agriculture with IoT Technology."
-lastmod: 2025-05-30T00:00:00
+lastmod: 2026-09-08T00:00:00
 bg_image: "images/feature-bg.webp"
 layout: "faq"
+aliases: ["/faqs/"]
 draft: false
 ---
 
@@ -102,3 +103,39 @@ A:Greenhouses may use grow lights, CO₂ generators, fans, and misting systems, 
 
 **Q:What sensors should I install?**</p>
 A:Options include soil moisture, NPK, EC, temperature/humidity, CO₂, and light intensity sensors.</p>
+
+<p></p>
+
+### Ordering, Samples & Shipping
+<p></p>
+
+**Q:Where is your company located? How can I visit?**</p>
+A:Our factory is located in Shijiazhuang, Hebei Province, China. Welcome to visit us.</p>
+
+**Q:Can I get a sample, and how long will it take?**</p>
+A:Yes, we offer samples free of charge — you only bear the freight cost. Samples are sent out within 3 days.</p>
+
+**Q:Can I get customized products with my own brand?**</p>
+A:Sure. Printing your logo on products or packaging is welcome — we have our own design team. See also our [OEM services](/oem/).</p>
+
+**Q:What is your MOQ?**</p>
+A:We accept orders above USD 3,000, and samples can be sent for testing first.</p>
+
+**Q:How do you ship the goods?**</p>
+A:By sea, by air, or by air express — though we don't recommend sea freight for volumes under 1 CBM.</p>
+
+**Q:Can you supply product inspection certificates?**</p>
+A:Yes, we can supply certification on request.</p>
+
+**Q:What is your delivery time?**</p>
+A:Generally 2–3 weeks after workable payment.</p>
+
+**Q:What is your payment term?**</p>
+A:30% or 50% TT in advance, the balance against the copy of B/L.</p>
+
+**Q:How do you handle quality problems after delivery?**</p>
+A:Send product photos or a video by email, or send a sample by express. Once the problem is confirmed, we will provide a satisfactory solution.</p>
+
+<p></p>
+
+Your question not covered? Chat with us on WhatsApp: [+86 173 9529 7329](https://wa.me/8617395297329)

@@ -3,6 +3,7 @@ title: "Smart Irrigation & Fertigation Systems | PKYDRIP"
 description: "PKYDrip develops industrial-standard PCB controllers, Android terminals, wireless devices, and cloud-connected automation systems for irrigation, fertigation, and greenhouse control."
 bg_image: "images/slider-bg.webp"
 layout: "about"
+aliases: ["/about-us/"]
 draft: false
 
 ################################## About #####################################
@@ -11,6 +12,8 @@ about:
   image : "images/company/about.webp"
   title : "Smart Irrigation Control <br> Built on Real Industry Experience"
   content : |
+    PKYDrip Irrigation was established in 2014 and is headquartered in Shijiazhuang, Hebei Province, China, with its R&D department based in Melbourne, Australia. We specialize in the development and production of water-saving irrigation products such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves.<br><br>
+
     PKYDrip built its industry experience through drip irrigation solutions, irrigation projects, and the production and supply of PE irrigation pipes and related components.<br><br>
 
     This practical background gave us a close understanding of water distribution, pump and valve operation, field installation, maintenance, and the challenges faced by growers and irrigation contractors.<br><br>
@@ -42,7 +45,7 @@ about:
   funfacts:
   - icon : "fas fa-chart-line"
     name : "Years of Industry Experience"
-    count : "7+"
+    count : "10+"
 
   - icon : "fas fa-thumbs-up"
     name : "Customers Served"

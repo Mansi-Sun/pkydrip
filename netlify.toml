@@ -81,3 +81,107 @@
   to = "/about/"
   status = 301
   force = true
+
+# 2026-09-08 WP legacy URL preservation — kept pages (24-item curation).
+# Effective when wp.pky-dripirrigation.com / root domain are attached to this Netlify site.
+# Specific rules MUST stay above the catch-all rules at the bottom of this section.
+
+# Kept: commercial pages → smart native pages
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/faqs/"
+  to = "/faq/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/about-us/"
+  to = "/about/"
+  status = 301
+  force = true
+
+# Kept: content pages → docs domain (same path preserved)
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/drip-irrigation-news/*"
+  to = "https://docs.pky-dripirrigation.com/drip-irrigation-news/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/zone-irrigation-system/*"
+  to = "https://docs.pky-dripirrigation.com/zone-irrigation-system/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/drip-irrigation-application/*"
+  to = "https://docs.pky-dripirrigation.com/drip-irrigation-application/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/irrigation-case/*"
+  to = "https://docs.pky-dripirrigation.com/irrigation-case/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/open-field-solutions/*"
+  to = "https://docs.pky-dripirrigation.com/open-field-solutions/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/faq/rainwater-harvesting-and-hydroponic-vegetable-cultivation-for-saudi-arabia-and-dubai/"
+  to = "https://docs.pky-dripirrigation.com/faq/rainwater-harvesting-and-hydroponic-vegetable-cultivation-for-saudi-arabia-and-dubai/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/faq/21-hectares-of-rice-flood-irrigation/"
+  to = "https://docs.pky-dripirrigation.com/faq/21-hectares-of-rice-flood-irrigation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/fertigation-system/"
+  to = "https://docs.pky-dripirrigation.com/fertigation-system/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/irrigation-controller/"
+  to = "https://docs.pky-dripirrigation.com/irrigation-controller/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/intelligent-1-7-channels-water-fertilizer-machine-for-farm-irrigation-system/"
+  to = "https://docs.pky-dripirrigation.com/intelligent-1-7-channels-water-fertilizer-machine-for-farm-irrigation-system/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/pky-drip-automatic-irrigation-and-fertilization-system-tailored-for-non-network-areas/"
+  to = "https://docs.pky-dripirrigation.com/pky-drip-automatic-irrigation-and-fertilization-system-tailored-for-non-network-areas/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/downloads/"
+  to = "https://docs.pky-dripirrigation.com/downloads/"
+  status = 301
+  force = true
+
+# Discarded legacy content (130 items) → smart homepage
+[[redirects]]
+  from = "https://wp.pky-dripirrigation.com/*"
+  to = "https://smart.pky-dripirrigation.com/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://pky-dripirrigation.com/*"
+  to = "https://smart.pky-dripirrigation.com/"
+  status = 301
+  force = true
+
+# 2026-09-08 fix: about page linked to these product overview paths (broken links);
+# full articles now live on the docs domain — same path, cross-domain 301.
+# NOTE: local Hugo dev server does not apply Netlify redirects; verify after deploy.
+[[redirects]]
+  from = "/fertigation-system/"
+  to = "https://docs.pky-dripirrigation.com/fertigation-system/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/irrigation-controller/"
+  to = "https://docs.pky-dripirrigation.com/irrigation-controller/"
+  status = 301
+  force = true
