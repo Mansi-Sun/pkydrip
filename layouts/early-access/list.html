@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<section style="background:linear-gradient(135deg,#1e5841 0%,#2a7a5a 100%);padding:64px 15px 48px;">
+  <div style="max-width:900px;margin:0 auto;color:#fff;">
+    <p style="display:inline-block;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.35);border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:0 0 16px;">PKYDrip Early Access Program</p>
+    <h1 style="color:#fff;font-size:34px;line-height:1.25;margin:0 0 12px;">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p style="font-size:19px;color:rgba(255,255,255,0.92);margin:0 0 10px;">{{ . }}</p>{{ end }}
+    {{ with .Params.support }}<p style="font-size:15px;color:rgba(255,255,255,0.75);margin:0;">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section style="padding:40px 15px 24px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="content">{{ .Content }}</div>
+  </div>
+</section>
+
+{{ with .Params.programs }}
+<section style="padding:8px 15px 24px;">
+  <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
+    {{ range . }}
+    <div style="background:#f4faf7;border:1px solid #d8ece2;border-radius:10px;padding:20px;display:flex;flex-direction:column;">
+      {{ with .badge }}<span style="align-self:flex-start;background:#1e5841;color:#fff;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;border-radius:999px;padding:3px 10px;margin-bottom:10px;">{{ . }}</span>{{ end }}
+      <h2 style="font-size:17px;margin:0 0 8px;">{{ .title }}</h2>
+      <p style="font-size:14px;margin:0 0 14px;color:#3d4b44;flex-grow:1;">{{ .text }}</p>
+      <a href="{{ .url }}" style="color:#1e5841;font-weight:700;text-decoration:none;">View program →</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.how_it_works }}
+<section style="padding:16px 15px 32px;background:#f7f9f8;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="font-size:24px;margin:0 0 16px;">{{ .title }}</h2>
+    {{ with .steps }}
+    <ol style="padding-left:20px;margin:0;">
+      {{ range . }}<li style="margin-bottom:8px;font-size:15.5px;">{{ . }}</li>{{ end }}
+    </ol>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.apply }}
+<section style="padding:24px 15px 48px;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;background:#1e5841;border-radius:12px;padding:36px 24px;color:#fff;">
+    <h2 style="color:#fff;font-size:26px;margin:0 0 10px;">{{ .title }}</h2>
+    {{ with .text }}<p style="color:rgba(255,255,255,0.9);max-width:640px;margin:0 auto 20px;">{{ . }}</p>{{ end }}
+    {{ with $.Params.whatsapp_url }}
+    <a href="{{ . }}" target="_blank" rel="noopener" style="display:inline-block;background:#25d366;color:#fff;font-weight:700;font-size:17px;padding:14px 34px;border-radius:8px;text-decoration:none;">{{ with $.Params.primary_cta }}{{ . }}{{ else }}Apply on WhatsApp{{ end }}</a>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+{{ with $.Params.whatsapp_url }}
+<section style="padding:24px 15px 48px;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;background:#1e5841;border-radius:12px;padding:36px 24px;color:#fff;">
+    <h2 style="color:#fff;font-size:26px;margin:0 0 10px;">Not Sure Which Program Fits You?</h2>
+    <p style="color:rgba(255,255,255,0.9);max-width:640px;margin:0 auto 20px;">Tell us who you are and what you grow or sell — we will point you to the right track within 2 working days.</p>
+    <a href="{{ . }}" target="_blank" rel="noopener" style="display:inline-block;background:#25d366;color:#fff;font-weight:700;font-size:17px;padding:14px 34px;border-radius:8px;text-decoration:none;">{{ with $.Params.primary_cta }}{{ . }}{{ else }}Apply on WhatsApp{{ end }}</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

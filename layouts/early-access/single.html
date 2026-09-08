@@ -1,0 +1,124 @@
+{{ define "main" }}
+
+{{ with .Params.hero }}
+<section style="background:linear-gradient(135deg,#1e5841 0%,#2a7a5a 100%);padding:64px 15px 48px;">
+  <div style="max-width:860px;margin:0 auto;color:#fff;">
+    {{ with .eyebrow }}<p style="display:inline-block;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.35);border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:0 0 16px;">{{ . }}</p>{{ end }}
+    <h1 style="color:#fff;font-size:34px;line-height:1.25;margin:0 0 12px;">{{ $.Title }}</h1>
+    {{ with .subtitle }}<p style="font-size:19px;color:rgba(255,255,255,0.92);margin:0 0 10px;">{{ . }}</p>{{ end }}
+    {{ with .support }}<p style="font-size:15px;color:rgba(255,255,255,0.75);margin:0;">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section style="padding:44px 15px 20px;">
+  <div style="max-width:860px;margin:0 auto;">
+    {{ with .Params.offer }}
+    <h2 style="font-size:24px;margin:0 0 16px;">{{ .title }}</h2>
+    {{ with .intro }}<p class="lead" style="margin-bottom:20px;">{{ . }}</p>{{ end }}
+    {{ with .benefits }}
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:12px;">
+      {{ range . }}
+      <div style="background:#f4faf7;border:1px solid #d8ece2;border-radius:10px;padding:18px;">
+        <div style="font-size:22px;line-height:1;margin-bottom:8px;">✅</div>
+        <h3 style="font-size:16px;margin:0 0 6px;color:#1e5841;">{{ .title }}</h3>
+        <p style="font-size:14px;margin:0;color:#3d4b44;">{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+{{ with .Params.audience }}
+<section style="padding:24px 15px;">
+  <div style="max-width:860px;margin:0 auto;">
+    <h2 style="font-size:24px;margin:0 0 14px;">{{ .title }}</h2>
+    {{ with .text }}<p style="margin-bottom:16px;">{{ . }}</p>{{ end }}
+    {{ with .items }}
+    <ul style="padding-left:20px;margin:0 0 8px;">
+      {{ range . }}<li style="margin-bottom:6px;">{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.how_it_works }}
+<section style="padding:24px 15px;background:#f7f9f8;">
+  <div style="max-width:860px;margin:0 auto;">
+    <h2 style="font-size:24px;margin:0 0 18px;">{{ .title }}</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+      {{ range $i, $step := .steps }}
+      <div style="background:#fff;border:1px solid #e2e8e5;border-radius:10px;padding:18px;">
+        <div style="width:30px;height:30px;border-radius:50%;background:#1e5841;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:10px;">{{ add $i 1 }}</div>
+        <h3 style="font-size:15px;margin:0 0 6px;">{{ .title }}</h3>
+        <p style="font-size:13.5px;margin:0;color:#3d4b44;">{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.exchange }}
+<section style="padding:28px 15px;">
+  <div style="max-width:860px;margin:0 auto;background:#fff8ec;border:1px solid #f0dfc0;border-radius:10px;padding:22px 24px;">
+    <h2 style="font-size:20px;margin:0 0 10px;color:#8a6a1f;">{{ .title }}</h2>
+    {{ range .paragraphs }}<p style="margin:0 0 8px;font-size:15px;">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.apply }}
+<section style="padding:24px 15px 36px;">
+  <div style="max-width:860px;margin:0 auto;text-align:center;background:#1e5841;border-radius:12px;padding:36px 24px;color:#fff;">
+    <h2 style="color:#fff;font-size:26px;margin:0 0 10px;">{{ .title }}</h2>
+    {{ with .text }}<p style="color:rgba(255,255,255,0.9);max-width:640px;margin:0 auto 20px;">{{ . }}</p>{{ end }}
+    {{ with $.Params.whatsapp_url }}
+    <a href="{{ . }}" target="_blank" rel="noopener" style="display:inline-block;background:#25d366;color:#fff;font-weight:700;font-size:17px;padding:14px 34px;border-radius:8px;text-decoration:none;margin-bottom:10px;">{{ with $.Params.primary_cta }}{{ . }}{{ else }}Apply on WhatsApp{{ end }}</a>
+    {{ end }}
+    {{ with .note }}<p style="font-size:13px;color:rgba(255,255,255,0.7);margin:6px 0 0;">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ else }}
+{{ with $.Params.whatsapp_url }}
+<section style="padding:24px 15px 36px;">
+  <div style="max-width:860px;margin:0 auto;text-align:center;background:#1e5841;border-radius:12px;padding:36px 24px;color:#fff;">
+    <h2 style="color:#fff;font-size:26px;margin:0 0 10px;">{{ with $.Params.primary_cta }}Apply Today{{ else }}Apply Today{{ end }}</h2>
+    <p style="color:rgba(255,255,255,0.9);max-width:640px;margin:0 auto 20px;">Send us a short intro on WhatsApp — we reply within 2 working days.</p>
+    <a href="{{ . }}" target="_blank" rel="noopener" style="display:inline-block;background:#25d366;color:#fff;font-weight:700;font-size:17px;padding:14px 34px;border-radius:8px;text-decoration:none;margin-bottom:10px;">{{ with $.Params.primary_cta }}{{ . }}{{ else }}Apply on WhatsApp{{ end }}</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Params.faq }}
+<section style="padding:8px 15px 28px;">
+  <div style="max-width:860px;margin:0 auto;">
+    <h2 style="font-size:24px;margin:0 0 16px;">{{ .title }}</h2>
+    {{ range .items }}
+    <div style="border-bottom:1px solid #e5eae8;padding:12px 0;">
+      <h3 style="font-size:16px;margin:0 0 6px;">{{ .question }}</h3>
+      <p style="margin:0;font-size:14.5px;color:#3d4b44;">{{ .answer }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.related }}
+<section style="padding:8px 15px 48px;">
+  <div style="max-width:860px;margin:0 auto;">
+    <h2 style="font-size:20px;margin:0 0 12px;">You may also like</h2>
+    <ul style="list-style:none;padding:0;margin:0;">
+      {{ range . }}
+      <li style="padding:6px 0;"><a href="{{ .url }}" style="color:#1e5841;font-weight:600;">{{ .label }} →</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
