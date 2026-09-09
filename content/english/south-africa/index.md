@@ -39,13 +39,13 @@ proof:
   cases:
     - title: "Banana sprinkler, 3 ha — Zambia"
       text: "Full design, pump sizing and automated sprinkler schedule for a Zambian open-field plantation."
-      url: "/docs/open-field-solutions/sprinkler-irrigation-plan-for-3-hectares-of-banana/"
+      url: "https://docs.pky-dripirrigation.com/open-field-solutions/sprinkler-irrigation-plan-for-3-hectares-of-banana/"
     - title: "Non-network area system design"
       text: "How PKYDrip automation operates end-to-end without internet connectivity."
       url: "https://docs.pky-dripirrigation.com/pky-drip-automatic-irrigation-and-fertilization-system-tailored-for-non-network-areas/"
     - title: "Drip tape tomato, 1 ha"
       text: "Low-cost drip tape layout with zone control — typical for South African vegetable farms."
-      url: "/docs/open-field-solutions/drip-tape-irrigation-solution-for-1-hectare-of-tomato-field/"
+      url: "https://docs.pky-dripirrigation.com/open-field-solutions/drip-tape-irrigation-solution-for-1-hectare-of-tomato-field/"
 numbers:
   title: "The Numbers That Decide in South Africa"
   col_a: "Question"
