@@ -10,8 +10,8 @@ subtitle: "Test our hardware before everyone else — in exchange for honest fee
 support: "One program for farms, distributors, contractors and integrators. Pick the track that fits you."
 programs:
   - badge: "Distributor Track"
-    title: "FG Machine 30-Day Trial (Refundable Deposit)"
-    text: "Run a real FG fertigation machine (1–7 channels) for 30 days. Fully refundable deposit — or it credits your purchase."
+    title: "FG Demo Unit at Distributor Price"
+    text: "Stock your first FG fertigation machine at demo pricing — you own it, demo it and sell it. No deposits, no returns, no trial windows."
     url: "/early-access/fertigation-machine-trial/"
   - badge: "Distributor Track"
     title: "First 50 Distributors: Founding Partner Terms"
