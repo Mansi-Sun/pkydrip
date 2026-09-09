@@ -26,19 +26,18 @@ url: "/become-a-distributor/"
     <div class="table-responsive">
       <table class="table table-bordered">
         <thead>
-          <tr><th>Product Series</th><th>Typical Use</th><th>Price Range (USD, ex-works)</th><th>MOQ</th></tr>
+          <tr><th>Product Series</th><th>Reference Price (USD, EXW)</th><th>Distributor Discount</th><th>MOQ</th><th>Logo OEM</th></tr>
         </thead>
         <tbody>
-          <!-- TODO(user): 填入真实价格区间与 MOQ 后再上线 push -->
-          <tr><td>Irrigation Controllers (IC series)</td><td>Zone scheduling, pump &amp; valve control</td><td>TBD</td><td>TBD</td></tr>
-          <tr><td>Fertigation Machines (3-channel / 5-channel)</td><td>EC/pH nutrient dosing for greenhouse &amp; open field</td><td>TBD</td><td>TBD</td></tr>
-          <tr><td>EC / pH Controllers</td><td>Standalone nutrient &amp; water-quality control</td><td>TBD</td><td>TBD</td></tr>
-          <tr><td>Wireless Valve Controllers (LoRa)</td><td>Cable-free field valve &amp; pump expansion</td><td>TBD</td><td>TBD</td></tr>
-          <tr><td>Sensors &amp; Weather Stations</td><td>Soil, climate and environment monitoring</td><td>TBD</td><td>TBD</td></tr>
+          <tr><td>Irrigation Controllers (IC series)</td><td>US$800</td><td>20%</td><td>5 units</td><td>Yes</td></tr>
+          <tr><td>Fertigation Machines (3-channel / 5-channel)</td><td>US$3,000</td><td>15%</td><td>3 units</td><td>Yes</td></tr>
+          <tr><td>EC / pH Controllers</td><td>US$600</td><td>15%</td><td>Negotiable</td><td>Yes</td></tr>
+          <tr><td>Wireless Valve Controllers (LoRa)</td><td>Gateway US$600 + Valve Controller US$80</td><td>10%</td><td>Min. 1 gateway + 1 valve</td><td>Yes</td></tr>
+          <tr><td>Sensors &amp; Weather Stations</td><td>Bundled with controller orders</td><td>Bundled pricing</td><td>1 pc per item with controllers; 100 sets for standalone OEM runs</td><td>Yes</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="text-muted"><small>Price ranges are ex-works reference figures for distributor evaluation. Final pricing depends on configuration, volume and regional agreement. Request the full distributor price list for exact figures.</small></p>
+    <p class="text-muted"><small>Reference prices are ex-works (EXW) figures before distributor discount. Volume discounts apply per series as shown; final pricing depends on configuration, volume and regional agreement. All series support your own brand logo (OEM). Request the full distributor price list for exact figures.</small></p>
   </section>
 
   <section class="custom-section">
