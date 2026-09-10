@@ -33,11 +33,13 @@ url: "/become-a-distributor/"
           <tr><td>Fertigation Machines (3-channel / 5-channel)</td><td>US$3,000</td><td>15%</td><td>3 units</td><td>Yes</td></tr>
           <tr><td>EC / pH Controllers</td><td>US$600</td><td>15%</td><td>Negotiable</td><td>Yes</td></tr>
           <tr><td>Wireless Valve Controllers (LoRa)</td><td>Gateway US$600 + Valve Controller US$80</td><td>10%</td><td>Min. 1 gateway + 1 valve</td><td>Yes</td></tr>
-          <tr><td>Sensors &amp; Weather Stations</td><td>Bundled with controller orders</td><td>Bundled pricing</td><td>1 pc per item with controllers; 100 sets for standalone OEM runs</td><td>Yes</td></tr>
+          <tr><td>Soil &amp; Field Sensors</td><td>Bundled with controller orders</td><td>Bundled pricing</td><td>1 pc — sensors are bound to a PKY Cloud account by default; 100 sets for standalone OEM runs</td><td>Yes</td></tr>
+          <tr><td>Weather Stations</td><td>On request (quoted per configuration)</td><td>On request</td><td>3 units</td><td>Yes</td></tr>
         </tbody>
       </table>
     </div>
     <p class="text-muted"><small>Reference prices are ex-works (EXW) figures before distributor discount. Volume discounts apply per series as shown; final pricing depends on configuration, volume and regional agreement. All series support your own brand logo (OEM). Request the full distributor price list for exact figures.</small></p>
+    <p><strong>All trial orders include a PKY Cloud account</strong> — your units can be pre-bound and activated before arrival, with warranty and product maintenance included from day one.</p>
   </section>
 
   <section class="custom-section">
@@ -48,7 +50,7 @@ url: "/become-a-distributor/"
       <li><p><strong>Open technical documentation:</strong> installation guides, wiring references, controller manuals and platform integration examples (including ThingsBoard) — your technicians can self-serve.</p></li>
       <li><p><strong>Performance-based partnership growth:</strong> deeper cooperation terms — including territory arrangements — are considered only after successful trial orders and regular business, never promised upfront.</p></li>
       <li><p><strong>Training &amp; remote support:</strong> onboarding for your installation team, plus remote diagnostics from our engineers.</p></li>
-      <li><p><strong>Spare parts &amp; after-sales channel:</strong> structured parts supply so you can service units locally.</p></li>
+      <li><p><strong>Spare parts &amp; consumables:</strong> PKYDrip supplies wear parts and consumables in structured kits, so your technicians can replace components locally and keep units running.</p></li>
     </ul>
   </section>
 
