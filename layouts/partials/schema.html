@@ -24,8 +24,8 @@
 
 {{- $graph := slice $org $website -}}
 
-{{/* ---- Breadcrumb (inner pages only) ---- */}}
-{{- if not .IsHome -}}
+{{/* ---- Breadcrumb (inner pages only, never on the standalone 404 page) ---- */}}
+{{- if and (not .IsHome) (ne .Title "404 Page not found") -}}
   {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $home) -}}
   {{- $pos := 2 -}}
   {{- range .Ancestors.Reverse -}}

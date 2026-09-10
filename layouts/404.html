@@ -1,0 +1,40 @@
+{{ define "head_extra" }}
+<style>
+/* 变更方案-08：404 体验升级（2026-09-10，自包含样式） */
+.p8-404{padding:70px 0 80px;text-align:center}
+.p8-404__code{font-size:110px;font-weight:700;line-height:1;color:#1e4d3f;margin:0 0 10px}
+.p8-404__msg{font-size:20px;font-weight:400;color:#4a6156;margin:0 auto 8px;max-width:640px}
+.p8-404__hint{font-size:14px;color:#67817a;margin:0 auto 30px;max-width:560px}
+.p8-404__links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:0 0 26px}
+.p8-404__links a{background:#fff;border:1px solid #dcebe1;border-radius:10px;color:#1e4d3f;font-size:14px;font-weight:500;padding:11px 18px;text-decoration:none}
+.p8-404__links a:hover{background:#eef5f0;border-color:#3c8b65}
+.p8-404__wa{background:#25d366;border-radius:10px;color:#fff!important;display:inline-block;font-size:15px;font-weight:500;padding:12px 22px;text-decoration:none}
+.p8-404__wa:hover{background:#1fbd5b;color:#fff}
+.p8-404__home{display:inline-block;font-size:13px;color:#67817a;margin:18px 0 0;text-decoration:underline}
+@media(max-width:575px){.p8-404__code{font-size:80px}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="p8-404">
+  <div class="container">
+    <h1 class="p8-404__code">404</h1>
+    <h2 class="p8-404__msg">{{ i18n "404_message" | markdownify }}</h2>
+    <p class="p8-404__hint">The page may have been moved or renamed. Here are the places most visitors are looking for:</p>
+
+    <div class="p8-404__links">
+      <a href="{{ partial "lang-or-en-url.html" "/product/" }}">Browse Products</a>
+      <a href="{{ partial "lang-or-en-url.html" "/early-access/" }}">Early Access Program</a>
+      <a href="{{ partial "lang-or-en-url.html" "/become-a-distributor/" }}">Become a Distributor</a>
+      <a href="{{ partial "lang-or-en-url.html" "/contact/" }}">Contact Us</a>
+    </div>
+
+    <a class="p8-404__wa" href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20was%20looking%20for%20a%20page%20on%20your%20site%20but%20hit%20a%20404.%20Could%20you%20help%20me%20find%20it%3F"><i class="fab fa-whatsapp"></i>&nbsp; Ask us on WhatsApp</a>
+
+    <br>
+    <a class="p8-404__home" href="{{ "/" | relLangURL }}">{{ i18n "go_home" | markdownify }}</a>
+  </div>
+</section>
+
+{{ end }}
