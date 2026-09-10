@@ -1,6 +1,6 @@
 ---
-title: "Irrigation Automation for South Africa — Irrigate Through Load-Shedding | PKYDrip"
-description: "PKYDrip irrigation automation for South African farms: fertigation and zone control that keeps running through load-shedding and without internet. Solar-ready, off-grid autonomous, local distributor support."
+title: "South Africa — Irrigation That Beats Load-Shedding | PKYDrip"
+description: "Irrigation automation for South African farms: fertigation and zone control that keeps running through load-shedding and without internet. Solar-ready."
 keywords: ["South Africa irrigation automation", "load shedding irrigation controller", "fertigation South Africa", "solar irrigation automation South Africa", "smart irrigation distributor South Africa"]
 draft: false
 url: "/south-africa/"

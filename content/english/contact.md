@@ -1,6 +1,6 @@
 ---
 title: "Request Catalog, Pricing & OEM Support"
-description: "Contact PKYDrip for irrigation controllers, fertigation, LoRa wireless and greenhouse climate control. Request catalog, pricing and OEM support — usually replied within 1 business day."
+description: "Contact PKYDrip for irrigation controllers, fertigation and LoRa valve control. Request catalog, pricing and OEM support — reply within 1 business day."
 bg_image: "images/feature-bg.jpg"
 layout: "contact"
 draft: false

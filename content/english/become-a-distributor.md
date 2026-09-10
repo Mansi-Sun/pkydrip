@@ -1,6 +1,6 @@
 ---
-title: "Become a PKYDrip Distributor — Fertigation Machines & Irrigation Controllers"
-description: "PKYDrip is looking for irrigation, greenhouse, agricultural machinery and smart-agriculture dealers with local installation teams. Public price ranges, MOQ, regional protection, training and remote support included."
+title: "Become a PKYDrip Distributor — Controllers & Fertigation"
+description: "Distributor program for irrigation, greenhouse and agri-machinery dealers: public EXW prices, MOQ, logo OEM, regional protection and installation training."
 keywords: ["irrigation controller supplier", "fertigation machine distributor", "OEM fertigation system", "smart irrigation dealer", "greenhouse controller distributor"]
 draft: false
 image : ""

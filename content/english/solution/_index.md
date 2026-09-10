@@ -1,5 +1,5 @@
 ---
-title: "Solutions"
+title: "Irrigation Solutions by Crop & Farm Type | PKYDrip"
 description: "Agricultural application solutions — open field, greenhouse, orchard, and hydroponic farming — connected to core system architecture and regional markets."
 draft: false
 bg_image: "images/home/deployment-scenarios.webp"

@@ -50,6 +50,9 @@
 <!-- theme meta -->
 <meta name="theme-name" content="airspace-hugo" />
 
+<!-- structured data (JSON-LD): Organization + WebSite + Breadcrumb + Product + FAQPage -->
+{{ partial "schema.html" . }}
+
 <!-- google site verification -->
 {{ with site.Params.site_verification.google }}
 <meta name="google-site-verification" content="{{ . }}" />

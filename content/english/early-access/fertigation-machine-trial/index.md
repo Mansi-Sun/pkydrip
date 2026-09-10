@@ -1,6 +1,6 @@
 ---
-title: "FG Demo Unit at Distributor Price — Stock One, Demo With It | PKYDrip Early Access"
-description: "PKYDrip Early Access: new distributors can stock a FG fertigation machine demo unit at distributor pricing. The unit is yours to keep, demo and sell — no deposits, no returns, no trial windows."
+title: "FG Demo Unit at Distributor Price | PKYDrip"
+description: "New distributors can stock an FG fertigation machine demo unit at distributor pricing — yours to keep, demo to customers and sell. No deposits or returns."
 keywords: ["fertigation machine distributor price", "FG fertigation demo unit", "fertigation machine wholesale", "FG fertigation distributor", "irrigation equipment dealer demo unit"]
 draft: false
 url: "/early-access/fertigation-machine-trial/"

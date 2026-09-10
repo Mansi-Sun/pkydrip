@@ -1,6 +1,6 @@
 ---
-title: "Open Platform — Integrate PKYDrip with Your Systems (ThingsBoard & More)"
-description: "PKYDrip devices and cloud platform integrate with third-party systems. See how controllers connect to ThingsBoard, what documentation is public, and how integrators evaluate the platform."
+title: "Integrate PKYDrip with ThingsBoard & Your Systems | PKYDrip"
+description: "PKYDrip controllers and cloud integrate with ThingsBoard and third-party platforms. See integration paths, public documentation and how to evaluate it."
 keywords: ["irrigation controller integration", "ThingsBoard irrigation", "open platform agriculture", "fertigation system API", "smart agriculture integration"]
 draft: false
 image : ""
@@ -11,7 +11,7 @@ url: "/api-integration/"
 ---
 <div>
   <section class="custom-section">
-    <h3>An Open Platform, Not a Closed Box</h3>
+    <h2>An Open Platform, Not a Closed Box</h2>
     <p class="lead mb-4">
       PKYDrip is built for integrators. Our controllers and fertigation machines are designed to plug into
       <strong>your</strong> stack — whether that is the PKYDrip cloud, a self-hosted instance, or a third-party platform like <strong>ThingsBoard</strong>.
@@ -20,7 +20,7 @@ url: "/api-integration/"
   </section>
 
   <section class="custom-section">
-    <h3>Integration Paths</h3>
+    <h2>Integration Paths</h2>
     <div class="table-responsive">
       <table class="table table-bordered">
         <thead>
@@ -37,7 +37,7 @@ url: "/api-integration/"
   </section>
 
   <section class="custom-section">
-    <h3>Example: Connecting PKYDrip to ThingsBoard</h3>
+    <h2>Example: Connecting PKYDrip to ThingsBoard</h2>
     <p>
       A common integration for smart-agriculture companies: keep PKYDrip controllers running irrigation and fertigation locally,
       while ThingsBoard consumes device telemetry for fleet-wide dashboards and rule chains.
@@ -53,7 +53,7 @@ url: "/api-integration/"
   </section>
 
   <section class="custom-section">
-    <h3>Public Documentation</h3>
+    <h2>Public Documentation</h2>
     <ul>
       <li><p>Installation &amp; wiring guides for irrigation controllers, 3/5-channel fertigation machines, EC/pH controllers and wireless valve controllers</p></li>
       <li><p>Platform integration guide — including the ThingsBoard connection example</p></li>

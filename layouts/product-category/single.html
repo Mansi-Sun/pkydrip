@@ -16,8 +16,9 @@
         {{ range . }}
           <div class="col-lg-4 col-md-6" style="margin-bottom:24px;">
             <div class="card" style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+              {{ $cardAlt := .name | default $.Title }}
               {{ with .image }}
-                <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%;height:auto;display:block;">
+                <img src="{{ . | relURL }}" alt="{{ $cardAlt }}" style="width:100%;height:auto;display:block;">
               {{ end }}
 
               <div style="padding:16px;">

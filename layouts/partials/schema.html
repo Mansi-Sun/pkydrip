@@ -1,0 +1,70 @@
+{{/* JSON-LD structured data — 2026-09-10 (P1 SEO)
+     Emits one @graph per page: Organization + WebSite always,
+     plus BreadcrumbList on inner pages, Product on product pages,
+     FAQPage on the FAQ page. Pure data, no visual change. */}}
+{{- $base := site.BaseURL -}}
+{{- $home := site.Home.Permalink -}}
+{{- $logo := site.Params.logo | absURL -}}
+{{- $orgID := printf "%s#organization" $base -}}
+{{- $webID := printf "%s#website" $base -}}
+
+{{- $sameAs := slice -}}
+{{- range site.Params.social -}}
+  {{- if and .link (ne .title "WhatsApp") (ne .title "Email") -}}
+    {{- $sameAs = $sameAs | append .link -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $org := dict "@type" "Organization" "@id" $orgID "name" site.Title "url" $home "logo" (dict "@type" "ImageObject" "url" $logo) -}}
+{{- with site.Params.description }}{{ $org = merge $org (dict "description" .) }}{{ end -}}
+{{- if gt (len $sameAs) 0 }}{{ $org = merge $org (dict "sameAs" $sameAs) }}{{ end -}}
+{{- with site.Params.contact.address }}{{ $org = merge $org (dict "address" (dict "@type" "PostalAddress" "addressCountry" .)) }}{{ end -}}
+
+{{- $website := dict "@type" "WebSite" "@id" $webID "url" $home "name" site.Title "publisher" (dict "@id" $orgID) "inLanguage" (.Language.LanguageCode | default "en") -}}
+
+{{- $graph := slice $org $website -}}
+
+{{/* ---- Breadcrumb (inner pages only) ---- */}}
+{{- if not .IsHome -}}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $home) -}}
+  {{- $pos := 2 -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- if not .IsHome -}}
+      {{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" (.Title | default .Section) "item" .Permalink) -}}
+      {{- $pos = add $pos 1 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" (.Title | default site.Title) "item" .Permalink) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" .Permalink) "itemListElement" $items) -}}
+{{- end -}}
+
+{{/* ---- Product (product pages) ---- */}}
+{{- if and .IsPage (or (eq .Type "product") (eq .Section "product")) -}}
+  {{- $p := dict "@type" "Product" "@id" (printf "%s#product" .Permalink) "name" .Title "url" .Permalink "brand" (dict "@type" "Brand" "name" "PKYDrip") "manufacturer" (dict "@id" $orgID) -}}
+  {{- with .Description }}{{ $p = merge $p (dict "description" .) }}{{ end -}}
+  {{- $img := .Params.image | default .Params.bg_image | default site.Params.image -}}
+  {{- if $img }}{{ $p = merge $p (dict "image" ($img | absURL)) }}{{ end -}}
+  {{- with .Params.product_code }}{{ if findRE `[0-9]` . }}{{ $p = merge $p (dict "sku" .) }}{{ end }}{{ end -}}
+  {{- $graph = $graph | append $p -}}
+{{- end -}}
+
+{{/* ---- FAQPage (FAQ page: parse "**Q:**" / "A:" pairs from source) ---- */}}
+{{- if eq .RelPermalink "/faq/" -}}
+  {{- $faqs := slice -}}
+  {{- $q := "" -}}
+  {{- range (split .RawContent "\n") -}}
+    {{- $line := strings.TrimSpace . -}}
+    {{- if hasPrefix $line "**Q:" -}}
+      {{- $q = $line | strings.TrimPrefix "**Q:" | replaceRE `\*\*\s*$` "" | replaceRE `</p>\s*$` "" | strings.TrimSpace -}}
+    {{- else if and (hasPrefix $line "A:") (ne $q "") -}}
+      {{- $a := $line | strings.TrimPrefix "A:" | replaceRE `</p>\s*$` "" | strings.TrimSpace -}}
+      {{- $faqs = $faqs | append (dict "@type" "Question" "name" $q "acceptedAnswer" (dict "@type" "Answer" "text" ($a | plainify))) -}}
+      {{- $q = "" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $faqs) 0 -}}
+    {{- $graph = $graph | append (dict "@type" "FAQPage" "@id" (printf "%s#faq" .Permalink) "mainEntity" $faqs) -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" $graph) | jsonify | safeJS }}</script>

@@ -1,6 +1,6 @@
 ---
-title: "Smart Irrigation for the Middle East — Date Palm, Greenhouse & Open Field | PKYDrip"
-description: "PKYDrip irrigation automation for Saudi Arabia, UAE and Qatar: heat-hardy fertigation machines, EC/pH control, water-savings records and off-grid autonomous operation for GCC farms and agri-projects."
+title: "Middle East — Smart Irrigation for GCC Farms | PKYDrip"
+description: "Irrigation automation for Saudi Arabia, UAE and Qatar: heat-hardy fertigation machines, EC/pH control and documented water savings for GCC farms."
 keywords: ["Saudi Arabia smart irrigation", "UAE fertigation system", "date palm irrigation automation", "GCC greenhouse automation", "water saving irrigation Middle East"]
 draft: false
 url: "/middle-east/"

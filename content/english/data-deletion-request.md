@@ -1,6 +1,6 @@
 ---
-title: "data-deletion-request"
-description: "Data Deletion Request – PKYDrip Data Deletion Request This page provides instructions on how to request data deletion for PKYDrip. We are committed to safe"
+title: "Data Deletion Request — PKYDrip Privacy"
+description: "How to request deletion of your personal data from PKYDrip systems and integrations, what we need to verify the request, and what happens next."
 date: 2024-11-20
 draft: false
 ---

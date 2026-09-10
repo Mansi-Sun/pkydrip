@@ -1,6 +1,6 @@
 ---
 title: "Book a Live Demo — PKYDrip Cloud Platform & Fertigation Systems"
-description: "See the PKYDrip cloud platform, fertigation logic and real project dashboards in a 30-minute online session. Book a demo for distributors, integrators and smart-agriculture companies."
+description: "See the PKYDrip cloud platform, fertigation logic and real project dashboards in a 30-minute online session for distributors and integrators."
 keywords: ["irrigation system demo", "fertigation platform demo", "smart irrigation controller demo", "book irrigation demo"]
 draft: false
 image : ""
@@ -11,7 +11,7 @@ url: "/book-a-demo/"
 ---
 <div>
   <section class="custom-section">
-    <h3>See It Running Before You Sell It</h3>
+    <h2>See It Running Before You Sell It</h2>
     <p class="lead mb-4">
       In a 30-minute online session we walk you through the <strong>PKYDrip cloud platform</strong> with live device dashboards, fertigation control logic, and dashboards from real deployed projects.
       No slide decks — you see the actual system.
@@ -19,7 +19,7 @@ url: "/book-a-demo/"
   </section>
 
   <section class="custom-section">
-    <h3>What the Demo Covers</h3>
+    <h2>What the Demo Covers</h2>
     <ul>
       <li><p><strong>Cloud platform walkthrough:</strong> farm / zone structure, device status, irrigation schedules and alarms.</p></li>
       <li><p><strong>Fertigation logic:</strong> how EC/pH targets drive the 3-channel and 5-channel fertigation machines.</p></li>
@@ -34,7 +34,7 @@ url: "/book-a-demo/"
        上线前先用 WhatsApp / 表单人工预约 -->
 
   <section class="custom-section">
-    <h3>How Booking Works</h3>
+    <h2>How Booking Works</h2>
     <ul>
       <li><p><strong>1.</strong> Message us on WhatsApp or use the contact form — mention your market and what you want to see.</p></li>
       <li><p><strong>2.</strong> We confirm a time slot (we cover Asia, Europe, Middle East and Oceania time zones).</p></li>

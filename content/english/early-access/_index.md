@@ -1,6 +1,6 @@
 ---
 title: "PKYDrip Early Access Program — Trials, Betas and Founding Terms"
-description: "Join the PKYDrip Early Access Program: free fertigation machine trials, controller beta slots, ThingsBoard integration support, off-grid pilots, founding distributor terms and the Beta Feedback Club."
+description: "Join the PKYDrip Early Access Program: controller beta slots, distributor demo units, ThingsBoard integration support, off-grid pilots and founding terms."
 keywords: ["PKYDrip early access", "irrigation beta program", "fertigation trial", "founding distributor"]
 draft: false
 url: "/early-access/"
