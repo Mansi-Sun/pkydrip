@@ -56,7 +56,7 @@ faq:
     - question: "Can I let customers try it before they buy?"
       answer: "Yes — that is exactly what the demo unit is for. Because you own it, you decide how to run trials with your customers."
     - question: "Do I need an exclusive agreement to get demo pricing?"
-      answer: "No. Demo pricing is part of onboarding. Regional protection and founding-partner terms are a separate, optional step (First 50 Distributors)."
+      answer: "No. Demo pricing is part of onboarding — no exclusivity is required or promised. Deeper terms such as territory arrangements are only considered after trial orders and regular business."
     - question: "Who pays shipping and import duties?"
       answer: "The buyer covers freight and duties, quoted upfront before you order — no surprise bills. There is no return shipment because there is no return."
     - question: "What if the unit is not the right fit for my market?"

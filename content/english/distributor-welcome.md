@@ -19,7 +19,7 @@ url: "/distributor-welcome/"
     <h2 class="fw-bold mb-3">Benefits of Becoming a PKYDrip Distributor</h2>
     <ul>
     <li><p><strong>1. Work with a Trusted Smart Irrigation Partner: </strong> Join PKYDrip — a professional system provider with over 10 years of experience in agriculture. We offer proven, customizable solutions for irrigation and fertigation that make it easy to enter the market and start real projects, from tenders to hydroponics and horticulture.</p></li>
-    <li><p><strong>2. Exclusive Partnership with High Profit Potential: </strong> Our in-house developed products give you a strong competitive edge and support both software and hardware upgrades. We provide regional exclusivity, fair pricing, and marketing support — helping you build a profitable and sustainable business.</p></li>
+    <li><p><strong>2. Partnership with High Profit Potential: </strong> Our in-house developed products give you a strong competitive edge and support both software and hardware upgrades. We provide fair partner pricing, marketing support and training — and deeper cooperation terms can be discussed as your sales record grows.</p></li>
     <li><p><strong>3. Reliable After-Sales Support: </strong> We’ve got your back with full technical and after-sales support. Our English and Arabic service team is always ready to help you solve customer issues quickly and keep your business running smoothly.</p></li>
     </ul>
   </div>
@@ -42,7 +42,7 @@ url: "/distributor-welcome/"
     <li>📡 <strong>IoT Controllers</strong> — LoRa/WiFi/4G, sensor-ready, automatic irrigation</li>
     <li>🔧 <strong>One-Stop Supply</strong> — fertigation units, sprinklers, fittings, sensors</li>
     <li>🎓 <strong>Training & Support</strong> — installation, setup, and sales guidance</li>
-    <li>💰 <strong>Competitive Pricing</strong> — regional exclusivity and partner protection</li>
+    <li>💰 <strong>Competitive Pricing</strong> — partner price list and volume discounts</li>
   </ul>
   {{<centerimg src="/images/portfolio/versatile-applications.webp" alt="versatile applications" caption="Versatile Applications">}}
 </div>

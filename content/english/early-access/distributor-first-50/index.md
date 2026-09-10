@@ -15,8 +15,8 @@ offer:
   title: "Founding Partner Terms"
   intro: "Early distributors take the risk of building a new category locally. Founding terms reward exactly that."
   benefits:
-    - title: "Protected territory"
-      text: "Exclusive regional coverage for active founding partners, defined at signing."
+    - title: "Priority on territory terms"
+      text: "Territory arrangements are evaluated with priority for active founding partners — after trial orders and formal business prove the market. Not granted automatically."
     - title: "Launch pricing"
       text: "Founding partner price list with margin structure published on our distributor page."
     - title: "Training and demo support"

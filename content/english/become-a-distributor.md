@@ -1,6 +1,6 @@
 ---
 title: "Become a PKYDrip Distributor — Controllers & Fertigation"
-description: "Distributor program for irrigation, greenhouse and agri-machinery dealers: public EXW prices, MOQ, logo OEM, regional protection and installation training."
+description: "Distributor program for irrigation, greenhouse and agri-machinery dealers: public EXW prices, MOQ, logo OEM, installation training and remote technical support."
 keywords: ["irrigation controller supplier", "fertigation machine distributor", "OEM fertigation system", "smart irrigation dealer", "greenhouse controller distributor"]
 draft: false
 image : ""
@@ -46,7 +46,7 @@ url: "/become-a-distributor/"
       <li><p><strong>Proven, shipping hardware:</strong> fertigation machines and controllers already running in real greenhouses and open-field projects — not prototypes.</p></li>
       <li><p><strong>Customizable software platform:</strong> cloud dashboard with white-label / OEM options, so you can sell under your own brand where agreed.</p></li>
       <li><p><strong>Open technical documentation:</strong> installation guides, wiring references, controller manuals and platform integration examples (including ThingsBoard) — your technicians can self-serve.</p></li>
-      <li><p><strong>Regional protection:</strong> provincial / city-level exclusivity under a written agreement.</p></li>
+      <li><p><strong>Performance-based partnership growth:</strong> deeper cooperation terms — including territory arrangements — are considered only after successful trial orders and regular business, never promised upfront.</p></li>
       <li><p><strong>Training &amp; remote support:</strong> onboarding for your installation team, plus remote diagnostics from our engineers.</p></li>
       <li><p><strong>Spare parts &amp; after-sales channel:</strong> structured parts supply so you can service units locally.</p></li>
     </ul>
@@ -55,20 +55,24 @@ url: "/become-a-distributor/"
   <section class="custom-section">
     <h3>Who We Are Looking For</h3>
     <ul>
-      <li><p>Greenhouse construction &amp; engineering companies</p></li>
-      <li><p>Agricultural machinery and irrigation equipment dealers</p></li>
-      <li><p>Smart agriculture / IoT integrators with field installation teams</p></li>
-      <li><p>Companies serving farms, orchards, nurseries and hydroponic operations</p></li>
+      <li><p>Irrigation contractors, dealers &amp; equipment distributors</p></li>
+      <li><p>Greenhouse builders &amp; agricultural engineering companies</p></li>
+      <li><p>Smart agriculture &amp; automation system integrators</p></li>
+      <li><p>Farm equipment solution providers with local installation and service capabilities</p></li>
     </ul>
+    <p>
+      Ideal partners already serve commercial farms or greenhouse projects and have local
+      sales, installation, commissioning, or after-sales capabilities.
+    </p>
   </section>
 
   <section class="custom-section">
     <h3>How We Start Working Together</h3>
     <ul>
-      <li><p><strong>Step 1 — Inquiry:</strong> message us on WhatsApp or send the form. Tell us your market and customer type.</p></li>
-      <li><p><strong>Step 2 — Evaluation:</strong> we share the full catalog, distributor price list and MOQ, and book a live platform demo.</p></li>
-      <li><p><strong>Step 3 — Sample order:</strong> start with a small pilot batch or a demo kit for your showroom.</p></li>
-      <li><p><strong>Step 4 — Regional agreement:</strong> sign exclusivity and volume terms, plan training and first projects.</p></li>
+      <li><p><strong>Step 1 — Inquiry:</strong> Tell us about your market, customer base and current business. Contact us on WhatsApp or submit the partner form.</p></li>
+      <li><p><strong>Step 2 — Evaluation:</strong> We review the market fit and share relevant product information, partner pricing and recommended solutions. A live PKY Cloud and product demo can also be arranged.</p></li>
+      <li><p><strong>Step 3 — Sample &amp; Pilot:</strong> Start with a sample unit, demo kit or a small customer project to evaluate the products in real applications.</p></li>
+      <li><p><strong>Step 4 — Partnership:</strong> After successful initial cooperation, we can establish a long-term dealer, distributor or solution-partner relationship, including training, project support and regional market development.</p></li>
     </ul>
   </section>
 

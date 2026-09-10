@@ -36,7 +36,7 @@ entry_paths:
       button_link: "/docs/"
     - icon: "🤝"
       title: "Get Distributor Pricing & MOQ"
-      desc: "Public price ranges and MOQ for evaluation, regional exclusivity under agreement, training for your installation team and remote support from our engineers."
+      desc: "Public price ranges and MOQ for evaluation, installation training for your team and remote support from our engineers."
       button_label: "Become a Distributor"
       button_link: "/become-a-distributor/"
 
