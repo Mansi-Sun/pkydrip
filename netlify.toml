@@ -185,3 +185,25 @@
   to = "https://docs.pky-dripirrigation.com/irrigation-controller/"
   status = 301
   force = true
+
+# ---------------------------------------------------------------------------
+# 2026-09-10 P0 perf: caching strategy
+# - Hashed bundles (Hugo fingerprint) -> 1 year immutable
+# - Images (unhashed but content-stable) -> 30 days + SWR
+# - HTML is left at Netlify default (must-revalidate) so deploys appear instantly.
+# ---------------------------------------------------------------------------
+
+[[headers]]
+  for = "/css/style.min.*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/bundle.min.*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=86400"
