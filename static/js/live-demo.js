@@ -248,26 +248,42 @@
     return typeof window.netlifyIdentity !== 'undefined';
   }
 
-  function wireIdentity() {
-    if (!identityReady()) {
-      // Identity 还没在 Netlify 后台开启时，脚本不会注入 —— 给出可操作提示而不是静默失败
-      var st = $('ld-identity-state');
-      if (st) {
-        st.style.display = 'block';
-        st.innerHTML = '⚙️ Registration is being activated. Meanwhile, use the form below ' +
-          'or <a href="https://wa.me/8617395297329" target="_blank" rel="noopener">WhatsApp</a> ' +
-          'and we will send you access.';
-      }
-      var b = $('ld-signup');
-      if (b) {
-        b.textContent = 'Get access by email';
-        b.onclick = function () {
-          document.getElementById('ld-book').scrollIntoView({ behavior: 'smooth' });
-        };
-      }
-      return;
-    }
+  /* widget.js 是 identity.netlify.com 上的静态文件，**无论站点有没有在后台开启
+   * Identity，它都会注入 window.netlifyIdentity**。只看这个全局变量会得到一个
+   * 「能点、点开就报错」的注册按钮 —— 正是刚上线、Identity 还没开的那段时间。
+   * 所以再用 /.netlify/identity/settings 确认一次：未启用时该端点返回 404。 */
+  function identityEnabled() {
+    return fetch('/.netlify/identity/settings', { method: 'GET' })
+      .then(function (r) { return r.ok; })
+      .catch(function () { return false; });
+  }
 
+  function showIdentityFallback() {
+    var st = $('ld-identity-state');
+    if (st) {
+      st.style.display = 'block';
+      st.innerHTML = '⚙️ Registration is being activated. Meanwhile, use the form below ' +
+        'or <a href="https://wa.me/8617395297329" target="_blank" rel="noopener">WhatsApp</a> ' +
+        'and we will send you access.';
+    }
+    var b = $('ld-signup');
+    if (b) {
+      b.textContent = 'Get access by email';
+      b.onclick = function () {
+        document.getElementById('ld-book').scrollIntoView({ behavior: 'smooth' });
+      };
+    }
+  }
+
+  function wireIdentity() {
+    if (!identityReady()) { showIdentityFallback(); return; }
+    identityEnabled().then(function (ok) {
+      if (ok) wireRealIdentity();
+      else showIdentityFallback();
+    });
+  }
+
+  function wireRealIdentity() {
     window.netlifyIdentity.on('init', function (user) {
       if (user) { afterLogin(user); }
     });
