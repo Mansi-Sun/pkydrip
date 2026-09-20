@@ -75,7 +75,8 @@ This page is for administrators and content planning. It is not intended as the 
 ### Catalog
 
 - [CO2 Sensor](/product/co2-sensor/)
-- [Farm Irrigation Controller for Pump + Valve Automation | PKYDrip](/product/farm-irrigation-controller/)
+- [MC-16 Local Irrigation Controller | PKYDrip](/product/farm-irrigation-controller/)
+- [PKYDrip Grow 16 Connected Irrigation Controller | PKYDrip](/product/pky-grow16/)
 - [Fertigation Controller](/product/fertigation-controller/)
 - [Filters, Valves & Irrigation Components](/product/filters-valves-accessories/)
 - [Hydroponic PH and EC controller & Smart Dosing System](/product/hydroponic/)

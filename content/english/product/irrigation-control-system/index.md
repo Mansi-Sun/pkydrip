@@ -57,6 +57,12 @@ feature_blocks:
 product_modules:
   title: "Related Modules"
   items:
+    - name: "PKYDrip Grow 16"
+      url: "/product/pky-grow16/"
+      desc: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet, mobile-browser control, cloud management, standardized expansion."
+    - name: "PKYDrip MC-16 Local"
+      url: "/product/farm-irrigation-controller/"
+      desc: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
     - name: "PKY-60W"
       url: "/product/pky-60w/"
       desc: "Main controller for pump and valve irrigation control."

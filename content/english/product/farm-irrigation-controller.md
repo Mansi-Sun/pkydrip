@@ -1,12 +1,12 @@
 ---
-title: "Farm Irrigation Controller for Pump + Valve Automation | PKYDrip"
-description: "A practical B2B irrigation controller for farm projects and retrofit upgrades—automates pump start/stop, controls irrigation valves by zone, and monitors pressure/flow for stable field operation."
+title: "MC-16 Local Irrigation Controller | PKYDrip"
+description: "PKYDrip MC-16 Local is a 16-zone industrial touchscreen irrigation controller with pump automation and flow/pressure protection—fully local operation, no cloud dependency."
 type: "product"
 layout: "farm-irrigation-controller"
 
 bg_image: ""
 image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
-image_alt: "One control system for pumps and valves — PKYDrip irrigation controller at field pump station"
+image_alt: "PKYDrip MC-16 Local irrigation controller — industrial touchscreen control for pumps and valve zones"
 
 categories:
   - irrigation-controller
@@ -15,37 +15,37 @@ categories:
   - retrofit
 
 # Internal identifiers (for WhatsApp + tracking)
-product_code: "Farm Irrigation Controller"
+product_code: "MC-16 Local"
 page_code: "PC-0801-2-02-PROD-FARM-CTRL-01"
 
 highlights:
-  - "Pump start/stop automation for farm irrigation systems"
-  - "Multi-zone irrigation valve control (project-configured)"
-  - "Pressure + flow sensor inputs for monitoring and alarms"
-  - "Designed for farm projects, greenhouse integration, and retrofit upgrades"
+  - "16 irrigation zones with one pump, operated fully from the industrial touchscreen"
+  - "16 AC or DC solenoid valve outputs, selected per order"
+  - "Flow and pressure sensor inputs with pump, flow, and pressure protection"
+  - "No network connectivity — local operation does not depend on any cloud or platform"
 
 integration_scope:
   - "Pump contactor / relay start signal (project wiring)"
-  - "Solenoid valves or valve actuators (by output type)"
-  - "Pressure sensor input (analog / RS485, model-configured)"
-  - "Flow sensor input (pulse / RS485, model-configured)"
+  - "16 AC or DC solenoid valves (output type selected per order)"
+  - "Pressure sensor input"
+  - "Flow sensor input (pulse)"
 
 cta:
-  text: "Send your project details on WhatsApp to get a suitable controller configuration (pump + zones + sensors)."
+  text: "Send your project details on WhatsApp to confirm MC-16 Local is the right fit (zones, valve output type AC/DC, sensors)."
   button_label: "Chat on WhatsApp"
-  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20a%20farm%20irrigation%20controller%20for%20pump%20start%2Fstop%20%2B%20valve%20zones%20%2B%20pressure%2Fflow%20monitoring.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0APlease%20recommend%20a%20configuration.%0A-%20Pump%20power%3A%20%0A-%20Zones%3A%20%0A-%20Irrigation%20type%3A%20(drip%2Fsprinkler)%0A-%20Sensors%3A%20(pressure%2Fflow)%0A-%20Water%20source%3A%20"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%27m%20interested%20in%20the%20MC-16%20Local%20irrigation%20controller.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0APlease%20confirm%20a%20configuration.%0A-%20Zones%3A%20%0A-%20Valve%20output%3A%20(AC%2FDC)%0A-%20Pump%20power%3A%20%0A-%20Sensors%3A%20(pressure%2Fflow)%0A-%20Water%20source%3A%20"
 
 hero:
-  title: "Farm irrigation controller for pump + valve automation"
-  subtitle: "A practical B2B controller for farm irrigation projects and retrofit upgrades—automate pump start/stop, control valve zones, and monitor pressure/flow to improve field reliability."
+  title: "MC-16 Local — industrial touchscreen irrigation controller"
+  subtitle: "A stable local product for irrigation projects with clearly defined requirements, an operator on site, and no need for network connectivity. Irrigation programs, settings, manual operations, and status are managed directly from the industrial touchscreen."
   cta_primary:
-    label: "Get System Configuration"
-    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20help%20selecting%20a%20controller%20configuration%20for%20a%20farm%20irrigation%20project.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0AProject%20details%3A%20pump%20power%2C%20zones%2C%20drip%2Fsprinkler%2C%20pressure%2Fflow%20sensors%2C%20water%20source."
+    label: "Ask for Configuration"
+    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20help%20selecting%20an%20MC-16%20Local%20configuration.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0AProject%20details%3A%20zones%2C%20valve%20type%20(AC%2FDC)%2C%20pump%20power%2C%20sensors%2C%20water%20source."
   cta_secondary:
     label: "View Online Demo"
     url: "/live-demo/"
   # Catalog / pricing is intentionally not a hero CTA — project configuration is the primary path.
-  note: "**Not a consumer garden timer.** Built for farms, contractors, greenhouse integrators, and irrigation retrofit projects."
+  note: "**Not a consumer garden timer.** A stable local product for farms, contractors, greenhouse integrators, and retrofit projects. MC-16 Local does not depend on the previous Wi-Fi platform, a cloud service, or mobile remote access. For connected projects with cloud management, compare with [Grow 16](/product/pky-grow16/)."
 
 field_data:
   title: "See Real Field Data"
@@ -55,91 +55,112 @@ field_data:
     url: "/live-demo/"
 
 hmi_section:
-  title: "Smart Control Interface"
-  body: "The HMI touchscreen is the day-to-day operator interface—monitor status, run manual or timed valve programs, schedule irrigation plans, and review alarms without scattered timers or undocumented panel logic."
+  title: "Industrial touchscreen operation"
+  body: "The industrial touchscreen is the only operator interface—run and stop irrigation manually, manage programs and schedules, check operating status, and review alarms on site, with no app, account, or network required."
   image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves-touchscreen.png"
-  image_alt: "PKYDrip intelligent irrigation system touchscreen — manual and automatic zone control"
+  image_alt: "PKYDrip MC-16 Local industrial touchscreen — local irrigation program and manual control"
   bullets:
-    - "Real-time status monitoring"
-    - "Manual, automatic, and timer irrigation modes"
-    - "Irrigation plan scheduling"
+    - "Irrigation programs and simple schedules"
+    - "Manual start and stop with operating status"
     - "Event and alarm records"
-    - "Sequential or group valve operation from the screen"
+    - "Zone-by-zone status on screen"
+    - "No network connectivity required"
 
 sections:
-  use_cases_title: "Common use cases"
-  capabilities_title: "What this controller can do"
+  use_cases_title: "Applications"
+  capabilities_title: "Standard capabilities"
   field_data_title: "See Real Field Data"
-  hmi_section_title: "Smart touchscreen operation"
+  hmi_section_title: "Local operation from the touchscreen"
   system_structure_title: "Typical system structure"
   suitable_projects_title: "Suitable projects (quick check)"
   consultation_title: "Consultation (recommended before purchase)"
   faq_title: "FAQ"
 
 use_cases:
-  - title: "Open field irrigation"
-    desc: "Multi-zone operation with stable pump automation for field blocks and long-run piping."
-  - title: "Orchard irrigation"
-    desc: "Zoned irrigation with practical pressure verification for reliability and troubleshooting."
-  - title: "Irrigation retrofit projects"
-    desc: "Upgrade manual panels to automated control with pump + valve coordination and monitoring."
-  - title: "Farm pump + valve automation"
-    desc: "Reduce manual switching and add clear operational feedback for daily irrigation work."
+  - title: "Greenhouses and nurseries"
+    desc: "Up to 16 irrigation zones using fixed programs for routine irrigation."
+  - title: "Orchards and small farms"
+    desc: "Pump, flow, and pressure protection without mobile access, cloud services, or remote management."
+  - title: "Fixed-function projects"
+    desc: "For customers who value an industrial touchscreen, straightforward on-site operation, and cost control, with limited future changes."
 
 capabilities:
-  - title: "Automatic pump start / stop"
-    desc: "Start the pump when irrigation runs, stop when zones finish, and support practical interlocks via project wiring and sensor logic."
-  - title: "Irrigation zone valve control"
-    desc: "Control valves by zone with sequential operation (typical for farms) or grouped operation depending on project requirements."
-  - title: "Pressure and flow monitoring"
-    desc: "Use pressure/flow inputs for alarms and operational verification (e.g. abnormal pressure, no-flow after pump start)."
-  - title: "Practical farm irrigation automation"
-    desc: "Designed for contractors and integrators who need a controller that fits real field panels, pumps, and valve manifolds."
+  - title: "16 irrigation zones, one pump"
+    desc: "Controls 16 AC or DC solenoid valves, with the output type selected per order."
+  - title: "Irrigation programs and schedules"
+    desc: "Fixed programs and simple schedules for routine irrigation, managed from the touchscreen."
+  - title: "Manual start and stop"
+    desc: "Direct manual operation with clear operating status on screen."
+  - title: "Flow and pressure sensor inputs"
+    desc: "Flow sensor and pressure sensor inputs for monitoring and operational verification."
+  - title: "Pump, flow, and pressure protection"
+    desc: "Built-in protection logic against abnormal pressure, no-flow after pump start, and pump faults."
+  - title: "No network connectivity"
+    desc: "Fully local operation—no Wi-Fi, cloud, or mobile remote access involved or promised."
 
 system_structure:
-  diagram: "Pump → Controller → Valves (Zones) → Pressure / Flow Sensors"
-  note: "This structure helps automate irrigation execution and add measurement feedback without redesigning the hydraulic system."
+  diagram: "Pump → MC-16 Local (industrial touchscreen) → 16 zone valves → flow / pressure sensors"
+  note: "This structure automates irrigation execution and adds measurement feedback without redesigning the hydraulic system. Valve output type (AC or DC) is selected per order."
 
 suitable_projects:
   fit_points:
-    - "**1 pump** (or a pump station where start/stop signal integration is required)"
-    - "**Multiple irrigation zones** (valves/manifolds)"
-    - "A need to **monitor pressure and/or flow** for reliability and troubleshooting"
-    - "A requirement for **B2B deployment** (farm operations, greenhouse integration, contractor installation)"
-  not_fit_note: "If you only need a small home garden timer or low-cost consumer controller, this product is not the right fit."
+    - "**Up to 16 irrigation zones** with an operator on site"
+    - "**No network connectivity needed** at the site"
+    - "A need for **pump, flow, and pressure protection**"
+    - "Projects that value **cost control** and straightforward on-site operation, with limited future changes"
+  not_fit_note: "If you need cloud management, remote access, or future standardized expansion, see [PKYDrip Grow 16](/product/pky-grow16/) instead."
 
 consultation:
-  why: "Most projects differ by pump type, zone quantity, sensor selection, and wiring standards. WhatsApp consultation is the fastest way to get a **suitable controller configuration** and avoid mismatched I/O or field wiring changes."
-  cta_reason: "Get pump + valve + sensor configuration advice and a practical recommendation for your panel build or retrofit."
+  why: "Before ordering, confirm the valve output type (AC or DC—selected per order), zone count, pump interface, and sensor inputs. WhatsApp consultation is the fastest way to get a **suitable MC-16 Local configuration** and avoid mismatched I/O or field wiring changes."
+  cta_reason: "Get a configuration recommendation for your MC-16 Local order and practical wiring notes for your panel build or retrofit."
   send_list:
-    - "**Farm size / irrigation area** (hectares or acres)"
-    - "**Crop type** (open field / orchard / greenhouse)"
-    - "**Pump power** (kW / HP) and pump type (AC pump, solar pump, VFD if any)"
-    - "**Number of zones (valves)** and valve type (solenoid / motorized)"
+    - "**Number of zones** (up to 16) and valve type (AC / DC solenoid)"
+    - "**Pump power** (kW / HP) and pump type"
+    - "**Crop / site type** (greenhouse, orchard, open field)"
+    - "**Sensors required** (flow, pressure)"
     - "**Water source** (well, river, reservoir, tank)"
-    - "**Sensors required** (pressure, flow; and preferred type if known)"
   recommend_list:
-    - "A matching controller configuration (pump output + zone outputs + sensor inputs)"
+    - "A matching MC-16 Local configuration (valve output type + pump interface + sensor inputs)"
     - "Practical wiring and integration notes for your panel build or retrofit"
-    - "Options for remote monitoring and integration if your project requires it"
+    - "Advice on whether MC-16 Local or [Grow 16](/product/pky-grow16/) fits your roadmap better"
   cta:
-    label: "Get System Configuration"
-    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20a%20farm%20controller%20configuration.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0A-%20Area%3A%20%0A-%20Crop%20type%3A%20%0A-%20Pump%20power%3A%20%0A-%20Zones%3A%20%0A-%20Water%20source%3A%20%0A-%20Sensors%3A%20(pressure%2Fflow)%20%0A-%20Irrigation%20type%3A%20(drip%2Fsprinkler)"
+    label: "Send project details for recommendation"
+    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20an%20MC-16%20Local%20configuration.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0A-%20Zones%3A%20%0A-%20Valve%20output%3A%20(AC%2FDC)%0A-%20Pump%20power%3A%20%0A-%20Site%20type%3A%20%0A-%20Sensors%3A%20(pressure%2Fflow)"
 
 faq:
-  - q: "Can this controller start/stop a farm pump?"
-    a: "Yes. It supports pump start/stop control via project wiring (typically a relay/contactor control signal). Share pump power and control panel details so we can recommend a suitable interface method."
-  - q: "Does it support pressure sensors?"
-    a: "Yes. Pressure monitoring can be integrated using appropriate sensor signal types depending on configuration (commonly analog or industrial fieldbus options)."
-  - q: "Does it support flow sensors?"
-    a: "Yes. Flow monitoring is supported for operational verification and alarms. Sensor type and wiring depend on the flowmeter specification."
-  - q: "Is it suitable for retrofit projects?"
-    a: "Yes. It is designed for contractor installation and upgrades from manual operation to automation, especially when pump + zones + monitoring are required."
-  - q: "Can it be used for drip and sprinkler systems?"
-    a: "Yes. The controller manages automation and zoning. Drip/sprinkler suitability depends on your hydraulic design, valve type, and zoning plan."
+  - q: "Can MC-16 Local start/stop a farm pump?"
+    a: "Yes. Pump start/stop control is wired at project level (typically a relay/contactor control signal). Share pump power and control panel details so we can recommend a suitable interface method."
+  - q: "AC or DC valve outputs—how do I choose?"
+    a: "The output type is selected per order. Tell us your solenoid valve specifications during consultation and we will confirm the correct configuration."
+  - q: "Does MC-16 Local need internet or a cloud account?"
+    a: "No. MC-16 Local is a fully local product—no network connectivity, no cloud service, no mobile remote access. All operation happens on the industrial touchscreen."
+  - q: "What happens if the previous Wi-Fi platform is discontinued?"
+    a: "Nothing changes for MC-16 Local. Its local operation and service positioning remain unchanged—it was never dependent on the platform."
+  - q: "How is MC-16 Local different from Grow 16?"
+    a: "MC-16 Local emphasizes local operation, fixed functionality, and cost control. Grow 16 includes Wi-Fi and Ethernet as standard, supports cloud management and software updates, and is the primary platform for future standardized expansion."
   - q: "Can PKYDrip help confirm the configuration?"
-    a: "Yes—send pump power, number of zones, valve type, and whether you need pressure/flow monitoring. We will recommend a practical configuration for your project."
+    a: "Yes—send zone count, valve output type (AC/DC), pump power, and whether you need flow/pressure monitoring. We will recommend a practical configuration for your project."
 
 aliases:
   - "/product/farm-irrigation-controller/"
 ---
+
+## Product boundaries
+
+- Operation is provided only through the industrial touchscreen on the controller
+- No network, cloud, or mobile remote-control commitment
+- AC or DC valve outputs are selected per order
+- Previously validated project extensions remain available, but MC-16 Local is not the continuing modular platform
+- Sales and maintenance continue, while new connected and standardized extensions are developed for [PKYDrip Grow 16](/product/pky-grow16/)
+
+## MC-16 Local vs PKYDrip Grow 16
+
+| | **MC-16 Local** | **PKYDrip Grow 16** |
+|---|---|---|
+| Operation | Industrial touchscreen only | Mobile browser (no app) + cloud |
+| Connectivity | None | Wi-Fi + Ethernet standard, optional 4G |
+| Cloud management | Not applicable | Device, configuration, alarm, history, and version management |
+| Functionality | Fixed, cost-controlled | Expandable via standardized boards and modules |
+| Best for | Defined requirements, on-site operator, no network need | Projects planning filtration, fertigation, or climate expansion |
+
+→ [See PKYDrip Grow 16](/product/pky-grow16/)

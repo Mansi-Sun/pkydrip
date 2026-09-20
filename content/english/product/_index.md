@@ -47,6 +47,18 @@ product_groups:
         image: "images/product/solar-pump-irrigation-system.svg"
         url: "/product/solar-pump-irrigation-system/"
 
+  - title: "Irrigation Controllers"
+    description: "PKYDrip 16-zone controller family: choose the connected, expandable Grow 16 — or the fully local MC-16 Local."
+    cards:
+      - name: "PKYDrip Grow 16"
+        summary: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet standard, mobile-browser control, cloud management, and standardized expansion for fertigation and climate."
+        image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
+        url: "/product/pky-grow16/"
+      - name: "PKYDrip MC-16 Local"
+        summary: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
+        image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
+        url: "/product/farm-irrigation-controller/"
+
 module_groups:
   - title: "Controllers & Control Cabinets"
     description: "Main control hardware for pump stations, valve groups, and local automation panels."
@@ -66,8 +78,11 @@ module_groups:
       - name: "Climate Control System"
         summary: "Engineering family page for climate logic, cabinets, sensors, and equipment coordination."
         url: "/product/climate-control-system/"
-      - name: "Farm Irrigation Controller"
-        summary: "Project-oriented controller page for farm pump and valve control."
+      - name: "PKYDrip Grow 16"
+        summary: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet, mobile-browser control, cloud management, standardized expansion."
+        url: "/product/pky-grow16/"
+      - name: "PKYDrip MC-16 Local"
+        summary: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
         url: "/product/farm-irrigation-controller/"
       - name: "Irrigation Control Cabinet"
         summary: "Control cabinet reference page, now positioned as part of the full control system."
@@ -215,6 +230,16 @@ products:
   # ==============================
   # Irrigation Controllers (Main)
   # ==============================
+  - name: "PKYDrip Grow 16"
+    summary: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet standard, mobile-browser control, cloud management, and standardized expansion for fertigation and climate."
+    image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
+    url: "/product/pky-grow16/"
+
+  - name: "PKYDrip MC-16 Local"
+    summary: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
+    image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
+    url: "/product/farm-irrigation-controller/"
+
   - name: "PKY-60W"
     summary: "PKYDrip Wired Master Controller – Model PKY-60W"
     image: "images/product/lora-gateway-1.jpg"
