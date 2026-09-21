@@ -10,24 +10,12 @@
   NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
 
-# ===========================================================================
-# 2026-09-15 Live Demo 数据通道：把公开只读接口反代到中国香港的实时服务。
-#
-# 为什么用反代而不是 iframe/直连：
-#   - 本站是 https，实时服务在 http://47.238.197.93（阿里云安全组只放行 80、443 被封）
-#     若页面直接 fetch http://… 会被浏览器按「混合内容」拦掉；iframe 同理。
-#   - 反代后浏览器请求的是本站同源 https 路径，实际由 Netlify 服务端去取 http，无混合内容问题。
-#   - 因此**不需要放行香港 443、也不需要自己申请证书**，Netlify 已有证书。
-#
-# 安全铁律：**只反代 /live-api/pub/**（只读、已脱敏）**，绝不反代 /api/control。**
-#   服务端还有第二道闸：/api/pub/ 下未列入白名单的路径一律 403。
-#
-# 限制（官方明确）：代理请求 26 秒超时 ⇒ 前端必须用轮询，不能用 SSE 长连接。
-#   轮询体积已优化：/live-api/pub/snapshot 约 1.1KB（内部全量快照是 20KB）。
-# ===========================================================================
+# 2026-09-21 Live Demo: Netlify HTTPS → production cloud public API (English).
+# Browser stays same-origin (/live-api/demo). Do NOT proxy the old /live stack
+# (Chinese labels). Do NOT proxy /api/control.
 [[redirects]]
-  from = "/live-api/pub/*"
-  to = "http://47.238.197.93/live/api/pub/:splat"
+  from = "/live-api/demo"
+  to = "http://47.238.197.93:8080/api/public/live-demo"
   status = 200
   force = true
 

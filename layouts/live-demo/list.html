@@ -1,7 +1,6 @@
 {{ define "main" }}
 
 <style>
-  /* Prefix ld- to avoid theme collisions */
   .ld-wrap { max-width: 1080px; margin: auto; padding: 40px 20px 60px; }
   .ld-wrap h1 { font-size: 34px; margin-bottom: 12px; color: #16351f; }
   .ld-lead { font-size: 16px; color: #555; line-height: 1.75; margin-bottom: 10px; }
@@ -34,10 +33,12 @@
   .ld-tile { border: 1px solid #e6ebe8; border-radius: 10px; padding: 14px 16px; background: #fff; }
   .ld-tile .k { font-size: 12px; color: #7b8b81; margin-bottom: 6px; letter-spacing: .02em; }
   .ld-tile .v { font-size: 25px; font-weight: 700; color: #16351f; line-height: 1.15; }
+  .ld-tile small { font-size: 12px; font-weight: 500; color: #7b8b81; }
+  .ld-src { font-size: 11px; color: #8b9a91; margin-top: 4px; }
 
   .ld-sensors { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 16px; }
   .ld-sensor { border: 1px solid #e6ebe8; border-radius: 10px; padding: 13px 15px; }
-  .ld-sensor h4 { font-size: 14px; margin: 0 0 8px; color: #16351f; display: flex; align-items: center; gap: 7px; }
+  .ld-sensor h4 { font-size: 14px; margin: 0 0 8px; color: #16351f; display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
   .ld-sensor .rd { font-size: 13px; color: #4b5f54; display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px dashed #eef2f0; }
   .ld-sensor .rd:last-child { border-bottom: 0; }
   .ld-sensor .rd b { color: #16351f; font-weight: 600; }
@@ -46,7 +47,6 @@
   .ld-chip--on { background: #e8f6ee; color: #1c7a44; }
   .ld-chip--rs { background: #f1f3f2; color: #8b9a91; }
 
-  .ld-gate { border: 1px solid #c9d8cf; border-radius: 12px; padding: 26px; background: #f7faf8; }
   .ld-btn {
     display: inline-block; background: #1c7a44; color: #fff; border: 0;
     padding: 13px 30px; border-radius: 6px; font-size: 16px; font-weight: 600;
@@ -55,222 +55,93 @@
   .ld-btn:hover { background: #166336; color: #fff; text-decoration: none; }
   .ld-btn--ghost { background: #fff; color: #1c7a44; border: 1px solid #1c7a44; }
   .ld-btn--ghost:hover { background: #f0f7f2; color: #166336; }
-  .ld-btn[disabled] { background: #b9c6bf; cursor: not-allowed; }
 
   .ld-note { font-size: 12.5px; color: #8b9a91; margin-top: 12px; line-height: 1.6; }
   .ld-err { background: #fff5f5; border: 1px solid #f3caca; color: #a33; border-radius: 8px; padding: 12px 15px; font-size: 13.5px; margin-top: 12px; }
-  .ld-ok { background: #eefaf3; border: 1px solid #b7e0c8; color: #1c7a44; border-radius: 8px; padding: 12px 15px; font-size: 13.5px; margin-top: 12px; }
 
-  .ld-u { display: flex; align-items: center; gap: 12px; justify-content: space-between; flex-wrap: wrap;
-          border: 1px solid #e2e7e4; border-radius: 10px; padding: 12px 16px; margin-bottom: 20px; background: #fff; }
-  .ld-u .who { font-size: 14px; color: #4b5f54; }
-  .ld-link { color: #1c7a44; text-decoration: underline; cursor: pointer; font-size: 13.5px; }
-
-  .ld-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .ld-cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
   .ld-card { border: 1px solid #e6ebe8; border-radius: 10px; padding: 16px 18px; }
-  .ld-card h4 { font-size: 15px; margin: 0 0 10px; color: #16351f; }
+  .ld-card h4 { font-size: 15px; margin: 0 0 10px; color: #16351f; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .ld-h5 { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: #7b8b81; margin: 14px 0 8px; }
   .ld-meta { font-size: 13px; color: #5b6e63; display: flex; justify-content: space-between; padding: 3px 0; }
-  .ld-valves { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; margin-top: 10px; }
-  .ld-v { height: 22px; border-radius: 3px; background: #eef2f0; }
-  .ld-v--on { background: #22a05f; }
-
-  .ld-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .ld-form label { display: block; font-size: 13px; color: #5b6e63; margin-bottom: 5px; }
-  .ld-form .req::after { content: " *"; color: #c0392b; }
-  .ld-form input[type=text], .ld-form input[type=email], .ld-form input[type=tel], .ld-form select {
-    width: 100%; border: 1px solid #d8e0db; border-radius: 6px; padding: 10px 12px; font-size: 14px; background: #fff;
+  .ld-running {
+    margin: 10px 0; padding: 8px 10px; background: #eef8f2;
+    border-radius: 8px; color: #1c7a44; font-size: 13px;
   }
-  .ld-form .full { grid-column: 1 / -1; }
-  .ld-form .field-error { border-color: #d9534f !important; }
-  @media (max-width: 640px) { .ld-form { grid-template-columns: 1fr; } }
+  .ld-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .ld-table th, .ld-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #edf2ef; vertical-align: top; }
+  @media (max-width: 720px) { .ld-table { display: block; overflow-x: auto; } }
 </style>
 
 <section class="ld-wrap">
 
-  <h1>PKYDrip Online Demo</h1>
+  <h1 id="ld-site-name">PKYDrip Online Demo</h1>
   <p class="ld-lead">Explore real agricultural automation data before planning your system.</p>
-  <p class="ld-sub">View irrigation activity, environmental monitoring and field data from PKYDrip demonstration and test systems.</p>
+  <p class="ld-sub">Irrigation plans, runtimes, air and soil climate, and light — English, read-only, no login.</p>
 
-  {{/* What you can explore */}}
   <div class="ld-panel">
     <h2 style="font-size:20px;margin:0 0 12px;color:#16351f">What You Can Explore</h2>
     <p class="ld-note" style="margin-top:0;margin-bottom:14px">
-      Demonstration system data and historical monitoring data from PKYDrip test / demonstration controllers.
+      Demonstration system data from PKYDrip test / demonstration controllers.
       Values shown here are not customer production farms.
     </p>
     <div class="ld-explore">
       <div class="ld-explore-card">
         <h3>Irrigation</h3>
         <ul>
-          <li>Valve operation status</li>
-          <li>Irrigation activity indicators</li>
-          <li>Flow readings</li>
-          <li>Pressure readings</li>
+          <li>Irrigation plan (programs A–D)</li>
+          <li>Zone runtimes</li>
+          <li>Recent irrigation run duration</li>
         </ul>
       </div>
       <div class="ld-explore-card">
         <h3>Field monitoring</h3>
         <ul>
-          <li>Soil temperature (when connected)</li>
-          <li>Soil moisture (when connected)</li>
+          <li>Soil temperature</li>
+          <li>Soil humidity / moisture</li>
         </ul>
       </div>
       <div class="ld-explore-card">
         <h3>Environment</h3>
         <ul>
           <li>Air temperature</li>
-          <li>Humidity</li>
-          <li>Light intensity (when connected)</li>
+          <li>Air humidity</li>
+          <li>Light intensity</li>
         </ul>
       </div>
       <div class="ld-explore-card">
         <h3>System</h3>
         <ul>
-          <li>Historical trends</li>
-          <li>Device / controller status</li>
-          <li>Operation records summary</li>
+          <li>Controller online status</li>
+          <li>Read-only demonstration feed</li>
         </ul>
       </div>
     </div>
   </div>
 
-  {{/* Public aggregate preview — read-only pub API */}}
   <div class="ld-panel">
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-      <span class="ld-live-badge"><span class="ld-dot"></span> Demo feed · demonstration system data</span>
+      <span class="ld-live-badge"><span class="ld-dot"></span> Live feed · English · no login</span>
       <span class="ld-note" id="ld-updated" style="margin:0">connecting…</span>
     </div>
+    <div id="ld-error" class="ld-err" style="display:none"></div>
 
-    <h2 style="font-size:17px;margin:18px 0 0;color:#16351f">Demonstration system overview</h2>
-    <p class="ld-note" style="margin-top:6px">
-      Aggregated read-only telemetry from PKYDrip demonstration / test controllers.
-      If a number updates, the demonstration feed refreshed — this is not a slide deck simulation.
-    </p>
+    <h2 style="font-size:17px;margin:18px 0 0;color:#16351f">Air, soil and light</h2>
+    <div class="ld-tiles" id="ld-env"></div>
 
-    <div id="ld-preview-error" style="display:none" class="ld-err"></div>
+    <h2 style="font-size:17px;margin:28px 0 10px;color:#16351f">Irrigation controllers</h2>
+    <div class="ld-cards" id="ld-controllers"></div>
 
-    <div class="ld-tiles" id="ld-tiles">
-      <div class="ld-tile"><div class="k">Controllers online</div><div class="v" id="t-stations">—</div></div>
-      <div class="ld-tile"><div class="k">Valves registered</div><div class="v" id="t-valves">—</div></div>
-      <div class="ld-tile"><div class="k">Valves open now</div><div class="v" id="t-open">—</div></div>
-      <div class="ld-tile"><div class="k">Telemetry records</div><div class="v" id="t-points">—</div></div>
-      <div class="ld-tile"><div class="k">Sensors reporting</div><div class="v" id="t-sensors">—</div></div>
-    </div>
-
-    <div style="margin-top:22px">
-      <div class="k" style="font-size:12px;color:#7b8b81;margin-bottom:8px">
-        Flow &amp; pressure trend (recent demonstration telemetry)
-      </div>
-      <canvas id="ld-spark" width="1000" height="120"
-              style="width:100%;height:120px;border:1px solid #eef2f0;border-radius:8px;background:#fcfdfc"></canvas>
-    </div>
-
+    <h2 style="font-size:17px;margin:28px 0 10px;color:#16351f">Field sensors</h2>
     <div class="ld-sensors" id="ld-sensors"></div>
+    <p class="ld-note">Read-only by design. Control commands are reserved for engineer-led sessions.</p>
   </div>
 
-  {{/* Access form — primary Online Demo path */}}
-  <div id="ld-gate" class="ld-gate">
-    <h2 style="font-size:20px;margin:0 0 6px;color:#16351f">Access Online Demo</h2>
-    <p style="color:#5b6e63;font-size:15px;margin:0 0 18px">
-      Submit the short form to unlock the full read-only demonstration dashboard on this page.
-      No account registration or password is required for V1.
-    </p>
-
-    <form class="ld-form" id="ld-access-form" name="demo-access-request" method="POST"
-          data-netlify="true" netlify-honeypot="bot-field" action="/live-demo/">
-      <input type="hidden" name="form-name" value="demo-access-request">
-      <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
-
-      {{/* Attribution — filled by JS from URL */}}
-      <input type="hidden" name="source" id="ld-source" value="website">
-      <input type="hidden" name="landing_page" id="ld-landing" value="/live-demo/">
-      <input type="hidden" name="campaign" id="ld-campaign" value="">
-      <input type="hidden" name="utm_source" id="ld-utm-source" value="">
-      <input type="hidden" name="utm_medium" id="ld-utm-medium" value="">
-      <input type="hidden" name="utm_campaign" id="ld-utm-campaign" value="">
-      <input type="hidden" name="utm_term" id="ld-utm-term" value="">
-      <input type="hidden" name="utm_content" id="ld-utm-content" value="">
-      <input type="hidden" name="gclid" id="ld-gclid" value="">
-      <input type="hidden" name="page_code" value="{{ .Params.page_code | default "PC-LIVE-DEMO-01" }}">
-
-      <div>
-        <label class="req" for="ld-name">Full Name</label>
-        <input id="ld-name" type="text" name="name" required autocomplete="name">
-      </div>
-      <div>
-        <label class="req" for="ld-email">Business Email</label>
-        <input id="ld-email-input" type="email" name="email" required autocomplete="email">
-      </div>
-      <div>
-        <label class="req" for="ld-country">Country</label>
-        <input id="ld-country" type="text" name="country" required autocomplete="country-name">
-      </div>
-      <div>
-        <label for="ld-org">Company / Farm / Organization</label>
-        <input id="ld-org" type="text" name="organization" autocomplete="organization">
-      </div>
-      <div class="full">
-        <label for="ld-project-type">Project Type</label>
-        <select id="ld-project-type" name="project_type">
-          <option value="">Select…</option>
-          <option>Farm Irrigation</option>
-          <option>Greenhouse</option>
-          <option>Fertigation</option>
-          <option>Remote / Wireless Irrigation</option>
-          <option>System Integration</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="full">
-        <label for="ld-whatsapp">WhatsApp <span style="color:#8b9a91;font-weight:400">(optional)</span></label>
-        <input id="ld-whatsapp" type="tel" name="whatsapp" autocomplete="tel" placeholder="+61 …">
-      </div>
-
-      <div class="full" style="margin-top:6px">
-        <button type="submit" class="ld-btn" id="ld-submit" data-cta="online-demo">Access Online Demo</button>
-      </div>
-    </form>
-
-    <div id="ld-form-error" class="ld-err" style="display:none"></div>
-    <div id="ld-form-success" class="ld-ok" style="display:none"></div>
-    <p class="ld-note">
-      Read-only access. Valve and pump commands are not exposed on this page.
-      Phone / WhatsApp is optional.
-    </p>
-  </div>
-
-  {{/* Full read-only dashboard — unlocked after successful form submit */}}
-  <div id="ld-full" style="display:none">
-    <div class="ld-u">
-      <span class="who">Demo access unlocked for <b id="ld-email">—</b></span>
-      <span>
-        <a class="ld-link" href="/book-a-demo/">Request a guided demo</a>
-        &nbsp;·&nbsp;
-        <span class="ld-link" id="ld-signout">Hide full view</span>
-      </span>
-    </div>
-    <div class="ld-panel">
-      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-        <span class="ld-live-badge"><span class="ld-dot"></span> Full demo view · read-only</span>
-        <span class="ld-note" id="ld-full-updated" style="margin:0"></span>
-      </div>
-      <div class="ld-cards" id="ld-full-cards" style="margin-top:18px"></div>
-      <div class="ld-note">
-        Read-only by design. Control commands are reserved for engineer-led sessions.
-      </div>
-    </div>
-    <div class="ld-panel">
-      <div class="k" style="font-size:12px;color:#7b8b81;margin-bottom:8px">Sensors on demonstration controllers</div>
-      <div class="ld-sensors" id="ld-full-sensors"></div>
-    </div>
-  </div>
-
-  {{/* Book / Request Demo — human contact path (conceptually separate) */}}
   <div class="ld-panel ld-panel--muted" id="ld-book">
     <h2 style="font-size:20px;margin:0 0 6px;color:#16351f">Prefer a guided walkthrough?</h2>
     <p style="color:#5b6e63;font-size:15px;margin:0 0 16px">
-      Book / Request Demo is a human consultation path for your project, distributor terms,
-      or a deeper walkthrough — not an automatic scheduling system.
+      Book a Live Demo is a human consultation for your project, distributor terms,
+      or a deeper walkthrough — this page stays open without an account.
     </p>
     <a class="ld-btn ld-btn--ghost" href="/book-a-demo/">Book a Live Demo</a>
     &nbsp;

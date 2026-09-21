@@ -49,7 +49,7 @@ hero:
 
 field_data:
   title: "See Real Field Data"
-  body: "Explore PKYDrip demo data including valve operation, irrigation history, flow, pressure, soil moisture, temperature, humidity and light monitoring."
+  body: "Open the online demo for irrigation plans, zone runtimes, air/soil temperature and humidity, and light — English, no login."
   cta:
     label: "View Online Demo"
     url: "/live-demo/"
