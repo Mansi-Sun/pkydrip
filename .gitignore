@@ -33,6 +33,10 @@ migration/
 
 # --- Marketing ad drafts & assets (not site pages) -----------------------------
 marketing/
+# Allow tracked Online Demo / AU Ads changelogs
+!internal/
+!internal/marketing/
+!internal/marketing/*.md
 
 # --- Local PDF tooling & generated output --------------------------------------
 docs/**/_pdf-build/

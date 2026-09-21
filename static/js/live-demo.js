@@ -1,32 +1,40 @@
 /* ==========================================================================
- * PKYDrip Live Demo — 前端交互
+ * PKYDrip Online Demo Gateway V1 — front-end
  * --------------------------------------------------------------------------
- * 数据来源：/live-api/pub/*  ← 由 netlify.toml 反代到中国香港实时服务
- *   仅两个只读接口：pub/preview（脱敏聚合，公开）与 pub/snapshot（脱敏全量，登录后）
+ * Data: /live-api/pub/*  (Netlify rewrite → demonstration pub API)
+ *   pub/preview  — public aggregate overview
+ *   pub/snapshot — fuller read-only dashboard (unlocked after access form)
  *
- * 为什么是轮询而不是 SSE：
- *   Netlify 的代理 rewrite 有 26 秒超时（官方明确限制），长连接会被掐断，
- *   所以这里用「页面可见时才轮询」的方式。页面切到后台就停，省流量也省 Netlify 带宽。
+ * Lead capture: Netlify Forms (name=demo-access-request)
+ * Analytics:   gtag event "demo_access_request" on successful submit
+ *              (distinct from CTA click hooks such as cta-online-demo)
+ *
+ * Polling (not SSE): Netlify proxy rewrite times out at ~26s.
  * ========================================================================== */
 (function () {
   'use strict';
 
-  // 允许本地调试时指向真实服务器： /live-demo/?api=http://47.238.197.93/live
-  var qs = new URLSearchParams(location.search);
-  var API = (qs.get('api') || window.LD_API_BASE || '').replace(/\/$/, '');
+  var ACCESS_KEY = 'pkydrip_demo_access_v1';
+  var PREVIEW_MS = 10000;
+  var FULL_MS = 5000;
 
-  var PREVIEW_MS = 10000; // 公开预览：10 秒一跳
-  var FULL_MS = 5000;     // 已登录完整视图：5 秒一跳
+  // Local-dev only override. Never honour ?api= on production hosts.
+  var API = '';
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    var qsApi = new URLSearchParams(location.search).get('api');
+    if (qsApi) API = String(qsApi).replace(/\/$/, '');
+  }
 
   var $ = function (id) { return document.getElementById(id); };
   var num = function (n, d) {
     if (n === null || n === undefined || isNaN(n)) return '—';
-    return Number(n).toLocaleString(undefined, { maximumFractionDigits: d === undefined ? 0 : d });
+    return Number(n).toLocaleString(undefined, {
+      maximumFractionDigits: d === undefined ? 0 : d
+    });
   };
 
   var previewTimer = null;
   var fullTimer = null;
-  var lastPreview = null;
 
   function api(path) { return API + path; }
 
@@ -38,51 +46,9 @@
   }
   function clearError() {
     var el = $('ld-preview-error');
-    if (el) el.style.display = 'none';
-  }
-
-  /* ── 渲染：公开预览 ───────────────────────────────────────────── */
-
-  function renderPreview(d) {
-    lastPreview = d;
-    var s = d.summary || {};
-    $('t-stations').innerHTML = num(s.stationsOnline) +
-      ' <small>/ ' + num(s.stationsTotal) + '</small>';
-    $('t-valves').textContent = num(s.valvesTotal);
-    $('t-open').textContent = num(s.valvesOpen);
-    $('t-points').textContent = num(s.telemetryPoints);
-    $('t-sensors').innerHTML = num(s.sensorsConnected) +
-      ' <small>/ ' + num(s.sensorsTotal) + '</small>';
-
-    var u = $('ld-updated');
-    if (u) u.textContent = 'updated ' + new Date(d.updatedAt).toLocaleTimeString();
-
-    renderSensors($('ld-sensors'), d.sensors || []);
-    drawSpark(d.trend || [], d.ranges || {});
-
-    if (d.gated && d.gated.locked) {
-      $('ld-locked').innerHTML = d.gated.locked
-        .map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
-    }
-  }
-
-  function renderSensors(host, list) {
-    if (!host) return;
-    host.innerHTML = list.map(function (s) {
-      var chip = s.connected
-        ? '<span class="ld-chip ld-chip--on">LIVE</span>'
-        : '<span class="ld-chip ld-chip--rs">RESERVED</span>';
-      var body;
-      if (s.connected && s.readings && s.readings.length) {
-        body = s.readings.map(function (r) {
-          return '<div class="rd"><span>' + esc(r.label) + '</span><b>' +
-            num(r.value, 1) + ' ' + esc(r.unit || '') + '</b></div>';
-        }).join('');
-      } else {
-        body = '<div class="ld-reserved">Interface reserved — sensor not connected yet.</div>';
-      }
-      return '<div class="ld-sensor"><h4>' + esc(s.name) + ' ' + chip + '</h4>' + body + '</div>';
-    }).join('');
+    if (!el) return;
+    el.style.display = 'none';
+    el.textContent = '';
   }
 
   function esc(t) {
@@ -91,9 +57,72 @@
       .replace(/"/g, '&quot;');
   }
 
-  /* ── 迷你折线图（原生 canvas，无第三方库）───────────────────────── */
+  /* ── Attribution fields ─────────────────────────────────────────── */
 
-  function drawSpark(points, ranges) {
+  function fillAttribution() {
+    var params = new URLSearchParams(location.search);
+    var map = {
+      'ld-utm-source': 'utm_source',
+      'ld-utm-medium': 'utm_medium',
+      'ld-utm-campaign': 'utm_campaign',
+      'ld-utm-term': 'utm_term',
+      'ld-utm-content': 'utm_content',
+      'ld-gclid': 'gclid'
+    };
+    Object.keys(map).forEach(function (id) {
+      var el = $(id);
+      if (el) el.value = params.get(map[id]) || '';
+    });
+    var campaign = $('ld-campaign');
+    if (campaign) campaign.value = params.get('utm_campaign') || '';
+    var source = $('ld-source');
+    if (source) {
+      source.value = params.get('utm_source')
+        ? ('ads:' + params.get('utm_source'))
+        : 'website';
+    }
+    var landing = $('ld-landing');
+    if (landing) landing.value = location.pathname || '/live-demo/';
+  }
+
+  /* ── Preview render ─────────────────────────────────────────────── */
+
+  function renderPreview(d) {
+    $('t-stations').textContent = num(d.stationsOnline);
+    $('t-valves').textContent = num(d.valvesRegistered);
+    $('t-open').textContent = num(d.valvesOpen);
+    $('t-points').textContent = num(d.telemetryPoints);
+    $('t-sensors').textContent = num(d.sensorsReporting);
+
+    var u = $('ld-updated');
+    if (u && d.updatedAt) {
+      u.textContent = 'updated ' + new Date(d.updatedAt).toLocaleTimeString();
+    }
+
+    renderSensors($('ld-sensors'), d.sensors || []);
+    drawSpark(d.trend || [], d.ranges || {});
+  }
+
+  function renderSensors(host, list) {
+    if (!host) return;
+    host.innerHTML = list.map(function (s) {
+      var chip = s.connected
+        ? '<span class="ld-chip ld-chip--on">ACTIVE</span>'
+        : '<span class="ld-chip ld-chip--rs">RESERVED</span>';
+      var body;
+      if (s.connected && s.readings && s.readings.length) {
+        body = s.readings.map(function (r) {
+          return '<div class="rd"><span>' + esc(r.label) + '</span><b>' +
+            num(r.value, 1) + ' ' + esc(r.unit || '') + '</b></div>';
+        }).join('');
+      } else {
+        body = '<div class="ld-reserved">Interface reserved — sensor not connected on this demonstration system.</div>';
+      }
+      return '<div class="ld-sensor"><h4>' + esc(s.name) + ' ' + chip + '</h4>' + body + '</div>';
+    }).join('');
+  }
+
+  function drawSpark(points) {
     var cv = $('ld-spark');
     if (!cv || !cv.getContext) return;
     var ctx = cv.getContext('2d');
@@ -103,14 +132,13 @@
     if (!points.length) {
       ctx.fillStyle = '#b6c2bb';
       ctx.font = '13px sans-serif';
-      ctx.fillText('waiting for telemetry…', 14, H / 2);
+      ctx.fillText('waiting for demonstration telemetry…', 14, H / 2);
       return;
     }
 
     var pad = { l: 8, r: 8, t: 10, b: 10 };
     var iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
 
-    // 两条独立的归一化曲线：流量（绿）与压力（琥珀）
     function line(key, color) {
       var vals = points.map(function (p) { return Number(p[key]); })
         .filter(function (v) { return isFinite(v); });
@@ -128,40 +156,17 @@
         if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
       });
       ctx.stroke();
-
-      // 末点标记
-      var last = points[points.length - 1];
-      var lv = Number(last[key]);
-      if (isFinite(lv)) {
-        var lx = pad.l + iw;
-        var ly = pad.t + ih - ((lv - mn) / (mx - mn)) * ih;
-        ctx.beginPath();
-        ctx.fillStyle = color;
-        ctx.arc(lx, ly, 3, 0, Math.PI * 2);
-        ctx.fill();
-      }
     }
 
     line('flow', '#22a05f');
     line('pressure', '#e0a13a');
 
-    // 图例
     ctx.font = '11px sans-serif';
     ctx.fillStyle = '#22a05f'; ctx.fillRect(pad.l, 2, 9, 3);
     ctx.fillStyle = '#6d7f74'; ctx.fillText('flow', pad.l + 13, 8);
     ctx.fillStyle = '#e0a13a'; ctx.fillRect(pad.l + 52, 2, 9, 3);
     ctx.fillStyle = '#6d7f74'; ctx.fillText('pressure', pad.l + 65, 8);
-
-    var r = ranges.flow;
-    if (r) {
-      ctx.fillStyle = '#b6c2bb';
-      ctx.textAlign = 'right';
-      ctx.fillText('flow ' + r.min + '–' + r.max + ' m³/h', W - pad.r, H - 2);
-      ctx.textAlign = 'left';
-    }
   }
-
-  /* ── 拉取 ─────────────────────────────────────────────────────── */
 
   function fetchJson(path) {
     return fetch(api(path), { credentials: 'omit', cache: 'no-store' })
@@ -172,17 +177,16 @@
   }
 
   function tickPreview() {
-    if (document.hidden) return;             // 后台不拉，省带宽
+    if (document.hidden) return;
     fetchJson('/live-api/pub/preview')
       .then(function (d) { clearError(); renderPreview(d); })
       .catch(function (e) {
-        showError('Live preview could not load (' + e.message + '). ' +
-          'If you are viewing this on a local dev server, the API proxy is only ' +
-          'available on the deployed site.');
+        showError('Demonstration feed could not load (' + e.message + '). ' +
+          'On local Hugo, the /live-api proxy is only available after Netlify deploy.');
       });
   }
 
-  /* ── 完整视图（登录后）────────────────────────────────────────── */
+  /* ── Full dashboard ─────────────────────────────────────────────── */
 
   function renderFull(d) {
     var u = $('ld-full-updated');
@@ -200,7 +204,8 @@
                   : ' <span class="ld-chip ld-chip--rs">OFFLINE</span>') + '</h4>' +
         '<div class="ld-meta"><span>Mode</span><b>' + esc(c.mode || '—') + '</b></div>' +
         '<div class="ld-meta"><span>Status</span><b>' + esc(c.workStatus || '—') + '</b></div>' +
-        '<div class="ld-meta"><span>Last report</span><b>' + (c.ageSec === null || c.ageSec === undefined ? '—' : c.ageSec + 's ago') + '</b></div>' +
+        '<div class="ld-meta"><span>Last report</span><b>' +
+          (c.ageSec === null || c.ageSec === undefined ? '—' : c.ageSec + 's ago') + '</b></div>' +
         '<div class="ld-meta"><span>Flow</span><b>' + num(rt.flow, 2) + ' m³/h</b></div>' +
         '<div class="ld-meta"><span>Pressure</span><b>' + num(rt.pressure, 2) + ' bar</b></div>' +
         (valves.length ? '<div class="ld-valves">' + vHtml + '</div>' +
@@ -210,7 +215,6 @@
     }).join('');
 
     renderSensors($('ld-full-sensors'), (d.sensors || []).map(function (s) {
-      // 完整快照里的传感器结构与预览不同：这里用 points + latest 自行展开
       var vals = (s.latest && s.latest.values) || {};
       var readings = (s.points || []).filter(function (p) {
         return vals[p.key] && isFinite(vals[p.key].v);
@@ -225,12 +229,16 @@
     if (document.hidden) return;
     fetchJson('/live-api/pub/snapshot')
       .then(renderFull)
-      .catch(function () { /* 单次失败不打扰用户，下一跳会重试 */ });
+      .catch(function () { /* retry next tick */ });
   }
 
-  function startFull() {
-    $('ld-gate').style.display = 'none';
-    $('ld-full').style.display = 'block';
+  function startFull(email) {
+    var gate = $('ld-gate');
+    var full = $('ld-full');
+    if (gate) gate.style.display = 'none';
+    if (full) full.style.display = 'block';
+    var e = $('ld-email');
+    if (e) e.textContent = email || 'your session';
     tickFull();
     if (fullTimer) clearInterval(fullTimer);
     fullTimer = setInterval(tickFull, FULL_MS);
@@ -238,89 +246,199 @@
 
   function stopFull() {
     if (fullTimer) { clearInterval(fullTimer); fullTimer = null; }
-    $('ld-full').style.display = 'none';
-    $('ld-gate').style.display = 'block';
+    try { sessionStorage.removeItem(ACCESS_KEY); } catch (err) { /* ignore */ }
+    var full = $('ld-full');
+    var gate = $('ld-gate');
+    if (full) full.style.display = 'none';
+    if (gate) gate.style.display = 'block';
   }
 
-  /* ── Netlify Identity 接入 ────────────────────────────────────── */
+  /* ── Analytics ──────────────────────────────────────────────────── */
 
-  function identityReady() {
-    return typeof window.netlifyIdentity !== 'undefined';
+  function trackDemoAccessRequest(payload) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'demo_access_request', {
+          event_category: 'demo',
+          event_label: 'online_demo_v1',
+          page_path: location.pathname,
+          project_type: payload.project_type || '',
+          country: payload.country || '',
+          utm_source: payload.utm_source || '',
+          utm_campaign: payload.utm_campaign || ''
+        });
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'demo_access_request',
+        demo_access: payload
+      });
+    } catch (err) { /* never block UX on analytics */ }
   }
 
-  /* widget.js 是 identity.netlify.com 上的静态文件，**无论站点有没有在后台开启
-   * Identity，它都会注入 window.netlifyIdentity**。只看这个全局变量会得到一个
-   * 「能点、点开就报错」的注册按钮 —— 正是刚上线、Identity 还没开的那段时间。
-   * 所以再用 /.netlify/identity/settings 确认一次：未启用时该端点返回 404。 */
-  function identityEnabled() {
-    return fetch('/.netlify/identity/settings', { method: 'GET' })
-      .then(function (r) { return r.ok; })
-      .catch(function () { return false; });
+  /* ── Form validation + Netlify submit ───────────────────────────── */
+
+  function validEmail(v) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || '').trim());
   }
 
-  function showIdentityFallback() {
-    var st = $('ld-identity-state');
-    if (st) {
-      st.style.display = 'block';
-      st.innerHTML = '⚙️ Registration is being activated. Meanwhile, use the form below ' +
-        'or <a href="https://wa.me/8617395297329" target="_blank" rel="noopener">WhatsApp</a> ' +
-        'and we will send you access.';
+  function setFieldError(el, on) {
+    if (!el) return;
+    if (on) el.classList.add('field-error');
+    else el.classList.remove('field-error');
+  }
+
+  function validateForm(form) {
+    var name = form.elements.namedItem('name');
+    var email = form.elements.namedItem('email');
+    var country = form.elements.namedItem('country');
+    var ok = true;
+
+    setFieldError(name, !(name && name.value.trim()));
+    if (!(name && name.value.trim())) ok = false;
+
+    setFieldError(email, !(email && validEmail(email.value)));
+    if (!(email && validEmail(email.value))) ok = false;
+
+    setFieldError(country, !(country && country.value.trim()));
+    if (!(country && country.value.trim())) ok = false;
+
+    return ok;
+  }
+
+  function encodeForm(form) {
+    var fd = new FormData(form);
+    var params = new URLSearchParams();
+    fd.forEach(function (value, key) {
+      params.append(key, value);
+    });
+    return params.toString();
+  }
+
+  function showFormError(msg) {
+    var el = $('ld-form-error');
+    var ok = $('ld-form-success');
+    if (ok) ok.style.display = 'none';
+    if (!el) return;
+    el.style.display = 'block';
+    el.textContent = msg;
+  }
+
+  function showFormSuccess(msg) {
+    var el = $('ld-form-success');
+    var err = $('ld-form-error');
+    if (err) err.style.display = 'none';
+    if (!el) return;
+    el.style.display = 'block';
+    el.textContent = msg;
+  }
+
+  function persistAccess(email) {
+    try {
+      sessionStorage.setItem(ACCESS_KEY, JSON.stringify({
+        email: email,
+        at: Date.now()
+      }));
+    } catch (err) { /* private mode */ }
+  }
+
+  function restoreAccess() {
+    try {
+      var raw = sessionStorage.getItem(ACCESS_KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch (err) {
+      return null;
     }
-    var b = $('ld-signup');
-    if (b) {
-      b.textContent = 'Get access by email';
-      b.onclick = function () {
-        document.getElementById('ld-book').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function wireForm() {
+    var form = $('ld-access-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      fillAttribution();
+
+      if (!validateForm(form)) {
+        showFormError('Please complete Full Name, Business Email and Country.');
+        return;
+      }
+
+      var submitBtn = $('ld-submit');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting…';
+      }
+
+      var email = (form.elements.namedItem('email').value || '').trim();
+      var payload = {
+        name: (form.elements.namedItem('name').value || '').trim(),
+        email: email,
+        country: (form.elements.namedItem('country').value || '').trim(),
+        organization: (form.elements.namedItem('organization').value || '').trim(),
+        project_type: (form.elements.namedItem('project_type').value || '').trim(),
+        whatsapp: (form.elements.namedItem('whatsapp').value || '').trim(),
+        utm_source: (form.elements.namedItem('utm_source').value || '').trim(),
+        utm_campaign: (form.elements.namedItem('utm_campaign').value || '').trim()
       };
-    }
-  }
 
-  function wireIdentity() {
-    if (!identityReady()) { showIdentityFallback(); return; }
-    identityEnabled().then(function (ok) {
-      if (ok) wireRealIdentity();
-      else showIdentityFallback();
+      fetch(form.getAttribute('action') || '/live-demo/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodeForm(form)
+      }).then(function (r) {
+        if (!r.ok && r.status !== 200 && r.status !== 303) {
+          throw new Error('HTTP ' + r.status);
+        }
+        trackDemoAccessRequest(payload);
+        persistAccess(email);
+        showFormSuccess(
+          'Request received. The read-only demonstration dashboard is unlocked on this page. ' +
+          'An acknowledgement email will be sent if outbound form notifications are enabled. ' +
+          'If you need a guided walkthrough, use Book a Live Demo below.'
+        );
+        startFull(email);
+      }).catch(function () {
+        // Netlify AJAX can fail on local Hugo; still unlock for local UX testing,
+        // but mark that the lead may not have been stored.
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+          trackDemoAccessRequest(payload);
+          persistAccess(email);
+          showFormSuccess(
+            'Local preview: dashboard unlocked. Lead storage requires a Netlify deploy.'
+          );
+          startFull(email);
+          return;
+        }
+        showFormError(
+          'Submission failed. Please try again, or contact us via WhatsApp / Contact page.'
+        );
+      }).finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Access Online Demo';
+        }
+      });
     });
   }
 
-  function wireRealIdentity() {
-    window.netlifyIdentity.on('init', function (user) {
-      if (user) { afterLogin(user); }
-    });
-    window.netlifyIdentity.on('login', function (user) {
-      window.netlifyIdentity.close();
-      afterLogin(user);
-    });
-    window.netlifyIdentity.on('logout', function () { stopFull(); });
-
-    var b = $('ld-signup');
-    if (b) b.onclick = function () { window.netlifyIdentity.open('signup'); };
-
-    var out = $('ld-signout');
-    if (out) out.onclick = function () { window.netlifyIdentity.logout(); };
-
-    var cta = $('ld-contact-cta');
-    if (cta) cta.onclick = function () {
-      document.getElementById('ld-book').scrollIntoView({ behavior: 'smooth' });
-    };
-
-    window.netlifyIdentity.init();
-  }
-
-  function afterLogin(user) {
-    var e = $('ld-email');
-    if (e) e.textContent = (user && user.email) || 'your account';
-    startFull();
-  }
-
-  /* ── 启动 ─────────────────────────────────────────────────────── */
+  /* ── Boot ───────────────────────────────────────────────────────── */
 
   document.addEventListener('DOMContentLoaded', function () {
+    fillAttribution();
     tickPreview();
     previewTimer = setInterval(tickPreview, PREVIEW_MS);
-    wireIdentity();
+    wireForm();
 
-    // 页面重新可见时立刻补一次，避免用户回到页面看到过期数字
+    var existing = restoreAccess();
+    if (existing && existing.email) {
+      startFull(existing.email);
+    }
+
+    var out = $('ld-signout');
+    if (out) out.onclick = function () { stopFull(); };
+
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) return;
       tickPreview();
