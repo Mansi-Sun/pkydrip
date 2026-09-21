@@ -62,6 +62,18 @@
       <!-- If you DON'T use Netlify: remove data-netlify attributes and set action="YOUR_FORM_ENDPOINT" -->
       <form name="pump-sizing" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/tools/pump-sizing/thanks/">
         <input type="hidden" name="form-name" value="pump-sizing" />
+        <input type="hidden" name="lead_source" value="">
+        <input type="hidden" name="first_landing" value="">
+        <input type="hidden" name="last_page" value="">
+        <input type="hidden" name="page_url" value="">
+        <input type="hidden" name="referrer" value="">
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="gclid" value="">
+        <input type="hidden" name="entry_src" value="">
         <p style="display:none;">
           <label>Don’t fill this out: <input name="bot-field" /></label>
         </p>
@@ -279,5 +291,6 @@
       form.addEventListener("change", refresh);
     })();
   </script>
+  <script src="/js/lead-source.js"></script>
 </body>
 </html>

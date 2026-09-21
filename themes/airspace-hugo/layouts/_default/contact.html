@@ -18,6 +18,7 @@
               action="{{ .action | safeURL }}"
             {{ end }}>
         <input type="hidden" name="form-name" value="contact_{{ $.Language.Lang }}">
+        {{ partial "lead-source-fields.html" $ }}
 
         <div class="col-md-6 col-sm-12">
           <div class="block">

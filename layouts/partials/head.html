@@ -187,6 +187,7 @@ window.addEventListener('load', function () {
 </script>
 
 <!-- WhatsApp click tracking -->
+<script src="{{ "js/lead-source.js" | relURL }}"></script>
 <script>
 window.addEventListener('load', function () {
   var WA_SEL = "a[href*='wa.me'], a[href*='whatsapp.com']";
@@ -214,13 +215,15 @@ window.addEventListener('load', function () {
     if (!base) return;
     try {
       var u = new URL(base, window.location.href);
+      var stored = (window.pkyLeadSource && window.pkyLeadSource.fields()) || {};
       var pageParams = new URLSearchParams(window.location.search);
-      var utmSource = pageParams.get('utm_source') || '';
-      var utmMedium = pageParams.get('utm_medium') || '';
-      var utmCampaign = pageParams.get('utm_campaign') || '';
-      var gclid = pageParams.get('gclid') || '';
-      var pathname = window.location.pathname || '';
+      var utmSource = stored.utm_source || pageParams.get('utm_source') || '';
+      var utmMedium = stored.utm_medium || pageParams.get('utm_medium') || '';
+      var utmCampaign = stored.utm_campaign || pageParams.get('utm_campaign') || '';
+      var gclid = stored.gclid || pageParams.get('gclid') || '';
+      var pathname = stored.first_landing || window.location.pathname || '';
       var lines = ['Page: ' + pathname];
+      if (stored.lead_source) lines.push('Lead: ' + stored.lead_source);
       if (utmSource) lines.push('Source: ' + utmSource);
       if (utmMedium) lines.push('Medium: ' + utmMedium);
       if (utmCampaign) lines.push('Campaign: ' + utmCampaign);

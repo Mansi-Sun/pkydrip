@@ -75,6 +75,7 @@
           <form method="POST" name="contact_en" class="c2-form needs-validation" novalidate
                 {{ if $form.use_netlify }}netlify netlify-honeypot="nhp" action="/message_sent"{{ else }}action="{{ $form.action | safeURL }}"{{ end }}>
             <input type="hidden" name="form-name" value="contact_en">
+            {{ partial "lead-source-fields.html" . }}
             <div class="c2-honeypot">
               <label>Leave this field empty<input name="nhp" type="text" tabindex="-1" autocomplete="off"></label>
             </div>
