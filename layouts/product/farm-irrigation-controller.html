@@ -19,13 +19,19 @@
           <div class="d-flex flex-wrap gap-2">
             {{ with .Params.hero.cta_primary }}
               <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-success px-4">
+                 id="cta-system-configuration"
+                 class="btn btn-success px-4 cta-system-configuration cta-whatsapp"
+                 data-cta="system-configuration"
+                 data-page-code="{{ $.Params.page_code }}">
                 {{ .label }}
               </a>
             {{ end }}
             {{ with .Params.hero.cta_secondary }}
-              <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-outline-success px-4">
+              <a href="{{ .url | relURL }}"
+                 id="cta-online-demo"
+                 class="btn btn-outline-success px-4 cta-online-demo"
+                 data-cta="online-demo"
+                 data-page-code="{{ $.Params.page_code }}">
                 {{ .label }}
               </a>
             {{ end }}
@@ -44,6 +50,32 @@
       </div>
     </div>
   </section>
+
+  {{/* Field data / online demo credibility */}}
+  {{ with .Params.field_data }}
+  <section class="py-4" id="see-real-field-data" style="background:#f9fafb;">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <h2 class="h4 mb-2">{{ $.Params.sections.field_data_title | default .title }}</h2>
+          {{ with .body }}<p class="text-muted mb-0">{{ . }}</p>{{ end }}
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          {{ with .cta }}
+            <a href="{{ .url | relURL }}"
+               id="cta-online-demo-field-data"
+               class="btn btn-outline-success px-4 cta-online-demo"
+               data-cta="online-demo"
+               data-cta-location="field-data"
+               data-page-code="{{ $.Params.page_code }}">
+              {{ .label }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
 
   {{/* Common use cases */}}
   {{ with .Params.use_cases }}
@@ -180,7 +212,11 @@
             <div class="text-muted mb-3">{{ .cta_reason | markdownify }}</div>
             {{ with .cta }}
               <a href="{{ .url }}" target="_blank" rel="noopener"
-                 class="btn btn-success w-100 py-2">
+                 id="cta-system-configuration-consult"
+                 class="btn btn-success w-100 py-2 cta-system-configuration cta-whatsapp"
+                 data-cta="system-configuration"
+                 data-cta-location="consultation"
+                 data-page-code="{{ $.Params.page_code }}">
                 {{ .label }}
               </a>
             {{ end }}
@@ -238,7 +274,11 @@
     <div class="container text-center">
       <p class="lead mb-3">{{ .text }}</p>
       <a href="{{ .button_url }}" target="_blank" rel="noopener"
-         class="btn btn-success px-4">
+         id="cta-whatsapp"
+         class="btn btn-success px-4 cta-whatsapp"
+         data-cta="whatsapp"
+         data-cta-location="footer"
+         data-page-code="{{ $.Params.page_code }}">
         {{ .button_label }}
       </a>
     </div>

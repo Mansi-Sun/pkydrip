@@ -39,12 +39,20 @@ hero:
   title: "Farm irrigation controller for pump + valve automation"
   subtitle: "A practical B2B controller for farm irrigation projects and retrofit upgrades—automate pump start/stop, control valve zones, and monitor pressure/flow to improve field reliability."
   cta_primary:
-    label: "Ask for Configuration"
+    label: "Get System Configuration"
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20help%20selecting%20a%20controller%20configuration%20for%20a%20farm%20irrigation%20project.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0AProject%20details%3A%20pump%20power%2C%20zones%2C%20drip%2Fsprinkler%2C%20pressure%2Fflow%20sensors%2C%20water%20source."
   cta_secondary:
-    label: "Chat on WhatsApp"
-    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%27m%20interested%20in%20a%20farm%20irrigation%20controller%20(pump%20%2B%20valves%20%2B%20pressure%2Fflow).%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01."
+    label: "View Online Demo"
+    url: "/live-demo/"
+  # Catalog / pricing is intentionally not a hero CTA — project configuration is the primary path.
   note: "**Not a consumer garden timer.** Built for farms, contractors, greenhouse integrators, and irrigation retrofit projects."
+
+field_data:
+  title: "See Real Field Data"
+  body: "Explore PKYDrip demo data including valve operation, irrigation history, flow, pressure, soil moisture, temperature, humidity and light monitoring."
+  cta:
+    label: "View Online Demo"
+    url: "/live-demo/"
 
 hmi_section:
   title: "Smart Control Interface"
@@ -61,6 +69,7 @@ hmi_section:
 sections:
   use_cases_title: "Common use cases"
   capabilities_title: "What this controller can do"
+  field_data_title: "See Real Field Data"
   hmi_section_title: "Smart touchscreen operation"
   system_structure_title: "Typical system structure"
   suitable_projects_title: "Suitable projects (quick check)"
@@ -114,7 +123,7 @@ consultation:
     - "Practical wiring and integration notes for your panel build or retrofit"
     - "Options for remote monitoring and integration if your project requires it"
   cta:
-    label: "Send project details for recommendation"
+    label: "Get System Configuration"
     url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20please%20recommend%20a%20farm%20controller%20configuration.%20Page%3A%20PC-0801-2-02-PROD-FARM-CTRL-01.%0A-%20Area%3A%20%0A-%20Crop%20type%3A%20%0A-%20Pump%20power%3A%20%0A-%20Zones%3A%20%0A-%20Water%20source%3A%20%0A-%20Sensors%3A%20(pressure%2Fflow)%20%0A-%20Irrigation%20type%3A%20(drip%2Fsprinkler)"
 
 faq:

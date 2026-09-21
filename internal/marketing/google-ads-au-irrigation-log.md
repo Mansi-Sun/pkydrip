@@ -1,10 +1,57 @@
-# Google Ads AU / Online Demo — Internal Log
+# Google Ads AU — Irrigation Landing Log
 
-## 2026-09-21 — Online Demo Gateway V1
+Internal changelog for Australian Google Ads landing-page optimizations on PKYDrip.
 
-**Branch:** `feat/online-demo-gateway-v1` (from `live-demo-gateway`)  
+---
+
+## 2026-09-21 — V1: Farm irrigation controller LP conversion focus
+
+**Target URL:** `/product/farm-irrigation-controller/`  
+**Goal:** Improve qualification and conversion for Australian Google Ads traffic without redesigning the page or changing global header / nav / footer.
+
+### Affected files
+
+- `content/english/product/farm-irrigation-controller.md`
+- `layouts/product/farm-irrigation-controller.html`
+- `internal/marketing/google-ads-au-irrigation-log.md` (this file)
+
+### Changes
+
+1. **Hero CTAs**
+   - Primary CTA label strengthened to **Get System Configuration** (WhatsApp project-configuration path).
+   - Secondary CTA changed from WhatsApp to **View Online Demo** → `/live-demo/`.
+   - Catalog / pricing is **not** used as a hero conversion path (intentionally omitted from primary CTA area).
+
+2. **Credibility section**
+   - Added compact **See Real Field Data** block (short copy only; no long marketing prose).
+   - CTA: **View Online Demo** → `/live-demo/`.
+
+3. **Consultation CTA**
+   - Label aligned to **Get System Configuration** so mid-page conversion matches the hero project path.
+
+4. **Tracking hooks (IDs / classes / data attributes)**
+   - System configuration: `#cta-system-configuration`, `#cta-system-configuration-consult`, `.cta-system-configuration`, `data-cta="system-configuration"`.
+   - Online demo: `#cta-online-demo`, `#cta-online-demo-field-data`, `.cta-online-demo`, `data-cta="online-demo"`.
+   - WhatsApp: `#cta-whatsapp`, `.cta-whatsapp`, `data-cta="whatsapp"` (plus existing global `wa.me` click tracking in `layouts/partials/head.html`).
+   - No new Google Ads / GA4 event configuration was added; existing head tracking remains unchanged.
+
+5. **Positioning preserved**
+   - Farm / B2B irrigation automation messaging kept.
+   - “Not a consumer garden timer” qualifier retained.
+   - No header, main navigation, or footer layout changes.
+
+### Notes
+
+- **View Online Demo** points to `/live-demo/` (Online Demo Gateway V1 is live in production).
+- Existing GA4 (`G-Y5HHC5PQ2D`) and Google Ads (`AW-16640554458`) tags in `head.html` continue to apply to this page.
+
+---
+
+## 2026-09-21 — Online Demo Gateway V1 (dependency / companion)
+
+**Branch:** `feat/online-demo-gateway-v1` (merged to `master`)  
 **URL:** `/live-demo/`  
-**Related Ads LP branch (do not merge until demo ready):** `feat/google-ads-au-farm-irrigation-lp`
+**Production:** https://smart.pky-dripirrigation.com/live-demo/
 
 ### Existing implementation reused
 
@@ -71,7 +118,3 @@ If a future transactional email provider is added, do **not** hardcode keys. Doc
 - Control / write APIs must remain unproxied
 - UI unlock is lead-gated, not cryptographic; security relies on desensitised pub API + proxy allowlist
 - Do not publish real customer farm credentials or private tenant data on the demonstration feed
-
-### Recommendation
-
-See agent report: merge readiness depends on confirming the pub proxy + form notifications on a Netlify preview deploy.
