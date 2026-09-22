@@ -1,0 +1,371 @@
+{{ define "head_extra" }}
+{{ $orgID := printf "%s#organization" site.BaseURL }}
+{{ $webID := printf "%s#website" site.BaseURL }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "name" .Title "description" .Description "url" .Permalink "inLanguage" "en" "isPartOf" (dict "@id" $webID) "about" (dict "@id" $orgID) | jsonify | safeJS }}</script>
+<style>
+.fertigation-au .fertigation-upgrade__hero-copy h1{font-size:clamp(1.85rem,4.2vw,3.2rem);letter-spacing:-.03em}
+.fertigation-au .fertigation-upgrade__trust{color:rgba(255,255,255,.72);font-size:.92rem;line-height:1.6;margin:1.1rem 0 0;max-width:640px}
+.fertigation-au__photo{background:#fff;border-radius:14px;display:block;height:auto;width:100%}
+.fertigation-au__label{background:#e4f4ea;border-radius:999px;color:#1e5841;display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;margin-bottom:.65rem;padding:.28rem .7rem;text-transform:uppercase}
+.fertigation-au__suitable{color:#4a6156;font-size:.92rem;line-height:1.6;margin:0 0 .85rem}
+.fertigation-au__card-photo{border-radius:10px;display:block;height:auto;margin-bottom:1rem;width:100%}
+.fertigation-au .fertigation-upgrade__card .fertigation-upgrade__btn{margin-top:1.1rem;width:100%}
+.fertigation-au__btn-solid{background:#1e4d3f;color:#fff!important}
+.fertigation-au__btn-solid:hover{background:#173d31}
+.fertigation-au__note{color:#687a72;font-size:.95rem;line-height:1.7;margin:1.35rem 0 0;max-width:820px}
+.fertigation-au__range{display:inline-block;font-weight:700;margin-top:.85rem}
+.fertigation-au-flow{display:grid;gap:.75rem;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:2rem}
+.fertigation-au-flow div{align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:10px;color:#fff;display:flex;font-weight:700;justify-content:center;min-height:82px;padding:1rem;position:relative;text-align:center}
+.fertigation-au-flow div:not(:last-child)::after{color:#a8e47e;content:">";font-size:1.2rem;position:absolute;right:-.65rem;top:50%;transform:translateY(-50%);z-index:2}
+.fertigation-au-caps{display:grid;gap:.8rem;grid-template-columns:repeat(4,minmax(0,1fr))}
+.fertigation-au-caps div{background:#fff;border:1px solid #dce7e0;border-radius:10px;color:#214b3a;font-weight:700;min-height:62px;padding:1rem 1.05rem}
+.fertigation-au-why{display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+.fertigation-au-form-wrap{background:#fff;border:1px solid #dce7e0;border-radius:14px;padding:26px 28px}
+.fertigation-au-form label{color:#234d3d;display:block;font-size:13px;font-weight:500;margin-bottom:5px}
+.fertigation-au-form .form-control,.fertigation-au-form .form-select{border-color:#cfdcd4;border-radius:8px;color:#26463a;font-size:14px;min-height:46px;padding:9px 12px}
+.fertigation-au-form .form-control:focus,.fertigation-au-form .form-select:focus{border-color:#3c8b65;box-shadow:0 0 0 3px rgba(60,139,101,.13)}
+.fertigation-au-form textarea.form-control{min-height:120px}
+.fertigation-au-submit{background:#1e4d3f;border:0;border-radius:9px;color:#fff;font-size:16px;font-weight:600;min-height:48px;padding:12px 22px;width:100%}
+.fertigation-au-submit:hover{background:#173d31;color:#fff}
+.fertigation-au-honeypot{height:0;left:-9999px!important;opacity:0;overflow:hidden;position:absolute!important;width:0}
+.fertigation-au-wa{background:#173d31;border-radius:14px;color:#fff;padding:22px}
+.fertigation-au-wa h3,.fertigation-au-wa p{color:#fff}
+.fertigation-au-wa p{color:rgba(255,255,255,.85);font-size:.95rem;line-height:1.65}
+.fertigation-au .fertigation-upgrade__checklist{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1199px){
+  .fertigation-au-flow{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fertigation-au-flow div:nth-child(3)::after,.fertigation-au-flow div:nth-child(6)::after{content:none}
+  .fertigation-au-caps{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:991px){
+  .fertigation-au-why{grid-template-columns:1fr 1fr}
+  .fertigation-au-form-wrap{padding:22px 18px}
+}
+@media(max-width:767px){
+  .fertigation-au-flow,.fertigation-au-caps,.fertigation-au-why,.fertigation-au .fertigation-upgrade__checklist{grid-template-columns:1fr}
+  .fertigation-au-flow div:not(:last-child)::after{bottom:-.65rem;content:"v";left:50%;right:auto;top:auto;transform:translateX(-50%)}
+  .fertigation-au .fertigation-upgrade__actions,.fertigation-au .fertigation-upgrade__actions .fertigation-upgrade__btn{width:100%}
+}
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ $waBase := "https://wa.me/8617395297329" }}
+{{ range site.Params.social }}
+  {{ if eq .title "WhatsApp" }}{{ $waBase = .link }}{{ end }}
+{{ end }}
+{{ $whatsapp := printf "%s?text=%s" $waBase (.Params.whatsapp_text | urlquery) }}
+{{ $form := site.Params.contact.form }}
+{{ $rangeURL := .Params.levels.range_url }}
+<article class="fertigation-upgrade fertigation-au">
+
+  <section class="fertigation-upgrade__hero">
+    <div class="container">
+      <div class="fertigation-upgrade__hero-grid">
+        <div class="fertigation-upgrade__hero-copy">
+          <h1>{{ .Params.hero.title }}</h1>
+          <p class="fertigation-upgrade__subtitle">{{ .Params.hero.subtitle }}</p>
+          <p class="fertigation-upgrade__support">{{ .Params.hero.support }}</p>
+          <div class="fertigation-upgrade__actions">
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--light" href="#fertigation-inquiry">{{ .Params.hero.primary_cta }}</a>
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener" data-track="fertigation_whatsapp_click"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.hero.secondary_cta }}</a>
+          </div>
+          <p class="fertigation-upgrade__trust">{{ .Params.hero.trust }}</p>
+        </div>
+        <div class="fertigation-upgrade__hero-visual">
+          <img class="fertigation-au__photo" src="{{ .Params.hero.image | relURL }}" alt="{{ .Params.hero.image_alt }}" width="900" height="700" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__split">
+        <div>
+          <h2>{{ .Params.problem.title }}</h2>
+          <p>{{ .Params.problem.intro }}</p>
+          <p>{{ .Params.problem.lead }}</p>
+          <p>{{ .Params.problem.close }}</p>
+        </div>
+        <div class="fertigation-upgrade__existing-grid">
+          {{ range .Params.problem.items }}
+          <div class="fertigation-upgrade__pill">{{ . }}</div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint" id="fertigation-levels">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.levels.title }}</h2>
+      </div>
+      <div class="fertigation-upgrade__card-grid">
+        {{ range .Params.levels.cards }}
+        <div class="fertigation-upgrade__card">
+          {{ if .image }}<img class="fertigation-au__card-photo" src="{{ .image | relURL }}" alt="{{ .image_alt }}" width="640" height="480" loading="lazy" decoding="async">{{ end }}
+          <span class="fertigation-au__label">{{ .label }}</span>
+          <h3>{{ .title }}</h3>
+          <p class="fertigation-au__suitable"><strong>Suitable for:</strong> {{ .suitable }}</p>
+          <ul>
+            {{ range .points }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          <a class="fertigation-upgrade__btn fertigation-au__btn-solid" href="#fertigation-inquiry">{{ .cta }}</a>
+        </div>
+        {{ end }}
+      </div>
+      <p class="fertigation-au__note">{{ .Params.levels.note }}</p>
+      <a class="fertigation-au__range" href="{{ $rangeURL | relURL }}" data-track="fertigation_product_range_click">{{ .Params.levels.range_link_label }}</a>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--dark">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.how.title }}</h2>
+      </div>
+      <div class="fertigation-au-flow">
+        {{ range .Params.how.steps }}
+        <div>{{ . }}</div>
+        {{ end }}
+      </div>
+      <p class="fertigation-upgrade__architecture-text">{{ .Params.how.intro }} {{ .Params.how.text }}</p>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.retrofit.title }}</h2>
+        <p>{{ .Params.retrofit.text }}</p>
+      </div>
+      <div class="fertigation-upgrade__actions">
+        <a class="fertigation-upgrade__btn fertigation-au__btn-solid" href="{{ .Params.retrofit.url | relURL }}">{{ .Params.retrofit.cta }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.applications.title }}</h2>
+      </div>
+      <div class="fertigation-upgrade__card-grid fertigation-upgrade__card-grid--four">
+        {{ range .Params.applications.cards }}
+        <div class="fertigation-upgrade__card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.capabilities.title }}</h2>
+      </div>
+      <div class="fertigation-au-caps">
+        {{ range .Params.capabilities.items }}
+        <div>{{ . }}</div>
+        {{ end }}
+      </div>
+      <p class="fertigation-au__note">{{ .Params.capabilities.note }}</p>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint" id="fertigation-project-info">
+    <div class="container">
+      <div class="fertigation-upgrade__split">
+        <div>
+          <h2>{{ .Params.project.title }}</h2>
+          <p>{{ .Params.project.text }}</p>
+          <div class="fertigation-upgrade__actions">
+            <a class="fertigation-upgrade__btn fertigation-au__btn-solid" href="#fertigation-inquiry">{{ .Params.project.cta }}</a>
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener" data-track="fertigation_whatsapp_click"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.hero.secondary_cta }}</a>
+          </div>
+        </div>
+        <div class="fertigation-upgrade__checklist">
+          {{ range .Params.project.items }}
+          <div><span aria-hidden="true"></span>{{ . }}</div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section" id="fertigation-inquiry">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="fertigation-au-form-wrap">
+            <h2>{{ .Params.form.title }}</h2>
+            <p class="fertigation-au__note" style="margin-top:0">{{ .Params.form.intro }}</p>
+            <form method="POST" name="fertigation_system_au" class="fertigation-au-form" id="fertigation-system-au-form"
+                  {{ if $form.use_netlify }}netlify netlify-honeypot="nhp" action="/message_sent"{{ else }}action="{{ $form.action | safeURL }}"{{ end }}>
+              <input type="hidden" name="form-name" value="fertigation_system_au">
+              <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+              {{ partial "lead-source-fields.html" . }}
+              <div class="fertigation-au-honeypot">
+                <label>Leave this field empty<input name="nhp" type="text" tabindex="-1" autocomplete="off"></label>
+              </div>
+              <div class="row g-3 mt-1">
+                <div class="col-md-6">
+                  <label for="fsau-name">Name *</label>
+                  <input id="fsau-name" name="name" type="text" class="form-control" required autocomplete="name">
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-company">Company</label>
+                  <input id="fsau-company" name="company" type="text" class="form-control" autocomplete="organization">
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-country">Country *</label>
+                  <input id="fsau-country" name="country" type="text" class="form-control" required autocomplete="country-name">
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-email">Email *</label>
+                  <input id="fsau-email" name="email" type="email" class="form-control" required autocomplete="email">
+                </div>
+                <div class="col-12">
+                  <label for="fsau-phone">WhatsApp / Phone</label>
+                  <input id="fsau-phone" name="whatsapp" type="tel" class="form-control" autocomplete="tel">
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-application">Application</label>
+                  <select id="fsau-application" name="application" class="form-select">
+                    <option value="" selected>Select or skip</option>
+                    <option>Greenhouse</option>
+                    <option>Orchard</option>
+                    <option>Open-field farm</option>
+                    <option>Irrigation retrofit</option>
+                    <option>Other</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-size">Approximate farm / greenhouse size</label>
+                  <input id="fsau-size" name="farm_size" type="text" class="form-control" placeholder="e.g. 2 ha greenhouse">
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-zones">Number of irrigation zones</label>
+                  <select id="fsau-zones" name="irrigation_zones" class="form-select">
+                    <option value="" selected>Select or skip</option>
+                    <option>1–2</option>
+                    <option>3–8</option>
+                    <option>9–16</option>
+                    <option>17+</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="fsau-channels">Fertilizer channels</label>
+                  <select id="fsau-channels" name="fertilizer_channels" class="form-select">
+                    <option value="" selected>Select or skip</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="fsau-ecph">EC/pH requirement</label>
+                  <select id="fsau-ecph" name="ec_ph_requirement" class="form-select">
+                    <option value="" selected>Select or skip</option>
+                    <option>EC and pH</option>
+                    <option>EC only</option>
+                    <option>pH only</option>
+                    <option>No</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="fsau-existing">Existing irrigation equipment</label>
+                  <textarea id="fsau-existing" name="existing_equipment" class="form-control" rows="3" placeholder="Pumps, filters, fertilizer tanks, valves, pipelines — or Not sure"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="fsau-desc">Project description</label>
+                  <textarea id="fsau-desc" name="project_description" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="fertigation-au-submit" type="submit">{{ .Params.form.submit }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="fertigation-au-wa">
+            <h3>{{ .Params.form.wa_heading }}</h3>
+            <p>{{ .Params.form.wa_text }}</p>
+            <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener" data-track="fertigation_whatsapp_click"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.form.wa_cta }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__section fertigation-upgrade__section--tint">
+    <div class="container">
+      <div class="fertigation-upgrade__heading">
+        <h2>{{ .Params.why.title }}</h2>
+      </div>
+      <div class="fertigation-au-why">
+        {{ range .Params.why.items }}
+        <div class="fertigation-upgrade__card">
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__cta">
+    <div class="container text-center">
+      <h2>{{ .Params.final_cta.title }}</h2>
+      <p>{{ .Params.final_cta.text }}</p>
+      <div class="fertigation-upgrade__actions fertigation-upgrade__actions--center">
+        <a class="fertigation-upgrade__btn fertigation-upgrade__btn--light" href="#fertigation-inquiry">{{ .Params.final_cta.primary_cta }}</a>
+        <a class="fertigation-upgrade__btn fertigation-upgrade__btn--primary" href="{{ $whatsapp }}" target="_blank" rel="noopener" data-track="fertigation_whatsapp_click"><i class="fab fa-whatsapp" aria-hidden="true"></i> {{ .Params.final_cta.secondary_cta }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fertigation-upgrade__related">
+    <div class="container">
+      <h2>Related Pages</h2>
+      <div class="fertigation-upgrade__related-links">
+        {{ range .Params.related }}
+        {{ if eq .url $rangeURL }}
+        <a href="{{ .url | relURL }}" data-track="fertigation_product_range_click">{{ .label }}</a>
+        {{ else }}
+        <a href="{{ .url | relURL }}">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</article>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function track(name) {
+    if (typeof gtag === "function") {
+      gtag("event", name, { event_category: "ads_landing", page: "fertigation-system-au" });
+    }
+  }
+  document.querySelectorAll('[data-track="fertigation_whatsapp_click"]').forEach(function (el) {
+    el.addEventListener("click", function () { track("fertigation_whatsapp_click"); });
+  });
+  document.querySelectorAll('[data-track="fertigation_product_range_click"]').forEach(function (el) {
+    el.addEventListener("click", function () { track("fertigation_product_range_click"); });
+  });
+  var form = document.getElementById("fertigation-system-au-form");
+  if (form) {
+    form.addEventListener("submit", function () { track("fertigation_form_submit"); });
+  }
+});
+</script>
+{{ end }}
