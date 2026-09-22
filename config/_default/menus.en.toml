@@ -55,6 +55,12 @@ url = "api-integration/"
 weight = 3
 
 [[main]]
+parent = "For Distributors"
+name = "OEM / Private Label"
+url = "oem-smart-irrigation-controller/"
+weight = 4
+
+[[main]]
 name = "Systems"
 url = "system/irrigation-control-system/"
 weight = 4

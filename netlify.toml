@@ -10,6 +10,9 @@
   NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
 
+[functions]
+  directory = "netlify/functions"
+
 # 2026-09-21 Live Demo: Netlify HTTPS → production cloud public API (English).
 # Browser stays same-origin (/live-api/demo). Do NOT proxy the old /live stack
 # (Chinese labels). Do NOT proxy /api/control.

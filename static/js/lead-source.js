@@ -69,7 +69,7 @@
 
   function fillForms() {
     var values = fieldsFrom(capture());
-    var forms = document.querySelectorAll('form[data-netlify="true"], form[netlify], form.c2-form, form.partner-form, form.mena-lp__form');
+    var forms = document.querySelectorAll('form[data-netlify="true"], form[netlify], form.c2-form, form.partner-form, form.mena-lp__form, form.oem-ic-form');
     forms.forEach(function (form) {
       Object.keys(values).forEach(function (name) {
         var input = form.querySelector('input[name="' + name + '"]');

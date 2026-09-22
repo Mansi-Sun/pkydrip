@@ -43,6 +43,12 @@ docs/**/_pdf-build/
 docs/**/build-pdf.py
 docs/**/fix-svgs.py
 
+# --- Secrets (never commit) --------------------------------------------------
+.env
+**/.env
+!.env.example
+!netlify/functions/.env.example
+
 # --- Local tooling / agent metadata ------------------------------------------
 .codex-gh/
 

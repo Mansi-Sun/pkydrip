@@ -1,0 +1,381 @@
+{{ define "head_extra" }}
+<style>
+/* /oem-smart-irrigation-controller/ — scoped to this page; palette matches /contact/ */
+.oem-ic{color:#26463a}
+.oem-ic h1,.oem-ic h2,.oem-ic h3{color:#173d31;font-weight:500}
+.oem-ic h2{font-size:26px;margin:0 0 12px}
+.oem-ic h3{font-size:17px;margin:0 0 8px}
+.oem-ic p,.oem-ic li{font-size:15px;line-height:1.7;color:#3a5248}
+.oem-ic .lead{font-size:17px;color:#4a6156;max-width:760px}
+.oem-ic a{color:#1e5841}
+.oem-ic .container{max-width:1080px}
+.oem-ic-hero{background:#f3f8f5;border-bottom:1px solid #e0e9e3;padding:48px 0 40px}
+.oem-ic-hero h1{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:0 0 14px}
+.oem-ic-kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#3c8b65;font-weight:700;margin:0 0 10px}
+.oem-ic-features{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.oem-ic-features li{background:#fff;border:1px solid #dcebe1;border-radius:999px;padding:6px 12px;font-size:13px;color:#1e4d3f}
+.oem-ic-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.oem-ic-note{margin:16px 0 0;font-size:14px;color:#67817a;max-width:640px}
+.oem-ic-photo{width:100%;height:auto;border-radius:14px;border:1px solid #dcebe1;background:#fff}
+.oem-ic-section{padding:48px 0}
+.oem-ic-section--tint{background:#f7fbf8;border-top:1px solid #e0e9e3;border-bottom:1px solid #e0e9e3}
+.oem-ic-who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px;margin:0;padding:0;list-style:none}
+.oem-ic-who h3{margin-bottom:6px}
+.oem-ic-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.oem-ic-flow li{flex:1 1 140px;background:#fff;border:1px solid #dcebe1;border-radius:12px;padding:14px 12px;text-align:center;font-size:13px;font-weight:500;color:#173d31;position:relative}
+.oem-ic-flow li span{display:block;color:#3c8b65;font-size:11px;letter-spacing:.06em;margin-bottom:4px}
+.oem-ic-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.oem-ic-box{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:22px 24px}
+.oem-ic-box ul{margin:12px 0 0;padding-left:18px}
+.oem-ic-box li{margin-bottom:6px}
+.oem-ic-plats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.oem-ic-plat{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:22px}
+.oem-ic-plat strong{display:block;color:#3c8b65;font-size:13px;margin-bottom:6px}
+.oem-ic-plat ul{margin:10px 0 0;padding-left:18px}
+.oem-ic-models{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.oem-ic-model{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:22px}
+.oem-ic-steps{margin:8px 0 0;padding:0;list-style:none;counter-reset:oemstep}
+.oem-ic-steps li{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid #e0e9e3;counter-increment:oemstep}
+.oem-ic-steps li:last-child{border-bottom:0}
+.oem-ic-steps li::before{content:counter(oemstep);width:36px;height:36px;border-radius:50%;background:#e1f4e8;color:#1e5841;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.oem-ic-caps{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.oem-ic-muted{font-size:13px;color:#67817a}
+.oem-ic-form-wrap{background:#fff;border:1px solid #e0e9e3;border-radius:14px;padding:26px 28px}
+.oem-ic-form label{font-size:13px;font-weight:500;color:#234d3d;margin-bottom:5px}
+.oem-ic-form .form-control,.oem-ic-form .form-select{border-color:#cfdcd4;border-radius:8px;font-size:14px;padding:9px 12px;color:#26463a}
+.oem-ic-form .form-control:focus,.oem-ic-form .form-select:focus{border-color:#3c8b65;box-shadow:0 0 0 3px rgba(60,139,101,.13)}
+.oem-ic-checks{display:flex;flex-wrap:wrap;gap:8px 16px;margin:6px 0 0}
+.oem-ic-checks label{font-weight:400;margin:0;display:flex;align-items:center;gap:6px;color:#3a5248}
+.oem-ic-submit{background:#1e4d3f;border:0;border-radius:9px;color:#fff;font-size:15px;font-weight:500;padding:12px 22px}
+.oem-ic-submit:hover{background:#173d31;color:#fff}
+.oem-ic-honeypot{position:absolute!important;left:-9999px!important;opacity:0;height:0;width:0;overflow:hidden}
+.oem-ic-cta{background:#173d31;color:#fff;padding:48px 0}
+.oem-ic-cta h2,.oem-ic-cta p{color:#fff}
+.oem-ic-cta p{color:rgba(255,255,255,.82)}
+.oem-ic-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0 0;padding:0;list-style:none}
+.oem-ic-links a{font-size:14px}
+.oem-ic-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:10px;font-weight:600;text-decoration:none}
+.oem-ic-btn--primary{background:#1e4d3f;color:#fff}
+.oem-ic-btn--primary:hover{background:#173d31;color:#fff}
+.oem-ic-btn--ghost{background:#fff;border:1px solid #cfdcd4;color:#1e4d3f}
+.oem-ic-btn--ghost:hover{border-color:#1e4d3f;color:#173d31}
+.oem-ic-btn--light{background:#fff;color:#173d31}
+.oem-ic-btn--light:hover{background:#e1f4e8;color:#173d31}
+.oem-ic-btn--wa{background:#25d366;color:#fff}
+.oem-ic-btn--wa:hover{background:#1fbd5b;color:#fff}
+@media(max-width:991px){
+  .oem-ic-who,.oem-ic-cols,.oem-ic-plats,.oem-ic-models,.oem-ic-caps{grid-template-columns:1fr}
+  .oem-ic-hero{padding:34px 0 28px}
+  .oem-ic-section{padding:36px 0}
+}
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ $wa := .Params.whatsapp_url }}
+{{ $form := site.Params.contact.form }}
+<article class="oem-ic">
+
+<section class="oem-ic-hero" id="oem-hero">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <p class="oem-ic-kicker">OEM / Private Label Technology Partner</p>
+        <h1>{{ .Params.hero.title }}</h1>
+        {{ range .Params.hero.paragraphs }}<p class="lead">{{ . }}</p>{{ end }}
+        <ul class="oem-ic-features">
+          {{ range .Params.hero.features }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        <div class="oem-ic-actions">
+          <a class="oem-ic-btn oem-ic-btn--primary" href="#oem-rfq">{{ .Params.hero.primary_cta }}</a>
+          <a class="oem-ic-btn oem-ic-btn--ghost" href="#oem-rfq">{{ .Params.hero.secondary_cta }}</a>
+        </div>
+        <p class="oem-ic-note">{{ .Params.hero.rfq_note }}</p>
+      </div>
+      <div class="col-lg-5">
+        {{ with .Params.hero.image }}
+        <img class="oem-ic-photo" src="{{ . | relURL }}" alt="{{ $.Params.hero.image_alt }}" width="900" height="700" decoding="async">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section" id="who">
+  <div class="container">
+    <h2>{{ .Params.audience.title }}</h2>
+    <p class="lead">{{ .Params.audience.intro }}</p>
+    <ul class="oem-ic-who">
+      {{ range .Params.audience.items }}
+      <li>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="oem-ic-section oem-ic-section--tint" id="value">
+  <div class="container">
+    <h2>{{ .Params.value.title }}</h2>
+    <p class="lead">{{ .Params.value.body }}</p>
+    <ol class="oem-ic-flow">
+      {{ range .Params.value.steps }}
+      <li><span>{{ .label }}</span>{{ .title }}</li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="oem-ic-section" id="platform-custom">
+  <div class="container">
+    <h2>{{ .Params.customize.title }}</h2>
+    <p class="oem-ic-muted">{{ .Params.customize.disclaimer }}</p>
+    <div class="oem-ic-cols">
+      {{ range .Params.customize.columns }}
+      <div class="oem-ic-box">
+        <h3>{{ .title }}</h3>
+        <ul>
+          {{ range .items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section oem-ic-section--tint" id="platforms">
+  <div class="container">
+    <h2>{{ .Params.platforms.title }}</h2>
+    <p class="lead">{{ .Params.platforms.intro }}</p>
+    <div class="oem-ic-plats">
+      {{ range .Params.platforms.items }}
+      <article class="oem-ic-plat">
+        <strong>{{ .eyebrow }}</strong>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <ul>
+          {{ range .suitable }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section" id="connectivity">
+  <div class="container">
+    <h2>{{ .Params.connectivity.title }}</h2>
+    <p class="lead">{{ .Params.connectivity.intro }}</p>
+    <div class="oem-ic-models">
+      {{ range .Params.connectivity.models }}
+      <article class="oem-ic-model">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+    <p class="oem-ic-muted" style="margin-top:16px">{{ .Params.connectivity.note }}</p>
+  </div>
+</section>
+
+<section class="oem-ic-section oem-ic-section--tint" id="process">
+  <div class="container">
+    <h2>{{ .Params.process.title }}</h2>
+    <ol class="oem-ic-steps">
+      {{ range .Params.process.steps }}
+      <li>
+        <div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="oem-ic-section" id="capabilities">
+  <div class="container">
+    <h2>{{ .Params.capabilities.title }}</h2>
+    <div class="oem-ic-caps">
+      <div class="oem-ic-box">
+        <h3>{{ .Params.capabilities.standard.title }}</h3>
+        <ul>
+          {{ range .Params.capabilities.standard.items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      <div class="oem-ic-box">
+        <h3>{{ .Params.capabilities.engineering.title }}</h3>
+        <p>{{ .Params.capabilities.engineering.intro }}</p>
+        <ul>
+          {{ range .Params.capabilities.engineering.items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section oem-ic-section--tint" id="trust">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <h2>{{ .Params.trust.title }}</h2>
+        <p class="lead">{{ .Params.trust.body }}</p>
+        <ul>
+          {{ range .Params.trust.items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        {{ with .Params.trust.image }}
+        <img class="oem-ic-photo" src="{{ . | relURL }}" alt="{{ $.Params.trust.image_alt }}" width="800" height="600" loading="lazy" decoding="async">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section" id="oem-rfq">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="oem-ic-form-wrap">
+          <h2>{{ .Params.form.title }}</h2>
+          <p class="oem-ic-muted">{{ .Params.form.intro }}</p>
+          <form method="POST" name="oem_rfq" class="oem-ic-form" enctype="multipart/form-data" {{ if $form.use_netlify }}netlify netlify-honeypot="nhp" action="/message_sent"{{ else }}action="{{ $form.action | safeURL }}"{{ end }}>
+            <input type="hidden" name="form-name" value="oem_rfq">
+            <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+            {{ partial "lead-source-fields.html" . }}
+            <div class="oem-ic-honeypot">
+              <label>Leave this field empty<input name="nhp" type="text" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <div class="row g-3 mt-1">
+              <div class="col-md-6">
+                <label for="oem-company">Company Name *</label>
+                <input id="oem-company" name="company" type="text" class="form-control" required autocomplete="organization">
+              </div>
+              <div class="col-md-6">
+                <label for="oem-country">Country / Market *</label>
+                <input id="oem-country" name="country" type="text" class="form-control" required autocomplete="country-name">
+              </div>
+              <div class="col-md-6">
+                <label for="oem-website">Website</label>
+                <input id="oem-website" name="website" type="url" class="form-control" placeholder="https://" autocomplete="url">
+              </div>
+              <div class="col-md-6">
+                <label for="oem-contact">Contact Name *</label>
+                <input id="oem-contact" name="contact_name" type="text" class="form-control" required autocomplete="name">
+              </div>
+              <div class="col-12">
+                <label for="oem-email">Business Email *</label>
+                <input id="oem-email" name="email" type="email" class="form-control" required autocomplete="email">
+              </div>
+              <div class="col-md-6">
+                <label for="oem-product">Product Type</label>
+                <select id="oem-product" name="product_type" class="form-select">
+                  <option value="" selected disabled>Select</option>
+                  {{ range .Params.form.product_types }}<option>{{ . }}</option>{{ end }}
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="oem-zones">Number of Zones</label>
+                <select id="oem-zones" name="zones" class="form-select">
+                  <option value="" selected disabled>Select</option>
+                  {{ range .Params.form.zones }}<option>{{ . }}</option>{{ end }}
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="oem-valve">Valve Type</label>
+                <select id="oem-valve" name="valve_type" class="form-select">
+                  <option value="" selected disabled>Select</option>
+                  {{ range .Params.form.valve_types }}<option>{{ . }}</option>{{ end }}
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="oem-cloud">Software / Cloud</label>
+                <select id="oem-cloud" name="software_cloud" class="form-select">
+                  <option value="" selected disabled>Select</option>
+                  {{ range .Params.form.software }}<option>{{ . }}</option>{{ end }}
+                </select>
+              </div>
+              <div class="col-12">
+                <label>Connectivity</label>
+                <div class="oem-ic-checks">
+                  {{ range .Params.form.connectivity }}
+                  <label><input type="checkbox" name="connectivity" value="{{ . }}"> {{ . }}</label>
+                  {{ end }}
+                </div>
+              </div>
+              <div class="col-12">
+                <label>Customization Required</label>
+                <div class="oem-ic-checks">
+                  {{ range .Params.form.customization }}
+                  <label><input type="checkbox" name="customization" value="{{ . }}"> {{ . }}</label>
+                  {{ end }}
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="oem-qty">Expected Quantity</label>
+                <select id="oem-qty" name="quantity" class="form-select">
+                  <option value="" selected disabled>Select</option>
+                  {{ range .Params.form.quantities }}<option>{{ . }}</option>{{ end }}
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="oem-desc">Project Description</label>
+                <textarea id="oem-desc" name="project_description" class="form-control" rows="5" placeholder="{{ .Params.form.description_placeholder }}"></textarea>
+              </div>
+              <div class="col-12">
+                <label for="oem-file">RFQ / Specification upload</label>
+                <input id="oem-file" name="rfq_file" type="file" class="form-control" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                <p class="oem-ic-muted" style="margin-top:6px">{{ .Params.form.upload_note | markdownify }}</p>
+              </div>
+              <div class="col-12">
+                <button class="oem-ic-submit" type="submit">{{ .Params.form.submit }}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="oem-ic-box" style="background:#173d31;color:#fff;border:0">
+          <h3 style="color:#fff">Prefer WhatsApp or email?</h3>
+          <p style="color:rgba(255,255,255,.85)">Send the RFQ, specification or product idea directly. We match it to the closest existing platform first.</p>
+          <div class="oem-ic-actions">
+            <a class="oem-ic-btn oem-ic-btn--wa" href="{{ $wa }}" target="_blank" rel="noopener">WhatsApp RFQ</a>
+            {{ with site.Params.email }}
+            <a class="oem-ic-btn oem-ic-btn--light" href="mailto:{{ . }}?subject={{ $.Params.form.email_subject | urlquery }}">Email RFQ</a>
+            {{ end }}
+          </div>
+        </div>
+        <p class="oem-ic-muted" style="margin-top:16px">{{ .Params.distributor_note | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-cta" id="final-cta">
+  <div class="container">
+    <h2>{{ .Params.final.title }}</h2>
+    <p class="lead">{{ .Params.final.body }}</p>
+    <div class="oem-ic-actions">
+      <a class="oem-ic-btn oem-ic-btn--light" href="#oem-rfq">{{ .Params.final.primary_cta }}</a>
+      <a class="oem-ic-btn oem-ic-btn--ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35)" href="{{ $wa }}" target="_blank" rel="noopener">{{ .Params.final.secondary_cta }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="oem-ic-section">
+  <div class="container">
+    <h2>{{ .Params.links.title }}</h2>
+    <ul class="oem-ic-links">
+      {{ range .Params.links.items }}
+      <li><a href="{{ .url }}">{{ .label }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+</article>
+{{ end }}
