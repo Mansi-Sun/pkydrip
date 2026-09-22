@@ -1,12 +1,15 @@
 # Netlify reads netlify.toml from the repository root only (not themes/airspace-hugo/netlify.toml).
 # Use Hugo directly so deploys always regenerate public/ from content.
+#
+# Do not set HUGO_VERSION here. Netlify mise installs that pin via the GitHub
+# Releases API (api.github.com) and shared build IPs often hit 403 rate limits
+# before npm or Hugo ever run. Keep 0.161.1 extended by downloading the release
+# tarball (releases/download), which does not use that API.
 [build]
   publish = "public"
-  command = "hugo version && hugo --gc --minify --forceSyncStatic"
+  command = "curl -fsSL -o /tmp/hugo.tgz https://github.com/gohugoio/hugo/releases/download/v0.161.1/hugo_extended_0.161.1_Linux-64bit.tar.gz && tar -xzf /tmp/hugo.tgz -C /tmp hugo && export PATH=\"/tmp:$PATH\" && hugo version && hugo --gc --minify --forceSyncStatic"
 
 [build.environment]
-  # Must match local Hugo (extended). 0.115.x cannot build hugo.Data templates or current config.
-  HUGO_VERSION = "0.161.1"
   NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
 
