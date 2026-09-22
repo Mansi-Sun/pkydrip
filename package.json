@@ -3,6 +3,9 @@
   "version": "1.2.3",
   "license": "MIT",
   "author": "gethugothemes",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  },
   "scripts": {
     "dev": "hugo server -D --disableFastRender --bind 127.0.0.1 --port 1313",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
