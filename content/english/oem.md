@@ -11,7 +11,7 @@ draft: false
 
 We understand that every irrigation system has unique needs, and we are here to offer comprehensive solutions that include various enclosures, different connectors, valve sizes, waterproof fittings, and more.
 
-![8-Channel Irrigation Controller](/wp-media/2024-06/18361729674141_.pic_.jpg)
+![PKYDrip PKY-60W main irrigation controller](/images/product/pky-60w-main-controller.jpg)
 
 ### Multi-zone irrigation controller
 

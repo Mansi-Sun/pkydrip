@@ -17,7 +17,7 @@ draft: false
 layout: "oem-smart-irrigation"
 url: "/oem-smart-irrigation-controller/"
 page_code: "PC-0801-2-02-LAND-OEM-SMART-IC-01"
-image: "images/pkydrip-fertigation/pkydrip-oem.webp"
+image: "images/product/pky-60w-main-controller.jpg"
 whatsapp_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20want%20to%20discuss%20an%20OEM%20%2F%20private-label%20smart%20irrigation%20controller.%0A-%20Company%3A%20%0A-%20Country%20%2F%20market%3A%20%0A-%20Product%20type%3A%20irrigation%20controller%0A-%20Zones%3A%208%20%2F%2016%20%2F%2032%20%2F%20other%0A-%20Valve%20type%3A%2024VAC%20%2F%20DC%20%2F%20latching%0A-%20Connectivity%3A%20Wi-Fi%20%2F%204G%20%2F%20LoRa%20%2F%20RS485%0A-%20Software%3A%20PKYDrip%20Cloud%20%2F%20our%20cloud%20%2F%20MQTT%20%2F%20local%20only%0A-%20RFQ%20or%20spec%20attached%20by%20email%3A%20yes%20%2F%20no"
 
 hero:
@@ -35,8 +35,8 @@ hero:
   primary_cta: "Discuss Your Product"
   secondary_cta: "Send Us Your RFQ"
   rfq_note: "Already have a product specification? Send us your RFQ and we will first recommend the closest existing PKYDrip platform before discussing customization."
-  image: "images/pkydrip-fertigation/pkydrip-oem.webp"
-  image_alt: "PKYDrip OEM irrigation controller hardware for private-label product lines"
+  image: "images/product/pky-60w-main-controller.jpg"
+  image_alt: "PKYDrip PKY-60W main irrigation controller for OEM and private-label product lines"
 
 audience:
   title: "Who This Is For"
@@ -191,8 +191,8 @@ trust:
     - "RS485 / Modbus"
     - "MQTT / IoT connectivity"
     - "Local + cloud architecture"
-  image: "wp-media/2024-06/18361729674141_.pic_.jpg"
-  image_alt: "PKYDrip multi-zone irrigation controller used as an OEM hardware reference"
+  image: "images/product/pky-60w-main-controller.jpg"
+  image_alt: "PKYDrip PKY-60W main irrigation controller used as an OEM hardware reference"
 
 form:
   title: "Tell Us What You Want to Build"

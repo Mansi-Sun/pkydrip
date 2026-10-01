@@ -37,7 +37,7 @@ The PKYDrip PKY-60W Intelligent Irrigation Controller is designed to solve these
     <li><p><strong>No Network Dependency:</strong>Even in remote mountainous areas or outdoor locations with poor signals, the controller operates stably and independently, without relying on internet connectivity.</p></li>
     <li><p><strong>No Mains Power Required (Solar Version):</strong>A dedicated solar-powered version is available, allowing your irrigation system to operate completely off-grid, achieving truly green and sustainable irrigation, ideal for remote farms or landscaping projects.</p></li>
   </ul>
-  {{<centerimg src="/images/portfolio/pky60w-irrigation-controller.webp" alt="pky60w application" caption="Robust and durable industrial-grade design suitable for various complex outdoor environments. The compact body is easy to install and deploy.">}}
+  {{<centerimg src="/images/product/pky-60w-main-controller.jpg" alt="PKYDrip PKY-60W main irrigation controller" caption="PKY-60W main controller for farm and greenhouse irrigation automation — local control, expandable zones, and project-configured I/O.">}}
 </div>
 
 <div>

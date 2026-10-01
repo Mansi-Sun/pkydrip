@@ -11,7 +11,7 @@ tagline: "Standard irrigation control system combination built around the PKY-60
 
 # Optional: keep empty to avoid wrong background
 bg_image: ""
-image: "images/product/smart-controllers.webp"
+image: "images/product/pky-60w-main-controller.jpg"
 
 categories:
   - irrigation-controller
