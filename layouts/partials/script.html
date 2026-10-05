@@ -1,3 +1,5 @@
+{{ if not .IsHome }}
+{{/* Homepage nav is vanilla JS in header.html; skip jquery/slick/shuffle/script.js. */}}
 {{/* ---------------- Third-party plugin scripts (external, deferred) ---------------- */}}
 {{ range site.Params.plugins.js }}
   {{ if findRE "^http" .link }}
@@ -38,6 +40,7 @@
 {{ else }}
 <script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
+{{ end }}
 
 {{/* ---------------- Cookie notice (no jQuery needed) ---------------- */}}
 {{ with site.Params.cookies }}
@@ -67,7 +70,8 @@
   {{ end }}
 {{ end }}
 
-{{/* ---------------- Lightweight YouTube: one-time minimal JS ---------------- */}}
+{{/* ---------------- Lightweight YouTube: homepage has no .yt-lite embeds ---------------- */}}
+{{ if not .IsHome }}
 <script defer>
   document.addEventListener('click', function(e){
     const wrap = e.target.closest('.yt-lite');
@@ -85,3 +89,4 @@
     wrap.replaceChildren(iframe);
   }, { passive: true });
 </script>
+{{ end }}

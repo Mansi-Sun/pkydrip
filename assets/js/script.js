@@ -112,9 +112,11 @@ $(document).ready(function () {
       });
     }
   }
-  $(window).on('scroll', function () {
-    counter();
-  });
+  if ($('.count').length !== 0) {
+    $(window).on('scroll', function () {
+      counter();
+    });
+  }
 
   // Turn cloaked e-mail addresses into clickable mailto links
   let emailSpans = document.getElementsByClassName("cloaked-e-mail");
