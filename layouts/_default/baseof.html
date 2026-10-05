@@ -14,7 +14,7 @@
 
 <body{{ if .IsHome }} class="page-home"{{ end }}>
 	{{ partial "header.html" . }}
-	{{ if ne hugo.Environment "development" }}
+	{{ if and (ne hugo.Environment "development") (not .IsHome) }}
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
 	{{ else }}
@@ -35,7 +35,7 @@
 	{{ end }}
 	{{ end }}
 	{{ if hugo.IsProduction }}
-	{{ partialCached "script.html" . "pkydrip-js-v3" }}
+	{{ partialCached "script.html" . "pkydrip-js-v4" }}
 	{{ else }}
 	{{ partial "script.html" . }}
 	{{ end }}

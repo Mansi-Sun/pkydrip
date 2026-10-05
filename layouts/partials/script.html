@@ -67,22 +67,6 @@
   {{ end }}
 {{ end }}
 
-{{/* ---------------- WebFont Loader (defer) ---------------- */}}
-{{ $pf := site.Params.variables.font_primary }}
-{{ $sf := site.Params.variables.font_secondary }}
-<script defer>
-  (function(){
-    var families = ['{{ $pf | default `Lato:wght@400` }}{{ if not $sf }}&display=swap{{ end }}'{{ with $sf }}, '{{ . | default `Lato:wght@400` }}&display=swap'{{ end }}];
-    window.WebFontConfig = {
-      google: { api: 'https://fonts.googleapis.com/css2', families: families, version: 2 },
-      active: function(){ try{ sessionStorage.fontsLoaded = true }catch(e){} }
-    };
-    var wf = document.createElement('script'); wf.defer = true;
-    wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js';
-    document.head.appendChild(wf);
-  })();
-</script>
-
 {{/* ---------------- Lightweight YouTube: one-time minimal JS ---------------- */}}
 <script defer>
   document.addEventListener('click', function(e){

@@ -57,28 +57,33 @@ $(document).ready(function () {
     });
   }
 
-  $('.portfolio-single-slider').slick({
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000
+  if ($('.portfolio-single-slider').length && $.fn.slick) {
+    $('.portfolio-single-slider').slick({
+      infinite: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  }
 
-  });
+  if ($('.clients-logo').length && $.fn.slick) {
+    $('.clients-logo').slick({
+      infinite: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  }
 
-  $('.clients-logo').slick({
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
-
-  $('.testimonial-slider').slick({
-    slidesToShow: 1,
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
+  if ($('.testimonial-slider').length && $.fn.slick) {
+    $('.testimonial-slider').slick({
+      slidesToShow: 1,
+      infinite: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  }
 
   //  Count Up
   function counter() {
@@ -123,6 +128,7 @@ $(document).ready(function () {
     emailSpan.parentElement.removeChild(emailSpan)
   }
 
-	// map initialize
-	$(map);
+  if (typeof map === 'function') {
+    $(map);
+  }
 });

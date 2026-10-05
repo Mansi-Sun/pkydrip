@@ -1,9 +1,31 @@
+{{ define "head_extra" }}
+{{ if and .Params.banner.enable .Params.banner.bg_image }}
+{{ partial "home-hero-preload.html" . }}
+{{ end }}
+{{ end }}
+
 {{ define "main" }}
 
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="slider home-hero {{ if .bg_overlay }}overly{{ end }}" style="background-image:url('{{ .bg_image | relURL }}'); position:relative;">
+<section class="slider home-hero {{ if .bg_overlay }}overly{{ end }}">
+  {{ if .bg_image }}
+  {{ partial "responsive-picture.html" (dict
+    "path" .bg_image
+    "alt" ""
+    "class" "home-hero__img"
+    "picture_class" "home-hero__media"
+    "sizes" "100vw"
+    "widths" (slice 960 1280 1600)
+    "quality" 75
+    "lazy" false
+    "fetchpriority" "high"
+    "decoding" "async"
+    "width" 1600
+    "height" 900
+  ) }}
+  {{ end }}
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-10" style="pointer-events:none;"></div>
 
   <div class="container position-relative" style="z-index:1;">
@@ -99,12 +121,18 @@
 
     <div class="row justify-content-center">
       <div class="col-md-12 text-center">
-        <img src="{{ .image | relURL }}"
-             alt="{{ .image_alt }}"
-             width="1600" height="900"
-             class="home-platform__image"
-             loading="lazy"
-             decoding="async">
+        {{ partial "responsive-picture.html" (dict
+          "path" .image
+          "alt" .image_alt
+          "class" "home-platform__image"
+          "sizes" "(max-width: 768px) 100vw, 820px"
+          "widths" (slice 480 800 1200)
+          "quality" 75
+          "lazy" true
+          "decoding" "async"
+          "width" 1600
+          "height" 900
+        ) }}
       </div>
     </div>
 
@@ -171,12 +199,18 @@
     <div class="row align-items-center g-4">
       {{ with .image }}
       <div class="col-lg-6">
-        <img src="{{ . | relURL }}"
-             alt="{{ $.Params.systems_value.image_alt }}"
-             width="1600" height="900"
-             class="home-split-section__image"
-             loading="lazy"
-             decoding="async">
+        {{ partial "responsive-picture.html" (dict
+          "path" .
+          "alt" $.Params.systems_value.image_alt
+          "class" "home-split-section__image"
+          "sizes" "(max-width: 991px) 100vw, 540px"
+          "widths" (slice 480 768 1200)
+          "quality" 75
+          "lazy" true
+          "decoding" "async"
+          "width" 1600
+          "height" 900
+        ) }}
       </div>
       {{ end }}
       <div class="col-lg-6">
@@ -207,12 +241,18 @@
     <div class="row align-items-center g-4">
       {{ with .image }}
       <div class="col-lg-6">
-        <img src="{{ . | relURL }}"
-             alt="{{ $.Params.portfolio.image_alt }}"
-             width="1600" height="900"
-             class="home-split-section__image"
-             loading="lazy"
-             decoding="async">
+        {{ partial "responsive-picture.html" (dict
+          "path" .
+          "alt" $.Params.portfolio.image_alt
+          "class" "home-split-section__image"
+          "sizes" "(max-width: 991px) 100vw, 540px"
+          "widths" (slice 480 768 1200)
+          "quality" 75
+          "lazy" true
+          "decoding" "async"
+          "width" 1600
+          "height" 900
+        ) }}
       </div>
       {{ end }}
       <div class="col-lg-6">

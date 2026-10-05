@@ -1,7 +1,20 @@
 {{ with site.GetPage "/" }}
 {{ with .Params.cta }}
-<section class="call-to-action bg-1 section-sm overly"
-  style="background-image: url('{{ .bg_image | relURL }}'); position: relative;">
+<section class="call-to-action bg-1 section-sm overly home-cta">
+  {{ if .bg_image }}
+  {{ $cta := resources.Get .bg_image }}
+  {{ if $cta }}
+    {{ $ctaMobile := $cta.Resize "768x jpg q60" }}
+    <picture class="home-cta__media">
+      <source type="image/jpeg" srcset="{{ $ctaMobile.RelPermalink }} {{ $ctaMobile.Width }}w, {{ $cta.RelPermalink }} {{ $cta.Width }}w" sizes="100vw">
+      <img class="home-cta__img" src="{{ .bg_image | relURL }}" alt="" width="1298" height="312" loading="lazy" decoding="async">
+    </picture>
+  {{ else }}
+    <div class="home-cta__media">
+      <img class="home-cta__img" src="{{ .bg_image | relURL }}" alt="" width="1298" height="312" loading="lazy" decoding="async">
+    </div>
+  {{ end }}
+  {{ end }}
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25" style="pointer-events: none;"></div>
 
   <div class="container position-relative" style="z-index: 1;">

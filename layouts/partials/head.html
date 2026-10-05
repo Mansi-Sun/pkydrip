@@ -134,18 +134,43 @@
 
 {{ template "_internal/opengraph.html" . }}
 
-<!-- Google tag (GA4 + Google Ads) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5HHC5PQ2D"></script>
+<!--
+  Google tag: load gtag.js once (G-Y5HHC5PQ2D), then config GA4 + Google Ads.
+  The gtag() stub queues page_view, Ads conversions and custom events until the
+  library arrives. Ads still hydrates its own config after the first library —
+  we do not request gtag/js?id=AW-… ourselves.
+  Load is deferred until idle, load+2.5s, or first pointer/key/touch so LCP/TBT
+  are not blocked. IDs are unchanged.
+-->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  // GA4
   gtag('config', 'G-Y5HHC5PQ2D');
-
-  // Google Ads
   gtag('config', 'AW-16640554458');
+  (function () {
+    var loaded = false;
+    function loadGtag() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y5HHC5PQ2D';
+      document.head.appendChild(s);
+    }
+    function schedule() {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGtag, { timeout: 2500 });
+      } else {
+        setTimeout(loadGtag, 1500);
+      }
+    }
+    if (document.readyState === 'complete') schedule();
+    else window.addEventListener('load', schedule);
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+      window.addEventListener(ev, loadGtag, { once: true, passive: true });
+    });
+  })();
 </script>
 
  <!-- ads conversion begin -->
@@ -187,7 +212,7 @@ window.addEventListener('load', function () {
 </script>
 
 <!-- WhatsApp click tracking -->
-<script src="{{ "js/lead-source.js" | relURL }}"></script>
+<script defer src="{{ "js/lead-source.js" | relURL }}"></script>
 <script>
 window.addEventListener('load', function () {
   var WA_SEL = "a[href*='wa.me'], a[href*='whatsapp.com']";
