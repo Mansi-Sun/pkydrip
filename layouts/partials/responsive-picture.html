@@ -1,0 +1,50 @@
+{{/*
+  Responsive AVIF/WebP picture from an assets image.
+
+  Required: path, alt
+  Optional: class, picture_class, sizes, widths, quality, lazy, fetchpriority, decoding, width, height
+*/}}
+{{ $path := .path }}
+{{ $img := resources.Get $path }}
+{{ if not $img }}
+  <img src="{{ $path | relURL }}" alt="{{ .alt }}" class="{{ .class }}"
+    {{ with .width }}width="{{ . }}"{{ end }}
+    {{ with .height }}height="{{ . }}"{{ end }}
+    {{ if .lazy }}loading="lazy"{{ else }}loading="eager"{{ end }}
+    decoding="{{ .decoding | default `async` }}">
+{{ else }}
+  {{ $widths := .widths | default (slice 480 768 1200) }}
+  {{ $q := .quality | default 75 }}
+  {{ $origW := $img.Width }}
+  {{ $webpParts := slice }}
+  {{ $avifParts := slice }}
+  {{ $fallback := $img }}
+  {{ range $widths }}
+    {{ $w := . }}
+    {{ if gt $w $origW }}{{ $w = $origW }}{{ end }}
+    {{ $webp := $img.Resize (printf "%dx webp q%d" $w $q) }}
+    {{ $webpParts = $webpParts | append (printf "%s %dw" $webp.RelPermalink $webp.Width) }}
+    {{ $fallback = $webp }}
+    {{ $avifResult := try ($img.Resize (printf "%dx avif q%d" $w $q)) }}
+    {{ if and (not $avifResult.Err) (gt $avifResult.Value.Width 0) }}
+      {{ $avifParts = $avifParts | append (printf "%s %dw" $avifResult.Value.RelPermalink $avifResult.Value.Width) }}
+    {{ end }}
+  {{ end }}
+  {{ $sizes := .sizes | default "(max-width: 768px) 100vw, 820px" }}
+  {{ $w := .width | default $img.Width }}
+  {{ $h := .height | default $img.Height }}
+  <picture{{ with .picture_class }} class="{{ . }}"{{ end }}>
+    {{ if gt (len $avifParts) 0 }}
+      <source type="image/avif" srcset="{{ delimit $avifParts `, ` }}" sizes="{{ $sizes }}">
+    {{ end }}
+    <source type="image/webp" srcset="{{ delimit $webpParts `, ` }}" sizes="{{ $sizes }}">
+    <img src="{{ $fallback.RelPermalink }}"
+      alt="{{ .alt }}"
+      class="{{ .class }}"
+      width="{{ $w }}"
+      height="{{ $h }}"
+      {{ if .lazy }}loading="lazy"{{ else }}loading="eager"{{ end }}
+      decoding="{{ .decoding | default `async` }}"
+      {{ with .fetchpriority }}fetchpriority="{{ . }}"{{ end }}>
+  </picture>
+{{ end }}

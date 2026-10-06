@@ -1,3 +1,86 @@
+/* Self-hosted latin fonts. Variable Roboto covers 300–600; Volkhov italic for pull quotes. */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url("/fonts/roboto-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Volkhov";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/volkhov-italic-400.woff2") format("woff2");
+}
+
+/* Homepage: empty preloader is a full-screen white sheet that delays LCP. */
+.page-home .preloader {
+  display: none !important;
+}
+
+.home-hero.slider {
+  position: relative;
+  overflow: hidden;
+  background-image: none !important;
+  background-attachment: scroll !important;
+}
+
+.home-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-hero .container,
+.home-hero .bg-dark,
+.home-hero.slider.overly:before {
+  z-index: 1;
+}
+
+.home-cta {
+  position: relative;
+  overflow: hidden;
+  background-image: none !important;
+}
+
+.home-cta__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-cta__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-home .home-platform,
+.page-home .home-systems,
+.page-home .home-split-section,
+.page-home .call-to-action {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}
+
 /* Solution pages: hero with bg_image (e.g. irrigation-retrofit-upgrade) */
 .solution-hero.page-title {
   background-size: cover;

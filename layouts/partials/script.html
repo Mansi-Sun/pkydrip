@@ -1,3 +1,5 @@
+{{ if not .IsHome }}
+{{/* Homepage nav is vanilla JS in header.html; skip jquery/slick/shuffle/script.js. */}}
 {{/* ---------------- Third-party plugin scripts (external, deferred) ---------------- */}}
 {{ range site.Params.plugins.js }}
   {{ if findRE "^http" .link }}
@@ -38,6 +40,7 @@
 {{ else }}
 <script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
+{{ end }}
 
 {{/* ---------------- Cookie notice (no jQuery needed) ---------------- */}}
 {{ with site.Params.cookies }}
@@ -67,23 +70,8 @@
   {{ end }}
 {{ end }}
 
-{{/* ---------------- WebFont Loader (defer) ---------------- */}}
-{{ $pf := site.Params.variables.font_primary }}
-{{ $sf := site.Params.variables.font_secondary }}
-<script defer>
-  (function(){
-    var families = ['{{ $pf | default `Lato:wght@400` }}{{ if not $sf }}&display=swap{{ end }}'{{ with $sf }}, '{{ . | default `Lato:wght@400` }}&display=swap'{{ end }}];
-    window.WebFontConfig = {
-      google: { api: 'https://fonts.googleapis.com/css2', families: families, version: 2 },
-      active: function(){ try{ sessionStorage.fontsLoaded = true }catch(e){} }
-    };
-    var wf = document.createElement('script'); wf.defer = true;
-    wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js';
-    document.head.appendChild(wf);
-  })();
-</script>
-
-{{/* ---------------- Lightweight YouTube: one-time minimal JS ---------------- */}}
+{{/* ---------------- Lightweight YouTube: homepage has no .yt-lite embeds ---------------- */}}
+{{ if not .IsHome }}
 <script defer>
   document.addEventListener('click', function(e){
     const wrap = e.target.closest('.yt-lite');
@@ -101,3 +89,4 @@
     wrap.replaceChildren(iframe);
   }, { passive: true });
 </script>
+{{ end }}

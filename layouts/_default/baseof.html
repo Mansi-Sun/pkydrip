@@ -14,7 +14,7 @@
 
 <body{{ if .IsHome }} class="page-home"{{ end }}>
 	{{ partial "header.html" . }}
-	{{ if ne hugo.Environment "development" }}
+	{{ if and (ne hugo.Environment "development") (not .IsHome) }}
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
 	{{ else }}
@@ -35,10 +35,15 @@
 	{{ end }}
 	{{ end }}
 	{{ if hugo.IsProduction }}
-	{{ partialCached "script.html" . "pkydrip-js-v3" }}
+	{{ if .IsHome }}
+	{{ partialCached "script.html" . "pkydrip-js-home-v5" }}
+	{{ else }}
+	{{ partialCached "script.html" . "pkydrip-js-site-v5" }}
+	{{ end }}
 	{{ else }}
 	{{ partial "script.html" . }}
 	{{ end }}
+	{{ if not .IsHome }}
 	<script>
 	(function () {
 		function hidePreloader() {
@@ -58,6 +63,7 @@
 		setTimeout(hidePreloader, 3000);
 	})();
 	</script>
+	{{ end }}
 </body>
 
 </html>

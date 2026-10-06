@@ -1,0 +1,29 @@
+{{/*
+  Preload the mobile hero candidate. Srcset matches the homepage picture so the
+  browser does not fetch a second, larger file for LCP.
+*/}}
+{{ $path := .Params.banner.bg_image }}
+{{ $img := resources.Get $path }}
+{{ if $img }}
+  {{ $mW := 960 }}
+  {{ if gt $mW $img.Width }}{{ $mW = $img.Width }}{{ end }}
+  {{ $tW := 1280 }}
+  {{ if gt $tW $img.Width }}{{ $tW = $img.Width }}{{ end }}
+  {{ $dW := 1600 }}
+  {{ if gt $dW $img.Width }}{{ $dW = $img.Width }}{{ end }}
+  {{ $mAvif := try ($img.Resize (printf "%dx avif q75" $mW)) }}
+  {{ $tAvif := try ($img.Resize (printf "%dx avif q75" $tW)) }}
+  {{ $dAvif := try ($img.Resize (printf "%dx avif q75" $dW)) }}
+  {{ if and (not $mAvif.Err) (not $tAvif.Err) (not $dAvif.Err) (gt $mAvif.Value.Width 0) (gt $tAvif.Value.Width 0) (gt $dAvif.Value.Width 0) }}
+    <link rel="preload" as="image" type="image/avif"
+      imagesrcset="{{ $mAvif.Value.RelPermalink }} {{ $mAvif.Value.Width }}w, {{ $tAvif.Value.RelPermalink }} {{ $tAvif.Value.Width }}w, {{ $dAvif.Value.RelPermalink }} {{ $dAvif.Value.Width }}w"
+      imagesizes="100vw" fetchpriority="high">
+  {{ else }}
+    {{ $mWebp := $img.Resize (printf "%dx webp q75" $mW) }}
+    {{ $tWebp := $img.Resize (printf "%dx webp q75" $tW) }}
+    {{ $dWebp := $img.Resize (printf "%dx webp q75" $dW) }}
+    <link rel="preload" as="image" type="image/webp" href="{{ $mWebp.RelPermalink }}"
+      imagesrcset="{{ $mWebp.RelPermalink }} {{ $mWebp.Width }}w, {{ $tWebp.RelPermalink }} {{ $tWebp.Width }}w, {{ $dWebp.RelPermalink }} {{ $dWebp.Width }}w"
+      imagesizes="100vw" fetchpriority="high">
+  {{ end }}
+{{ end }}

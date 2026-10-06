@@ -134,111 +134,24 @@
 
 {{ template "_internal/opengraph.html" . }}
 
-<!-- Google tag (GA4 + Google Ads) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5HHC5PQ2D"></script>
+<!--
+  Google tag stub only in <head>: one gtag() queue, one GA4 page_view, Ads
+  configured on the same instance with send_page_view false. pkydrip-tracking.js
+  injects gtag.js once after interaction or a 10s fallback.
+-->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  // GA4
   gtag('config', 'G-Y5HHC5PQ2D');
-
-  // Google Ads
-  gtag('config', 'AW-16640554458');
+  gtag('config', 'AW-16640554458', { send_page_view: false });
 </script>
 
- <!-- ads conversion begin -->
-<!-- Google Ads: WhatsApp click conversion -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var whatsappConversionFired = false;
-
-  document.querySelectorAll("a[href*='wa.me']").forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (whatsappConversionFired) return;
-      whatsappConversionFired = true;
-
-      if (typeof gtag === "function") {
-        gtag("event", "conversion", {
-          send_to: "AW-16640554458/LZQ5CLWU1aEcENrr6v49"
-        });
-      }
-    });
-  });
-});
-</script>
-  <!-- ads conversion end -->
-
-<!-- Meta Pixel -->
+<!-- Meta Pixel stub (fbevents.js loaded by pkydrip-tracking.js) -->
 {{ partial "facebook-pixel.html" . }}
 
-<!-- Google Ads: thank-you page conversion -->
-<script>
-window.addEventListener('load', function () {
-  if (window.location.href.includes('/message_sent')) {
-    if (typeof gtag === 'function') {
-      gtag('event', 'conversion', {
-        send_to: 'AW-16640554458/EylDCILU9IEbENrr6v49'
-      });
-    }
-  }
-});
-</script>
-
-<!-- WhatsApp click tracking -->
-<script src="{{ "js/lead-source.js" | relURL }}"></script>
-<script>
-window.addEventListener('load', function () {
-  var WA_SEL = "a[href*='wa.me'], a[href*='whatsapp.com']";
-
-  document.querySelectorAll(WA_SEL).forEach(function (el) {
-    if (!el.dataset.waHrefBase) {
-      el.dataset.waHrefBase = el.getAttribute('href') || '';
-    }
-    el.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'Whatsapp_Click20250917');
-      }
-    });
-  });
-
-  document.addEventListener('click', function (e) {
-    var link = e.target.closest('a');
-    if (!link) return;
-    var href = link.getAttribute('href') || '';
-    if (href.indexOf('wa.me') === -1 && href.indexOf('whatsapp.com') === -1) return;
-    if (!link.dataset.waHrefBase) {
-      link.dataset.waHrefBase = link.getAttribute('href') || '';
-    }
-    var base = link.dataset.waHrefBase;
-    if (!base) return;
-    try {
-      var u = new URL(base, window.location.href);
-      var stored = (window.pkyLeadSource && window.pkyLeadSource.fields()) || {};
-      var pageParams = new URLSearchParams(window.location.search);
-      var utmSource = stored.utm_source || pageParams.get('utm_source') || '';
-      var utmMedium = stored.utm_medium || pageParams.get('utm_medium') || '';
-      var utmCampaign = stored.utm_campaign || pageParams.get('utm_campaign') || '';
-      var gclid = stored.gclid || pageParams.get('gclid') || '';
-      var pathname = stored.first_landing || window.location.pathname || '';
-      var lines = ['Page: ' + pathname];
-      if (stored.lead_source) lines.push('Lead: ' + stored.lead_source);
-      if (utmSource) lines.push('Source: ' + utmSource);
-      if (utmMedium) lines.push('Medium: ' + utmMedium);
-      if (utmCampaign) lines.push('Campaign: ' + utmCampaign);
-      if (gclid) lines.push('gclid: ' + gclid);
-      var attribution = lines.join('\n');
-      var existing = u.searchParams.get('text') || '';
-      var combined = existing ? (existing + '\n\n' + attribution) : attribution;
-      u.searchParams.set('text', combined);
-      link.setAttribute('href', u.toString());
-    } catch (err) {
-      /* invalid base URL: leave href unchanged */
-    }
-  }, true);
-});
-</script>
+<script defer src="{{ "js/lead-source.js" | relURL }}"></script>
+<script defer src="{{ "js/pkydrip-tracking.js" | relURL }}"></script>
 
 <!-- Google reCaptcha -->
 {{ if site.Params.contact.form.use_recaptcha }}
