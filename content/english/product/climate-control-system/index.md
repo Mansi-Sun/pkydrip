@@ -78,7 +78,7 @@ product_modules:
       url: "/product/pky-ghc01-greenhouse-controller/"
       desc: "Modular greenhouse automation controller with local-first logic and power-cabinet separation."
     - name: "PKY-60W"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Main controller for climate logic, schedules, and cabinet coordination."
     - name: "Temperature & Humidity Sensor"
       url: "/product/tem-hum-lux/"

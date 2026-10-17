@@ -45,6 +45,22 @@
   status = 301
   force = true
 
+# 2026-09-21 Content merge: the PKY-60W product page was merged into the
+# irrigation controller series page (Smart Controller + PKY-60W on one URL).
+# The old URL stays live as a permanent redirect so indexed weight and the
+# /pky60w/ ad landing page button both keep working.
+[[redirects]]
+  from = "/product/pky-60w/"
+  to = "/product/smart-irrigation-controller/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/product/pky-60w"
+  to = "/product/smart-irrigation-controller/"
+  status = 301
+  force = true
+
 # System pages: legacy architecture URLs → canonical /system/ paths
 [[redirects]]
   from = "/system-architecture/irrigation-control-system/"

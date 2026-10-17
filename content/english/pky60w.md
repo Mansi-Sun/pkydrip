@@ -68,7 +68,7 @@ The PKYDrip PKY-60W Intelligent Irrigation Controller is designed to solve these
   <div>
     <a href="https://wa.me/+8617395297329?text=Hi, I came from Ads pky60w" target="_blank">📞 Contact Our Experts</a>
     <a href="mailto:info@pky-dripirrigation.com">✉️ Send an Inquiry Email</a>
-    <a href="https://smart.pky-dripirrigation.com/product/pky-60w/" target="_blank">🔗 Product Details Page</a>
+    <a href="https://smart.pky-dripirrigation.com/product/smart-irrigation-controller/" target="_blank">🔗 Product Details Page</a>
   </div>
   <p>Act now to make your irrigation system smarter, more water-efficient, and more productive!</p>
 </div>

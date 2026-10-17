@@ -64,7 +64,7 @@ product_modules:
       url: "/product/farm-irrigation-controller/"
       desc: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
     - name: "PKY-60W"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Main controller for pump and valve irrigation control."
     - name: "Pump & Valve Control System"
       url: "/product/pump-valve-control-system/"

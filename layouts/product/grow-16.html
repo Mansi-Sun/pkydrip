@@ -103,6 +103,38 @@
           {{ end }}
         </div>
       </div>
+      {{ with .tiers }}
+      <div class="row g-3 mt-3">
+        {{ range . }}
+          <div class="col-md-4">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="small fw-semibold text-success mb-1">{{ .capacity }}</div>
+              <div class="fw-semibold mb-2">{{ .title }}</div>
+              <div class="text-muted small">{{ .desc | markdownify }}</div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Greenhouse climate control system */}}
+  {{ with $.Params.climate_system }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <div class="p-4 border rounded bg-white h-100" style="border-left: 4px solid #2e8b57 !important;">
+        <h2 class="h3 mb-3">{{ .title }}</h2>
+        {{ with .intro }}<p class="text-muted mb-3">{{ . | markdownify }}</p>{{ end }}
+        <div class="row g-2">
+          {{ range .bullets }}
+            <div class="col-lg-6">
+              <div class="text-muted">{{ . | markdownify }}</div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </section>
   {{ end }}

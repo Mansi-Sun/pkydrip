@@ -54,12 +54,32 @@ hmi_section:
 power_architecture:
   title: "Enclosure and power architecture"
   image: "images/product/grow16-power-architecture.svg"
-  image_alt: "Grow 16 power architecture — controller connected to external power cabinet via 24 V power cable and data cable"
-  body: "The standard enclosure is 400 × 500 × 200 mm. For a single pump, it can be internally divided into low-voltage control and mains-power sections, with the control board, pump contactor, and protection devices in the same cabinet. An external power cabinet is added when a project requires multiple pumps, a variable-frequency drive, shading equipment, or additional power devices—connected with **one 24 V power cable and one data cable**."
+  image_alt: "Grow 16 power architecture by capacity — one combined cabinet up to 2 kW, separate control and power cabinets above 3 kW, grouped climate starting above 100 kW"
+  body: "The cabinet plan follows the pump power of the project. Small water-supply projects keep control and power in **one compact cabinet**; larger farmland pumps and greenhouse climate loads move power devices into a **separate power cabinet**, so the controller cabinet stays compact and easy to maintain."
+  tiers:
+    - capacity: "Pumps up to 3 kW"
+      title: "One combined cabinet, direct-on-line start"
+      desc: "No VFD — the pump starts directly with a contactor. Up to 2 kW, the submersible-pump water-supply version fits control and power in a single **400 × 400 × 200 mm** enclosure. On weak rural grids or small generators, confirm the supply capacity for direct starting."
+    - capacity: "Pumps above 3 kW"
+      title: "Separate control cabinet + power cabinet"
+      desc: "For farmland projects with pumps from **5 to 50 kW**. The Grow 16 control cabinet stays separate from the power cabinet that holds contactors, protection, and VFDs. Pump power above this range is evaluated case by case."
+    - capacity: "Climate loads above 100 kW (cumulative)"
+      title: "Grouped starting, cabinets separated"
+      desc: "Greenhouse climate control starts multiple fans and ventilation units **in groups**. Control cabinet and power cabinet are separate, linked by RS485 and DC 24 V control cabling."
   bullets:
     - "The customer or a local electrical contractor selects and builds the cabinet"
     - "Or build it from PKYDrip drawings"
     - "Or purchase a complete project-specific cabinet from PKYDrip"
+
+climate_system:
+  title: "Greenhouse Climate Control System"
+  intro: "The same Grow 16 controller platform also serves as the **PKYDrip Greenhouse Climate Control System**. For greenhouses with a cumulative load above 100 kW, the control cabinet and the power cabinet are deliberately separated:"
+  bullets:
+    - "**Grouped starting** — multiple fans and ventilation units start in groups instead of one heavy inrush on the grid"
+    - "**Simple links** — one RS485 data cable and one DC 24 V control cable connect the control cabinet to the power cabinet"
+    - "**Controller-end configuration** — future schedule and group changes are made at the controller, not by rewiring the cabinet"
+    - "**Reserved terminals** — spare terminals are pre-reserved for later expansion"
+    - "**Industrial intermediate relays** — a maintenance-friendly design: engineers can simply replace or extend relays on site"
 
 extensions:
   - name: "X16 zone expansion"
@@ -143,6 +163,8 @@ faq:
     a: "No. Grow 16 operates locally from a mobile browser without installing an app. The cloud adds device, configuration, alarm, history, and software version management."
   - q: "How does Grow 16 expand from 16 to 32 zones?"
     a: "Through the standardized X16 expansion board. Zone expansion uses the same controller, programs, and interface."
+  - q: "How does the cabinet plan scale with pump power?"
+    a: "Pumps up to 3 kW start directly with a contactor (no VFD), with control and power combined in one cabinet—the submersible-pump water-supply version up to 2 kW fits a 400 × 400 × 200 mm enclosure. Above 3 kW, the control cabinet is kept separate from the power cabinet, covering pumps from 5 to 50 kW for farmland—larger power is evaluated case by case. Greenhouse climate loads above 100 kW (cumulative) start in groups through a separate power cabinet. On weak rural grids or small generators, always confirm the supply capacity for direct starting."
   - q: "Who builds the power cabinet?"
     a: "Three options: the customer or a local electrical contractor builds it, it is built from PKYDrip drawings, or a complete project-specific cabinet is purchased from PKYDrip."
   - q: "Is 4G connectivity available?"

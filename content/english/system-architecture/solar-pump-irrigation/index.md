@@ -57,7 +57,7 @@ product_modules:
     - name: "Pump controller / VFD"
       desc: "Solar pump drive and control interface."
     - name: "PKY-60W"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Irrigation controller for pump and valve automation."
     - name: "LoRa valve controller"
       url: "/product/wireless-valve-controller/"

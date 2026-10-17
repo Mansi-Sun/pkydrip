@@ -7,14 +7,14 @@ url: "/irrigation-controller/"
 bg_image: "images/slider-bg.webp"
 
 products:
-  - name: "PKY-60W – Main Controller"
-    summary: "Central irrigation controller for multi-zone scheduling and valve control (system brain)."
+  - name: "Smart Irrigation Controller (16 zones)"
+    summary: "Button-and-LED agricultural controller with offline schedules, optional Wi-Fi, and a fertigation upgrade path."
+    image: "images/product/smart-controller-panel.svg"
+    url: "/product/smart-irrigation-controller/"
+  - name: "PKY-60W – Wired Main Controller"
+    summary: "Touchscreen main controller for modular wired systems: 14–60 outputs, RS485 (Modbus), IP65 enclosure."
     image: "images/product/lora-gateway-1.jpg"
-    url: "/product/pky-60w/"
-  - name: "PKY-60W – Pump Control"
-    summary: "Pump station control: start/stop, protection inputs, and irrigation + pump coordination."
-    image: "images/product/lora-gateway-1.jpg"
-    url: "/product/pky-60w/"
+    url: "/product/smart-irrigation-controller/"
   - name: "LoRa Wireless Valve Control System"
     summary: "Long-range wireless valve control system with LoRa controllers and gateway."
     image: "images/product/pkyeg08.webp"
@@ -43,8 +43,7 @@ The difference between these controllers is **how they connect, communicate, and
 PKYDrip provides **modular irrigation controllers** for farms, greenhouses, and landscaping projects.  
 You can start with a basic setup and **expand step by step** — adding more zones, remote control, sensors, or fertigation when you are ready.
 
-> **Note:** PKY-60W currently has **two versions** (Main Controller & Pump Control).  
-> We are updating separate product pages. For now, please open the PKY-60W page and tell us which version you need.
+> **Note:** the controller series page covers **two models** — the Smart Irrigation Controller (16 zones, button + LED, optional Wi-Fi) and the PKY-60W wired main controller (touchscreen, 14–60 outputs, RS485). Tell us which one your project needs.
 
 ---
 

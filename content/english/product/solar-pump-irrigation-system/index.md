@@ -47,7 +47,7 @@ product_modules:
   title: "Related Modules"
   items:
     - name: "PKY-60W"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Irrigation control for valves and schedules."
     - name: "Wireless Field Control System"
       url: "/product/wireless-field-control-system/"

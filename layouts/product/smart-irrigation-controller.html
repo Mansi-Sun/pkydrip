@@ -1,0 +1,336 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<main class="product-landing">
+
+  {{/* Hero */}}
+  <section class="py-5" style="background: linear-gradient(180deg, rgba(46,139,87,0.08), rgba(255,255,255,1));">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-semibold mb-3">{{ .Params.hero.title | default .Title }}</h1>
+          {{ with .Params.hero.subtitle }}
+            <p class="lead text-muted mb-4">{{ . | markdownify }}</p>
+          {{ else }}
+            {{ with .Params.description }}<p class="lead text-muted mb-4">{{ . }}</p>{{ end }}
+          {{ end }}
+
+          <div class="d-flex flex-wrap gap-2">
+            {{ with .Params.hero.cta_primary }}
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .label }}</a>
+            {{ end }}
+            {{ with .Params.hero.cta_secondary }}
+              <a href="{{ .url }}" class="btn btn-outline-success px-4">{{ .label }}</a>
+            {{ end }}
+          </div>
+
+          {{ with .Params.hero.note }}
+            <p class="small text-muted mt-3 mb-0">{{ . | markdownify }}</p>
+          {{ end }}
+        </div>
+
+        <div class="col-lg-5 text-center">
+          {{ with .Params.image }}
+            <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" style="max-height: 400px; width: 100%; object-fit: contain;">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* How to choose */}}
+  {{ with .Params.how_to_choose }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-2">{{ $.Params.sections.how_to_choose_title | default .title }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4">{{ . | markdownify }}</p>{{ end }}
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle bg-white">
+          <thead class="table-light">
+            <tr>
+              <th scope="col" style="width: 22%;">&nbsp;</th>
+              <th scope="col" style="width: 39%;">Smart Irrigation Controller</th>
+              <th scope="col" style="width: 39%;">PKY-60W Wired Main Controller</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .rows }}
+              <tr>
+                <th scope="row" class="fw-semibold">{{ .criterion }}</th>
+                <td class="text-muted">{{ .smart | markdownify }}</td>
+                <td class="text-muted">{{ .pky60w | markdownify }}</td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- Model A: Smart Irrigation Controller ---------- */}}
+  {{ with .Params.core_functions }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <div class="small fw-semibold text-success mb-1">Model A</div>
+      <h2 class="h3 mb-3">{{ $.Params.sections.smart_title | default "Smart Irrigation Controller" }}</h2>
+      <h3 class="h5 mb-3">{{ $.Params.sections.core_functions_title | default "Core functions" }}</h3>
+      <div class="row g-3">
+        {{ range . }}
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="fw-semibold mb-1">{{ .title }}</div>
+              {{ with .desc }}<div class="text-muted">{{ . }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Upgrade path */}}
+  {{ with .Params.upgrade_path }}
+  <section class="py-5">
+    <div class="container">
+      <h3 class="h5 mb-2">{{ $.Params.sections.upgrade_path_title | default "Upgrade path" }}</h3>
+      {{ with .intro }}<p class="text-muted mb-4">{{ . | markdownify }}</p>{{ end }}
+      <div class="row g-3">
+        {{ range .steps }}
+          <div class="col-md-4">
+            <div class="p-3 border rounded h-100 bg-white" style="border-top: 3px solid #2e8b57 !important;">
+              <div class="fw-semibold mb-1">{{ .title }}</div>
+              {{ with .desc }}<div class="text-muted">{{ . | markdownify }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      {{ with .note }}<p class="small text-muted mt-3 mb-0">{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Configurations */}}
+  {{ with .Params.configurations }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <h3 class="h5 mb-2">{{ $.Params.sections.configurations_title | default "Choose your configuration" }}</h3>
+      {{ with $.Params.configurations_intro }}<p class="text-muted mb-4">{{ . | markdownify }}</p>{{ end }}
+      <div class="row g-3">
+        {{ range . }}
+          <div class="col-md-4">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="fw-semibold mb-1">{{ .name }}</div>
+              <div class="text-muted mb-2">{{ .desc }}</div>
+              {{ with .best_for }}<div class="small"><span class="badge bg-success-subtle text-success-emphasis">{{ . }}</span></div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Applications */}}
+  {{ with .Params.use_cases }}
+  <section class="py-5">
+    <div class="container">
+      <h3 class="h5 mb-3">{{ $.Params.sections.use_cases_title | default "Typical applications" }}</h3>
+      <div class="row g-3">
+        {{ range . }}
+          <div class="col-md-6">
+            <div class="p-3 border rounded h-100 bg-white">
+              <div class="fw-semibold mb-1">{{ .title }}</div>
+              {{ with .desc }}<div class="text-muted">{{ . }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- Model B: PKY-60W ---------- */}}
+  {{ with .Params.model_60w }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <div class="small fw-semibold text-success mb-1">{{ .badge | default "Model B" }}</div>
+      <h2 class="h3 mb-2">{{ .name }}</h2>
+      {{ with .subtitle }}<p class="text-muted mb-4">{{ . | markdownify }}</p>{{ end }}
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h3 class="h5 mb-2">{{ .role_title }}</h3>
+          <div class="text-muted">{{ .role_body | markdownify }}</div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="h5 mb-2">{{ .system_title }}</h3>
+          <ul class="text-muted mb-0">
+            {{ range .system_blocks }}<li class="mb-2">{{ . | markdownify }}</li>{{ end }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-6">
+          <h3 class="h5 mb-2">{{ .capabilities_title }}</h3>
+          <ul class="text-muted mb-0">
+            {{ range .capabilities }}<li class="mb-2">{{ . | markdownify }}</li>{{ end }}
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="h5 mb-2">{{ .coverage_title }}</h3>
+          <div class="text-muted mb-3">{{ .coverage_body | markdownify }}</div>
+          <h3 class="h5 mb-2">{{ .area_title }}</h3>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered align-middle bg-white mb-0">
+              <thead class="table-light">
+                <tr><th scope="col">Application type</th><th scope="col">Typical area range</th></tr>
+              </thead>
+              <tbody>
+                {{ range .area_rows }}
+                  <tr>
+                    <th scope="row" class="fw-normal text-muted">{{ .application }}</th>
+                    <td class="text-muted">{{ .range }}</td>
+                  </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {{ with .upgrade_note }}<p class="text-muted mt-4 mb-3">{{ . | markdownify }}</p>{{ end }}
+
+      {{ with .cta }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .label }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Dual-audience tabs */}}
+  {{ with .Params.audience_tabs }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.audience_title | default "Two ways to read this page" }}</h2>
+
+      <ul class="nav nav-pills mb-4" id="audienceTab" role="tablist">
+        {{ range $i, $t := . }}
+          <li class="nav-item" role="presentation">
+            <button class="nav-link {{ if eq $i 0 }}active{{ end }}" id="audTab{{ $i }}" data-bs-toggle="pill"
+                    data-bs-target="#audPane{{ $i }}" type="button" role="tab"
+                    aria-controls="audPane{{ $i }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+              {{ .tab_label }}
+            </button>
+          </li>
+        {{ end }}
+      </ul>
+
+      <div class="tab-content" id="audienceTabContent">
+        {{ range $i, $t := . }}
+          <div class="tab-pane fade {{ if eq $i 0 }}show active{{ end }}" id="audPane{{ $i }}" role="tabpanel" aria-labelledby="audTab{{ $i }}" tabindex="0">
+
+            {{ with $t.intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
+
+            {{ with $t.items }}
+            <div class="row g-3 mb-2">
+              {{ range . }}
+                <div class="col-md-6">
+                  <div class="p-3 border rounded h-100 bg-white">
+                    <div class="fw-semibold mb-1">{{ .label }}</div>
+                    <div class="text-muted">{{ .value | markdownify }}</div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+            {{ end }}
+
+            {{ with $t.note }}<p class="small text-muted">{{ . | markdownify }}</p>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Consultation */}}
+  {{ with .Params.consultation }}
+  <section class="py-5" style="background:#f9fafb;">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="h3 mb-3">{{ $.Params.sections.consultation_title | default "Get a recommendation" }}</h2>
+          <div class="text-muted mb-3">{{ .why | markdownify }}</div>
+          <div class="p-4 border rounded bg-white">
+            <div class="fw-semibold mb-2">Send these details on WhatsApp</div>
+            <ul class="mb-0">
+              {{ range .send_list }}<li>{{ . | markdownify }}</li>{{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 border rounded bg-white h-100">
+            <div class="fw-semibold mb-2">Talk to us</div>
+            <div class="text-muted mb-3">{{ .cta_reason | markdownify }}</div>
+            {{ with .cta }}
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-success w-100 py-2">{{ .label }}</a>
+            {{ end }}
+            {{ with $.Params.page_code }}
+              <div class="small text-muted mt-3">Reference code: <span class="fw-semibold">{{ . }}</span></div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* FAQ */}}
+  {{ with .Params.faq }}
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">{{ $.Params.sections.faq_title | default "FAQ" }}</h2>
+      <div class="accordion" id="faqAccordion">
+        {{ range $i, $q := . }}
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading{{ $i }}">
+              <button class="accordion-button {{ if ne $i 0 }}collapsed{{ end }}" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqCollapse{{ $i }}"
+                      aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+                      aria-controls="faqCollapse{{ $i }}">
+                {{ $q.q }}
+              </button>
+            </h3>
+            <div id="faqCollapse{{ $i }}" class="accordion-collapse collapse {{ if eq $i 0 }}show{{ end }}"
+                 aria-labelledby="faqHeading{{ $i }}" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">{{ $q.a | markdownify }}</div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Optional markdown content */}}
+  {{ with .Content }}
+    <section class="py-4">
+      <div class="container"><div class="content">{{ . }}</div></div>
+    </section>
+  {{ end }}
+
+  {{/* Fallback CTA */}}
+  {{ with .Params.cta }}
+  <section class="py-5">
+    <div class="container text-center">
+      <p class="lead mb-3">{{ .text }}</p>
+      <a href="{{ .button_url }}" target="_blank" rel="noopener" class="btn btn-success px-4">{{ .button_label }}</a>
+    </div>
+  </section>
+  {{ end }}
+
+</main>
+
+{{ end }}

@@ -48,8 +48,12 @@ product_groups:
         url: "/product/solar-pump-irrigation-system/"
 
   - title: "Irrigation Controllers"
-    description: "PKYDrip 16-zone controller family: choose the connected, expandable Grow 16 — or the fully local MC-16 Local."
+    description: "PKYDrip 16-zone controller family: the consumer Smart Irrigation Controller, the engineering platform Grow 16, and the agriculture-focused MC-16 Local."
     cards:
+      - name: "PKYDrip Smart Irrigation Controller"
+        summary: "Consumer smart irrigation controller — 16 zones expandable, button + LED operation, optional Wi-Fi for mobile control, optional screen."
+        image: "images/product/smart-controller-panel.svg"
+        url: "/product/smart-irrigation-controller/"
       - name: "PKYDrip Grow 16"
         summary: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet standard, mobile-browser control, cloud management, and standardized expansion for fertigation and climate."
         image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
@@ -72,9 +76,9 @@ module_groups:
       - name: "Pump & Valve Control System"
         summary: "Central irrigation automation for pumps, valves, HMI, and project-level control."
         url: "/product/pump-valve-control-system/"
-      - name: "PKY-60W"
-        summary: "Wired master controller for irrigation and climate automation projects."
-        url: "/product/pky-60w/"
+      - name: "Smart Irrigation Controller & PKY-60W"
+        summary: "Controller series: 16-zone agricultural Smart Controller (LED + optional Wi-Fi, fertigation upgrade path) and PKY-60W wired touchscreen main controller (14–60 outputs, RS485)."
+        url: "/product/smart-irrigation-controller/"
       - name: "Climate Control System"
         summary: "Engineering family page for climate logic, cabinets, sensors, and equipment coordination."
         url: "/product/climate-control-system/"
@@ -240,10 +244,10 @@ products:
     image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
     url: "/product/farm-irrigation-controller/"
 
-  - name: "PKY-60W"
-    summary: "PKYDrip Wired Master Controller – Model PKY-60W"
+  - name: "Smart Irrigation Controller & PKY-60W"
+    summary: "PKYDrip Irrigation Controller Series – Smart Controller & PKY-60W Wired Main"
     image: "images/product/lora-gateway-1.jpg"
-    url: "/product/pky-60w/"
+    url: "/product/smart-irrigation-controller/"
 
   # ==============================
   # LoRa Wireless Irrigation Network

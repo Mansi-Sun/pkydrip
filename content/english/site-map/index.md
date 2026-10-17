@@ -75,6 +75,7 @@ This page is for administrators and content planning. It is not intended as the 
 ### Catalog
 
 - [CO2 Sensor](/product/co2-sensor/)
+- [Smart Irrigation Controller with Wi-Fi Control | PKYDrip](/product/smart-irrigation-controller/)
 - [MC-16 Local Irrigation Controller | PKYDrip](/product/farm-irrigation-controller/)
 - [PKYDrip Grow 16 Connected Irrigation Controller | PKYDrip](/product/pky-grow16/)
 - [Fertigation Controller](/product/fertigation-controller/)
@@ -97,7 +98,7 @@ This page is for administrators and content planning. It is not intended as the 
 - [PKYDrip Electric Valve Controller – Model PKY-EVC01](/product/pky-evc01/)
 - [PKYDrip LoRa Solar Pump Controller – Model PKY-IC06-PUMP](/product/pky-ic06-pump/)
 - [PKYDrip Pump Controller – PKY-60W (Pump Version)](/product/pky60w-pump/)
-- [PKYDrip Wired Main Controller – PKY-60W](/product/pky-60w/)
+- [Smart Irrigation Controller & PKY-60W Series | PKYDrip](/product/smart-irrigation-controller/)
 - [PKYDrip Wireless Irrigation Gateway – PKY-EG08](/product/pky-eg08/)
 - [Products](/product/)
 - [Pump & Valve Irrigation Control Panel for Farms](/product/irrigation-control-panel/)

@@ -88,7 +88,7 @@ product_modules:
   intro: "Products are selected to support the irrigation control architecture. The final configuration depends on pump type, valve quantity, field distance, monitoring needs, and installation conditions."
   items:
     - name: "PKY-60W"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Wired main controller for schedules, zones, logic coordination, and system integration."
     - name: "PKY-IC05"
       url: "/product/pky-ic05/"

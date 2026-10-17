@@ -126,7 +126,7 @@ product_modules:
       url: "/product/climate-control-system/"
       desc: "Product-family entry for greenhouse climate automation."
     - name: "Climate Controller"
-      url: "/product/pky-60w/"
+      url: "/product/smart-irrigation-controller/"
       desc: "Automation logic layer for schedules, rules, and climate coordination with electrical cabinets."
     - name: "Temperature & Humidity Sensor"
       url: "/product/tem-hum-lux/"
