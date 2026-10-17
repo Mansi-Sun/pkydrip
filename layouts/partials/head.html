@@ -47,10 +47,13 @@
 {{/* Canonical: every page outputs its own absolute URL (SEO 2026-09-07). */}}
 <link rel="canonical" href="{{ .Permalink }}">
 
+{{/* News feed discovery (2026-10-17): lets readers and crawlers subscribe to /blog/. */}}
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }} — News" href="{{ `blog/index.xml` | absURL }}">
+
 <!-- theme meta -->
 <meta name="theme-name" content="airspace-hugo" />
 
-<!-- structured data (JSON-LD): Organization + WebSite + Breadcrumb + Product + FAQPage -->
+<!-- structured data (JSON-LD): Organization + WebSite + Breadcrumb + Product + FAQPage + NewsArticle -->
 {{ partial "schema.html" . }}
 
 <!-- google site verification -->
