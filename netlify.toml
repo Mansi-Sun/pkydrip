@@ -25,6 +25,14 @@
   status = 200
   force = true
 
+# 2026-10-20 Live demo API: 30s browser cache + SWR. The page polls every 15s;
+# with cache:'default' in live-demo.js every other poll is served from cache,
+# halving origin load per visitor and shielding the cloud API from crawlers.
+[[headers]]
+  for = "/live-api/*"
+  [headers.values]
+    Cache-Control = "public, max-age=30, stale-while-revalidate=60"
+
 # Permanently redirect the legacy www apex to the smart. subdomain, preserving the full path.
 [[redirects]]
   from = "https://www.pky-dripirrigation.com/*"

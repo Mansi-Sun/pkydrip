@@ -7,6 +7,9 @@
  *
  * No login, no password, no access form gate.
  * Polling (not SSE): Netlify proxy times out at ~26s.
+ * 2026-10-20: fetch cache:'default' + netlify.toml Cache-Control max-age=30
+ * on /live-api/* — the browser serves alternate polls from cache, halving
+ * origin load per visitor and blunting crawler bursts.
  * ========================================================================== */
 (function () {
   'use strict';
@@ -108,11 +111,19 @@
   function renderControllers(list) {
     var host = $('ld-controllers');
     if (!host) return;
-    if (!list || !list.length) {
+    var all = list || [];
+    // 2026-10-20: hide offline devices from the public demo view — an
+    // "OFFLINE · last seen 5 days ago" badge on a reliability proof page hurts
+    // more than it informs. Counts are still reflected in the note below.
+    var online = all.filter(function (c) { return c.online; });
+    if (!online.length) {
       host.innerHTML = '<p class="ld-note">No irrigation controllers in the demonstration set.</p>';
       return;
     }
-    host.innerHTML = list.map(function (c) {
+    var hiddenNote = (all.length - online.length) > 0
+      ? '<p class="ld-note">Devices that are currently offline are hidden from this public view.</p>'
+      : '';
+    host.innerHTML = online.map(function (c) {
       var running = c.running
         ? '<div class="ld-running">Program ' + esc(c.running.programKey || '—') +
           (c.running.zone ? ' · zone ' + esc(c.running.zone) : '') +
@@ -157,17 +168,22 @@
         '<h5 class="ld-h5">Irrigation plan</h5>' + planHtml +
         '<h5 class="ld-h5">Recent runtimes</h5>' + runHtml +
         '</div>';
-    }).join('');
+    }).join('') + hiddenNote;
   }
 
   function renderSensors(list) {
     var host = $('ld-sensors');
     if (!host) return;
-    if (!list || !list.length) {
+    var all = list || [];
+    var online = all.filter(function (s) { return s.online; });
+    if (!online.length) {
       host.innerHTML = '<p class="ld-note">No air / soil / light readings in the demonstration set.</p>';
       return;
     }
-    host.innerHTML = list.map(function (s) {
+    var hiddenNote = (all.length - online.length) > 0
+      ? '<p class="ld-note">Sensors that are currently offline are hidden from this public view.</p>'
+      : '';
+    host.innerHTML = online.map(function (s) {
       var readings = s.readings || {};
       var keys = Object.keys(readings);
       var body = keys.length
@@ -183,7 +199,7 @@
           ? '<span class="ld-chip ld-chip--on">ONLINE</span>'
           : '<span class="ld-chip ld-chip--rs">OFFLINE</span>') +
         '</h4>' + body + '</div>';
-    }).join('');
+    }).join('') + hiddenNote;
   }
 
   function render(d) {
@@ -200,7 +216,7 @@
 
   function tick() {
     if (document.hidden) return;
-    fetch('/live-api/demo', { credentials: 'omit', cache: 'no-store' })
+    fetch('/live-api/demo', { credentials: 'omit', cache: 'default' })
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
