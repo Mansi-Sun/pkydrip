@@ -9,7 +9,7 @@
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="slider home-hero {{ if .bg_overlay }}overly{{ end }}">
+<section class="slider home-hero {{ if .bg_overlay }}overly{{ end }}{{ if .eyebrow }} home-hero--product-led{{ end }}">
   {{ if .bg_image }}
   {{ partial "responsive-picture.html" (dict
     "path" .bg_image
@@ -32,6 +32,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
+          {{ with .eyebrow }}<p class="home-hero__eyebrow">{{ . }}</p>{{ end }}
           {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
           {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           <div class="home-hero__actions">
@@ -96,6 +97,150 @@
 {{ end }}
 {{ end }}
 <!-- /entry paths -->
+
+<!-- primary product lines -->
+{{ with .Params.primary_product_lines }}
+{{ if .enable }}
+<section class="section home-product-lines">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <div class="section-title home-section-title">
+          {{ with .eyebrow }}<p class="home-product-lines__eyebrow">{{ . }}</p>{{ end }}
+          <h2>{{ .title }}</h2>
+          {{ with .content }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="row home-product-lines__grid">
+      {{ range .items }}
+      {{ $item := . }}
+      <div class="col-lg-6 home-product-lines__col">
+        <article class="home-product-line-card">
+          {{ with $item.image }}
+          <div class="home-product-line-card__media{{ if or $item.image_caption $item.image_contain }} home-product-line-card__media--contain{{ end }}">
+            {{ partial "responsive-picture.html" (dict
+              "path" .
+              "alt" $item.image_alt
+              "class" "home-product-line-card__img"
+              "sizes" "(max-width: 991px) 100vw, 540px"
+              "widths" (slice 480 768 1080)
+              "quality" 75
+              "lazy" true
+              "decoding" "async"
+              "width" 721
+              "height" 540
+            ) }}
+            {{ with $item.image_caption }}<span class="home-product-line-card__caption">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          <div class="home-product-line-card__body">
+            <h3>{{ $item.title }}</h3>
+            {{ with $item.description }}<p>{{ . }}</p>{{ end }}
+            {{ with $item.features }}
+            <ul class="home-product-line-card__features">
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            <div class="home-product-line-card__actions">
+              {{ with $item.primary_url }}
+              <a href="{{ partial "lang-or-en-url.html" . }}" class="btn btn-main">{{ $item.primary_label }}</a>
+              {{ end }}
+              {{ with $item.secondary_url }}
+              <a href="{{ partial "lang-or-en-url.html" . }}" class="btn btn-outline-success">{{ $item.secondary_label }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /primary product lines -->
+
+<!-- selection guide -->
+{{ with .Params.selection_guide }}
+{{ if .enable }}
+<section class="section home-selection-guide">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <div class="section-title home-section-title">
+          <h2>{{ .title }}</h2>
+          {{ with .content }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="home-selection-guide__scroll">
+      <table class="home-selection-guide__table">
+        <thead>
+          <tr>
+            <th scope="col">{{ .columns.application }}</th>
+            <th scope="col">{{ .columns.direction }}</th>
+            <th scope="col">{{ .columns.requirement }}</th>
+            <th scope="col">{{ .columns.next }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .rows }}
+          <tr>
+            <th scope="row">{{ .application }}</th>
+            <td>{{ .direction }}</td>
+            <td>{{ .requirement }}</td>
+            <td>
+              <a href="{{ partial "lang-or-en-url.html" .next_url }}">{{ .next_label }}</a>
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /selection guide -->
+
+<!-- OEM strip -->
+{{ with .Params.oem_strip }}
+{{ if .enable }}
+<section class="section home-oem-strip">
+  <div class="container">
+    <div class="home-oem-strip__inner">
+      <div class="home-oem-strip__copy">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content }}</p>
+      </div>
+      <a href="{{ partial "lang-or-en-url.html" .button_url }}" class="btn btn-main">{{ .button_label }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /OEM strip -->
+
+<!-- integration note -->
+{{ with .Params.integration_note }}
+{{ if .enable }}
+<section class="section home-integration-note">
+  <div class="container">
+    <div class="home-integration-note__inner">
+      <h2>{{ .title }}</h2>
+      <p>{{ .content }}</p>
+      {{ with .button_url }}
+      <a href="{{ partial "lang-or-en-url.html" . }}" class="btn btn-outline-success">{{ $.Params.integration_note.button_label }}</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /integration note -->
 
 <!-- platform -->
 {{ with .Params.platform }}

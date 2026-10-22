@@ -1,42 +1,41 @@
 ---
-title: "PKY-FG401 4-Channel Fertigation Machine with EC/pH Monitoring"
-description: "The PKY-FG401 is a high-performance fertigation system designed with 4 independent fertilizer injection channels and integrated EC/pH sensor control. It combines a single high-pressure water pump with automatic nutrient mixing, real-time monitoring, and remote management. Suitable for large-scale greenhouses and precision agriculture zones."
+title: "PKY-FG401 4-Channel Fertigation Platform"
+description: "PKY-FG401 is a four-channel fertigation platform, commonly configured as three fertilizer channels plus one acid channel."
 type: "product"
-bg_image: "images/call-to-action-bg.jpg"
-image: "images/product/pky-fg401.jpg"
+layout: "engineering-page"
+url: "/product/pky-fg401-ecph/"
+draft: false
 categories: ["fertigation-system"]
-features:
-  - "**Real-time EC/pH monitoring:** Ensures precise nutrient balance and prevents over/under-fertilization"
-  - "**Auto adjustment loop:** System intelligently controls fertilizer channels to maintain target EC/pH" 
-  - "**Fully integrated unit:**  Pump, dosing, sensors, controller all in one compact frame"
-  - "**Multi-zone fertigation:**  Manage multiple crops with individual schedules" 
-  - "**Cloud connectivity (optional):** Remote access to sensor readings, alarm notifications, and control interface" 
-  - "**Expandable architecture:**  Supports integration with flow meters, soil sensors, or weather stations" 
-
-specs:
-  - "Fertilizer Channels: 4 (independent, flow-meter controlled)"
-  - "EC/pH Sensors: Industrial-grade inline sensors with real-time feedback"
-  - "Closed-loop control: Automatic adjustment of fertilizer injection based on EC/pH setpoints"
-  - "Pump: 10–15 m³/h, 80m head lift, single-pump architecture"
-  - "Voltage: 380V AC (220V optional)"
-  - "Irrigation Zones: Supports 4–12 solenoid valves"
-  - "Cloud Access: Optional 4G/WiFi for remote configuration and monitoring"
-  - "Interface: 7\" color touchscreen with multilingual display (EN/CN/AR)"
-  - "Structure: Aluminum frame + UPVC plumbing + stainless fittings"
-cta: 
-  text: "Contact us for technical drawings, quotes, or integration advice."
-  button_label: "Chat Now"
-  button_url: "https://wa.me/8617395297329" 
-application: 
-  - "✔ High-value greenhouse crops: tomatoes, peppers, strawberries"
-  - "✔ Precision fertigation for hydroponics and substrate cultivation"
-  - "✔ Centralized fertilization in orchard or field irrigation stations"
-
+hero:
+  eyebrow: "4-Channel Fertigation"
+  title: "PKY-FG401"
+  subtitle: "A standard four-channel platform. The typical three-fertilizer plus one-acid version is available with peristaltic dosing and optional automatic EC/pH control."
+  capabilities: ["4 total dosing channels", "Typical 3 fertilizer + 1 acid", "Peristaltic or project hydraulics"]
+  image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system.png"
+  image_alt: "PKYDrip three-fertilizer one-acid peristaltic fertigation machine"
+  cta_primary: {label: "Request FG401 Quote", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20FG401%20configuration.%0AApplication%3A%0AChannel%20use%3A%0AEC%2FpH%20control%3A%0AMixing%20tank%3A%0AFlow%20and%20pressure%3A%0APower%3A%0AQuantity%3A"}
+  cta_secondary: {label: "Compare Fertigation Models", url: "/product/fertigation-system/"}
+product_identity: {model_label: "Platform", model: "PKY-FG401", family_label: "Product family", family: "Fertigation Machines", lifecycle_label: "Status", lifecycle: "Standard platform"}
+feature_blocks:
+  - title: "The photographed version: three fertilizers plus one acid"
+    body: "The white-background equipment photo shows the peristaltic four-channel platform. Its public family name remains FG401; the order code records the dosing hardware, EC/pH control and mixing structure."
+    bullets: ["Four independently assigned dosing paths", "Peristaltic version suited to compact precision dosing", "Automatic EC/pH is selected with the A suffix", "Mixing tank is selected with the MT suffix"]
+standard_configurations:
+  title: "Configuration language"
+  headers: ["Example", "Meaning", "Use"]
+  rows:
+    - ["PKY-FG401-P-B-DI", "Peristaltic + basic + direct injection", "Scheduled four-channel dosing"]
+    - ["PKY-FG401-P-A-MT", "Peristaltic + automatic EC/pH + mixing tank", "Typical greenhouse nutrient control"]
+    - ["PKY-FG401-H-B-DI-OF", "High-flow project platform + basic + direct injection + open field", "Engineered open-field package"]
+  note: "P and H are used only where the mechanical platforms are not interchangeable. Final BOM, MOQ, price and lead time are quotation items."
+reference_table:
+  title: "Parameters confirmed before production"
+  headers: ["Item", "Order confirmation"]
+  rows:
+    - ["Channel allocation", "Commonly 3 fertilizer + 1 acid; other allocation requires confirmation"]
+    - ["Control", "B, M, A or AR"]
+    - ["Mechanical platform", "P/peristaltic, D/diaphragm or H/high-flow project package"]
+    - ["Hydraulics", "DI or MT"]
+    - ["Flow, pressure and power", "Configured from site requirements"]
+    - ["Special functions", "SPxx only after technical review and MOQ confirmation"]
 ---
-
-### Related Solution
-
-- 👉 [Water–Fertilizer Integration System](/solution/water-fertilizer-integration-system/)
-
-- 👉 [When Do You Really Need EC/pH Control?](/guides/when-do-you-really-need-ecph-control/)
-

@@ -26,7 +26,7 @@
               <h2 style="margin:0 0 8px; font-size:28px;">{{ .title }}</h2>
               {{ with .description }}<p style="margin:0; color:#62707c; max-width:760px;">{{ . }}</p>{{ end }}
             </div>
-            <a href="{{ `/system-architecture/` | relLangURL }}" style="color:#1b8f5a; font-weight:700; text-decoration:none;">View System Architecture →</a>
+            {{ with .link }}<a href="{{ .url | relLangURL }}" style="color:#1b8f5a; font-weight:700; text-decoration:none;">{{ .label }} →</a>{{ end }}
           </div>
 
           <div class="row">
@@ -41,7 +41,7 @@
                     <div style="padding:20px;">
                       <h3 style="margin:0 0 10px; font-size:20px; line-height:1.35;">{{ .name }}</h3>
                       {{ with .summary }}<p style="margin:0 0 16px; color:#62707c; line-height:1.6;">{{ . }}</p>{{ end }}
-                      <span style="color:#1b8f5a; font-weight:700;">Explore System →</span>
+                      <span style="color:#1b8f5a; font-weight:700;">View product →</span>
                     </div>
                   </div>
                 </a>

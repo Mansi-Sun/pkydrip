@@ -1,121 +1,53 @@
 ---
-title: "Fertigation System"
-description: "Modular fertigation control for irrigation projects—scheduled dosing, multi-channel mixing, optional EC/pH closed-loop, and integration with pump and valve automation."
+title: "Fertigation Machines"
+description: "Select PKYDrip FG301, FG401 and FG501 fertigation machines by channel count, EC/pH control, hydraulic structure and application."
 layout: "engineering-page"
 url: "/product/fertigation-system/"
 type: "product"
 draft: false
-
-page_code: "PC-0801-2-02-PROD-FERTIGATION-FAMILY-01"
-
-categories:
-  - fertigation-system
-  - irrigation-system
-
+page_code: "PC-0801-2-02-PROD-FERTIGATION-FAMILY-02"
 hero:
-  title: "Fertigation System"
-  subtitle: "Automated fertilizer injection linked to irrigation schedules—for greenhouses, orchards, and open-field pump stations."
-  image: "images/product/pky-fg401.jpg"
-  image_alt: "PKYDrip PKY-FG401 EC pH fertigation controller"
-  cta_primary:
-    label: "Discuss Your Project"
-    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Fertigation%20System%20%7C%20Page%3A%20fertigation-system%0A-%20Crop%20type%3A%20%0A-%20Channels%20needed%3A%20%0A-%20EC%2FpH%20control%3A%20(yes%2Fno)%0A-%20Zones%3A%20"
-  cta_secondary:
-    label: "Water–Fertilizer Solution"
-    url: "/solution/fertigation-system/"
-
-system_controls:
-  title: "What the Fertigation Module Controls"
-  intro: "PKYDrip fertigation integrates with the irrigation control platform—nutrient delivery follows the same zone logic as water distribution."
-  items:
-    - name: "Fertilizer tanks"
-      desc: "A/B/C stock tanks and acid tank dosing paths."
-    - name: "Dosing pumps"
-      desc: "Per-channel injection with flow feedback where specified."
-    - name: "Mixing"
-      desc: "Inline mixing before mainline or zone manifolds."
-    - name: "EC / pH"
-      desc: "Optional closed-loop monitoring and correction."
-    - name: "Irrigation zones"
-      desc: "Fertigation programs aligned with valve sequencing."
-    - name: "Remote monitoring"
-      desc: "Status, alarms, and schedule changes when cloud modules are used."
-
-product_modules:
-  title: "Product Modules"
-  intro: "Configure the right fertigation controller—single-channel to multi-channel, with or without EC/pH."
-  items:
-    - name: "PKYDrip E / S / P family"
-      desc: "Easy, Standard and Professional fertigation systems, PKYDrip-E03 to P06, with an on-page selection guide."
-      url: "/products/fertigation/"
-    - name: "PKY-FG501 Premix"
-      desc: "5-channel premix fertigation unit with 200 L tank and before/after EC/pH process measurement."
-      url: "/product/pky-fg501-premix-fertigation/"
-    - name: "Fertigation Controller"
-      desc: "Integration-ready control layer for existing pumps, tanks, pipelines, and dosing equipment."
-      url: "/product/fertigation-controller/"
-    - name: "PKY-FG301"
-      desc: "3-channel scheduled fertigation with touchscreen control."
-      url: "/product/pky-fg301/"
-    - name: "PKY-FG401 EC/pH"
-      desc: "EC/pH closed-loop nutrient control for precision crops."
-      url: "/product/pky-fg401-ecph/"
-    - name: "Pump & valve control system"
-      desc: "Central platform when fertigation shares a pump station cabinet."
-      url: "/product/pump-valve-control-system/"
-
+  eyebrow: "Standard Fertigation Equipment"
+  title: "Three product platforms. Clear configuration codes."
+  subtitle: "Choose 3, 4 or 5 dosing channels first. Then select basic or automatic EC/pH control, direct injection or mixing tank, and the hydraulic package required by the site."
+  capabilities: ["FG301 · 3 channels", "FG401 · 4 channels", "FG501 · 5 channels"]
+  image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system.png"
+  image_alt: "PKYDrip four-channel peristaltic fertigation machine"
+  cta_primary: {label: "Request Model Selection", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20a%20fertigation%20machine.%0AApplication%3A%0AFertilizer%20and%20acid%20channels%3A%0AEC%2FpH%20automatic%20control%3A%0AMixing%20tank%3A%0ARequired%20flow%3A%0APower%20supply%3A%0ACountry%3A"}
+  cta_secondary: {label: "Browse All Products", url: "/product/"}
 feature_blocks:
-  - title: "Two Control Approaches"
-    body: "Projects can start with ratio-based scheduled fertigation and upgrade to sensor-driven EC/pH control when crop value justifies it."
-    bullets:
-      - "Scheduled / ratio-based dosing"
-      - "EC/pH closed-loop (optional)"
-      - "Same platform for irrigation + fertigation"
-    image: "images/product/pky-fg401.jpg"
-    image_right: true
-
-applications:
-  title: "Typical Applications"
-  cards:
-    - title: "Greenhouse production"
-      desc: "Multi-zone drip with consistent nutrient delivery per crop block."
-      image: "images/scenes/scene-climate-greenhouse.webp"
-      tags: ["Drip", "EC/pH optional"]
-      link: "/solution/greenhouse-irrigation/"
-    - title: "Orchard fertigation"
-      desc: "Tank station dosing linked to pump and valve programs."
-      image: "images/scenes/scene-orchard.webp"
-      tags: ["Pump station", "Zones"]
-      link: "/solution/orchard-irrigation/"
-    - title: "Open-field blocks"
-      desc: "Field manifolds fed from a central fertigation skid."
-      image: "images/scenes/scene-open-field.webp"
-      tags: ["Mainline", "Sequential zones"]
-      link: "/solution/open-field-irrigation/"
-
-related_links:
-  title: "Related"
-  links:
-    - label: "PKYDrip E / S / P family"
-      url: "/products/fertigation/"
-    - label: "PKY-FG501 Premix"
-      url: "/product/pky-fg501-premix-fertigation/"
-    - label: "Open Platform"
-      url: "/open-platform/"
-    - label: "Fertigation controller for integration"
-      url: "/product/fertigation-controller/"
-    - label: "Integration & connectivity"
-      url: "/solution/integration-connectivity/"
-    - label: "Fertigation basics (doc)"
-      url: "/docs/fertigation-basics/"
-    - label: "Greenhouse solution"
-      url: "/solution/greenhouse-irrigation/"
-
-project_cta:
-  title: "Discuss Your Fertigation Project"
-  text: "Share crop type, channel count, EC/pH requirements, and irrigation zone layout. For new commercial premix projects, start with PKY-FG501. Existing FG301 and FG401 pages remain available."
-  button_label: "Chat on WhatsApp"
-  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20Product%3A%20Fertigation%20System%20%7C%20Page%3A%20fertigation-system%0A-%20Crop%3A%20%0A-%20Channels%3A%20%0A-%20EC%2FpH%3A%20%0A-%20Zones%3A%20"
+  - title: "The model number starts with total dosing channels"
+    body: "FG301, FG401 and FG501 identify the 3-, 4- and 5-channel platforms. The total includes fertilizer and acid/alkali channels. For example, three fertilizer channels plus one acid channel is a four-channel FG401 platform."
+    bullets: ["FG301: three total dosing channels", "FG401: four total dosing channels", "FG501: five total dosing channels"]
+  - title: "Standard product first; project options second"
+    body: "The public product name stays short. Detailed order codes record control level, hydraulic structure, application, flow, power and special engineering so quotations and production use the same language."
+    bullets: ["B: basic dosing control", "M: monitoring configuration", "A: automatic EC/pH closed-loop control", "AR: automatic control with recipe management", "DI: direct injection · MT: mixing tank"]
+product_modules:
+  title: "Standard platforms"
+  intro: "These three pages are the primary sales entry points. Final configuration is confirmed in the quotation."
+  items:
+    - {name: "PKY-FG301", desc: "Three-channel platform for compact greenhouse, laboratory and project configurations.", url: "/product/pky-fg301/"}
+    - {name: "PKY-FG401", desc: "Four-channel platform; a typical configuration is three fertilizers plus one acid.", url: "/product/pky-fg401-ecph/"}
+    - {name: "PKY-FG501", desc: "Five-channel premix platform for recipe-based, closed-loop EC/pH projects.", url: "/product/pky-fg501-premix-fertigation/"}
+reference_table:
+  title: "Model-code structure"
+  intro: "Public model: PKY-FG[channel count][generation]-[control]-[hydraulics]. Order-specific suffixes are added only after technical review."
+  headers: ["Code position", "Examples", "Meaning"]
+  rows:
+    - ["Platform", "FG301 / FG401 / FG501", "3 / 4 / 5 total dosing channels"]
+    - ["Control", "B / M / A / AR", "Basic / monitoring / automatic EC-pH / automatic with recipes"]
+    - ["Hydraulics", "DI / MT", "Direct injection / mixing tank"]
+    - ["Application", "OF / GH / OR / HY / LB", "Open field / greenhouse / orchard / hydroponic / laboratory"]
+    - ["Mechanical platform", "P / D / H", "Peristaltic / diaphragm / high-flow project platform"]
+    - ["Special status", "STD / SPxx / EVT", "Standard / approved special / engineering validation"]
+doc_sections:
+  - title: "Example order language"
+    body: "PKY-FG401-P-A-MT-GH identifies a four-channel peristaltic platform with automatic EC/pH control, mixing tank and greenhouse application. PKY-FG401-H-B-DI-OF-Q80-100-V380-440 identifies an open-field high-flow project configuration; Q and voltage values remain order-specific and require engineering confirmation."
+    bullets: ["Examples explain the code and do not promise stock, price or lead time", "Hydraulic capacity, pump power and pipe size are confirmed from project data", "Special software or mechanical changes use SPxx and require MOQ and technical review"]
+faq:
+  title: "Before we quote"
+  items:
+    - {q: "Does a channel mean fertilizer only?", a: "No. The public channel count includes fertilizer and acid/alkali dosing paths."}
+    - {q: "Can pump power and flow be changed?", a: "Yes, within an approved hydraulic platform. Required flow, pressure, water source and power supply must be confirmed first."}
+    - {q: "Is every custom request accepted?", a: "No. Standard options are preferred. Special requests require technical review, a defined MOQ and an agreed engineering scope."}
 ---
-
-**Fertigation system** product family. For the new E / S / P production range, start at the [PKYDrip fertigation family](/products/fertigation/). Prefer [PKY-FG501](/product/pky-fg501-premix-fertigation/) for new global-standard premix inquiries. Existing [PKY-FG301](/product/pky-fg301/) and [PKY-FG401](/product/pky-fg401-ecph/) pages remain published. Integration with [pump & valve control](/product/pump-valve-control-system/) when sharing a pump station.
