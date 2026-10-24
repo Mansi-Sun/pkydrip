@@ -11,7 +11,7 @@ hero:
   title: "PKY-FG401"
   subtitle: "A standard four-channel platform. The typical three-fertilizer plus one-acid version is available with peristaltic dosing and optional automatic EC/pH control."
   capabilities: ["4 total dosing channels", "Typical 3 fertilizer + 1 acid", "Peristaltic or project hydraulics"]
-  image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system.png"
+  image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system-angle.png"
   image_alt: "PKYDrip three-fertilizer one-acid peristaltic fertigation machine"
   cta_primary: {label: "Request FG401 Quote", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20FG401%20configuration.%0AApplication%3A%0AChannel%20use%3A%0AEC%2FpH%20control%3A%0AMixing%20tank%3A%0AFlow%20and%20pressure%3A%0APower%3A%0AQuantity%3A"}
   cta_secondary: {label: "Compare Fertigation Models", url: "/product/fertigation-system/"}

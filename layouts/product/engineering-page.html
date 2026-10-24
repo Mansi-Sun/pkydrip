@@ -91,7 +91,7 @@
         </div>
         {{ with $block.image }}
         <div class="col-lg-6{{ if $block.image_right }} order-lg-1{{ end }}">
-          <img class="img-fluid rounded shadow-sm" src="{{ . | relURL }}" alt="{{ $block.title }}" style="width:100%;max-height:320px;object-fit:cover;">
+          <img class="img-fluid rounded shadow-sm" src="{{ partial "asset-or-static-url.html" . }}" alt="{{ $block.title }}" style="width:100%;max-height:320px;object-fit:contain;background:#f6f9fb;">
         </div>
         {{ end }}
       </div>
