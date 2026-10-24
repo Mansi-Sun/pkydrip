@@ -28,8 +28,8 @@ feature_blocks:
     image: "images/product/pky-fg301-small-flow-peristaltic.webp"
     image_right: true
   - title: "Large-flow three-channel configuration"
-    body: "A three-branch hydraulic dosing platform for larger irrigation mainlines. Pump, flowmeter, pipe size, pressure and motor power are selected from the project operating data."
-    bullets: ["Three hydraulic injection branches", "Booster-pump and manifold structure", "Flow, pressure and power confirmed before quotation"]
+    body: "A three-branch hydraulic dosing platform supplied for an Australian project and designed for larger irrigation mainlines. Pump, flowmeter, pipe size, pressure and motor power are selected from the project operating data."
+    bullets: ["Three hydraulic injection branches", "Australian project configuration", "Booster-pump and manifold structure", "Flow, pressure and power confirmed before quotation"]
     image: "images/product/pky-fg301-large-flow-hydraulic.webp"
 standard_configurations:
   title: "Configuration language"

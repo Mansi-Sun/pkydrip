@@ -20,7 +20,7 @@ product_groups:
     description: "The public model identifies channel count. Control method and hydraulic structure are added as configuration codes."
     cards:
       - {name: "PKY-FG301 — 3-Channel Platform", summary: "Three dosing channels with compact peristaltic or higher-flow hydraulic configurations. Control and hydraulic options are selected by suffix.", image: "images/product/pky-fg301-small-flow-peristaltic.webp", url: "/product/pky-fg301/"}
-      - {name: "PKY-FG401 — 4-Channel Platform", summary: "Four-channel platform, commonly configured as three fertilizer channels plus one acid channel. Peristaltic and project hydraulic versions are distinguished in the order code.", image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system-angle.png", url: "/product/pky-fg401-ecph/"}
+      - {name: "PKY-FG401 — 4-Channel Platform", summary: "Four-channel general-purpose platform, commonly configured as three fertilizer channels plus one acid channel. Hydraulic and control options are confirmed in the order code.", image: "images/product/pky-fg401-standard-four-channel.webp", url: "/product/pky-fg401-ecph/"}
       - {name: "PKY-FG501 — 5-Channel Premix Platform", summary: "Five-channel platform, commonly four fertilizers plus one acid, with mixing tank, recipe management and closed-loop EC/pH configuration.", image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system.png", url: "/product/pky-fg501-premix-fertigation/"}
   - title: "Field & Greenhouse Equipment"
     description: "Standard equipment that extends the controller and fertigation product lines."
