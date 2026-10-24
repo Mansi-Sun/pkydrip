@@ -22,6 +22,15 @@ feature_blocks:
   - title: "Standard product first; project options second"
     body: "The public product name stays short. Detailed order codes record control level, hydraulic structure, application, flow, power and special engineering so quotations and production use the same language."
     bullets: ["B: basic dosing control", "M: monitoring configuration", "A: automatic EC/pH closed-loop control", "AR: automatic control with recipe management", "DI: direct injection · MT: mixing tank"]
+  - title: "Actual greenhouse installation"
+    body: "A field-installed fertigation system with three solution tanks, local control, injection equipment and the connected hydraulic pipework. Site layout, tank volume, pump selection and pipe sizes are confirmed from the irrigation design."
+    bullets: ["Installed equipment, not a showroom rendering", "Controller, dosing unit and solution tanks supplied as one working system", "Commissioning documents and operating guidance available for the confirmed configuration"]
+    image: "images/product/fertigation-greenhouse-installation-case.webp"
+    image_right: true
+  - title: "Multi-channel project and OEM platform"
+    body: "For projects requiring more than the standard FG301, FG401 or FG501 channel count, PKYDrip can engineer a multi-channel hydraulic platform after technical review. This is a project/OEM configuration, not a standard FG501 model."
+    bullets: ["Channel count and hydraulic capacity defined by the approved BOM", "Private-label and integration options available", "MOQ, engineering scope and lead time confirmed before production"]
+    image: "images/product/multi-channel-fertigation-oem-platform.webp"
 product_modules:
   title: "Standard platforms"
   intro: "These three pages are the primary sales entry points. Final configuration is confirmed in the quotation."
