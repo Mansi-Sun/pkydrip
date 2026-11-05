@@ -113,13 +113,13 @@ A:Options include soil moisture, NPK, EC, temperature/humidity, CO₂, and light
 A:Our factory is located in Shijiazhuang, Hebei Province, China. Welcome to visit us.</p>
 
 **Q:Can I get a sample, and how long will it take?**</p>
-A:Yes, we offer samples free of charge — you only bear the freight cost. Samples are sent out within 3 days.</p>
+A:Complete controllers, fertigation machines and finished equipment are normally paid evaluation orders. Selected control boards, electronic modules or other intelligent components may be supplied as evaluation samples under separately agreed written terms. Configuration, price, lead time and freight are confirmed in the quotation or agreement.</p>
 
 **Q:Can I get customized products with my own brand?**</p>
 A:Sure. Printing your logo on products or packaging is welcome — we have our own design team. See also our [OEM services](/oem/).</p>
 
 **Q:What is your MOQ?**</p>
-A:We accept orders above USD 3,000, and samples can be sent for testing first.</p>
+A:MOQ depends on the product family, configuration and whether OEM work is required. A paid evaluation unit may be ordered before a distributor or OEM batch order.</p>
 
 **Q:How do you ship the goods?**</p>
 A:By sea, by air, or by air express — though we don't recommend sea freight for volumes under 1 CBM.</p>
@@ -128,10 +128,10 @@ A:By sea, by air, or by air express — though we don't recommend sea freight fo
 A:Yes, we can supply certification on request.</p>
 
 **Q:What is your delivery time?**</p>
-A:Generally 2–3 weeks after workable payment.</p>
+A:Lead time is confirmed after the model, BOM, software options, branding and quantity are approved. The confirmed date is stated in the quotation or pro forma invoice.</p>
 
 **Q:What is your payment term?**</p>
-A:30% or 50% TT in advance, the balance against the copy of B/L.</p>
+A:Payment terms depend on the order type, value and shipping method and are stated in the written quotation or pro forma invoice.</p>
 
 **Q:How do you handle quality problems after delivery?**</p>
 A:Send product photos or a video by email, or send a sample by express. Once the problem is confirmed, we will provide a satisfactory solution.</p>

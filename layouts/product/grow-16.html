@@ -45,6 +45,8 @@
     </div>
   </section>
 
+  {{ partial "product/commercial-status.html" . }}
+
   {{/* Applications */}}
   {{ with .Params.use_cases }}
   <section class="py-5">

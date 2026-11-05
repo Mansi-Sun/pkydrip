@@ -130,7 +130,7 @@ Once installed, the controller operates with minimal maintenance.
 - Large farms requiring many independent valve zones
 
 Typical application:  
-→ [Open field wireless irrigation system](/application/open-field-wireless-valve-control/)
+→ [Open field wireless irrigation system](/applications/open-field-wireless-valve-control/)
 
 ---
 

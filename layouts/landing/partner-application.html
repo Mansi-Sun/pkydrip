@@ -1,0 +1,147 @@
+{{ define "main" }}
+<article class="partner-application-page">
+  <section class="partner-application-hero">
+    <div class="container">
+      <p class="partner-eyebrow">{{ .Params.hero.eyebrow }}</p>
+      <h1>{{ .Params.hero.title }}</h1>
+      <p class="partner-application-hero__subtitle">{{ .Params.hero.subtitle }}</p>
+      <p class="partner-application-hero__note">{{ .Params.hero.note }}</p>
+    </div>
+  </section>
+
+  <section class="partner-application-main">
+    <div class="container">
+      <div class="partner-application-layout">
+        <aside class="partner-application-aside">
+          <p class="partner-kicker">Before You Apply</p>
+          <h2>We select partners by market fit and delivery capability</h2>
+          <div class="partner-application-aside__value">
+            <h3>Move from development risk to market testing</h3>
+            <p>Independent development can take years of equipment selection, software work, debugging and production validation. It also requires a stable technical team, and staff turnover can interrupt the product roadmap.</p>
+            <p>PKYDrip combines verified hardware, a mature supply chain, modular software and open interfaces. Suitable projects can move from confirmed requirements to a working prototype in months — and selected configurations may be ready for market evaluation in weeks.</p>
+            <p>Cooperation can start under an NDA with PKYDrip customization and manufacturing. Under a separate written agreement, partners can gradually add their own brand, functions and intellectual property, and later discuss customer-managed assembly or production.</p>
+          </div>
+          <ul>
+            <li>Dealers may focus on sales and customer development.</li>
+            <li>Authorized service providers need implementation and installation capability.</li>
+            <li>Regional partners need sales, implementation, installation and after-sales capability.</li>
+            <li>White-label development requires a defined specification, business plan, MOQ and written agreement.</li>
+          </ul>
+          <div class="partner-application-aside__policy">
+            <strong>Initial cooperation is non-exclusive.</strong>
+            <p>Territory or white-label market protection must match actual sales volume, service coverage, investment and agreed targets.</p>
+            <a href="/become-a-distributor/">Read the full partner policy →</a>
+          </div>
+        </aside>
+
+        <form class="partner-form partner-qualification-form" name="pkydrip-partner-application" method="POST" action="/message_sent/" data-netlify="true" netlify-honeypot="bot-field" id="partnerQualificationForm">
+          <input type="hidden" name="form-name" value="pkydrip-partner-application">
+          <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+          <input type="hidden" name="application_id" id="partnerApplicationIdInput">
+          <input type="hidden" name="application_status" value="new">
+          <input type="hidden" name="follow_up_queue" value="partner-development">
+          {{ partial "lead-source-fields.html" . }}
+          <p class="partner-form__hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+
+          <div class="partner-application-reference">
+            <span>Application reference</span>
+            <strong id="partnerApplicationId">Generating…</strong>
+            <small>Keep this number for future communication.</small>
+          </div>
+
+          <fieldset>
+            <legend>1. Company and contact</legend>
+            <div class="partner-form__grid">
+              <label><span>Contact name *</span><input type="text" name="name" required autocomplete="name"></label>
+              <label><span>Job title *</span><input type="text" name="job_title" required autocomplete="organization-title"></label>
+              <label><span>Company *</span><input type="text" name="company" required autocomplete="organization"></label>
+              <label><span>Company website</span><input type="url" name="website" placeholder="https://"></label>
+              <label><span>Country *</span><input type="text" name="country" required autocomplete="country-name"></label>
+              <label><span>State / service region *</span><input type="text" name="service_region" required autocomplete="address-level1"></label>
+              <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
+              <label><span>WhatsApp *</span><input type="tel" name="whatsapp" required autocomplete="tel"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Cooperation level</legend>
+            <div class="partner-form__grid">
+              <label><span>Preferred cooperation role *</span><select name="cooperation_role" required><option value="">Select one</option><option>Dealer / Reseller</option><option>Authorized Service Provider</option><option>Regional Partner</option><option>OEM / White-Label Customer</option><option>Not sure — request recommendation</option></select></label>
+              <label><span>Company type *</span><select name="company_type" required><option value="">Select one</option><option>Irrigation contractor</option><option>Greenhouse company</option><option>Agricultural equipment dealer</option><option>Automation / control company</option><option>Pump / solar company</option><option>Equipment manufacturer</option><option>Other</option></select></label>
+              <label><span>Implementation and installation capability *</span><select name="installation_capability" required><option value="">Select one</option><option>In-house team</option><option>Qualified subcontractor / service partner</option><option>Currently building this capability</option><option>Sales only</option></select></label>
+              <label><span>After-sales capability *</span><select name="after_sales_capability" required><option value="">Select one</option><option>In-house technical support</option><option>Local service partner</option><option>Basic first-line support only</option><option>Not currently available</option></select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Market and product fit</legend>
+            <div class="partner-form__grid">
+              <label class="partner-form__wide"><span>Current product lines and brands represented *</span><textarea name="current_products_brands" rows="3" required placeholder="List irrigation, greenhouse, automation or agricultural equipment currently sold, including competing brands."></textarea></label>
+              <label class="partner-form__wide"><span>Target customers and local market *</span><textarea name="target_market" rows="3" required placeholder="Describe customer types, crops, typical project size and geographic coverage."></textarea></label>
+              <label class="partner-form__wide"><span>Primary PKYDrip product of interest *</span><select name="primary_product_interest" required><option value="">Select one</option><option>Irrigation controllers</option><option>Fertigation machines</option><option>EC/pH control equipment</option><option>Wireless valve control</option><option>Greenhouse controls</option><option>Multiple product lines</option></select></label>
+              <div class="partner-form__wide partner-application-checks">
+                <span>Additional products of interest</span>
+                <label><input type="checkbox" name="products_interest" value="Irrigation controllers"> Irrigation controllers</label>
+                <label><input type="checkbox" name="products_interest" value="Fertigation machines"> Fertigation machines</label>
+                <label><input type="checkbox" name="products_interest" value="EC/pH control"> EC/pH control equipment</label>
+                <label><input type="checkbox" name="products_interest" value="Wireless valve control"> Wireless valve control</label>
+                <label><input type="checkbox" name="products_interest" value="Greenhouse control"> Greenhouse controls</label>
+              </div>
+              <label><span>Expected activity in first 12 months *</span><select name="expected_activity" required><option value="">Select one</option><option>1–2 evaluation or customer projects</option><option>3–5 projects / repeat orders</option><option>6–12 projects / regular sales</option><option>More than 12 projects / established channel</option><option>Not yet known</option></select></label>
+              <label><span>Planned first step *</span><select name="first_step" required><option value="">Select one</option><option>Paid demo or finished-equipment evaluation</option><option>Active customer project</option><option>Intelligent component evaluation</option><option>OEM / white-label feasibility review</option></select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Cooperation plan</legend>
+            <div class="partner-form__grid">
+              <label class="partner-form__wide"><span>Implementation, service and promotion plan *</span><textarea name="local_capability_plan" rows="4" required placeholder="Explain how your team will sell, implement, install, train customers and provide after-sales support."></textarea></label>
+              <label class="partner-form__wide"><span>Localization or product-development requirements</span><textarea name="localization_requirements" rows="4" placeholder="Branding, enclosure, interface language, APIs, sensors, power, certification or new model requirements."></textarea></label>
+              <label class="partner-form__wide"><span>Current development bottleneck and target launch time</span><textarea name="development_bottleneck" rows="4" placeholder="Hardware selection, embedded software, sensor integration, field validation, production engineering, team continuity, or a prototype needed within a specific time."></textarea></label>
+              <label><span>Territory protection requested?</span><select name="territory_request"><option>No — initial cooperation only</option><option>Future review after performance</option><option>Yes — explain proposed area below</option></select></label>
+              <label><span>NDA required before technical review?</span><select name="nda_required"><option>No</option><option>Yes</option><option>Not sure</option></select></label>
+              <label class="partner-form__wide"><span>Requested territory and business justification</span><textarea name="territory_justification" rows="3" placeholder="Define the requested area, expected sales, service coverage and market investment."></textarea></label>
+              <label class="partner-form__wide"><span>Additional information</span><textarea name="message" rows="4" placeholder="Active opportunities, target timing, estimated quantity or other information for the partner manager."></textarea></label>
+            </div>
+          </fieldset>
+
+          <label class="partner-application-consent"><input type="checkbox" name="policy_acknowledged" value="yes" required> <span>I understand that this application does not create exclusivity, pricing rights or a distributor agreement. Final terms require PKYDrip review and a written agreement.</span></label>
+          <button class="partner-btn partner-btn--primary partner-form__submit" type="submit">Submit Partner Application</button>
+          <p class="partner-form__privacy">Your information is used only to evaluate and follow up potential PKYDrip cooperation. Confidential technical information can be exchanged after an NDA is agreed.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</article>
+
+<script>
+(function () {
+  function pad(value) { return String(value).padStart(2, '0'); }
+  function createReference() {
+    var now = new Date();
+    var date = now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate());
+    var random = Math.random().toString(36).slice(2, 6).toUpperCase();
+    return 'PKY-PA-' + date + '-' + random;
+  }
+  var display = document.getElementById('partnerApplicationId');
+  var input = document.getElementById('partnerApplicationIdInput');
+  if (!display || !input) return;
+  var storageKey = 'pky_partner_application_id';
+  var reference = '';
+  try { reference = sessionStorage.getItem(storageKey) || ''; } catch (e) {}
+  if (!reference) {
+    reference = createReference();
+    try { sessionStorage.setItem(storageKey, reference); } catch (e) {}
+  }
+  display.textContent = reference;
+  input.value = reference;
+  var form = document.getElementById('partnerQualificationForm');
+  if (form) {
+    form.addEventListener('submit', function () {
+      try { sessionStorage.removeItem(storageKey); } catch (e) {}
+    });
+  }
+})();
+</script>
+{{ end }}
+

@@ -16,6 +16,14 @@ hero:
   cta_primary: {label: "Request FG501 Quote", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20FG501%20configuration.%0ACrop%20and%20application%3A%0AChannel%20use%3A%0ARequired%20flow%20and%20pressure%3A%0AMixing%20tank%20volume%3A%0APower%3A%0AQuantity%3A"}
   cta_secondary: {label: "Compare Fertigation Models", url: "/product/fertigation-system/"}
 product_identity: {model_label: "Platform", model: "PKY-FG501-AR-MT", family_label: "Product family", family: "Fertigation Machines", lifecycle_label: "Status", lifecycle: "Standard platform, configured to order"}
+commercial_status:
+  title: "Commercial status"
+  items:
+    - {label: "Supply", value: "Standard platform, configured to order"}
+    - {label: "MOQ", value: "Applies to configuration and OEM scope"}
+    - {label: "Lead time", value: "Confirmed with tank, hydraulics and power"}
+    - {label: "Price", value: "Quoted after BOM confirmation"}
+  note: "Send crop, recipes, channel allocation, tank volume, flow, pressure, destination country and quantity."
 fit_summary:
   title: "Where FG501 fits"
   best_for: {title: "Best for", items: ["Commercial greenhouses", "Hydroponic and substrate crops", "Recipe-based nutrient preparation", "Multi-zone projects"]}

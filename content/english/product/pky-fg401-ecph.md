@@ -16,6 +16,14 @@ hero:
   cta_primary: {label: "Request FG401 Quote", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20FG401%20configuration.%0AApplication%3A%0AChannel%20use%3A%0AEC%2FpH%20control%3A%0AMixing%20tank%3A%0AFlow%20and%20pressure%3A%0APower%3A%0AQuantity%3A"}
   cta_secondary: {label: "Compare Fertigation Models", url: "/product/fertigation-system/"}
 product_identity: {model_label: "Platform", model: "PKY-FG401", family_label: "Product family", family: "Fertigation Machines", lifecycle_label: "Status", lifecycle: "Standard platform"}
+commercial_status:
+  title: "Commercial status"
+  items:
+    - {label: "Supply", value: "Standard platform, configured to order"}
+    - {label: "MOQ", value: "Applies to configuration and OEM scope"}
+    - {label: "Lead time", value: "Confirmed with hydraulics and power"}
+    - {label: "Price", value: "Quoted after BOM confirmation"}
+  note: "Send channel allocation, flow, pressure, power, EC/pH mode, destination country and quantity."
 feature_blocks:
   - title: "Four-channel general-purpose configuration"
     body: "The photographed equipment is the general-purpose FG401 platform. Its public family name remains FG401; the final order code records channel allocation, dosing hardware, EC/pH control and mixing structure."

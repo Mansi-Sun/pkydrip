@@ -1,6 +1,6 @@
 ---
-title: "PKYDrip Early Access Program — Trials, Betas and Founding Terms"
-description: "Join the PKYDrip Early Access Program: controller beta slots, distributor demo units, ThingsBoard integration support, off-grid pilots and founding terms."
+title: "PKYDrip Early Access Program — Trials, Betas and Partner Evaluation"
+description: "Join the PKYDrip Early Access Program: controller beta slots, paid distributor demo units, integration support and field pilots."
 keywords: ["PKYDrip early access", "irrigation beta program", "fertigation trial", "founding distributor"]
 draft: false
 url: "/early-access/"
@@ -14,8 +14,8 @@ programs:
     text: "Stock your first FG fertigation machine at demo pricing — you own it, demo it and sell it. No deposits, no returns, no trial windows."
     url: "/early-access/fertigation-machine-trial/"
   - badge: "Distributor Track"
-    title: "First 50 Distributors: Founding Partner Terms"
-    text: "Protected territory, launch pricing, training and demo-unit support for the first 50 partners per region."
+    title: "Distributor Onboarding and Territory Policy"
+    text: "Start with a paid demo or real project, then build toward partner pricing and written territory terms through proven performance."
     url: "/early-access/distributor-first-50/"
   - badge: "Farm Track"
     title: "Multi-Zone Controller Beta"

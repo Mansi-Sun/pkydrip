@@ -5,7 +5,8 @@ translationKey: "home"
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/home/pkydrip-workshop-engineering-hero.jpg"
+  bg_image: "images/home/pkydrip-equipment-showroom-hero.jpg"
+  bg_image_mobile: "images/home/pkydrip-equipment-showroom-hero-mobile.jpg"
   bg_overlay: true
   eyebrow: "Developed, assembled and tested by PKYDrip"
   title: "Irrigation Controllers and Fertigation Machines"
@@ -38,8 +39,8 @@ entry_paths:
     - icon: "🤝"
       title: "Get Product Quotes, MOQ or Distributor Terms"
       desc: "Contact us for project pricing, minimum order quantities and distributor terms. Final commercial terms are confirmed after technical review."
-      button_label: "Become a Distributor"
-      button_link: "/become-a-distributor/"
+      button_label: "Request Product Quote"
+      button_link: "/contact/"
 
 ########################## Product Lines ############################
 primary_product_lines:
@@ -112,16 +113,16 @@ selection_guide:
 ############################# OEM Strip #############################
 oem_strip:
   enable: true
-  title: "Need OEM or Engineering Support?"
-  content: "Standard products are the starting point. Private labeling, packaging, firmware changes, hardware changes and third-party integration are available subject to technical review, MOQ and commercial terms."
+  title: "Launch Your Own Irrigation Product Without Starting from Zero"
+  content: "Use PKYDrip's field-tested hardware, mature supply chain, open interfaces and modular software to shorten product development from years to months — and, for suitable configurations, reach a working prototype in weeks. Start with PKYDrip customization under NDA, then build your own brand, engineering capability and intellectual property step by step under a written agreement."
   button_label: "Discuss OEM Requirements"
   button_url: "/oem/"
 
 ######################### Integration Note ##########################
 integration_note:
   enable: true
-  title: "Standalone Control with Integration Options"
-  content: "PKYDrip controllers and fertigation machines are designed to perform their primary control functions locally. Remote access, cloud connectivity, Modbus, MQTT and third-party integration can be added when required by the project."
+  title: "Open Interfaces and Modular Functions for Long-Term Development"
+  content: "PKYDrip controllers and fertigation machines perform their primary control functions locally. Modular functions, documented interfaces, Modbus, MQTT, API and private-deployment options let partners integrate verified equipment now and gradually develop their own branded system without rebuilding every hardware and software layer."
   button_label: "View Integration Options"
   button_url: "/api-integration/"
 
@@ -194,7 +195,7 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+  bg_image: "images/home/pkydrip-workshop-partner-cta.jpg"
   title: "Ready to Sell PKYDrip in Your Region?"
   content: "Get the distributor price list, MOQ terms and a live platform demo — and put shipping fertigation machines and controllers into your local market."
   button:

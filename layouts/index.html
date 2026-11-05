@@ -26,6 +26,22 @@
     "height" 900
   ) }}
   {{ end }}
+  {{ if .bg_image_mobile }}
+  {{ partial "responsive-picture.html" (dict
+    "path" .bg_image_mobile
+    "alt" ""
+    "class" "home-hero__img home-hero__img--mobile"
+    "picture_class" "home-hero__media home-hero__media--mobile"
+    "sizes" "100vw"
+    "widths" (slice 480 720 900)
+    "quality" 75
+    "lazy" false
+    "fetchpriority" "high"
+    "decoding" "async"
+    "width" 900
+    "height" 1200
+  ) }}
+  {{ end }}
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-10" style="pointer-events:none;"></div>
 
   <div class="container position-relative" style="z-index:1;">

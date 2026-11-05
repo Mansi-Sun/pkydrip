@@ -70,7 +70,7 @@ local_entry:
       url: "/early-access/date-palm-program/"
       cta: "Apply for the pilot"
     - title: "Project & Distributor Inquiry"
-      text: "Contractors and distributors: send your project scope — we quote with public price ranges and MOQ."
+      text: "Contractors and distributors: send your project scope for a written model-based quotation covering configuration, MOQ and lead time."
       url: "/become-a-distributor/"
       cta: "Talk to our team"
 apply:
@@ -79,7 +79,7 @@ apply:
 related:
   - label: "Date Palm Fertigation Pilot (Early Access)"
     url: "/early-access/date-palm-program/"
-  - label: "Become a Distributor — price ranges & MOQ"
+  - label: "Become a Distributor — policy and application"
     url: "/become-a-distributor/"
   - label: "API Integration & ThingsBoard"
     url: "/api-integration/"

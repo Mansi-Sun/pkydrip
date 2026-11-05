@@ -17,6 +17,15 @@ categories:
 product_code: "PKYDrip Grow 16"
 page_code: "PC-0801-2-02-PROD-GROW16-01"
 
+commercial_status:
+  title: "Commercial status"
+  items:
+    - {label: "Supply", value: "Standard controller platform"}
+    - {label: "MOQ", value: "Applies to the selected configuration"}
+    - {label: "Lead time", value: "Confirmed with cabinet and options"}
+    - {label: "Price", value: "Quoted after technical confirmation"}
+  note: "For a quotation, send zones, pump power, valve type, connectivity, destination country and quantity."
+
 highlights:
   - "16 irrigation zones + master valve output, expandable to 32 zones with X16"
   - "Wi-Fi and Ethernet standard, optional 4G"
@@ -180,8 +189,8 @@ aliases:
 
 Grow 16 models are defined by control capacity. Pump power is handled by the power cabinet, and sensors are configured as application kits. Fertigation and climate control share the Edge, cloud, and version platform but use separate execution modules.
 
-## Technical implementation
+## One product platform
 
-Customers buy and manage **one PKYDrip Grow 16 controller**. Linux Edge and MC-16 are internal technical components rather than sales concepts. Linux Edge handles the local web interface, networking, cloud connection, and version management. MC-16 handles valves, pumps, pulse inputs, 4–20 mA inputs, digital inputs, sequencing, and safety protection.
+Customers buy and manage **one PKYDrip Grow 16 controller**. PKYDrip handles the internal control architecture; the customer selects the project-facing configuration: zones, pump interface, valve outputs, sensors, connectivity and expansion modules.
 
 → [Prefer a fully local controller? See PKYDrip MC-16 Local](/product/farm-irrigation-controller/)

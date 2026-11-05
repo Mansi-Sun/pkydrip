@@ -315,7 +315,7 @@ Choose wireless when it solves a real field deployment problem, not just because
 → [LoRa Wireless Irrigation Control System](/solution/lora-wireless-irrigation-control/)
 
 ### Practical application
-→ [Wireless Valve Control for Open Field Irrigation](/application/open-field-wireless-valve-control/)
+→ [Wireless Valve Control for Open Field Irrigation](/applications/open-field-wireless-valve-control/)
 
 ### Related solution for no-power projects
 → [LoRa Off-Grid Irrigation System](/solution/lora-off-grid-irrigation-system/)

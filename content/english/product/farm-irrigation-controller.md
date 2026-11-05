@@ -18,6 +18,15 @@ categories:
 product_code: "MC-16 Local"
 page_code: "PC-0801-2-02-PROD-FARM-CTRL-01"
 
+commercial_status:
+  title: "Commercial status"
+  items:
+    - {label: "Supply", value: "Standard local controller"}
+    - {label: "MOQ", value: "Applies to the selected configuration"}
+    - {label: "Lead time", value: "Confirmed with output and cabinet options"}
+    - {label: "Price", value: "Quoted after technical confirmation"}
+  note: "For a quotation, send zones, AC/DC valve type, pump power, sensors, destination country and quantity."
+
 highlights:
   - "16 irrigation zones with one pump, operated fully from the industrial touchscreen"
   - "16 AC or DC solenoid valve outputs, selected per order"

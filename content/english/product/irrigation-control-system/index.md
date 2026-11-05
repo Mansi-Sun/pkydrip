@@ -1,6 +1,6 @@
 ---
-title: "Irrigation Control System"
-description: "System-level irrigation control for pump control, valve control, zone scheduling, HMI operation, sequential irrigation logic, and control cabinet integration."
+title: "Irrigation Controllers"
+description: "Compare PKYDrip Grow 16 connected irrigation controller and MC-16 Local touchscreen controller by operation mode, connectivity, expansion and project fit."
 date: 2026-06-10
 draft: false
 type: "product"
@@ -8,85 +8,72 @@ layout: "engineering-page"
 url: "/product/irrigation-control-system/"
 
 hero:
-  title: "Irrigation Control System"
-  subtitle: "Pump control, valve control, zone scheduling, HMI operation, sequential irrigation logic, and control cabinet integration for farm irrigation automation."
-  image: "images/product/irrigation-control-cabinet/irrigation-system-hmi-interface.png"
-  image_alt: "PKYDrip irrigation control system HMI interface"
-  cta_primary:
-    label: "Discuss Your Project"
-    url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20irrigation%20control%20system.%0APump%3A%20%0AValve%20zones%3A%20%0AIrrigation%20type%3A%20%0A"
-  cta_secondary:
-    label: "System Architecture"
-    url: "/system-architecture/irrigation-control-system/"
-
-system_controls:
-  title: "What the System Controls"
-  intro: "This is the core automation system for farms that need coordinated pump, valve, schedule, and field operation logic."
-  items:
-    - name: "Pump control"
-      desc: "Start/stop logic, delay settings, interlock design, and protection coordination."
-    - name: "Valve control"
-      desc: "Zone valve operation for drip, sprinkler, greenhouse, orchard, and landscape irrigation."
-    - name: "Irrigation scheduling"
-      desc: "Manual, timed, grouped, or sequential operation according to project design."
-    - name: "HMI operation"
-      desc: "Touchscreen interface for local setup, manual testing, schedules, and records."
-    - name: "Control cabinet integration"
-      desc: "Cabinet hardware as the physical execution platform inside the irrigation control system."
-    - name: "Sensor feedback"
-      desc: "Optional pressure, flow, tank level, and field feedback inputs."
+  eyebrow: "Standard Irrigation Controllers"
+  title: "Choose Connected or Local Control"
+  subtitle: "Two fixed controller platforms for pumps and irrigation zones: Grow 16 for connected, expandable projects; MC-16 Local for stable touchscreen operation without a network."
+  capabilities: ["Two standard models", "Up to 16 zones as standard", "Pump, valve, flow and pressure control"]
+  image: "images/product/pkydrip-irrigation-controller-family.png"
+  image_alt: "PKYDrip Grow 16 and MC-16 Local irrigation controllers"
+  cta_primary: {label: "View Grow 16", url: "/product/pky-grow16/"}
+  cta_secondary: {label: "View MC-16 Local", url: "/product/farm-irrigation-controller/"}
 
 feature_blocks:
-  - title: "System, Not Only a Cabinet"
-    body: "The irrigation control cabinet is the physical hardware platform. The main concept is the irrigation control system: pump logic, valve logic, scheduling, HMI operation, wiring, protection, and field execution working together."
-    bullets:
-      - "Control cabinet as hardware platform"
-      - "Controller as logic layer"
-      - "Pumps and valves as execution layer"
-      - "Sensors and records as feedback layer"
-    image: "images/product/irrigation-control-cabinet/irrigation-system-hmi-interface.png"
+  - title: "Grow 16 — connected and expandable"
+    body: "Choose Grow 16 when remote access, browser operation, cloud records or future expansion are part of the project. Wi-Fi and Ethernet are standard; 4G and standardized expansion are selected when required."
+    bullets: ["16 irrigation zones, expandable to 32 with X16", "Local mobile-browser operation without an app", "Cloud alarms, history, configuration and version management", "Expandable for fertigation, sensors and greenhouse climate"]
+    image: "images/product/irrigation-control-cabinet/cabinet-product-photo.png"
+    image_alt: "PKYDrip Grow 16 connected irrigation controller cabinet"
     image_right: true
-  - title: "Sequential Zone Logic"
-    body: "Many farms cannot open all irrigation zones at once because of pump flow, pressure, or pipeline limits. Sequential irrigation runs valves one by one or by group to match the hydraulic design."
-    bullets:
-      - "Valve group setup"
-      - "Pump delay and valve delay"
-      - "Zone duration control"
-      - "Operation logs for review"
+    link: {label: "View Grow 16", url: "/product/pky-grow16/"}
+  - title: "MC-16 Local — fixed local operation"
+    body: "Choose MC-16 Local when the operator works on site and the project does not require internet or cloud services. Programs, manual control, status and alarms are handled from the industrial touchscreen."
+    bullets: ["16 AC or DC valve outputs, selected per order", "One pump with flow and pressure protection", "Industrial touchscreen for all operation", "No Wi-Fi, account, cloud or network dependency"]
+    image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png"
+    image_alt: "PKYDrip MC-16 Local industrial touchscreen irrigation controller"
+    link: {label: "View MC-16 Local", url: "/product/farm-irrigation-controller/"}
 
-product_modules:
-  title: "Related Modules"
-  items:
-    - name: "PKYDrip Grow 16"
-      url: "/product/pky-grow16/"
-      desc: "Connected and expandable 16-zone irrigation controller — Wi-Fi/Ethernet, mobile-browser control, cloud management, standardized expansion."
-    - name: "PKYDrip MC-16 Local"
-      url: "/product/farm-irrigation-controller/"
-      desc: "16-zone industrial touchscreen irrigation controller — fully local operation, no network connectivity required."
-    - name: "PKY-60W"
-      url: "/product/smart-irrigation-controller/"
-      desc: "Main controller for pump and valve irrigation control."
-    - name: "Pump & Valve Control System"
-      url: "/product/pump-valve-control-system/"
-      desc: "Existing product family page for pump and valve automation."
-    - name: "Wireless Field Control System"
-      url: "/product/wireless-field-control-system/"
-      desc: "LoRa expansion for remote field valves."
-    - name: "Monitoring & Sensor System"
-      url: "/product/monitoring-sensor-system/"
-      desc: "Flow, pressure, soil, weather, and operation records."
+standard_configurations:
+  title: "Compare the two standard models"
+  headers: ["Selection point", "Grow 16", "MC-16 Local"]
+  rows:
+    - ["Operation", "Mobile browser plus local controls", "Industrial touchscreen"]
+    - ["Connectivity", "Wi-Fi and Ethernet standard; optional 4G", "No network connectivity"]
+    - ["Cloud", "Alarms, history, configuration and version management", "Not required and not included"]
+    - ["Expansion", "32 zones, fertigation, sensors and climate modules", "Fixed 16-zone local controller"]
+    - ["Best fit", "Connected projects and future expansion", "Defined local projects and cost control"]
+  note: "Pump power, valve voltage, sensors, cabinet structure, destination power and quantity are confirmed before quotation."
+
+offer_scope:
+  title: "Standard products with controlled configuration"
+  intro: "The controller model stays fixed. Project interfaces are selected during quotation; special engineering is reviewed separately."
+  columns:
+    - {key: "standard", title: "Standard Models", badge: "Product", items: ["Grow 16 connected controller", "MC-16 Local controller", "Documented standard functions"]}
+    - {key: "configurable", title: "Order Configuration", badge: "Confirm before order", items: ["Valve output and destination power", "Pump interface and protection", "Flow, pressure and other sensors", "Connectivity and expansion modules"]}
+    - {key: "engineering", title: "Engineering Review", badge: "MOQ applies", items: ["Project power cabinets", "OEM enclosure and branding", "Third-party device or protocol integration"]}
+
+reference_table:
+  title: "Information needed for a quotation"
+  headers: ["Item", "What to send"]
+  rows:
+    - ["Application", "Greenhouse, orchard, open field, nursery or landscape"]
+    - ["Irrigation zones", "Zone count and solenoid valve voltage/type"]
+    - ["Pump", "Quantity, power, voltage and starting method"]
+    - ["Sensors", "Flow, pressure, level, soil or weather requirements"]
+    - ["Connectivity", "Local only, Wi-Fi, Ethernet or 4G"]
+    - ["Order", "Destination country, quantity and required delivery date"]
 
 related_links:
-  title: "Related Pages"
+  title: "Continue selecting equipment"
   links:
-    - label: "Irrigation Control Architecture"
-      url: "/system-architecture/irrigation-control-system/"
-    - label: "Open Field Irrigation"
-      url: "/solution/open-field-irrigation/"
-    - label: "Greenhouse Irrigation"
-      url: "/solution/greenhouse-irrigation/"
-    - label: "Fertigation System"
-      url: "/product/fertigation-system/"
+    - {label: "All Product Models", url: "/product/"}
+    - {label: "Fertigation Machines", url: "/product/fertigation-system/"}
+    - {label: "OEM and Partner Cooperation", url: "/become-a-distributor/"}
+
+product_cta:
+  title: "Request an irrigation controller quotation"
+  text: "Send the application, zone count, valve type, pump power, sensors, connectivity, destination country and quantity. PKYDrip will recommend Grow 16 or MC-16 Local and confirm the order configuration."
+  button_label: "Send Controller Requirements"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20an%20irrigation%20controller%20quotation.%0AApplication%3A%0AZones%20and%20valve%20type%3A%0APump%20power%20and%20voltage%3A%0ASensors%3A%0AConnectivity%3A%0ADestination%20country%3A%0AQuantity%3A"
 ---
 
-Use this page as the system-level entry before selecting controller models, cabinet hardware, or field modules.
+PKYDrip supplies two standard irrigation controller platforms. Select the operating method first, then confirm the project interfaces needed for production and quotation.
