@@ -1,121 +1,81 @@
 ---
-title: "Smart Irrigation & Fertigation Systems | PKYDRIP"
-description: "PKYDrip develops industrial-standard PCB controllers, Android terminals, wireless devices, and cloud-connected automation systems for irrigation, fertigation, and greenhouse control."
+title: "About PKYDRIP — Irrigation & Fertigation Technology Applications"
+description: "PKYDRIP focuses on practical irrigation and fertigation applications, with project-specific equipment configurations, assembly, testing and direct technical support."
 bg_image: "images/slider-bg.webp"
 layout: "about"
 aliases: ["/about-us/"]
 draft: false
 
-################################## About #####################################
 about:
-  enable : true
-  image : "images/company/about.webp"
-  title : "Smart Irrigation Control <br> Built on Real Industry Experience"
-  content : |
-    PKYDrip Irrigation was established in 2014 and is headquartered in Shijiazhuang, Hebei Province, China, with its R&D department based in Melbourne, Australia. We specialize in the development and production of water-saving irrigation products such as irrigation timers, irrigation controllers, wireless solutions, and 4G remote-controlled valves.<br><br>
+  enable: true
+  image: "images/company/about.webp"
+  title: "Focused on Irrigation &amp; Fertigation <br> Technology Applications"
+  content: |
+    PKYDRIP focuses on practical applications of irrigation and fertigation technology. Starting with your crops, growing area and irrigation conditions, we bring together pumps, pipework, dosing equipment, sensors and controls into project-specific configurations.
 
-    PKYDrip built its industry experience through drip irrigation solutions, irrigation projects, and the production and supply of PE irrigation pipes and related components.<br><br>
+    We support growers, contractors and partners through equipment assembly, testing and direct technical support. Our work covers equipment selection, installation, operation and ongoing improvement, with the scope agreed for each project.
 
-    This practical background gave us a close understanding of water distribution, pump and valve operation, field installation, maintenance, and the challenges faced by growers and irrigation contractors.<br><br>
-
-    In 2024, responding to market changes and customer demand, PKYDrip expanded its focus from conventional irrigation products to smart control technology and integrated automation systems. We began developing PCB-based controllers, Android smart terminals, wireless communication products, and cloud-connected irrigation solutions.<br><br>
-
-    Our irrigation controllers, EC/pH controllers, integrated irrigation and fertigation machines, greenhouse environmental control systems, and wireless valve systems all use PCB control boards developed by our own team. We use proven technical solutions and mature modules, with hardware designed in accordance with industrial standards for dependable field operation.<br><br>
-
-    Today, our development and production capabilities include:<br>
-    • Custom PCB control boards and embedded firmware<br>
-    • Irrigation, fertigation, EC/pH, pump, valve, and sensor control<br>
-    • Android-based control terminals and user interfaces<br>
-    • LoRa, Wi-Fi, 4G, RS485, and Modbus communication<br>
-    • Greenhouse environmental monitoring and automation<br>
-    • Cloud monitoring and remote-control platforms<br>
-    • Product assembly, testing, and OEM/ODM system integration<br><br>
-
-    By combining irrigation experience with intelligent hardware and software, PKYDrip provides customers with complete products and services rather than isolated components. We also offer product training and practical irrigation fundamentals training to help customers understand, install, operate, and support the systems effectively.<br><br>
-
-    We serve irrigation equipment manufacturers, contractors, distributors, system integrators, and agricultural projects that need practical, reliable, and scalable control solutions.
-
+    Our practical irrigation experience informs how we approach flow, pressure, irrigation zones and fertilizer dosing. Hardware development, software and system integration support this work, helping us adapt equipment to the application.
   button:
-    enable : true
-    label : "Download Product Catalogue"
-    link : "/files/Pkydrip_Smart_Agriculture_Catalogue_2025.pdf"
-    target: "_blank"
-    download : true
+    enable: true
+    label: "Book a Live Equipment Demo"
+    link: "/book-a-demo/"
+  funfacts: []
 
-  funfacts:
-  - icon : "fas fa-chart-line"
-    name : "Years of Industry Experience"
-    count : "10+"
-
-  - icon : "fas fa-thumbs-up"
-    name : "Customers Served"
-    count : "105+"
-
-  - icon : "fas fa-globe"
-    name : "Countries Served"
-    count : "6"
-
-  - icon : "fas fa-microchip"
-    name : "Smart Control R&D Started"
-    count : "2024"
-
-################################ feature #####################################
 features:
-  enable : true
-  title : "From Irrigation Experience to Integrated Smart Control"
+  enable: true
+  title: "From Growing Conditions to Equipment Applications"
   feature_item:
-  - icon : "fas fa-microchip"
-    name : "In-House PCB Development"
-    content : "Our irrigation controllers, EC/pH controllers, fertigation machines, greenhouse control systems, and wireless valve systems are built around PCB control boards developed by our own team."
+    - icon: "fas fa-seedling"
+      name: "Start with Your Crops"
+      content: "We discuss crops, growing methods, area and existing irrigation equipment before recommending a configuration. Flow and pressure requirements depend on irrigation zones and operating conditions, not area alone."
+    - icon: "fas fa-water"
+      name: "Match Pumps, Flow and Pressure"
+      content: "We consider the water supply, pipework, elevation and zones operating together when discussing pump selection and the required equipment working conditions."
+    - icon: "fas fa-cogs"
+      name: "Configure Irrigation and Fertigation"
+      content: "FG301 and FG501 platforms provide a starting point for discussing dosing channels, mixing tanks, recipe functions and EC/pH control. Available functions depend on the selected configuration."
+    - icon: "fas fa-flask"
+      name: "Build and Test"
+      content: "We are building a fertigation test bench for a series of pump, flow, pressure and dosing tests. We plan to record operating conditions and results to improve equipment configurations and build a practical test dataset. Available demonstrations are confirmed in advance."
+    - icon: "fas fa-tools"
+      name: "Support Assembly and Installation"
+      content: "Work directly with our team on product assembly, installation and operation questions. Local assembly support, documentation and training are agreed according to the equipment and project."
+    - icon: "fas fa-handshake"
+      name: "Start Small and Develop Together"
+      content: "Start with 1–3 fertigation units, depending on configuration. Discuss custom equipment, OEM requirements or distributor cooperation, with MOQ, technical scope and support confirmed before ordering."
 
-  - icon : "fas fa-industry"
-    name : "Industrial-Standard Design"
-    content : "We combine proven circuit solutions and mature modules with industrial design practices to support dependable operation in real irrigation environments."
-
-  - icon : "fab fa-android"
-    name : "Android & Cloud Platforms"
-    content : "Android smart terminals and cloud-connected platforms provide clear local operation, remote monitoring, control, and system management."
-
-  - icon : "fas fa-satellite-dish"
-    name : "Wireless & Field Integration"
-    content : "LoRa, Wi-Fi, 4G, RS485, and Modbus connect pumps, valves, sensors, control terminals, and cloud services into one coordinated system."
-
-  - icon : "fas fa-cogs"
-    name : "Complete Product Integration"
-    content : "We support product development, assembly, testing, system configuration, and OEM/ODM integration—not only the supply of individual components."
-
-  - icon : "fas fa-chalkboard-teacher"
-    name : "Product & Irrigation Training"
-    content : "We provide product training and practical irrigation fundamentals to help customers install, operate, maintain, and support complete systems."
-
-#################################### testimonial & mission vision #######################################
 testimonial:
-  enable : true
-  # testimonial content comes from "data/*/homepage.yml" file
+  enable: false
 
 mission_vision:
-  enable : true
+  enable: true
   tabs:
-  - name : "Product Categories"
-    content : "
-    [**Fertigation Machines**](/fertigation-system/)<br><br> 
-    [**Smart Irrigation Controllers**](/irrigation-controller/)<br><br>
-    [**Hydroponic Systems**](/product/hydroponic/)<br><br>
-    [**Sensors & Weather Stations**](/sensors-weather-stations/)<br><br>
-    [**LoRa-Based Wireless Irrigation System**](/lora-wireless-irrigation-system/)
-    "
+    - name: "Work With Our Team"
+      content: |
+        ### See the Equipment and Discuss Your Project
 
-  - name : "Solutions"
-    content : "
-    [**Sprinkler Irrigation**](/solution/sprinkler-irrigation-plan-for-3-hectares-of-banana)<br><br> 
-    [**Drip Irrigation**](/solution/10-hectares-of-coconut-tree-drip-irrigation)<br><br>
-    [**Flood Irrigation**](/solution/21-hectares-of-rice-flood-irrigation)<br><br>
-    [**Drip Tape Irrigation**](/solution/drip-tape-irrigation-for-1-hectare-of-tomatos)<br><br>
-    [**Rain Pipe Irrigation**](/solution/rain-pipe-irrigation-for-4-hectare-of-corn-field)
-    "
+        Tell us your crops, growing area and the issue you want to solve. We will confirm the meeting time, available demonstration equipment and discussion topics with you.
 
-############################# call to action #################################
+        [**Book a Live Equipment Demo**](/book-a-demo/)
+
+        [**Discuss Your Project**](/contact/?src=about-project)
+
+        For product and business information: [FG301](/product/pky-fg301/) · [FG501](/product/pky-fg501-premix-fertigation/) · [OEM cooperation](/oem/) · [Distributor cooperation](/become-a-distributor/).
+    - name: "Company Background"
+      content: |
+        ### Our Irrigation Background
+
+        Established in 2014, PKYDrip is headquartered in Shijiazhuang, Hebei Province, China, with its R&D department based in Melbourne, Australia.
+
+        Our background includes drip irrigation solutions, irrigation projects, and the production and supply of PE irrigation pipes and related components. In 2024, we expanded our work in smart controllers, wireless communication and cloud-connected systems.
+
+        Hardware, embedded firmware, local interfaces and remote platforms support our focus on irrigation and fertigation applications.
+
+        **Company figures:** 10+ years of industry experience · 105+ customers served · 6 countries served · smart-control R&D started in 2024.
+
+        [Download the product catalogue](/files/Pkydrip_Smart_Agriculture_Catalogue_2025.pdf).
+
 cta:
-  enable : true
-  # call to action content comes from "_index.md"
+  enable: false
 ---
