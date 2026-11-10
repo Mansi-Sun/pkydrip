@@ -81,7 +81,10 @@ function lines(pairs) {
 export function buildVisitorMail(sub) {
   const first = sub.name === 'there' ? 'Hello' : `Hello ${sub.name}`;
   const oem = sub.formName === 'oem_rfq';
-  const body = oem
+  const demo = sub.formName === 'equipment_demo';
+  const body = demo
+    ? 'Thank you for requesting a PKYDrip equipment demo. We will contact you to confirm the meeting time, demonstration equipment and discussion topics. Your meeting is not booked until we confirm it with you.'
+    : oem
     ? 'Thank you for your OEM / private-label RFQ. We have received it and will first match it to the closest existing PKYDrip platform, then reply within one business day with what can be used directly, what needs customization, and what should be developed separately.'
     : 'Thank you for contacting PKYDrip. We have received your inquiry and will reply within one business day with catalog, pricing direction, and a recommended configuration.';
   const text = [
@@ -97,7 +100,7 @@ export function buildVisitorMail(sub) {
   ].join('\n');
   return {
     to: sub.email,
-    subject: oem ? 'We received your OEM RFQ — PKYDrip' : 'We received your inquiry — PKYDrip',
+    subject: demo ? 'We received your demo request — PKYDrip' : oem ? 'We received your OEM RFQ — PKYDrip' : 'We received your inquiry — PKYDrip',
     text,
     html: `<p>${escape(first)},</p><p>${escape(body)}</p><p>If your request is urgent, message us on WhatsApp: <a href="https://wa.me/8617395297329">+86 173 9529 7329</a></p><p>— PKYDrip<br><a href="https://smart.pky-dripirrigation.com/">smart.pky-dripirrigation.com</a></p>`
   };
@@ -112,6 +115,13 @@ const STAFF_ORDER = [
   ['Country / market', ['market', 'country', 'Country / market']],
   ['Business type', ['business_type', 'Business type']],
   ['Product type', ['product_type', 'product_interest', 'Product interest']],
+  ['Discussion topics', ['topics[]', 'topics']],
+  ['Crop', ['crop']],
+  ['Growing area', ['area']],
+  ['Area unit', ['area_unit']],
+  ['Growing method', ['growing_method']],
+  ['Project stage', ['project_stage']],
+  ['Preferred meeting time', ['preferred_time']],
   ['Zones', ['zones']],
   ['Valve type', ['valve_type']],
   ['Connectivity', ['connectivity']],

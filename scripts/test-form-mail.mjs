@@ -1,3 +1,5 @@
+import assert from "node:assert/strict";
+
 import { handleSubmission, parseSubmission, buildVisitorMail, buildStaffMail, parseEmails } from '../netlify/functions/submission-created/form-mail.mjs';
 
 const sample = {
@@ -70,3 +72,20 @@ console.log('form-mail self-test ok');
 console.log('visitor subject:', visitor.subject);
 console.log('staff to:', staff.to);
 console.log('staff subject:', staff.subject);
+
+// Equipment bookings accept WhatsApp-only leads and retain project context.
+{
+  const demo = parseSubmission({ data: {} , payload: {form_name: 'equipment_demo', data: {
+    name: 'Demo QA', phone: '+971500000000', market: 'UAE / UTC+4',
+    'topics[]': ['Pump & Pressure', 'Custom Equipment & Assembly'],
+    crop: 'Tomatoes', area: '3', area_unit: 'hectares', growing_method: 'Greenhouse',
+    project_stage: 'Existing system upgrade', preferred_time: 'Tuesday 14:00 UTC+4'
+  }}});
+  const staff = buildStaffMail(demo, ['test@example.com']);
+  for (const expected of ['Pump & Pressure', 'Custom Equipment & Assembly', 'Tomatoes', 'hectares', 'Tuesday 14:00 UTC+4', '+971500000000']) {
+    assert.ok(staff.text.includes(expected), expected);
+  }
+  assert.equal(staff.replyTo, undefined);
+  const reply = buildVisitorMail({...demo, email: 'test@example.com'});
+  assert.ok(reply.text.includes('not booked until we confirm'));
+}
