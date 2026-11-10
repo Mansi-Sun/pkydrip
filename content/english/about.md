@@ -1,14 +1,16 @@
 ---
 title: "About PKYDRIP — Irrigation & Fertigation Technology Applications"
 description: "PKYDRIP focuses on practical irrigation and fertigation applications, with project-specific equipment configurations, assembly, testing and direct technical support."
-bg_image: "images/slider-bg.webp"
+bg_image: "images/company/about-showroom-hero.jpg"
 layout: "about"
 aliases: ["/about-us/"]
 draft: false
 
 about:
   enable: true
-  image: "images/company/about.webp"
+  hero_showroom: true
+  image: "images/portfolio/pre-shipping-test.webp"
+  image_alt: "PKYDRIP team member checking a fertigation machine beside fertilizer tanks"
   title: "Focused on Irrigation &amp; Fertigation <br> Technology Applications"
   content: |
     PKYDRIP focuses on practical applications of irrigation and fertigation technology. Starting with your crops, growing area and irrigation conditions, we bring together pumps, pipework, dosing equipment, sensors and controls into project-specific configurations.

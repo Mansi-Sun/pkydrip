@@ -1,3 +1,14 @@
+{{ define "head_extra" }}
+{{ if .Params.about.hero_showroom }}
+<style>
+section.page-title.bg-2{background-size:cover;background-attachment:scroll;background-position:center 65%;background-repeat:no-repeat;background-color:#173d31}
+.page-title .block{margin-left:0}
+.page-title .block h1{font-size:32px;letter-spacing:1px;line-height:1.35}
+@media(max-width:767px){section.page-title.bg-2{background-size:cover;background-position:58% 65%}.page-title .block{margin-left:0}.page-title .block h1{font-size:26px}}
+</style>
+{{ end }}
+{{ end }}
+
 {{ define "main" }}
 
 {{ partial "page-title.html" . }}
@@ -9,7 +20,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="about-img">
-          <img class="img-responsive" src="{{ .image | relURL }}" alt="PKYDRIP Company Logo">
+          <img class="img-responsive" src="{{ .image | relURL }}" alt="{{ .image_alt | default "PKYDRIP Company Logo" }}">
         </div>
       </div>
       <div class="col-md-6">
