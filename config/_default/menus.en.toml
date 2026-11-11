@@ -10,9 +10,11 @@ weight = 1
 
 [[main]]
 parent = "Products"
-name = "Product Directory"
+name = "All Products"
 url = "product/"
 weight = 1
+[main.params]
+  overview = true
 
 [[main]]
 parent = "Products"
@@ -22,13 +24,13 @@ weight = 2
 
 [[main]]
 parent = "Products"
-name = "Fertigation Machines"
+name = "Fertigation Systems"
 url = "product/fertigation-system/"
 weight = 3
 
 [[main]]
 parent = "Products"
-name = "Greenhouse Climate Control"
+name = "Greenhouse Climate Control Systems"
 url = "products/greenhouse-climate-control/"
 weight = 4
 
@@ -164,3 +166,9 @@ weight = 6
 name = "Contact"
 url = "contact/"
 weight = 7
+
+[[main]]
+parent = "For Distributors"
+name = "Custom Fertigation & OEM"
+url = "custom-fertigation-systems/"
+weight = 5

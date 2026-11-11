@@ -1,6 +1,6 @@
 ---
-title: "Irrigation Controllers & Fertigation Machines | PKYDrip"
-description: "Choose standard PKYDrip irrigation controllers, fertigation machines, wireless field devices and greenhouse controls by model and application."
+title: "Irrigation Controllers & Fertigation Systems | PKYDrip"
+description: "Choose standard PKYDrip irrigation controllers, fertigation systems, wireless field devices and greenhouse controls by model and application."
 type: "product-category"
 layout: "product-category/list"
 url: "/product/"
@@ -16,7 +16,7 @@ product_groups:
       - {name: "PKYDrip Grow 16 — Connected Controller", summary: "Industrial irrigation controller with local control, remote management and expansion for field devices, fertigation and greenhouse functions.", image: "images/product/pkydrip-irrigation-controller-family.png", url: "/product/pky-grow16/"}
       - {name: "PKYDrip MC-16 Local — Touchscreen Controller", summary: "STM32-based local irrigation controller with industrial HMI. Runs without cloud access and suits cost-sensitive standalone projects.", image: "images/product/irrigation-control-cabinet/one-system-for-pumps-and-valves.png", url: "/product/farm-irrigation-controller/"}
       - {name: "Irrigation Controller Selection", summary: "Compare controller platforms, valve capacity, communications and project integration before requesting a quotation.", image: "images/product/irrigation-control-cabinet/irrigation-system-hmi-interface.png", url: "/product/irrigation-control-system/"}
-  - title: "Fertigation Machines"
+  - title: "Fertigation Systems"
     description: "The public model identifies channel count. Control method and hydraulic structure are added as configuration codes."
     cards:
       - {name: "PKY-FG301 — 3-Channel Platform", summary: "Three dosing channels with compact peristaltic or higher-flow hydraulic configurations. Control and hydraulic options are selected by suffix.", image: "images/product/pky-fg301-small-flow-peristaltic.webp", url: "/product/pky-fg301/"}
@@ -26,7 +26,7 @@ product_groups:
     description: "Standard equipment that extends the controller and fertigation product lines."
     cards:
       - {name: "PKY-RIC01 Remote Irrigation", summary: "LoRa gateway, solar valve controllers and remote pump signals for distributed irrigation points.", image: "images/scenes/scene-wireless-field.webp", url: "/product/pky-ric01-remote-irrigation-control/"}
-      - {name: "Greenhouse Climate Control", summary: "Local automation for fans, wet walls, curtains and environmental sensors, with optional remote supervision.", image: "images/scenes/scene-climate-greenhouse.webp", url: "/products/greenhouse-climate-control/"}
+      - {name: "Greenhouse Climate Control Systems", summary: "Local automation for fans, wet walls, curtains and environmental sensors, with optional remote supervision.", image: "images/scenes/scene-climate-greenhouse.webp", url: "/products/greenhouse-climate-control/"}
       - {name: "Sensors & Monitoring", summary: "Flow, pressure, soil, weather and EC/pH inputs used in complete irrigation and greenhouse projects.", image: "images/product/monitoring-dashboard.svg", url: "/product/sensors-monitoring/"}
 cta:
   text: "Send the model, quantity, country, application and required delivery time. We will confirm the configuration before quoting."
