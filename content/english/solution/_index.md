@@ -1,20 +1,42 @@
 ---
-title: "Irrigation Solutions by Crop & Farm Type | PKYDrip"
-description: "Agricultural application solutions — open field, greenhouse, orchard, and hydroponic farming — connected to core system architecture and regional markets."
+title: "Irrigation & Fertigation Equipment by Application"
+description: "Select PKYDrip irrigation controllers and fertigation machines for greenhouses, orchards and open fields. Compare equipment and request a manufacturer quotation."
 draft: false
 bg_image: "images/home/deployment-scenarios.webp"
 ---
 
-## Solutions
+PKYDrip manufactures irrigation controllers and fertigation machines for growers, equipment buyers and irrigation contractors. Start with a standard product, then confirm the configuration for your application.
 
-Start from how your farm operates — not from equipment or product catalogs.
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:22px 0;"><a href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20would%20like%20an%20equipment%20quotation.%0ASource%3A%20%2Fsolution%2F%0AEquipment%20or%20model%3A%0AQuantity%3A%0ACountry%3A%0AApplication%3A" style="display:inline-block;background:#17613d;color:#fff;padding:13px 20px;border-radius:8px;font-weight:700;text-decoration:none;">Request an Equipment Quote</a><a href="/product/" style="display:inline-block;border:1px solid #17613d;color:#17613d;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none;">View All Equipment</a></div>
 
-PKYDrip solutions describe **how core systems** (irrigation control, fertigation, climate control) are applied in different agricultural environments. Each solution connects to system architecture and regional market configurations.
+## Compare Equipment
 
-<div style="background:#f7fbf8;border:1px solid #dceee3;border-radius:16px;padding:24px;margin:26px 0;">
-  <h3 style="margin:0 0 10px 0;">System-first logic</h3>
-  <p style="margin:0;color:#5f6f66;line-height:1.7;"><strong>One system → Multiple markets → Multiple solutions.</strong> Choose the application type closest to your farm, then explore the core systems and regional market context that apply to your project.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px;margin:24px 0;">
+  <div style="border:1px solid #dfe9e3;border-radius:14px;padding:22px;background:#fff;">
+    <img src="/images/product/pkydrip-irrigation-controller-family.png" alt="PKYDrip Grow 16 and MC-16 Local irrigation controllers" width="640" height="400" style="width:100%;height:190px;object-fit:contain;" loading="lazy">
+    <h3>Irrigation Controllers</h3>
+    <p>Choose Grow 16 for connected control or MC-16 Local for on-site touchscreen operation. Confirm irrigation zones, valve outputs and pump interfaces before ordering.</p>
+    <p><a href="/product/pky-grow16/">View Grow 16 →</a><br><a href="/product/farm-irrigation-controller/">View MC-16 Local →</a></p>
+    <a href="/product/irrigation-control-system/" style="font-weight:700;">Compare Controllers →</a>
+  </div>
+  <div style="border:1px solid #dfe9e3;border-radius:14px;padding:22px;background:#fff;">
+    <img src="/images/product/pky-three-fertilizer-one-acid-peristaltic-system.png" alt="PKYDrip multi-channel fertigation equipment" width="640" height="400" style="width:100%;height:190px;object-fit:contain;" loading="lazy">
+    <h3>Fertigation Machines</h3>
+    <p>Compare FG301, FG401 and FG501 platforms with 3, 4 or 5 total dosing channels. Select dosing control, EC/pH options and hydraulic configuration to match your requirements.</p>
+    <a href="/product/fertigation-system/" style="font-weight:700;">View Fertigation Models →</a>
+  </div>
 </div>
+
+## Select Equipment for Your Application
+
+| Application | Equipment to consider | What to confirm |
+| --- | --- | --- |
+| Greenhouse irrigation and fertigation | [FG301 / FG401 / FG501](/product/fertigation-system/) | Total dosing channels, EC/pH requirements and irrigation flow |
+| Orchard and open-field irrigation | [Grow 16 or MC-16 Local](/product/irrigation-control-system/) | Zone count, valve voltage, pump interface and connectivity |
+| Existing irrigation upgrade | [Irrigation controllers](/product/irrigation-control-system/) | Photos of existing controls, valve type and required functions |
+| Hydroponic and soilless cultivation | [Fertigation equipment](/product/fertigation-system/) | Nutrient dosing, EC/pH control and hydraulic requirements |
+
+Final model, included components and optional items are confirmed in the quotation.
 
 ## Application Solutions
 
@@ -83,12 +105,8 @@ Markets are **system contexts**, not translations. Each region adapts the same c
   <a href="/system/climate-control-system/" style="display:block;background:#ffffff;border:1px solid #dfe8e3;border-radius:12px;padding:16px;font-weight:700;">Climate Control System</a>
 </div>
 
-## Discuss Your Project
+## Request an Equipment Quote
 
-<div style="background:#f7f9fb;border:1px solid #e8eef3;border-radius:14px;padding:24px;margin-top:20px;">
-  <a href="/contact/" style="display:inline-block;background:#1a3a2a;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;margin-right:12px;">Contact PKYDrip</a>
-  <a href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20need%20help%20choosing%20an%20agricultural%20solution.%0A-%20Farm%20region%3A%20%0A-%20Application%3A%20%0A-%20Crop%3A%20%0A-%20Water%20source%3A%20"
-     style="display:inline-block;background:#25D366;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;">
-    WhatsApp
-  </a>
-</div>
+Send the equipment or model, quantity, destination country and a short application description. You do not need a complete farm design to start an equipment enquiry. We will confirm the technical details needed for model selection and quotation.
+
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:22px 0;"><a href="https://wa.me/8617395297329?text=Hello%20PKYDrip%2C%20I%20would%20like%20an%20equipment%20quotation.%0ASource%3A%20%2Fsolution%2F%0AEquipment%20or%20model%3A%0AQuantity%3A%0ACountry%3A%0AApplication%3A" style="display:inline-block;background:#17613d;color:#fff;padding:13px 20px;border-radius:8px;font-weight:700;text-decoration:none;">Request an Equipment Quote</a><a href="/product/" style="display:inline-block;border:1px solid #17613d;color:#17613d;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none;">View All Equipment</a></div>
