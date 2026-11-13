@@ -2806,3 +2806,15 @@ html[lang="en-US"] .page-home .home-section-title h2 {
   .page-home .home-cta .block h2,
   .page-home .home-cta .block p { text-align: left; }
 }
+
+// Keep the partner enquiry form within narrow mobile viewports.
+.partner-application-layout > *,
+.partner-qualification-form fieldset,
+.partner-qualification-form label { min-width: 0; }
+.partner-qualification-form select { max-width: 100%; }
+.partner-application-page { overflow-wrap: anywhere; }
+@media (max-width: 991px) {
+  .partner-application-layout { grid-template-columns: minmax(0, 1fr); }
+}
+.partner-form .partner-application-consent { display: flex; align-items: flex-start; margin-top: 1.5rem; }
+.partner-form .partner-application-consent input { flex: 0 0 20px; width: 20px; height: 20px; min-height: 20px; padding: 0; margin-top: 3px; }

@@ -70,33 +70,9 @@ url = "solution/irrigation-retrofit-upgrade/"
 weight = 5
 
 [[main]]
-name = "For Distributors"
+name = "Partners & OEM"
 url = "become-a-distributor/"
 weight = 3
-
-[[main]]
-parent = "For Distributors"
-name = "Become a Distributor"
-url = "become-a-distributor/"
-weight = 1
-
-[[main]]
-parent = "For Distributors"
-name = "Book a Live Demo"
-url = "book-a-demo/"
-weight = 2
-
-[[main]]
-parent = "For Distributors"
-name = "API & Integrations"
-url = "api-integration/"
-weight = 3
-
-[[main]]
-parent = "For Distributors"
-name = "OEM / Private Label"
-url = "oem-smart-irrigation-controller/"
-weight = 4
 
 [[main]]
 name = "Support"
@@ -148,7 +124,7 @@ url = "solution/"
 weight = 3
 
 [[footer]]
-name = "For Distributors"
+name = "Partners & OEM"
 url = "become-a-distributor/"
 weight = 4
 
@@ -167,8 +143,8 @@ name = "Contact"
 url = "contact/"
 weight = 7
 
+
 [[main]]
-parent = "For Distributors"
-name = "Custom Fertigation & OEM"
-url = "custom-fertigation-systems/"
-weight = 5
+name = "Live Demo"
+url = "live-demo/"
+weight = 4
