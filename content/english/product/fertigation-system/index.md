@@ -13,8 +13,8 @@ hero:
   capabilities: ["FG301 · 3 channels", "FG401 · 4 channels", "FG501 · 5 channels"]
   image: "images/product/pky-three-fertilizer-one-acid-peristaltic-system.png"
   image_alt: "PKYDrip four-channel peristaltic fertigation machine"
-  cta_primary: {label: "Request Model Selection", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20a%20fertigation%20machine.%0AApplication%3A%0AFertilizer%20and%20acid%20channels%3A%0AEC%2FpH%20automatic%20control%3A%0AMixing%20tank%3A%0ARequired%20flow%3A%0APower%20supply%3A%0ACountry%3A"}
-  cta_secondary: {label: "Browse All Products", url: "/product/"}
+  cta_primary: {label: "Discuss on WhatsApp", url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20a%20fertigation%20machine.%0AApplication%3A%0AFertilizer%20and%20acid%20channels%3A%0AEC%2FpH%20automatic%20control%3A%0AMixing%20tank%3A%0ARequired%20flow%3A%0APower%20supply%3A%0ACountry%3A"}
+  cta_secondary: {label: "Email Your Requirements", url: "mailto:info@pky-dripirrigation.com?subject=Fertigation%20System%20Inquiry"}
 feature_blocks:
   - title: "The model number starts with total dosing channels"
     body: "FG301, FG401 and FG501 identify the 3-, 4- and 5-channel platforms. The total includes fertilizer and acid/alkali channels. For example, three fertilizer channels plus one acid channel is a four-channel FG401 platform."
@@ -53,6 +53,11 @@ doc_sections:
   - title: "Example order language"
     body: "PKY-FG401-P-A-MT-GH identifies a four-channel peristaltic platform with automatic EC/pH control, mixing tank and greenhouse application. PKY-FG401-H-B-DI-OF-Q80-100-V380-440 identifies an open-field high-flow project configuration; Q and voltage values remain order-specific and require engineering confirmation."
     bullets: ["Examples explain the code and do not promise stock, price or lead time", "Hydraulic capacity, pump power and pipe size are confirmed from project data", "Special software or mechanical changes use SPxx and require MOQ and technical review"]
+product_cta:
+  title: "Discuss Your Fertigation Project with PKYDRIP"
+  text: "Tell us about your crops, irrigation zones and equipment needs. Discuss flow, pressure, pump selection, custom configurations and assembly support directly with our team. Not sure of your specifications? We can help you identify the next steps."
+  button_label: "Discuss on WhatsApp"
+  button_url: "https://wa.me/8617395297329?text=Hi%20PKYDrip%2C%20I%20need%20a%20fertigation%20machine.%0AApplication%3A%0AFertilizer%20and%20acid%20channels%3A%0AEC%2FpH%20automatic%20control%3A%0AMixing%20tank%3A%0ARequired%20flow%3A%0APower%20supply%3A%0ACountry%3A"
 faq:
   title: "Before we quote"
   items:
