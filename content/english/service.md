@@ -1,6 +1,6 @@
 ---
-title: "Service"
-description: "this is meta description"
+title: "Irrigation & Fertigation Technical Support"
+description: "Discuss irrigation and fertigation equipment selection, flow and pressure, commissioning guidance, remote technical support and product assembly with PKYDRIP."
 bg_image: "images/feature-bg.jpg"
 layout: "service"
 draft: false
@@ -8,15 +8,8 @@ draft: false
 ########################### about service #############################
 about:
   enable : true
-  title : "Creative UX/UI Design Agency"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta corporis odit, optio
-          cum! Accusantium numquam ab, natus excepturi architecto earum ipsa aliquam, illum, omnis rerum, eveniet
-          officia nihil. Eum quod iure nulla, soluta architecto distinctio. Nesciunt odio ullam expedita, neque fugit
-          maiores sunt perferendis placeat autem animi, nihil quis suscipit quibusdam ut reiciendis doloribus natus nemo
-          id quod illum aut culpa perspiciatis consequuntur tempore? Facilis nam vitae iure quisquam eius harum
-          consequatur sapiente assumenda, officia voluptas quas numquam placeat, alias molestias nisi laudantium
-          nesciunt perspiciatis suscipit hic voluptate corporis id distinctio earum. Dolor reprehenderit fuga dolore
-          officia adipisci neque!"
+  title : "Work Directly with the PKYDRIP Technical Team"
+  content : "Discuss your irrigation and fertigation requirements with our team, from flow, pressure and pump selection to equipment configuration and commissioning guidance. We help identify a suitable standard product or review a custom configuration. Installation, training, remote support and assembly assistance are agreed for the selected equipment and project. [Discuss your project on WhatsApp](https://wa.me/8617395297329) or [email your requirements](mailto:info@pky-dripirrigation.com)."
   image : "images/company/company-group-pic.jpg"
 
 
@@ -25,22 +18,22 @@ featured_service:
   enable : true
   service_item:
     # featured service item loop
-    - name : "Interface Design"
+    - name : "Equipment Selection & Configuration"
       icon : "fas fa-flask"
       color : "primary"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+      content : "Review irrigation zones, required flow, operating pressure, power supply and dosing requirements. Confirm the equipment configuration and supply scope before ordering."
 
     # featured service item loop
-    - name : "Product Branding"
+    - name : "Commissioning & Technical Support"
       icon : "fas fa-leaf"
       color : "primary-dark"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+      content : "Discuss wiring, initial setup and troubleshooting with the PKYDRIP team. Remote guidance and commissioning support are confirmed for your equipment and site responsibilities."
 
     # featured service item loop
-    - name : "Game Development"
+    - name : "Assembly & Partner Training"
       icon : "fas fa-lightbulb"
       color : "primary-darker"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+      content : "Discuss product assembly, installation training and maintenance guidance for your team. Technical documentation, training scope and any OEM requirements are agreed for the project."
 
 
 ############################# Service ###############################
