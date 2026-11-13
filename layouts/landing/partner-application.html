@@ -1,11 +1,21 @@
 {{ define "main" }}
 <article class="partner-application-page">
   <section class="partner-application-hero">
-    <div class="container">
+    <div class="container enquiry-hero-grid">
+      <div>
       <p class="partner-eyebrow">{{ .Params.hero.eyebrow }}</p>
       <h1>{{ .Params.hero.title }}</h1>
       <p class="partner-application-hero__subtitle">{{ .Params.hero.subtitle }}</p>
+      <div class="enquiry-actions">
+        <a class="partner-btn partner-btn--primary" href="https://wa.me/8617395297329?text=Hi%20PKYDRIP%2C%20I%20saw%20your%20equipment%20and%20would%20like%20product%20information." target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="partner-btn enquiry-secondary" href="#product-enquiry">Get Product Information</a>
+      </div>
       <p class="partner-application-hero__note">{{ .Params.hero.note }}</p>
+      </div>
+      <figure class="enquiry-equipment">
+        <img src="/images/product/pky-three-fertilizer-one-acid-peristaltic-system.png" alt="PKYDRIP multi-channel fertigation equipment" width="640" height="640" fetchpriority="high">
+        <figcaption>PKYDRIP fertigation equipment · Configuration selected for your project</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -13,12 +23,14 @@
     <div class="container">
       <div class="partner-application-layout">
         <aside class="partner-application-aside">
-          <p class="partner-kicker">Start Small. Grow Together.</p>
-          <h2>One project is a practical starting point</h2>
-          <p>Discuss equipment sales, local installation and service, system integration or a product under your own brand.</p>
-          <p>After reviewing your interests, our team will contact you to discuss product fit and the next step. Detailed technical and commercial questions can follow in a Zoom meeting.</p>
-          <p><a href="/become-a-distributor/">Partners &amp; OEM overview</a></p>
-          <p><a href="https://wa.me/8617395297329?text=Hi%20PKYDRIP%2C%20I%20would%20like%20to%20discuss%20a%20partnership." target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          <p class="partner-kicker">What would you like to improve?</p>
+          <h2>Start with your equipment or project question</h2>
+          <div class="enquiry-topic"><h3>Irrigation control</h3><p>Discuss irrigation zones, valve and pump control, and upgrading an existing installation.</p></div>
+          <div class="enquiry-topic"><h3>Fertilizer dosing</h3><p>Explore dosing channels, flow, pressure and pump selection for your fertigation setup.</p></div>
+          <div class="enquiry-topic"><h3>Custom equipment &amp; assembly</h3><p>Discuss starting with 1–3 fertigation units, depending on configuration, plus customization and product assembly support.</p></div>
+          <p><strong>Not sure which model?</strong> Tell us what you grow or send a photo of your current system on WhatsApp. We can start there.</p>
+          <p>Prefer to see equipment first? Mention a Zoom demo in your enquiry. We will confirm a time and the available demonstration equipment with you.</p>
+          <p>Already exploring resale or OEM? <a href="/become-a-distributor/">See cooperation options</a>.</p>
         </aside>
 
         <form class="partner-form partner-qualification-form" name="pkydrip-partner-application" method="POST" action="/message_sent/" data-netlify="true" netlify-honeypot="bot-field" id="partnerQualificationForm">
@@ -30,31 +42,23 @@
           {{ partial "lead-source-fields.html" . }}
           <p class="partner-form__hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
 
-          <div class="partner-application-reference">
-            <span>Application reference</span>
-            <strong id="partnerApplicationId">Generating…</strong>
-            <small>Reference only; your enquiry is received after successful submission.</small>
+          <div id="product-enquiry" class="enquiry-form-intro">
+            <h2>Get Product Information</h2>
+            <p>Leave your email and we will follow up with product details or questions to help select a configuration. No partnership application required.</p>
           </div>
-
           <fieldset>
-            <legend>Your business and interests</legend>
+            <legend class="sr-only">Your contact details and interests</legend>
             <div class="partner-form__grid">
-              <label><span>Contact name *</span><input type="text" name="name" required autocomplete="name"></label>
-              <label><span>Company / team *</span><input type="text" name="company" required autocomplete="organization"></label>
-              <label><span>Country / market *</span><input type="text" name="country" required autocomplete="country-name"></label>
+              <label><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
               <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
-              <label><span>WhatsApp (optional)</span><input type="tel" name="whatsapp" autocomplete="tel"></label>
-              <label><span>Website or social profile (optional)</span><input type="url" name="website" placeholder="https://"></label>
-              <label><span>Cooperation interest *</span><select name="cooperation_role" required><option value="">Select one</option><option>Dealer / Reseller</option><option>Installation / Service</option><option>System Integration</option><option>OEM / White Label</option><option>Not sure — let's discuss</option></select></label>
-              <label><span>Product interest *</span><select name="primary_product_interest" required><option value="">Select one</option><option>Irrigation controllers</option><option>Fertigation systems</option><option>Wireless valve control</option><option>Greenhouse controls</option><option>Multiple products / please recommend</option></select></label>
-              <label class="partner-form__wide"><span>Preferred next step (optional)</span><select name="first_step"><option value="">Please recommend</option><option>Zoom technical discussion</option><option>Live equipment demonstration</option><option>Sample evaluation</option><option>Customer project quotation</option></select></label>
-              <label class="partner-form__wide"><span>Your project or questions (optional)</span><textarea name="message" rows="4" placeholder="Tell us what you want to sell, install or develop. Include your first project if you have one."></textarea></label>
+              <label><span>Country (optional)</span><input type="text" name="country" autocomplete="country-name"></label>
+              <label><span>WhatsApp (optional)</span><input type="tel" name="whatsapp" autocomplete="tel" placeholder="Include country code"></label>
+              <label class="partner-form__wide"><span>Interested in (optional)</span><select name="primary_product_interest"><option value="">Please help me choose</option><option>Irrigation controllers</option><option>Fertigation equipment</option><option>Wireless valve control</option><option>Custom equipment / assembly support</option><option>Live equipment demo</option></select></label>
+              <label class="partner-form__wide"><span>Your question (optional)</span><textarea name="message" rows="3" placeholder="For example: I grow vegetables and want to automate watering. Or: Please send fertigation equipment details."></textarea></label>
             </div>
           </fieldset>
-
-          <label class="partner-application-consent"><input type="checkbox" name="policy_acknowledged" value="yes" required> <span>I understand that this application does not create exclusivity, pricing rights or a distributor agreement. Final terms require PKYDrip review and a written agreement.</span></label>
-          <button class="partner-btn partner-btn--primary partner-form__submit" type="submit">Send Partnership Enquiry</button>
-          <p class="partner-form__privacy">Your information is used only to evaluate and follow up potential PKYDrip cooperation. Confidential technical information can be exchanged after an NDA is agreed.</p>
+          <button class="partner-btn partner-btn--primary partner-form__submit" type="submit">Send My Enquiry</button>
+          <p class="partner-form__privacy">We use your contact details to respond to this enquiry. <a href="/privacy-policy/">Privacy policy</a>.</p>
         </form>
       </div>
     </div>
@@ -72,7 +76,7 @@
   }
   var display = document.getElementById('partnerApplicationId');
   var input = document.getElementById('partnerApplicationIdInput');
-  if (!display || !input) return;
+  if (!input) return;
   var storageKey = 'pky_partner_application_id';
   var reference = '';
   try { reference = sessionStorage.getItem(storageKey) || ''; } catch (e) {}
@@ -80,7 +84,7 @@
     reference = createReference();
     try { sessionStorage.setItem(storageKey, reference); } catch (e) {}
   }
-  display.textContent = reference;
+  if (display) display.textContent = reference;
   input.value = reference;
   var form = document.getElementById('partnerQualificationForm');
   if (form) {

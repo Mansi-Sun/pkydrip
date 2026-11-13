@@ -1,15 +1,14 @@
 ---
-title: "PKYDrip Partner Application"
-description: "Tell PKYDRIP about your business, market and product interests. Start a discussion about equipment sales, local service, integration or OEM."
+title: "Explore Irrigation & Fertigation Equipment | PKYDRIP"
+description: "Explore PKYDRIP irrigation controllers and fertigation equipment. Ask for product details, discuss flow and pressure, or arrange a live equipment demo with our team."
 layout: "partner-application"
 type: "landing"
 url: "/partner-application/"
 draft: false
 page_code: "PC-PARTNER-APPLICATION-01"
 hero:
-  eyebrow: "Partners & OEM"
-  title: "Start a Partnership Conversation"
-  subtitle: "Start with one project, an evaluation unit or a product idea. Share a few details and our team will discuss the next step with you."
-  note: "Submitting this form does not create an exclusive territory or distributor agreement. Cooperation terms are confirmed only in writing after review and practical evaluation."
+  eyebrow: "Irrigation & Fertigation Equipment"
+  title: "Find the Right Equipment for Your Irrigation Project"
+  subtitle: "Control irrigation zones, manage fertilizer dosing and discuss the equipment your project needs — directly with the PKYDRIP team."
+  note: "Just exploring? Start with product information or a live equipment demo. No detailed design needed to get in touch."
 ---
-

@@ -2818,3 +2818,21 @@ html[lang="en-US"] .page-home .home-section-title h2 {
 }
 .partner-form .partner-application-consent { display: flex; align-items: flex-start; margin-top: 1.5rem; }
 .partner-form .partner-application-consent input { flex: 0 0 20px; width: 20px; height: 20px; min-height: 20px; padding: 0; margin-top: 3px; }
+
+/* Product-first entry for visitors arriving from advertising. */
+.enquiry-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 36px; }
+.enquiry-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.enquiry-secondary { color: #fff; border: 1px solid rgba(255,255,255,.65); }
+.enquiry-secondary:hover { color: #173d31; background: #fff; }
+.enquiry-equipment { margin: 0; background: #fff; border-radius: 16px; padding: 20px; }
+.enquiry-equipment img { width: 100%; height: auto; max-height: 380px; object-fit: contain; }
+.enquiry-equipment figcaption { color: #52685e; font-size: .85rem; line-height: 1.5; margin-top: 12px; }
+.enquiry-topic h3 { font-size: 1.1rem; color: #173d31; margin: 24px 0 8px; }
+.enquiry-form-intro { scroll-margin-top: 110px; }
+.enquiry-form-intro h2 { color: #173d31; font-size: 1.6rem; }
+.enquiry-form-intro p { color: #52685e; }
+@media (max-width: 767px) {
+  .enquiry-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .enquiry-actions .partner-btn { width: 100%; text-align: center; }
+  .enquiry-equipment img { max-height: 240px; }
+}
