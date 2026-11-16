@@ -1,0 +1,20 @@
+{
+  "title": "FG301 OEM Fertigation Control System | Terminal Outputs | PKYDrip",
+  "description": "FG301 three-channel fertigation control package with terminal outputs, drawings and cloud platform support. No water pump or frame. Private-label supply for equipment partners.",
+  "layout": "fertigation-oem",
+  "url": "/landing/fg301-oem-control-system/",
+  "draft": false,
+  "page_code": "FG301-OEM-CONTROL",
+  "form_name": "fg301_oem_control",
+  "market": "",
+  "market_label": "FG301 \u2022 Control system supply",
+  "product_page": true,
+  "hero_title": "Build your fertigation equipment around FG301.",
+  "hero_text": "A three-channel fertigation control package for suppliers and integrators. Use terminal outputs to connect your locally selected equipment, and sell the configured system under your own brand.",
+  "hero_support": "Control system, drawings and cloud platform support. Water pump and equipment frame are not included.",
+  "primary_cta": "Request FG301 Configuration & Price",
+  "whatsapp_text": "Hi PKYDrip, I am interested in the FG301 control system without water pump or frame.\nCountry:\nCompany:\nRequirement: own logo / standard equipment / configuration changes\nEstimated quantity (if known):",
+  "regional_title": "One control platform. Local equipment integration.",
+  "regional_text": "Available for US and Australian partner inquiries. Supply voltage, output types, connected loads and applicable product requirements are confirmed for the order before production.",
+  "spelling": "customization"
+}

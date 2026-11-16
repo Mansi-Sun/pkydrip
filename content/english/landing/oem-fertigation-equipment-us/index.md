@@ -1,0 +1,23 @@
+{
+  "title": "OEM Fertigation Equipment for US Suppliers | PKYDrip",
+  "description": "Sell fertigation equipment under your own brand in United States. Start with existing PKYDrip products, configuration support, drawings and cloud platform options.",
+  "layout": "fertigation-oem",
+  "url": "/landing/oem-fertigation-equipment-us/",
+  "draft": false,
+  "page_code": "FERTIGATION-OEM-US",
+  "form_name": "fertigation_oem_us",
+  "market": "United States",
+  "market_label": "For US equipment suppliers",
+  "product_page": false,
+  "hero_title": "Your brand. Our fertigation technology.",
+  "hero_text": "Add fertigation equipment to your product range in the United States. Start with existing PKYDrip products, then choose the configuration and branding your customers need.",
+  "hero_support": "Manufacturing, drawings and cloud platform support from PKYDrip. Local equipment integration and installation by your team.",
+  "image": "/images/pkydrip-fertigation/pkydrip-oem.webp",
+  "image_alt": "PKYDrip multi-channel equipment showing a private-label branding example",
+  "image_caption": "Private-label equipment example. Channel count, hydraulic equipment and branding are defined in each order.",
+  "primary_cta": "Request Equipment & OEM Pricing",
+  "whatsapp_text": "Hi PKYDrip, I am interested in fertigation equipment for the United States.\nCompany:\nProduct interest: complete equipment / FG301 control system\nRequirement: standard equipment / own logo / configuration changes\nEstimated quantity (if known):",
+  "regional_title": "Build your US product offering",
+  "regional_text": "Select a US-market electrical and connection configuration with our team before ordering. Your local integration team confirms installation and applicable product approval requirements.",
+  "spelling": "customization"
+}
