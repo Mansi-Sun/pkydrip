@@ -4,8 +4,6 @@ description: "PKY-EVC01 is an electric valve controller designed for irrigation 
 type: "product"
 layout: "product/single"
 
-image: "/images/product/pky-evc01/cover.jpg"
-
 categories:
   - irrigation-controller
   - valve-controller

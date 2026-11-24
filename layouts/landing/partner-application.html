@@ -1,0 +1,98 @@
+{{ define "main" }}
+<article class="partner-application-page">
+  <section class="partner-application-hero">
+    <div class="container enquiry-hero-grid">
+      <div>
+      <p class="partner-eyebrow">{{ .Params.hero.eyebrow }}</p>
+      <h1>{{ .Params.hero.title }}</h1>
+      <p class="partner-application-hero__subtitle">{{ .Params.hero.subtitle }}</p>
+      <div class="enquiry-actions">
+        <a class="partner-btn partner-btn--primary" href="https://wa.me/8617395297329?text=Hi%20PKYDRIP%2C%20I%20saw%20your%20equipment%20and%20would%20like%20product%20information." target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="partner-btn enquiry-secondary" href="#product-enquiry">Get Product Information</a>
+      </div>
+      <p class="partner-application-hero__note">{{ .Params.hero.note }}</p>
+      </div>
+      <figure class="enquiry-equipment">
+        <img src="/images/product/pky-three-fertilizer-one-acid-peristaltic-system.png" alt="PKYDRIP multi-channel fertigation equipment" width="640" height="640" fetchpriority="high">
+        <figcaption>PKYDRIP fertigation equipment · Configuration selected for your project</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="partner-application-main">
+    <div class="container">
+      <div class="partner-application-layout">
+        <aside class="partner-application-aside">
+          <p class="partner-kicker">What would you like to improve?</p>
+          <h2>Start with your equipment or project question</h2>
+          <div class="enquiry-topic"><h3>Irrigation control</h3><p>Discuss irrigation zones, valve and pump control, and upgrading an existing installation.</p></div>
+          <div class="enquiry-topic"><h3>Fertilizer dosing</h3><p>Explore dosing channels, flow, pressure and pump selection for your fertigation setup.</p></div>
+          <div class="enquiry-topic"><h3>Custom equipment &amp; assembly</h3><p>Discuss starting with 1–3 fertigation units, depending on configuration, plus customization and product assembly support.</p></div>
+          <p><strong>Not sure which model?</strong> Tell us what you grow or send a photo of your current system on WhatsApp. We can start there.</p>
+          <p>Prefer to see equipment first? Mention a Zoom demo in your enquiry. We will confirm a time and the available demonstration equipment with you.</p>
+          <p>Already exploring resale or OEM? <a href="/become-a-distributor/">See cooperation options</a>.</p>
+        </aside>
+
+        <form class="partner-form partner-qualification-form" name="pkydrip-partner-application" method="POST" action="/message_sent/" data-netlify="true" netlify-honeypot="bot-field" id="partnerQualificationForm">
+          <input type="hidden" name="form-name" value="pkydrip-partner-application">
+          <input type="hidden" name="page_code" value="{{ .Params.page_code }}">
+          <input type="hidden" name="application_id" id="partnerApplicationIdInput">
+          <input type="hidden" name="application_status" value="new">
+          <input type="hidden" name="follow_up_queue" value="partner-development">
+          {{ partial "lead-source-fields.html" . }}
+          <p class="partner-form__hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+
+          <div id="product-enquiry" class="enquiry-form-intro">
+            <h2>Get Product Information</h2>
+            <p>Leave your email and we will follow up with product details or questions to help select a configuration. No partnership application required.</p>
+          </div>
+          <fieldset>
+            <legend class="sr-only">Your contact details and interests</legend>
+            <div class="partner-form__grid">
+              <label><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
+              <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
+              <label><span>Country (optional)</span><input type="text" name="country" autocomplete="country-name"></label>
+              <label><span>WhatsApp (optional)</span><input type="tel" name="whatsapp" autocomplete="tel" placeholder="Include country code"></label>
+              <label class="partner-form__wide"><span>Interested in (optional)</span><select name="primary_product_interest"><option value="">Please help me choose</option><option>Irrigation controllers</option><option>Fertigation equipment</option><option>Wireless valve control</option><option>Custom equipment / assembly support</option><option>Live equipment demo</option></select></label>
+              <label class="partner-form__wide"><span>Your question (optional)</span><textarea name="message" rows="3" placeholder="For example: I grow vegetables and want to automate watering. Or: Please send fertigation equipment details."></textarea></label>
+            </div>
+          </fieldset>
+          <button class="partner-btn partner-btn--primary partner-form__submit" type="submit">Send My Enquiry</button>
+          <p class="partner-form__privacy">We use your contact details to respond to this enquiry. <a href="/privacy-policy/">Privacy policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</article>
+
+<script>
+(function () {
+  function pad(value) { return String(value).padStart(2, '0'); }
+  function createReference() {
+    var now = new Date();
+    var date = now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate());
+    var random = Math.random().toString(36).slice(2, 6).toUpperCase();
+    return 'PKY-PA-' + date + '-' + random;
+  }
+  var display = document.getElementById('partnerApplicationId');
+  var input = document.getElementById('partnerApplicationIdInput');
+  if (!input) return;
+  var storageKey = 'pky_partner_application_id';
+  var reference = '';
+  try { reference = sessionStorage.getItem(storageKey) || ''; } catch (e) {}
+  if (!reference) {
+    reference = createReference();
+    try { sessionStorage.setItem(storageKey, reference); } catch (e) {}
+  }
+  if (display) display.textContent = reference;
+  input.value = reference;
+  var form = document.getElementById('partnerQualificationForm');
+  if (form) {
+    form.addEventListener('submit', function () {
+      try { sessionStorage.removeItem(storageKey); } catch (e) {}
+    });
+  }
+})();
+</script>
+{{ end }}
+

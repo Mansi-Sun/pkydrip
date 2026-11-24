@@ -30,7 +30,7 @@ solutions:
   items:
     - "Autonomous local operation — zone schedules, fertigation dosing and EC/pH control run on the controller; the cloud is optional, not required"
     - "Power-cut resilient — low-power design pairs with solar supply; systems resume correctly after outages"
-    - "Public price ranges and MOQ — published on our distributor page, quoted in USD, no agent markup games"
+    - "Written model-based partner quotations — configuration, MOQ, lead time and support scope stated clearly"
     - "Data when available — records sync to the cloud whenever 4G or WiFi appears, so you keep the audit trail"
     - "Distributor-backed installation — local teams install and support, our engineers back them up remotely on WhatsApp"
 proof:
@@ -56,7 +56,7 @@ numbers:
     - a: "Do far blocks need 4G?"
       b: "No — autonomous operation offline; data syncs when a link is available"
     - a: "What does a system cost?"
-      b: "Public price ranges per product line on our distributor page (USD)"
+      b: "Written partner quotations by model, configuration and quantity"
     - a: "Who installs it?"
       b: "Our South African distributors and their installation teams"
     - a: "Who supports it?"
@@ -69,15 +69,15 @@ local_entry:
       text: "Join the Early Access pilot for farms without reliable internet or power — limited slots this season."
       url: "/early-access/offgrid-farm-program/"
       cta: "Apply for the pilot"
-    - title: "Founding Distributor Terms"
-      text: "The first 50 South African distribution partners lock in protected territory and launch pricing."
+    - title: "Distributor Onboarding"
+      text: "Start with a paid demo unit or real project. Territory protection is considered only after repeat business and local service capability are proven."
       url: "/early-access/distributor-first-50/"
-      cta: "Claim your region"
+      cta: "Review the partner policy"
 apply:
   title: "Tell Us About Your Farm or Business"
   text: "Send your region, crops and area on WhatsApp — we reply with a practical configuration and honest pricing, usually within one working day."
 related:
-  - label: "Become a Distributor — price ranges & MOQ"
+  - label: "Become a Distributor — policy and application"
     url: "/become-a-distributor/"
   - label: "Off-Grid / Non-Network Area Solution"
     url: "https://docs.pky-dripirrigation.com/pky-drip-automatic-irrigation-and-fertilization-system-tailored-for-non-network-areas/"

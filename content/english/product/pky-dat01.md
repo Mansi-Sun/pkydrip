@@ -5,8 +5,6 @@ type: "product"
 layout: "product/single"
 
 bg_image: ""
-image: "/images/product/pky-dat01.webp"
-
 categories:
   - irrigation-controller
   - sensor

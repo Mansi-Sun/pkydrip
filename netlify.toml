@@ -25,6 +25,12 @@
   status = 200
   force = true
 
+# 2026-10-20 Live demo API caching: Netlify [[headers]] rules do NOT apply to
+# proxy responses (verified in production — they are ignored). Caching is
+# governed by the upstream cloud API, which already sends
+# "Cache-Control: public, max-age=10". live-demo.js uses fetch cache:'default'
+# so the browser honours it; keep upstream caching as the single source of truth.
+
 # Permanently redirect the legacy www apex to the smart. subdomain, preserving the full path.
 [[redirects]]
   from = "https://www.pky-dripirrigation.com/*"

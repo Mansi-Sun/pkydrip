@@ -1,0 +1,27 @@
+{{/* Commercial status strip — factual, no invented price, MOQ or lead-time numbers */}}
+{{ with .Params.commercial_status }}
+{{ if .items }}
+<style>
+  .eng-commercial-status { background: #f7f9f8; }
+  .eng-commercial-card { padding: .9rem 1rem; background: #fff; border: 1px solid rgba(30,77,63,.14); border-radius: .5rem; }
+  .eng-commercial-label { margin-bottom: .25rem; color: #68736f; font-size: .76rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+  .eng-commercial-value { color: #1e4d3f; font-size: .94rem; font-weight: 600; line-height: 1.35; }
+</style>
+<section class="py-4 border-bottom eng-commercial-status" aria-label="Commercial status">
+  <div class="container">
+    {{ with .title }}<h2 class="h5 mb-3">{{ . }}</h2>{{ end }}
+    <div class="row g-2 g-md-3">
+      {{ range .items }}
+      <div class="col-6 col-lg-3">
+        <div class="eng-commercial-card h-100">
+          <div class="eng-commercial-label">{{ .label }}</div>
+          <div class="eng-commercial-value">{{ .value }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ with .note }}<p class="small text-muted mt-3 mb-0">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

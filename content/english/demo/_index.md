@@ -11,3 +11,5 @@ These demo systems are commonly used for:
 - training sessions
 - technical presentations
 - irrigation project discussions
+
+For live demonstration data and a Zoom equipment meeting, visit [PKYDRIP Live Demo](/live-demo/). This directory describes physical demonstration configurations.

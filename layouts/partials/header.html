@@ -47,7 +47,7 @@
                   {{ range .Children }}
                     {{ $childURL := .URL | absLangURL }}
                     {{ $isChildActive := eq $childURL $pageURL }}
-                    <li>
+                    <li{{ if .Params.overview }} class="pkydrip-product-overview"{{ end }}>
                       <a class="dropdown-item {{ if $isChildActive }}current{{ end }}"
                          {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
                          href="{{ if findRE `^#` .URL }}
@@ -81,6 +81,12 @@
   </div>
 </header>
 <style>
+  .pkydrip-product-overview {
+    border-bottom: 1px solid #dfe5e2;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+
   .pkydrip-nav-dropdown {
     position: relative;
   }

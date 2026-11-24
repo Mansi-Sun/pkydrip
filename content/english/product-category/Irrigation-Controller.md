@@ -22,7 +22,7 @@ products:
   - name: "Wireless Valve Controller (LoRa)"
     summary: "Battery/solar-ready valve control for distributed irrigation zones."
     image: "images/product/pky-ic05-plus.webp"
-    url: "/product/pky-pky-ic05-plus/"
+    url: "/product/pky-ic05-plus/"
 ---
 
 ### One control logic. Different implementations.

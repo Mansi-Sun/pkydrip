@@ -7,6 +7,9 @@
  *
  * No login, no password, no access form gate.
  * Polling (not SSE): Netlify proxy times out at ~26s.
+ * 2026-10-20: fetch cache:'default' — the upstream cloud API already sends
+ * "Cache-Control: public, max-age=10" (Netlify [[headers]] do not apply to
+ * proxy responses), so the browser now serves sub-10s repeat polls from cache.
  * ========================================================================== */
 (function () {
   'use strict';
@@ -108,11 +111,31 @@
   function renderControllers(list) {
     var host = $('ld-controllers');
     if (!host) return;
-    if (!list || !list.length) {
-      host.innerHTML = '<p class="ld-note">No irrigation controllers in the demonstration set.</p>';
+    var all = list || [];
+    // 2026-10-20: hide offline devices from the public demo view — an
+    // "OFFLINE · last seen 5 days ago" badge on a reliability proof page hurts
+    // more than it informs. Counts are still reflected in the note below.
+    var online = all.filter(function (c) { return c.online; });
+    if (!online.length) {
+      // 2026-10-20: demo rigs sit in the China plant, so overseas visitors in
+      // their own office hours (night in UTC+8) can hit an all-offline state.
+      // Never show a bare empty list — explain, timestamp the last data, convert.
+      var seen = all.map(function (c) { return c.lastSeenAt; })
+        .filter(function (t) { return t; })
+        .sort()
+        .pop();
+      host.innerHTML = '<div class="ld-card"><h4>Demonstration controllers are offline right now</h4>' +
+        '<p class="ld-note">The demo machines run in our assembly plant in China (UTC+8), so visitors ' +
+        'overseas sometimes reach this page outside the plant\'s working hours. The most recent controller ' +
+        'data was received ' + esc(fmtTime(seen)) + ' (your local time), and the field sensor feed below ' +
+        'stays live. To see a controller running interactively, <a href="/book-a-demo/">book a live demo</a> ' +
+        '&mdash; we will power a rig up on the spot.</p></div>';
       return;
     }
-    host.innerHTML = list.map(function (c) {
+    var hiddenNote = (all.length - online.length) > 0
+      ? '<p class="ld-note">Devices that are currently offline are hidden from this public view.</p>'
+      : '';
+    host.innerHTML = online.map(function (c) {
       var running = c.running
         ? '<div class="ld-running">Program ' + esc(c.running.programKey || '—') +
           (c.running.zone ? ' · zone ' + esc(c.running.zone) : '') +
@@ -157,17 +180,23 @@
         '<h5 class="ld-h5">Irrigation plan</h5>' + planHtml +
         '<h5 class="ld-h5">Recent runtimes</h5>' + runHtml +
         '</div>';
-    }).join('');
+    }).join('') + hiddenNote;
   }
 
   function renderSensors(list) {
     var host = $('ld-sensors');
     if (!host) return;
-    if (!list || !list.length) {
-      host.innerHTML = '<p class="ld-note">No air / soil / light readings in the demonstration set.</p>';
+    var all = list || [];
+    var online = all.filter(function (s) { return s.online; });
+    if (!online.length) {
+      host.innerHTML = '<p class="ld-note">All demonstration sensor stations are offline right now — ' +
+        'readings resume automatically when the units reconnect.</p>';
       return;
     }
-    host.innerHTML = list.map(function (s) {
+    var hiddenNote = (all.length - online.length) > 0
+      ? '<p class="ld-note">Sensors that are currently offline are hidden from this public view.</p>'
+      : '';
+    host.innerHTML = online.map(function (s) {
       var readings = s.readings || {};
       var keys = Object.keys(readings);
       var body = keys.length
@@ -183,7 +212,7 @@
           ? '<span class="ld-chip ld-chip--on">ONLINE</span>'
           : '<span class="ld-chip ld-chip--rs">OFFLINE</span>') +
         '</h4>' + body + '</div>';
-    }).join('');
+    }).join('') + hiddenNote;
   }
 
   function render(d) {
@@ -200,7 +229,7 @@
 
   function tick() {
     if (document.hidden) return;
-    fetch('/live-api/demo', { credentials: 'omit', cache: 'no-store' })
+    fetch('/live-api/demo', { credentials: 'omit', cache: 'default' })
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();

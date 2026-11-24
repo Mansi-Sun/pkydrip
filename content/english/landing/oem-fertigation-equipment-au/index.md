@@ -1,0 +1,23 @@
+{
+  "title": "Fertigation Equipment & OEM Supply for Australia | PKYDRIP",
+  "description": "Fertigation machines, peristaltic dosing systems and controllers for buyers in Australia. Explore equipment configurations, OEM supply and technical support.",
+  "layout": "fertigation-oem",
+  "url": "/landing/oem-fertigation-equipment-au/",
+  "draft": false,
+  "page_code": "FERTIGATION-OEM-AU",
+  "form_name": "fertigation_oem_au",
+  "market": "Australia",
+  "market_label": "For Australian equipment suppliers",
+  "product_page": false,
+  "hero_title": "Fertigation Equipment & Control Systems",
+  "hero_text": "PKYDRIP manufactures multi-channel fertigation machines, peristaltic dosing systems and fertigation controllers for buyers in Australia. Standard equipment and OEM configurations are available for suppliers, installers and direct buyers.",
+  "hero_support": "Discuss dosing channels, EC/pH monitoring or control options, and cloud connectivity. Equipment configuration, drawings and support scope are confirmed before ordering.",
+  "image": "/images/pkydrip-fertigation/pkydrip-oem.webp",
+  "image_alt": "Multi-channel fertigation machine with control cabinet and dosing pipework",
+  "image_caption": "Multi-channel fertigation equipment example. Dosing channels, hydraulic components and control functions are confirmed in the quotation.",
+  "primary_cta": "Request Fertigation Equipment Pricing",
+  "whatsapp_text": "Hi PKYDrip, I am interested in fertigation equipment for Australia.\nCompany:\nProduct interest: complete equipment / FG301 control system\nRequirement: standard equipment / own logo / configuration changes\nEstimated quantity (if known):",
+  "regional_title": "Fertigation equipment supply to Australia",
+  "regional_text": "Select an Australian-market electrical and connection configuration with our team before ordering. Your local integration team confirms installation and applicable product compliance requirements.",
+  "spelling": "customisation"
+}

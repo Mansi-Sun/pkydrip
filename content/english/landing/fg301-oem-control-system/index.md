@@ -1,0 +1,20 @@
+{
+  "title": "FG301 3-Channel Fertigation Control System | PKYDRIP",
+  "description": "FG301 fertigation controller with three dosing channels and terminal outputs. Explore EC/pH options, drawings and cloud support. Water pump and frame excluded.",
+  "layout": "fertigation-oem",
+  "url": "/landing/fg301-oem-control-system/",
+  "draft": false,
+  "page_code": "FG301-OEM-CONTROL",
+  "form_name": "fg301_oem_control",
+  "market": "",
+  "market_label": "FG301 • Control system supply",
+  "product_page": true,
+  "hero_title": "FG301 3-Channel Fertigation Control System",
+  "hero_text": "A fertigation control package with three dosing channels and terminal outputs for connection to compatible dosing and irrigation equipment. Available for equipment suppliers, installers and OEM integration.",
+  "hero_support": "Connection drawings and cloud platform support within the agreed scope. EC/pH monitoring or automatic control options are confirmed for the configuration. Water pump and equipment frame are not included.",
+  "primary_cta": "Request FG301 Configuration & Price",
+  "whatsapp_text": "Hi PKYDrip, I am interested in the FG301 control system without water pump or frame.\nCountry:\nCompany:\nRequirement: own logo / standard equipment / configuration changes\nEstimated quantity (if known):",
+  "regional_title": "One control platform. Local equipment integration.",
+  "regional_text": "Available for US and Australian partner inquiries. Supply voltage, output types, connected loads and applicable product requirements are confirmed for the order before production.",
+  "spelling": "customization"
+}

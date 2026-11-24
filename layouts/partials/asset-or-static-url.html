@@ -1,0 +1,6 @@
+{{- $path := . -}}
+{{- $url := $path | relURL -}}
+{{- with resources.Get $path -}}
+  {{- $url = .RelPermalink -}}
+{{- end -}}
+{{- return $url -}}
