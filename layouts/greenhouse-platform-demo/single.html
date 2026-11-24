@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $waText := "Hi PKYDrip, I would like to discuss a greenhouse project.%0A-%20Greenhouse%20area%20and%20crop%3A%0A-%20Irrigation%20zones%3A%0A-%20Pump%20and%20valve%20information%3A%0A-%20Water%20meter%20/%20flow%20/%20pressure%20/%20level%20sensors%3A%0A-%20Fertilizer%20channels%3A%0A-%20EC/pH%20requirement%3A%0A-%20Local%20HMI%2C%20Cloud%20or%20customer%20platform%3A" }}
+{{ $waText := "Hi PKYDrip, I would like to discuss a fertigation project.%0A-%20Crop%2C%20growing%20method%20and%20area%3A%0A-%20Irrigation%20zones%3A%0A-%20Pump%20and%20valve%20information%3A%0A-%20Water%20meter%20/%20flow%20/%20pressure%20/%20level%20sensors%3A%0A-%20Fertilizer%20channels%3A%0A-%20EC/pH%20requirement%3A%0A-%20Local%20HMI%2C%20Cloud%20or%20customer%20platform%3A" }}
 {{ $wa := printf "https://wa.me/8617395297329?text=%s" $waText }}
 
 <article class="gp-page" data-gp-demo>
@@ -13,7 +13,7 @@
   <section class="gp-hero" aria-labelledby="gp-hero-title">
     <div class="gp-hero__copy">
       <p class="gp-kicker">PKYDrip Greenhouse Control Platform</p>
-      <h1 id="gp-hero-title">Manage Water, Irrigation and Fertigation from One Greenhouse Workspace</h1>
+      <h1 id="gp-hero-title">Manage Water, Irrigation and Fertigation from One Workspace</h1>
       <p class="gp-hero__lead">Explore how PKYDRIP measures actual water delivery, manages irrigation strategies and fertigation recipes, and keeps control and safety running locally.</p>
       <ul class="gp-badges">
         <li>Interactive Demo</li>
@@ -21,28 +21,20 @@
         <li>No login</li>
         <li>No real control commands</li>
       </ul>
-      <p class="gp-disclaimer" role="note">
-        <strong>System demonstration.</strong>
-        Values on this page are collected and processed from real PKYDrip equipment.
-        They do not represent any real customer farm.
-        Most data comes from PKYDrip internal laboratories and development project systems.
-        No command is sent to a field controller.
-      </p>
       <div class="gp-hero__actions">
         <a class="gp-btn gp-btn--primary" href="#gp-workspace">Start Interactive Demo</a>
         <button class="gp-btn gp-btn--ghost" type="button" data-gp-reset>Reset Demo</button>
-        <a class="gp-btn gp-btn--ghost" href="#gp-discuss">Discuss Your Greenhouse</a>
+        <a class="gp-btn gp-btn--ghost" href="#gp-discuss">Discuss Your Application</a>
       </div>
     </div>
     <figure class="gp-hero__media">
-      <img src="{{ "images/pkydrip-fertigation/pkydrip-family.webp" | relURL }}" alt="PKYDrip fertigation machine family used with the same greenhouse software platform" width="1609" height="978" decoding="async">
+      <img src="{{ "images/pkydrip-fertigation/pkydrip-family.webp" | relURL }}" alt="PKYDrip fertigation machine family used with the same software platform" width="1609" height="978" decoding="async">
       <figcaption>One software workspace across E / S / P fertigation configurations.</figcaption>
     </figure>
   </section>
 
   <section class="gp-workspace" id="gp-workspace" aria-labelledby="gp-workspace-title">
     <h2 id="gp-workspace-title" class="gp-sr-only">Greenhouse demonstration workspace</h2>
-    <p class="gp-sim-banner" role="note">System demonstration. Data is collected and processed from real equipment in PKYDrip internal laboratories and development projects. It does not represent any real customer farm. No login. No command is sent to a field controller.</p>
     <ul class="gp-glance" id="gp-glance" aria-label="Key demonstration readings"></ul>
 
     <header class="gp-topbar">
@@ -275,7 +267,13 @@
     <aside class="gp-physical gp-physical--inline" aria-label="Physical system behind recipes and fertigation">
       <div class="gp-physical__copy">
         <h2>Physical system</h2>
-        <p>Recipe Management and Fertigation Strategy map to this cabinet, manifolds, flow meter and dosing channels. The software workspace stays the visual subject; the photo only shows the hardware behind those two functions.</p>
+        <p>Recipe Management and Fertigation Strategy run on this class of hardware: a control cabinet, manifolds, a flow meter and dosing channels. Channel count is matched to the project — three, four or five channels, or another layout after engineering review.</p>
+        <p>Recipes can be stored and selected in the workspace. EC and pH can be measured online and kept as history, so the record shows what was applied, not only that a pump ran. A LoRa or LoRaWAN gateway can be added when valves or sensors sit away from the cabinet.</p>
+        <ul>
+          <li>3 / 4 / 5 dosing channels, or a custom channel layout</li>
+          <li>Recipe control, with EC and pH online measurement and history</li>
+          <li>Optional LoRa / LoRaWAN wireless gateway for field valves and sensors</li>
+        </ul>
       </div>
       <figure class="gp-physical__media">
         <img src="{{ "images/pkydrip-fertigation/pkydrip-s2.webp" | relURL }}" alt="PKYDrip fertigation cabinet with manifolds, flow meter and dosing channels" width="1451" height="1084" loading="lazy" decoding="async">
@@ -287,20 +285,48 @@
   <section class="gp-physical">
     <div class="gp-physical__copy">
       <h2>Physical Systems Behind the Demo</h2>
-      <p>The demo represents software capabilities used with PKYDRIP irrigation controllers, MC-16 based control cabinets, EG100 gateways and E/S/P fertigation systems. Final hardware and sensor configuration depends on the greenhouse project.</p>
+      <p>This demo shows the software used with PKYDRIP irrigation controllers, MC-16 control cabinets, EG100 gateways, E/S/P fertigation machines and peristaltic dosing systems. Treat it as a starting picture, not a fixed bill of materials.</p>
+      <p>We start from the application. Share the crop, growing method, irrigation zones, and flow or pressure if you already know them. Tell us whether a pump, filter, cabinet or farm software is already on site. The controller, cabinet, gateway, dosing method and sensors are then matched to that project.</p>
+      <p>Venturi or peristaltic dosing, local HMI or cloud, wired instruments or a LoRa/LoRaWAN gateway — the combination is confirmed with the PKYDrip team before a quotation. Final hardware depends on the application, not on this demonstration layout.</p>
+      <ul>
+        <li>Irrigation controller, MC-16 cabinet and EG100 gateway</li>
+        <li>E / S / P fertigation, or peristaltic three-fertilizer + one-acid dosing</li>
+        <li>Sensors, wireless gateways and software interfaces confirmed per site</li>
+      </ul>
     </div>
     <figure class="gp-physical__media">
-      <img src="{{ "images/pkydrip-fertigation/pkydrip-family.webp" | relURL }}" alt="PKYDrip E, S and P fertigation machine family served by the same greenhouse software platform" width="1609" height="978" loading="lazy" decoding="async">
-      <figcaption>One software platform across E / S / P fertigation configurations.</figcaption>
+      <img src="{{ "images/pkydrip-fertigation/pkydrip-peristaltic.webp" | relURL }}" alt="PKYDrip three-fertilizer one-acid peristaltic fertigation system" width="1088" height="1440" loading="lazy" decoding="async">
+      <figcaption>Three-fertilizer, one-acid peristaltic dosing system.</figcaption>
     </figure>
+  </section>
+
+  <section class="gp-physical" id="gp-integrate" aria-labelledby="gp-integrate-title">
+    <div class="gp-physical__copy">
+      <h2 id="gp-integrate-title">Connect to Third-party and Customer Systems</h2>
+      <p>The platform can connect to third-party equipment and to a customer’s own software. Integration is available over MQTT or API. PKYDrip team members can work with you on topics, endpoints and authentication.</p>
+    </div>
+    <ul class="gp-integrate__points">
+      <li>
+        <strong>Your system stays in place</strong>
+        <span>Third-party controllers, farm software and customer platforms can be connected instead of replacing the whole stack.</span>
+      </li>
+      <li>
+        <strong>MQTT or API</strong>
+        <span>Choose MQTT topics or an API interface according to how the existing system already exchanges data.</span>
+      </li>
+      <li>
+        <strong>Work with the PKYDrip team</strong>
+        <span>Interface mapping, test accounts and documentation are confirmed with PKYDrip engineers.</span>
+      </li>
+    </ul>
   </section>
 
   <section class="gp-discuss" id="gp-discuss">
     <div class="gp-discuss__copy">
-      <h2>Discuss Your Greenhouse</h2>
-      <p>Tell us the project facts so we can match controller, cabinet, gateway and fertigation hardware to the software capabilities shown above.</p>
+      <h2>Discuss Your Application</h2>
+      <p>Tell us your crops, growing area and irrigation arrangement. We will match controller, cabinet, gateway and fertigation hardware to the software capabilities shown above. If flow or pressure is unknown, we can discuss what information to collect.</p>
       <ul>
-        <li>Greenhouse area and crop</li>
+        <li>Crop, growing method and area</li>
         <li>Irrigation zones</li>
         <li>Pump and valve information</li>
         <li>Water meter / flow / pressure / level sensors</li>
@@ -314,11 +340,19 @@
         <a class="gp-btn gp-btn--ghost" href="{{ $wa }}" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-    <figure class="gp-discuss__media">
-      <img src="{{ "images/scenes/scene-fertigation.webp" | relURL }}" alt="Greenhouse crop rows with fertigation lines in a commercial growing environment" width="1600" height="900" loading="lazy" decoding="async">
-    </figure>
+    <div class="gp-discuss__media gp-media-combo">
+      <figure>
+        <img src="{{ "images/home/pkydrip-workshop-partner-cta.jpg" | relURL }}" alt="PKYDrip workshop with irrigation and fertigation equipment on the factory floor" width="1920" height="768" loading="lazy" decoding="async">
+        <figcaption>Factory workshop</figcaption>
+      </figure>
+      <figure>
+        <img src="{{ "images/product/fertigation-greenhouse-installation-case.webp" | relURL }}" alt="Fertigation mixing tanks and control cabinet installed in a greenhouse equipment room" width="1080" height="1440" loading="lazy" decoding="async">
+        <figcaption>Installation case</figcaption>
+      </figure>
+    </div>
   </section>
 
+  <p class="gp-foot-note" role="note">System demonstration. Values on this page are collected and processed from real PKYDrip equipment. They do not represent any real customer farm. Most data comes from PKYDrip internal laboratories and development project systems. No command is sent to a field controller.</p>
   <div class="gp-toast" id="gp-toast" role="status" aria-live="polite" hidden></div>
 </article>
 

@@ -17,4 +17,5 @@ This page is English and read-only. Control commands are not available here.
 ### Online Demo vs Book a Demo
 
 - **Online Demo** (this page): open immediately, no login.
+- **Irrigation and fertigation workspace**: interactive irrigation, recipes and fertigation — [open the workspace](/live-demo/greenhouse-platform/).
 - **Book / Request Demo**: human consultation for your project — use [Book a Live Demo](/book-a-demo/) or [Contact](/contact/).
