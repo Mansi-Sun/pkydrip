@@ -8,4 +8,4 @@ url: "/live-demo/"
 page_code: "PC-LIVE-DEMO-01"
 ---
 
-Explore irrigation and fertigation demonstration data above. Availability depends on the connected demonstration equipment; readings are not customer production data. For an equipment walkthrough and project discussion, use **Book an Equipment Demo**.
+Explore irrigation and fertigation demonstration data above. Availability depends on the connected demonstration equipment; readings are not customer production data. For irrigation strategies, recipes and fertigation together, open the [interactive workspace](/live-demo/greenhouse-platform/). For an equipment walkthrough and project discussion, use **Book an Equipment Demo**.
