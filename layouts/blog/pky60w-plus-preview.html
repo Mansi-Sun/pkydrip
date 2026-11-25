@@ -1,0 +1,100 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="{{ "css/pky60w-plus-docs.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<section class="pky60w-plus-page">
+  <div class="container">
+    <article class="pky60w-plus pky60w-plus--sellsheet">
+      <header class="pky60w-plus-hero">
+        <p class="pky60w-plus-kicker">PKYDRIP PKY60W-Plus Landscape Series</p>
+        <ul class="pky60w-plus-badges">
+          <li>Product preview</li>
+          <li>Regional field-test partners wanted</li>
+          <li>Not in-stock production</li>
+        </ul>
+        <h1>{{ .Title }}</h1>
+        <p class="pky60w-plus-lead">Prototype complete. Field tests are underway in mainland China. Tell us your country or region and valve type to start.</p>
+      </header>
+      {{ partial "pky60w-plus-cta.html" (dict
+        "wa" "https://wa.me/8617395297329?text=Hello%20PKYDRIP%2C%20I%20am%20interested%20in%20PKY60W-Plus.%20Country%2Fregion%3A%20%20Valve%20type%3A%20"
+        "mail" "mailto:info@pky-dripirrigation.com?subject=PKY60W-Plus%20Project%20Enquiry"
+        "demo" "/book-a-demo/"
+        "waLabel" "WhatsApp"
+        "mailLabel" "Email enquiry"
+        "demoLabel" "Book a technical meeting"
+        "icons" true
+      ) }}
+
+      <ol class="pky60w-plus-fab">
+        <li>
+          <div class="pky60w-plus-fab__head">
+            {{ partial "pky60w-plus-icon.html" "water" }}
+            <p class="pky60w-plus-fab__n">01 · Water use</p>
+          </div>
+          <h2>Know how much water you used</h2>
+          <dl>
+            <dt>Feature</dt>
+            <dd>Connect a matched flow sensor and record water use against irrigation programs.</dd>
+            <dt>Advantage</dt>
+            <dd>You see volume, not only run time — so schedule changes can be checked against real use.</dd>
+            <dt>Benefit</dt>
+            <dd>Know how much water went out. After you shorten or shift a program, compare records and see whether you used less. No promised saving percentage.</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="pky60w-plus-fab__head">
+            {{ partial "pky60w-plus-icon.html" "decoder" }}
+            <p class="pky60w-plus-fab__n">02 · Two-wire</p>
+          </div>
+          <h2>Encoder / decoder at a more suitable cost</h2>
+          <dl>
+            <dt>Feature</dt>
+            <dd>Two-wire encoder and decoder valve control, matched to the project.</dd>
+            <dt>Advantage</dt>
+            <dd>Landscape sites can run valves on a two-wire path instead of a heavy multi-wire stack.</dd>
+            <dt>Benefit</dt>
+            <dd>A more practical price point for decoder-based landscape jobs. Compatible decoder, cable length and load are confirmed per project — not “any decoder”.</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="pky60w-plus-fab__head">
+            {{ partial "pky60w-plus-icon.html" "sensor" }}
+            <p class="pky60w-plus-fab__n">03 · Sensors</p>
+          </div>
+          <h2>Connect the sensors your site needs</h2>
+          <dl>
+            <dt>Feature</dt>
+            <dd>Sensor inputs for flow and other field sensors, matched by power, interface, protocol, range and calibration.</dd>
+            <dt>Advantage</dt>
+            <dd>One controller can take the measurements the job actually uses.</dd>
+            <dt>Benefit</dt>
+            <dd>Start with water-use records, then add other matched sensors as the project requires. Not a claim of universal plug-and-play.</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="pky60w-plus-fab__head">
+            {{ partial "pky60w-plus-icon.html" "brand" }}
+            <p class="pky60w-plus-fab__n">04 · OEM</p>
+          </div>
+          <h2>Expand later. White-label as your brand.</h2>
+          <dl>
+            <dt>Feature</dt>
+            <dd>Wi-Fi + Bluetooth setup, MQTT and cloud remote control, plus wholesale, regional and white-label options.</dd>
+            <dt>Advantage</dt>
+            <dd>Start with two-wire landscape control, then grow the offer without changing platform.</dd>
+            <dt>Benefit</dt>
+            <dd>Sell under your brand and keep a path to expand. LoRaWAN valves, flow and pressure devices are a later plan, not current standard. Exclusive agency is never automatic.</dd>
+          </dl>
+        </li>
+      </ol>
+
+      <div class="pky60w-plus-body">
+        {{ .Content }}
+      </div>
+      <p class="pky60w-plus-cross"><a href="{{ "/guide/pky60w-plus-irrigation-plan/" | relURL }}">Irrigation plan &amp; water-use worksheet (trial)</a></p>
+    </article>
+  </div>
+</section>
+<script src="{{ "js/pky60w-plus-docs.js" | relURL }}" defer></script>
+{{ end }}

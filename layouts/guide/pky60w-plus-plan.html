@@ -1,0 +1,34 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="{{ "css/pky60w-plus-docs.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<section class="pky60w-plus-page">
+  <div class="container">
+    <article class="pky60w-plus">
+      <header class="pky60w-plus-hero">
+        <p class="pky60w-plus-kicker">PKY60W-Plus 使用手册 · 试用版</p>
+        <ul class="pky60w-plus-badges">
+          <li>操作辅助资料</li>
+          <li>不是完整接线安装手册</li>
+        </ul>
+        <h1>{{ .Title }}</h1>
+        <p class="pky60w-plus-lead">帮助试用项目填写灌溉计划和记录用水。菜单名称、计划数量及记录功能以交付版本为准。</p>
+        <p class="pky60w-plus-actions pky60w-plus-no-print">
+          <button type="button" class="pky60w-plus-btn pky60w-plus-btn--primary pky60w-plus-print" onclick="window.print()">打印 / 保存为 PDF</button>
+          <a class="pky60w-plus-btn pky60w-plus-btn--ghost" href="{{ "/blog/pky60w-plus-landscape-preview/" | relURL }}">返回新品预告</a>
+        </p>
+      </header>
+      <div class="pky60w-plus-body">
+        {{ .Content }}
+      </div>
+      {{ partial "pky60w-plus-cta.html" (dict
+        "wa" "https://wa.me/8617395297329?text=Hello%20PKYDRIP%2C%20I%20need%20PKY60W-Plus%20irrigation%20plan%20support.%20Country%2Fregion%3A%20%20Valve%20type%3A%20"
+        "mail" "mailto:info@pky-dripirrigation.com?subject=PKY60W-Plus%20Irrigation%20Plan%20Support"
+        "demo" "/book-a-demo/"
+      ) }}
+    </article>
+  </div>
+</section>
+<script src="{{ "js/pky60w-plus-docs.js" | relURL }}" defer></script>
+{{ end }}

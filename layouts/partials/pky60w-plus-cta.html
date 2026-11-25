@@ -1,0 +1,11 @@
+{{ $wa := .wa | default "https://wa.me/8617395297329?text=Hello%20PKYDRIP%2C%20I%20am%20interested%20in%20PKY60W-Plus.%20Country%2Fregion%3A%20%20Valve%20type%3A%20" }}
+{{ $mail := .mail | default "mailto:info@pky-dripirrigation.com?subject=PKY60W-Plus%20Project%20Enquiry" }}
+{{ $demo := .demo | default "/book-a-demo/" }}
+{{ $waLabel := .waLabel | default "WhatsApp 洽谈" }}
+{{ $mailLabel := .mailLabel | default "邮件询盘" }}
+{{ $demoLabel := .demoLabel | default "预约技术会议及样机演示" }}
+<p class="pky60w-plus-actions">
+  <a class="pky60w-plus-btn pky60w-plus-btn--primary" href="{{ $wa }}" target="_blank" rel="noopener">{{ if .icons }}{{ partial "pky60w-plus-icon.html" "whatsapp" }}{{ end }}{{ $waLabel }}</a>
+  <a class="pky60w-plus-btn pky60w-plus-btn--ghost" href="{{ $mail }}">{{ if .icons }}{{ partial "pky60w-plus-icon.html" "mail" }}{{ end }}{{ $mailLabel }}</a>
+  <a class="pky60w-plus-btn pky60w-plus-btn--ghost" href="{{ $demo }}">{{ if .icons }}{{ partial "pky60w-plus-icon.html" "demo" }}{{ end }}{{ $demoLabel }}</a>
+</p>
