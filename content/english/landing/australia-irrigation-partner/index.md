@@ -7,7 +7,7 @@ draft: false
 page_code: "PC-LAND-PARTNER-AU-01"
 eyebrow: "Australia Partner Program"
 hero_title: "Become a PKYDrip Irrigation Partner in Australia"
-hero_subtitle: "Work with PKYDrip to deliver pump control, valve automation, fertigation, and smart irrigation upgrade projects for Australian farms and contractors."
+hero_subtitle: "Work with PKYDrip to deliver pump control, valve automation, fertigation, and smart irrigation upgrade projects as an Australian dealer, contractor or installer."
 hero_image: "/images/landing/upgrade-existing-system.webp"
 hero_note: "For irrigation contractors, pump installers, electricians, and automation system integrators."
 primary_cta: "Apply as a Partner"
