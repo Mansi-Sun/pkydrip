@@ -19,5 +19,25 @@
   "whatsapp_text": "Hi PKYDrip, I am interested in fertigation equipment for Australia.\nCompany:\nProduct interest: complete equipment / FG301 control system\nRequirement: standard equipment / own logo / configuration changes\nEstimated quantity (if known):",
   "regional_title": "Fertigation equipment supply to Australia",
   "regional_text": "Select an Australian-market electrical and connection configuration with our team before ordering. Your local integration team confirms installation and applicable product compliance requirements.",
-  "spelling": "customisation"
+  "spelling": "customisation",
+  "form_examples_title": "More than one machine layout",
+  "form_examples_text": "PKYDrip fertigation machines are supplied in more than one frame and cabinet style. The photos below are examples. Dosing channels, pump, hydraulics and enclosure are confirmed in the quotation.",
+  "form_examples": [
+    {
+      "image": "/images/pkydrip-fertigation/fertigation-open-frame-skid.webp",
+      "alt": "Open-frame fertigation machine example with a vertical pump, control cabinet and three dosing channels",
+      "title": "Open-frame complete equipment",
+      "caption": "Open-frame complete equipment example with a vertical pump and three dosing channels. Frame, pump, cabinet and channel count are confirmed in the quotation.",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "image": "/images/pkydrip-fertigation/fertigation-cabinet-system.webp",
+      "alt": "Cabinet-style fertigation machine example with a stainless-steel frame and four dosing channels",
+      "title": "Cabinet-style complete equipment",
+      "caption": "Cabinet-style complete equipment example with four dosing channels. Enclosure, hydraulics and channel count are confirmed in the quotation.",
+      "width": 1200,
+      "height": 896
+    }
+  ]
 }
