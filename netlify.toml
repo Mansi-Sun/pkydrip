@@ -12,6 +12,11 @@
 [build.environment]
   NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
+  # Netlify smart secret scanning flags the unused, disabled Google Maps
+  # placeholder key in config/_default/params.toml (gmap.enable = false).
+  # That file is intentionally left unchanged. Omit only this path so
+  # scanning still runs on the rest of the repo and the build output.
+  SECRETS_SCAN_OMIT_PATHS = "config/_default/params.toml"
 
 [functions]
   directory = "netlify/functions"
